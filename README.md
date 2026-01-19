@@ -1,4 +1,4 @@
-# Apple Docs Changelog
+# Unofficial Apple Docs Changelog
 
 Tracks daily changes to Apple's developer documentation by scraping their JSON API and converting it to Markdown.
 
