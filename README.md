@@ -2,6 +2,8 @@
 
 Tracks daily changes to Apple's developer documentation by scraping their JSON API and converting it to Markdown.
 
+_This repository is in no way affiliated with Apple, and solely pulls down what anybody can access and read officially without logging in to any Apple related website._
+
 ## How it works
 
 A GitHub Action runs daily, fetches all Device Management documentation from Apple, and commits any changes. Use git history to see what changed and when.
