@@ -1,1 +1,4 @@
 .claude
+
+# Ignore scraper binary but not cmd/scraper directory
+/scraper
