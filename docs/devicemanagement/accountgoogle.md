@@ -1,0 +1,26 @@
+# AccountGoogle
+
+The declaration to configure a Google account.
+
+**Platforms:** iOS 15.0, iPadOS 15.0, macOS 13.0, visionOS 1.1
+
+## Discussion
+
+Specify `com.apple.configuration.account.google` as the declaration type.
+
+### Configuration availability
+
+### Configuration example
+
+```json
+{
+    "Type": "com.apple.configuration.account.google",
+    "Identifier": "EB13EE2B-5D63-4EBA-810F-5B81D07F5017",
+    "ServerToken": "E180CA9A-F089-4FA3-BBDF-94CC159C4AE8",
+    "Payload": {
+        "VisibleName": "Work Google",
+        "UserIdentityAssetReference": "CB3E6C7F-2318-437B-8A9E-D50C69376DE4"
+    }
+}
+```
+

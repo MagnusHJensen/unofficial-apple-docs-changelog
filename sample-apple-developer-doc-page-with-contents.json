@@ -1,0 +1,638 @@
+{
+    "identifier": {
+        "url": "doc://com.apple.devicemanagement/documentation/DeviceManagement",
+        "interfaceLanguage": "data"
+    },
+    "topicSections": [
+        {
+            "anchor": "Configuration-Profiles",
+            "title": "Configuration Profiles",
+            "identifiers": [
+                "doc://com.apple.devicemanagement/documentation/DeviceManagement/configuring-multiple-devices-using-profiles",
+                "doc://com.apple.devicemanagement/documentation/DeviceManagement/profile-specific-payload-keys"
+            ]
+        },
+        {
+            "identifiers": [
+                "doc://com.apple.devicemanagement/documentation/DeviceManagement/implementing-device-management",
+                "doc://com.apple.devicemanagement/documentation/DeviceManagement/commands-and-queries",
+                "doc://com.apple.devicemanagement/documentation/DeviceManagement/check-in",
+                "doc://com.apple.devicemanagement/documentation/DeviceManagement/account-driven-enrollment",
+                "doc://com.apple.devicemanagement/documentation/DeviceManagement/migrating-managed-devices"
+            ],
+            "anchor": "MDM-Protocol",
+            "title": "MDM Protocol"
+        },
+        {
+            "title": "Declarative Management",
+            "anchor": "Declarative-Management",
+            "identifiers": [
+                "doc://com.apple.devicemanagement/documentation/DeviceManagement/leveraging-the-declarative-management-data-model-to-scale-devices",
+                "doc://com.apple.devicemanagement/documentation/DeviceManagement/integrating-declarative-management",
+                "doc://com.apple.devicemanagement/documentation/DeviceManagement/deploying-apps-with-declarative-management",
+                "doc://com.apple.devicemanagement/documentation/DeviceManagement/devicemanagement-declarations",
+                "doc://com.apple.devicemanagement/documentation/DeviceManagement/status-reports"
+            ]
+        },
+        {
+            "identifiers": [
+                "doc://com.apple.devicemanagement/documentation/DeviceManagement/device-assignment",
+                "doc://com.apple.devicemanagement/documentation/DeviceManagement/roster-management",
+                "doc://com.apple.devicemanagement/documentation/DeviceManagement/app-and-book-management"
+            ],
+            "anchor": "Deployment-Services",
+            "title": "Deployment Services"
+        },
+        {
+            "identifiers": [
+                "doc://com.apple.devicemanagement/documentation/DeviceManagement/Fetch-a-apps-resource's-relationship",
+                "doc://com.apple.devicemanagement/documentation/DeviceManagement/Fetch-a-books-resource's-relationship",
+                "doc://com.apple.devicemanagement/documentation/DeviceManagement/Get-Multiple-Genres",
+                "doc://com.apple.devicemanagement/documentation/DeviceManagement/Get-a-Genre"
+            ],
+            "anchor": "Endpoints",
+            "title": "Endpoints"
+        },
+        {
+            "identifiers": [
+                "doc://com.apple.devicemanagement/documentation/DeviceManagement/ManifestURL",
+                "doc://com.apple.devicemanagement/documentation/DeviceManagement/PasswordHash",
+                "doc://com.apple.devicemanagement/documentation/DeviceManagement/RelationshipResponse",
+                "doc://com.apple.devicemanagement/documentation/DeviceManagement/ResponseErrorCode"
+            ],
+            "title": "Dictionaries",
+            "generated": true,
+            "anchor": "Dictionaries"
+        }
+    ],
+    "sections": [],
+    "abstract": [
+        {
+            "text": "Manage your organization’s devices remotely.",
+            "type": "text"
+        }
+    ],
+    "kind": "symbol",
+    "hierarchy": {
+        "paths": [
+            [
+                "doc://com.apple.documentation/documentation/technologies"
+            ]
+        ]
+    },
+    "primaryContentSections": [
+        {
+            "kind": "content",
+            "content": [
+                {
+                    "anchor": "overview",
+                    "level": 2,
+                    "type": "heading",
+                    "text": "Overview"
+                },
+                {
+                    "type": "paragraph",
+                    "inlineContent": [
+                        {
+                            "text": "Deploying a mobile device management (MDM) solution allows administrators to securely and remotely configure enrolled devices. Administrators use Apple School Manager or Apple Business Manager to enroll organization-owned devices, and users can enroll their own devices. After a device is enrolled, administrators can update software and device settings, monitor compliance with organizational policies, remotely erase or lock devices, and install apps and books developed in-house or purchased through Apple School Manager or Apple Business Manager.",
+                            "type": "text"
+                        }
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "inlineContent": [
+                        {
+                            "type": "text",
+                            "text": "MDM works with Managed App Distribution to provide a seamless download and launch experience. For more information, see "
+                        },
+                        {
+                            "type": "reference",
+                            "isActive": true,
+                            "identifier": "doc://com.apple.documentation/documentation/ManagedAppDistribution"
+                        },
+                        {
+                            "type": "text",
+                            "text": "."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "metadata": {
+        "modules": [
+            {
+                "name": "Device Management"
+            }
+        ],
+        "title": "Device Management",
+        "roleHeading": "Web Service",
+        "symbolKind": "module",
+        "externalID": "DeviceManagement",
+        "role": "collection",
+        "platforms": [
+            {
+                "name": "iOS",
+                "beta": false,
+                "introducedAt": "13.0"
+            },
+            {
+                "name": "iPadOS",
+                "beta": false,
+                "introducedAt": "13.0"
+            },
+            {
+                "name": "macOS",
+                "introducedAt": "10.15",
+                "beta": false
+            },
+            {
+                "name": "tvOS",
+                "introducedAt": "13.0",
+                "beta": false
+            },
+            {
+                "beta": false,
+                "introducedAt": "1.1",
+                "name": "visionOS"
+            },
+            {
+                "introducedAt": "6.0",
+                "beta": false,
+                "name": "watchOS"
+            },
+            {
+                "beta": false,
+                "name": "Device Assignment Services",
+                "introducedAt": "5.0"
+            },
+            {
+                "name": "VPP License Management",
+                "introducedAt": "1.0",
+                "beta": false
+            }
+        ]
+    },
+    "variants": [
+        {
+            "paths": [
+                "/documentation/devicemanagement"
+            ],
+            "traits": [
+                {
+                    "interfaceLanguage": "data"
+                }
+            ]
+        }
+    ],
+    "schemaVersion": {
+        "major": 0,
+        "minor": 3,
+        "patch": 0
+    },
+    "references": {
+        "doc://com.apple.devicemanagement/documentation/DeviceManagement/commands-and-queries": {
+            "role": "collectionGroup",
+            "type": "topic",
+            "title": "Commands and Queries",
+            "identifier": "doc://com.apple.devicemanagement/documentation/DeviceManagement/commands-and-queries",
+            "kind": "article",
+            "url": "/documentation/devicemanagement/commands-and-queries",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "Manage the configuration and behavior of your devices."
+                }
+            ]
+        },
+        "doc://com.apple.devicemanagement/documentation/DeviceManagement/Fetch-a-apps-resource's-relationship": {
+            "url": "/documentation/devicemanagement/fetch-a-apps-resource's-relationship",
+            "role": "symbol",
+            "abstract": [],
+            "title": "Fetch a apps resource's relationship",
+            "navigatorTitle": [
+                {
+                    "text": "Fetch a apps resource's relationship",
+                    "kind": "identifier"
+                }
+            ],
+            "kind": "symbol",
+            "type": "topic",
+            "identifier": "doc://com.apple.devicemanagement/documentation/DeviceManagement/Fetch-a-apps-resource's-relationship"
+        },
+        "doc://com.apple.documentation/documentation/ManagedAppDistribution": {
+            "title": "ManagedAppDistribution",
+            "role": "collection",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "Manage the distribution of apps within an organization."
+                }
+            ],
+            "type": "topic",
+            "kind": "symbol",
+            "identifier": "doc://com.apple.documentation/documentation/ManagedAppDistribution",
+            "url": "/documentation/ManagedAppDistribution"
+        },
+        "doc://com.apple.devicemanagement/documentation/DeviceManagement/leveraging-the-declarative-management-data-model-to-scale-devices": {
+            "title": "Leveraging the declarative management data model to scale devices",
+            "kind": "article",
+            "role": "article",
+            "url": "/documentation/devicemanagement/leveraging-the-declarative-management-data-model-to-scale-devices",
+            "type": "topic",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "Use declarative management to make devices more autonomous and proactive."
+                }
+            ],
+            "identifier": "doc://com.apple.devicemanagement/documentation/DeviceManagement/leveraging-the-declarative-management-data-model-to-scale-devices"
+        },
+        "doc://com.apple.devicemanagement/documentation/DeviceManagement/RelationshipResponse": {
+            "url": "/documentation/devicemanagement/relationshipresponse",
+            "role": "symbol",
+            "title": "RelationshipResponse",
+            "navigatorTitle": [
+                {
+                    "kind": "identifier",
+                    "text": "RelationshipResponse"
+                }
+            ],
+            "identifier": "doc://com.apple.devicemanagement/documentation/DeviceManagement/RelationshipResponse",
+            "abstract": [],
+            "type": "topic",
+            "kind": "symbol",
+            "fragments": [
+                {
+                    "kind": "text",
+                    "text": "object "
+                },
+                {
+                    "text": "RelationshipResponse",
+                    "kind": "identifier"
+                }
+            ]
+        },
+        "doc://com.apple.devicemanagement/documentation/DeviceManagement/Get-Multiple-Genres": {
+            "role": "symbol",
+            "url": "/documentation/devicemanagement/get-multiple-genres",
+            "abstract": [
+                {
+                    "text": "Fetch metadata for genres from the catalog by using their identifiers.",
+                    "type": "text"
+                }
+            ],
+            "navigatorTitle": [
+                {
+                    "kind": "identifier",
+                    "text": "Get Multiple Genres"
+                }
+            ],
+            "identifier": "doc://com.apple.devicemanagement/documentation/DeviceManagement/Get-Multiple-Genres",
+            "kind": "symbol",
+            "title": "Get Multiple Genres",
+            "type": "topic"
+        },
+        "doc://com.apple.devicemanagement/documentation/DeviceManagement/implementing-device-management": {
+            "identifier": "doc://com.apple.devicemanagement/documentation/DeviceManagement/implementing-device-management",
+            "kind": "article",
+            "url": "/documentation/devicemanagement/implementing-device-management",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "Set up an MDM server and send commands to managed devices."
+                }
+            ],
+            "title": "Implementing Device Management",
+            "role": "collectionGroup",
+            "type": "topic"
+        },
+        "doc://com.apple.devicemanagement/documentation/DeviceManagement/profile-specific-payload-keys": {
+            "role": "collectionGroup",
+            "identifier": "doc://com.apple.devicemanagement/documentation/DeviceManagement/profile-specific-payload-keys",
+            "type": "topic",
+            "title": "Profile-Specific Payload Keys",
+            "url": "/documentation/devicemanagement/profile-specific-payload-keys",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "Use the appropriate payload for your configuration needs."
+                }
+            ],
+            "kind": "article"
+        },
+        "doc://com.apple.devicemanagement/documentation/DeviceManagement/app-and-book-management": {
+            "identifier": "doc://com.apple.devicemanagement/documentation/DeviceManagement/app-and-book-management",
+            "kind": "article",
+            "title": "App and Book Management",
+            "type": "topic",
+            "role": "collectionGroup",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "Manage apps and books for your students and employees."
+                }
+            ],
+            "url": "/documentation/devicemanagement/app-and-book-management"
+        },
+        "doc://com.apple.devicemanagement/documentation/DeviceManagement/check-in": {
+            "title": "Check-in",
+            "identifier": "doc://com.apple.devicemanagement/documentation/DeviceManagement/check-in",
+            "url": "/documentation/devicemanagement/check-in",
+            "kind": "article",
+            "abstract": [
+                {
+                    "text": "Authenticate devices and maintain push tokens with these commands.",
+                    "type": "text"
+                }
+            ],
+            "type": "topic",
+            "role": "collectionGroup"
+        },
+        "doc://com.apple.devicemanagement/documentation/DeviceManagement/ManifestURL": {
+            "url": "/documentation/devicemanagement/manifesturl",
+            "fragments": [
+                {
+                    "kind": "text",
+                    "text": "object "
+                },
+                {
+                    "text": "ManifestURL",
+                    "kind": "identifier"
+                }
+            ],
+            "title": "ManifestURL",
+            "role": "symbol",
+            "type": "topic",
+            "navigatorTitle": [
+                {
+                    "text": "ManifestURL",
+                    "kind": "identifier"
+                }
+            ],
+            "identifier": "doc://com.apple.devicemanagement/documentation/DeviceManagement/ManifestURL",
+            "kind": "symbol",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "The URL to the app manifest."
+                }
+            ]
+        },
+        "doc://com.apple.devicemanagement/documentation/DeviceManagement/status-reports": {
+            "type": "topic",
+            "role": "collectionGroup",
+            "abstract": [
+                {
+                    "text": "Reports from the device about its current state.",
+                    "type": "text"
+                }
+            ],
+            "title": "Status Reports",
+            "identifier": "doc://com.apple.devicemanagement/documentation/DeviceManagement/status-reports",
+            "kind": "article",
+            "url": "/documentation/devicemanagement/status-reports"
+        },
+        "doc://com.apple.devicemanagement/documentation/DeviceManagement/Get-a-Genre": {
+            "kind": "symbol",
+            "navigatorTitle": [
+                {
+                    "text": "Get a Genre",
+                    "kind": "identifier"
+                }
+            ],
+            "url": "/documentation/devicemanagement/get-a-genre",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "Fetch metadata for a genre from the catalog by using its identifier."
+                }
+            ],
+            "identifier": "doc://com.apple.devicemanagement/documentation/DeviceManagement/Get-a-Genre",
+            "title": "Get a Genre",
+            "type": "topic",
+            "role": "symbol"
+        },
+        "doc://com.apple.devicemanagement/documentation/DeviceManagement": {
+            "kind": "symbol",
+            "abstract": [
+                {
+                    "text": "Manage your organization’s devices remotely.",
+                    "type": "text"
+                }
+            ],
+            "title": "Device Management",
+            "role": "collection",
+            "identifier": "doc://com.apple.devicemanagement/documentation/DeviceManagement",
+            "url": "/documentation/devicemanagement",
+            "type": "topic"
+        },
+        "doc://com.apple.devicemanagement/documentation/DeviceManagement/deploying-apps-with-declarative-management": {
+            "type": "topic",
+            "title": "Deploying apps with declarative management",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "Use declarative app configurations to deploy managed apps to devices."
+                }
+            ],
+            "role": "collectionGroup",
+            "identifier": "doc://com.apple.devicemanagement/documentation/DeviceManagement/deploying-apps-with-declarative-management",
+            "kind": "article",
+            "url": "/documentation/devicemanagement/deploying-apps-with-declarative-management"
+        },
+        "doc://com.apple.devicemanagement/documentation/DeviceManagement/integrating-declarative-management": {
+            "kind": "article",
+            "title": "Integrating Declarative Management",
+            "url": "/documentation/devicemanagement/integrating-declarative-management",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "Use the declarative management protocol to manage MDM features such as device enrollment and un-enrollment and device and user authentication."
+                }
+            ],
+            "type": "topic",
+            "identifier": "doc://com.apple.devicemanagement/documentation/DeviceManagement/integrating-declarative-management",
+            "role": "article"
+        },
+        "doc://com.apple.devicemanagement/documentation/DeviceManagement/device-assignment": {
+            "kind": "article",
+            "identifier": "doc://com.apple.devicemanagement/documentation/DeviceManagement/device-assignment",
+            "url": "/documentation/devicemanagement/device-assignment",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "Manage devices for your students and employees."
+                }
+            ],
+            "title": "Device Assignment",
+            "type": "topic",
+            "role": "collectionGroup"
+        },
+        "doc://com.apple.devicemanagement/documentation/DeviceManagement/configuring-multiple-devices-using-profiles": {
+            "type": "topic",
+            "kind": "article",
+            "url": "/documentation/devicemanagement/configuring-multiple-devices-using-profiles",
+            "role": "article",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "Create and deploy configuration profiles to users within your organization."
+                }
+            ],
+            "title": "Configuring Multiple Devices Using Profiles",
+            "identifier": "doc://com.apple.devicemanagement/documentation/DeviceManagement/configuring-multiple-devices-using-profiles"
+        },
+        "doc://com.apple.devicemanagement/documentation/DeviceManagement/ResponseErrorCode": {
+            "fragments": [
+                {
+                    "text": "object ",
+                    "kind": "text"
+                },
+                {
+                    "text": "ResponseErrorCode",
+                    "kind": "identifier"
+                }
+            ],
+            "title": "ResponseErrorCode",
+            "navigatorTitle": [
+                {
+                    "text": "ResponseErrorCode",
+                    "kind": "identifier"
+                }
+            ],
+            "identifier": "doc://com.apple.devicemanagement/documentation/DeviceManagement/ResponseErrorCode",
+            "url": "/documentation/devicemanagement/responseerrorcode",
+            "kind": "symbol",
+            "role": "symbol",
+            "type": "topic",
+            "abstract": [
+                {
+                    "text": "An error code.",
+                    "type": "text"
+                }
+            ]
+        },
+        "doc://com.apple.documentation/documentation/technologies": {
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": ""
+                }
+            ],
+            "title": "Technologies",
+            "identifier": "doc://com.apple.documentation/documentation/technologies",
+            "url": "/documentation/technologies",
+            "type": "topic",
+            "role": "overview",
+            "kind": "technologies"
+        },
+        "doc://com.apple.devicemanagement/documentation/DeviceManagement/roster-management": {
+            "kind": "article",
+            "type": "topic",
+            "role": "collectionGroup",
+            "url": "/documentation/devicemanagement/roster-management",
+            "title": "Roster Management",
+            "identifier": "doc://com.apple.devicemanagement/documentation/DeviceManagement/roster-management",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "Manage classes for your students and teachers."
+                }
+            ]
+        },
+        "doc://com.apple.devicemanagement/documentation/DeviceManagement/PasswordHash": {
+            "url": "/documentation/devicemanagement/passwordhash",
+            "navigatorTitle": [
+                {
+                    "kind": "identifier",
+                    "text": "PasswordHash"
+                }
+            ],
+            "type": "topic",
+            "identifier": "doc://com.apple.devicemanagement/documentation/DeviceManagement/PasswordHash",
+            "role": "symbol",
+            "fragments": [
+                {
+                    "kind": "text",
+                    "text": "object "
+                },
+                {
+                    "text": "PasswordHash",
+                    "kind": "identifier"
+                }
+            ],
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "A dictionary that contains the password hash for the account."
+                }
+            ],
+            "title": "PasswordHash",
+            "kind": "symbol"
+        },
+        "doc://com.apple.devicemanagement/documentation/DeviceManagement/Fetch-a-books-resource's-relationship": {
+            "role": "symbol",
+            "navigatorTitle": [
+                {
+                    "kind": "identifier",
+                    "text": "Fetch a books resource's relationship"
+                }
+            ],
+            "title": "Fetch a books resource's relationship",
+            "abstract": [],
+            "identifier": "doc://com.apple.devicemanagement/documentation/DeviceManagement/Fetch-a-books-resource's-relationship",
+            "type": "topic",
+            "url": "/documentation/devicemanagement/fetch-a-books-resource's-relationship",
+            "kind": "symbol"
+        },
+        "doc://com.apple.devicemanagement/documentation/DeviceManagement/migrating-managed-devices": {
+            "url": "/documentation/devicemanagement/migrating-managed-devices",
+            "identifier": "doc://com.apple.devicemanagement/documentation/DeviceManagement/migrating-managed-devices",
+            "role": "article",
+            "type": "topic",
+            "title": "Migrating managed devices",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "Migrate managed devices from one device management service to another."
+                }
+            ],
+            "kind": "article"
+        },
+        "doc://com.apple.devicemanagement/documentation/DeviceManagement/devicemanagement-declarations": {
+            "type": "topic",
+            "url": "/documentation/devicemanagement/devicemanagement-declarations",
+            "identifier": "doc://com.apple.devicemanagement/documentation/DeviceManagement/devicemanagement-declarations",
+            "kind": "article",
+            "abstract": [
+                {
+                    "text": "The available declarations for device management.",
+                    "type": "text"
+                }
+            ],
+            "role": "collectionGroup",
+            "title": "Declarations"
+        },
+        "doc://com.apple.devicemanagement/documentation/DeviceManagement/account-driven-enrollment": {
+            "type": "topic",
+            "kind": "article",
+            "url": "/documentation/devicemanagement/account-driven-enrollment",
+            "role": "collectionGroup",
+            "identifier": "doc://com.apple.devicemanagement/documentation/DeviceManagement/account-driven-enrollment",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "Authenticate devices using a user identity-focused workflow."
+                }
+            ],
+            "title": "Account-driven enrollment"
+        }
+    },
+    "legalNotices": {
+        "copyright": "Copyright &copy; 2026 Apple Inc. All rights reserved.",
+        "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+        "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+    }
+}

@@ -1,0 +1,72 @@
+# SystemMigration
+
+The payload that configures system migration.
+
+**Platforms:** macOS 10.12.4
+
+## Discussion
+
+Specify `com.apple.systemmigration` as the payload type.
+
+### Profile availability
+
+### Profile example
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>CustomBehavior</key>
+            <array>
+                <dict>
+                    <key>Context</key>
+                    <string>Windows</string>
+                    <key>Paths</key>
+                    <array>
+                        <dict>
+                            <key>SourcePath</key>
+                            <string>C:/Users/Documents</string>
+                            <key>TargetPath</key>
+                            <string>~/Users/Documents</string>
+                            <key>SourcePathInUserHome</key>
+                            <true/>
+                            <key>TargetPathInUserHome</key>
+                            <true/>
+                        </dict>
+                    </array>
+                </dict>
+            </array>
+            <key>PayloadIdentifier</key>
+            <string>com.example.mysystemmigrationpayload</string>
+            <key>PayloadType</key>
+            <string>com.apple.systemmigration</string>
+            <key>PayloadUUID</key>
+            <string>553d6db9-2704-4127-8384-003926e5b813</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+        </dict>
+    </array>
+    <key>PayloadDisplayName</key>
+    <string>System Migration</string>
+    <key>PayloadIdentifier</key>
+    <string>com.example.myprofile</string>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>75157e67-d7ff-44ec-9ccf-8496be33864a</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+</dict>
+</plist>
+```
+
+## Topics
+
+### Objects
+
+- [SystemMigration.CustomBehaviorItem](/documentation/devicemanagement/systemmigration/custombehavioritem) - The custom behavior dictionary.
+

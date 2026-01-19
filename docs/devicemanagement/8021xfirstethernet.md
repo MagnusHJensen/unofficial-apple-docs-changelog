@@ -1,0 +1,81 @@
+# 8021XFirstEthernet
+
+The payload that configures the first wired Ethernet interface.
+
+**Platforms:** macOS 10.7
+
+## Discussion
+
+Specify `com.apple.firstethernet.managed` as the payload type.
+
+This payload’s contents contain these profile-specific keys:
+
+This payload applies to Ethernet interfaces according to service order, regardless of whether the interface is working.
+
+### Profile availability
+
+### Profile example
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>AuthenticationMethod</key>
+            <string></string>
+            <key>AutoJoin</key>
+            <true/>
+            <key>CaptiveBypass</key>
+            <false/>
+            <key>EAPClientConfiguration</key>
+            <dict>
+                <key>AcceptEAPTypes</key>
+                <array>
+                    <integer>25</integer>
+                </array>
+                <key>UserName</key>
+                <string>user</string>
+                <key>UserPassword</key>
+                <string>password</string>
+            </dict>
+            <key>EncryptionType</key>
+            <string>WPA2</string>
+            <key>HIDDEN_NETWORK</key>
+            <false/>
+            <key>Interface</key>
+            <string>FirstEthernet</string>
+            <key>Password</key>
+            <string>password</string>
+            <key>ProxyType</key>
+            <string>None</string>
+            <key>SetupModes</key>
+            <array>
+                <string>System</string>
+            </array>
+            <key>PayloadIdentifier</key>
+            <string>com.example.my8021Xfirstepayload</string>
+            <key>PayloadType</key>
+            <string>com.apple.firstethernet.managed</string>
+            <key>PayloadUUID</key>
+            <string>b0062f3a-8045-410b-82d2-a926a3957f02</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+        </dict>
+    </array>
+    <key>PayloadDisplayName</key>
+    <string>802.1x First Ethernet</string>
+    <key>PayloadIdentifier</key>
+    <string>com.example.myprofile</string>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>72d32ec9-864e-4f8a-8645-25539172e921</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+</dict>
+</plist>
+```
+

@@ -1,0 +1,58 @@
+# Cellular
+
+The payload that configures cellular settings.
+
+**Platforms:** iOS 7.0, iPadOS 7.0, watchOS 3.2
+
+## Discussion
+
+Specify `com.apple.cellular` as the payload type.
+
+### Profile availability
+
+### Profile example
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>AttachAPN</key>
+            <dict>
+                <key>Name</key>
+                <string>example.com</string>
+            </dict>
+            <key>PayloadIdentifier</key>
+            <string>com.example.mycellularnetworkpayload</string>
+            <key>PayloadType</key>
+            <string>com.apple.cellular</string>
+            <key>PayloadUUID</key>
+            <string>5a024a67-119f-4b38-8648-4c28a054ec5f</string>
+            <key>PayloadVersion</key>
+            <real>1</real>
+        </dict>
+    </array>
+    <key>PayloadDisplayName</key>
+    <string>Cellular</string>
+    <key>PayloadIdentifier</key>
+    <string>com.example.myprofile</string>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>07eeff13-902a-408b-9bec-2228b86f944f</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+</dict>
+</plist>
+```
+
+## Topics
+
+### Objects
+
+- [Cellular.APNsItem](/documentation/devicemanagement/cellular/apnsitem) - A dictionary that contains details about an access point name (APN) configuration.
+- [Cellular.AttachAPN](/documentation/devicemanagement/cellular/attachapn-data.dictionary) - A dictionary that contains details about an attach access point name (APN) configuration.
+

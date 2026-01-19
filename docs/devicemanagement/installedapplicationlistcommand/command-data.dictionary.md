@@ -1,0 +1,6 @@
+# InstalledApplicationListCommand.Command
+
+The command to get a list of the installed apps on a device.
+
+**Platforms:** iOS 5.0, iPadOS 5.0, macOS 10.7, tvOS 10.2, visionOS 1.1, watchOS 10.0
+

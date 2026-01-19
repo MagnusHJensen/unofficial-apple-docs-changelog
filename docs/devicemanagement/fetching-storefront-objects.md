@@ -1,0 +1,26 @@
+# Fetching storefront objects
+
+Pick a region-specific geographic location to retrieve catalog information from.
+
+## Overview
+
+Apple services operate in many countries, regions, and languages. Content varies from one geographic region to another, so each request needs to contain a ** that defines the region and the supported languages for that region. For most requests, you specify the storefront associated with the current user, but you may also specify other storefronts as needed. For example, you might specify a storefront that better matches the user’s preferred language.
+
+Each storefront has a default language and may support one or more additional languages. For example, the United States storefront includes American English as the default language, but also includes Mexican Spanish as an additional supported language. Apple services automatically localize responses using the storefront’s default language, but you can localize to a different language using the `l query` parameter. The value of that parameter needs to be one of the values in the `supportedLanguageTags` attribute of the storefront object. For example, the following request asks the U.S. storefront to return an album in the Mexican Spanish (`es-MX`) localization:
+
+```other
+GET https://api.ent.apple.com/v1/catalog/us/stoken-authenticated-apps?ids=2001350931&platform=iphone&l=es-MX
+```
+
+## Topics
+
+### Requesting a catalog storefront
+
+- [Get a Storefront](/documentation/devicemanagement/get-a-storefront) - Fetch a single storefront by using its identifier.
+- [Get Multiple Storefronts](/documentation/devicemanagement/get-multiple-storefronts) - Fetch one or more storefronts by using their identifiers.
+- [Get All Storefronts](/documentation/devicemanagement/get-all-storefronts) - Fetch all the storefronts in alphabetical order.
+
+### Handling the response
+
+- [Storefronts](/documentation/devicemanagement/storefronts) - A resource object that represents a region that the content is available in, and supported languages for that region.
+

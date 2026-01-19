@@ -1,0 +1,6 @@
+# ScheduleOSUpdateCommand.Command.UpdatesItem
+
+A dictionary that describes the available operating-system updates item.
+
+**Platforms:** iOS 9.0, iPadOS 9.0, macOS 10.11, tvOS 12.0
+

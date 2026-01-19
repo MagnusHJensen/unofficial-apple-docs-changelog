@@ -1,0 +1,76 @@
+# WiFi
+
+The payload that configures Wi-Fi settings.
+
+**Platforms:** iOS 4.0, iPadOS 4.0, macOS 10.7, tvOS 9.0, visionOS 1.0, watchOS 3.2
+
+## Discussion
+
+Specify `com.apple.wifi.managed` as the payload type.
+
+### Profile availability
+
+### Profile example
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>New item</key>
+    <dict>
+        <key>PayloadContent</key>
+        <array>
+            <dict>
+                <key>AutoJoin</key>
+                <true/>
+                <key>CaptiveBypass</key>
+                <false/>
+                <key>DisableAssociationMACRandomization</key>
+                <false/>
+                <key>EncryptionType</key>
+                <string>WPA</string>
+                <key>HIDDEN_NETWORK</key>
+                <true/>
+                <key>IsHotspot</key>
+                <false/>
+                <key>Password</key>
+                <string>Password123</string>
+                <key>PayloadDisplayName</key>
+                <string>Wi-Fi</string>
+                <key>ProxyType</key>
+                <string>None</string>
+                <key>SSID_STR</key>
+                <string>Example</string>
+                <key>PayloadIdentifier</key>
+                <string>com.example.mywifipayload</string>
+                <key>PayloadType</key>
+                <string>com.apple.wifi.managed</string>
+                <key>PayloadUUID</key>
+                <string>94c487e0-d6f8-41e3-b66d-a89994e6919b</string>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+            </dict>
+        </array>
+        <key>PayloadDisplayName</key>
+        <string>Wi-Fi</string>
+        <key>PayloadIdentifier</key>
+        <string>com.example.myprofile</string>
+        <key>PayloadType</key>
+        <string>Configuration</string>
+        <key>PayloadUUID</key>
+        <string>71e9b0f7-02f8-4aea-b365-b381d872909a</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+    </dict>
+</dict>
+</plist>
+```
+
+## Topics
+
+### Objects
+
+- [WiFi.EAPClientConfiguration](/documentation/devicemanagement/wifi/eapclientconfiguration-data.dictionary) - A dictionary that configures an enterprise network.
+- [WiFi.QoSMarkingPolicy](/documentation/devicemanagement/wifi/qosmarkingpolicy-data.dictionary) - A dictionary that defines the quality-of-service settings.
+
