@@ -1,4 +1,4 @@
-# ParentalControlsContentFilter.SiteAllowlistItem
+# ParentalControlsContentFilter.SiteAllowListItem
 
 A dictionary defining a site for the allow list.
 

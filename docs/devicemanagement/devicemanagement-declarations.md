@@ -16,10 +16,14 @@ The available declarations for device management.
 - [AppManaged](/documentation/devicemanagement/appmanaged) - The declaration to configure a managed app.
 - [AudioAccessorySettings](/documentation/devicemanagement/audioaccessorysettings) - The declaration to configure audio accessory settings.
 - [DiskManagementSettings](/documentation/devicemanagement/diskmanagementsettings) - The declaration to configure disk management settings on the device.
+- [ExternalIntelligenceSettings](/documentation/devicemanagement/externalintelligencesettings) - The declaration to configure External Intelligence Integrations settings.
+- [IntelligenceSettings](/documentation/devicemanagement/intelligencesettings) - The declaration to configure Apple Intelligence settings.
+- [KeyboardSettings](/documentation/devicemanagement/keyboardsettings) - The declaration to configure keyboard settings.
 - [LegacyInteractiveProfile](/documentation/devicemanagement/legacyinteractiveprofile) - The declaration to configure an interactive legacy profile.
 - [LegacyProfile](/documentation/devicemanagement/legacyprofile) - The declaration to configure a legacy profile.
 - [ManagementStatusSubscriptions](/documentation/devicemanagement/managementstatussubscriptions) - The declaration to configure status subscriptions.
 - [ManagementTest](/documentation/devicemanagement/managementtest) - The declaration to test declarative device management.
+- [MigrationAssistantSettings](/documentation/devicemanagement/migrationassistantsettings) - The declaration to configure Migration Assistant settings.
 - [MathSettings](/documentation/devicemanagement/mathsettings) - The declaration to configure the math and calculator apps.
 - [Package](/documentation/devicemanagement/package) - The declaration to install a package.
 - [PasscodeSettings](/documentation/devicemanagement/passcodesettings) - The declaration to configure passcode policy settings.
@@ -34,6 +38,7 @@ The available declarations for device management.
 - [SecurityPasskeyAttestation](/documentation/devicemanagement/securitypasskeyattestation) - The declaration to configure the device to allow WebAuthn enterprise attestation for certain passkeys.
 - [ServicesBackgroundTasks](/documentation/devicemanagement/servicesbackgroundtasks) - The declaration to configure background tasks.
 - [ServicesConfigurationFiles](/documentation/devicemanagement/servicesconfigurationfiles) - The managed configuration files for services.
+- [SiriSettings](/documentation/devicemanagement/sirisettings) - The declaration to configure Siri settings.
 - [SoftwareUpdateEnforcementSpecific](/documentation/devicemanagement/softwareupdateenforcementspecific) - A software update enforcement policy for a specific OS release.
 - [SoftwareUpdateSettings](/documentation/devicemanagement/softwareupdatesettings) - The declaration to configure software updates.
 - [WatchEnrollment](/documentation/devicemanagement/watchenrollment) - The declaration to configure an MDMv1 profile for Apple Watch enrollment.

@@ -15,6 +15,7 @@ Reports from the device about its current state.
 - [StatusDeviceModelNumber](/documentation/devicemanagement/statusdevicemodelnumber) - A status report of the device’s hardware number.
 - [StatusDeviceOperatingSystemBuildVersion](/documentation/devicemanagement/statusdeviceoperatingsystembuildversion) - A status report of the device’s software build identifier.
 - [StatusDeviceOperatingSystemFamily](/documentation/devicemanagement/statusdeviceoperatingsystemfamily) - A status report of the device’s operating system family.
+- [StatusDeviceOperatingSystemMarketingName](/documentation/devicemanagement/statusdeviceoperatingsystemmarketingname) - A status report of the device’s operating system marketing name.
 - [StatusDeviceOperatingSystemSupplementalBuildVersion](/documentation/devicemanagement/statusdeviceoperatingsystemsupplementalbuildversion) - A status report of the device’s operating system supplemental build identifier.
 - [StatusDeviceOperatingSystemSupplementalExtraVersion](/documentation/devicemanagement/statusdeviceoperatingsystemsupplementalextraversion) - A status report of the device’s operating system’s Background Security Improvement identifier.
 - [StatusDeviceOperatingSystemVersion](/documentation/devicemanagement/statusdeviceoperatingsystemversion) - A status report of the device’s operating system version.
@@ -23,7 +24,8 @@ Reports from the device about its current state.
 - [StatusDiskManagementFileVaultEnabled](/documentation/devicemanagement/statusdiskmanagementfilevaultenabled) - The enabled status of the File Vault.
 - [StatusManagementClientCapabilities](/documentation/devicemanagement/statusmanagementclientcapabilities) - A status report of the client’s protocol capabilities.
 - [StatusManagementDeclarations](/documentation/devicemanagement/statusmanagementdeclarations) - A status report of the client’s processed declarations.
-- [StatusDeviceOperatingSystemMarketingName](/documentation/devicemanagement/statusdeviceoperatingsystemmarketingname) - A status report of the device’s operating system marketing name.
+- [StatusMigrationAssistantReport](/documentation/devicemanagement/statusmigrationassistantreport) - Reports the status of a completed migration.
+- [StatusMigrationAssistantState](/documentation/devicemanagement/statusmigrationassistantstate) - The current migration state of the system.
 - [StatusMDMApp](/documentation/devicemanagement/statusmdmapp) - A status report of the client’s MDM-installed apps.
 - [StatusPackageList](/documentation/devicemanagement/statuspackagelist) - The client’s declarative packages.
 - [StatusPasscodeCompliance](/documentation/devicemanagement/statuspasscodecompliance) - A status report of passcode compliance.
