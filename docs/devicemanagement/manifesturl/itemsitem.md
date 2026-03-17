@@ -4,6 +4,22 @@ An array of dictionaries representing what the manifest installs.
 
 **Platforms:** iOS 7.0, iPadOS 7.0, macOS 10.9, tvOS 10.2, visionOS 1.1, watchOS 10.0
 
+## Properties
+
+### assets
+
+- **Type:** `[ManifestURL.ItemsItem.AssetsItem]`
+- **Required:** Yes
+
+An array of dictionaries that describe an item to install.
+
+### metadata
+
+- **Type:** `ManifestURL.ItemsItem.Metadata`
+- **Required:** Yes
+
+The metadata for an application or package manifest item.
+
 ## Topics
 
 ### Objects

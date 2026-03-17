@@ -4,3 +4,20 @@ The dictionary that defines which applications can have traffic outside the VPN 
 
 **Platforms:** iOS 13.6, iPadOS 13.6, visionOS 1.0
 
+## Properties
+
+### BundleIdentifier
+
+- **Type:** `string`
+- **Required:** Yes
+
+The app’s bundle identifier.
+
+### LimitToProtocols
+
+- **Type:** `[string]`
+- **Required:** No
+- **Allowed Values:** `UDP`
+
+Limit the exception to only the specified list of protocols, with support for `UDP` only.
+

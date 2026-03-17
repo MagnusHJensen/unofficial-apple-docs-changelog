@@ -2,6 +2,13 @@
 
 **Platforms:** Device Assignment Services , VPP License Management 
 
+## Properties
+
+### devices
+
+- **Type:** `DeviceListResponse.Devices`
+- **Required:** No
+
 ## Topics
 
 ### Dictionaries

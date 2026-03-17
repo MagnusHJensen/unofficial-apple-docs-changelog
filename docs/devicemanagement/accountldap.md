@@ -4,6 +4,43 @@ The declaration to configure a Lightweight Directory Access Protocol (LDAP) acco
 
 **Platforms:** iOS 15.0, iPadOS 15.0, macOS 13.0, visionOS 1.1
 
+## Properties
+
+### AuthenticationCredentialsAssetReference
+
+- **Type:** `string`
+- **Required:** No
+
+The identifier of an asset declaration that contains the credentials for this account. Set the corresponding asset type to `CredentialUserNameAndPassword`.
+
+### HostName
+
+- **Type:** `string`
+- **Required:** Yes
+
+The hostname or IP address of the LDAP server.
+
+### Port
+
+- **Type:** `integer`
+- **Required:** No
+
+The port number or IP address of the LDAP server.
+
+### SearchSettings
+
+- **Type:** `[AccountLDAPSearchSettingsItemObject]`
+- **Required:** No
+
+The array of nodes to start LDAP searches from. There must be at least one node for this account to be useful. macOS only searches one node and ignores other items in the array.
+
+### VisibleName
+
+- **Type:** `string`
+- **Required:** No
+
+The name that apps show to the user for this LDAP account. If not present, the system generates a suitable default.
+
 ## Discussion
 
 Specify `com.apple.configuration.account.ldap` as the declaration type.

@@ -4,6 +4,22 @@ The declaration to install a package.
 
 **Platforms:** macOS 26.0
 
+## Properties
+
+### InstallBehavior
+
+- **Type:** `PackageInstallBehaviorObject`
+- **Required:** No
+
+A dictionary that describes how and when to install the package.
+
+### ManifestURL
+
+- **Type:** `string`
+- **Required:** Yes
+
+The URL of the manifest document for the package that the device downloads. The manifest is returned as a [ManifestURL](/documentation/devicemanagement/manifesturl) property list. The `url` property of the manifest must point to the package (.pkg) file to install.
+
 ## Discussion
 
 Specify `com.apple.configuration.package` as the declaration type.

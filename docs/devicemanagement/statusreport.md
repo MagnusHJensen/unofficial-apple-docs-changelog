@@ -2,6 +2,24 @@
 
 **Platforms:** iOS , iPadOS , Mac Catalyst , macOS , tvOS , visionOS , watchOS , Device Assignment Services , VPP License Management 
 
+## Properties
+
+### Errors
+
+- **Type:** `[StatusReport.Error]`
+- **Required:** Yes
+
+### FullReport
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+### StatusItems
+
+- **Type:** `StatusReport.StatusItems`
+- **Required:** Yes
+
 ## Topics
 
 ### Dictionaries

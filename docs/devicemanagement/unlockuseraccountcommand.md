@@ -4,6 +4,22 @@ The command to unlock a user account that the system locked because of too many 
 
 **Platforms:** macOS 10.13
 
+## Properties
+
+### Command
+
+- **Type:** `UnlockUserAccountCommand.Command`
+- **Required:** Yes
+
+The command dictionary.
+
+### CommandUUID
+
+- **Type:** `string`
+- **Required:** Yes
+
+The unique identifier of the command.
+
 ## Topics
 
 ### Objects

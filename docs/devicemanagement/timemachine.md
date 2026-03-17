@@ -4,6 +4,69 @@ The payload that configures Time Machine.
 
 **Platforms:** macOS 10.7
 
+## Properties
+
+### AutoBackup
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `true`, performs automatic backups at regular intervals.
+
+### BackupAllVolumes
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, backs up only the startup volume by default.
+
+### BackupDestURL
+
+- **Type:** `string`
+- **Required:** Yes
+
+The URL of the backup destination.
+
+### BackupSizeMB
+
+- **Type:** `integer`
+- **Required:** No
+- **Default:** `0`
+
+The backup size limit, in megabytes. Set to 0 for unlimited.
+
+### BackupSkipSys
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, skips system files and folders by default.
+
+### BasePaths
+
+- **Type:** `[string]`
+- **Required:** No
+
+The list of paths to back up besides the startup volume.
+
+### MobileBackups
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `true`, create local backup snapshots when not connected to the network.
+
+### SkipPaths
+
+- **Type:** `[string]`
+- **Required:** No
+
+The path to skip from start volume.
+
 ## Discussion
 
 Specify `com.apple.MCX.TimeMachine` as the payload type.

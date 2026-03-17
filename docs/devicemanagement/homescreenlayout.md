@@ -4,6 +4,22 @@ The payload that configures the Home Screen layout.
 
 **Platforms:** iOS 9.3, iPadOS 9.3, tvOS 11.0
 
+## Properties
+
+### Dock
+
+- **Type:** `[HomeScreenLayout.IconItem]`
+- **Required:** No
+
+An array of dictionaries, each of which must conform to the icon dictionary format. If this key isn’t present, the user’s Dock is empty.
+
+### Pages
+
+- **Type:** `[[HomeScreenLayout.IconItem]]`
+- **Required:** Yes
+
+An array of arrays of dictionaries, each of which must conform to the icon dictionary format.
+
 ## Discussion
 
 Specify `com.apple.homescreenlayout` as the payload type.

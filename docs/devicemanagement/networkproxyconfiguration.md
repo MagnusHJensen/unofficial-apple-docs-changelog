@@ -4,6 +4,15 @@ The payload that configures network proxies for a device.
 
 **Platforms:** macOS 10.7
 
+## Properties
+
+### Proxies
+
+- **Type:** `NetworkProxyConfiguration.Proxies`
+- **Required:** Yes
+
+The dictionary containing all the proxies for this device.
+
 ## Discussion
 
 Specify `com.apple.SystemConfiguration` as the payload type.

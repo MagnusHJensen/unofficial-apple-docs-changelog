@@ -4,6 +4,40 @@ The declaration to configure background tasks.
 
 **Platforms:** macOS 15.0
 
+## Properties
+
+### ExecutableAssetReference
+
+- **Type:** `string`
+- **Required:** No
+
+Specifies the identifier of an asset declaration containing a reference to the files to be used for the background task configuration. The corresponding asset must be of type `com.apple.asset.data`.
+
+The referenced data must be a zip archive of an entire directory, that will be expanded and stored in a well known location for the background task. The asset’s “ContentType” and “Hash-SHA-256” keys in the “Reference” key are required.
+
+This file should contain background task executables, scripts, and configuration files, but not the `launchd` configuration files.
+
+### LaunchdConfigurations
+
+- **Type:** `[ServicesBackgroundTasksLaunchdItemObject]`
+- **Required:** No
+
+An array of `launchd` configuration files used to run the background tasks.
+
+### TaskDescription
+
+- **Type:** `string`
+- **Required:** No
+
+A description of the set of background tasks managed by this configuration.
+
+### TaskType
+
+- **Type:** `string`
+- **Required:** Yes
+
+The unique identifier of the set of background tasks managed with this configuration. This should be a reverse DNS style identifier. The system uses this identifier to differentiate between tasks in different configurations.
+
 ## Discussion
 
 Specify `com.apple.configuration.services.background-tasks` as the declaration type.

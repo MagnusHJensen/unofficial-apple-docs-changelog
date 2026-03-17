@@ -4,3 +4,12 @@ The dictionary of vendor-specific configuration items.
 
 **Platforms:** iOS 11.0, iPadOS 11.0, macOS 10.15, visionOS 1.1
 
+## Properties
+
+### ANY
+
+- **Type:** `any`
+- **Required:** No
+
+Key/value pairs.
+

@@ -4,6 +4,38 @@ The request for registering a user.
 
 **Platforms:** Device Assignment Services , VPP License Management 
 
+## Properties
+
+### clientUserIdStr
+
+- **Type:** `string`
+- **Required:** Yes
+
+The identifier supplied by the client when registering a user. The identifier must be unique within the organization.
+
+### email
+
+- **Type:** `string`
+- **Required:** No
+
+The user’s email address.
+
+### managedAppleIDStr
+
+- **Type:** `string`
+- **Required:** No
+
+The Apple Account associated with the user. This ID’s organization must match the organization of the provided `sToken`.
+
+See [Associating an Apple Account with a Volume Purchase Program (VPP) User](/documentation/devicemanagement/associating-an-apple-id-with-a-volume-purchase-program-vpp-user) for more information.
+
+### sToken
+
+- **Type:** `string`
+- **Required:** Yes
+
+The authentication token. For more information, see [Authentication](/documentation/devicemanagement/managing-apps-and-books-through-web-services-legacy#Authentication).
+
 ## Discussion
 
 ### ClientUserIdStr

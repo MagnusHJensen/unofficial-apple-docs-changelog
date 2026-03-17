@@ -4,6 +4,16 @@ The payload that configures the Finder’s contextual menu to bypass the system 
 
 **Platforms:** macOS 10.8
 
+## Properties
+
+### DisableOverride
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, disables the Finder’s contextual menu item.
+
 ## Discussion
 
 Specify `com.apple.systempolicy.managed` as the payload type.

@@ -4,6 +4,15 @@ The client’s declarative packages.
 
 **Platforms:** macOS 26.0
 
+## Properties
+
+### package.list
+
+- **Type:** `[StatusPackageListPackageObject]`
+- **Required:** Yes
+
+An array of dictionaries that describe the device’s declarative packages.
+
 ## Discussion
 
 ### Status item availability

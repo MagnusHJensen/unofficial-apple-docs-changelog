@@ -4,6 +4,29 @@ Information about a status error.
 
 **Platforms:** macOS 26.0
 
+## Properties
+
+### code
+
+- **Type:** `string`
+- **Required:** Yes
+
+A code for the state.
+
+### description
+
+- **Type:** `string`
+- **Required:** No
+
+A description of the state.
+
+### details
+
+- **Type:** `StatusPackageListStatusReason_DetailsObject`
+- **Required:** No
+
+A dictionary that contains additional details about the state.
+
 ## Topics
 
 ### Objects

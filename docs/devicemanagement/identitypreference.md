@@ -4,6 +4,22 @@ The payload that configures the user’s identity on the device.
 
 **Platforms:** macOS 10.12
 
+## Properties
+
+### Name
+
+- **Type:** `string`
+- **Required:** Yes
+
+The email address (in RFC 822 format), DNS host name, or other name that uniquely identifies a service requiring this identity.
+
+### PayloadCertificateUUID
+
+- **Type:** `string`
+- **Required:** Yes
+
+The UUID of the certificate payload within the same profile to use for the identity credential.
+
 ## Discussion
 
 Specify `com.apple.security.identitypreference` as the payload type.

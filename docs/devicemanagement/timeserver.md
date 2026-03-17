@@ -4,6 +4,22 @@ The payload that configures the time server.
 
 **Platforms:** macOS 10.12.4
 
+## Properties
+
+### timeServer
+
+- **Type:** `string`
+- **Required:** No
+
+The NTP server to connect to. In macOS 10.13 and later, only one time server is supported.
+
+### timeZone
+
+- **Type:** `string`
+- **Required:** No
+
+The time zone path location string in `/usr/share/zoneinfo/`; for example, `America/Denver` or `Zulu`.
+
 ## Discussion
 
 Specify `com.apple.MCX` as the payload type.

@@ -4,6 +4,15 @@ A dictionary that contains numeric restrictions.
 
 **Platforms:** iOS 4.0, iPadOS 4.0, tvOS 9.0, visionOS 1.1, watchOS 10.0
 
+## Properties
+
+### ANY restriction name
+
+- **Type:** `RestrictionsResponse.ProfileRestrictions.ANY profile identifier.RestrictedValue.ANY restriction name`
+- **Required:** No
+
+The numeric restriction parameters.
+
 ## Topics
 
 ### Objects

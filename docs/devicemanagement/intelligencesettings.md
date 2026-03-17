@@ -4,6 +4,87 @@ The declaration to configure Apple Intelligence settings.
 
 **Platforms:** iOS 26.4 (Beta), iPadOS 26.4 (Beta), macOS 26.4 (Beta), visionOS 26.4 (Beta)
 
+## Properties
+
+### AllowAppleIntelligenceReport
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, disables Apple Intelligence Report.
+
+### AllowGenmoji
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, disables Genmoji.
+
+### AllowImagePlayground
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, disables Image Playground.
+
+### AllowImageWand
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, disables Image Wand.
+
+### AllowPersonalizedHandwritingResults
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, disables Personalized Handwriting Results.
+
+### AllowVisualIntelligenceSummary
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, disables Visual Intelligence Summary.
+
+### AllowWritingTools
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, disables Writing Tools.
+
+### Apps
+
+- **Type:** `IntelligenceSettingsAppsObject`
+- **Required:** No
+
+If present, configures app-specific Intelligence features.
+
+### ForceOnDeviceOnlyDictation
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, forces On-Device Only Dictation.
+
+### ForceOnDeviceOnlyTranslation
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, forces On-Device Only Translation.
+
 ## Discussion
 
 Specify `com.apple.configuration.intelligence.settings` as the declaration type.

@@ -4,6 +4,52 @@ The payload that configures the system policy.
 
 **Platforms:** macOS 10.8
 
+## Properties
+
+### Comment
+
+- **Type:** `string`
+- **Required:** No
+
+This string appears in the System Policy UI. If it’s missing, `PayloadDisplayName` or `PayloadDescription` is entered into this field before the rule is added to the System Policy database.
+
+### Expiration
+
+- **Type:** `date`
+- **Required:** No
+
+The expiration date for rules being processed.
+
+### LeafCertificate
+
+- **Type:** `data`
+- **Required:** No
+
+The single leaf certificate for the app that is in the allow list.
+
+### OperationType
+
+- **Type:** `string`
+- **Required:** No
+- **Default:** `operation:execute`
+- **Allowed Values:** `operation:execute`, `operation:install`, `operation:lsopen`
+
+The type of operation.
+
+### Priority
+
+- **Type:** `number`
+- **Required:** No
+
+The rule’s priority.
+
+### Requirement
+
+- **Type:** `string`
+- **Required:** No
+
+The policy requirement. This key must follow the syntax described in [Code Signing Requirement Language](https://developer.apple.com/library/archive/documentation/Security/Conceptual/CodeSigningGuide/RequirementLang/RequirementLang.html#//apple_ref/doc/uid/TP40005929-CH5).
+
 ## Discussion
 
 Specify `com.apple.systempolicy.rule` as the payload type.

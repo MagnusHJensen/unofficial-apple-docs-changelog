@@ -4,6 +4,19 @@ The payload that configures certificate revocation checking.
 
 **Platforms:** iOS 14.2, iPadOS 14.2, visionOS 1.1
 
+## Properties
+
+### EnabledForCerts
+
+- **Type:** `[CertificateRevocation.SubjectPublicKeyInfoHashDict]`
+- **Required:** No
+
+An array of certificates that the system checks for revocation.
+
+Specifying a certificate authority (CA) enables revocation checking for all certificates chaining up to that CA.
+
+It’s not necessary to specify trusted root certificates because they’re implicitly specified. See [https://support.apple.com/en-us/HT209143](https://support.apple.com/en-us/HT209143) for the available trusted root certificates for Apple operating systems.
+
 ## Discussion
 
 Specify `com.apple.security.certificaterevocation` as the payload type.

@@ -4,6 +4,22 @@ The payload that configures a root certificate.
 
 **Platforms:** iOS 4.0, iPadOS 4.0, macOS 10.7, tvOS 9.0, visionOS 1.0, watchOS 3.0
 
+## Properties
+
+### PayloadCertificateFileName
+
+- **Type:** `string`
+- **Required:** No
+
+The file name of the enclosed certificate.
+
+### PayloadContent
+
+- **Type:** `data`
+- **Required:** Yes
+
+The binary representation of the payload encoded in base64.
+
 ## Discussion
 
 Specify `com.apple.security.root` as the payload type.

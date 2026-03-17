@@ -4,6 +4,29 @@ The payload that configures a Lock Screen message.
 
 **Platforms:** iOS 9.3, iPadOS 9.3
 
+## Properties
+
+### AssetTagInformation
+
+- **Type:** `string`
+- **Required:** No
+
+The asset tag information for the device, displayed in the Login Window and Lock Screen.
+
+### IfLostReturnToMessage
+
+- **Type:** `string`
+- **Required:** No
+
+Deprecated. Use `LockScreenFootnote` instead.
+
+### LockScreenFootnote
+
+- **Type:** `string`
+- **Required:** No
+
+The footnote displayed in the Login Window and Lock Screen.
+
 ## Discussion
 
 Specify `com.apple.shareddeviceconfiguration` as the payload type.

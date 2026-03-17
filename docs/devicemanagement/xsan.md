@@ -4,6 +4,52 @@ The payload that configures an Xsan client system.
 
 **Platforms:** macOS 10.10
 
+## Properties
+
+### fsnameservers
+
+- **Type:** `[string]`
+- **Required:** No
+
+An array of storage area network (SAN) File System Name Server coordinators. The list should contain the same addresses in the same order as the metadata controller (MDC) `/Library/Preferences/Xsan/fsnameservers` file.
+
+This key is required for StorNext SANs.
+
+### sanAuthMethod
+
+- **Type:** `string`
+- **Required:** No
+- **Allowed Values:** `auth_secret`
+
+The authentication method for the SAN. This key is required for all Xsan SANs. It’s optional for StorNext SANs but should be set if the StorNext SAN uses an `auth_secret` file.
+
+Only one value is accepted: `auth_secret`
+
+### sanConfigURLs
+
+- **Type:** `[string]`
+- **Required:** No
+
+An array of LDAP URLs where Xsan systems can obtain SAN configuration updates. There should be one entry for each Xsan MDC.
+
+This key is required for all Xsan SANs.
+
+Example URL: `ldaps://mdc1.example.com:389`.
+
+### sanName
+
+- **Type:** `string`
+- **Required:** Yes
+
+The name of the SAN. This key is required for all Xsan SANs. The name must exactly match the name of the SAN defined in the metadata server.
+
+### sharedSecret
+
+- **Type:** `string`
+- **Required:** Yes
+
+The shared secret used for Xsan network authentication. This key is required when the `sanAuthMethod` key is present. The value should equal the content of the MDC’s `/Library/Preferences/Xsan/.auth_secret` file.
+
 ## Discussion
 
 Specify `com.apple.xsan` as the payload type.

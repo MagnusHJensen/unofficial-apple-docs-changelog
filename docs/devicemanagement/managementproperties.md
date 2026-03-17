@@ -4,6 +4,8 @@ The declaration to configure the properties on the device.
 
 **Platforms:** iOS 16.0, iPadOS 16.0, macOS 13.0, tvOS 16.0, visionOS 1.1, watchOS 10.0
 
+## Properties
+
 ## Discussion
 
 Specify `com.apple.management.properties` as the declaration type.

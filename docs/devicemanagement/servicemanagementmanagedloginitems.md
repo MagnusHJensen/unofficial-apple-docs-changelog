@@ -4,6 +4,15 @@ This payload that configures managed login items, which auto-enables and auto-al
 
 **Platforms:** macOS 13.0
 
+## Properties
+
+### Rules
+
+- **Type:** `[ServiceManagementManagedLoginItems.Rule]`
+- **Required:** Yes
+
+An array of service management rules.
+
 ## Discussion
 
 Specify `com.apple.servicemanagement` as the payload type.

@@ -4,6 +4,51 @@ The payload that configures subscribed calendars.
 
 **Platforms:** iOS 4.0, iPadOS 4.0, visionOS 1.1
 
+## Properties
+
+### SubCalAccountDescription
+
+- **Type:** `string`
+- **Required:** No
+
+The description of the account.
+
+### SubCalAccountHostName
+
+- **Type:** `string`
+- **Required:** Yes
+
+The server’s address.
+
+### SubCalAccountPassword
+
+- **Type:** `string`
+- **Required:** No
+
+The user’s password.
+
+### SubCalAccountUsername
+
+- **Type:** `string`
+- **Required:** No
+
+The user’s user name.
+
+### SubCalAccountUseSSL
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system enables SSL.
+
+### VPNUUID
+
+- **Type:** `string`
+- **Required:** No
+
+The VPNUUID of the per-app VPN the account uses for network communication. Available in iOS 14 and later.
+
 ## Discussion
 
 Specify `com.apple.subscribedcalendar.account` as the payload type.

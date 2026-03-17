@@ -4,6 +4,29 @@ The payload that configures AirPlay settings.
 
 **Platforms:** iOS 7.0, iPadOS 7.0, macOS 10.10
 
+## Properties
+
+### AllowList
+
+- **Type:** `[AirPlay.AllowListItem]`
+- **Required:** No
+
+If present, only AirPlay destinations in this list are available to the device. This allow list applies to supervised devices.
+
+### Passwords
+
+- **Type:** `[AirPlay.PasswordsItem]`
+- **Required:** No
+
+If present, sets passwords for known AirPlay destinations. Using multiple entries for the same destination, whether within the same payload or across multiple installed payloads, is an error and results in undefined behavior.
+
+### Whitelist
+
+- **Type:** `[AirPlay.AllowListItem]`
+- **Required:** No
+
+Use `AllowList` instead. This key is deprecated in iOS 14.5 and macOS 11.3.
+
 ## Discussion
 
 Specify `com.apple.airplay` as the payload type.

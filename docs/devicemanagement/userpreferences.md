@@ -4,6 +4,16 @@ The payload that configures iCloud password preferences.
 
 **Platforms:** macOS 10.12
 
+## Properties
+
+### DisableUsingiCloudPassword
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, disables the iCloud password for local accounts.
+
 ## Discussion
 
 Specify `com.apple.preference.users` as the payload type.

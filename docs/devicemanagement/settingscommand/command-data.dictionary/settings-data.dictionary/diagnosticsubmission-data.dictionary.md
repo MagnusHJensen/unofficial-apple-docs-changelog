@@ -4,3 +4,20 @@ A dictionary that contains diagnostic submission settings.
 
 **Platforms:** iOS 9.3, iPadOS 9.3
 
+## Properties
+
+### Enabled
+
+- **Type:** `boolean`
+- **Required:** Yes
+
+If `true`, enables diagnostic submission. If `false`, disables diagnostic submission.
+
+### Item
+
+- **Type:** `string`
+- **Required:** Yes
+- **Allowed Values:** `DiagnosticSubmission`
+
+The string that defines this setting type.
+

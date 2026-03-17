@@ -4,6 +4,15 @@ The payload that configures the default fallback global Ethernet interface.
 
 **Platforms:** iOS 17.0, iPadOS 17.0, macOS 10.13, tvOS 17.0
 
+## Properties
+
+### ANY
+
+- **Type:** `any`
+- **Required:** No
+
+Keys relevant to 802.1X configuration. User enrollment payloads don’t support the various proxy keys, including `ProxyType`, `ProxyServer`, `ProxyServerPort`, `ProxyUsername`, `ProxyPassword`, `ProxyPACURL` and `ProxyPACFallbackAllowed`.
+
 ## Discussion
 
 Specify `com.apple.globalethernet.managed` as the payload type.

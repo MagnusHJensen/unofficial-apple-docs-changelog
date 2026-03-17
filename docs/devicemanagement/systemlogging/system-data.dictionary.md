@@ -4,3 +4,12 @@ This dictionary has one key, `Enable-Private-Data`. Setting that value to `true`
 
 **Platforms:** iOS 9.0, iPadOS 9.0, tvOS 9.0, visionOS 1.0, watchOS 3.0
 
+## Properties
+
+### ANY
+
+- **Type:** `any`
+- **Required:** No
+
+TBD
+

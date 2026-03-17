@@ -4,6 +4,15 @@ The device’s declarative managed apps.
 
 **Platforms:** iOS 17.2, iPadOS 17.2, macOS 26.0, visionOS 2.4
 
+## Properties
+
+### app.managed.list
+
+- **Type:** `[StatusAppManagedListAppObject]`
+- **Required:** Yes
+
+An array of dictionaries that describe the device’s declarative managed apps.
+
 ## Discussion
 
 ### Status item availability

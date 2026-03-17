@@ -4,6 +4,22 @@ The command to install an enterprise app on a device.
 
 **Platforms:** macOS 10.13.6
 
+## Properties
+
+### Command
+
+- **Type:** `InstallEnterpriseApplicationCommand.Command`
+- **Required:** Yes
+
+The command dictionary.
+
+### CommandUUID
+
+- **Type:** `string`
+- **Required:** Yes
+
+The unique identifier of the command.
+
 ## Topics
 
 ### Objects

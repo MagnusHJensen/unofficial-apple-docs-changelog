@@ -4,6 +4,38 @@ The payload that configures scripts to run at login and logout.
 
 **Platforms:** macOS 10.7
 
+## Properties
+
+### loginscripts
+
+- **Type:** `[LoginWindowScripts.ScriptsItems]`
+- **Required:** No
+
+An array of one or more dictionaries of scripts to run at user login time.
+
+### logoutscripts
+
+- **Type:** `[LoginWindowScripts.ScriptsItems]`
+- **Required:** No
+
+An array of one or more dictionaries of scripts to run at user logout time.
+
+### skipLoginHook
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system doesn’t execute the login scripts during login.
+
+### skipLogoutHook
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system doesn’t execute the logout scripts during logout.
+
 ## Discussion
 
 Specify `com.apple.mcxloginscripts` as the payload type.

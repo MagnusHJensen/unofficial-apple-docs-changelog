@@ -4,6 +4,15 @@ A response that contains the resource objects for the request.
 
 **Platforms:** Device Assignment Services , VPP License Management 
 
+## Properties
+
+### results
+
+- **Type:** `ResultsResponse.Results`
+- **Required:** Yes
+
+
+
 ## Topics
 
 ### Dictionaries

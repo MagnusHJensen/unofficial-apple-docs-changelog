@@ -4,6 +4,15 @@ The payload that configures profile removal.
 
 **Platforms:** iOS 4.0, iPadOS 4.0, macOS 10.7, tvOS 9.0
 
+## Properties
+
+### RemovalPassword
+
+- **Type:** `string`
+- **Required:** No
+
+The password to allow removing the profile.
+
 ## Discussion
 
 Specify `com.apple.profileRemovalPassword` as the payload type.

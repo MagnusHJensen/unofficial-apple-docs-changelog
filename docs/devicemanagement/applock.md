@@ -4,6 +4,15 @@ The payload that configures a device to run a single app.
 
 **Platforms:** iOS 6.0, iPadOS 6.0, tvOS 10.2
 
+## Properties
+
+### App
+
+- **Type:** `AppLock.App`
+- **Required:** Yes
+
+A dictionary that contains information about the app.
+
 ## Discussion
 
 Specify `com.apple.app.lock` as the payload type.

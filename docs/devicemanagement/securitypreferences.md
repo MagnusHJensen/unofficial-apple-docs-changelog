@@ -4,6 +4,32 @@ The payload that configures security preferences.
 
 **Platforms:** macOS 10.10
 
+## Properties
+
+### dontAllowFireWallUI
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, disables user changes to the firewall settings.
+
+### dontAllowLockMessageUI
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, disables user changes to the lock message.
+
+### dontAllowPasswordResetUI
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, disables user changes to the password.
+
 ## Discussion
 
 Specify `com.apple.preference.security` as the payload type.

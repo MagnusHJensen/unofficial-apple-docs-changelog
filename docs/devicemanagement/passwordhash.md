@@ -4,6 +4,15 @@ A dictionary that contains the password hash for the account.
 
 **Platforms:** macOS 10.11
 
+## Properties
+
+### SALTED-SHA512-PBKDF2
+
+- **Type:** `PasswordHash.SALTED-SHA512-PBKDF2`
+- **Required:** Yes
+
+A dictionary that contains the `entropy`, `iterations`, and `salt` elements to create the password hash using the CommonCrypto libraries, or equivalent. Convert this dictionary to binary data before setting it as the value for the password hash.
+
 ## Topics
 
 ### Objects

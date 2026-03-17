@@ -4,6 +4,29 @@ The payload that configures the extensions that the system allows or disallows t
 
 **Platforms:** macOS 10.13
 
+## Properties
+
+### AllowedExtensions
+
+- **Type:** `[string]`
+- **Required:** No
+
+An array of bundle identifiers for allowed extensions.
+
+### DeniedExtensionPoints
+
+- **Type:** `[string]`
+- **Required:** No
+
+An array of extension points for extensions that the system doesn’t allow to run.
+
+### DeniedExtensions
+
+- **Type:** `[string]`
+- **Required:** No
+
+An array of bundle identifiers for extensions that the system doesn’t allow to run.
+
 ## Discussion
 
 Specify `com.apple.NSExtension` as the payload type.

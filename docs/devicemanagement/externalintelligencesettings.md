@@ -4,6 +4,31 @@ The declaration to configure External Intelligence Integrations settings.
 
 **Platforms:** iOS 26.4 (Beta), iPadOS 26.4 (Beta), macOS 26.4 (Beta), visionOS 26.4 (Beta)
 
+## Properties
+
+### AllowedWorkspaceIDs
+
+- **Type:** `[string]`
+- **Required:** No
+
+An array of strings, but currently restricted to a single element. If present, Apple Intelligence allows use of only the given external integration workspace ID, and requires a sign-in to make requests. The user is required to sign in to integrations that support signing in. Multiple values combine using an intersect operation.
+
+### AllowSignIn
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, disables sign-in for external intelligence integrations.
+
+### Enabled
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, disables external intelligence integrations.
+
 ## Discussion
 
 Specify `com.apple.configuration.external-intelligence.settings` as the declaration type.

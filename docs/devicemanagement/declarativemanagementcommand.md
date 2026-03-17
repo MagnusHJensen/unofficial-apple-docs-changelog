@@ -4,6 +4,22 @@ The command to enable your server to support declarative management or trigger a
 
 **Platforms:** iOS 15.0, iPadOS 15.0, macOS 13.0, tvOS 16.0, visionOS 1.1, watchOS 10.0
 
+## Properties
+
+### Command
+
+- **Type:** `DeclarativeManagementCommand.Command`
+- **Required:** Yes
+
+The command dictionary.
+
+### CommandUUID
+
+- **Type:** `string`
+- **Required:** Yes
+
+The unique identifier of the command.
+
 ## Topics
 
 ### Objects

@@ -4,6 +4,43 @@ The payload that configures a Google account.
 
 **Platforms:** iOS 9.3, iPadOS 9.3, visionOS 1.1
 
+## Properties
+
+### AccountDescription
+
+- **Type:** `string`
+- **Required:** No
+
+A user-visible description of the Google account, shown in the Mail and Settings apps.
+
+### AccountName
+
+- **Type:** `string`
+- **Required:** No
+
+The user’s full name for the Google account. This name appears in sent messages.
+
+### CommunicationServiceRules
+
+- **Type:** `GoogleAccount.CommunicationServiceRules`
+- **Required:** No
+
+The communication service handler rules for this account.
+
+### EmailAddress
+
+- **Type:** `string`
+- **Required:** Yes
+
+The full Google email address for the account.
+
+### VPNUUID
+
+- **Type:** `string`
+- **Required:** No
+
+The VPNUUID of the per-app VPN the account uses for network communication. Available in iOS 14 and later.
+
 ## Discussion
 
 Specify `com.apple.google-oauth` as the payload type.

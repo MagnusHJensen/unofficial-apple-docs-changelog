@@ -4,6 +4,36 @@ The payload that configures DNS proxies.
 
 **Platforms:** iOS 11.0, iPadOS 11.0, macOS 10.15, visionOS 1.1
 
+## Properties
+
+### AppBundleIdentifier
+
+- **Type:** `string`
+- **Required:** Yes
+
+The bundle identifier of the app containing the DNS proxy network extension.
+
+### DNSProxyUUID
+
+- **Type:** `string`
+- **Required:** No
+
+A globally unique identifier for this DNS proxy configuration. The proxy processes DNS lookups traffic for managed apps with the same `DNSProxyUUID` in their app attributes. This key is required for user enrollment.
+
+### ProviderBundleIdentifier
+
+- **Type:** `string`
+- **Required:** No
+
+The bundle identifier of the DNS proxy network extension to use. Declaring the bundle identifier is useful for apps that contain more than one DNS proxy extension.
+
+### ProviderConfiguration
+
+- **Type:** `DNSProxy.ProviderConfiguration`
+- **Required:** No
+
+The dictionary of vendor-specific configuration items.
+
 ## Discussion
 
 Specify `com.apple.dnsProxy.managed` as the payload type.

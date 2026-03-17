@@ -4,6 +4,29 @@ The payload that configures system logging.
 
 **Platforms:** iOS 9.0, iPadOS 9.0, macOS 10.12, tvOS 9.0, visionOS 1.0, watchOS 3.0
 
+## Properties
+
+### Processes
+
+- **Type:** `SystemLogging.Processes`
+- **Required:** No
+
+Not to be used.
+
+### Subsystems
+
+- **Type:** `SystemLogging.Subsystems`
+- **Required:** No
+
+A dictionary enabling the logging level for subsystems. See `Customizing Logging Behavior While Debugging` for more details about the format of the dictionary.
+
+### System
+
+- **Type:** `SystemLogging.System`
+- **Required:** No
+
+This dictionary has one key, `Enable-Private-Data`. Setting that value to `true` enables private data logging for the entire system.
+
 ## Discussion
 
 Specify `com.apple.system.logging` as the payload type.

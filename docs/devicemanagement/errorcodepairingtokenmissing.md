@@ -4,6 +4,37 @@ An error response that indicates a missing pairing token.
 
 **Platforms:** watchOS 10.0
 
+## Properties
+
+### code
+
+- **Type:** `string`
+- **Required:** Yes
+- **Allowed Values:** `com.apple.watch.pairing.token.missing`
+
+Indicates that the pairing token, which the system requires to enroll the watch, is missing.
+
+### description
+
+- **Type:** `string`
+- **Required:** No
+
+A description of the error. Only use this for logging purposes and don’t display it to the user.
+
+### details
+
+- **Type:** `ErrorCodePairingTokenMissing.Details`
+- **Required:** Yes
+
+A dictionary that contains additional data about the error code.
+
+### message
+
+- **Type:** `string`
+- **Required:** No
+
+A description of the error to display to the user.
+
 ## Discussion
 
 The schema for a JSON or property list XML document that an MDM server’s 403 response body contains. The response headers need to include a “Content-Type” header that indicates whether the response returns JSON or XML.

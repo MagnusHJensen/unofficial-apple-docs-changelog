@@ -4,6 +4,32 @@ The payload that configures FileVault options.
 
 **Platforms:** macOS 10.7
 
+## Properties
+
+### DestroyFVKeyOnStandby
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system won’t store th FileVault key across restarts.
+
+### dontAllowFDEDisable
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system won’t disable FileVault.
+
+### dontAllowFDEEnable
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system won’t enable FileVault.
+
 ## Discussion
 
 Specify `com.apple.MCX` as the payload type.

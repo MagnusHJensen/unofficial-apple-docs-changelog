@@ -4,6 +4,29 @@ Reports which security features the user disables in `recoveryOS`. This property
 
 **Platforms:** macOS 11.0
 
+## Properties
+
+### AllowsAnyAppleSignedOS
+
+- **Type:** `string`
+- **Required:** No
+
+If ‘true’, allows any signed version of trusted system software from Apple to run.
+
+### AllowsMDM
+
+- **Type:** `string`
+- **Required:** No
+
+If ‘true’, the MDM server controls kernel extensions and software updates.
+
+### AllowsUserKextApproval
+
+- **Type:** `string`
+- **Required:** No
+
+If ‘true’, the user has control over kernel extensions.
+
 ## Discussion
 
 Available in iOS 11 and later.

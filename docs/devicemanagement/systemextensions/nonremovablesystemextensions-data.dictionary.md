@@ -4,3 +4,12 @@ A dictionary that maps team identifiers to bundle identifiers of extensions that
 
 **Platforms:** macOS 15.0
 
+## Properties
+
+### ANY
+
+- **Type:** `[string]`
+- **Required:** No
+
+System extension bundle identifiers
+

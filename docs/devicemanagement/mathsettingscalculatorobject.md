@@ -4,6 +4,43 @@ The declaration to configure the calculator app.
 
 **Platforms:** iOS 18.0, iPadOS 18.0, macOS 15.0
 
+## Properties
+
+### BasicMode
+
+- **Type:** `MathSettingsCalculator_BasicModeObject`
+- **Required:** No
+
+If present, configures the basic mode of the calculator. Basic mode is always enabled.
+
+### InputModes
+
+- **Type:** `MathSettingsCalculator_InputModesObject`
+- **Required:** No
+
+If present, controls global input options of the calculator. If not present, all input modes are enabled.
+
+### MathNotesMode
+
+- **Type:** `MathSettingsCalculator_MathNotesModeObject`
+- **Required:** No
+
+If present, configures the Math Notes mode of the calculator. If not present, Math Notes mode is enabled.
+
+### ProgrammerMode
+
+- **Type:** `MathSettingsCalculator_ProgrammerModeObject`
+- **Required:** No
+
+If present, configures the programmer mode of the calculator. If not present, programmer mode is enabled.
+
+### ScientificMode
+
+- **Type:** `MathSettingsCalculator_ScientificModeObject`
+- **Required:** No
+
+If present, configures the scientific mode of the calculator. If not present, scientific mode is enabled.
+
 ## Topics
 
 ### Objects

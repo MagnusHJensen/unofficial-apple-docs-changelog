@@ -4,6 +4,22 @@ The command to get a list of the installed apps on a device.
 
 **Platforms:** iOS 5.0, iPadOS 5.0, macOS 10.7, tvOS 10.2, visionOS 1.1, watchOS 10.0
 
+## Properties
+
+### Command
+
+- **Type:** `InstalledApplicationListCommand.Command`
+- **Required:** Yes
+
+The command dictionary.
+
+### CommandUUID
+
+- **Type:** `string`
+- **Required:** Yes
+
+The unique identifier of the command.
+
 ## Topics
 
 ### Objects

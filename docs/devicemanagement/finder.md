@@ -4,6 +4,80 @@ The payload that configures Finder settings.
 
 **Platforms:** macOS 10.7
 
+## Properties
+
+### ProhibitBurn
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system disables the Finder’s burn support.
+
+### ProhibitConnectTo
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system disables Connect to Server.
+
+### ProhibitEject
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system disables Eject.
+
+### ProhibitGoToFolder
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system disables Go to Folder.
+
+### ShowExternalHardDrivesOnDesktop
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, the system doesn’t show external hard drives on the Desktop.
+
+### ShowHardDrivesOnDesktop
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `false`, the system doesn’t show internal hard drives on the Desktop.
+
+### ShowMountedServersOnDesktop
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `false`, the system doesn’t show mounted file servers on the Desktop.
+
+### ShowRemovableMediaOnDesktop
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, the system doesn’t show removable media items on the Desktop.
+
+### WarnOnEmptyTrash
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, the system doesn’t warn the user before emptying the trash.
+
 ## Discussion
 
 Specify `com.apple.finder` as the payload type.

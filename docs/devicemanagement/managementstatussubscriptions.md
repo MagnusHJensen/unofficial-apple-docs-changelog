@@ -4,6 +4,15 @@ The declaration to configure status subscriptions.
 
 **Platforms:** iOS 15.0, iPadOS 15.0, macOS 13.0, tvOS 16.0, visionOS 1.1, watchOS 10.0
 
+## Properties
+
+### StatusItems
+
+- **Type:** `[ManagementStatusSubscriptionsStatusItemObject]`
+- **Required:** Yes
+
+An array of status items that the device notifies subscribers about.
+
 ## Discussion
 
 Specify `com.apple.configuration.management.status-subscriptions` as the declaration type.

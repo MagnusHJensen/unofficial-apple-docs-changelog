@@ -4,6 +4,15 @@ The declaration to configure managed bookmarks in Safari.
 
 **Platforms:** iOS 26.0, iPadOS 26.0, macOS 26.0, visionOS 26.0
 
+## Properties
+
+### ManagedBookmarks
+
+- **Type:** `[SafariBookmarksBookmarkGroupObject]`
+- **Required:** No
+
+A dictionary that specifies a set of managed bookmarks.
+
 ## Discussion
 
 Specify `com.apple.configuration.safari.bookmarks` as the declaration type.

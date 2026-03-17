@@ -4,6 +4,72 @@ The payload that configures a Contacts account.
 
 **Platforms:** iOS 4.0, iPadOS 4.0, macOS 10.7, visionOS 1.1
 
+## Properties
+
+### CardDAVAccountDescription
+
+- **Type:** `string`
+- **Required:** No
+
+The description of the account.
+
+### CardDAVHostName
+
+- **Type:** `string`
+- **Required:** Yes
+
+The server’s address.
+
+### CardDAVPassword
+
+- **Type:** `string`
+- **Required:** No
+
+The user’s password. Only use this in encrypted profiles.
+
+### CardDAVPort
+
+- **Type:** `integer`
+- **Required:** No
+
+The server’s port.
+
+### CardDAVPrincipalURL
+
+- **Type:** `string`
+- **Required:** No
+
+The base URL to the user’s address book.
+
+### CardDAVUsername
+
+- **Type:** `string`
+- **Required:** No
+
+The user name for logins.
+
+### CardDAVUseSSL
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `true`, the system enables SSL.
+
+### CommunicationServiceRules
+
+- **Type:** `CardDAV.CommunicationServiceRules`
+- **Required:** No
+
+An array of communication service rules for this account.
+
+### VPNUUID
+
+- **Type:** `string`
+- **Required:** No
+
+The VPNUUID of the per-app VPN the account uses for network communication. Available in iOS 14 and later.
+
 ## Discussion
 
 Specify `com.apple.carddav.account` as the payload type.

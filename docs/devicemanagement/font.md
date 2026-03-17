@@ -4,6 +4,25 @@ The payload that configures fonts.
 
 **Platforms:** iOS 7.0, iPadOS 7.0, macOS 10.9, visionOS 2.0
 
+## Properties
+
+### Font
+
+- **Type:** `data`
+- **Required:** Yes
+
+The contents of the font file.
+
+### Name
+
+- **Type:** `string`
+- **Required:** No
+- **Default:** ``
+
+The user-visible name for the font. This field is replaced by the actual name of the font after installation. Each payload must contain exactly one font file in trueType (.ttf) or OpenType (.otf) format. Collection formats (.ttc or .otc) are not supported.
+
+Fonts are identified by their embedded PostScript names. Two fonts with the same PostScript name are considered to be the same font even if their contents differ. Installing two different fonts with the same PostScript name isn’t supported, and the resulting behavior is undefined.
+
 ## Discussion
 
 Specify `com.apple.font` as the payload type.

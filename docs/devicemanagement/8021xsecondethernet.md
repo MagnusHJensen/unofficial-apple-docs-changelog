@@ -4,6 +4,8 @@ The payload that configures the second wired Ethernet interface.
 
 **Platforms:** macOS 10.7
 
+## Properties
+
 ## Discussion
 
 Specify `com.apple.secondethernet.managed` as the payload type.

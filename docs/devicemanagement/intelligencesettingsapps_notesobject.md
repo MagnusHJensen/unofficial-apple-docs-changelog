@@ -4,3 +4,21 @@ If present, configures Notes Intelligence features.
 
 **Platforms:** iOS 26.4 (Beta), iPadOS 26.4 (Beta), macOS 26.4 (Beta), visionOS 26.4 (Beta)
 
+## Properties
+
+### AllowTranscription
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, disables Notes Transcription.
+
+### AllowTranscriptionSummary
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, disables Notes Transcription Summary.
+

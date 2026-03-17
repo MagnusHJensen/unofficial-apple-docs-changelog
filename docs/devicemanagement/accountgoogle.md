@@ -4,6 +4,22 @@ The declaration to configure a Google account.
 
 **Platforms:** iOS 15.0, iPadOS 15.0, macOS 13.0, visionOS 1.1
 
+## Properties
+
+### UserIdentityAssetReference
+
+- **Type:** `string`
+- **Required:** Yes
+
+The identifier of an asset declaration that contains the user identity for this Google account. Set the corresponding asset type to `UserIdentity` and ensure that it contains an `EmailAddress` key that specifies the full Google email address for the account.
+
+### VisibleName
+
+- **Type:** `string`
+- **Required:** No
+
+The name that apps show to the user for this Google account. If not present, the system generates a suitable default.
+
 ## Discussion
 
 Specify `com.apple.configuration.account.google` as the declaration type.

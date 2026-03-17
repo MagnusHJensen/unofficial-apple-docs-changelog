@@ -4,6 +4,58 @@ The payload that configures a Lightweight Directory Access Protocol (LDAP) accou
 
 **Platforms:** iOS 4.0, iPadOS 4.0, macOS 10.7, visionOS 1.1
 
+## Properties
+
+### LDAPAccountDescription
+
+- **Type:** `string`
+- **Required:** No
+
+The description of the account.
+
+### LDAPAccountHostName
+
+- **Type:** `string`
+- **Required:** Yes
+
+The server’s address.
+
+### LDAPAccountPassword
+
+- **Type:** `string`
+- **Required:** No
+
+The user’s password. Only use this in encrypted profiles.
+
+### LDAPAccountUserName
+
+- **Type:** `string`
+- **Required:** No
+
+The user’s user name.
+
+### LDAPAccountUseSSL
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `true`, the system enables SSL.
+
+### LDAPSearchSettings
+
+- **Type:** `[LDAP.LDAPSearchSettingsItem]`
+- **Required:** No
+
+An array of search settings dictionaries.
+
+### VPNUUID
+
+- **Type:** `string`
+- **Required:** No
+
+The VPNUUID of the per-app VPN the account uses for network communication. Available in iOS 14 and later.
+
 ## Discussion
 
 Specify `com.apple.ldap.account` as the payload type.

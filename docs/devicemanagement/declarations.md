@@ -4,6 +4,15 @@ The payload that applies a set of declarations to the device through the Setting
 
 **Platforms:** iOS 17.0, iPadOS 17.0, macOS 14.0, tvOS 17.0, visionOS 1.0, watchOS 10.0
 
+## Properties
+
+### Declarations
+
+- **Type:** `[data]`
+- **Required:** Yes
+
+The set of declarations to apply. The array items are Base64-encoded data representations of the declaration JSON data.
+
 ## Discussion
 
 Specify `com.apple.declarations` as the payload type.

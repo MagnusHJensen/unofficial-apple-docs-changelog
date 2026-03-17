@@ -4,6 +4,33 @@ The payload that configures the system policy for assessments.
 
 **Platforms:** macOS 10.8
 
+## Properties
+
+### AllowIdentifiedDevelopers
+
+- **Type:** `boolean`
+- **Required:** No
+
+If `true`, enables Gatekeeper’s “Mac App Store and identified developers” option.
+
+If `false`, enables Gatekeeper’s “Mac App Store” option.
+
+If the value of `EnableAssessment` isn’t set to `true`, this key has no effect.
+
+### EnableAssessment
+
+- **Type:** `boolean`
+- **Required:** No
+
+If `true`, enables Gatekeeper. If `false`, disables Gatekeeper.
+
+### EnableXProtectMalwareUpload
+
+- **Type:** `boolean`
+- **Required:** No
+
+If `false`, prevents Gatekeeper from prompting the user to upload blocked malware to Apple for purposes of improving malware detection.
+
 ## Discussion
 
 Specify `com.apple.systempolicy.control` as the payload type.

@@ -4,6 +4,23 @@ A dictionary that describes audio accessory temporary pairing behavior. The devi
 
 **Platforms:** iOS 26.0, iPadOS 26.0
 
+## Properties
+
+### Configuration
+
+- **Type:** `AudioAccessorySettingsTemporaryPairing_ConfigurationObject`
+- **Required:** No
+
+A dictionary providing configuration for temporary pairing. Required if `Disabled` isn’t present or is `false`.
+
+### Disabled
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, temporary pairing of audio accessories is disabled.
+
 ## Topics
 
 ### Objects

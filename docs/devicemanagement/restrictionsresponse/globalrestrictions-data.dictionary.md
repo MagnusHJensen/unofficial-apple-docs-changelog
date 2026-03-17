@@ -4,6 +4,36 @@ A dictionary that contains the global restrictions in effect.
 
 **Platforms:** iOS 4.0, iPadOS 4.0, tvOS 9.0, visionOS 1.1, watchOS 10.0
 
+## Properties
+
+### intersection
+
+- **Type:** `RestrictionsResponse.GlobalRestrictions.Intersection`
+- **Required:** No
+
+A dictionary of intersected profile restrictions. Intersected restrictions indicate that new restrictions can only reduce the number of strings in the set.
+
+### restrictedBool
+
+- **Type:** `RestrictionsResponse.GlobalRestrictions.RestrictedBool`
+- **Required:** No
+
+A dictionary of Boolean profile restrictions.
+
+### restrictedValue
+
+- **Type:** `RestrictionsResponse.GlobalRestrictions.RestrictedValue`
+- **Required:** No
+
+A dictionary of numeric profile restrictions.
+
+### union
+
+- **Type:** `RestrictionsResponse.GlobalRestrictions.Union`
+- **Required:** No
+
+A dictionary of unioned profile restrictions. Unioned restrictions indicate that new restrictions can add to the set.
+
 ## Topics
 
 ### Objects

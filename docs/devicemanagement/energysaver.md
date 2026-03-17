@@ -4,6 +4,44 @@ The payload that configures Energy Saver settings.
 
 **Platforms:** macOS 10.7
 
+## Properties
+
+### com.apple.EnergySaver.desktop.ACPower
+
+- **Type:** `EnergySaver.Com.apple.EnergySaver.desktop.ACPower`
+- **Required:** No
+
+The settings for a desktop computer.
+
+### com.apple.EnergySaver.desktop.Schedule
+
+- **Type:** `EnergySaver.Com.apple.EnergySaver.desktop.Schedule`
+- **Required:** No
+
+The schedule for turning a computer on and off.
+
+### com.apple.EnergySaver.portable.ACPower
+
+- **Type:** `EnergySaver.Com.apple.EnergySaver.portable.ACPower`
+- **Required:** No
+
+The settings for a laptop computer using AC power.
+
+### com.apple.EnergySaver.portable.BatteryPower
+
+- **Type:** `EnergySaver.Com.apple.EnergySaver.portable.BatteryPower`
+- **Required:** No
+
+The settings for a laptop computer using battery power.
+
+### SleepDisabled
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, disables sleep.
+
 ## Discussion
 
 Specify `com.apple.MCX` as the payload type.

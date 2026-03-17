@@ -4,6 +4,29 @@ The payload that configures media management.
 
 **Platforms:** macOS 10.7
 
+## Properties
+
+### logout-eject
+
+- **Type:** `MediaManagementAllowedMedia.Logout-eject`
+- **Required:** No
+
+The media type dictionary that defines volumes to eject when the user logs out.
+
+### mount-controls
+
+- **Type:** `MediaManagementAllowedMedia.Mount-controls`
+- **Required:** No
+
+The media type dictionary that controls volume mounting.
+
+### unmount-controls
+
+- **Type:** `MediaManagementAllowedMedia.Unmount-controls`
+- **Required:** No
+
+The media type dictionary that controls volume unmounting.
+
 ## Discussion
 
 Specify `com.apple.systemuiserver` as the payload type.

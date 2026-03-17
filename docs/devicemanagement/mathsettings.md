@@ -4,6 +4,22 @@ The declaration to configure the math and calculator apps.
 
 **Platforms:** iOS 18.0, iPadOS 18.0, macOS 15.0
 
+## Properties
+
+### Calculator
+
+- **Type:** `MathSettingsCalculatorObject`
+- **Required:** No
+
+If present, configures the built-in Calculator app.
+
+### SystemBehavior
+
+- **Type:** `MathSettingsSystemBehaviorObject`
+- **Required:** No
+
+If present, configures math behavior in the system.
+
 ## Discussion
 
 Specify `com.apple.configuration.math.settings` as the declaration type.

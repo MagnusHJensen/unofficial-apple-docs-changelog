@@ -4,6 +4,28 @@ The managed configuration files for services.
 
 **Platforms:** macOS 14.0
 
+## Properties
+
+### DataAssetReference
+
+- **Type:** `string`
+- **Required:** Yes
+
+The identifier of an asset declaration that contains a reference to the files to use for system service configuration. Ensure that the corresponding asset:
+
+- Is of type `com.apple.asset.data`
+- Is a zip archive of an entire directory
+- Has a `Reference` key that includes the `ContentType` and `Hash-SHA-256` keys, which the system requires
+
+The system expands the zip archive and stores the data in a well-known location for the service.
+
+### ServiceType
+
+- **Type:** `string`
+- **Required:** Yes
+
+The identifier of the system service with managed configuration files. Use a reverse DNS style for this identifier.
+
 ## Discussion
 
 Specify `com.apple.configuration.services.configuration-files` as the declaration type.

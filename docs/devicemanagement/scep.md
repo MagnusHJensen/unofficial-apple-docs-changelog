@@ -4,6 +4,15 @@ The payload that configures Simple Certificate Enrollment Protocol (SCEP) settin
 
 **Platforms:** iOS 4.0, iPadOS 4.0, macOS 10.7, tvOS 9.0, visionOS 1.0, watchOS 3.0
 
+## Properties
+
+### PayloadContent
+
+- **Type:** `SCEP.PayloadContent`
+- **Required:** Yes
+
+A dictionary containing the SCEP information.
+
 ## Discussion
 
 Specify `com.apple.security.scep` as the payload type.

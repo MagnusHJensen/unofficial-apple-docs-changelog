@@ -4,6 +4,15 @@ The payload that configures the names of the account user.
 
 **Platforms:** macOS 10.7
 
+## Properties
+
+### PayloadIdentification
+
+- **Type:** `Identification.PayloadIdentification`
+- **Required:** Yes
+
+The dictionary that contains details about the user.
+
 ## Discussion
 
 Specify `com.apple.configurationprofile.identification` as the payload type.

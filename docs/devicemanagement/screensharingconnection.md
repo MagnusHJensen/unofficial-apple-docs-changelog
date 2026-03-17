@@ -4,6 +4,50 @@ The declaration to configure a connection to a screen-sharing host.
 
 **Platforms:** macOS 14.0
 
+## Properties
+
+### AuthenticationCredentialsAssetReference
+
+- **Type:** `string`
+- **Required:** No
+
+The identifier of an asset declaration that contains the required credentials for this connection to authenticate with the screen-sharing server. Set the corresponding asset type to `com.apple.asset.credential.userpassword`.
+
+### ConnectionUUID
+
+- **Type:** `string`
+- **Required:** Yes
+
+A unique identifier for this connection when it’s in a connection group.
+
+### DisplayConfiguration
+
+- **Type:** `ScreenSharingConnectionDisplayConfigurationObject`
+- **Required:** Yes
+
+The display configuration for this connection.
+
+### DisplayName
+
+- **Type:** `string`
+- **Required:** Yes
+
+The name of the connection.
+
+### HostName
+
+- **Type:** `string`
+- **Required:** Yes
+
+The host name or IP address of the Mac that hosts the screen-sharing connection.
+
+### Port
+
+- **Type:** `integer`
+- **Required:** No
+
+The TCP port number on the host to initiate the connection.
+
 ## Discussion
 
 Specify `com.apple.configuration.screensharing.connection` as the declaration type.

@@ -4,6 +4,25 @@ A reference to data that describes a credential that represents a user name and 
 
 **Platforms:** iOS 15.0, iPadOS 15.0, macOS 13.0, tvOS 16.0, visionOS 1.1, watchOS 10.0
 
+## Properties
+
+### Authentication
+
+- **Type:** `AssetCredentialUserNameAndPasswordAuthenticationObject`
+- **Required:** No
+
+The server authentication details.
+
+### Reference
+
+- **Type:** `AssetCredentialUserNameAndPasswordReferenceObject`
+- **Required:** Yes
+
+The external reference. Ensure that the asset data:
+
+- Is a JSON document that represents the `com.apple.credential.usernameandpassword` credential type
+- Uses a media type of `application/json`, and if it includes a `ContentType` sub-key, that sub-key media type is also `application/json`
+
 ## Discussion
 
 Specify `com.apple.asset.credential.userpassword` as the declaration type.

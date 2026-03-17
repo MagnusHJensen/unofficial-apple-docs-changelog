@@ -4,6 +4,22 @@ A reference to arbitrary data with a specific media type.
 
 **Platforms:** iOS 17.0, iPadOS 17.0, macOS 14.0, tvOS 17.0, visionOS 1.1, watchOS 10.0
 
+## Properties
+
+### Authentication
+
+- **Type:** `AssetDataAuthenticationObject`
+- **Required:** No
+
+The server authentication details.
+
+### Reference
+
+- **Type:** `AssetDataReferenceObject`
+- **Required:** Yes
+
+The external reference.
+
 ## Discussion
 
 Specify `com.apple.asset.data` as the declaration type.

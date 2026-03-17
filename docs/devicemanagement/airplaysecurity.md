@@ -4,6 +4,37 @@ The payload that configures Apple TV for a particular style of AirPlay security.
 
 **Platforms:** tvOS 11.0
 
+## Properties
+
+### AccessType
+
+- **Type:** `string`
+- **Required:** Yes
+- **Allowed Values:** `ANY`, `WIFI_ONLY`
+
+The access policy for AirPlay.
+
+`ANY` allows connections from both Ethernet, Wi-Fi, and Apple Wireless Direct Link.
+
+`WIFI_ONLY` allows connections only from devices on the same Ethernet or Wi-Fi network as Apple TV.
+
+### Password
+
+- **Type:** `string`
+- **Required:** No
+
+The AirPlay password; required if `SecurityType` is `PASSWORD`.
+
+### SecurityType
+
+- **Type:** `string`
+- **Required:** Yes
+- **Allowed Values:** `PASSCODE_ONCE`, `PASSCODE_ALWAYS`, `PASSWORD`
+
+The security policy for AirPlay. Allowed values:
+
+> 
+
 ## Discussion
 
 Specify `com.apple.airplay.security` as the payload type.

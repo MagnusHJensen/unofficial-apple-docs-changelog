@@ -4,6 +4,40 @@ The declaration to configure Siri settings.
 
 **Platforms:** iOS 26.4 (Beta), iPadOS 26.4 (Beta), macOS 26.4 (Beta), visionOS 26.4 (Beta), watchOS 26.4 (Beta)
 
+## Properties
+
+### AllowUserGeneratedContent
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, disables Siri user-generated content.
+
+### AllowWhileLocked
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, disables Siri while locked.
+
+### Enabled
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, disables Siri.
+
+### ForceProfanityFilter
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, forces Siri profanity filter.
+
 ## Discussion
 
 Specify `com.apple.configuration.siri.settings` as the declaration type.

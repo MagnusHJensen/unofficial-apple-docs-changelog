@@ -4,6 +4,15 @@ The payload that configures managed preferences.
 
 **Platforms:** macOS 10.7
 
+## Properties
+
+### PayloadContent
+
+- **Type:** `ManagedPreferences.PayloadContent`
+- **Required:** Yes
+
+The dictionary containing app preference domains. The key names are application preference domain identifiers (for example, `com.example.my-app`), or the string `.GlobalPreferences` for the global domain. The values are the corresponding forced and set-once preferences.
+
 ## Discussion
 
 Specify `com.apple.ManagedClient.preferences` as the payload type.

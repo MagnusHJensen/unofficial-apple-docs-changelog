@@ -4,6 +4,15 @@ The declaration to configure disk management settings on the device.
 
 **Platforms:** macOS 15.0
 
+## Properties
+
+### Restrictions
+
+- **Type:** `DiskManagementSettingsRestrictionsObject`
+- **Required:** No
+
+The restrictions for the disk.
+
 ## Discussion
 
 Specify `com.apple.configuration.diskmanagement.settings` as the declaration type.

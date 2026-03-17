@@ -4,6 +4,90 @@ The payload that configures a per-app VPN.
 
 **Platforms:** iOS 7.0, iPadOS 7.0, macOS 10.9, visionOS 1.1, watchOS 10.0
 
+## Properties
+
+### AssociatedDomains
+
+- **Type:** `[string]`
+- **Required:** No
+
+An array with entries that must each specify a domain that triggers this VPN. The domains must also be part of the `apple-app-site-association` file, as described in [Supporting associated domains](/documentation/Xcode/supporting-associated-domains).
+
+Available in iOS 14 and later, and macOS 11 and later.
+
+### CalendarDomains
+
+- **Type:** `[string]`
+- **Required:** No
+
+An array with entries that must each specify a domain that triggers this VPN connection in Calendar. Each entry is in the format `www.apple.com`.
+
+This property is deprecated in iOS 13.4 and later; use the `VPNUUID` property of the [CalDAV](/documentation/devicemanagement/caldav) payload instead.
+
+### CellularSliceUUID
+
+- **Type:** `string`
+- **Required:** No
+
+A string representing the data network name (DNN) or app category identifying a Cellular Slice. The device forces the VPN tunnel to use the specified Cellular Slice.
+
+### ContactsDomains
+
+- **Type:** `[string]`
+- **Required:** No
+
+An array with entries that must each specify a domain that triggers this VPN connection in Contacts. Each entry is in the format `www.apple.com`.
+
+This property is deprecated in iOS 13.4 and later; use the `VPNUUID` property of the [CardDAV](/documentation/devicemanagement/carddav) payload instead.
+
+### ExcludedDomains
+
+- **Type:** `[string]`
+- **Required:** No
+
+An array with entries that each specify a domain that doesn’t trigger this VPN for connections to the domain.
+
+Available in iOS 14 and later, and macOS 11 and later.
+
+### MailDomains
+
+- **Type:** `[string]`
+- **Required:** No
+
+An array with entries that must each specify a domain that triggers this VPN connection in Mail. Each entry is in the format `www.apple.com`.
+
+This property is deprecated in iOS 13.4 and later; use the `VPNUUID` property of the [Mail](/documentation/devicemanagement/mail) or [ExchangeActiveSync](/documentation/devicemanagement/exchangeactivesync) payload instead.
+
+### OnDemandMatchAppEnabled
+
+- **Type:** `boolean`
+- **Required:** No
+
+If `true`, automatically connects the VPN when associated apps for this per-app VPN service initiate network communication. Otherwise, the user must initiate the connection manually before those apps can initiate network communication. If this key isn’t present, the value of the `OnDemandEnabled` key determines the status of per-app VPN On Demand.
+
+### SafariDomains
+
+- **Type:** `[string]`
+- **Required:** No
+
+An array with entries that must each specify a domain that triggers the VPN connection in Safari. Each entry is in the format `www.apple.com`.
+
+### SMBDomains
+
+- **Type:** `[string]`
+- **Required:** No
+
+An array of SMB domains that’s accessible through this VPN connection.
+
+Available in iOS 13 and later.
+
+### VPNUUID
+
+- **Type:** `string`
+- **Required:** Yes
+
+A globally unique identifier for this VPN configuration.
+
 ## Discussion
 
 Specify `com.apple.vpn.managed.applayer` as the payload type.

@@ -4,6 +4,15 @@ The declaration to configure audio accessory settings.
 
 **Platforms:** iOS 26.0, iPadOS 26.0
 
+## Properties
+
+### TemporaryPairing
+
+- **Type:** `AudioAccessorySettingsTemporaryPairingObject`
+- **Required:** No
+
+A dictionary that describes audio accessory temporary pairing behavior. The device enables temporary pairing when this key is present and the `Disabled` key isn’t `false`. The device doesn’t synchronize pairing information with iCloud when temporary pairing is active.
+
 ## Discussion
 
 Specify `com.apple.configuration.audio-accessory.settings` as the declaration type.

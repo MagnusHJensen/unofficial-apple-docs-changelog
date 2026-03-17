@@ -4,6 +4,23 @@ The payload that configures access point names.
 
 **Platforms:** iOS 4.0, iPadOS 4.0
 
+## Properties
+
+### DefaultsData
+
+- **Type:** `APN.DefaultsData`
+- **Required:** Yes
+
+The list of access point names (APNs).
+
+### DefaultsDomainName
+
+- **Type:** `string`
+- **Required:** Yes
+- **Allowed Values:** `com.apple.managedCarrier`
+
+The domain name.
+
 ## Discussion
 
 Specify `com.apple.apn.managed` as the payload type.

@@ -4,6 +4,15 @@ The URL to the app manifest.
 
 **Platforms:** iOS 7.0, iPadOS 7.0, macOS 10.9, tvOS 10.2, visionOS 1.1, watchOS 10.0
 
+## Properties
+
+### items
+
+- **Type:** `[ManifestURL.ItemsItem]`
+- **Required:** Yes
+
+An array of dictionaries representing what the manifest installs.
+
 ## Discussion
 
 Use SHA-256 hashes instead of MD5 because SHA-256 has stronger security. If both SHA-256 and MD5 hash properties are present, the device uses only the SHA-256 hashes to verify the manifest data.

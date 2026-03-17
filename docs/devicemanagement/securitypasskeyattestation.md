@@ -4,6 +4,30 @@ The declaration to configure the device to allow WebAuthn enterprise attestation
 
 **Platforms:** iOS 17.0, iPadOS 17.0, macOS 14.0
 
+## Properties
+
+### AttestationIdentityAssetReference
+
+- **Type:** `string`
+- **Required:** Yes
+
+The identifier of an asset declaration that contains the identity to install and use for passkey attestation.
+
+### AttestationIdentityKeyIsExtractable
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `true`, the private key for the attestation identity is extractable in the keychain.
+
+### RelyingParties
+
+- **Type:** `[string]`
+- **Required:** Yes
+
+An array of the relying parties to allow enterprise attestation.
+
 ## Discussion
 
 Specify `com.apple.configuration.security.passkey.attestation` as the declaration type.

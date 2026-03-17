@@ -4,6 +4,22 @@ The schedule for turning the device on or off.
 
 **Platforms:** macOS 10.7
 
+## Properties
+
+### RepeatingPowerOff
+
+- **Type:** `EnergySaver.Com.apple.EnergySaver.desktop.Schedule.RepeatingPowerOff`
+- **Required:** No
+
+The schedule for turning the device off.
+
+### RepeatingPowerOn
+
+- **Type:** `EnergySaver.Com.apple.EnergySaver.desktop.Schedule.RepeatingPowerOn`
+- **Required:** No
+
+The schedule for turning the device on.
+
 ## Topics
 
 ### Objects

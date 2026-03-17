@@ -4,6 +4,22 @@ The command to get information from a device to set up lights-out management (LO
 
 **Platforms:** macOS 11.0
 
+## Properties
+
+### Command
+
+- **Type:** `LOMSetupRequestCommand.Command`
+- **Required:** Yes
+
+The command dictionary.
+
+### CommandUUID
+
+- **Type:** `string`
+- **Required:** Yes
+
+The unique identifier of the command.
+
 ## Topics
 
 ### Objects

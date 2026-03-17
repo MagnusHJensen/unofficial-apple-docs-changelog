@@ -4,6 +4,103 @@ The payload that configures Setup Assistant settings.
 
 **Platforms:** iOS 14.0, iPadOS 14.0, macOS 10.12
 
+## Properties
+
+### SkipAccessibility
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system skips the Accessibility pane.
+
+### SkipAppearance
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system skips the Choose Your Look pane.
+
+### SkipCloudSetup
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system skips the Apple Account setup pane.
+
+### SkipiCloudStorageSetup
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system skips the iCloud Storage pane.
+
+### SkipPrivacySetup
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system skips the Privacy consent pane.
+
+### SkipScreenTime
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system skips the Screen Time pane.
+
+### SkipSetupItems
+
+- **Type:** `[string]`
+- **Required:** No
+
+An array of strings that describe the setup items to skip. [SkipKeys](/documentation/devicemanagement/skipkeys) provides a list of valid strings and their meanings. Available in iOS 14 and later, and macOS 15 and later.
+
+### SkipSiriSetup
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system skips the Siri setup pane.
+
+### SkipTouchIDSetup
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system skips the Touch ID setup pane.
+
+### SkipTrueTone
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system skips the True Tone Display pane.
+
+### SkipUnlockWithWatch
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system skips the Unlock With Apple Watch pane.
+
+### SkipWallpaper
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If ‘true’, the system skips the Wallpaper selection window.
+
 ## Discussion
 
 Specify `com.apple.SetupAssistant.managed` as the payload type.

@@ -4,6 +4,15 @@ The payload that configures parental control dictionary restrictions.
 
 **Platforms:** macOS 10.7
 
+## Properties
+
+### parentalControl
+
+- **Type:** `boolean`
+- **Required:** Yes
+
+If `true`, enables parental controls dictionary restrictions.
+
 ## Discussion
 
 Specify `com.apple.Dictionary` as the payload type.

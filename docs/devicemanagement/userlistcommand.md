@@ -4,6 +4,22 @@ The command to get a list of users with active accounts on a device.
 
 **Platforms:** iOS 9.3, iPadOS 9.3, macOS 10.13
 
+## Properties
+
+### Command
+
+- **Type:** `UserListCommand.Command`
+- **Required:** Yes
+
+The command dictionary.
+
+### CommandUUID
+
+- **Type:** `string`
+- **Required:** Yes
+
+The unique identifier of the command.
+
 ## Topics
 
 ### Objects

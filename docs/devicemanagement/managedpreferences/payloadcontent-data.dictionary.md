@@ -4,6 +4,15 @@ The dictionary containing app preference domains. The key names are application 
 
 **Platforms:** macOS 10.7
 
+## Properties
+
+### ANY
+
+- **Type:** `ManagedPreferences.PayloadContent.ANY`
+- **Required:** Yes
+
+The dictionary containing app preference domains.
+
 ## Topics
 
 ### Objects

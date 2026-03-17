@@ -4,6 +4,68 @@ The payload that configures a global HTTP proxy.
 
 **Platforms:** iOS 6.0, iPadOS 6.0, macOS 10.9, tvOS 9.0, visionOS 2.0
 
+## Properties
+
+### ProxyCaptiveLoginAllowed
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, allows the device to bypass the proxy server to display the login page for captive networks.
+
+### ProxyPACFallbackAllowed
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, allows connecting directly to the destination if the proxy autoconfiguration (PAC) file is unreachable.
+
+### ProxyPACURL
+
+- **Type:** `string`
+- **Required:** No
+
+The URL of the PAC file that defines the proxy configuration. Starting in iOS 13 and macOS 10.15, only URLs that begin with `http://` or `https://` are allowed. This is only used if `ProxyType` is set to `Automatic`, and is ignored if `ProxyType` is set to `Manual`.
+
+### ProxyPassword
+
+- **Type:** `string`
+- **Required:** No
+
+The password used to authenticate to the proxy server. The device only uses this if `ProxyType` is set to `Manual`, and ignores it if `ProxyType` is set to `Automatic`.
+
+### ProxyServer
+
+- **Type:** `string`
+- **Required:** No
+
+The proxy server’s network address. The device requires this if `ProxyType` is set to `Manual`, and ignores it if `ProxyType` is set to `Automatic`.
+
+### ProxyServerPort
+
+- **Type:** `integer`
+- **Required:** No
+
+The proxy server’s port number. The device requires this if `ProxyType` is set to `Manual`, and ignores this if `ProxyType` is set to `Automatic`.
+
+### ProxyType
+
+- **Type:** `string`
+- **Required:** No
+- **Default:** `Manual`
+- **Allowed Values:** `Manual`, `Auto`
+
+The proxy type. For a manual proxy type, the profile contains the proxy server address, including its port, and optionally a user name and password. For an auto proxy type, you can enter a PAC URL.
+
+### ProxyUsername
+
+- **Type:** `string`
+- **Required:** No
+
+The user name used to authenticate to the proxy server. The device only uses this if `ProxyType` is set to `Manual`, and ignores it if `ProxyType` is set to `Automatic`.
+
 ## Discussion
 
 Specify `com.apple.proxy.http.global` as the payload type.

@@ -4,6 +4,32 @@ The payload that configures managed Wi-Fi settings.
 
 **Platforms:** macOS 10.9
 
+## Properties
+
+### RequireAdminForAirPortNetworkChange
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, requires administrator authorization for network changes.
+
+### RequireAdminForIBSS
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, requires administrator authorization to enable IBSS.
+
+### RequireAdminToTurnAirPortOnOff
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, requires administrator authorization to turn Wi-Fi on or off.
+
 ## Discussion
 
 Specify `com.apple.MCX` as the payload type.

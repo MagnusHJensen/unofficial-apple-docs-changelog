@@ -4,6 +4,115 @@ The payload that configures the users, groups, and departments within an educati
 
 **Platforms:** iOS 9.3, iPadOS 9.3, macOS 10.14
 
+## Properties
+
+### Departments
+
+- **Type:** `[EducationConfiguration.DepartmentsItem]`
+- **Required:** No
+
+** The array of dictionaries that defines which departments the system displays in the Shared iPad login screen. If set, the system uses this key to configure both Classroom and the Shared iPad login screen.
+
+### DeviceGroups
+
+- **Type:** `[EducationConfiguration.DeviceGroupsItem]`
+- **Required:** No
+
+** The array of dictionaries that defines which device groups the leader can assign devices to. Not included in member payloads.
+
+### Groups
+
+- **Type:** `[EducationConfiguration.GroupsItem]`
+- **Required:** Yes
+
+** The array of dictionaries that defines which groups the user can select in the Login Window.
+
+** The array of dictionaries that defines the groups that the user can control.
+
+** The array of dictionaries that defines the groups where the user is a member.
+
+### LeaderPayloadCertificateAnchorUUID
+
+- **Type:** `[string]`
+- **Required:** No
+
+The array of UUIDs referring to certificate payloads within the same profile that the system uses to authorize leader peer certificate identities. This array needs to contain all necessary certificates to validate the entire chain of trust. Leader certificates needs to have the common name prefix leader, which is case insensitive.
+
+This property doesn’t support identity payloads or PKCS12 certificates.
+
+Required when configuring a student device for Classroom, and ignored when configuring an instructor device. Has no effect on the configuration of the Shared iPad login screen.
+
+### MemberPayloadCertificateAnchorUUID
+
+- **Type:** `[string]`
+- **Required:** No
+
+The array of UUIDs referring to certificate payloads within the same profile that the system uses to authorize group member peer certificate identities. This array must contain all certificates needed to validate the entire chain of trust. Member certificates must have the common name prefix member (case insensitive).
+
+This property doesn’t support identity payloads or PKCS12 certificates.
+
+Required when configuring a student device for Classroom, and ignored when configuring an instructor device. Has no effect on the configuration of the Shared iPad login screen.
+
+### OrganizationName
+
+- **Type:** `string`
+- **Required:** Yes
+
+The organization’s display name. The system displays this name in the iOS login screen.
+
+### OrganizationUUID
+
+- **Type:** `string`
+- **Required:** Yes
+
+The organization’s UUID identifier. This identifier can be any valid UUID. All teacher and student devices that need to communicate with one another must have the same organization UUID, particularly if they originated from different Device Enrollment Programs.
+
+### PayloadCertificateUUID
+
+- **Type:** `string`
+- **Required:** No
+
+The UUID of an identity certificate payload within the same profile to use for performing client authentication with other devices. This property supports PKCS12 certificates.
+
+Required to configure Classroom. Has no effect on the configuration of the Shared iPad login screen.
+
+### ResourcePayloadCertificateUUID
+
+- **Type:** `string`
+- **Required:** No
+
+The UUID of an identity certificate payload within the same profile that the system uses to perform client authentication when fetching additional resources, such as student images.
+
+If set, the system uses this key to configure both Classroom and the Shared iPad login screen. If not set, the system uses MDM client identity.
+
+### ScreenObservationPermissionModificationAllowed
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system allows students enrolled in managed classes to modify their teacher’s permissions for screen observation on their device.
+
+### UserIdentifier
+
+- **Type:** `string`
+- **Required:** Yes
+
+The unique string that identifies the user of this device within the organization.
+
+Don’t set this value in payloads intended to configure the Shared iPad login screen.
+
+### Users
+
+- **Type:** `[EducationConfiguration.UsersItem]`
+- **Required:** Yes
+
+For Shared iPad profiles: The array of dictionaries that define the users that the system displays in the iOS Login Window.
+
+** The array of dictionaries that define users that are members of the teacher’s groups.
+
+** The array of dictionaries that needs to contain the definition of the user specified in the `UserIdentifier` key. With one-to-one member devices, this key should include only the device user and the teacher but not other class members.
+
 ## Discussion
 
 Specify `com.apple.education` as the payload type.

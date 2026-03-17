@@ -4,6 +4,40 @@ The payload that configures macOS App Store restrictions.
 
 **Platforms:** macOS 10.9
 
+## Properties
+
+### DisableSoftwareUpdateNotifications
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system disables software update notifications. Available in macOS 10.10 and later.
+
+### restrict-store-disable-app-adoption
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system disables app adoption by users. Available in macOS 10.10 and later.
+
+### restrict-store-require-admin-to-install
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system restricts app installations to admin users only. Deprecated in macOS 10.14. Use the `com.apple.SoftwareUpdate` payload key `restrict-software-update-require-admin-to-install` instead.
+
+### restrict-store-softwareupdate-only
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system prevents App Store from launching. Available in macOS 10.14 and later. Restricts installations to software updates only in macOS 10.10 through 10.13.
+
 ## Discussion
 
 Specify `com.apple.appstore` as the payload type.

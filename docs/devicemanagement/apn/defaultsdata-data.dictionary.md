@@ -4,6 +4,15 @@ An array of access point name dictionaries.
 
 **Platforms:** iOS 4.0, iPadOS 4.0
 
+## Properties
+
+### apns
+
+- **Type:** `[APN.DefaultsData.ApnsItem]`
+- **Required:** Yes
+
+An array of APN dictionaries (`APN.DefaultsData.Apns`).
+
 ## Topics
 
 ### Objects

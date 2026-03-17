@@ -4,6 +4,16 @@ The payload that configures disc-burning settings.
 
 **Platforms:** macOS 10.7
 
+## Properties
+
+### BurnSupport
+
+- **Type:** `string`
+- **Required:** Yes
+- **Allowed Values:** `off`, `authenticate`, `on`
+
+Configure disc-burn. Allowed values:
+
 ## Discussion
 
 Specify `com.apple.DiscRecording` as the payload type.

@@ -4,6 +4,23 @@ The payload that configures the desktop wallpaper.
 
 **Platforms:** macOS 10.10
 
+## Properties
+
+### locked
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, locks the desktop picture. Replaced with allowWallpaperModification in macOS 10.13.
+
+### override-picture-path
+
+- **Type:** `string`
+- **Required:** No
+
+The path to the desktop picture. If set, this picture is always locked.
+
 ## Discussion
 
 Specify `com.apple.desktop` as the payload type.

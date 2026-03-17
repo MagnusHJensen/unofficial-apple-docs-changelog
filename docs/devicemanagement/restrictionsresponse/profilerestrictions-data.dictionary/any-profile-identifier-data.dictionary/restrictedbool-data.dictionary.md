@@ -4,6 +4,15 @@ A dictionary that contains Boolean restrictions.
 
 **Platforms:** iOS 4.0, iPadOS 4.0, tvOS 9.0, visionOS 1.1, watchOS 10.0
 
+## Properties
+
+### ANY restriction name
+
+- **Type:** `RestrictionsResponse.ProfileRestrictions.ANY profile identifier.RestrictedBool.ANY restriction name`
+- **Required:** No
+
+The Boolean restriction parameters.
+
 ## Topics
 
 ### Objects

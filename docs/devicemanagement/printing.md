@@ -4,6 +4,84 @@ The payload that configures printers.
 
 **Platforms:** macOS 10.7
 
+## Properties
+
+### AllowLocalPrinters
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `true`, allows printers that connect directly to a user’s computer.
+
+### DefaultPrinter
+
+- **Type:** `Printing.DefaultPrinter`
+- **Required:** No
+
+The default printer for the user.
+
+### FooterFontName
+
+- **Type:** `string`
+- **Required:** No
+
+The footer font name.
+
+### FooterFontSize
+
+- **Type:** `string`
+- **Required:** No
+
+The footer font size.
+
+### PrintFooter
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, prints the page footer (including the user name and date).
+
+### PrintMACAddress
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, includes the MAC address.
+
+### RequireAdminToAddPrinters
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `true`, requires an administrator password to add printers.
+
+### RequireAdminToPrintLocally
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, requires an administrator password to print locally.
+
+### ShowOnlyManagedPrinters
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, shows only managed printers.
+
+### UserPrinterList
+
+- **Type:** `Printing.UserPrinterList`
+- **Required:** No
+
+The printers available to a user.
+
 ## Discussion
 
 Specify `com.apple.mcxprinting` as the payload type.

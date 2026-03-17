@@ -4,6 +4,22 @@ The payload that configures the Apple TV remote.
 
 **Platforms:** iOS 11.3, iPadOS 11.3, tvOS 11.3
 
+## Properties
+
+### AllowedRemotes
+
+- **Type:** `[TVRemote.AllowedRemotesItem]`
+- **Required:** No
+
+The array of valid devices that Apple TV can connect to.
+
+### AllowedTVs
+
+- **Type:** `[TVRemote.AllowedTVsItem]`
+- **Required:** No
+
+The array of valid Apple TV identifiers that the remote can connect to.
+
 ## Discussion
 
 Specify `com.apple.tvremote` as the payload type.

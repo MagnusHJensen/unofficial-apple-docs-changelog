@@ -4,6 +4,79 @@ The payload that configures the software update policy.
 
 **Platforms:** macOS 10.7
 
+## Properties
+
+### AllowPreReleaseInstallation
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `true`, prerelease software can be installed on this computer.
+
+### AutomaticallyInstallAppUpdates
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, deselects the “Install app updates from the App Store” option and prevents the user from changing the option.
+
+### AutomaticallyInstallMacOSUpdates
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, restricts the “Install macOS Updates” option and prevents the user from changing the option.
+
+### AutomaticCheckEnabled
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, deselects the “Check for updates” option and prevents the user from changing the option.
+
+### AutomaticDownload
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, deselects the “Download new updates when available from the App Store” option and prevents the user from changing the option.
+
+### CatalogURL
+
+- **Type:** `string`
+- **Required:** No
+
+The URL of the software update catalog. This property is not supported in macOS 11 and later.
+
+### ConfigDataInstall
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, restricts the automatic installation of configuration data.
+
+### CriticalUpdateInstall
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, disables the automatic installation of critical updates and prevents the user from changing the “Install system data files and security updates” option.
+
+### restrict-software-update-require-admin-to-install
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, restrict app installations to admin users. This key has the same function as the  `restrict-store-require-admin-to-install` key in the `com.apple.appstore` payload.
+
 ## Discussion
 
 Specify `com.apple.SoftwareUpdate` as the payload type.

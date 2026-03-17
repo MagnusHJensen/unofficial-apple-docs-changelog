@@ -4,6 +4,55 @@ The payload that configures the domains under an organization’s management.
 
 **Platforms:** iOS 8.0, iPadOS 8.0, macOS 10.10, visionOS 2.0
 
+## Properties
+
+### CrossSiteTrackingPreventionRelaxedApps
+
+- **Type:** `[string]`
+- **Required:** No
+
+An array of up to 10 strings representing app bundle-ids. Apps matching the bundle-ids listed here have relaxed enforcement of cross-site tracking prevention for the domains listed in `CrossSiteTrackingPreventionRelaxedDomains`.
+
+Available in iOS 18 and later and macOS 15 and later.
+
+### CrossSiteTrackingPreventionRelaxedDomains
+
+- **Type:** `[string]`
+- **Required:** No
+
+An array of up to 10 strings. URLs matching the patterns listed here have relaxed enforcement of cross-site tracking prevention.
+
+Available in iOS 16.2 and later and macOS 13.1 and later.
+
+### EmailDomains
+
+- **Type:** `[string]`
+- **Required:** No
+
+An array of domains. Mail marks in red all email addresses that lack a suffix matching any of these strings.
+
+Available in iOS 8 and later and macOS 10.10 and later.
+
+### SafariPasswordAutoFillDomains
+
+- **Type:** `[string]`
+- **Required:** No
+
+An array of domains. Users can only save passwords in Safari from URLs matching the patterns listed here. This property doesn’t disable the autofill feature itself.
+
+Supervised devices or Shared iPads need this property to enable saving passwords in Safari.
+
+Available in iOS 9.3 and later.
+
+### WebDomains
+
+- **Type:** `[string]`
+- **Required:** No
+
+An array of domains. The system considers URLs matching the patterns listed in this property managed.
+
+Available in iOS 9.3 and later.
+
 ## Discussion
 
 Specify `com.apple.domains` as the payload type.

@@ -4,6 +4,36 @@ The request for the user details service.
 
 **Platforms:** Device Assignment Services , VPP License Management 
 
+## Properties
+
+### clientUserIdStr
+
+- **Type:** `string`
+- **Required:** No
+
+The identifier supplied by the client when registering a user. Either `clientUserIdStr` or `userId` is required. If both `clientUserIdStr`  and `userId` are supplied, `userId` takes precedence.
+
+### itsIdHash
+
+- **Type:** `string`
+- **Required:** No
+
+The hash of the user’s iTunes Store ID.
+
+### sToken
+
+- **Type:** `string`
+- **Required:** Yes
+
+The authentication token. For more information, see [Authentication](/documentation/devicemanagement/managing-apps-and-books-through-web-services-legacy#Authentication).
+
+### userId
+
+- **Type:** `int64`
+- **Required:** No
+
+The unique identifier assigned by the VPP when registering the user. Either `clientUserIdStr` or `userId` is required. If both `clientUserIdStr` and `userId` are supplied, `userId` takes precedence.
+
 ## Discussion
 
 Either `clientUserIdStr` or `userId` is required. If `clientUserIdStr` is used, an `itsIdHash` (iTunes Store ID hash) value may be included, but it is optional. If `userId` has a value, only that value is used, and `clientUserIdStr` and `itsIdHash` are ignored.

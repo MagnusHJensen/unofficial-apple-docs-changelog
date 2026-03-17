@@ -4,6 +4,15 @@ A dictionary providing configuration for temporary pairing. Required if `Disable
 
 **Platforms:** iOS 26.0, iPadOS 26.0
 
+## Properties
+
+### UnpairingTime
+
+- **Type:** `AudioAccessorySettingsTemporaryPairing_Configuration_UnpairingTimeObject`
+- **Required:** Yes
+
+A dictionary that describes when the device automatically unpairs temporarily paired audio accessories.
+
 ## Topics
 
 ### Objects

@@ -2,6 +2,15 @@
 
 **Platforms:** Device Assignment Services , VPP License Management 
 
+## Properties
+
+### genres
+
+- **Type:** `Books.Relationships.BooksGenresRelationship`
+- **Required:** No
+
+
+
 ## Topics
 
 ### Related Objects

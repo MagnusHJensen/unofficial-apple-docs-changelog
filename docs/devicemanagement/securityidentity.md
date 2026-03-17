@@ -4,6 +4,31 @@ The declaration to install an identity on the device.
 
 **Platforms:** iOS 17.0, iPadOS 17.0, macOS 14.0, tvOS 17.0, visionOS 1.1, watchOS 10.0
 
+## Properties
+
+### AllowAllAppsAccess
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, apps can access the private key.
+
+### CredentialAssetReference
+
+- **Type:** `string`
+- **Required:** Yes
+
+The identifier of an asset declaration that contains the identity to install.
+
+### KeyIsExtractable
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `true`, the private key is extractable in the keychain.
+
 ## Discussion
 
 Specify `com.apple.configuration.security.identity` as the declaration type.

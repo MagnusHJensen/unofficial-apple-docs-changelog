@@ -4,6 +4,15 @@ The payload that configures privacy preferences.
 
 **Platforms:** macOS 10.14
 
+## Properties
+
+### Services
+
+- **Type:** `PrivacyPreferencesPolicyControl.Services`
+- **Required:** Yes
+
+A dictionary whose keys are limited to the privacy policy control services.  In the case of conflicting specifications, the most restrictive setting (deny) is used.
+
 ## Discussion
 
 Specify `com.apple.TCC.configuration-profile-policy` as the payload type.

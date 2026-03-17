@@ -4,6 +4,15 @@ The payload that configures Autonomous Single App mode.
 
 **Platforms:** macOS 10.13.4
 
+## Properties
+
+### AllowedApplications
+
+- **Type:** `[AutonomousSingleAppMode.AllowedApplicationsItem]`
+- **Required:** Yes
+
+An array of dictionaries that specifies the apps that the system grants access to the Accessibility APIs.
+
 ## Discussion
 
 Specify `com.apple.asam` as the payload type.

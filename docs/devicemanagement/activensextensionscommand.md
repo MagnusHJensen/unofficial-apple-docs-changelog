@@ -4,6 +4,22 @@ The command to get a list of active extensions for a user on a device.
 
 **Platforms:** macOS 10.13
 
+## Properties
+
+### Command
+
+- **Type:** `ActiveNSExtensionsCommand.Command`
+- **Required:** Yes
+
+The command dictionary.
+
+### CommandUUID
+
+- **Type:** `string`
+- **Required:** Yes
+
+The unique identifier of the command.
+
 ## Topics
 
 ### Objects

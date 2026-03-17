@@ -4,6 +4,60 @@ The payload that configures an app extension that performs single sign-on with t
 
 **Platforms:** iOS 13.0, iPadOS 13.0, macOS 10.15, visionOS 1.1
 
+## Properties
+
+### ExtensionData
+
+- **Type:** `ExtensibleSingleSignOnKerberos.ExtensionData`
+- **Required:** No
+
+This is the dictionary used by the Apple built-in Kerberos extension.
+
+### ExtensionIdentifier
+
+- **Type:** `string`
+- **Required:** Yes
+- **Allowed Values:** `com.apple.AppSSOKerberos.KerberosExtension`
+
+Set this to `com.apple.AppSSOKerberos.KerberosExtension` for this extension.
+
+### Hosts
+
+- **Type:** `[string]`
+- **Required:** No
+
+One or more host or domain names for which the app extension performs SSO.
+
+The system:
+
+- Matches host or domain names case-insensitively
+- Requires that all the host and domain names of all installed Extensible SSO payloads are unique
+
+> 
+
+### Realm
+
+- **Type:** `string`
+- **Required:** Yes
+
+The Kerberos realm. Use proper capitalization for this value. If in an Active Directory forest, this is the realm where the user logs in.
+
+### TeamIdentifier
+
+- **Type:** `string`
+- **Required:** Yes
+- **Allowed Values:** `apple`
+
+Set this to `apple` for this extension.
+
+### Type
+
+- **Type:** `string`
+- **Required:** Yes
+- **Allowed Values:** `Credential`
+
+Set this to `Credential` for this extension.
+
 ## Discussion
 
 Specify `com.apple.extensiblesso` as the payload type.

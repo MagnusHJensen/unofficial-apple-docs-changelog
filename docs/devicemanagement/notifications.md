@@ -4,6 +4,15 @@ The payload that configures notifications.
 
 **Platforms:** iOS 9.3, iPadOS 9.3, macOS 10.15
 
+## Properties
+
+### NotificationSettings
+
+- **Type:** `[Notifications.NotificationSettingsItem]`
+- **Required:** Yes
+
+An array of notification settings dictionaries.
+
 ## Discussion
 
 Specify `com.apple.notificationsettings` as the payload type.

@@ -4,6 +4,22 @@ The payload that configures single sign-on (SSO).
 
 **Platforms:** iOS 7.0, iPadOS 7.0
 
+## Properties
+
+### Kerberos
+
+- **Type:** `SingleSignOn.Kerberos`
+- **Required:** No
+
+The Kerberos dictionary.
+
+### Name
+
+- **Type:** `string`
+- **Required:** Yes
+
+The human-readable name for the account.
+
 ## Discussion
 
 Specify `com.apple.sso` as the payload type.

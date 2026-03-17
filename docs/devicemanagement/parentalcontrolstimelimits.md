@@ -4,6 +4,22 @@ The payload that configures parental control time limits.
 
 **Platforms:** macOS 10.7
 
+## Properties
+
+### familyControlsEnabled
+
+- **Type:** `boolean`
+- **Required:** Yes
+
+If `true`, enables time limits.
+
+### time-limits
+
+- **Type:** `ParentalControlsTimeLimits.Time-limits`
+- **Required:** No
+
+The time limits to enforce if `familyControlsEnabled` is enabled.
+
 ## Discussion
 
 Specify `com.apple.familycontrols.timelimits.v2` as the payload type.

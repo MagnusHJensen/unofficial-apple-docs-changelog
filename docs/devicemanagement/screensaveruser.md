@@ -4,6 +4,29 @@ The payload that configures a user’s screen saver settings.
 
 **Platforms:** macOS 10.11
 
+## Properties
+
+### idleTime
+
+- **Type:** `integer`
+- **Required:** No
+
+The number of seconds of inactivity before the screen saver activates (`0` = Never activate).
+
+### moduleName
+
+- **Type:** `string`
+- **Required:** Yes
+
+The name of the screen saver module.
+
+### modulePath
+
+- **Type:** `string`
+- **Required:** No
+
+A full path to the screen saver module to use.
+
 ## Discussion
 
 Specify `com.apple.screensaver.user` as the payload type.

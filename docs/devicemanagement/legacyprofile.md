@@ -4,6 +4,17 @@ The declaration to configure a legacy profile.
 
 **Platforms:** iOS 15.0, iPadOS 15.0, macOS 13.0, tvOS 16.0, visionOS 1.1, watchOS 10.0
 
+## Properties
+
+### ProfileURL
+
+- **Type:** `string`
+- **Required:** Yes
+
+The URL of the profile to download and install, which needs to start with `https://`, and must be hosted by the MDM server.
+
+If a user enrollment triggers this configuration, the system silently ignores any MDMv1 payloads in macOS where the User Enrollment Mode setting is `forbidden`. In iOS, the system rejects the entire profile.
+
 ## Discussion
 
 Specify `com.apple.configuration.legacy` as the declaration type.

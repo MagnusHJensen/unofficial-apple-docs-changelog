@@ -4,6 +4,22 @@ The payload that configures a certificate preference.
 
 **Platforms:** macOS 10.12
 
+## Properties
+
+### Name
+
+- **Type:** `string`
+- **Required:** Yes
+
+An email address (in RFC 822 format) or other name for which a preferred certificate is requested.
+
+### PayloadCertificateUUID
+
+- **Type:** `string`
+- **Required:** Yes
+
+The UUID of the certificate payload within the same profile to use for the identity credential.
+
 ## Discussion
 
 Specify `com.apple.security.certificatepreference` as the payload type.

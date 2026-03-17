@@ -4,6 +4,22 @@ The payload that configures network-usage rules.
 
 **Platforms:** iOS 9.0, iPadOS 9.0
 
+## Properties
+
+### ApplicationRules
+
+- **Type:** `[NetworkUsageRules.ApplicationRulesItem]`
+- **Required:** No
+
+An array of application rules, that apply to only managed apps.
+
+### SIMRules
+
+- **Type:** `[NetworkUsageRules.SIMRulesItem]`
+- **Required:** No
+
+An array of SIM rules, that apply to all apps.
+
 ## Discussion
 
 Specify `com.apple.networkusagerules` as the payload type.

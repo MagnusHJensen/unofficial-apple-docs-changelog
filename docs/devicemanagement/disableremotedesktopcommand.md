@@ -4,6 +4,22 @@ The command to disable Remote Desktop on a device.
 
 **Platforms:** macOS 10.14.4
 
+## Properties
+
+### Command
+
+- **Type:** `DisableRemoteDesktopCommand.Command`
+- **Required:** Yes
+
+The command dictionary.
+
+### CommandUUID
+
+- **Type:** `string`
+- **Required:** Yes
+
+The unique identifier of the command.
+
 ## Topics
 
 ### Objects

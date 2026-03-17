@@ -4,6 +4,22 @@ The command to get a list of the managed books on a device.
 
 **Platforms:** iOS 8.0, iPadOS 8.0
 
+## Properties
+
+### Command
+
+- **Type:** `ManagedMediaListCommand.Command`
+- **Required:** Yes
+
+The command dictionary.
+
+### CommandUUID
+
+- **Type:** `string`
+- **Required:** Yes
+
+The unique identifier of the command.
+
 ## Topics
 
 ### Objects

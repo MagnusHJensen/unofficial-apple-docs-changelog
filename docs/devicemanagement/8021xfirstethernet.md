@@ -4,6 +4,8 @@ The payload that configures the first wired Ethernet interface.
 
 **Platforms:** macOS 10.7
 
+## Properties
+
 ## Discussion
 
 Specify `com.apple.firstethernet.managed` as the payload type.

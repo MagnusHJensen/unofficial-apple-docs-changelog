@@ -4,6 +4,15 @@ The dictionary of forced settings.
 
 **Platforms:** macOS 10.7
 
+## Properties
+
+### mcx_preference_settings
+
+- **Type:** `ManagedPreferences.PayloadContent.ANY.Settings.Mcx_preference_settings`
+- **Required:** Yes
+
+The dictionary of settings.
+
 ## Topics
 
 ### Objects

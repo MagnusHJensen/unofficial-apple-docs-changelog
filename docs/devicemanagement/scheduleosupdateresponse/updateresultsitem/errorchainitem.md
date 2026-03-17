@@ -4,3 +4,12 @@ A dictionary that describes an error chain item.
 
 **Platforms:** iOS 9.0, iPadOS 9.0, macOS 10.11, tvOS 12.0
 
+## Properties
+
+### ANY
+
+- **Type:** `any`
+- **Required:** Yes
+
+The error details.
+

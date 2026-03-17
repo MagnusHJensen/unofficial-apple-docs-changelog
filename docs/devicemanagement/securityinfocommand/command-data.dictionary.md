@@ -4,3 +4,21 @@ The command to get security-related information about a device.
 
 **Platforms:** iOS 4.0, iPadOS 4.0, macOS 10.7, tvOS 9.0, visionOS 1.1, watchOS 10.0
 
+## Properties
+
+### RequestRequiresNetworkTether
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the device needs to be network-tethered to run the command.
+
+### RequestType
+
+- **Type:** `string`
+- **Required:** Yes
+- **Allowed Values:** `SecurityInfo`
+
+The request type for this command.
+

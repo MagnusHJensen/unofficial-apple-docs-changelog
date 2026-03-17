@@ -4,6 +4,16 @@ The payload that configures login behavior.
 
 **Platforms:** macOS 10.7
 
+## Properties
+
+### DisableLoginItemsSuppression
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system prevents the user from disabling login item launches by using the Shift key.
+
 ## Discussion
 
 Specify `loginwindow` as the payload type.

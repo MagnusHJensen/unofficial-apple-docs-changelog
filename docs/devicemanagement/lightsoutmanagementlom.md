@@ -4,6 +4,38 @@ The payload that configures lights-out management (LOM) settings.
 
 **Platforms:** macOS 11.0
 
+## Properties
+
+### ControllerCACertificateUUIDs
+
+- **Type:** `[string]`
+- **Required:** No
+
+An array of payload UUIDs containing CA certificates that devices use to evaluate trust of controller certificates.
+
+This key configures the device to accept the [LOMDeviceRequestCommand](/documentation/devicemanagement/lomdevicerequestcommand) from MDM and then send it to the target device. This certificate must contain the Key Usage attributes of Digital Signature, Key Encipherment and Data Encipherment. As well as the Extended Key Usage attributes of Server Authentication and Client Authentication.
+
+### ControllerCertificateUUID
+
+- **Type:** `string`
+- **Required:** No
+
+The UUID certificate for the LOM controller. This key configures the device to accept the [LOMDeviceRequestCommand](/documentation/devicemanagement/lomdevicerequestcommand) from MDM and then send it to the target device.
+
+### DeviceCACertificateUUIDs
+
+- **Type:** `[string]`
+- **Required:** No
+
+An array of payload UUIDs containing CA certificates that controllers use to evaluate trust of device certificates.
+
+### DeviceCertificateUUID
+
+- **Type:** `string`
+- **Required:** No
+
+The UUID certificate for the device. This key indicates the device can receive `PowerON`, `PowerOFF`, and `Reset` requests from a LOM controller. This certificate must contain the Key Usage attributes of Digital Signature, Key Encipherment and Data Encipherment. As well as the Extended Key Usage attributes of Server Authentication and Client Authentication.
+
 ## Discussion
 
 Specify `com.apple.lom` as the payload type.

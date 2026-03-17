@@ -4,6 +4,36 @@ The payload that configures parental controls for apps.
 
 **Platforms:** macOS 10.7
 
+## Properties
+
+### familyControlsEnabled
+
+- **Type:** `boolean`
+- **Required:** Yes
+
+If `true`, enables app access restrictions.
+
+### pathBlackList
+
+- **Type:** `[string]`
+- **Required:** No
+
+The paths to apps in the deny list. This property is deprecated in macOS 10.15 and later.
+
+### pathWhiteList
+
+- **Type:** `[string]`
+- **Required:** No
+
+The paths to apps in the allow list. This property is deprecated in macOS 10.15 and later.
+
+### whiteList
+
+- **Type:** `[ParentalControlsApplicationRestrictions.ApplicationItem]`
+- **Required:** No
+
+The allow list of app item dictionaries.
+
 ## Discussion
 
 Specify `com.apple.applicationaccess.new` as the payload type.

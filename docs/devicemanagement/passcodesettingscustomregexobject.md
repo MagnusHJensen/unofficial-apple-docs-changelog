@@ -4,6 +4,22 @@ A regular expression and its description to enforce password compliance.
 
 **Platforms:** macOS 14.0
 
+## Properties
+
+### Description
+
+- **Type:** `PasscodeSettingsCustomRegex_DescriptionObject`
+- **Required:** No
+
+A dictionary with supported OS language IDs for the keys (such as `en-US`), and values that represent a localized description of the policy that the regular expression enforces. Use the special `default` key for languages that the dictionary doesn’t contain.
+
+### Regex
+
+- **Type:** `string`
+- **Required:** Yes
+
+A regular expression string to match against the password to determine whether it complies with a policy. The regular expression uses the ICU syntax. The string can’t exceed 2048 characters in length.
+
 ## Topics
 
 ### Objects

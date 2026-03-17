@@ -4,6 +4,23 @@ The payload to configure global preferences.
 
 **Platforms:** macOS 10.7
 
+## Properties
+
+### com.apple.autologout.AutoLogOutDelay
+
+- **Type:** `number`
+- **Required:** No
+
+The `autologout` delay, in seconds. A value of `0` means `autologout` is off. In some cases, this delay may be restricted to values between 5 minutes and 24 hours.
+
+### MultipleSessionEnabled
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, disables fast user switching.
+
 ## Discussion
 
 Specify `.GlobalPreferences` as the payload type.

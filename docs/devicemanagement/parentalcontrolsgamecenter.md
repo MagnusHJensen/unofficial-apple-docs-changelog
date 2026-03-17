@@ -4,6 +4,40 @@ The payload that configures Game Center parental controls.
 
 **Platforms:** macOS 10.9
 
+## Properties
+
+### GKFeatureAccountModificationAllowed
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `true`, allows account modifications.
+
+### GKFeatureAddingGameCenterFriendsAllowed
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `true`, allows adding Game Center friends.
+
+### GKFeatureGameCenterAllowed
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `true`, enables Game Center.
+
+### GKFeatureMultiplayerGamingAllowed
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `true`, allows multiplayer gaming.
+
 ## Discussion
 
 Specify `com.apple.gamed` as the payload type.

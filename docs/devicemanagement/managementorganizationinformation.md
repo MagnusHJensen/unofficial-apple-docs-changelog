@@ -4,6 +4,36 @@ The declaration to configure the managing organization’s contact information.
 
 **Platforms:** iOS 15.0, iPadOS 15.0, macOS 13.0, tvOS 16.0, visionOS 1.1, watchOS 10.0
 
+## Properties
+
+### Email
+
+- **Type:** `string`
+- **Required:** No
+
+The email address of the contact person for the organization.
+
+### Name
+
+- **Type:** `string`
+- **Required:** Yes
+
+The name of the organization.
+
+### Proof
+
+- **Type:** `ManagementOrganizationInformationProofObject`
+- **Required:** No
+
+The additional properties that verify the identity and authenticity of the organization.
+
+### URL
+
+- **Type:** `string`
+- **Required:** No
+
+The website of the organization to contact for support.
+
 ## Discussion
 
 Specify `com.apple.management.organization-info` as the declaration type.

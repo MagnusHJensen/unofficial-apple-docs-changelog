@@ -4,6 +4,24 @@ The payload that configures guest accounts.
 
 **Platforms:** macOS 10.7
 
+## Properties
+
+### DisableGuestAccount
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system disables the guest account. This property has no effect if `EnableGuestAccount` is `true`.
+
+### EnableGuestAccount
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system enables the guest account.
+
 ## Discussion
 
 Specify `com.apple.MCX` as the payload type.

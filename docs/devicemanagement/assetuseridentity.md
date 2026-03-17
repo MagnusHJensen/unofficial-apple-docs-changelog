@@ -4,6 +4,22 @@ The user-identity data.
 
 **Platforms:** iOS 15.0, iPadOS 15.0, macOS 13.0, tvOS 16.0, visionOS 1.1, watchOS 10.0
 
+## Properties
+
+### EmailAddress
+
+- **Type:** `string`
+- **Required:** No
+
+The email address of the user.
+
+### FullName
+
+- **Type:** `string`
+- **Required:** No
+
+The user’s full name.
+
 ## Discussion
 
 Specify `com.apple.asset.useridentity` as the declaration type.

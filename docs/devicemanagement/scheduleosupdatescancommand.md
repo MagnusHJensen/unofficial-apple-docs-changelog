@@ -4,6 +4,22 @@ The command to schedule a background scan for operating-system updates on a devi
 
 **Platforms:** macOS 10.11
 
+## Properties
+
+### Command
+
+- **Type:** `ScheduleOSUpdateScanCommand.Command`
+- **Required:** Yes
+
+The command dictionary.
+
+### CommandUUID
+
+- **Type:** `string`
+- **Required:** Yes
+
+The unique identifier of the command.
+
 ## Topics
 
 ### Objects

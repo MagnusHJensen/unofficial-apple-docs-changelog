@@ -4,6 +4,37 @@ A reference to a PKCS #12 password-protected identity.
 
 **Platforms:** iOS 17.0, iPadOS 17.0, macOS 14.0, tvOS 17.0, visionOS 1.1, watchOS 10.0
 
+## Properties
+
+### Accessible
+
+- **Type:** `string`
+- **Required:** No
+- **Default:** `Default`
+- **Allowed Values:** `Default`, `AfterFirstUnlock`
+
+The keychain accessibility that determines when the keychain item is available for use, which has these allowed values:
+
+- `Default`: The most restrictive accessibility that still satisfies all uses of the asset by configurations that reference it.
+- `AfterFirstUnlock`: The keychain item is only available after the first unlock of the device.
+
+### Authentication
+
+- **Type:** `AssetCredentialIdentityAuthenticationObject`
+- **Required:** No
+
+The server authentication details.
+
+### Reference
+
+- **Type:** `AssetCredentialIdentityReferenceObject`
+- **Required:** Yes
+
+The external reference. Ensure that the asset data:
+
+- Is a JSON document that represents the `com.apple.credential.identity` credential type
+- Uses a media type of `application/json`, and if it includes a `ContentType` sub-key, that sub-key media type is also `application/json`
+
 ## Discussion
 
 Specify `com.apple.asset.credential.identity` as the declaration type.

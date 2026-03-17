@@ -4,6 +4,15 @@ The payload that configures associated domains.
 
 **Platforms:** macOS 10.15
 
+## Properties
+
+### Configuration
+
+- **Type:** `[AssociatedDomains.ConfigurationItem]`
+- **Required:** Yes
+
+A dictionary that maps apps to their associated domains.
+
 ## Discussion
 
 Specify `com.apple.associated-domains` as the payload type.

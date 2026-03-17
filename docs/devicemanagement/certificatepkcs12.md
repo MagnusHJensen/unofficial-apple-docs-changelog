@@ -4,6 +4,45 @@ The payload that configures a PKCS #12-formatted certificate.
 
 **Platforms:** iOS 4.0, iPadOS 4.0, macOS 10.7, tvOS 9.0, visionOS 1.0, watchOS 3.0
 
+## Properties
+
+### AllowAllAppsAccess
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system allows apps access to the private key. Available in macOS 10.10 and later.
+
+### KeyIsExtractable
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, the system doesn’t tag the private key data as extractable in the keychain.
+
+### Password
+
+- **Type:** `string`
+- **Required:** No
+
+The password to the identity.
+
+### PayloadCertificateFileName
+
+- **Type:** `string`
+- **Required:** No
+
+The file name of the enclosed certificate.
+
+### PayloadContent
+
+- **Type:** `data`
+- **Required:** Yes
+
+The binary representation of the payload, encoded in Base64.
+
 ## Discussion
 
 Specify `com.apple.security.pkcs12` as the payload type.

@@ -4,6 +4,24 @@ The declaration to configure the server’s feature set.
 
 **Platforms:** iOS 15.0, iPadOS 15.0, macOS 13.0, tvOS 16.0, visionOS 1.1, watchOS 10.0
 
+## Properties
+
+### SupportedFeatures
+
+- **Type:** `ManagementServerCapabilitiesSupportedFeaturesObject`
+- **Required:** Yes
+
+A dictionary that contains the server’s optional protocol features.
+
+Each dictionary item uses the key name to represent a feature, and the value to hold the feature’s associated parameters. This protocol reserves keys with a prefix of `com.apple.`, which appear as subkeys in this dictionary.
+
+### Version
+
+- **Type:** `string`
+- **Required:** Yes
+
+The server’s protocol version.
+
 ## Discussion
 
 Specify `com.apple.management.server-capabilities` as the declaration type.

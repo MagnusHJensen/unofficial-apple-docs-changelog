@@ -4,6 +4,44 @@ The payload that configures the Xsan preferences that define the volumes that au
 
 **Platforms:** macOS 10.11
 
+## Properties
+
+### denyDLC
+
+- **Type:** `[string]`
+- **Required:** No
+
+An array of StorNext volume names. If the Xsan client is attempting to mount a volume named in this array, the client only mounts the volume if its logical units (LUNs) are available through Fibre Channel. It doesn’t attempt to mount the volume using Distributed LAN Client (DLC).
+
+### denyMount
+
+- **Type:** `[string]`
+- **Required:** No
+
+An array of Xsan or StorNext volume names. If no `onlyMount` array is present, the Xsan client automatically attempts to mount all SAN volumes except the volumes in this array. The system administrator can mount those volumes manually by using the `xsanctl(8)` mount command.
+
+### onlyMount
+
+- **Type:** `[string]`
+- **Required:** No
+
+An array of Xsan or StorNext volume names. The Xsan client attempts to automatically mount these volumes at startup. The system administrator can mount additional volumes manually by using the `xsanctl(8)` mount command.
+
+### preferDLC
+
+- **Type:** `[string]`
+- **Required:** No
+
+An array of StorNext volume names. If the Xsan client is attempting to mount a volume named in this array, the Xsan client attempts to mount the volume using DLC. If DLC isn’t available, the client attempts to mount the volume if its LUNs are available through Fibre Channel. The volume name must not also appear in `denyDLC`.
+
+### useDLC
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, use the DLC for all volumes.
+
 ## Discussion
 
 Specify `com.apple.xsan.preferences` as the payload type.

@@ -4,6 +4,83 @@ The payload that configures the parental control web content filters.
 
 **Platforms:** macOS 10.7
 
+## Properties
+
+### allowListEnabled
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, enables web content filters.
+
+### filterAllowList
+
+- **Type:** `[string]`
+- **Required:** No
+
+The array of URLs that defines an allow list. When `restrictWeb` and `useContentFilter` are enabled, only URLs in the allow list are available to the user.
+
+### filterBlacklist
+
+- **Type:** `[string]`
+- **Required:** No
+
+Use `filterDenyList` instead.
+
+### filterDenyList
+
+- **Type:** `[string]`
+- **Required:** No
+
+The array of URLs that defines a deny list. When `restrictWeb` and `useContentFilter` are enabled, no URLs in the deny list are available to the user.
+
+### filterWhitelist
+
+- **Type:** `[string]`
+- **Required:** No
+
+Use `filterAllowList` instead.
+
+### restrictWeb
+
+- **Type:** `boolean`
+- **Required:** Yes
+
+If `true`, enables web content filters.
+
+### siteAllowList
+
+- **Type:** `[ParentalControlsContentFilter.SiteAllowListItem]`
+- **Required:** No
+
+An array of sites that defines an allow list. If specified, this defines additional allowed sites besides those in the automated allow list and deny list, including disallowed adult sites.
+
+This key is required if `allowListEnabled` is `true`.
+
+### siteWhitelist
+
+- **Type:** `[ParentalControlsContentFilter.SiteWhitelistItem]`
+- **Required:** No
+
+Use `siteAllowList` instead.
+
+### useContentFilter
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, filters content automatically.
+
+### whitelistEnabled
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+Use `allowListEnabled` instead.
+
 ## Discussion
 
 Specify `com.apple.familycontrols.contentfilter` as the payload type.

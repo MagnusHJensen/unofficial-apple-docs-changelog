@@ -4,6 +4,56 @@ The payload that configures the firewall.
 
 **Platforms:** macOS 10.12
 
+## Properties
+
+### AllowSigned
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `true`, the system allows built-in software to receive incoming connections. Available in macOS 12.3 and later.
+
+> 
+
+### AllowSignedApp
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `true`, the system allows downloaded signed software to receive incoming connections. Available in macOS 12.3 and later.
+
+> 
+
+### Applications
+
+- **Type:** `[Firewall.ApplicationsItem]`
+- **Required:** No
+
+The list of apps with connections that the firewall controls.
+
+### BlockAllIncoming
+
+- **Type:** `boolean`
+- **Required:** No
+
+If `true`, the system enables blocking all incoming connections.
+
+### EnableFirewall
+
+- **Type:** `boolean`
+- **Required:** Yes
+
+If `true`, the system enables the firewall.
+
+### EnableStealthMode
+
+- **Type:** `boolean`
+- **Required:** No
+
+If `true`, the system enables stealth mode.
+
 ## Discussion
 
 Specify `com.apple.security.firewall` as the payload type.

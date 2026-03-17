@@ -4,3 +4,12 @@ A dictionary that contains supported OS language IDs for the keys and values tha
 
 **Platforms:** macOS 14.0
 
+## Properties
+
+### ANY
+
+- **Type:** `string`
+- **Required:** No
+
+A localized description.
+

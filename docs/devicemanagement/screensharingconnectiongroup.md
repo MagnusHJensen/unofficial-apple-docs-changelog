@@ -4,6 +4,29 @@ The declaration to configure a group of screen-sharing connections.
 
 **Platforms:** macOS 14.0
 
+## Properties
+
+### ConnectionGroupUUID
+
+- **Type:** `string`
+- **Required:** Yes
+
+A unique identifier for this connection group.
+
+### GroupName
+
+- **Type:** `string`
+- **Required:** Yes
+
+The name of the connection group.
+
+### Members
+
+- **Type:** `[string]`
+- **Required:** Yes
+
+An array of `ConnectionUUID`s that represent connections declared in `ScreenSharingConnection` configurations that are members of this group.
+
 ## Discussion
 
 Specify `com.apple.configuration.screensharing.connection.group` as the declaration type.

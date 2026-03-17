@@ -4,6 +4,43 @@ The declaration to configure a Mail account.
 
 **Platforms:** iOS 15.0, iPadOS 15.0, macOS 13.0, visionOS 1.1
 
+## Properties
+
+### IncomingServer
+
+- **Type:** `AccountMailIncomingServerObject`
+- **Required:** Yes
+
+The settings for the incoming mail server for this account.
+
+### OutgoingServer
+
+- **Type:** `AccountMailOutgoingServerObject`
+- **Required:** Yes
+
+The settings for the outgoing mail server for this account.
+
+### SMIME
+
+- **Type:** `AccountMailSMIMEObject`
+- **Required:** No
+
+Settings for S/MIME.
+
+### UserIdentityAssetReference
+
+- **Type:** `string`
+- **Required:** No
+
+The identifier of an asset declaration that contains the user identity for this account. Set the corresponding asset type to `UserIdentity`.
+
+### VisibleName
+
+- **Type:** `string`
+- **Required:** No
+
+The name that apps show to the user for this mail account. If not present, the system generates a suitable default.
+
 ## Discussion
 
 Specify `com.apple.configuration.account.mail` as the declaration type.

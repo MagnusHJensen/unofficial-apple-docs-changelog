@@ -4,6 +4,15 @@ The payload that configures system migration.
 
 **Platforms:** macOS 10.12.4
 
+## Properties
+
+### CustomBehavior
+
+- **Type:** `[SystemMigration.CustomBehaviorItem]`
+- **Required:** No
+
+The list of custom behavior dictionaries.
+
 ## Discussion
 
 Specify `com.apple.systemmigration` as the payload type.

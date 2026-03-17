@@ -4,6 +4,22 @@ The command to inform the device that it can continue past Setup Assistant and f
 
 **Platforms:** iOS 17.0, iPadOS 17.0
 
+## Properties
+
+### Command
+
+- **Type:** `UserConfiguredCommand.Command`
+- **Required:** Yes
+
+The command dictionary.
+
+### CommandUUID
+
+- **Type:** `string`
+- **Required:** Yes
+
+The unique identifier of the command.
+
 ## Topics
 
 ### Objects

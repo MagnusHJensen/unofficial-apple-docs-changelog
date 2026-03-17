@@ -4,6 +4,15 @@ The payload that configures Conference Room Display mode for Apple TV.
 
 **Platforms:** tvOS 10.2
 
+## Properties
+
+### Message
+
+- **Type:** `string`
+- **Required:** No
+
+The custom message displayed on the screen in Conference Room Display mode.
+
 ## Discussion
 
 Specify `com.apple.conferenceroomdisplay` as the payload type.

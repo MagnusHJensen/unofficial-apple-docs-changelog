@@ -4,6 +4,36 @@ The time limits dictionary.
 
 **Platforms:** macOS 10.7
 
+## Properties
+
+### weekday-allowance
+
+- **Type:** `ParentalControlsTimeLimits.Time-limits.Weekday-allowance`
+- **Required:** No
+
+The weekday allowance settings.
+
+### weekday-curfew
+
+- **Type:** `ParentalControlsTimeLimits.Time-limits.Weekday-curfew`
+- **Required:** No
+
+The weekday curfew settings.
+
+### weekend-allowance
+
+- **Type:** `ParentalControlsTimeLimits.Time-limits.Weekend-allowance`
+- **Required:** No
+
+The weekend allowance settings.
+
+### weekend-curfew
+
+- **Type:** `ParentalControlsTimeLimits.Time-limits.Weekend-curfew`
+- **Required:** No
+
+The weekend curfew settings.
+
 ## Topics
 
 ### Objects

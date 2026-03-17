@@ -4,6 +4,72 @@ The declaration to configure keyboard settings.
 
 **Platforms:** iOS 26.4 (Beta), iPadOS 26.4 (Beta), macOS 26.4 (Beta)
 
+## Properties
+
+### AllowAutoCorrection
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, disables auto-correction.
+
+### AllowDefinitionLookup
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, disables definition lookup.
+
+### AllowDictation
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, disables dictation.
+
+### AllowMathKeyboardSuggestions
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, disables keyboard suggestions that include math solutions. This key is also supported by the math.settings configuration.
+
+### AllowPredictiveText
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, disables predictive text.
+
+### AllowSlideToType
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, disables slide to type.
+
+### AllowSpellCheck
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, disables spell check.
+
+### AllowTextReplacement
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, disables text replacement.
+
 ## Discussion
 
 Specify `com.apple.configuration.keyboard.settings` as the declaration type.

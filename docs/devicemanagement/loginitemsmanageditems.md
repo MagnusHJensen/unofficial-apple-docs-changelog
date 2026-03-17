@@ -4,6 +4,15 @@ The payload that configures a device’s login items.
 
 **Platforms:** macOS 10.13
 
+## Properties
+
+### AutoLaunchedApplicationDictionary-managed
+
+- **Type:** `[LoginItemsManagedItems.LoginItem]`
+- **Required:** Yes
+
+An array of login item dictionaries.
+
 ## Discussion
 
 Specify `com.apple.loginitems.managed` as the payload type.

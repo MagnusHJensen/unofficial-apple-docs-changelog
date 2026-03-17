@@ -4,6 +4,22 @@ The payload that configures cellular settings.
 
 **Platforms:** iOS 7.0, iPadOS 7.0, watchOS 3.2
 
+## Properties
+
+### APNs
+
+- **Type:** `[Cellular.APNsItem]`
+- **Required:** No
+
+An array of access point name (APN) dictionaries.
+
+### AttachAPN
+
+- **Type:** `Cellular.AttachAPN`
+- **Required:** No
+
+A configuration dictionary.
+
 ## Discussion
 
 Specify `com.apple.cellular` as the payload type.

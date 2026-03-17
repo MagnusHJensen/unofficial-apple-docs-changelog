@@ -4,6 +4,23 @@ A dictionary that contains settings about the organization operating the MDM ser
 
 **Platforms:** iOS 7.0, iPadOS 7.0, macOS 10.15, visionOS 2.0
 
+## Properties
+
+### Item
+
+- **Type:** `string`
+- **Required:** Yes
+- **Allowed Values:** `MDMOptions`
+
+The string that defines this setting type.
+
+### MDMOptions
+
+- **Type:** `SettingsCommand.Command.Settings.MDMOptions.MDMOptions`
+- **Required:** Yes
+
+A dictionary of MDM options.
+
 ## Topics
 
 ### Objects

@@ -4,6 +4,30 @@ An error response that indicates a well-known service discovery request failed.
 
 **Platforms:** iOS 17.5, iPadOS 17.5, macOS 14.5, visionOS 1.2
 
+## Properties
+
+### code
+
+- **Type:** `string`
+- **Required:** Yes
+- **Allowed Values:** `com.apple.well-known.failed`
+
+Indicates that the well-known request has failed.
+
+### description
+
+- **Type:** `string`
+- **Required:** No
+
+A description of the error. Only use this for logging purposes and don’t display it to the user.
+
+### message
+
+- **Type:** `string`
+- **Required:** No
+
+A description of the error to display to the user.
+
 ## Discussion
 
 The schema for a JSON or property list XML document that an MDM server’s 403 response body contains. The response headers need to include a “Content-Type” header that indicates whether the response returns JSON or XML.

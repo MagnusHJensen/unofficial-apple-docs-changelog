@@ -4,6 +4,15 @@ The payload that configures AirPrint printer discoverability in the user’s pri
 
 **Platforms:** iOS 7.0, iPadOS 7.0, macOS 10.10, visionOS 2.0
 
+## Properties
+
+### AirPrint
+
+- **Type:** `[AirPrint.AirPrintItem]`
+- **Required:** Yes
+
+An array of AirPrint printers that are presented to the user.
+
 ## Discussion
 
 Specify `com.apple.airprint` as the payload type.

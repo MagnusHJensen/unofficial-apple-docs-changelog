@@ -4,6 +4,15 @@ The payload that configures per-app VPN settings.
 
 **Platforms:** macOS 10.9
 
+## Properties
+
+### AppLayerVPNMapping
+
+- **Type:** `[AppToAppLayerVPNMapping.AppLayerVPNMappingItem]`
+- **Required:** Yes
+
+The array of VPN mapping dictionaries.
+
 ## Discussion
 
 Specify `com.apple.vpn.managed.appmapping` as the payload type.
