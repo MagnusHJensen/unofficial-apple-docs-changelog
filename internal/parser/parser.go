@@ -37,8 +37,11 @@ func ToMarkdown(doc *api.DocumentationResponse) string {
 
 	// Primary content sections
 	for _, section := range doc.PrimaryContentSections {
-		if section.Kind == "content" {
+		switch section.Kind {
+		case "content":
 			sb.WriteString(renderContent(section.Content, doc.References))
+		case "properties":
+			sb.WriteString(renderProperties(section, doc.References))
 		}
 	}
 
@@ -162,4 +165,53 @@ func renderInlineContent(inlines []api.InlineContent, refs map[string]api.Refere
 	}
 
 	return strings.Join(parts, "")
+}
+
+func renderProperties(section api.ContentSection, refs map[string]api.Reference) string {
+	var sb strings.Builder
+
+	title := section.Title
+	if title == "" {
+		title = "Properties"
+	}
+	sb.WriteString(fmt.Sprintf("## %s\n\n", title))
+
+	for _, prop := range section.Items {
+		// Property name as heading
+		sb.WriteString(fmt.Sprintf("### %s\n\n", prop.Name))
+
+		// Type
+		if len(prop.Type) > 0 {
+			var typeParts []string
+			for _, t := range prop.Type {
+				typeParts = append(typeParts, t.Text)
+			}
+			typeName := strings.Join(typeParts, "")
+			sb.WriteString(fmt.Sprintf("- **Type:** `%s`\n", typeName))
+		}
+
+		// Required
+		if prop.Required {
+			sb.WriteString("- **Required:** Yes\n")
+		} else {
+			sb.WriteString("- **Required:** No\n")
+		}
+
+		// Attributes (default value, allowed values)
+		for _, attr := range prop.Attributes {
+			switch attr.Kind {
+			case "default":
+				sb.WriteString(fmt.Sprintf("- **Default:** `%s`\n", attr.Value))
+			case "allowedValues":
+				sb.WriteString(fmt.Sprintf("- **Allowed Values:** `%s`\n", strings.Join(attr.Values, "`, `")))
+			}
+		}
+
+		sb.WriteString("\n")
+
+		// Content (description paragraphs)
+		sb.WriteString(renderContent(prop.Content, refs))
+	}
+
+	return sb.String()
 }

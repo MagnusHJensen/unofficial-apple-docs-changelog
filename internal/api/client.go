@@ -87,8 +87,25 @@ type Platform struct {
 }
 
 type ContentSection struct {
-	Kind    string    `json:"kind"`
-	Content []Content `json:"content"`
+	Kind    string         `json:"kind"`
+	Title   string         `json:"title,omitempty"`
+	Content []Content      `json:"content,omitempty"`
+	Items   []PropertyItem `json:"items,omitempty"`
+}
+
+type PropertyItem struct {
+	Name              string              `json:"name"`
+	Type              []Fragment          `json:"type"`
+	Content           []Content           `json:"content"`
+	Required          bool                `json:"required"`
+	Attributes        []PropertyAttribute `json:"attributes"`
+	IntroducedVersion string              `json:"introducedVersion,omitempty"`
+}
+
+type PropertyAttribute struct {
+	Kind   string   `json:"kind"`
+	Value  string   `json:"value,omitempty"`
+	Values []string `json:"values,omitempty"`
 }
 
 type Content struct {
