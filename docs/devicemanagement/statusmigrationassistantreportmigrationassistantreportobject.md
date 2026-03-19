@@ -2,7 +2,7 @@
 
 The Migration Assistant migration status.
 
-**Platforms:** macOS 26.4 (Beta)
+**Platforms:** macOS 26.4
 
 ## Properties
 

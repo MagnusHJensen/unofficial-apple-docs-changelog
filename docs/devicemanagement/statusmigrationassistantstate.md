@@ -2,7 +2,7 @@
 
 The current migration state of the system.
 
-**Platforms:** macOS 26.4 (Beta)
+**Platforms:** macOS 26.4
 
 ## Properties
 

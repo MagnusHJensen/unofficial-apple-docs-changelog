@@ -2,7 +2,7 @@
 
 Reports the status of a completed migration.
 
-**Platforms:** macOS 26.4 (Beta)
+**Platforms:** macOS 26.4
 
 ## Properties
 
