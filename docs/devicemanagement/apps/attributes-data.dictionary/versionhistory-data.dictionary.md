@@ -4,6 +4,11 @@
 
 ## Properties
 
+### externalVersionId
+
+- **Type:** `number`
+- **Required:** No
+
 ### releaseDate
 
 - **Type:** `string`
