@@ -26,24 +26,6 @@ The key to skip the Action Button configuration pane.
 
 Available in iOS 17 and later.
 
-### AgeAssurance
-
-- **Type:** `string`
-- **Required:** No
-
-The key to skip the Age Assurance pane.
-
-Available in iOS 26.2 and later.
-
-### AgeBasedSafetySettings
-
-- **Type:** `string`
-- **Required:** No
-
-The key to skip the Age Based Safety Settings pane.
-
-Available in iOS 26.1 and later.
-
 ### Android
 
 - **Type:** `string`

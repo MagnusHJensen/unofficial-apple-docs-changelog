@@ -2,7 +2,7 @@
 
 Get a list of available authentication servers.
 
-**Platforms:** iOS , iPadOS , Mac Catalyst , Device Assignment Services , VPP License Management 
+**Platforms:** Device Assignment Services , VPP License Management 
 
 ## Discussion
 

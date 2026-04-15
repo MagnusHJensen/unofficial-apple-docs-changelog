@@ -59,7 +59,7 @@ The base location for this course.
 - **Type:** `string`
 - **Required:** No
 
-The class name as displayed in Apple School Manager (ASM). Maximum length is 1024 UTF-8 characters.
+The class name as displayed in Apple School Manager. Maximum length is 1024 UTF-8 characters.
 
 ### op_date
 

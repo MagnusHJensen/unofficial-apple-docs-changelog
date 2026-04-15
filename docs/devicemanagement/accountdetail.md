@@ -75,7 +75,7 @@ The type of organization. Possible values are `edu` or `org`. This key is availa
 - **Type:** `string`
 - **Required:** No
 
-Possible values: `v1` or `v2`. `v1` is for Apple Deployment Programs (like Device Enrollment Program or Volume Purchase Program) organizations and `v2` is for Apple School Manager (ASM) organizations. Currently `v2` is applicable only to educational organizations. This key is available only in protocol version 3 and later.
+Possible values: `v1` or `v2`. `v1` is for Apple Deployment Programs (like Device Enrollment Program or Volume Purchase Program) organizations and `v2` is for Apple School Manager organizations. Currently `v2` is applicable only to educational organizations. This key is available only in protocol version 3 and later.
 
 ### server_name
 

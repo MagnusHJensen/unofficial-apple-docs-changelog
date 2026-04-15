@@ -11,7 +11,7 @@ Manage apps and books for your students and employees.
 ### Getting Started
 
 - [Managing Apps and Books Through Web Services](/documentation/devicemanagement/managing-apps-and-books-through-web-services-legacy) - Associate volume purchases with users or devices using endpoints for Mobile Device Management (MDM), provided by the Volume Purchase Program (VPP).
-- [Upgrading to Apple School Manager (ASM) and Apple Business Manager (ABM)](/documentation/devicemanagement/upgrading-to-apple-school-manager-asm-and-apple-business-manager-abm) - Manage devices and content across an organization user base with a single destination.
+- [Upgrading to Apple School Manager and Apple Business](/documentation/devicemanagement/upgrading-to-apple-school-manager-and-apple-business) - Manage devices and content across an organization user base with a single destination.
 - [Interpreting Error Codes](/documentation/devicemanagement/interpreting-error-codes) - Investigate service request errors and troubleshoot solutions.
 
 ### Configuration Management

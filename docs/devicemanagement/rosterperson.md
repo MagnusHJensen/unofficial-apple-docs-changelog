@@ -11,7 +11,7 @@ A person’s properties and their values.
 - **Type:** `string`
 - **Required:** No
 
-The email address of the person that Apple School Manager (ASM) displays. Available in X-Protocol version 5 and later.
+The email address of the person that Apple School Manager displays. Available in X-Protocol version 5 and later.
 
 ### first_name
 
@@ -81,14 +81,14 @@ The password policy of the person. Possible values are `complex`, `four`, or `si
 - **Type:** `string`
 - **Required:** No
 
-The `personid` of the person that ASM displays. Available in X-Protocol version 4 and later.
+The `personid` of the person that Apple School Manager displays. Available in X-Protocol version 4 and later.
 
 ### sis_username
 
 - **Type:** `string`
 - **Required:** No
 
-The SIS `username` of the person that ASM displays. Available in X-Protocol version 5 and later.
+The SIS `username` of the person that Apple School Manager displays. Available in X-Protocol version 5 and later.
 
 ### source
 

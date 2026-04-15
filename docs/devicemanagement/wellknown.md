@@ -2,7 +2,7 @@
 
 A list of available servers used for authentication.
 
-**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 15.0, iPadOS 15.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

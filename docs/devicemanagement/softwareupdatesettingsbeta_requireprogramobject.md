@@ -18,5 +18,5 @@ A human readable description of the beta program.
 - **Type:** `string`
 - **Required:** Yes
 
-The Apple Business Manager or Apple School Manager seeding service token for the organization the MDM server is part of. The system uses this token to enroll the device in the corresponding beta program.
+The Apple School Manager or Apple Business seeding service token for the organization the MDM server is part of. The system uses this token to enroll the device in the corresponding beta program.
 

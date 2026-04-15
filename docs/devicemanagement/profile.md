@@ -98,7 +98,7 @@ If `false`, the MDM payload delivered by the configuration URL cannot be removed
 - **Type:** `boolean`
 - **Required:** No
 
-If `true`, tells the device to configure for Shared iPad. Default is false. This key is valid only for Apple School Manager or Apple Business Manager organizations using X-Server-Protocol-Version 2 and later.
+If `true`, tells the device to configure for Shared iPad. Default is false. This key is valid only for Apple School Manager or Apple Business organizations using X-Server-Protocol-Version 2 and later.
 
 Devices that do not meet the Shared iPad minimum requirements do not honor this command. With iOS devices, `com.apple.mdm.per-user-connections` must be added to the MDM enrollment profile’s Server Capabilities.
 

@@ -10,7 +10,7 @@ Volume Purchase Program (VPP) allows an organization to manage and assign apps t
 
 All endpoints (except for [Service Configuration](/documentation/devicemanagement/service-configuration)) require an `sToken` parameter to authenticate.
 
-Content managers can download a location-based `sToken` from the settings page in [Upgrading to Apple School Manager (ASM) and Apple Business Manager (ABM)](/documentation/devicemanagement/upgrading-to-apple-school-manager-asm-and-apple-business-manager-abm), and upload it into their MDM. This grants the MDM access to the licenses available at that location.
+Content managers can download a location-based `sToken` from the settings page in [Upgrading to Apple School Manager and Apple Business](/documentation/devicemanagement/upgrading-to-apple-school-manager-and-apple-business), and upload it into their MDM. This grants the MDM access to the licenses available at that location.
 
 
 
