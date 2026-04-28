@@ -2,7 +2,7 @@
 
 The command to get information from a device to set up lights-out management (LOM).
 
-**Platforms:** macOS 11.0
+**Platforms:** macOS 11.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

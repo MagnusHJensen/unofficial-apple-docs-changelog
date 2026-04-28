@@ -2,7 +2,7 @@
 
 The restrictions for the disk.
 
-**Platforms:** macOS 15.0
+**Platforms:** macOS 15.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

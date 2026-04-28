@@ -2,7 +2,7 @@
 
 Reports the status of a completed migration.
 
-**Platforms:** macOS 26.4
+**Platforms:** macOS 26.4, Device Assignment Services , VPP License Management 
 
 ## Properties
 

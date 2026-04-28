@@ -2,7 +2,7 @@
 
 The payload that configures the Finder’s contextual menu to bypass the system policy.
 
-**Platforms:** macOS 10.8
+**Platforms:** macOS 10.8, Device Assignment Services , VPP License Management 
 
 ## Properties
 

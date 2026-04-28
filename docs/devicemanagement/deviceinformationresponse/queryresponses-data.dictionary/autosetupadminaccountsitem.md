@@ -2,7 +2,7 @@
 
 The response dictionary that contains the administrator setup information.
 
-**Platforms:** macOS 10.11
+**Platforms:** macOS 10.11, Device Assignment Services , VPP License Management 
 
 ## Properties
 

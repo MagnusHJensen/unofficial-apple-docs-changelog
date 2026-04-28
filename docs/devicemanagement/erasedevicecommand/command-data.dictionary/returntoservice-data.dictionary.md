@@ -2,7 +2,7 @@
 
 The configuration settings for return to service.
 
-**Platforms:** iOS 17.0, iPadOS 17.0, tvOS 18.0, visionOS 26.0
+**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, tvOS 18.0, visionOS 26.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

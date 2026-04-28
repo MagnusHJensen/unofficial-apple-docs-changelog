@@ -2,7 +2,7 @@
 
 A dictionary that contains shared device configuration settings.
 
-**Platforms:** iOS 13.4, iPadOS 13.4
+**Platforms:** iOS 13.4, iPadOS 13.4, Mac Catalyst 13.4, Device Assignment Services , VPP License Management 
 
 ## Properties
 

@@ -2,7 +2,7 @@
 
 The payload that configures scripts to run at login and logout.
 
-**Platforms:** macOS 10.7
+**Platforms:** macOS 10.7, Device Assignment Services , VPP License Management 
 
 ## Properties
 

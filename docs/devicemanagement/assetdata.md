@@ -2,7 +2,7 @@
 
 A reference to arbitrary data with a specific media type.
 
-**Platforms:** iOS 17.0, iPadOS 17.0, macOS 14.0, tvOS 17.0, visionOS 1.1, watchOS 10.0
+**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, tvOS 17.0, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

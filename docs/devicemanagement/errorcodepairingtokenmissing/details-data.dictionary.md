@@ -2,7 +2,7 @@
 
 A dictionary that contains additional data about the token-missing error code.
 
-**Platforms:** watchOS 10.0
+**Platforms:** watchOS 10.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

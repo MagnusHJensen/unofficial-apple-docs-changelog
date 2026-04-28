@@ -2,7 +2,7 @@
 
 Authenticates a user with a two-step authentication protocol.
 
-**Platforms:** macOS 10.7
+**Platforms:** macOS 10.7, Device Assignment Services , VPP License Management 
 
 ## Discussion
 

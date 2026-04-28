@@ -2,7 +2,7 @@
 
 The dictionary that contains PPP settings.
 
-**Platforms:** iOS 4.0, iPadOS 4.0, macOS 10.7, visionOS 1.0
+**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, visionOS 1.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

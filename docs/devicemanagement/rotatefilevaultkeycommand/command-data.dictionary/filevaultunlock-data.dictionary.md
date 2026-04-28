@@ -2,7 +2,7 @@
 
 A dictionary that contains FileVault unlock options.
 
-**Platforms:** macOS 10.9
+**Platforms:** macOS 10.9, Device Assignment Services , VPP License Management 
 
 ## Properties
 

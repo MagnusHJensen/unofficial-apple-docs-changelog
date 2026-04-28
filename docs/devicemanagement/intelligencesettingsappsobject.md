@@ -2,7 +2,7 @@
 
 If present, configures app-specific Intelligence features.
 
-**Platforms:** iOS 26.4, iPadOS 26.4, macOS 26.4, visionOS 26.4
+**Platforms:** iOS 26.4, iPadOS 26.4, Mac Catalyst 26.4, macOS 26.4, visionOS 26.4, Device Assignment Services , VPP License Management 
 
 ## Properties
 

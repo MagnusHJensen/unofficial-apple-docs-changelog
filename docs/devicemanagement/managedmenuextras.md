@@ -2,7 +2,7 @@
 
 The payload that configures menu extras.
 
-**Platforms:** macOS 10.7
+**Platforms:** macOS 10.7, Device Assignment Services , VPP License Management 
 
 ## Properties
 

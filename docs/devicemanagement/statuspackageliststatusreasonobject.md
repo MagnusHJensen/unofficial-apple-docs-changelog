@@ -2,7 +2,7 @@
 
 Information about a status error.
 
-**Platforms:** macOS 26.0
+**Platforms:** macOS 26.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

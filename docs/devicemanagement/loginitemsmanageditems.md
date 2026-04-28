@@ -2,7 +2,7 @@
 
 The payload that configures a device’s login items.
 
-**Platforms:** macOS 10.13
+**Platforms:** macOS 10.13, Device Assignment Services , VPP License Management 
 
 ## Properties
 

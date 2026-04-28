@@ -2,7 +2,7 @@
 
 The command to get a list of active extensions for a user on a device.
 
-**Platforms:** macOS 10.13
+**Platforms:** macOS 10.13, Device Assignment Services , VPP License Management 
 
 ## Properties
 

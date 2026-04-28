@@ -2,7 +2,7 @@
 
 The capabilities of the peer content cache.
 
-**Platforms:** macOS 10.15.4
+**Platforms:** macOS 10.15.4, Device Assignment Services , VPP License Management 
 
 ## Properties
 

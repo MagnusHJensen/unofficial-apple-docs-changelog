@@ -2,7 +2,7 @@
 
 A dictionary containing details of the beta program.
 
-**Platforms:** iOS 17.5, iPadOS 17.5, macOS 14.5, visionOS 26.0
+**Platforms:** iOS 17.5, iPadOS 17.5, Mac Catalyst 17.5, macOS 14.5, visionOS 26.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

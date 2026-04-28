@@ -2,7 +2,7 @@
 
 A dictionary that defines the quality-of-service settings.
 
-**Platforms:** iOS 10.0, iPadOS 10.0, macOS 10.13, tvOS 9.0, visionOS 1.0, watchOS 3.2
+**Platforms:** iOS 10.0, iPadOS 10.0, Mac Catalyst 10.0, macOS 10.13, tvOS 9.0, visionOS 1.0, watchOS 3.2, Device Assignment Services , VPP License Management 
 
 ## Properties
 

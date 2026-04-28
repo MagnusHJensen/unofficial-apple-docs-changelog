@@ -2,7 +2,7 @@
 
 The laptop AC power Energy Saver settings.
 
-**Platforms:** macOS 10.7
+**Platforms:** macOS 10.7, Device Assignment Services , VPP License Management 
 
 ## Properties
 

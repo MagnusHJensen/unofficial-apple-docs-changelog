@@ -2,7 +2,7 @@
 
 A dictionary listing apps and the privacy policy to apply to them.
 
-**Platforms:** macOS 10.14
+**Platforms:** macOS 10.14, Device Assignment Services , VPP License Management 
 
 ## Properties
 

@@ -2,7 +2,7 @@
 
 The payload that configures mobile accounts on the device.
 
-**Platforms:** macOS 10.7
+**Platforms:** macOS 10.7, Device Assignment Services , VPP License Management 
 
 ## Properties
 

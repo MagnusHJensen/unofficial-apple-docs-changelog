@@ -2,7 +2,7 @@
 
 A dictionary that contains software update settings.
 
-**Platforms:** iOS 14.5, iPadOS 14.5
+**Platforms:** iOS 14.5, iPadOS 14.5, Mac Catalyst 14.5, Device Assignment Services , VPP License Management 
 
 ## Properties
 

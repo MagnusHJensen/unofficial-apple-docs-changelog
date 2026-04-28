@@ -2,7 +2,7 @@
 
 The payload that configures encrypted DNS settings.
 
-**Platforms:** iOS 14.0, iPadOS 14.0, macOS 11.0, visionOS 1.0
+**Platforms:** iOS 14.0, iPadOS 14.0, Mac Catalyst 14.0, macOS 11.0, visionOS 1.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

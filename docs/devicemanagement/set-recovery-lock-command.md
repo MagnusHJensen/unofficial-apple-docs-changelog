@@ -2,7 +2,7 @@
 
 Set or clear the Recovery Lock password.
 
-**Platforms:** macOS 11.5
+**Platforms:** macOS 11.5, Device Assignment Services , VPP License Management 
 
 ## Discussion
 

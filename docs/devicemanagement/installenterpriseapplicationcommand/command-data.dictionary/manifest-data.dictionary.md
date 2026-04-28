@@ -2,7 +2,7 @@
 
 A dictionary that contains a manifest.
 
-**Platforms:** macOS 10.13.6
+**Platforms:** macOS 10.13.6, Device Assignment Services , VPP License Management 
 
 ## Properties
 

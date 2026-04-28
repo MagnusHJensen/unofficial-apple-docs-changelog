@@ -2,7 +2,7 @@
 
 A response from the device after it processes the command to get the status of the content caches on a device.
 
-**Platforms:** macOS 10.15.4
+**Platforms:** macOS 10.15.4, Device Assignment Services , VPP License Management 
 
 ## Properties
 

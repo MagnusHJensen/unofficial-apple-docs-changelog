@@ -2,7 +2,7 @@
 
 The payload that configures Conference Room Display mode for Apple TV.
 
-**Platforms:** tvOS 10.2
+**Platforms:** tvOS 10.2, Device Assignment Services , VPP License Management 
 
 ## Properties
 

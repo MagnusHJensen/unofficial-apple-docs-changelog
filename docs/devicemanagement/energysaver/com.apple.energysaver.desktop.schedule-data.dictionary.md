@@ -2,7 +2,7 @@
 
 The schedule for turning the device on or off.
 
-**Platforms:** macOS 10.7
+**Platforms:** macOS 10.7, Device Assignment Services , VPP License Management 
 
 ## Properties
 

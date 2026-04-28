@@ -2,7 +2,7 @@
 
 The command to query a carrier URL for active eSIM cellular-plan profiles on a device.
 
-**Platforms:** iOS 13.0, iPadOS 13.0
+**Platforms:** iOS 13.0, iPadOS 13.0, Mac Catalyst 13.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

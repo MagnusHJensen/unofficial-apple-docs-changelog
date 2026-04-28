@@ -2,7 +2,7 @@
 
 A dictionary that describes an error chain item.
 
-**Platforms:** macOS 11.0
+**Platforms:** macOS 11.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

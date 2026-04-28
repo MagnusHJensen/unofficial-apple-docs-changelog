@@ -2,7 +2,7 @@
 
 A response from the device after it processes the command to schedule a background scan for operating-system updates on a device.
 
-**Platforms:** macOS 10.11
+**Platforms:** macOS 10.11, Device Assignment Services , VPP License Management 
 
 ## Properties
 

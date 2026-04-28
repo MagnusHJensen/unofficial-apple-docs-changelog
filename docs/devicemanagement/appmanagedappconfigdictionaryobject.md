@@ -2,7 +2,7 @@
 
 A dictionary of app config data and credentials.
 
-**Platforms:** iOS 18.4, iPadOS 18.4, visionOS 2.4
+**Platforms:** iOS 18.4, iPadOS 18.4, Mac Catalyst 18.4, visionOS 2.4, Device Assignment Services , VPP License Management 
 
 ## Properties
 

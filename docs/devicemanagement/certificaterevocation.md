@@ -2,7 +2,7 @@
 
 The payload that configures certificate revocation checking.
 
-**Platforms:** iOS 14.2, iPadOS 14.2, visionOS 1.1
+**Platforms:** iOS 14.2, iPadOS 14.2, Mac Catalyst 14.2, visionOS 1.1, Device Assignment Services , VPP License Management 
 
 ## Properties
 

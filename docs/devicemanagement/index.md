@@ -2,7 +2,7 @@
 
 Manage your organization’s devices remotely.
 
-**Platforms:** iOS 13.0, iPadOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.1, watchOS 6.0, Device Assignment Services 5.0, VPP License Management 1.0
+**Platforms:** iOS 13.0, iPadOS 13.0, Mac Catalyst 13.0, macOS 10.15, tvOS 13.0, visionOS 1.1, watchOS 6.0, Device Assignment Services 5.0, VPP License Management 1.0
 
 ## Overview
 

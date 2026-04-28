@@ -2,7 +2,7 @@
 
 The managed configuration files for services.
 
-**Platforms:** macOS 14.0
+**Platforms:** macOS 14.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

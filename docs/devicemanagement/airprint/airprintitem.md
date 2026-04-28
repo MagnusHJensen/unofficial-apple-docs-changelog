@@ -2,7 +2,7 @@
 
 A dictionary of AirPrint printer details.
 
-**Platforms:** iOS 7.0, iPadOS 7.0, macOS 10.10, visionOS 2.0
+**Platforms:** iOS 7.0, iPadOS 7.0, Mac Catalyst 7.0, macOS 10.10, visionOS 2.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

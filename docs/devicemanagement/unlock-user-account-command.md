@@ -2,7 +2,7 @@
 
 Unlock a user account that the system locked because of too many failed password attempts.
 
-**Platforms:** macOS 10.13
+**Platforms:** macOS 10.13, Device Assignment Services , VPP License Management 
 
 ## Discussion
 

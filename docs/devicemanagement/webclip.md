@@ -2,7 +2,7 @@
 
 The profile that configures web clips on the device.
 
-**Platforms:** iOS 4.0, iPadOS 4.0, macOS 10.7
+**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, Device Assignment Services , VPP License Management 
 
 ## Properties
 

@@ -2,7 +2,7 @@
 
 The payload that configures an Xsan client system.
 
-**Platforms:** macOS 10.10
+**Platforms:** macOS 10.10, Device Assignment Services , VPP License Management 
 
 ## Properties
 

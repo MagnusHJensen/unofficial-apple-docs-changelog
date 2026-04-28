@@ -2,7 +2,7 @@
 
 The declaration to configure background tasks.
 
-**Platforms:** macOS 15.0
+**Platforms:** macOS 15.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

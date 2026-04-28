@@ -2,7 +2,7 @@
 
 A response from the device after it processes the command to request the location of a device when in Lost Mode.
 
-**Platforms:** iOS 9.3, iPadOS 9.3
+**Platforms:** iOS 9.3, iPadOS 9.3, Mac Catalyst 9.3, Device Assignment Services , VPP License Management 
 
 ## Properties
 

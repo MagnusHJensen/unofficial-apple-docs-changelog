@@ -2,7 +2,7 @@
 
 A dictionary of launchd configurations.
 
-**Platforms:** macOS 15.0
+**Platforms:** macOS 15.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

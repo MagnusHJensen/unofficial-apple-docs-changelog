@@ -2,7 +2,7 @@
 
 Disable Remote Desktop on a device.
 
-**Platforms:** macOS 10.14.4
+**Platforms:** macOS 10.14.4, Device Assignment Services , VPP License Management 
 
 ## Discussion
 

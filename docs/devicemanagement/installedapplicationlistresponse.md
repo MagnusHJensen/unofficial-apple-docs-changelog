@@ -2,7 +2,7 @@
 
 A response from the device after it processes the command to get a list of the installed apps on a device.
 
-**Platforms:** iOS 5.0, iPadOS 5.0, macOS 10.7, tvOS 10.2, visionOS 1.1, watchOS 10.0
+**Platforms:** iOS 5.0, iPadOS 5.0, Mac Catalyst 5.0, macOS 10.7, tvOS 10.2, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

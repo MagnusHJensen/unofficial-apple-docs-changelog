@@ -68,7 +68,7 @@ Array of strings that contains device serial numbers (may be empty).
 - **Type:** `boolean`
 - **Required:** No
 
-If `true`, the device does not use the profile when it restores a backup. Default is `false`. Available in iOS 26 and later, and visionOS 26 and later; otherwise ignored by devices.
+If `true`, the device does not use the profile when it restores a backup, reading the current profile from the server instead. In addition with iOS 26.4 and visionOS 26.4 and later, the device removes all configuration profiles when it restores a backup. This behavior will become nonelective in a future OS update. The default value is `false`. Available in iOS 26 and later, and visionOS 26 and later; otherwise ignored by devices.
 
 ### is_return_to_service
 

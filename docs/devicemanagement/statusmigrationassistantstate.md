@@ -2,7 +2,7 @@
 
 The current migration state of the system.
 
-**Platforms:** macOS 26.4
+**Platforms:** macOS 26.4, Device Assignment Services , VPP License Management 
 
 ## Properties
 

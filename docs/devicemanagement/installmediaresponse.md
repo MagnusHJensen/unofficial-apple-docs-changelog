@@ -2,7 +2,7 @@
 
 A response from the device after it processes the command to install a book on a device.
 
-**Platforms:** iOS 8.0, iPadOS 8.0, macOS 10.9
+**Platforms:** iOS 8.0, iPadOS 8.0, Mac Catalyst 8.0, macOS 10.9, Device Assignment Services , VPP License Management 
 
 ## Properties
 

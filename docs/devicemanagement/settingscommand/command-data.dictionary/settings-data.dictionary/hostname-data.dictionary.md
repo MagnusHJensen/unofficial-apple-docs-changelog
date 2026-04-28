@@ -2,7 +2,7 @@
 
 A dictionary that contains hostname settings.
 
-**Platforms:** macOS 10.11
+**Platforms:** macOS 10.11, Device Assignment Services , VPP License Management 
 
 ## Properties
 

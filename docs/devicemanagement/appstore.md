@@ -2,7 +2,7 @@
 
 The payload that configures macOS App Store restrictions.
 
-**Platforms:** macOS 10.9
+**Platforms:** macOS 10.9, Device Assignment Services , VPP License Management 
 
 ## Properties
 

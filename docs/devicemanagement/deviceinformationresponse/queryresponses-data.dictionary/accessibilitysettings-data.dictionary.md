@@ -2,7 +2,7 @@
 
 The response dictionary that contains the devices accessibility settings.
 
-**Platforms:** iOS 16.0, iPadOS 16.0, watchOS 10.0
+**Platforms:** iOS 16.0, iPadOS 16.0, Mac Catalyst 16.0, watchOS 10.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

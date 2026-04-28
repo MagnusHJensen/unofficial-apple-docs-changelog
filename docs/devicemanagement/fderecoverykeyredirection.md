@@ -2,7 +2,7 @@
 
 The payload that configures FileVault recovery key redirection.
 
-**Platforms:** macOS 10.9
+**Platforms:** macOS 10.9, Device Assignment Services , VPP License Management 
 
 ## Properties
 

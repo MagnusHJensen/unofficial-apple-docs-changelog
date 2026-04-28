@@ -2,7 +2,7 @@
 
 A dictionary that specifies the package that the device uses to install an app with the SSO app extension used for Platform SSO.
 
-**Platforms:** macOS 26.0
+**Platforms:** macOS 26.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

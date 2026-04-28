@@ -2,7 +2,7 @@
 
 A dictionary that contains a requested action to perform on a device using lights-out management (LOM).
 
-**Platforms:** macOS 11.0
+**Platforms:** macOS 11.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

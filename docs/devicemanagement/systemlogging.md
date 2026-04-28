@@ -2,7 +2,7 @@
 
 The payload that configures system logging.
 
-**Platforms:** iOS 9.0, iPadOS 9.0, macOS 10.12, tvOS 9.0, visionOS 1.0, watchOS 3.0
+**Platforms:** iOS 9.0, iPadOS 9.0, Mac Catalyst 9.0, macOS 10.12, tvOS 9.0, visionOS 1.0, watchOS 3.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

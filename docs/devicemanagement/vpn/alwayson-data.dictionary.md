@@ -2,7 +2,7 @@
 
 The dictionary that contains IPSec settings.
 
-**Platforms:** iOS 8.0, iPadOS 8.0, visionOS 1.0
+**Platforms:** iOS 8.0, iPadOS 8.0, Mac Catalyst 8.0, visionOS 1.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

@@ -2,7 +2,7 @@
 
 The command to change or clear the firmware password on a device.
 
-**Platforms:** macOS 10.13
+**Platforms:** macOS 10.13, Device Assignment Services , VPP License Management 
 
 ## Properties
 

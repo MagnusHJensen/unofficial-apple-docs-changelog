@@ -2,7 +2,7 @@
 
 A dictionary that contains the configuration to install an enterprise app.
 
-**Platforms:** macOS 11.0
+**Platforms:** macOS 11.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

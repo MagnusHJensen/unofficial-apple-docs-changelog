@@ -2,7 +2,7 @@
 
 The declaration to configure screen-sharing host settings and restrictions.
 
-**Platforms:** macOS 14.0
+**Platforms:** macOS 14.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

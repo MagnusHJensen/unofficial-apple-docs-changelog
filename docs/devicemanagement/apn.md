@@ -2,7 +2,7 @@
 
 The payload that configures access point names.
 
-**Platforms:** iOS 4.0, iPadOS 4.0
+**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

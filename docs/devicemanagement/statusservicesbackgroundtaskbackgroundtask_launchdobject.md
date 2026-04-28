@@ -2,7 +2,7 @@
 
 A status report of a background task that’s based on a launch daemon.
 
-**Platforms:** macOS 14.0
+**Platforms:** macOS 14.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

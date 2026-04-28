@@ -2,7 +2,7 @@
 
 The attribute mapping to use when creating users, or for authorization.
 
-**Platforms:** macOS 14.0
+**Platforms:** macOS 14.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

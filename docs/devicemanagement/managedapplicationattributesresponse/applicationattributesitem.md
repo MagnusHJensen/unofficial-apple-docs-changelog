@@ -2,7 +2,7 @@
 
 A dictionary that contains a managed app attributes item.
 
-**Platforms:** iOS 7.0, iPadOS 7.0, tvOS 10.2, visionOS 1.1, watchOS 10.0
+**Platforms:** iOS 7.0, iPadOS 7.0, Mac Catalyst 7.0, tvOS 10.2, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

@@ -2,7 +2,7 @@
 
 A dictionary defining a per-app VPN relationship.
 
-**Platforms:** macOS 10.9
+**Platforms:** macOS 10.9, Device Assignment Services , VPP License Management 
 
 ## Properties
 

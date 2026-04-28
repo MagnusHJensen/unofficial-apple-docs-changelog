@@ -2,7 +2,7 @@
 
 The payload that configures file provider settings.
 
-**Platforms:** macOS 11.0
+**Platforms:** macOS 11.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

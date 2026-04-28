@@ -2,7 +2,7 @@
 
 The dictionary that represents a set of kernel extensions.
 
-**Platforms:** macOS 10.13.2
+**Platforms:** macOS 10.13.2, Device Assignment Services , VPP License Management 
 
 ## Properties
 

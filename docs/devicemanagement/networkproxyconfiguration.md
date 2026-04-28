@@ -2,7 +2,7 @@
 
 The payload that configures network proxies for a device.
 
-**Platforms:** macOS 10.7
+**Platforms:** macOS 10.7, Device Assignment Services , VPP License Management 
 
 ## Properties
 

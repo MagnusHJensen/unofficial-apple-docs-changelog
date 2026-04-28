@@ -2,7 +2,7 @@
 
 A dictionary that contains settings for the password lock grace period.
 
-**Platforms:** iOS 9.3.2, iPadOS 9.3.2
+**Platforms:** iOS 9.3.2, iPadOS 9.3.2, Mac Catalyst 9.3.2, Device Assignment Services , VPP License Management 
 
 ## Properties
 

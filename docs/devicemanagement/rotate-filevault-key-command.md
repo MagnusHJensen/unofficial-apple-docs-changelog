@@ -2,7 +2,7 @@
 
 Change the FileVault primary password on a device.
 
-**Platforms:** macOS 10.9
+**Platforms:** macOS 10.9, Device Assignment Services , VPP License Management 
 
 ## Discussion
 

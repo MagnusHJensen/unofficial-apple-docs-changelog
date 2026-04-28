@@ -2,7 +2,7 @@
 
 A dictionary that maps apps to their associated domains.
 
-**Platforms:** macOS 10.15
+**Platforms:** macOS 10.15, Device Assignment Services , VPP License Management 
 
 ## Properties
 

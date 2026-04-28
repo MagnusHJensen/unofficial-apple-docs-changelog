@@ -2,7 +2,7 @@
 
 Information about connection groups with member connection references that the system couldn’t resolve.
 
-**Platforms:** macOS 14.1
+**Platforms:** macOS 14.1, Device Assignment Services , VPP License Management 
 
 ## Properties
 

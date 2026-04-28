@@ -2,7 +2,7 @@
 
 The device’s battery health.
 
-**Platforms:** iOS 17.0, iPadOS 17.0, macOS 14.4
+**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.4, Device Assignment Services , VPP License Management 
 
 ## Properties
 

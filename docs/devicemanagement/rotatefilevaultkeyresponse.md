@@ -2,7 +2,7 @@
 
 A response from the device after it processes the command to change the FileVault primary password on a device.
 
-**Platforms:** macOS 10.9
+**Platforms:** macOS 10.9, Device Assignment Services , VPP License Management 
 
 ## Properties
 

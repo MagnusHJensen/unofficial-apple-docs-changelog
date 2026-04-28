@@ -2,7 +2,7 @@
 
 A dictionary that describes an APN configuration.
 
-**Platforms:** iOS 4.0, iPadOS 4.0
+**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

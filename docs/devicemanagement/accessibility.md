@@ -2,7 +2,7 @@
 
 The payload that configures the accessibility features of the device.
 
-**Platforms:** macOS 10.9
+**Platforms:** macOS 10.9, Device Assignment Services , VPP License Management 
 
 ## Properties
 

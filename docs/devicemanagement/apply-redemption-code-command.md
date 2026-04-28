@@ -2,7 +2,7 @@
 
 Complete the installation of an app using a redemption code.
 
-**Platforms:** iOS 5.0, iPadOS 5.0
+**Platforms:** iOS 5.0, iPadOS 5.0, Mac Catalyst 5.0, Device Assignment Services , VPP License Management 
 
 ## Discussion
 

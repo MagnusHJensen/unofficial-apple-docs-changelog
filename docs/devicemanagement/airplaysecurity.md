@@ -2,7 +2,7 @@
 
 The payload that configures Apple TV for a particular style of AirPlay security.
 
-**Platforms:** tvOS 11.0
+**Platforms:** tvOS 11.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

@@ -2,7 +2,7 @@
 
 A dictionary containing the results of the command.
 
-**Platforms:** macOS 10.13
+**Platforms:** macOS 10.13, Device Assignment Services , VPP License Management 
 
 ## Properties
 

@@ -2,7 +2,7 @@
 
 A response from the device after it processes the command to get a list of restrictions on the device.
 
-**Platforms:** iOS 4.0, iPadOS 4.0, tvOS 9.0, visionOS 1.1, watchOS 10.0
+**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, tvOS 9.0, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

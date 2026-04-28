@@ -2,7 +2,7 @@
 
 The payload that configures a device to run a single app.
 
-**Platforms:** iOS 6.0, iPadOS 6.0, tvOS 10.2
+**Platforms:** iOS 6.0, iPadOS 6.0, Mac Catalyst 6.0, tvOS 10.2, Device Assignment Services , VPP License Management 
 
 ## Properties
 

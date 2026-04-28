@@ -2,7 +2,7 @@
 
 The payload that configures an Active Directory (AD) domain.
 
-**Platforms:** macOS 10.8
+**Platforms:** macOS 10.8, Device Assignment Services , VPP License Management 
 
 ## Properties
 

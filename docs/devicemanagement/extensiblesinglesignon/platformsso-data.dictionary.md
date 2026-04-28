@@ -2,7 +2,7 @@
 
 The dictionary to configure Platform SSO. Requires `Type` to be set to `Redirect`.
 
-**Platforms:** macOS 14.0
+**Platforms:** macOS 14.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

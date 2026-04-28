@@ -2,7 +2,7 @@
 
 A dictionary that contains settings about the organization operating the MDM server.
 
-**Platforms:** iOS 7.0, iPadOS 7.0, macOS 10.15, visionOS 2.0
+**Platforms:** iOS 7.0, iPadOS 7.0, Mac Catalyst 7.0, macOS 10.15, visionOS 2.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

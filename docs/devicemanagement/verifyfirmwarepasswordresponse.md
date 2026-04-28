@@ -2,7 +2,7 @@
 
 A response from the device after it processes the command to verify the firmware password on a device.
 
-**Platforms:** macOS 10.13
+**Platforms:** macOS 10.13, Device Assignment Services , VPP License Management 
 
 ## Properties
 

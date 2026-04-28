@@ -2,7 +2,7 @@
 
 The payload that configures subscribed calendars.
 
-**Platforms:** iOS 4.0, iPadOS 4.0, visionOS 1.1
+**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, visionOS 1.1, Device Assignment Services , VPP License Management 
 
 ## Properties
 

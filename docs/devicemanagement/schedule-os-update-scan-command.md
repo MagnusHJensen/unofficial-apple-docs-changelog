@@ -2,7 +2,7 @@
 
 Schedule a background scan for operating-system updates on a device.
 
-**Platforms:** macOS 10.11
+**Platforms:** macOS 10.11, Device Assignment Services , VPP License Management 
 
 ## Discussion
 

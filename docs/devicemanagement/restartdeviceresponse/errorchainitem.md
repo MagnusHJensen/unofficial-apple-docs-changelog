@@ -2,7 +2,7 @@
 
 A dictionary that describes an error chain item.
 
-**Platforms:** iOS 10.3, iPadOS 10.3, macOS 10.13, tvOS 10.2
+**Platforms:** iOS 10.3, iPadOS 10.3, Mac Catalyst 10.3, macOS 10.13, tvOS 10.2, Device Assignment Services , VPP License Management 
 
 ## Properties
 

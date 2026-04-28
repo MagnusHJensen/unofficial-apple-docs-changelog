@@ -2,7 +2,7 @@
 
 The command to play the Lost Mode sound on a device that’s in Lost Mode.
 
-**Platforms:** iOS 10.3, iPadOS 10.3
+**Platforms:** iOS 10.3, iPadOS 10.3, Mac Catalyst 10.3, Device Assignment Services , VPP License Management 
 
 ## Properties
 

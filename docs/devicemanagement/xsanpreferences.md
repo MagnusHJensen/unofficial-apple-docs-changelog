@@ -2,7 +2,7 @@
 
 The payload that configures the Xsan preferences that define the volumes that automatically mount at startup.
 
-**Platforms:** macOS 10.11
+**Platforms:** macOS 10.11, Device Assignment Services , VPP License Management 
 
 ## Properties
 

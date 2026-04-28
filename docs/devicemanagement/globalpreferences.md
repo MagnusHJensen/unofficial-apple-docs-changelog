@@ -2,7 +2,7 @@
 
 The payload to configure global preferences.
 
-**Platforms:** macOS 10.7
+**Platforms:** macOS 10.7, Device Assignment Services , VPP License Management 
 
 ## Properties
 

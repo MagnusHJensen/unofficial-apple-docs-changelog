@@ -2,7 +2,7 @@
 
 A dictionary of volumes to eject when the user logs out.
 
-**Platforms:** macOS 10.7
+**Platforms:** macOS 10.7, Device Assignment Services , VPP License Management 
 
 ## Properties
 

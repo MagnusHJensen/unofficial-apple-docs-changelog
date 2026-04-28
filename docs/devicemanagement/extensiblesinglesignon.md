@@ -2,7 +2,7 @@
 
 The payload that configures an app extension that performs single sign-on (SSO).
 
-**Platforms:** iOS 13.0, iPadOS 13.0, macOS 10.15, visionOS 1.1
+**Platforms:** iOS 13.0, iPadOS 13.0, Mac Catalyst 13.0, macOS 10.15, visionOS 1.1, Device Assignment Services , VPP License Management 
 
 ## Properties
 

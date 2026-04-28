@@ -2,7 +2,7 @@
 
 Settings for S/MIME encryption.
 
-**Platforms:** iOS 17.0, iPadOS 17.0, visionOS 1.1
+**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, visionOS 1.1, Device Assignment Services , VPP License Management 
 
 ## Properties
 

@@ -2,7 +2,7 @@
 
 A status report of the passcode on the device.
 
-**Platforms:** iOS 16.0, iPadOS 16.0, visionOS 1.1, watchOS 10.0
+**Platforms:** iOS 16.0, iPadOS 16.0, Mac Catalyst 16.0, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

@@ -2,7 +2,7 @@
 
 A dictionary that contains additional data about the error code.
 
-**Platforms:** macOS 26.0
+**Platforms:** macOS 26.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

@@ -2,7 +2,7 @@
 
 A response from the device after it processes the command to remove a previously installed book from a device.
 
-**Platforms:** iOS 8.0, iPadOS 8.0
+**Platforms:** iOS 8.0, iPadOS 8.0, Mac Catalyst 8.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

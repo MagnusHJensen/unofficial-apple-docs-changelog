@@ -2,7 +2,7 @@
 
 An error response that indicates a missing pairing token.
 
-**Platforms:** watchOS 10.0
+**Platforms:** watchOS 10.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

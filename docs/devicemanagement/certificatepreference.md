@@ -2,7 +2,7 @@
 
 The payload that configures a certificate preference.
 
-**Platforms:** macOS 10.12
+**Platforms:** macOS 10.12, Device Assignment Services , VPP License Management 
 
 ## Properties
 

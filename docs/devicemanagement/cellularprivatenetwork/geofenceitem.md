@@ -2,7 +2,7 @@
 
 A geofence for a private network.
 
-**Platforms:** iOS 17.0, iPadOS 17.0
+**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

@@ -2,7 +2,7 @@
 
 The declaration to configure disk management settings on the device.
 
-**Platforms:** macOS 15.0
+**Platforms:** macOS 15.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

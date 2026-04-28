@@ -2,7 +2,7 @@
 
 A status report of the device’s background task details.
 
-**Platforms:** macOS 14.0
+**Platforms:** macOS 14.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

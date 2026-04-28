@@ -2,7 +2,7 @@
 
 The dictionary of consent agreements per language.
 
-**Platforms:** iOS 4.0, iPadOS 4.0, macOS 10.7, tvOS 9.0, visionOS 1.0, watchOS 1.0
+**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, tvOS 9.0, visionOS 1.0, watchOS 1.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

@@ -2,7 +2,7 @@
 
 The declaration to configure audio accessory settings.
 
-**Platforms:** iOS 26.0, iPadOS 26.0
+**Platforms:** iOS 26.0, iPadOS 26.0, Mac Catalyst 26.0, Device Assignment Services , VPP License Management 
 
 ## Properties
 

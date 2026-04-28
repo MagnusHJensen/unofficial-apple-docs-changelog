@@ -2,7 +2,7 @@
 
 A status report of the device’s update device ID.
 
-**Platforms:** iOS 18.0, iPadOS 18.0, macOS 15.0, tvOS 18.4, visionOS 26.4
+**Platforms:** iOS 18.0, iPadOS 18.0, Mac Catalyst 18.0, macOS 15.0, tvOS 18.4, visionOS 26.4, Device Assignment Services , VPP License Management 
 
 ## Properties
 

@@ -2,7 +2,7 @@
 
 A dictionary that maps team identifiers to system extensions.
 
-**Platforms:** macOS 10.15
+**Platforms:** macOS 10.15, Device Assignment Services , VPP License Management 
 
 ## Properties
 

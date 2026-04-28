@@ -2,7 +2,7 @@
 
 Update the local administrator account password.
 
-**Platforms:** macOS 10.11
+**Platforms:** macOS 10.11, Device Assignment Services , VPP License Management 
 
 ## Discussion
 

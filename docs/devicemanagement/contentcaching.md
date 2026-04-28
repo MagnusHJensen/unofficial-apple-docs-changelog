@@ -2,7 +2,7 @@
 
 The payload that configures the Content Caching service.
 
-**Platforms:** macOS 10.13.4
+**Platforms:** macOS 10.13.4, Device Assignment Services , VPP License Management 
 
 ## Properties
 
