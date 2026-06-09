@@ -2,7 +2,7 @@
 
 The payload that configures the default fallback global Ethernet interface.
 
-**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 10.13, tvOS 17.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 10.13, tvOS 17.0
 
 ## Properties
 
@@ -18,6 +18,10 @@ Keys relevant to 802.1X configuration. User enrollment payloads don’t support 
 Specify `com.apple.globalethernet.managed` as the payload type.
 
 This payload’s contents contain these profile-specific keys:
+
+- Interface (String): This payload uses the value `GlobalEthernet`.
+- EAPClientConfiguration ([WiFi.EAPClientConfiguration](/documentation/devicemanagement/wifi/eapclientconfiguration-data.dictionary)): The dictionary that defines the enterprise profile for the network.
+- SetupModes (String): The type of connection mode, which is either `System` or `Loginwindow`. `System` is the default.
 
 ### Profile availability
 

@@ -1,8 +1,8 @@
 # Create Users
 
-Create users to assign apps and books to.
+Create users to assign apps, books, and subscriptions to.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 2.0
 
 ## Discussion
 

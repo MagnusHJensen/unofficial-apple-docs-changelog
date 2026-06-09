@@ -2,7 +2,7 @@
 
 The payload that configures restrictions on a device.
 
-**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, tvOS 9.0, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, tvOS 9.0, visionOS 1.1, watchOS 10.0
 
 ## Properties
 
@@ -14,7 +14,8 @@ The payload that configures restrictions on a device.
 
 If `false`, the system disables modification of accounts, such as Apple Accounts, and internet-based accounts, such as Mail, Contacts, and Calendar.
 
-Available in iOS 7 and later, macOS 14 and later, visionOS 2 and later, and watchOS 10 and later. Requires supervision in iOS, visionOS, and watchOS.
+Available: iOS 7+ | iPadOS 7+ | macOS 14+ | visionOS 2+ | watchOS 10+
+Requires supervision: iOS | visionOS | watchOS
 
 ### allowActivityContinuation
 
@@ -24,7 +25,7 @@ Available in iOS 7 and later, macOS 14 and later, visionOS 2 and later, and watc
 
 If `false`, the system disables activity continuation. Support for this restriction on unsupervised devices and with Managed Apple Accounts is deprecated. In a future release, this restriction will begin requiring supervision and will apply to personal Apple Accounts only.
 
-Available in iOS 8 and later, macOS 10.15 and later, and visionOS 2 and later.
+Available: iOS 8+ | iPadOS 8+ | macOS 10.15+ | visionOS 2+
 
 ### allowAddingGameCenterFriends
 
@@ -34,7 +35,8 @@ Available in iOS 8 and later, macOS 10.15 and later, and visionOS 2 and later.
 
 If `false`, the system prohibits adding friends to Game Center. Requires a supervised device in iOS 13 and later.
 
-Available in iOS 4.2.1 and later, and macOS 10.13 and later. Requires supervision in iOS.
+Available: iOS 4.2.1+ | iPadOS 4.2.1+ | macOS 10.13+
+Requires supervision: iOS
 
 ### allowAirDrop
 
@@ -44,7 +46,8 @@ Available in iOS 4.2.1 and later, and macOS 10.13 and later. Requires supervisio
 
 If `false`, the system disables AirDrop.
 
-Available in iOS 7 and later, macOS 10.13 and later, and visionOS 2 and later. Requires supervision in iOS, and visionOS.
+Available: iOS 7+ | iPadOS 7+ | macOS 10.13+ | visionOS 2+
+Requires supervision: iOS | visionOS
 
 ### allowAirPlayIncomingRequests
 
@@ -54,7 +57,8 @@ Available in iOS 7 and later, macOS 10.13 and later, and visionOS 2 and later. R
 
 If `false`, the system disables incoming AirPlay requests.
 
-Available in macOS 12.3 and later, and tvOS 10.2 and later. Requires supervision in tvOS.
+Available: macOS 12.3+ | tvOS 10.2+
+Requires supervision: tvOS
 
 ### allowAirPrint
 
@@ -64,7 +68,8 @@ Available in macOS 12.3 and later, and tvOS 10.2 and later. Requires supervision
 
 If `false`, the system disables AirPrint.
 
-Available in iOS 11 and later. Requires supervision in iOS.
+Available: iOS 11+ | iPadOS 11+
+Requires supervision: iOS
 
 ### allowAirPrintCredentialsStorage
 
@@ -74,7 +79,8 @@ Available in iOS 11 and later. Requires supervision in iOS.
 
 If `false`, the system disables Keychain storage of user name and password for AirPrint.
 
-Available in iOS 11 and later. Requires supervision in iOS.
+Available: iOS 11+ | iPadOS 11+
+Requires supervision: iOS
 
 ### allowAirPrintiBeaconDiscovery
 
@@ -84,7 +90,8 @@ Available in iOS 11 and later. Requires supervision in iOS.
 
 If `false`, the system disables iBeacon discovery of AirPrint printers, which prevents spurious AirPrint Bluetooth beacons from phishing for network traffic.
 
-Available in iOS 11 and later. Requires supervision in iOS.
+Available: iOS 11+ | iPadOS 11+
+Requires supervision: iOS
 
 ### allowAppCellularDataModification
 
@@ -94,7 +101,8 @@ Available in iOS 11 and later. Requires supervision in iOS.
 
 If `false`, the system disables changing settings for cellular data usage for apps.
 
-Available in iOS 7 and later. Requires supervision in iOS.
+Available: iOS 7+ | iPadOS 7+
+Requires supervision: iOS
 
 ### allowAppClips
 
@@ -104,7 +112,8 @@ Available in iOS 7 and later. Requires supervision in iOS.
 
 If `false`, the system prevents a user from adding any App Clips, and removes any existing App Clips on the device.
 
-Available in iOS 14 and later. Requires supervision in iOS.
+Available: iOS 14+ | iPadOS 14+
+Requires supervision: iOS
 
 ### allowAppInstallation
 
@@ -116,7 +125,8 @@ If `false`, the system disables the App Store and removes its icon from the Home
 
 In iOS 10 and later, MDM commands can override this restriction. Requires a supervised device in iOS 13 and later.
 
-Available in iOS 4 and later, visionOS 2 and later, and watchOS 10 and later. Requires supervision in iOS, visionOS, and watchOS.
+Available: iOS 4+ | iPadOS 4+ | visionOS 2+ | watchOS 10+
+Requires supervision: iOS | visionOS | watchOS
 
 ### allowAppleIntelligenceReport
 
@@ -126,7 +136,11 @@ Available in iOS 4 and later, visionOS 2 and later, and watchOS 10 and later. Re
 
 If `false`, the system disables Apple Intelligence reports.
 
-Available in iOS 18.4 and later, and macOS 15.4 and later. Deprecated in iOS 26.4 and later, and macOS 26.4 and later. Requires supervision in iOS.
+Deprecated: use the declarative management `com.apple.configuration.intelligence.settings` configuration.
+
+Available: iOS 18.4+ | iPadOS 18.4+ | macOS 15.4+
+Deprecated: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+
+Requires supervision: iOS
 
 ### allowApplePersonalizedAdvertising
 
@@ -136,7 +150,7 @@ Available in iOS 18.4 and later, and macOS 15.4 and later. Deprecated in iOS 26.
 
 If `false`, the system limits Apple personalized advertising.
 
-Available in iOS 14 and later, macOS 12 and later, and visionOS 2 and later.
+Available: iOS 14+ | iPadOS 14+ | macOS 12+ | visionOS 2+
 
 ### allowAppRemoval
 
@@ -146,7 +160,8 @@ Available in iOS 14 and later, macOS 12 and later, and visionOS 2 and later.
 
 If `false`, the system disables removal of apps from an iOS device. This applies to App Store apps, marketplace apps, and locally installed apps (using Configurator, Xcode, and so forth).
 
-Available in iOS 4.2.1 and later, and watchOS 10 and later. Requires supervision in iOS, and watchOS.
+Available: iOS 4.2.1+ | iPadOS 4.2.1+ | watchOS 10+
+Requires supervision: iOS | watchOS
 
 ### allowAppsToBeHidden
 
@@ -156,7 +171,8 @@ Available in iOS 4.2.1 and later, and watchOS 10 and later. Requires supervision
 
 If `false`, disables the ability for the user to hide apps. It doesn’t affect the user’s ability to leave it in the App Library, while removing it from the Home Screen.
 
-Available in iOS 18 and later. Requires supervision in iOS.
+Available: iOS 18+ | iPadOS 18+
+Requires supervision: iOS
 
 ### allowAppsToBeLocked
 
@@ -166,7 +182,8 @@ Available in iOS 18 and later. Requires supervision in iOS.
 
 If `false`, disables the ability for the user to lock apps. Because hiding apps also requires locking them, disallowing locking also disallows hiding.
 
-Available in iOS 18 and later. Requires supervision in iOS.
+Available: iOS 18+ | iPadOS 18+
+Requires supervision: iOS
 
 ### allowARDRemoteManagementModification
 
@@ -176,7 +193,7 @@ Available in iOS 18 and later. Requires supervision in iOS.
 
 If `false`, the system prevents modifying the Remote Management Sharing setting in System Settings.
 
-Available in macOS 14 and later.
+Available: macOS 14+
 
 ### allowAssistant
 
@@ -186,7 +203,11 @@ Available in macOS 14 and later.
 
 If `false`, the system disables Siri.
 
-Available in iOS 5 and later, macOS 14 and later, and visionOS 2 and later. Deprecated in iOS 26.4 and later, macOS 26.4 and later, and visionOS 26.4 and later. Allowed for user enrollments in iOS, and visionOS.
+Deprecated: use the declarative management `com.apple.configuration.siri.settings` configuration.
+
+Available: iOS 5+ | iPadOS 5+ | macOS 14+ | visionOS 2+
+Deprecated: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+ | visionOS 26.4+
+Allowed for user enrollments: iOS | visionOS
 
 ### allowAssistantUserGeneratedContent
 
@@ -196,7 +217,11 @@ Available in iOS 5 and later, macOS 14 and later, and visionOS 2 and later. Depr
 
 If `false`, the system prevents Siri from querying user-generated content from the web.
 
-Available in iOS 7 and later, and watchOS 10 and later. Deprecated in iOS 26.4 and later, and watchOS 26.4 and later. Requires supervision in iOS, and watchOS.
+Deprecated: use the declarative management `com.apple.configuration.siri.settings` configuration.
+
+Available: iOS 7+ | iPadOS 7+ | watchOS 10+
+Deprecated: iOS 26.4+ | iPadOS 26.4+ | watchOS 26.4+
+Requires supervision: iOS | watchOS
 
 ### allowAssistantWhileLocked
 
@@ -206,7 +231,11 @@ Available in iOS 7 and later, and watchOS 10 and later. Deprecated in iOS 26.4 a
 
 If `false`, the system disables Siri when the device is locked. The system ignores this restriction if the device doesn’t have a passcode set.
 
-Available in iOS 5.1 and later, and watchOS 10 and later. Deprecated in iOS 26.4 and later, and watchOS 26.4 and later. Allowed for user enrollments in iOS.
+Deprecated: use the declarative management `com.apple.configuration.siri.settings` configuration.
+
+Available: iOS 5.1+ | iPadOS 5.1+ | watchOS 10+
+Deprecated: iOS 26.4+ | iPadOS 26.4+ | watchOS 26.4+
+Allowed for user enrollments: iOS
 
 ### allowAutoCorrection
 
@@ -216,7 +245,11 @@ Available in iOS 5.1 and later, and watchOS 10 and later. Deprecated in iOS 26.4
 
 If `false`, the system disables keyboard autocorrection.
 
-Available in iOS 8.1.3 and later. Deprecated in iOS 26.4 and later. Requires supervision in iOS.
+Deprecated: use the declarative management `com.apple.configuration.keyboard.settings` configuration.
+
+Available: iOS 8.1.3+ | iPadOS 8.1.3+
+Deprecated: iOS 26.4+ | iPadOS 26.4+
+Requires supervision: iOS
 
 ### allowAutoDim
 
@@ -226,7 +259,8 @@ Available in iOS 8.1.3 and later. Deprecated in iOS 26.4 and later. Requires sup
 
 If `false`, disables auto dim on iPads with OLED displays.
 
-Available in iOS 17.4 and later. Requires supervision in iOS.
+Available: iOS 17.4+ | iPadOS 17.4+
+Requires supervision: iOS
 
 ### allowAutomaticAppDownloads
 
@@ -236,7 +270,8 @@ Available in iOS 17.4 and later. Requires supervision in iOS.
 
 If `false`, the system prevents automatic downloading of apps purchased on other devices. This setting doesn’t affect updates to existing apps.
 
-Available in iOS 9 and later, and watchOS 10 and later. Requires supervision in iOS, and watchOS.
+Available: iOS 9+ | iPadOS 9+ | watchOS 10+
+Requires supervision: iOS | watchOS
 
 ### allowAutomaticScreenSaver
 
@@ -246,7 +281,8 @@ Available in iOS 9 and later, and watchOS 10 and later. Requires supervision in 
 
 If `false`, the system disables Apple TV’s automatic screen saver.
 
-Available in tvOS 15.4 and later. Requires supervision in tvOS.
+Available: tvOS 15.4+
+Requires supervision: tvOS
 
 ### allowAutoUnlock
 
@@ -256,7 +292,7 @@ Available in tvOS 15.4 and later. Requires supervision in tvOS.
 
 If `false`, the system disallows auto unlock. Support for this restriction on unsupervised devices is deprecated.
 
-Available in iOS 14.5 and later, and macOS 10.12 and later.
+Available: iOS 14.5+ | iPadOS 14.5+ | macOS 10.12+
 
 ### allowBluetoothModification
 
@@ -266,7 +302,8 @@ Available in iOS 14.5 and later, and macOS 10.12 and later.
 
 If `false`, the system prevents modification of Bluetooth settings.
 
-Available in iOS 11 and later, and macOS 13 and later. Requires supervision in iOS.
+Available: iOS 11+ | iPadOS 11+ | macOS 13+ | visionOS 27+
+Requires supervision: iOS | visionOS
 
 ### allowBluetoothSharingModification
 
@@ -276,7 +313,7 @@ Available in iOS 11 and later, and macOS 13 and later. Requires supervision in i
 
 If `false`, the system prevents modifying Bluetooth settings in System Settings.
 
-Available in macOS 14 and later.
+Available: macOS 14+
 
 ### allowBookstore
 
@@ -286,7 +323,8 @@ Available in macOS 14 and later.
 
 If `false`, the system removes the Book Store tab from the Books app.
 
-Available in iOS 6 and later, and macOS 15 and later. Requires supervision in iOS.
+Available: iOS 6+ | iPadOS 6+ | macOS 15+
+Requires supervision: iOS
 
 ### allowBookstoreErotica
 
@@ -296,7 +334,8 @@ Available in iOS 6 and later, and macOS 15 and later. Requires supervision in iO
 
 If `false`, the system prevents the user from downloading Apple Books media that’s tagged as erotica. Support for this restriction on unsupervised devices is deprecated.
 
-Available in iOS 6 and later, macOS 15 and later, and tvOS 11.3 and later. Deprecated in tvOS 17 and later.
+Available: iOS 6+ | iPadOS 6+ | macOS 15+ | tvOS 11.3+
+Deprecated: tvOS 17+
 
 ### allowCallRecording
 
@@ -306,7 +345,8 @@ Available in iOS 6 and later, macOS 15 and later, and tvOS 11.3 and later. Depre
 
 If `false`, disables call recording.
 
-Available in iOS 18.1 and later, and macOS 26 and later. Requires supervision in iOS.
+Available: iOS 18.1+ | iPadOS 18.1+ | macOS 26+
+Requires supervision: iOS
 
 ### allowCamera
 
@@ -316,7 +356,7 @@ Available in iOS 18.1 and later, and macOS 26 and later. Requires supervision in
 
 If `false`, the system disables the camera and removes its icon from the Home Screen, and users are unable to take photographs. Support for this restriction on unsupervised devices is deprecated.
 
-Available in iOS 4 and later, macOS 10.11 and later, tvOS 17 and later, and visionOS 2 and later.
+Available: iOS 4+ | iPadOS 4+ | macOS 10.11+ | tvOS 17+ | visionOS 2+
 
 ### allowCellularPlanModification
 
@@ -326,7 +366,8 @@ Available in iOS 4 and later, macOS 10.11 and later, tvOS 17 and later, and visi
 
 If `false`, the system prevents users from changing settings related to their cellular plan (available only on select carriers).
 
-Available in iOS 11 and later. Requires supervision in iOS.
+Available: iOS 11+ | iPadOS 11+
+Requires supervision: iOS
 
 ### allowChat
 
@@ -336,7 +377,8 @@ Available in iOS 11 and later. Requires supervision in iOS.
 
 If `false`, the system disables the use of iMessage with supervised devices. If the device supports text messaging, the user can still send and receive text messages.
 
-Available in iOS 5 and later. Requires supervision in iOS.
+Available: iOS 5+ | iPadOS 5+ | visionOS 27+
+Requires supervision: iOS | visionOS
 
 ### allowCloudAddressBook
 
@@ -346,7 +388,7 @@ Available in iOS 5 and later. Requires supervision in iOS.
 
 If `false`, the system disables iCloud Contacts services.
 
-Available in macOS 10.12 and later.
+Available: macOS 10.12+
 
 ### allowCloudBackup
 
@@ -356,7 +398,7 @@ Available in macOS 10.12 and later.
 
 If `false`, the system disables backing up the device to iCloud. Support for this restriction on unsupervised devices is deprecated.
 
-Available in iOS 5 and later, and visionOS 2 and later.
+Available: iOS 5+ | iPadOS 5+ | visionOS 2+
 
 ### allowCloudBookmarks
 
@@ -366,7 +408,7 @@ Available in iOS 5 and later, and visionOS 2 and later.
 
 If `false`, the system disables iCloud Bookmark sync.
 
-Available in macOS 10.12 and later.
+Available: macOS 10.12+
 
 ### allowCloudCalendar
 
@@ -376,7 +418,7 @@ Available in macOS 10.12 and later.
 
 If `false`, the system disables iCloud Calendar services.
 
-Available in macOS 10.12 and later.
+Available: macOS 10.12+
 
 ### allowCloudDesktopAndDocuments
 
@@ -386,7 +428,7 @@ Available in macOS 10.12 and later.
 
 If `false`, the system disables iCloud Desktop and Document services.
 
-Available in macOS 10.12.4 and later.
+Available: macOS 10.12.4+
 
 ### allowCloudDocumentSync
 
@@ -396,7 +438,8 @@ Available in macOS 10.12.4 and later.
 
 If `false`, the system disables document and key-value syncing to iCloud. Requires a supervised device in iOS 13 and later, and Shared iPad doesn’t support it. Support for this restriction on unsupervised devices and with Managed Apple Accounts is deprecated.
 
-Available in iOS 5 and later, macOS 10.11 and later, and visionOS 2 and later. Requires supervision in iOS, and visionOS.
+Available: iOS 5+ | iPadOS 5+ | macOS 10.11+ | visionOS 2+
+Requires supervision: iOS | visionOS
 
 ### allowCloudFreeform
 
@@ -406,7 +449,7 @@ Available in iOS 5 and later, macOS 10.11 and later, and visionOS 2 and later. R
 
 If `false`, the system disallows iCloud Freeform services.
 
-Available in macOS 14 and later.
+Available: macOS 14+
 
 ### allowCloudKeychainSync
 
@@ -416,7 +459,7 @@ Available in macOS 14 and later.
 
 If `false`, the system disables iCloud Keychain synchronization. Support for this restriction on unsupervised devices and with Managed Apple Accounts is deprecated.
 
-Available in iOS 7 and later, macOS 10.12 and later, and visionOS 2 and later.
+Available: iOS 7+ | iPadOS 7+ | macOS 10.12+ | visionOS 2+
 
 ### allowCloudMail
 
@@ -426,7 +469,7 @@ Available in iOS 7 and later, macOS 10.12 and later, and visionOS 2 and later.
 
 If `false`, the system disables iCloud Mail services.
 
-Available in macOS 10.12 and later.
+Available: macOS 10.12+
 
 ### allowCloudNotes
 
@@ -436,7 +479,7 @@ Available in macOS 10.12 and later.
 
 If `false`, the system disables iCloud Notes services.
 
-Available in macOS 10.12 and later.
+Available: macOS 10.12+
 
 ### allowCloudPhotoLibrary
 
@@ -446,7 +489,7 @@ Available in macOS 10.12 and later.
 
 If `false`, the system disables iCloud Photo Library. The system removes any photos from local storage that aren’t fully downloaded from iCloud Photo Library to the device. Support for this restriction on unsupervised devices and with Managed Apple Accounts is deprecated.
 
-Available in iOS 9 and later, macOS 10.12 and later, and visionOS 2 and later.
+Available: iOS 9+ | iPadOS 9+ | macOS 10.12+ | visionOS 2+
 
 ### allowCloudPrivateRelay
 
@@ -456,7 +499,8 @@ Available in iOS 9 and later, macOS 10.12 and later, and visionOS 2 and later.
 
 If `false`, the system disables iCloud Private Relay. Support for this restriction on unsupervised devices and with Managed Apple Accounts is deprecated.
 
-Available in iOS 15 and later, macOS 12 and later, and visionOS 2 and later. Requires supervision in iOS, and visionOS.
+Available: iOS 15+ | iPadOS 15+ | macOS 12+ | visionOS 2+
+Requires supervision: iOS | visionOS
 
 ### allowCloudReminders
 
@@ -466,7 +510,7 @@ Available in iOS 15 and later, macOS 12 and later, and visionOS 2 and later. Req
 
 If `false`, the system disables iCloud Reminder services.
 
-Available in macOS 10.12 and later.
+Available: macOS 10.12+
 
 ### allowContentCaching
 
@@ -476,7 +520,7 @@ Available in macOS 10.12 and later.
 
 If `false`, the system disables content caching. This restriction is not supported on the user channel.
 
-Available in macOS 10.13 and later.
+Available: macOS 10.13+
 
 ### allowContinuousPathKeyboard
 
@@ -486,7 +530,11 @@ Available in macOS 10.13 and later.
 
 If `false`, the system disables QuickPath keyboard.
 
-Available in iOS 13 and later. Deprecated in iOS 26.4 and later. Requires supervision in iOS.
+Deprecated: use the declarative management `com.apple.configuration.keyboard.settings` configuration.
+
+Available: iOS 13+ | iPadOS 13+
+Deprecated: iOS 26.4+ | iPadOS 26.4+
+Requires supervision: iOS
 
 ### allowDefaultBrowserModification
 
@@ -496,7 +544,8 @@ Available in iOS 13 and later. Deprecated in iOS 26.4 and later. Requires superv
 
 If `false`, disables default browser preference modification. The MDM Settings command to set the default browser preference still works when applying this.
 
-Available in iOS 18.2 and later. Requires supervision in iOS.
+Available: iOS 18.2+ | iPadOS 18.2+
+Requires supervision: iOS
 
 ### allowDefaultCallingAppModification
 
@@ -506,7 +555,8 @@ Available in iOS 18.2 and later. Requires supervision in iOS.
 
 If `false`, disables default calling app preference modification. The MDM Settings command to set the default calling app preference still works when applying this.
 
-Available in iOS 18.4 and later. Requires supervision in iOS.
+Available: iOS 18.4+ | iPadOS 18.4+
+Requires supervision: iOS
 
 ### allowDefaultMessagingAppModification
 
@@ -516,7 +566,8 @@ Available in iOS 18.4 and later. Requires supervision in iOS.
 
 If `false`, disables default messaging app preference modification. The MDM Settings command to set the default messaging app preference still works when applying this.
 
-Available in iOS 18.4 and later. Requires supervision in iOS.
+Available: iOS 18.4+ | iPadOS 18.4+
+Requires supervision: iOS
 
 ### allowDefinitionLookup
 
@@ -526,7 +577,11 @@ Available in iOS 18.4 and later. Requires supervision in iOS.
 
 If `false`, the system disables definition lookup.
 
-Available in iOS 8.1.3 and later, and macOS 10.11 and later. Deprecated in iOS 26.4 and later, and macOS 26.4 and later. Requires supervision in iOS.
+Deprecated: use the declarative management `com.apple.configuration.keyboard.settings` configuration.
+
+Available: iOS 8.1.3+ | iPadOS 8.1.3+ | macOS 10.11+
+Deprecated: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+
+Requires supervision: iOS
 
 ### allowDeviceNameModification
 
@@ -536,7 +591,8 @@ Available in iOS 8.1.3 and later, and macOS 10.11 and later. Deprecated in iOS 2
 
 If `false`, the system prevents the user from changing the device name.
 
-Available in iOS 9 and later, macOS 14 and later, tvOS 11 and later, and visionOS 2 and later. Requires supervision in iOS, tvOS, and visionOS.
+Available: iOS 9+ | iPadOS 9+ | macOS 14+ | tvOS 11+ | visionOS 2+
+Requires supervision: iOS | tvOS | visionOS
 
 ### allowDeviceSleep
 
@@ -546,7 +602,8 @@ Available in iOS 9 and later, macOS 14 and later, tvOS 11 and later, and visionO
 
 If `false`, the system prevents the device from automatically sleeping.
 
-Available in tvOS 13 and later. Requires supervision in tvOS.
+Available: tvOS 13+
+Requires supervision: tvOS
 
 ### allowDiagnosticSubmission
 
@@ -556,7 +613,8 @@ Available in tvOS 13 and later. Requires supervision in tvOS.
 
 If `false`, the system prevents the device from automatically submitting diagnostic reports to Apple.
 
-Available in iOS 6 and later, macOS 10.13 and later, visionOS 2 and later, and watchOS 10 and later. Allowed for user enrollments in iOS, macOS, and visionOS.
+Available: iOS 6+ | iPadOS 6+ | macOS 10.13+ | visionOS 2+ | watchOS 10+
+Allowed for user enrollments: iOS | macOS | visionOS
 
 ### allowDiagnosticSubmissionModification
 
@@ -566,7 +624,8 @@ Available in iOS 6 and later, macOS 10.13 and later, visionOS 2 and later, and w
 
 If `false`, the system disables changing the diagnostic submission and app analytics settings in the Diagnostics & Usage UI in Settings.
 
-Available in iOS 9.3.2 and later, and visionOS 2 and later. Requires supervision in iOS, and visionOS.
+Available: iOS 9.3.2+ | iPadOS 9.3.2+ | visionOS 2+
+Requires supervision: iOS | visionOS
 
 ### allowDictation
 
@@ -576,7 +635,11 @@ Available in iOS 9.3.2 and later, and visionOS 2 and later. Requires supervision
 
 If `false`, the system disallows dictation input.
 
-Available in iOS 10.3 and later, and macOS 10.13 and later. Deprecated in iOS 26.4 and later, and macOS 26.4 and later. Requires supervision in iOS.
+Deprecated: use the declarative management `com.apple.configuration.keyboard.settings` configuration.
+
+Available: iOS 10.3+ | iPadOS 10.3+ | macOS 10.13+
+Deprecated: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+
+Requires supervision: iOS
 
 ### allowedCameraRestrictionBundleIDs
 
@@ -585,7 +648,8 @@ Available in iOS 10.3 and later, and macOS 10.13 and later. Deprecated in iOS 26
 
 If present, the system exempts apps with bundle IDs in the array from the `allowCamera` restriction. The system doesn’t grant these apps access to the camera automatically; they’re only exempted from the `allowCamera` restriction. This key has no effect when the camera isn’t restricted. Multiple payloads combine using an intersect operation. Requires a supervised device.
 
-Available in iOS 26 and later. Requires supervision in iOS.
+Available: iOS 26+ | iPadOS 26+
+Requires supervision: iOS
 
 ### allowedExternalIntelligenceWorkspaceIDs
 
@@ -594,7 +658,11 @@ Available in iOS 26 and later. Requires supervision in iOS.
 
 An array of strings, but currently restricted to a single element. If present, Apple Intelligence allows use of only the given external integration workspace ID, and requires a sign-in to make requests. The user is required to sign in to integrations that support signing in. Multiple payloads combine using an intersect operation. This means the allowed set of workspace IDs can become the empty set if multiple payloads specify conflicting values.
 
-Available in iOS 18.3 and later, macOS 15.3 and later, and visionOS 2.4 and later. Deprecated in iOS 26.4 and later, macOS 26.4 and later, and visionOS 26.4 and later. Requires supervision in iOS, and visionOS.
+Deprecated: use the declarative management `com.apple.configuration.external-intelligence.settings` configuration.
+
+Available: iOS 18.3+ | iPadOS 18.3+ | macOS 15.3+ | visionOS 2.4+
+Deprecated: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+ | visionOS 26.4+
+Requires supervision: iOS | visionOS
 
 ### allowEnablingRestrictions
 
@@ -604,7 +672,8 @@ Available in iOS 18.3 and later, macOS 15.3 and later, and visionOS 2.4 and late
 
 If `false`, the system disables the Enable Restrictions option in the Restrictions UI in Settings. If `false` in iOS 12 and later, the system disables the Enable ScreenTime option in the ScreenTime UI in Settings and disables ScreenTime if already enabled.
 
-Available in iOS 8 and later, and visionOS 2 and later. Requires supervision in iOS, and visionOS.
+Available: iOS 8+ | iPadOS 8+ | visionOS 2+
+Requires supervision: iOS | visionOS
 
 ### allowEnterpriseAppTrust
 
@@ -614,7 +683,7 @@ Available in iOS 8 and later, and visionOS 2 and later. Requires supervision in 
 
 If `false`, the system removes the Trust Enterprise Developer button in Settings > General > VPN & Device Management, which prevents provisioning apps by universal provisioning profiles. This restriction applies to free developer accounts and enterprise app developers that aren’t implicitly trusted by apps that install through MDM. This restriction doesn’t revoke previously granted trust.
 
-Available in iOS 9 and later, and visionOS 2 and later.
+Available: iOS 9+ | iPadOS 9+ | visionOS 2+
 
 ### allowEnterpriseBookBackup
 
@@ -624,7 +693,8 @@ Available in iOS 9 and later, and visionOS 2 and later.
 
 If `false`, the system disables backup of Enterprise books.
 
-Available in iOS 8 and later. Allowed for user enrollments in iOS.
+Available: iOS 8+ | iPadOS 8+
+Allowed for user enrollments: iOS
 
 ### allowEnterpriseBookMetadataSync
 
@@ -634,7 +704,8 @@ Available in iOS 8 and later. Allowed for user enrollments in iOS.
 
 If `false`, the system disables sync of Enterprise books, notes, and highlights.
 
-Available in iOS 8 and later. Allowed for user enrollments in iOS.
+Available: iOS 8+ | iPadOS 8+
+Allowed for user enrollments: iOS
 
 ### allowEraseContentAndSettings
 
@@ -644,7 +715,8 @@ Available in iOS 8 and later. Allowed for user enrollments in iOS.
 
 If `false`, the system disables the Erase All Content and Settings option in the Reset UI.
 
-Available in iOS 8 and later, macOS 12 and later, and visionOS 2 and later. Requires supervision in iOS, and visionOS.
+Available: iOS 8+ | iPadOS 8+ | macOS 12+ | visionOS 2+
+Requires supervision: iOS | visionOS
 
 ### allowESIMModification
 
@@ -652,9 +724,10 @@ Available in iOS 8 and later, macOS 12 and later, and visionOS 2 and later. Requ
 - **Required:** No
 - **Default:** `true`
 
-If `false`, the system disables modifications of eSIMs.
+If `false`, the system disables modifications of eSIMs. This also disables the phone number sharing setup on iPhones, in iOS 27 and later.
 
-Available in iOS 12.1 and later. Requires supervision in iOS.
+Available: iOS 12.1+ | iPadOS 12.1+
+Requires supervision: iOS
 
 ### allowESIMOutgoingTransfers
 
@@ -664,7 +737,8 @@ Available in iOS 12.1 and later. Requires supervision in iOS.
 
 If `false`, prevents the transfer of an eSIM from the device on which the restriction is installed to a different device.
 
-Available in iOS 18 and later. Requires supervision in iOS.
+Available: iOS 18+ | iPadOS 18+
+Requires supervision: iOS
 
 ### allowExplicitContent
 
@@ -676,7 +750,8 @@ If `false`, the system hides explicit music or video content purchased from the 
 
 Requires a supervised device in iOS 13 and later. Support for this restriction on unsupervised devices is deprecated.
 
-Available in iOS 4 and later, macOS 15 and later, and tvOS 11.3 and later. Requires supervision in iOS, and tvOS.
+Available: iOS 4+ | iPadOS 4+ | macOS 15+ | tvOS 11.3+
+Requires supervision: iOS | tvOS
 
 ### allowExternalIntelligenceIntegrations
 
@@ -686,7 +761,11 @@ Available in iOS 4 and later, macOS 15 and later, and tvOS 11.3 and later. Requi
 
 If `false`, disables the use of external, cloud-based intelligence services with Siri. In iOS, this restriction is temporarily allowed on unsupervised and user enrollments. In a future release, this restriction will require supervision, and will be ignored on unsupervised devices.
 
-Available in iOS 18.2 and later, macOS 15.2 and later, and visionOS 2.4 and later. Deprecated in iOS 26.4 and later, macOS 26.4 and later, and visionOS 26.4 and later. Allowed for user enrollments in iOS, macOS, and visionOS.
+Deprecated: use the declarative management `com.apple.configuration.external-intelligence.settings` configuration.
+
+Available: iOS 18.2+ | iPadOS 18.2+ | macOS 15.2+ | visionOS 2.4+
+Deprecated: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+ | visionOS 26.4+
+Allowed for user enrollments: iOS | macOS | visionOS
 
 ### allowExternalIntelligenceIntegrationsSignIn
 
@@ -696,7 +775,11 @@ Available in iOS 18.2 and later, macOS 15.2 and later, and visionOS 2.4 and late
 
 If `false`, forces external intelligence providers into anonymous mode. If a user is already signed in to an external intelligence provider, applying this restriction signs them out when attempting the next request.
 
-Available in iOS 18.2 and later, macOS 15.2 and later, and visionOS 2.4 and later. Deprecated in iOS 26.4 and later, macOS 26.4 and later, and visionOS 26.4 and later. Allowed for user enrollments in iOS, macOS, and visionOS.
+Deprecated: use the declarative management `com.apple.configuration.external-intelligence.settings` configuration.
+
+Available: iOS 18.2+ | iPadOS 18.2+ | macOS 15.2+ | visionOS 2.4+
+Deprecated: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+ | visionOS 26.4+
+Allowed for user enrollments: iOS | macOS | visionOS
 
 ### allowFileSharingModification
 
@@ -706,7 +789,7 @@ Available in iOS 18.2 and later, macOS 15.2 and later, and visionOS 2.4 and late
 
 If `false`, the system prevents modifying File Sharing setting in System Settings.
 
-Available in macOS 14 and later.
+Available: macOS 14+
 
 ### allowFilesNetworkDriveAccess
 
@@ -716,7 +799,8 @@ Available in macOS 14 and later.
 
 If `false`, the system prevents connecting to network drives in the Files app.
 
-Available in iOS 13.1 and later, and visionOS 2 and later. Requires supervision in iOS, and visionOS.
+Available: iOS 13.1+ | iPadOS 13.1+ | visionOS 2+
+Requires supervision: iOS | visionOS
 
 ### allowFilesUSBDriveAccess
 
@@ -726,7 +810,8 @@ Available in iOS 13.1 and later, and visionOS 2 and later. Requires supervision 
 
 If `false`, the system prevents connecting to any connected USB devices in the Files app.
 
-Available in iOS 13 and later. Requires supervision in iOS.
+Available: iOS 13+ | iPadOS 13+
+Requires supervision: iOS
 
 ### allowFindMyDevice
 
@@ -736,7 +821,8 @@ Available in iOS 13 and later. Requires supervision in iOS.
 
 If `false`, the system disables Find My Device in the Find My app.
 
-Available in iOS 13 and later, and macOS 10.15 and later. Requires supervision in iOS.
+Available: iOS 13+ | iPadOS 13+ | macOS 10.15+
+Requires supervision: iOS
 
 ### allowFindMyFriends
 
@@ -746,7 +832,8 @@ Available in iOS 13 and later, and macOS 10.15 and later. Requires supervision i
 
 If `false`, the system disables Find My Friends in the Find My app.
 
-Available in iOS 13 and later, and macOS 10.15 and later. Requires supervision in iOS.
+Available: iOS 13+ | iPadOS 13+ | macOS 10.15+
+Requires supervision: iOS
 
 ### allowFindMyFriendsModification
 
@@ -756,7 +843,8 @@ Available in iOS 13 and later, and macOS 10.15 and later. Requires supervision i
 
 If `false`, the system disables changes to Find My Friends.
 
-Available in iOS 7 and later. Requires supervision in iOS.
+Available: iOS 7+ | iPadOS 7+
+Requires supervision: iOS
 
 ### allowFingerprintForUnlock
 
@@ -766,7 +854,7 @@ Available in iOS 7 and later. Requires supervision in iOS.
 
 If `false`, the system prevents Touch ID, Face ID, or Optic ID from unlocking a device. Support for this restriction on unsupervised devices is deprecated.
 
-Available in iOS 7 and later, macOS 10.12.4 and later, and visionOS 2 and later.
+Available: iOS 7+ | iPadOS 7+ | macOS 10.12.4+ | visionOS 2+
 
 ### allowFingerprintModification
 
@@ -776,7 +864,8 @@ Available in iOS 7 and later, macOS 10.12.4 and later, and visionOS 2 and later.
 
 If `false`, the system prevents the user from modifying Touch ID or Face ID.
 
-Available in iOS 8.3 and later, macOS 14 and later, and visionOS 2 and later. Requires supervision in iOS, and visionOS.
+Available: iOS 8.3+ | iPadOS 8.3+ | macOS 14+ | visionOS 2+
+Requires supervision: iOS | visionOS
 
 ### allowGameCenter
 
@@ -786,7 +875,8 @@ Available in iOS 8.3 and later, macOS 14 and later, and visionOS 2 and later. Re
 
 If `false`, the system disables Game Center, and the system removes its icon from the Home Screen.
 
-Available in iOS 6 and later, and macOS 10.13 and later. Requires supervision in iOS.
+Available: iOS 6+ | iPadOS 6+ | macOS 10.13+
+Requires supervision: iOS
 
 ### allowGenmoji
 
@@ -796,7 +886,11 @@ Available in iOS 6 and later, and macOS 10.13 and later. Requires supervision in
 
 If `false`, prohibits creating new Genmoji.
 
-Available in iOS 18 and later, macOS 15 and later, and visionOS 2.4 and later. Deprecated in iOS 26.4 and later, macOS 26.4 and later, and visionOS 26.4 and later. Requires supervision in iOS, and visionOS.
+Deprecated: use the declarative management `com.apple.configuration.intelligence.settings` configuration.
+
+Available: iOS 18+ | iPadOS 18+ | macOS 15+ | visionOS 2.4+
+Deprecated: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+ | visionOS 26.4+
+Requires supervision: iOS | visionOS
 
 ### allowGlobalBackgroundFetchWhenRoaming
 
@@ -806,7 +900,7 @@ Available in iOS 18 and later, macOS 15 and later, and visionOS 2.4 and later. D
 
 If `false`, the system disables global background fetch activity when an iOS phone is roaming. Support for this restriction on unsupervised devices is deprecated.
 
-Available in iOS 4 and later.
+Available: iOS 4+ | iPadOS 4+
 
 ### allowHostPairing
 
@@ -816,7 +910,8 @@ Available in iOS 4 and later.
 
 If `false`, the system disables host pairing with the exception of the supervision host. If there’s no configured supervision host certificate, the system disables all pairing. Host pairing lets the administrator control whether an iOS device can pair with a host Mac or PC.
 
-Available in iOS 7 and later. Requires supervision in iOS.
+Available: iOS 7+ | iPadOS 7+
+Requires supervision: iOS
 
 ### allowImagePlayground
 
@@ -826,7 +921,11 @@ Available in iOS 7 and later. Requires supervision in iOS.
 
 If `false`, prohibits the use of image generation.
 
-Available in iOS 18 and later, macOS 15 and later, and visionOS 2.4 and later. Deprecated in iOS 26.4 and later, macOS 26.4 and later, and visionOS 26.4 and later. Requires supervision in iOS, and visionOS.
+Deprecated: use the declarative management `com.apple.configuration.intelligence.settings` configuration.
+
+Available: iOS 18+ | iPadOS 18+ | macOS 15+ | visionOS 2.4+
+Deprecated: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+ | visionOS 26.4+
+Requires supervision: iOS | visionOS
 
 ### allowImageWand
 
@@ -836,7 +935,11 @@ Available in iOS 18 and later, macOS 15 and later, and visionOS 2.4 and later. D
 
 If `false`, prohibits the use of Image Wand.
 
-Available in iOS 18 and later, and visionOS 2.4 and later. Deprecated in iOS 26.4 and later, and visionOS 26.4 and later. Requires supervision in iOS, and visionOS.
+Deprecated: use the declarative management `com.apple.configuration.intelligence.settings` configuration.
+
+Available: iOS 18+ | iPadOS 18+ | visionOS 2.4+
+Deprecated: iOS 26.4+ | iPadOS 26.4+ | visionOS 26.4+
+Requires supervision: iOS | visionOS
 
 ### allowInAppPurchases
 
@@ -846,7 +949,7 @@ Available in iOS 18 and later, and visionOS 2.4 and later. Deprecated in iOS 26.
 
 If `false`, the system prohibits in-app purchasing. Support for this restriction on unsupervised devices is deprecated.
 
-Available in iOS 4 and later.
+Available: iOS 4+ | iPadOS 4+
 
 ### allowInternetSharingModification
 
@@ -856,7 +959,7 @@ Available in iOS 4 and later.
 
 If `false`, the system prevents modifying the Internet Sharing setting in System Settings.
 
-Available in macOS 14 and later.
+Available: macOS 14+
 
 ### allowiPhoneMirroring
 
@@ -866,7 +969,8 @@ Available in macOS 14 and later.
 
 If `false`, prohibits the use of iPhone Mirroring. In macOS, this prevents the Mac from mirroring any iPhone. In iOS, this prevents the iPhone from mirroring to any Mac.
 
-Available in iOS 18 and later, and macOS 15 and later. Requires supervision in iOS.
+Available: iOS 18+ | iPadOS 18+ | macOS 15+
+Requires supervision: iOS
 
 ### allowiPhoneWidgetsOnMac
 
@@ -876,7 +980,8 @@ Available in iOS 18 and later, and macOS 15 and later. Requires supervision in i
 
 If `false`, the system disallows iPhone widgets on a Mac that signs in with the same Apple Account for iCloud.
 
-Available in iOS 17 and later. Requires supervision in iOS.
+Available: iOS 17+ | iPadOS 17+
+Requires supervision: iOS
 
 ### allowiTunes
 
@@ -886,7 +991,8 @@ Available in iOS 17 and later. Requires supervision in iOS.
 
 If `false`, the system disables the iTunes Music Store and removes its icon from the Home Screen. Users can’t preview, purchase, or download content. Requires a supervised device in iOS 13 and later.
 
-Available in iOS 4 and later. Requires supervision in iOS.
+Available: iOS 4+ | iPadOS 4+
+Requires supervision: iOS
 
 ### allowiTunesFileSharing
 
@@ -896,7 +1002,7 @@ Available in iOS 4 and later. Requires supervision in iOS.
 
 If `false`, the system disables iTunes file sharing services.
 
-Available in macOS 10.13 and later.
+Available: macOS 10.13+
 
 ### allowKeyboardShortcuts
 
@@ -906,7 +1012,11 @@ Available in macOS 10.13 and later.
 
 If `false`, the system disables keyboard shortcuts.
 
-Available in iOS 9 and later. Deprecated in iOS 26.4 and later. Requires supervision in iOS.
+Deprecated: use the declarative management `com.apple.configuration.keyboard.settings` configuration.
+
+Available: iOS 9+ | iPadOS 9+
+Deprecated: iOS 26.4+ | iPadOS 26.4+
+Requires supervision: iOS
 
 ### allowListedAppBundleIDs
 
@@ -915,7 +1025,11 @@ Available in iOS 9 and later. Deprecated in iOS 26.4 and later. Requires supervi
 
 If present, the system only shows or can launch apps with bundle IDs in the array. Include the value `com.apple.webapp` to allow all webclips. This applies to App Store apps, marketplace apps, and locally installed apps (using Configurator, Xcode, and so forth).
 
-Available in iOS 15 and later, and tvOS 15 and later. Requires supervision in iOS, and tvOS.
+Deprecated: use the declarative management `com.apple.configuration.app.settings` configuration.
+
+Available: iOS 15+ | iPadOS 15+ | tvOS 15+ | visionOS 27+
+Deprecated: iOS 27+ | iPadOS 27+ | tvOS 27+ | visionOS 27+
+Requires supervision: iOS | tvOS | visionOS
 
 ### allowLiveVoicemail
 
@@ -925,7 +1039,8 @@ Available in iOS 15 and later, and tvOS 15 and later. Requires supervision in iO
 
 If `false`, the system disables live voicemail on the device.
 
-Available in iOS 17.2 and later, and macOS 26 and later. Requires supervision in iOS.
+Available: iOS 17.2+ | iPadOS 17.2+ | macOS 26+
+Requires supervision: iOS
 
 ### allowLocalUserCreation
 
@@ -935,7 +1050,7 @@ Available in iOS 17.2 and later, and macOS 26 and later. Requires supervision in
 
 If `false`, the system prevents creating users in System Settings.
 
-Available in macOS 14 and later.
+Available: macOS 14+
 
 ### allowLockScreenControlCenter
 
@@ -945,7 +1060,8 @@ Available in macOS 14 and later.
 
 If `false`, the system prevents Control Center from appearing on the Lock Screen.
 
-Available in iOS 7 and later. Allowed for user enrollments in iOS.
+Available: iOS 7+ | iPadOS 7+
+Allowed for user enrollments: iOS
 
 ### allowLockScreenNotificationsView
 
@@ -955,7 +1071,8 @@ Available in iOS 7 and later. Allowed for user enrollments in iOS.
 
 If `false`, the system disables the Notifications history view on the Lock Screen, so users can’t view past notifications. However, they can still see notifications when they arrive.
 
-Available in iOS 7 and later, and watchOS 10 and later. Allowed for user enrollments in iOS.
+Available: iOS 7+ | iPadOS 7+ | watchOS 10+
+Allowed for user enrollments: iOS
 
 ### allowLockScreenTodayView
 
@@ -965,7 +1082,8 @@ Available in iOS 7 and later, and watchOS 10 and later. Allowed for user enrollm
 
 If `false`, the system disables the Today view in Notification Center on the Lock Screen.
 
-Available in iOS 7 and later. Allowed for user enrollments in iOS.
+Available: iOS 7+ | iPadOS 7+
+Allowed for user enrollments: iOS
 
 ### allowMailPrivacyProtection
 
@@ -975,7 +1093,8 @@ Available in iOS 7 and later. Allowed for user enrollments in iOS.
 
 If `false`, the system disables Mail Privacy Protection on the device.
 
-Available in iOS 15.2 and later. Requires supervision in iOS.
+Available: iOS 15.2+ | iPadOS 15.2+
+Requires supervision: iOS
 
 ### allowMailSmartReplies
 
@@ -985,7 +1104,11 @@ Available in iOS 15.2 and later. Requires supervision in iOS.
 
 If `false`, disables smart replies in Mail.
 
-Available in iOS 18.4 and later, macOS 15.4 and later, and visionOS 2.4 and later. Deprecated in iOS 26.4 and later, macOS 26.4 and later, and visionOS 26.4 and later. Requires supervision in iOS, and visionOS.
+Deprecated: use the declarative management `com.apple.configuration.intelligence.settings` configuration.
+
+Available: iOS 18.4+ | iPadOS 18.4+ | macOS 15.4+ | visionOS 2.4+
+Deprecated: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+ | visionOS 26.4+
+Requires supervision: iOS | visionOS
 
 ### allowMailSummary
 
@@ -995,7 +1118,11 @@ Available in iOS 18.4 and later, macOS 15.4 and later, and visionOS 2.4 and late
 
 If `false`, disables the ability to create summaries of email messages manually. This doesn’t affect automatic summary generation.
 
-Available in iOS 18.1 and later, macOS 15.1 and later, and visionOS 2.4 and later. Deprecated in iOS 26.4 and later, macOS 26.4 and later, and visionOS 26.4 and later. Requires supervision in iOS, and visionOS.
+Deprecated: use the declarative management `com.apple.configuration.intelligence.settings` configuration.
+
+Available: iOS 18.1+ | iPadOS 18.1+ | macOS 15.1+ | visionOS 2.4+
+Deprecated: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+ | visionOS 26.4+
+Requires supervision: iOS | visionOS
 
 ### allowManagedAppsCloudSync
 
@@ -1005,7 +1132,8 @@ Available in iOS 18.1 and later, macOS 15.1 and later, and visionOS 2.4 and late
 
 If `false`, the system prevents managed apps from using iCloud sync.
 
-Available in iOS 8 and later, and visionOS 2 and later. Allowed for user enrollments in iOS, and visionOS.
+Available: iOS 8+ | iPadOS 8+ | visionOS 2+
+Allowed for user enrollments: iOS | visionOS
 
 ### allowManagedToWriteUnmanagedContacts
 
@@ -1017,7 +1145,7 @@ If `true`, the system allows managed apps to write contacts to unmanaged account
 
 > 
 
-Available in iOS 12 and later, and visionOS 2 and later.
+Available: iOS 12+ | iPadOS 12+ | visionOS 2+
 
 ### allowMarketplaceAppInstallation
 
@@ -1027,7 +1155,8 @@ Available in iOS 12 and later, and visionOS 2 and later.
 
 If `false`, the system prevents installation of alternative marketplace apps from the web and prevents any installed alternative marketplace apps from installing apps.
 
-Available in iOS 17.4 and later. Requires supervision in iOS.
+Available: iOS 17.4+ | iPadOS 17.4+
+Requires supervision: iOS
 
 ### allowMediaSharingModification
 
@@ -1037,7 +1166,7 @@ Available in iOS 17.4 and later. Requires supervision in iOS.
 
 If `false`, prevents modification of Media Sharing settings.
 
-Available in macOS 15.1 and later.
+Available: macOS 15.1+
 
 ### allowMultiplayerGaming
 
@@ -1047,7 +1176,8 @@ Available in macOS 15.1 and later.
 
 If `false`, the system prohibits multiplayer gaming.
 
-Available in iOS 4.1 and later, and macOS 10.13 and later. Requires supervision in iOS.
+Available: iOS 4.1+ | iPadOS 4.1+ | macOS 10.13+
+Requires supervision: iOS
 
 ### allowMusicService
 
@@ -1057,7 +1187,8 @@ Available in iOS 4.1 and later, and macOS 10.13 and later. Requires supervision 
 
 If `false`, the system disables the Music service, and the Music app reverts to classic mode.
 
-Available in iOS 9.3 and later, and macOS 10.12 and later. Requires supervision in iOS.
+Available: iOS 9.3+ | iPadOS 9.3+ | macOS 10.12+
+Requires supervision: iOS
 
 ### allowNews
 
@@ -1067,7 +1198,8 @@ Available in iOS 9.3 and later, and macOS 10.12 and later. Requires supervision 
 
 If `false`, the system disables News.
 
-Available in iOS 9 and later. Requires supervision in iOS.
+Available: iOS 9+ | iPadOS 9+
+Requires supervision: iOS
 
 ### allowNFC
 
@@ -1077,7 +1209,8 @@ Available in iOS 9 and later. Requires supervision in iOS.
 
 If `false`, the system disables NFC.
 
-Available in iOS 14.2 and later. Requires supervision in iOS.
+Available: iOS 14.2+ | iPadOS 14.2+
+Requires supervision: iOS
 
 ### allowNotesTranscription
 
@@ -1087,7 +1220,11 @@ Available in iOS 14.2 and later. Requires supervision in iOS.
 
 If `false`, disables transcription in Notes.
 
-Available in iOS 18.4 and later, and macOS 15.4 and later. Deprecated in iOS 26.4 and later, and macOS 26.4 and later. Requires supervision in iOS.
+Deprecated: use the declarative management `com.apple.configuration.intelligence.settings` configuration.
+
+Available: iOS 18.4+ | iPadOS 18.4+ | macOS 15.4+
+Deprecated: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+
+Requires supervision: iOS
 
 ### allowNotesTranscriptionSummary
 
@@ -1097,7 +1234,11 @@ Available in iOS 18.4 and later, and macOS 15.4 and later. Deprecated in iOS 26.
 
 If `false`, disables transcription summarization in Notes.
 
-Available in iOS 18.3 and later, and macOS 15.3 and later. Deprecated in iOS 26.4 and later, and macOS 26.4 and later. Requires supervision in iOS.
+Deprecated: use the declarative management `com.apple.configuration.intelligence.settings` configuration.
+
+Available: iOS 18.3+ | iPadOS 18.3+ | macOS 15.3+
+Deprecated: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+
+Requires supervision: iOS
 
 ### allowNotificationsModification
 
@@ -1107,7 +1248,8 @@ Available in iOS 18.3 and later, and macOS 15.3 and later. Deprecated in iOS 26.
 
 If `false`, the system disables modification of notification settings.
 
-Available in iOS 9.3 and later, and visionOS 2 and later. Requires supervision in iOS, and visionOS.
+Available: iOS 9.3+ | iPadOS 9.3+ | visionOS 2+
+Requires supervision: iOS | visionOS
 
 ### allowOpenFromManagedToUnmanaged
 
@@ -1117,7 +1259,8 @@ Available in iOS 9.3 and later, and visionOS 2 and later. Requires supervision i
 
 If `false`, documents in managed apps and accounts open only in other managed apps and accounts.
 
-Available in iOS 7 and later, and visionOS 2 and later. Allowed for user enrollments in iOS, and visionOS.
+Available: iOS 7+ | iPadOS 7+ | visionOS 2+
+Allowed for user enrollments: iOS | visionOS
 
 ### allowOpenFromUnmanagedToManaged
 
@@ -1127,7 +1270,8 @@ Available in iOS 7 and later, and visionOS 2 and later. Allowed for user enrollm
 
 If `false`, documents in unmanaged apps and accounts open only in other unmanaged apps and accounts.
 
-Available in iOS 7 and later, and visionOS 2 and later. Allowed for user enrollments in iOS, and visionOS.
+Available: iOS 7+ | iPadOS 7+ | visionOS 2+
+Allowed for user enrollments: iOS | visionOS
 
 ### allowOTAPKIUpdates
 
@@ -1137,7 +1281,7 @@ Available in iOS 7 and later, and visionOS 2 and later. Allowed for user enrollm
 
 If `false`, the system disables over-the-air PKI updates. Setting this restriction to `false` doesn’t disable CRL and OCSP checks.
 
-Available in iOS 7 and later.
+Available: iOS 7+ | iPadOS 7+
 
 ### allowPairedWatch
 
@@ -1147,7 +1291,8 @@ Available in iOS 7 and later.
 
 If `false`, the system disables pairing with an Apple Watch, and the system unpairs any currently paired Apple Watch and erases its content.
 
-Available in iOS 9 and later. Requires supervision in iOS.
+Available: iOS 9+ | iPadOS 9+
+Requires supervision: iOS
 
 ### allowPassbookWhileLocked
 
@@ -1157,7 +1302,7 @@ Available in iOS 9 and later. Requires supervision in iOS.
 
 If `false`, the system hides Passbook notifications from the Lock Screen.
 
-Available in iOS 6 and later.
+Available: iOS 6+ | iPadOS 6+
 
 ### allowPasscodeModification
 
@@ -1167,7 +1312,8 @@ Available in iOS 6 and later.
 
 If `false`, the system prevents adding, changing, or removing the passcode. The system ignores this restriction on Shared iPad.
 
-Available in iOS 9 and later, macOS 10.13 and later, and visionOS 2 and later. Requires supervision in iOS, and visionOS.
+Available: iOS 9+ | iPadOS 9+ | macOS 10.13+ | visionOS 2+
+Requires supervision: iOS | visionOS
 
 ### allowPasswordAutoFill
 
@@ -1184,7 +1330,8 @@ If `false`, the system disables:
 
 However, if `false`, the system doesn’t prevent AutoFill for contact info and credit cards in Safari.
 
-Available in iOS 12 and later, macOS 10.14 and later, and visionOS 2 and later. Requires supervision in iOS, and visionOS.
+Available: iOS 12+ | iPadOS 12+ | macOS 10.14+ | visionOS 2+
+Requires supervision: iOS | visionOS
 
 ### allowPasswordProximityRequests
 
@@ -1194,7 +1341,10 @@ Available in iOS 12 and later, macOS 10.14 and later, and visionOS 2 and later. 
 
 If `false`, the system disables requesting passwords from nearby devices.
 
-Available in iOS 12 and later, macOS 10.14 and later, and tvOS 12 and later. Deprecated in tvOS 17.4 and later. Removed in tvOS 26.4 and later. Requires supervision in iOS, and tvOS.
+Available: iOS 12+ | iPadOS 12+ | macOS 10.14+ | tvOS 12+
+Deprecated: tvOS 17.4+
+Removed: tvOS 26.4+
+Requires supervision: iOS | tvOS
 
 ### allowPasswordSharing
 
@@ -1204,7 +1354,8 @@ Available in iOS 12 and later, macOS 10.14 and later, and tvOS 12 and later. Dep
 
 If `false`, the system disables sharing passwords with the AirDrop passwords feature, or with the Passwords app.
 
-Available in iOS 12 and later, macOS 10.14 and later, and visionOS 2 and later. Requires supervision in iOS, and visionOS.
+Available: iOS 12+ | iPadOS 12+ | macOS 10.14+ | visionOS 2+
+Requires supervision: iOS | visionOS
 
 ### allowPersonalHotspotModification
 
@@ -1214,7 +1365,8 @@ Available in iOS 12 and later, macOS 10.14 and later, and visionOS 2 and later. 
 
 If `false`, the system disables modifications of the personal hotspot setting.
 
-Available in iOS 12.2 and later. Requires supervision in iOS.
+Available: iOS 12.2+ | iPadOS 12.2+
+Requires supervision: iOS
 
 ### allowPersonalizedHandwritingResults
 
@@ -1224,7 +1376,11 @@ Available in iOS 12.2 and later. Requires supervision in iOS.
 
 If false, prevents the system from generating text in the user’s handwriting.
 
-Available in iOS 18 and later. Deprecated in iOS 26.4 and later. Requires supervision in iOS.
+Deprecated: use the declarative management `com.apple.configuration.intelligence.settings` configuration.
+
+Available: iOS 18+ | iPadOS 18+
+Deprecated: iOS 26.4+ | iPadOS 26.4+
+Requires supervision: iOS
 
 ### allowPhotoStream
 
@@ -1234,7 +1390,8 @@ Available in iOS 18 and later. Deprecated in iOS 26.4 and later. Requires superv
 
 If `false`, the system disables Photo Stream.
 
-Available in iOS 5 and later. Deprecated in iOS 17 and later.
+Available: iOS 5+ | iPadOS 5+
+Deprecated: iOS 17+ | iPadOS 17+
 
 ### allowPodcasts
 
@@ -1244,7 +1401,8 @@ Available in iOS 5 and later. Deprecated in iOS 17 and later.
 
 If `false`, the system disables podcasts.
 
-Available in iOS 8 and later. Requires supervision in iOS.
+Available: iOS 8+ | iPadOS 8+
+Requires supervision: iOS
 
 ### allowPredictiveKeyboard
 
@@ -1254,7 +1412,11 @@ Available in iOS 8 and later. Requires supervision in iOS.
 
 If `false`, the system disables predictive keyboards.
 
-Available in iOS 8.1.3 and later. Deprecated in iOS 26.4 and later. Requires supervision in iOS.
+Deprecated: use the declarative management `com.apple.configuration.keyboard.settings` configuration.
+
+Available: iOS 8.1.3+ | iPadOS 8.1.3+
+Deprecated: iOS 26.4+ | iPadOS 26.4+
+Requires supervision: iOS
 
 ### allowPrinterSharingModification
 
@@ -1264,7 +1426,7 @@ Available in iOS 8.1.3 and later. Deprecated in iOS 26.4 and later. Requires sup
 
 If `false`, the system prevents modifying Printer Sharing settings in System Settings.
 
-Available in macOS 14 and later.
+Available: macOS 14+
 
 ### allowProximitySetupToNewDevice
 
@@ -1274,7 +1436,8 @@ Available in macOS 14 and later.
 
 If `false`, disables the prompt to set up new devices that are nearby. Starting with iOS 26.3, this also prevents exporting iOS data to set up new Android devices.
 
-Available in iOS 11 and later. Requires supervision in iOS.
+Available: iOS 11+ | iPadOS 11+
+Requires supervision: iOS
 
 ### allowRadioService
 
@@ -1284,27 +1447,8 @@ Available in iOS 11 and later. Requires supervision in iOS.
 
 If `false`, the system disables Apple Music Radio.
 
-Available in iOS 9.3 and later. Requires supervision in iOS.
-
-### allowRapidSecurityResponseInstallation
-
-- **Type:** `boolean`
-- **Required:** No
-- **Default:** `true`
-
-If `false`, the system prohibits installation of Background Security Improvements.
-
-Available in iOS 16 and later, and macOS 13 and later. Deprecated in iOS 26 and later, and macOS 26 and later. Requires supervision in iOS.
-
-### allowRapidSecurityResponseRemoval
-
-- **Type:** `boolean`
-- **Required:** No
-- **Default:** `true`
-
-If `false`, the system prohibits removal of Background Security Improvements.
-
-Available in iOS 16 and later, and macOS 13 and later. Deprecated in iOS 26 and later, and macOS 26 and later. Requires supervision in iOS.
+Available: iOS 9.3+ | iPadOS 9.3+
+Requires supervision: iOS
 
 ### allowRCSMessaging
 
@@ -1314,7 +1458,8 @@ Available in iOS 16 and later, and macOS 13 and later. Deprecated in iOS 26 and 
 
 If `false`, prevents the use of RCS messaging.
 
-Available in iOS 18.1 and later. Requires supervision in iOS.
+Available: iOS 18.1+ | iPadOS 18.1+
+Requires supervision: iOS
 
 ### allowRemoteAppleEventsModification
 
@@ -1324,7 +1469,7 @@ Available in iOS 18.1 and later. Requires supervision in iOS.
 
 If `false`, the system prevents modifying Remote Apple Events Sharing settings in System Settings.
 
-Available in macOS 14 and later.
+Available: macOS 14+
 
 ### allowRemoteAppPairing
 
@@ -1334,7 +1479,8 @@ Available in macOS 14 and later.
 
 If `false`, the system disables pairing Apple TV for use with the Control Center widget.
 
-Available in tvOS 10.2 and later. Requires supervision in tvOS.
+Available: tvOS 10.2+
+Requires supervision: tvOS
 
 ### allowRemoteScreenObservation
 
@@ -1344,7 +1490,8 @@ Available in tvOS 10.2 and later. Requires supervision in tvOS.
 
 If `false`, the system disables remote screen observation by the Classroom app. Nest this key beneath `allowScreenShot` as a subrestriction. If `allowScreenShot` is `false`, the Classroom app doesn’t observe remote screens. Requires a supervised device until iOS 13 and macOS 10.15. Allowed for user enrollments in macOS 12 and later.
 
-Available in iOS 9.3 and later, and macOS 10.14.4 and later. Allowed for user enrollments in iOS, and macOS.
+Available: iOS 9.3+ | iPadOS 9.3+ | macOS 10.14.4+
+Allowed for user enrollments: iOS | macOS
 
 ### allowRosettaUsageAwareness
 
@@ -1354,7 +1501,7 @@ Available in iOS 9.3 and later, and macOS 10.14.4 and later. Allowed for user en
 
 If `false`, disables Rosetta usage awareness. When Rosetta usage awareness is active, a pop-up dialog is displayed to the user when an app that is using Rosetta is launched. The pop-up dialog indicates that Rosetta will be removed in a future version of the operating system so that the user can contact the app vendor regarding a replacement for the current app.
 
-Available in macOS 26.4 and later.
+Available: macOS 26.4+
 
 ### allowSafari
 
@@ -1364,7 +1511,8 @@ Available in macOS 26.4 and later.
 
 If `false`, the system disables the Safari web browser app, and the system removes its icon from the Home Screen. This setting also prevents users from opening web clips. Requires a supervised device in iOS 13 and later.
 
-Available in iOS 4 and later. Requires supervision in iOS.
+Available: iOS 4+ | iPadOS 4+
+Requires supervision: iOS
 
 ### allowSafariHistoryClearing
 
@@ -1374,7 +1522,8 @@ Available in iOS 4 and later. Requires supervision in iOS.
 
 If `false`, the system disables the ability to clear browsing history in Safari.
 
-Available in iOS 26 and later, macOS 26 and later, and visionOS 26 and later. Requires supervision in iOS, and visionOS.
+Available: iOS 26+ | iPadOS 26+ | macOS 26+ | visionOS 26+
+Requires supervision: iOS | visionOS
 
 ### allowSafariPrivateBrowsing
 
@@ -1384,7 +1533,8 @@ Available in iOS 26 and later, macOS 26 and later, and visionOS 26 and later. Re
 
 If `false`, the system disables the ability to use private browsing in Safari.
 
-Available in iOS 26 and later, macOS 26 and later, and visionOS 26 and later. Requires supervision in iOS, and visionOS.
+Available: iOS 26+ | iPadOS 26+ | macOS 26+ | visionOS 26+
+Requires supervision: iOS | visionOS
 
 ### allowSafariSummary
 
@@ -1394,7 +1544,11 @@ Available in iOS 26 and later, macOS 26 and later, and visionOS 26 and later. Re
 
 If `false`, the system disables the ability to summarize content in Safari.
 
-Available in iOS 18.4 and later, macOS 15.4 and later, and visionOS 2.4 and later. Deprecated in iOS 26.4 and later, macOS 26.4 and later, and visionOS 26.4 and later. Requires supervision in iOS, and visionOS.
+Deprecated: use the declarative management `com.apple.configuration.intelligence.settings` configuration.
+
+Available: iOS 18.4+ | iPadOS 18.4+ | macOS 15.4+ | visionOS 2.4+
+Deprecated: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+ | visionOS 26.4+
+Requires supervision: iOS | visionOS
 
 ### allowSatelliteConnection
 
@@ -1404,7 +1558,8 @@ Available in iOS 18.4 and later, macOS 15.4 and later, and visionOS 2.4 and late
 
 If `false`, the system prohibits the connection to and use of satellite services.
 
-Available in iOS 18.2 and later. Requires supervision in iOS.
+Available: iOS 18.2+ | iPadOS 18.2+
+Requires supervision: iOS
 
 ### allowScreenShot
 
@@ -1414,7 +1569,8 @@ Available in iOS 18.2 and later. Requires supervision in iOS.
 
 If `false`, the system disables saving a screenshot of the display and capturing a screen recording. It also disables the Classroom app from observing remote screens.
 
-Available in iOS 3.1 and later, macOS 10.14.4 and later, visionOS 2 and later, and watchOS 10 and later. Allowed for user enrollments in iOS, macOS, and visionOS.
+Available: iOS 3.1+ | iPadOS 3.1+ | macOS 10.14.4+ | visionOS 2+ | watchOS 10+
+Allowed for user enrollments: iOS | macOS | visionOS
 
 ### allowSharedDeviceTemporarySession
 
@@ -1424,7 +1580,8 @@ Available in iOS 3.1 and later, macOS 10.14.4 and later, visionOS 2 and later, a
 
 If `false`, the system makes temporary sessions unavailable on Shared iPad.
 
-Available in iOS 13.4 and later. Requires supervision in iOS.
+Available: iOS 13.4+ | iPadOS 13.4+
+Requires supervision: iOS
 
 ### allowSharedStream
 
@@ -1434,7 +1591,7 @@ Available in iOS 13.4 and later. Requires supervision in iOS.
 
 If `false`, the system disables Shared Photo Stream. Support for this restriction on unsupervised devices is deprecated.
 
-Available in iOS 6 and later.
+Available: iOS 6+ | iPadOS 6+
 
 ### allowSpellCheck
 
@@ -1444,7 +1601,11 @@ Available in iOS 6 and later.
 
 If `false`, the system disables the keyboard spell checker.
 
-Available in iOS 8.1.3 and later. Deprecated in iOS 26.4 and later. Requires supervision in iOS.
+Deprecated: use the declarative management `com.apple.configuration.keyboard.settings` configuration.
+
+Available: iOS 8.1.3+ | iPadOS 8.1.3+
+Deprecated: iOS 26.4+ | iPadOS 26.4+
+Requires supervision: iOS
 
 ### allowSpotlightInternetResults
 
@@ -1454,7 +1615,7 @@ Available in iOS 8.1.3 and later. Deprecated in iOS 26.4 and later. Requires sup
 
 If `false`, the system disables Spotlight Internet search results in Siri Suggestions. Support for this restriction on unsupervised devices is deprecated.
 
-Available in iOS 8 and later, and macOS 10.11 and later.
+Available: iOS 8+ | iPadOS 8+ | macOS 10.11+
 
 ### allowStartupDiskModification
 
@@ -1464,7 +1625,7 @@ Available in iOS 8 and later, and macOS 10.11 and later.
 
 If `false`, the system prevents modification of Startup Disk settings in System Settings.
 
-Available in macOS 14 and later.
+Available: macOS 14+
 
 ### allowSystemAppRemoval
 
@@ -1474,7 +1635,8 @@ Available in macOS 14 and later.
 
 If `false`, the system disables the removal of system apps from the device.
 
-Available in iOS 11 and later, and visionOS 2 and later. Requires supervision in iOS, and visionOS.
+Available: iOS 11+ | iPadOS 11+ | visionOS 2+
+Requires supervision: iOS | visionOS
 
 ### allowTimeMachineBackup
 
@@ -1484,7 +1646,7 @@ Available in iOS 11 and later, and visionOS 2 and later. Requires supervision in
 
 If `false`, the system prevents modification of Time Machine settings in System Settings. This restriction is not supported on the user channel.
 
-Available in macOS 14 and later.
+Available: macOS 14+
 
 ### allowUIAppInstallation
 
@@ -1496,7 +1658,8 @@ If `false`, the system disables the App Store and removes its icon from the Home
 
 In iOS 10 and later, MDM commands can override this restriction.
 
-Available in iOS 9 and later, visionOS 2 and later, and watchOS 10 and later. Requires supervision in iOS, visionOS, and watchOS.
+Available: iOS 9+ | iPadOS 9+ | visionOS 2+ | watchOS 10+
+Requires supervision: iOS | visionOS | watchOS
 
 ### allowUIConfigurationProfileInstallation
 
@@ -1506,7 +1669,8 @@ Available in iOS 9 and later, visionOS 2 and later, and watchOS 10 and later. Re
 
 If `false`, the system prohibits the user from installing configuration profiles and certificates interactively.
 
-Available in iOS 6 and later, macOS 13 and later, and visionOS 2 and later. Requires supervision in iOS, and visionOS.
+Available: iOS 6+ | iPadOS 6+ | macOS 13+ | visionOS 2+
+Requires supervision: iOS | visionOS
 
 ### allowUniversalControl
 
@@ -1516,7 +1680,7 @@ Available in iOS 6 and later, macOS 13 and later, and visionOS 2 and later. Requ
 
 If `false`, the system disables Universal Control.
 
-Available in macOS 13 and later.
+Available: macOS 13+
 
 ### allowUnmanagedToReadManagedContacts
 
@@ -1528,7 +1692,8 @@ If `true`, the system allows unmanaged apps to read from managed contacts accoun
 
 > 
 
-Available in iOS 12 and later, and visionOS 2 and later. Allowed for user enrollments in iOS, and visionOS.
+Available: iOS 12+ | iPadOS 12+ | visionOS 2+
+Allowed for user enrollments: iOS | visionOS
 
 ### allowUnpairedExternalBootToRecovery
 
@@ -1538,7 +1703,8 @@ Available in iOS 12 and later, and visionOS 2 and later. Allowed for user enroll
 
 If `true`, the system allows unpaired devices to boot devices into recovery.
 
-Available in iOS 14.5 and later. Requires supervision in iOS.
+Available: iOS 14.5+ | iPadOS 14.5+
+Requires supervision: iOS
 
 ### allowUntrustedTLSPrompt
 
@@ -1548,7 +1714,7 @@ Available in iOS 14.5 and later. Requires supervision in iOS.
 
 If `false`, the system automatically rejects untrusted HTTPS certificates without prompting the user.
 
-Available in iOS 5 and later, and visionOS 1.1 and later.
+Available: iOS 5+ | iPadOS 5+ | visionOS 1.1+
 
 ### allowUSBRestrictedMode
 
@@ -1558,7 +1724,8 @@ Available in iOS 5 and later, and visionOS 1.1 and later.
 
 If `false`, the system allows iOS devices to always connect to USB accessories while locked. In macOS, allows new USB and Thunderbolt accessories, and SD cards to connect without authorization. If the system has Lockdown mode enabled, it ignores this value. This restriction is not supported on the user channel.
 
-Available in iOS 11.4.1 and later, and macOS 13 and later. Requires supervision in iOS.
+Available: iOS 11.4.1+ | iPadOS 11.4.1+ | macOS 13+
+Requires supervision: iOS
 
 ### allowVideoConferencing
 
@@ -1568,7 +1735,8 @@ Available in iOS 11.4.1 and later, and macOS 13 and later. Requires supervision 
 
 If `false`, the system hides the FaceTime app. Requires a supervised device in iOS 13 and later.
 
-Available in iOS 4 and later, and visionOS 2 and later. Requires supervision in iOS, and visionOS.
+Available: iOS 4+ | iPadOS 4+ | visionOS 2+
+Requires supervision: iOS | visionOS
 
 ### allowVideoConferencingRemoteControl
 
@@ -1578,7 +1746,8 @@ Available in iOS 4 and later, and visionOS 2 and later. Requires supervision in 
 
 If `false`, disables the ability for a remote FaceTime session to request control of the device.
 
-Available in iOS 18.4 and later. Requires supervision in iOS.
+Available: iOS 18.4+ | iPadOS 18.4+
+Requires supervision: iOS
 
 ### allowVisualIntelligenceSummary
 
@@ -1588,7 +1757,11 @@ Available in iOS 18.4 and later. Requires supervision in iOS.
 
 If `false`, the system disables visual intelligence summarization.
 
-Available in iOS 18.3 and later. Deprecated in iOS 26.4 and later. Requires supervision in iOS.
+Deprecated: use the declarative management `com.apple.configuration.intelligence.settings` configuration.
+
+Available: iOS 18.3+ | iPadOS 18.3+
+Deprecated: iOS 26.4+ | iPadOS 26.4+
+Requires supervision: iOS
 
 ### allowVoiceDialing
 
@@ -1598,7 +1771,8 @@ Available in iOS 18.3 and later. Deprecated in iOS 26.4 and later. Requires supe
 
 If `false`, the system disables voice dialing if the device is locked with a passcode.
 
-Available in iOS 4 and later. Deprecated in iOS 17 and later.
+Available: iOS 4+ | iPadOS 4+
+Deprecated: iOS 17+ | iPadOS 17+
 
 ### allowVPNCreation
 
@@ -1608,7 +1782,8 @@ Available in iOS 4 and later. Deprecated in iOS 17 and later.
 
 If `false`, the system allows only managed apps to create VPN configurations. Prior to iOS 18, the system also allows unmanaged apps to create VPN configurations.
 
-Available in iOS 11 and later, and visionOS 2 and later. Requires supervision in iOS, and visionOS.
+Available: iOS 11+ | iPadOS 11+ | visionOS 2+
+Requires supervision: iOS | visionOS
 
 ### allowWallpaperModification
 
@@ -1618,7 +1793,8 @@ Available in iOS 11 and later, and visionOS 2 and later. Requires supervision in
 
 If `false`, the system prevents changing the wallpaper.
 
-Available in iOS 9 and later, and macOS 10.13 and later. Requires supervision in iOS.
+Available: iOS 9+ | iPadOS 9+ | macOS 10.13+
+Requires supervision: iOS
 
 ### allowWebDistributionAppInstallation
 
@@ -1628,7 +1804,8 @@ Available in iOS 9 and later, and macOS 10.13 and later. Requires supervision in
 
 If `false`, the device prevents installation of apps directly from the web.
 
-Available in iOS 17.5 and later. Requires supervision in iOS.
+Available: iOS 17.5+ | iPadOS 17.5+
+Requires supervision: iOS
 
 ### allowWritingTools
 
@@ -1638,7 +1815,11 @@ Available in iOS 17.5 and later. Requires supervision in iOS.
 
 If `false`, disables Apple Intelligence writing tools.
 
-Available in iOS 18 and later, macOS 15 and later, and visionOS 2.4 and later. Deprecated in iOS 26.4 and later, macOS 26.4 and later, and visionOS 26.4 and later. Requires supervision in iOS, and visionOS.
+Deprecated: use the declarative management `com.apple.configuration.intelligence.settings` configuration.
+
+Available: iOS 18+ | iPadOS 18+ | macOS 15+ | visionOS 2.4+
+Deprecated: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+ | visionOS 26.4+
+Requires supervision: iOS | visionOS
 
 ### autonomousSingleAppModePermittedAppIDs
 
@@ -1647,16 +1828,19 @@ Available in iOS 18 and later, macOS 15 and later, and visionOS 2.4 and later. D
 
 If present, the system allows apps identified by the bundle IDs listed in the array to autonomously enter Single App Mode.
 
-Available in iOS 7 and later. Requires supervision in iOS.
+Available: iOS 7+ | iPadOS 7+
+Requires supervision: iOS
 
 ### blacklistedAppBundleIDs
 
 - **Type:** `[string]`
 - **Required:** No
 
-Use `blockedAppBundleIDs` instead.
+Deprecated: use the declarative management `com.apple.configuration.app.settings` configuration.
 
-Available in iOS 9.3 and later, and tvOS 11 and later. Deprecated in iOS 15 and later, and tvOS 15 and later. Requires supervision in iOS, and tvOS.
+Available: iOS 9.3+ | iPadOS 9.3+ | tvOS 11+
+Deprecated: iOS 15+ | iPadOS 15+ | tvOS 15+
+Requires supervision: iOS | tvOS
 
 ### blockedAppBundleIDs
 
@@ -1665,9 +1849,13 @@ Available in iOS 9.3 and later, and tvOS 11 and later. Deprecated in iOS 15 and 
 
 If present, the system prevents showing or launching apps with bundle IDs in the array. Include the value `com.apple.webapp` to restrict all webclips. This applies to App Store apps, marketplace apps, and locally installed apps (using Configurator, Xcode, and so forth).
 
+Deprecated: use the declarative management `com.apple.configuration.app.settings` configuration.
+
 > 
 
-Available in iOS 15 and later, and tvOS 15 and later. Requires supervision in iOS, and tvOS.
+Available: iOS 15+ | iPadOS 15+ | tvOS 15+ | visionOS 27+
+Deprecated: iOS 27+ | iPadOS 27+ | tvOS 27+ | visionOS 27+
+Requires supervision: iOS | tvOS | visionOS
 
 ### deniedICCIDsForiMessageFaceTime
 
@@ -1676,7 +1864,8 @@ Available in iOS 15 and later, and tvOS 15 and later. Requires supervision in iO
 
 An array of strings representing ICCIDs of cellular plans. The device prevents use of any matching cellular networks in iMessage and FaceTime. The array must contain no more than 4 ICCID strings.
 
-Available in iOS 26 and later. Requires supervision in iOS.
+Available: iOS 26+ | iPadOS 26+
+Requires supervision: iOS
 
 ### deniedICCIDsForRCS
 
@@ -1685,7 +1874,8 @@ Available in iOS 26 and later. Requires supervision in iOS.
 
 An array of strings representing ICCIDs of cellular plans. The device prevents use of any matching cellular networks with RCS messaging. The array must contain no more than 4 ICCID strings.
 
-Available in iOS 26 and later. Requires supervision in iOS.
+Available: iOS 26+ | iPadOS 26+
+Requires supervision: iOS
 
 ### enforcedFingerprintTimeout
 
@@ -1695,47 +1885,7 @@ Available in iOS 26 and later. Requires supervision in iOS.
 
 The value, in seconds, after which the fingerprint unlock requires a password to authenticate. The default value is 48 hours.
 
-Available in macOS 12 and later.
-
-### enforcedSoftwareUpdateDelay
-
-- **Type:** `integer`
-- **Required:** No
-- **Default:** `30`
-
-How many days to delay a software update on the device. With this restriction in place, the user doesn’t see a software update until the specified number of days after the software update release date. The restrictions `forceDelayedAppSoftwareUpdates` and `forceDelayedSoftwareUpdates` use this value.
-
-Available in iOS 11.3 and later, macOS 10.13.4 and later, and tvOS 12.2 and later. Deprecated in iOS 26 and later, macOS 26 and later, and tvOS 26 and later. Requires supervision in iOS, and tvOS.
-
-### enforcedSoftwareUpdateMajorOSDeferredInstallDelay
-
-- **Type:** `integer`
-- **Required:** No
-- **Default:** `30`
-
-This restriction allows the administrator to set the number of days to delay a major software upgrade on the device. When this restriction is in place, the user sees a software upgrade only after the specified delay after the release of the software upgrade. This value controls the delay for `forceDelayedMajorSoftwareUpdates`.
-
-Available in macOS 11.3 and later. Deprecated in macOS 26 and later.
-
-### enforcedSoftwareUpdateMinorOSDeferredInstallDelay
-
-- **Type:** `integer`
-- **Required:** No
-- **Default:** `30`
-
-This restriction allows the administrator to set the number of days to delay a minor OS software update on the device. When this restriction is in place, the user sees a software update only after the specified delay after the release of the software update. This value controls the delay for `forceDelayedSoftwareUpdates`.
-
-Available in macOS 11.3 and later. Deprecated in macOS 26 and later.
-
-### enforcedSoftwareUpdateNonOSDeferredInstallDelay
-
-- **Type:** `integer`
-- **Required:** No
-- **Default:** `30`
-
-This restriction allows the administrator to set the number of days to delay an app software update on the device. When this restriction is in place, the user sees a non-OS software update only after the specified delay after the release of the software. This value controls the delay for `forceDelayedAppSoftwareUpdates`.
-
-Available in macOS 11.3 and later. Deprecated in macOS 26 and later.
+Available: macOS 12+
 
 ### forceAirDropUnmanaged
 
@@ -1745,7 +1895,8 @@ Available in macOS 11.3 and later. Deprecated in macOS 26 and later.
 
 If `true`, the system considers AirDrop to be an unmanaged drop target.
 
-Available in iOS 9 and later, and visionOS 2 and later. Allowed for user enrollments in iOS, and visionOS.
+Available: iOS 9+ | iPadOS 9+ | visionOS 2+
+Allowed for user enrollments: iOS | visionOS
 
 ### forceAirPlayIncomingRequestsPairingPassword
 
@@ -1755,7 +1906,7 @@ Available in iOS 9 and later, and visionOS 2 and later. Allowed for user enrollm
 
 If `true`, the system forces all devices sending AirPlay requests to this device to use a pairing password. This key isn’t supported in tvOS 10.2 and later. Use the AirPlay Security Payload instead.
 
-Available in tvOS 9 and later.
+Available: tvOS 9+
 
 ### forceAirPlayOutgoingRequestsPairingPassword
 
@@ -1765,7 +1916,8 @@ Available in tvOS 9 and later.
 
 If `true`, the system forces all devices receiving AirPlay requests from this device to use a pairing password.
 
-Available in iOS 7.1 and later. Allowed for user enrollments in iOS.
+Available: iOS 7.1+ | iPadOS 7.1+
+Allowed for user enrollments: iOS
 
 ### forceAirPrintTrustedTLSRequirement
 
@@ -1775,7 +1927,8 @@ Available in iOS 7.1 and later. Allowed for user enrollments in iOS.
 
 If `true`, the system requires trusted certificates for TLS printing communication.
 
-Available in iOS 11 and later. Requires supervision in iOS.
+Available: iOS 11+ | iPadOS 11+
+Requires supervision: iOS
 
 ### forceAssistantProfanityFilter
 
@@ -1785,7 +1938,11 @@ Available in iOS 11 and later. Requires supervision in iOS.
 
 If `true`, the system forces the use of the profanity filter for Siri and dictation. Requires a supervised device in iOS.
 
-Available in iOS 5 and later, and macOS 10.13 and later. Deprecated in iOS 26.4 and later, and macOS 26.4 and later. Requires supervision in iOS.
+Deprecated: use the declarative management `com.apple.configuration.siri.settings` configuration.
+
+Available: iOS 5+ | iPadOS 5+ | macOS 10.13+
+Deprecated: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+
+Requires supervision: iOS
 
 ### forceAuthenticationBeforeAutoFill
 
@@ -1795,7 +1952,8 @@ Available in iOS 5 and later, and macOS 10.13 and later. Deprecated in iOS 26.4 
 
 If `true`, the user needs to authenticate before the system can autofill passwords or credit card information in Safari and apps. If this restriction isn’t enforced, the user can toggle this feature in Settings. Only supported on devices with Face ID or Touch ID.
 
-Available in iOS 11 and later, and visionOS 2 and later. Requires supervision in iOS, and visionOS.
+Available: iOS 11+ | iPadOS 11+ | visionOS 2+
+Requires supervision: iOS | visionOS
 
 ### forceAutomaticDateAndTime
 
@@ -1805,7 +1963,8 @@ Available in iOS 11 and later, and visionOS 2 and later. Requires supervision in
 
 If `true`, the system enables the Set Automatically feature in Date & Time and the user can’t disable it. The system updates the device’s time zone only when the device can determine its location using a cellular connection or Wi-Fi with location services enabled.
 
-Available in iOS 12 and later, tvOS 12.2 and later, and visionOS 2 and later. Requires supervision in iOS, tvOS, and visionOS.
+Available: iOS 12+ | iPadOS 12+ | tvOS 12.2+ | visionOS 2+
+Requires supervision: iOS | tvOS | visionOS
 
 ### forceBypassScreenCaptureAlert
 
@@ -1815,7 +1974,18 @@ Available in iOS 12 and later, tvOS 12.2 and later, and visionOS 2 and later. Re
 
 If `true`, then the system bypasses the presentation of a screen capture alert.
 
-Available in macOS 15.1 and later.
+Available: macOS 15.1+
+
+### ForceCaptivePortalConnectionFromLockScreen
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system allows use of the captive WiFi portal at login or unlock.
+
+Available: macOS 27+
+Requires supervision: macOS
 
 ### forceClassroomAutomaticallyJoinClasses
 
@@ -1825,7 +1995,8 @@ Available in macOS 15.1 and later.
 
 If `true`, the system automatically gives permission to the teacher’s requests without prompting the student.
 
-Available in iOS 11 and later, and macOS 10.14.4 and later. Requires supervision in iOS, and macOS.
+Available: iOS 11+ | iPadOS 11+ | macOS 10.14.4+
+Requires supervision: iOS | macOS
 
 ### forceClassroomRequestPermissionToLeaveClasses
 
@@ -1835,7 +2006,8 @@ Available in iOS 11 and later, and macOS 10.14.4 and later. Requires supervision
 
 If `true`, a student enrolled in an unmanaged course through Classroom needs to request permission from the teacher to leave the course.
 
-Available in iOS 11.3 and later, and macOS 10.14.4 and later. Requires supervision in iOS, and macOS.
+Available: iOS 11.3+ | iPadOS 11.3+ | macOS 10.14.4+
+Requires supervision: iOS | macOS
 
 ### forceClassroomUnpromptedAppAndDeviceLock
 
@@ -1845,7 +2017,8 @@ Available in iOS 11.3 and later, and macOS 10.14.4 and later. Requires supervisi
 
 If `true`, the system allows the teacher to lock apps or the device without prompting the student.
 
-Available in iOS 11 and later, and macOS 10.14.4 and later. Requires supervision in iOS, and macOS.
+Available: iOS 11+ | iPadOS 11+ | macOS 10.14.4+
+Requires supervision: iOS | macOS
 
 ### forceClassroomUnpromptedScreenObservation
 
@@ -1855,37 +2028,8 @@ Available in iOS 11 and later, and macOS 10.14.4 and later. Requires supervision
 
 If `true` and `ScreenObservationPermissionModificationAllowed` is also `true` in the Education payload, a student enrolled in a managed course through the Classroom app automatically gives permission to that course teacher’s requests to observe the student’s screen without prompting the student.
 
-Available in iOS 11 and later, and macOS 10.14.4 and later. Requires supervision in iOS, and macOS.
-
-### forceDelayedAppSoftwareUpdates
-
-- **Type:** `boolean`
-- **Required:** No
-- **Default:** `false`
-
-If `true`, the system delays user visibility of non-OS software updates. Control visibility of operating system updates through `forceDelayedSoftwareUpdates`. The delay is 30 days unless you set `enforcedSoftwareUpdateDelay` to another value.
-
-Available in macOS 11 and later. Deprecated in macOS 26 and later.
-
-### forceDelayedMajorSoftwareUpdates
-
-- **Type:** `boolean`
-- **Required:** No
-- **Default:** `false`
-
-If `true`, the system delays user visibility of major OS updates.
-
-Available in macOS 11.3 and later. Deprecated in macOS 26 and later.
-
-### forceDelayedSoftwareUpdates
-
-- **Type:** `boolean`
-- **Required:** No
-- **Default:** `false`
-
-If `true`, the system delays user visibility of software updates. In macOS, the system allows seed build updates without delay. The delay is 30 days unless you set `enforcedSoftwareUpdateDelay` to another value.
-
-Available in iOS 11.3 and later, macOS 10.13 and later, and tvOS 12.2 and later. Deprecated in iOS 26 and later, macOS 26 and later, and tvOS 26 and later. Requires supervision in iOS, and tvOS.
+Available: iOS 11+ | iPadOS 11+ | macOS 10.14.4+
+Requires supervision: iOS | macOS
 
 ### forceEncryptedBackup
 
@@ -1895,7 +2039,8 @@ Available in iOS 11.3 and later, macOS 10.13 and later, and tvOS 12.2 and later.
 
 If `true`, the system encrypts all backups.
 
-Available in iOS 4 and later. Allowed for user enrollments in iOS.
+Available: iOS 4+ | iPadOS 4+
+Allowed for user enrollments: iOS
 
 ### forceITunesStorePasswordEntry
 
@@ -1905,7 +2050,8 @@ Available in iOS 4 and later. Allowed for user enrollments in iOS.
 
 If `true`, the system forces the user to enter their iTunes password for each transaction.
 
-Available in iOS 6 and later. Deprecated in iOS 17 and later.
+Available: iOS 6+ | iPadOS 6+
+Deprecated: iOS 17+ | iPadOS 17+
 
 ### forceLimitAdTracking
 
@@ -1915,7 +2061,7 @@ Available in iOS 6 and later. Deprecated in iOS 17 and later.
 
 If `true`, the system limits ad tracking. Additionally, it disables app tracking and the Allow Apps to Request to Track setting.
 
-Available in iOS 7 and later.
+Available: iOS 7+ | iPadOS 7+
 
 ### forceOnDeviceOnlyDictation
 
@@ -1925,7 +2071,11 @@ Available in iOS 7 and later.
 
 If `true`, the system disables connections to Siri servers for the purposes of dictation.
 
-Available in iOS 14.5 and later, macOS 14 and later, visionOS 2 and later, and watchOS 10 and later. Deprecated in iOS 26.4 and later, macOS 26.4 and later, visionOS 26.4 and later, and watchOS 26.4 and later. Allowed for user enrollments in iOS, macOS, and visionOS.
+Deprecated: use the declarative management `com.apple.configuration.intelligence.settings` configuration.
+
+Available: iOS 14.5+ | iPadOS 14.5+ | macOS 14+ | visionOS 2+ | watchOS 10+
+Deprecated: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+ | visionOS 26.4+ | watchOS 26.4+
+Allowed for user enrollments: iOS | macOS | visionOS
 
 ### forceOnDeviceOnlyTranslation
 
@@ -1935,7 +2085,11 @@ Available in iOS 14.5 and later, macOS 14 and later, visionOS 2 and later, and w
 
 If `true`, the device can’t connect to Siri servers for the purposes of translation.
 
-Available in iOS 15 and later, and watchOS 10 and later. Deprecated in iOS 26.4 and later, and watchOS 26.4 and later. Allowed for user enrollments in iOS.
+Deprecated: use the declarative management `com.apple.configuration.intelligence.settings` configuration.
+
+Available: iOS 15+ | iPadOS 15+ | watchOS 10+
+Deprecated: iOS 26.4+ | iPadOS 26.4+ | watchOS 26.4+
+Allowed for user enrollments: iOS
 
 ### forcePreserveESIMOnErase
 
@@ -1947,7 +2101,8 @@ If `true`, the system preserves eSIM when it erases the device due to too many f
 
 > 
 
-Available in iOS 17.2 and later. Requires supervision in iOS.
+Available: iOS 17.2+ | iPadOS 17.2+
+Requires supervision: iOS
 
 ### forceWatchWristDetection
 
@@ -1957,7 +2112,19 @@ Available in iOS 17.2 and later. Requires supervision in iOS.
 
 If `true`, the system forces a paired Apple Watch to use Wrist Detection.
 
-Available in iOS 8.2 and later, and watchOS 10 and later. Allowed for user enrollments in iOS.
+Available: iOS 8.2+ | iPadOS 8.2+ | watchOS 10+
+Allowed for user enrollments: iOS
+
+### ForceWifiConfigurationOnLockScreen
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system allows the user to select WiFi networks at login or unlock.
+
+Available: macOS 27+
+Requires supervision: macOS
 
 ### forceWiFiPowerOn
 
@@ -1967,7 +2134,8 @@ Available in iOS 8.2 and later, and watchOS 10 and later. Allowed for user enrol
 
 If `true`, the system prevents turning off Wi-Fi in Settings or Control Center, even by entering or leaving Airplane Mode. It doesn’t prevent selecting which Wi-Fi network to use. and later.
 
-Available in iOS 13 and later. Requires supervision in iOS.
+Available: iOS 13+ | iPadOS 13+
+Requires supervision: iOS
 
 ### forceWiFiToAllowedNetworksOnly
 
@@ -1977,7 +2145,8 @@ Available in iOS 13 and later. Requires supervision in iOS.
 
 If `true`, the system limits the device to only join Wi-Fi networks set up through a configuration profile.
 
-Available in iOS 14.5 and later, and visionOS 2 and later. Requires supervision in iOS, and visionOS.
+Available: iOS 14.5+ | iPadOS 14.5+ | visionOS 2+
+Requires supervision: iOS | visionOS
 
 ### forceWiFiWhitelisting
 
@@ -1987,7 +2156,9 @@ Available in iOS 14.5 and later, and visionOS 2 and later. Requires supervision 
 
 Use `forceWiFiToAllowedNetworksOnly` instead.
 
-Available in iOS 10.3 and later. Deprecated in iOS 14.5 and later. Requires supervision in iOS.
+Available: iOS 10.3+ | iPadOS 10.3+
+Deprecated: iOS 14.5+ | iPadOS 14.5+
+Requires supervision: iOS
 
 ### ratingApps
 
@@ -2027,7 +2198,7 @@ Below is the complete list of age rating values used across all App Store region
 
 This restriction will require supervision in a future release.
 
-Available in iOS 4 and later, macOS 15 and later, and tvOS 11.3 and later.
+Available: iOS 4+ | iPadOS 4+ | macOS 15+ | tvOS 11.3+
 
 ### ratingAppsExemptedBundleIDs
 
@@ -2036,7 +2207,7 @@ Available in iOS 4 and later, macOS 15 and later, and tvOS 11.3 and later.
 
 If present, the system exempts apps with bundle IDs in the array from age-based rating restrictions. The system uses intersection combine rules to combine multiple payloads and any exceptions that parental control apps provide, including ScreenTime.
 
-Available in iOS 26.1 and later.
+Available: iOS 26.1+ | iPadOS 26.1+
 
 ### ratingMovies
 
@@ -2056,7 +2227,7 @@ Possible values, with the U.S. description of the rating level:
 - `100`: G
 - `0`: None
 
-Available in iOS 4 and later, macOS 15 and later, and tvOS 11.3 and later.
+Available: iOS 4+ | iPadOS 4+ | macOS 15+ | tvOS 11.3+
 
 ### ratingRegion
 
@@ -2066,7 +2237,8 @@ Available in iOS 4 and later, macOS 15 and later, and tvOS 11.3 and later.
 
 The two-letter key that profile tools use to display the proper ratings for the given region. The client doesn’t recognize or report this data.
 
-Available in iOS 4 and later, macOS 10.7 and later, and tvOS 9 and later. Allowed for user enrollments in iOS, and macOS.
+Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | tvOS 9+
+Allowed for user enrollments: iOS | macOS
 
 ### ratingTVShows
 
@@ -2087,7 +2259,7 @@ Possible values, with the U.S. description of the rating level:
 - `100`: TV-Y
 - `0`: None
 
-Available in iOS 4 and later, macOS 15 and later, and tvOS 11.3 and later.
+Available: iOS 4+ | iPadOS 4+ | macOS 15+ | tvOS 11.3+
 
 ### requireManagedPasteboard
 
@@ -2097,7 +2269,8 @@ Available in iOS 4 and later, macOS 15 and later, and tvOS 11.3 and later.
 
 If `true`, copy-and-paste functionality is limited by the `allowOpenFromManagedToUnmanaged` and `allowOpenFromUnmanagedToManaged` restrictions.
 
-Available in iOS 15 and later, and visionOS 2 and later. Allowed for user enrollments in iOS, and visionOS.
+Available: iOS 15+ | iPadOS 15+ | visionOS 2+
+Allowed for user enrollments: iOS | visionOS
 
 ### safariAcceptCookies
 
@@ -2112,7 +2285,7 @@ Defines the conditions under which the device accepts cookies. The user-facing s
 - `1` or `1.5`: Enables Prevent Cross-Site Tracking, and the user canʼt disable it. Doesn’t enable Block All Cookies, but the user can enable it.
 - `2`: Enables Prevent Cross-Site Tracking, but doesn’t enable Block All Cookies. The user can toggle either setting.
 
-Available in iOS 4 and later.
+Available: iOS 4+ | iPadOS 4+
 
 ### safariAllowAutoFill
 
@@ -2124,7 +2297,8 @@ If `false`, the system disables Safari AutoFill for passwords, contact info, and
 
 > 
 
-Available in iOS 4 and later, macOS 10.13 and later, and visionOS 2 and later. Requires supervision in iOS, and visionOS.
+Available: iOS 4+ | iPadOS 4+ | macOS 10.13+ | visionOS 2+
+Requires supervision: iOS | visionOS
 
 ### safariAllowJavaScript
 
@@ -2134,7 +2308,7 @@ Available in iOS 4 and later, macOS 10.13 and later, and visionOS 2 and later. R
 
 If `false`, Safari doesn’t execute JavaScript. This restriction will require supervision in a future release.
 
-Available in iOS 4 and later.
+Available: iOS 4+ | iPadOS 4+
 
 ### safariAllowPopups
 
@@ -2144,7 +2318,7 @@ Available in iOS 4 and later.
 
 If `false`, Safari doesn’t allow pop-up windows. Support for this restriction on unsupervised devices is deprecated.
 
-Available in iOS 4 and later.
+Available: iOS 4+ | iPadOS 4+
 
 ### safariForceFraudWarning
 
@@ -2154,16 +2328,19 @@ Available in iOS 4 and later.
 
 If `true`, the system enables Safari fraud warning.
 
-Available in iOS 4 and later. Allowed for user enrollments in iOS.
+Available: iOS 4+ | iPadOS 4+
+Allowed for user enrollments: iOS
 
 ### whitelistedAppBundleIDs
 
 - **Type:** `[string]`
 - **Required:** No
 
-Use `allowListedAppBundleIDs` instead.
+Deprecated: use the declarative management `com.apple.configuration.app.settings` configuration.
 
-Available in iOS 9.3 and later, and tvOS 11 and later. Deprecated in iOS 15 and later, and tvOS 15 and later. Requires supervision in iOS, and tvOS.
+Available: iOS 9.3+ | iPadOS 9.3+ | tvOS 11+
+Deprecated: iOS 15+ | iPadOS 15+ | tvOS 15+
+Requires supervision: iOS | tvOS
 
 ## Discussion
 

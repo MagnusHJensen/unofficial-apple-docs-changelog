@@ -2,7 +2,7 @@
 
 The payload that configures a VPN.
 
-**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, tvOS 17.0, visionOS 1.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, tvOS 17.0, visionOS 1.0
 
 ## Properties
 
@@ -13,12 +13,16 @@ The payload that configures a VPN.
 
 The dictionary to use when `VPNType` is `AlwaysOn`. Not available in tvOS or watchOS.
 
+Available: iOS 8+ | iPadOS 8+ | visionOS 1+
+
 ### DNS
 
 - **Type:** `VPN.DNS`
 - **Required:** No
 
 A dictionary to use for all VPN types.
+
+Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | tvOS 17+ | visionOS 1+ | watchOS 10+
 
 ### IKEv2
 
@@ -27,12 +31,16 @@ A dictionary to use for all VPN types.
 
 The dictionary to use when `VPNType` is `IKEv2`.
 
+Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | tvOS 17+ | visionOS 1+ | watchOS 10+
+
 ### IPSec
 
 - **Type:** `VPN.IPSec`
 - **Required:** No
 
 The dictionary that contains IPSec settings. Not available in watchOS.
+
+Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | visionOS 1+
 
 ### IPv4
 
@@ -41,12 +49,16 @@ The dictionary that contains IPSec settings. Not available in watchOS.
 
 The dictionary that contains IPv4 settings. Not available in watchOS.
 
+Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | visionOS 1+
+
 ### PPP
 
 - **Type:** `VPN.PPP`
 - **Required:** No
 
 The dictionary to use when `VPNType` is `L2TP` or `PTPP`. Not available in watchOS.
+
+Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | visionOS 1+
 
 ### Proxies
 
@@ -55,12 +67,16 @@ The dictionary to use when `VPNType` is `L2TP` or `PTPP`. Not available in watch
 
 The dictionary to use to configure `Proxies` for use with `VPN`.
 
+Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | tvOS 17+ | visionOS 1+ | watchOS 10+
+
 ### TransparentProxy
 
 - **Type:** `VPN.TransparentProxy`
 - **Required:** No
 
-The dictionary to use when `VPNType` is `TransparentProxy`. Available in macOS 14 and later.
+The dictionary to use when `VPNType` is `TransparentProxy`.
+
+Available: macOS 14+
 
 ### UserDefinedName
 

@@ -2,7 +2,7 @@
 
 The declaration to configure a group of screen-sharing connections.
 
-**Platforms:** macOS 14.0, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 14.0
 
 ## Properties
 
@@ -34,6 +34,8 @@ Specify `com.apple.configuration.screensharing.connection.group` as the declarat
 ### Configuration availability
 
 ### Configuration example
+
+This configuration defines a group of screen-sharing connections.
 
 ```json
 {

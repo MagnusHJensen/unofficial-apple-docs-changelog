@@ -1,8 +1,8 @@
 # StatusServicesBackgroundTask
 
-A status report of the device’s background task details.
+The status item that reports the device’s background task details.
 
-**Platforms:** macOS 14.0, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 14.0
 
 ## Properties
 
@@ -17,9 +17,11 @@ The background task.
 
 ### Status item availability
 
+### Status item example
+
 ## Topics
 
 ### Objects
 
-- [StatusServicesBackgroundTaskBackgroundTaskObject](/documentation/devicemanagement/statusservicesbackgroundtaskbackgroundtaskobject) - A status report of a background task.
+- [StatusServicesBackgroundTaskBackgroundTaskObject](/documentation/devicemanagement/statusservicesbackgroundtaskbackgroundtaskobject) - The status item that reports a background task.
 

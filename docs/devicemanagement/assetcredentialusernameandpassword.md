@@ -2,7 +2,7 @@
 
 A reference to data that describes a credential that represents a user name and password.
 
-**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, tvOS 16.0, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, tvOS 16.0, visionOS 1.1, watchOS 10.0
 
 ## Properties
 
@@ -11,7 +11,9 @@ A reference to data that describes a credential that represents a user name and 
 - **Type:** `AssetCredentialUserNameAndPasswordAuthenticationObject`
 - **Required:** No
 
-The server authentication details.
+The server authentication details. If this key is absent, the default authentication type is MDM.
+
+Available: iOS 17+ | iPadOS 17+ | macOS 14+ | tvOS 17+ | visionOS 1.1+ | watchOS 10+
 
 ### Reference
 
@@ -47,6 +49,6 @@ Specify `com.apple.asset.credential.userpassword` as the declaration type.
 
 ### Objects
 
-- [AssetCredentialUserNameAndPasswordAuthenticationObject](/documentation/devicemanagement/assetcredentialusernameandpasswordauthenticationobject) - The server authentication details for an asset-credential user name and password.
-- [AssetCredentialUserNameAndPasswordReferenceObject](/documentation/devicemanagement/assetcredentialusernameandpasswordreferenceobject) - The external reference for an asset-credential user name and password.
+- [AssetCredentialUserNameAndPasswordAuthenticationObject](/documentation/devicemanagement/assetcredentialusernameandpasswordauthenticationobject) - The server authentication details. If this key is absent, the default authentication type is MDM.
+- [AssetCredentialUserNameAndPasswordReferenceObject](/documentation/devicemanagement/assetcredentialusernameandpasswordreferenceobject) - The external reference. Ensure that the asset data:
 

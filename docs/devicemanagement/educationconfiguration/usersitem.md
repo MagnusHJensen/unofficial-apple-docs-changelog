@@ -2,7 +2,7 @@
 
 A user in the organization.
 
-**Platforms:** iOS 9.3, iPadOS 9.3, Mac Catalyst 9.3, macOS 10.14, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 9.3, iPadOS 9.3, Mac Catalyst 9.3, macOS 10.14
 
 ## Properties
 
@@ -30,6 +30,9 @@ The family name of the user.
 - **Required:** No
 
 Deprecated in iOS 9.3.1 and later. The URL pointing to an image of the user. The system uses the  `ResourcePayloadCertificateUUID` identity certificate or the MDM client identity to perform authentication when fetching the specified resource.
+
+Available: iOS 9.3+ | iPadOS 9.3+
+Deprecated: iOS 9.3.1+ | iPadOS 9.3.1+
 
 ### GivenName
 

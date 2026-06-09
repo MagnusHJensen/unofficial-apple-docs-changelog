@@ -2,7 +2,7 @@
 
 The payload that configures a Contacts account.
 
-**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, visionOS 1.1, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, visionOS 1.1
 
 ## Properties
 
@@ -41,6 +41,8 @@ The server’s port.
 
 The base URL to the user’s address book.
 
+Available: iOS 4+ | iPadOS 4+ | visionOS 1.1+
+
 ### CardDAVUsername
 
 - **Type:** `string`
@@ -63,12 +65,16 @@ If `true`, the system enables SSL.
 
 An array of communication service rules for this account.
 
+Available: iOS 10+ | iPadOS 10+ | visionOS 1.1+
+
 ### VPNUUID
 
 - **Type:** `string`
 - **Required:** No
 
-The VPNUUID of the per-app VPN the account uses for network communication. Available in iOS 14 and later.
+The VPNUUID of the per-app VPN the account uses for network communication.
+
+Available: iOS 14+ | iPadOS 14+ | visionOS 1.1+
 
 ## Discussion
 

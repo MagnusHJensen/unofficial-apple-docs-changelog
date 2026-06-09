@@ -2,7 +2,7 @@
 
 A response from the device after it processes the command to enable Remote Desktop on a device.
 
-**Platforms:** macOS 10.14.4, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.14.4
 
 ## Properties
 
@@ -20,7 +20,7 @@ The unique identifier of the command for this response.
 
 The per-enrollment identifier for the device. The system requires this value if the enrollment type is a user enrollment.
 
-Available in iOS 13 and later, macOS 10.15 and later, and visionOS 2 and later.
+Available: iOS 13+ | iPadOS 13+ | macOS 10.15+
 
 ### EnrollmentUserID
 
@@ -29,7 +29,7 @@ Available in iOS 13 and later, macOS 10.15 and later, and visionOS 2 and later.
 
 The per-enrollment identifier for the user. The system requires this value if the enrollment type is a user enrollment on the user channel.
 
-Available in macOS 10.15 and later.
+Available: macOS 10.15+
 
 ### ErrorChain
 
@@ -75,6 +75,8 @@ For macOS, this value is the ID of the user.
 
 For Shared iPad, this value is `FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF` to indicate that authentication doesn’t occur.
 
+Available: iOS 9.3+ | iPadOS 9.3+ | macOS 10.14.4+
+
 ### UserLongName
 
 - **Type:** `string`
@@ -90,6 +92,8 @@ The full name of the user.
 For macOS, this value is the short name of the user.
 
 For Shared iPad, this value is the Managed Apple Account identifier of the user on Shared iPad. It indicates that the token is for the user channel.
+
+Available: iOS 9.3+ | iPadOS 9.3+ | macOS 10.14.4+
 
 ## Topics
 

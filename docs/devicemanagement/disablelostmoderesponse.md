@@ -2,7 +2,7 @@
 
 A response from the device after it processes the command to take the device out of Lost Mode.
 
-**Platforms:** iOS 9.3, iPadOS 9.3, Mac Catalyst 9.3, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 9.3, iPadOS 9.3, Mac Catalyst 9.3
 
 ## Properties
 
@@ -20,7 +20,7 @@ The unique identifier of the command for this response.
 
 The per-enrollment identifier for the device. The system requires this value if the enrollment type is a user enrollment.
 
-Available in iOS 13 and later, macOS 10.15 and later, and visionOS 2 and later.
+Available: iOS 13+ | iPadOS 13+ | macOS 10.15+
 
 ### EnrollmentUserID
 
@@ -29,7 +29,7 @@ Available in iOS 13 and later, macOS 10.15 and later, and visionOS 2 and later.
 
 The per-enrollment identifier for the user. The system requires this value if the enrollment type is a user enrollment on the user channel.
 
-Available in macOS 10.15 and later.
+Available: macOS 10.15+
 
 ### ErrorChain
 

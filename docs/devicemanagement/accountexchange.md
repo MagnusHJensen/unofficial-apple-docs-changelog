@@ -2,7 +2,7 @@
 
 The declaration to configure an Exchange account.
 
-**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, visionOS 1.1, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, visionOS 1.1
 
 ## Properties
 
@@ -58,6 +58,8 @@ If the device doesn’t support any of the listed protocol types, it doesn’t s
 
 The external path of the EWS server. The system uses this only when this declaration has a `ExternalHostName` value.
 
+Available: macOS 13+
+
 ### ExternalHostName
 
 - **Type:** `string`
@@ -65,12 +67,16 @@ The external path of the EWS server. The system uses this only when this declara
 
 The external hostname of the EWS server (or IP address).
 
+Available: macOS 13+
+
 ### ExternalPort
 
 - **Type:** `integer`
 - **Required:** No
 
 The external port number of the EWS server. The system uses this only when this declaration has a `ExternalHostName` value.
+
+Available: macOS 13+
 
 ### HostName
 
@@ -87,6 +93,8 @@ The IP address or fully qualified domain name (FQDN) of the Exchange host.
 
 If `true`, the system prevents the user from changing the status of the calendar service for this account.
 
+Available: iOS 15+ | iPadOS 15+ | visionOS 1.1+
+
 ### LockContactsService
 
 - **Type:** `boolean`
@@ -94,6 +102,8 @@ If `true`, the system prevents the user from changing the status of the calendar
 - **Default:** `false`
 
 If `true`, the system prevents the user from changing the status of the address book service for this account.
+
+Available: iOS 15+ | iPadOS 15+ | visionOS 1.1+
 
 ### LockMailService
 
@@ -103,6 +113,8 @@ If `true`, the system prevents the user from changing the status of the address 
 
 If `true`, the system prevents the user from changing the status of the mail service for this account.
 
+Available: iOS 15+ | iPadOS 15+ | visionOS 1.1+
+
 ### LockNotesService
 
 - **Type:** `boolean`
@@ -111,6 +123,8 @@ If `true`, the system prevents the user from changing the status of the mail ser
 
 If `true`, the system prevents the user from changing the status of the notes service for this account.
 
+Available: iOS 15+ | iPadOS 15+ | visionOS 1.1+
+
 ### LockRemindersService
 
 - **Type:** `boolean`
@@ -118,6 +132,8 @@ If `true`, the system prevents the user from changing the status of the notes se
 - **Default:** `false`
 
 If `true`, the system prevents the user from changing the status of the reminders service for this account.
+
+Available: iOS 15+ | iPadOS 15+ | visionOS 1.1+
 
 ### MailServiceActive
 
@@ -149,12 +165,16 @@ The configuration settings for OAuth for this account.
 
 The path of the EWS server. The system uses this only when this declaration has a `HostName` value.
 
+Available: macOS 13+
+
 ### Port
 
 - **Type:** `integer`
 - **Required:** No
 
 The port number of the EWS server. The system uses this only when this declaration has a `HostName` value.
+
+Available: macOS 13+
 
 ### RemindersServiceActive
 
@@ -170,6 +190,8 @@ If `true`, the system activates the reminders service for this account.
 - **Required:** No
 
 Settings for S/MIME.
+
+Available: iOS 17+ | iPadOS 17+ | visionOS 1.1+
 
 ### UserIdentityAssetReference
 
@@ -192,6 +214,8 @@ Specify `com.apple.configuration.account.exchange` as the declaration type.
 ### Configuration availability
 
 ### Configuration example
+
+This configuration sets up a Microsoft Exchange account.
 
 ```json
 {
@@ -218,6 +242,6 @@ Specify `com.apple.configuration.account.exchange` as the declaration type.
 
 ### Objects
 
-- [AccountExchangeOAuthObject](/documentation/devicemanagement/accountexchangeoauthobject) - The declaration for configuring OAuth authentication of an Exchange account.
+- [AccountExchangeOAuthObject](/documentation/devicemanagement/accountexchangeoauthobject) - The configuration settings for OAuth for this account.
 - [AccountExchangeSMIMEObject](/documentation/devicemanagement/accountexchangesmimeobject) - Settings for S/MIME.
 

@@ -1,8 +1,8 @@
 # StatusServicesBackgroundTaskBackgroundTaskObject
 
-A status report of a background task.
+The status item that reports a background task.
 
-**Platforms:** macOS 14.0, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 14.0
 
 ## Properties
 
@@ -12,7 +12,7 @@ A status report of a background task.
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the background task is removed and the status item object only contains this key and the `identifier` key.
+If `true`, the system removed the background task and the status item object only contains this key and the `identifier` key.
 
 ### code-signature
 
@@ -69,5 +69,5 @@ The numeric user identifier of the owner of the background task.
 
 ### Objects
 
-- [StatusServicesBackgroundTaskBackgroundTask_LaunchdObject](/documentation/devicemanagement/statusservicesbackgroundtaskbackgroundtask_launchdobject) - A status report of a background task that’s based on a launch daemon.
+- [StatusServicesBackgroundTaskBackgroundTask_LaunchdObject](/documentation/devicemanagement/statusservicesbackgroundtaskbackgroundtask_launchdobject) - Details about a `launchd`-based background task, which is only present when the type is `daemon` or `agent`.
 

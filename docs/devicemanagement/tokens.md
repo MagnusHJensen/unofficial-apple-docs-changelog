@@ -2,8 +2,6 @@
 
 The request for sending the device token details.
 
-**Platforms:** Device Assignment Services , VPP License Management 
-
 ## Topics
 
 ### Supporting Object

@@ -2,7 +2,7 @@
 
 The display configuration for this connection.
 
-**Platforms:** macOS 14.0, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 14.0
 
 ## Properties
 

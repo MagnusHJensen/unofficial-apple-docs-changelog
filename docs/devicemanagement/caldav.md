@@ -2,7 +2,7 @@
 
 The payload that configures a Calendar account.
 
-**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, visionOS 1.1, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, visionOS 1.1
 
 ## Properties
 
@@ -61,7 +61,9 @@ If `true`, the system enables SSL.
 - **Type:** `string`
 - **Required:** No
 
-The VPNUUID of the per-app VPN the account uses for network communication. Available in iOS 14 and later.
+The VPNUUID of the per-app VPN the account uses for network communication.
+
+Available: iOS 14+ | iPadOS 14+ | visionOS 1.1+
 
 ## Discussion
 

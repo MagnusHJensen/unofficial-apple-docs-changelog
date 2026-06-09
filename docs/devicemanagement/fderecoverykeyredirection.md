@@ -2,7 +2,7 @@
 
 The payload that configures FileVault recovery key redirection.
 
-**Platforms:** macOS 10.9, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.9
 
 ## Properties
 
@@ -13,12 +13,16 @@ The payload that configures FileVault recovery key redirection.
 
 The UUID of a payload within the same profile that contains a certificate used to encrypt the recovery key when it’s sent to the redirected URL. The referenced payload must be of type `com.apple.security.pkcs1`.
 
+Deprecated: macOS 10.13+
+
 ### RedirectURL
 
 - **Type:** `string`
 - **Required:** Yes
 
 The URL to which FDE recovery keys should be sent instead of to Apple. The URL must begin with https://.
+
+Deprecated: macOS 10.13+
 
 ## Discussion
 

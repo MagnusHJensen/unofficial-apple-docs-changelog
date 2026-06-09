@@ -2,7 +2,7 @@
 
 A dictionary that describes the administrator account to create with Setup Assistant, which uses the first element and ignores additional elements.
 
-**Platforms:** macOS 10.11, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.11
 
 ## Properties
 
@@ -26,7 +26,7 @@ If `true`, this sets the account attribute to make the account hidden in the Log
 - **Type:** `data`
 - **Required:** No
 
-Data that contains the pre-created salted PBKDF2 SHA512 password hash for the account.
+Data that contains the pre-created salted PBKDF2 SHA512 [PasswordHash](/documentation/devicemanagement/passwordhash) for the account.
 
 ### shortName
 

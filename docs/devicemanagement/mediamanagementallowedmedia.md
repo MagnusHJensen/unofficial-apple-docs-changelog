@@ -2,7 +2,7 @@
 
 The payload that configures media management.
 
-**Platforms:** macOS 10.7, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.7
 
 ## Properties
 
@@ -13,6 +13,8 @@ The payload that configures media management.
 
 The media type dictionary that defines volumes to eject when the user logs out.
 
+Deprecated: macOS 11+
+
 ### mount-controls
 
 - **Type:** `MediaManagementAllowedMedia.Mount-controls`
@@ -20,12 +22,16 @@ The media type dictionary that defines volumes to eject when the user logs out.
 
 The media type dictionary that controls volume mounting.
 
+Deprecated: macOS 11+
+
 ### unmount-controls
 
 - **Type:** `MediaManagementAllowedMedia.Unmount-controls`
 - **Required:** No
 
 The media type dictionary that controls volume unmounting.
+
+Deprecated: macOS 11+
 
 ## Discussion
 

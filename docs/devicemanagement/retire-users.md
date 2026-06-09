@@ -2,7 +2,7 @@
 
 Retire users by client user IDs.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 2.0
 
 ## Discussion
 

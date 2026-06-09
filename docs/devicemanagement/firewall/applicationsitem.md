@@ -2,7 +2,7 @@
 
 A dictionary of details for apps.
 
-**Platforms:** macOS 10.12, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.12
 
 ## Properties
 

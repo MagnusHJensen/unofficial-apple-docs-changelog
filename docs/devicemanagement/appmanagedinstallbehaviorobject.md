@@ -1,8 +1,8 @@
 # AppManagedInstallBehaviorObject
 
-A dictionary that describes how and when to install an app.
+A dictionary that describes how and when to install the app.
 
-**Platforms:** iOS 17.2, iPadOS 17.2, Mac Catalyst 17.2, macOS 26.0, visionOS 2.4, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 17.2, iPadOS 17.2, Mac Catalyst 17.2, macOS 26.0, visionOS 2.4
 
 ## Properties
 
@@ -21,7 +21,8 @@ Indicates how the device uses a cellular network when it downloads the app for a
 
 The device always uses the store settings to download apps when the install or update operation is user initiated.
 
-Available only in iOS.
+Available: iOS 26+ | iPadOS 26+
+Allowed enrollments: supervised
 
 ### Install
 
@@ -49,7 +50,7 @@ A dictionary that describes the app’s license.
 - **Type:** `integer`
 - **Required:** No
 
-The App Store external version identifier (EVID) of the version of the app the device installs. You can retrieve this value from the App Store. For more information, see [Apps and Books for Organizations](/documentation/devicemanagement/apps-and-books-for-organizations). This key is ignored if the app isn’t an App Store app.
+The App Store external version identifier (EVID) of the version of the app the device installs. You can retrieve this value from the App Store. For more information, see [Apps and books metadata for organizations](/documentation/devicemanagement/apps-and-books-metadata-for-organizations). This key is ignored if the app isn’t an App Store app.
 
 The following rules apply when the device applies or updates the configuration:
 
@@ -58,9 +59,11 @@ The following rules apply when the device applies or updates the configuration:
 
 > 
 
+Available: iOS 26+ | iPadOS 26+ | macOS 26+ | visionOS 26+
+
 ## Topics
 
 ### Objects
 
-- [AppManagedInstallBehavior_LicenseObject](/documentation/devicemanagement/appmanagedinstallbehavior_licenseobject) - A dictionary that specifies the type of license the app uses.
+- [AppManagedInstallBehavior_LicenseObject](/documentation/devicemanagement/appmanagedinstallbehavior_licenseobject) - A dictionary that describes the app’s license.
 

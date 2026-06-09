@@ -2,7 +2,7 @@
 
 A to-one or to-many relationship from one resource object to others.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 2.1
 
 ## Properties
 

@@ -2,7 +2,7 @@
 
 The command to install a book on a device.
 
-**Platforms:** iOS 8.0, iPadOS 8.0, Mac Catalyst 8.0, macOS 10.9, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 8.0, iPadOS 8.0, Mac Catalyst 8.0, macOS 10.9
 
 ## Properties
 
@@ -11,7 +11,11 @@ The command to install a book on a device.
 - **Type:** `string`
 - **Required:** No
 
-The name of the book’s author. This value is available in iOS 8 and later.
+The name of the book’s author.
+
+Available: iOS 8+ | iPadOS 8+
+Deprecated: macOS 11+
+Removed: macOS 11+
 
 ### iTunesStoreID
 
@@ -19,6 +23,9 @@ The name of the book’s author. This value is available in iOS 8 and later.
 - **Required:** No
 
 The book’s iTunes Store identifier.
+
+Deprecated: macOS 11+
+Removed: macOS 11+
 
 ### Kind
 
@@ -32,7 +39,11 @@ The kind of the media, which can be one of the following values:
 - `epub`: An EPUB file in `gzip` format.
 - `ibooks`: An iBooks Author file in `gzip` format.
 
-If you omit this value, its value is the file extension in the URL. This value is available in iOS 8 and later.
+If you omit this value, its value is the file extension in the URL.
+
+Available: iOS 8+ | iPadOS 8+
+Deprecated: macOS 11+
+Removed: macOS 11+
 
 ### MediaType
 
@@ -42,19 +53,30 @@ If you omit this value, its value is the file extension in the URL. This value i
 
 The media type, which can only be `Book`.
 
+Deprecated: macOS 11+
+Removed: macOS 11+
+
 ### MediaURL
 
 - **Type:** `string`
 - **Required:** No
 
-The URL to retrieve the book. This value is available in iOS 8 and later.
+The URL to retrieve the book.
+
+Available: iOS 8+ | iPadOS 8+
+Deprecated: macOS 11+
+Removed: macOS 11+
 
 ### PersistentID
 
 - **Type:** `string`
 - **Required:** No
 
-The book’s persistent identifier in reverse-DNS form; for example, `com.acme.manuals.training`. This value is available in iOS 8 and later.
+The book’s persistent identifier in reverse-DNS form; for example, `com.acme.manuals.training`.
+
+Available: iOS 8+ | iPadOS 8+
+Deprecated: macOS 11+
+Removed: macOS 11+
 
 ### RequestRequiresNetworkTether
 
@@ -64,6 +86,9 @@ The book’s persistent identifier in reverse-DNS form; for example, `com.acme.m
 
 If `true`, the device needs to be network-tethered to run the command.
 
+Deprecated: macOS 11+
+Removed: macOS 11+
+
 ### RequestType
 
 - **Type:** `string`
@@ -72,17 +97,28 @@ If `true`, the device needs to be network-tethered to run the command.
 
 The request type for this command.
 
+Deprecated: macOS 11+
+Removed: macOS 11+
+
 ### Title
 
 - **Type:** `string`
 - **Required:** No
 
-The book’s title. This value is available in iOS 8 and later.
+The book’s title.
+
+Available: iOS 8+ | iPadOS 8+
+Deprecated: macOS 11+
+Removed: macOS 11+
 
 ### Version
 
 - **Type:** `string`
 - **Required:** No
 
-The book’s version number. This value is available in iOS 8 and later.
+The book’s version number.
+
+Available: iOS 8+ | iPadOS 8+
+Deprecated: macOS 11+
+Removed: macOS 11+
 

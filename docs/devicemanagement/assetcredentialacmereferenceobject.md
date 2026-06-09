@@ -1,8 +1,8 @@
 # AssetCredentialACMEReferenceObject
 
-The external reference for an ACME asset credential.
+The external reference. Ensure that the asset data:
 
-**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, tvOS 17.0, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, tvOS 17.0, visionOS 1.1, watchOS 10.0
 
 ## Properties
 
@@ -33,4 +33,9 @@ A SHA-256 hash of the data stored at the `DataURL`. Don’t set this value if `S
 - **Required:** No
 
 The size of the data. Set the size to `0` if there’s no expectation of a response body. If present, the system checks the actual size of the downloaded data, and an error occurs if the values don’t match.
+
+## Discussion
+
+- Is a JSON document that represents the `com.apple.credential.acme` credential type
+- Uses a media type of `application/json`, and if it includes a `ContentType` sub-key, that sub-key media type is also `application/json`
 

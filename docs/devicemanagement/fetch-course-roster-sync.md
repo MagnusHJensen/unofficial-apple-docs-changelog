@@ -2,7 +2,7 @@
 
 Get updates about the list of courses the server manages.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** Device Assignment Services 5.0
 
 ## Discussion
 

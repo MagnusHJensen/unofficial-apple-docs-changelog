@@ -2,7 +2,7 @@
 
 The command to remotely and immediately erase a device.
 
-**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, tvOS 10.2, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, tvOS 10.2, visionOS 1.1, watchOS 10.0
 
 ## Properties
 
@@ -12,7 +12,9 @@ The command to remotely and immediately erase a device.
 - **Required:** No
 - **Default:** `false`
 
-If `true`, disable Proximity Setup on the next reboot and skip the pane in Setup Assistant. This value is available in iOS 11 and later. Prior to iOS 14, don’t use this option with any other option.
+If `true`, disable Proximity Setup on the next reboot and skip the pane in Setup Assistant. Prior to iOS 14, don’t use this option with any other option.
+
+Available: iOS 11.3+ | iPadOS 11.3+
 
 ### ObliterationBehavior
 
@@ -33,12 +35,16 @@ The following values define the device’s fallback behavior:
 - `Always`: The system doesn’t attempt EACS. T2 and later devices always obliterate.
 - `Default`: If EACS preflight fails, the device responds to the server with an `Error` status and then attempts to erase itself. If EACS preflight succeeds, but EACS fails, the device attempts to erase itself.
 
+Available: macOS 12+
+
 ### PIN
 
 - **Type:** `string`
 - **Required:** No
 
-The six-character PIN for Find My. This value is available in macOS 10.8 and later.
+The six-character PIN for Find My.
+
+Available: macOS 10.8+
 
 ### PreserveDataPlan
 
@@ -46,7 +52,9 @@ The six-character PIN for Find My. This value is available in macOS 10.8 and lat
 - **Required:** No
 - **Default:** `false`
 
-If `true`, preserve the data plan on an iPhone or iPad with eSIM functionality, if one exists. This value is available in iOS 11 and later.
+If `true`, preserve the data plan on an iPhone or iPad with eSIM functionality, if one exists.
+
+Available: iOS 11+ | iPadOS 11+ | watchOS 10+
 
 ### RequestRequiresNetworkTether
 
@@ -69,7 +77,9 @@ The request type for this command.
 - **Type:** `EraseDeviceCommand.Command.ReturnToService`
 - **Required:** No
 
-The configuration settings for return to service. This value is available in iOS 17 and later, with Shared iPad, in tvOS 18 and later, and in visionOS 26 and later.
+The configuration settings for return to service.
+
+Available: iOS 17+ | iPadOS 17+ | tvOS 18+ | visionOS 26+
 
 ## Topics
 

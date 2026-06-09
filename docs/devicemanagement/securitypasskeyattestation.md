@@ -2,7 +2,7 @@
 
 The declaration to configure the device to allow WebAuthn enterprise attestation for certain passkeys.
 
-**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0
 
 ## Properties
 
@@ -21,6 +21,8 @@ The identifier of an asset declaration that contains the identity to install and
 
 If `true`, the private key for the attestation identity is extractable in the keychain.
 
+Available: macOS 14+
+
 ### RelyingParties
 
 - **Type:** `[string]`
@@ -35,6 +37,8 @@ Specify `com.apple.configuration.security.passkey.attestation` as the declaratio
 ### Configuration availability
 
 ### Configuration example
+
+This configuration enables enterprise passkey attestation for a relying party.
 
 ```json
 {

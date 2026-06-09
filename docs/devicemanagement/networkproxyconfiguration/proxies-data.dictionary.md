@@ -2,7 +2,7 @@
 
 The payload for configuring network proxies.
 
-**Platforms:** macOS 10.7, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.7
 
 ## Properties
 
@@ -133,6 +133,8 @@ The automatic proxy configuration URL.
 - **Required:** No
 
 If 1, allows client to log into captive portal network.
+
+Available: macOS 10.9+
 
 ### RTSPEnable
 

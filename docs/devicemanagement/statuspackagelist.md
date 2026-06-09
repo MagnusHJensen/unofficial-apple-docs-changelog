@@ -1,8 +1,8 @@
 # StatusPackageList
 
-The client’s declarative packages.
+The status item that lists the device’s declarative packages.
 
-**Platforms:** macOS 26.0, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 26.0
 
 ## Properties
 
@@ -21,6 +21,8 @@ An array of dictionaries that describe the device’s declarative packages.
 
 - `Error.DownloadFailed`: The package download failed.
 - `Error.InstallFailed`: The package install failed.
+
+### Status item example
 
 ## Topics
 

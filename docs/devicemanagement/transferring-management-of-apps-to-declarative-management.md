@@ -1,6 +1,6 @@
 # Transferring management of apps to declarative management
 
-Seamlessly transition apps to declarative management without needing to reinstall.
+Transition apps to declarative management.
 
 ## Overview
 

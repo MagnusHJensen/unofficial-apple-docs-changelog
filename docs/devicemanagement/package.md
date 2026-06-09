@@ -1,8 +1,8 @@
 # Package
 
-The declaration to install a package.
+The declaration to configure a package.
 
-**Platforms:** macOS 26.0, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 26.0
 
 ## Properties
 
@@ -19,6 +19,15 @@ A dictionary that describes how and when to install the package.
 - **Required:** Yes
 
 The URL of the manifest document for the package that the device downloads. The manifest is returned as a [ManifestURL](/documentation/devicemanagement/manifesturl) property list. The `url` property of the manifest must point to the package (.pkg) file to install.
+
+### UninstallBehavior
+
+- **Type:** `PackageUninstallBehaviorObject`
+- **Required:** No
+
+A dictionary that describes how to uninstall the package.
+
+Available: macOS 27+
 
 ## Discussion
 
@@ -50,5 +59,6 @@ This configuration installs a required package.
 
 ### Objects
 
-- [PackageInstallBehaviorObject](/documentation/devicemanagement/packageinstallbehaviorobject) - Specifies the install behavior of the package.
+- [PackageInstallBehaviorObject](/documentation/devicemanagement/packageinstallbehaviorobject) - A dictionary that describes how and when to install the package.
+- [PackageUninstallBehaviorObject](/documentation/devicemanagement/packageuninstallbehaviorobject) - A dictionary that describes how to uninstall the package.
 

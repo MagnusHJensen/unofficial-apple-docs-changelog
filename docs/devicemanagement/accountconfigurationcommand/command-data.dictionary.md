@@ -2,7 +2,7 @@
 
 The command to create and configure a local administrator account on a device.
 
-**Platforms:** macOS 10.11, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.11
 
 ## Properties
 
@@ -19,7 +19,9 @@ A dictionary that describes the administrator account to create with Setup Assis
 - **Required:** No
 - **Default:** `false`
 
-If `true`, Setup Assistant ignores the primary account information and requires the user to enter that information. If `false`, Setup Assistant prefills the Full Name field with `PrimaryAccountFullName` and the User Name field with `PrimaryAccountUserName`. This value is available in macOS 10.15 and later.
+If `true`, Setup Assistant ignores the primary account information and requires the user to enter that information. If `false`, Setup Assistant prefills the Full Name field with `PrimaryAccountFullName` and the User Name field with `PrimaryAccountUserName`.
+
+Available: macOS 10.15+
 
 ### LockPrimaryAccountInfo
 
@@ -31,28 +33,34 @@ If `true`, and you provide values for `PrimaryAccountFullName` or `PrimaryAccoun
 
 If the user’s password is also available from authentication through ConfigurationURL, Setup Assistant automatically creates the primary account with that information and skips showing the user interface to view or edit these fields.
 
-This value is available in macOS 10.15 and later.
+Available: macOS 10.15+
 
 ### ManagedLocalUserShortName
 
 - **Type:** `string`
 - **Required:** No
 
-If present, this is the short name of the local account to manage, which can also be the account that results from setting `AutoSetupAdminAccounts` to `true`. Otherwise, only the local account that Setup Assistant creates is a managed account. This value is available in macOS 11 and later.
+If present, this is the short name of the local account to manage, which can also be the account that results from setting `AutoSetupAdminAccounts` to `true`. Otherwise, only the local account that Setup Assistant creates is a managed account.
+
+Available: macOS 11+
 
 ### PrimaryAccountFullName
 
 - **Type:** `string`
 - **Required:** No
 
-The full name for the primary account. If present, Setup Assistant uses this value to prefill the Full Name field. However, Setup Assistant ignores this value if `DontAutoPopulatePrimaryAccountInfo` is `true`. This value is available in macOS 10.15 and later.
+The full name for the primary account. If present, Setup Assistant uses this value to prefill the Full Name field. However, Setup Assistant ignores this value if `DontAutoPopulatePrimaryAccountInfo` is `true`.
+
+Available: macOS 10.15+
 
 ### PrimaryAccountUserName
 
 - **Type:** `string`
 - **Required:** No
 
-The account name for the primary account. If present, Setup Assistant uses this value to prefill the User Name field. However, Setup Assistant ignores this value if `DontAutoPopulatePrimaryAccountInfo` is `true`. This value is available in macOS 10.15 and later.
+The account name for the primary account. If present, Setup Assistant uses this value to prefill the User Name field. However, Setup Assistant ignores this value if `DontAutoPopulatePrimaryAccountInfo` is `true`.
+
+Available: macOS 10.15+
 
 ### RequestRequiresNetworkTether
 

@@ -2,7 +2,7 @@
 
 Get the set of assets managed by your organization.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 1.0
 
 ## Discussion
 

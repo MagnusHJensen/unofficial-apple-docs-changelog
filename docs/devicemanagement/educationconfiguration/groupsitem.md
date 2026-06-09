@@ -2,7 +2,7 @@
 
 An array of dictionaries defining groups.
 
-**Platforms:** iOS 9.3, iPadOS 9.3, Mac Catalyst 9.3, macOS 10.14, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 9.3, iPadOS 9.3, Mac Catalyst 9.3, macOS 10.14
 
 ## Properties
 
@@ -42,6 +42,9 @@ Has no effect on the configuration of the Shared iPad login screen.
 - **Required:** No
 
 Deprecated in iOS 9.3.1 and later. The URL of an image for the group.
+
+Available: iOS 9.3+ | iPadOS 9.3+
+Deprecated: iOS 9.3.1+ | iPadOS 9.3.1+
 
 ### LeaderIdentifiers
 

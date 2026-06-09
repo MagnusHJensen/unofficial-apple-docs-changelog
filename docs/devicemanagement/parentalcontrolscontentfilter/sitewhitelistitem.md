@@ -2,7 +2,7 @@
 
 A dictionary defining a site for the allow list.
 
-**Platforms:** macOS 10.7, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.7
 
 ## Properties
 
@@ -13,10 +13,14 @@ A dictionary defining a site for the allow list.
 
 The site prefix, including http(s) scheme.
 
+Deprecated: macOS 15.2+
+
 ### pageTitle
 
 - **Type:** `string`
 - **Required:** No
 
 The site page title.
+
+Deprecated: macOS 15.2+
 

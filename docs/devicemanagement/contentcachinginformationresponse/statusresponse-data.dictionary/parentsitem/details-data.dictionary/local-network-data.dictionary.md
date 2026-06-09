@@ -2,7 +2,7 @@
 
 A dictionary that describes the parent content cache’s connection to its local network.
 
-**Platforms:** macOS 10.15.4, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.15.4
 
 ## Properties
 

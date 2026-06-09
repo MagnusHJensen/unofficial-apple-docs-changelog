@@ -1,8 +1,8 @@
 # AccountMailIncomingServerObject
 
-The settings for configuring an incoming mail server.
+The settings for the incoming mail server for this account.
 
-**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, visionOS 1.1, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, visionOS 1.1
 
 ## Properties
 

@@ -1,8 +1,8 @@
 # StatusScreenSharingConnectionGroupUnresolvedConnections
 
-Information about connection groups with member connection references that the system couldn’t resolve.
+The status item that lists connection groups with member connection references that the device couldn’t resolve.
 
-**Platforms:** macOS 14.1, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 14.1
 
 ## Properties
 
@@ -11,15 +11,17 @@ Information about connection groups with member connection references that the s
 - **Type:** `[StatusScreenSharingConnectionGroupUnresolvedConnectionsUnresolvedGroupObject]`
 - **Required:** Yes
 
-A status item that contains an array of unresolved connection groups.
+The status item that contains an array of unresolved connection groups.
 
 ## Discussion
 
 ### Status item availability
 
+### Status item example
+
 ## Topics
 
 ### Objects
 
-- [StatusScreenSharingConnectionGroupUnresolvedConnectionsUnresolvedGroupObject](/documentation/devicemanagement/statusscreensharingconnectiongroupunresolvedconnectionsunresolvedgroupobject) - A status item that contains an unresolved connection group.
+- [StatusScreenSharingConnectionGroupUnresolvedConnectionsUnresolvedGroupObject](/documentation/devicemanagement/statusscreensharingconnectiongroupunresolvedconnectionsunresolvedgroupobject) - The status item that contains an unresolved connection group.
 

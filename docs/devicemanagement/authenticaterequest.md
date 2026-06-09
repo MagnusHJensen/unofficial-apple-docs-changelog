@@ -2,7 +2,7 @@
 
 The authenticate request details.
 
-**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, tvOS 10.2, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, tvOS 10.2, visionOS 1.1, watchOS 10.0
 
 ## Properties
 
@@ -13,12 +13,16 @@ The authenticate request details.
 
 The device’s build version.
 
+Available: iOS 9+ | iPadOS 9+ | macOS 10.7+ | tvOS 10.2+ | visionOS 1.1+ | watchOS 10+
+
 ### DeviceName
 
 - **Type:** `string`
 - **Required:** Yes
 
 The device’s name.
+
+Available: macOS 10.7+
 
 ### EnrollmentID
 
@@ -27,7 +31,7 @@ The device’s name.
 
 The per-enrollment identifier for the device. The system requires this value if the enrollment type is a user enrollment.
 
-Available in iOS 13 and later, macOS 10.15 and later, and visionOS 2 and later.
+Available: iOS 13+ | iPadOS 13+ | macOS 10.15+ | visionOS 1.1+
 
 ### IMEI
 
@@ -36,12 +40,16 @@ Available in iOS 13 and later, macOS 10.15 and later, and visionOS 2 and later.
 
 The device’s IMEI (International Mobile Equipment Identity).
 
+Available: iOS 9+ | iPadOS 9+ | visionOS 1.1+ | watchOS 10+
+
 ### MEID
 
 - **Type:** `string`
 - **Required:** No
 
 The device’s MEID (Mobile Equipment Identifier).
+
+Available: iOS 9+ | iPadOS 9+ | visionOS 1.1+ | watchOS 10+
 
 ### MessageType
 
@@ -58,12 +66,16 @@ The message type, which requires a value of `Authenticate`.
 
 The device’s model.
 
+Available: macOS 10.7+
+
 ### ModelName
 
 - **Type:** `string`
 - **Required:** Yes
 
 The device’s model name.
+
+Available: macOS 10.7+
 
 ### OSVersion
 
@@ -72,6 +84,8 @@ The device’s model name.
 
 The device’s OS version.
 
+Available: iOS 9+ | iPadOS 9+ | macOS 10.7+ | tvOS 10.2+ | visionOS 1.1+ | watchOS 10+
+
 ### ProductName
 
 - **Type:** `string`
@@ -79,12 +93,16 @@ The device’s OS version.
 
 The device’s product name (such as `iPhone17,2`).
 
+Available: iOS 9+ | iPadOS 9+ | macOS 10.7+ | tvOS 10.2+ | visionOS 1.1+ | watchOS 10+
+
 ### SerialNumber
 
 - **Type:** `string`
 - **Required:** No
 
 The device’s serial number.
+
+Available: iOS 9+ | iPadOS 9+ | macOS 10.7+ | tvOS 10.2+ | visionOS 1.1+ | watchOS 10+
 
 ### Topic
 

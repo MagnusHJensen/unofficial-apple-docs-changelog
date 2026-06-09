@@ -2,7 +2,7 @@
 
 The declaration to configure background tasks.
 
-**Platforms:** macOS 15.0, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 15.0
 
 ## Properties
 
@@ -55,6 +55,8 @@ If both `ExecutableAssetReference` and `LaunchdConfigurations` are present, and 
 ### Configuration availability
 
 ### Configuration example
+
+This configuration sets up a background task using a launchd daemon.
 
 ```json
 {

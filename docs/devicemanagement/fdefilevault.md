@@ -2,7 +2,7 @@
 
 The payload that configures FileVault.
 
-**Platforms:** macOS 10.9, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.9
 
 ## Properties
 
@@ -29,6 +29,8 @@ If `true`, the system defers enabling FileVault until the designated user logs o
 
 If `true`, the system prevents requests to enable FileVault at user logout time.
 
+Available: macOS 10.10+
+
 ### DeferForceAtUserLoginMaxBypassAttempts
 
 - **Type:** `integer`
@@ -52,9 +54,11 @@ Set to `On` to enable FileVault and set to `Off` to disable FileVault. Payloads 
 
 If `true`, and installation of this payload occurs after enrolling with MDM in Setup Assistant, the system requests Setup Assistant to enable FileVault at setup time.
 
-To use this, enable the Await Device Configured DEP configuration option and send this profile with this key set, before sending the [DeviceConfiguredCommand](/documentation/devicemanagement/deviceconfiguredcommand).
+To use this, enable the Await Device Configured ADE configuration option and send this profile with this key set, before sending the [DeviceConfiguredCommand](/documentation/devicemanagement/deviceconfiguredcommand).
 
 An admin SecureToken user is required, otherwise the FileVault pane does not appear.
+
+Available: macOS 14+
 
 ### OutputPath
 

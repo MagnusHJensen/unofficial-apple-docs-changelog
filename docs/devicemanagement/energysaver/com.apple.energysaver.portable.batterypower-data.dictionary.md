@@ -2,7 +2,7 @@
 
 The laptop battery power Energy Saver settings.
 
-**Platforms:** macOS 10.7, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.7
 
 ## Properties
 

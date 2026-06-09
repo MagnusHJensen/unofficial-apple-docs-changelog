@@ -2,7 +2,7 @@
 
 The payload that configures an Exchange Web Services accounts.
 
-**Platforms:** macOS 10.7, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.7
 
 ## Properties
 
@@ -14,12 +14,16 @@ The payload that configures an Exchange Web Services accounts.
 
 If `true`, the system enables Mail Drop.
 
+Available: macOS 10.12+
+
 ### AuthenticationCertificateUUID
 
 - **Type:** `string`
 - **Required:** No
 
 The UUID of the certificate payload within the same profile to use for the identity credential. Supported on macOS 10.11 or later. On macOS 10.12 or later use the PayloadCertificateUUID.
+
+Available: macOS 10.11+
 
 ### EmailAddress
 
@@ -70,7 +74,9 @@ The Exchange server host name or IP address. Ignored if using OAuth.
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the system enables OAuth for authentication. Don’t specify a password if `OAuth` is `true`. Available in macOS 10.14 and later
+If `true`, the system enables OAuth for authentication. Don’t specify a password if `OAuth` is `true`.
+
+Available: macOS 10.14+
 
 ### OAuthSignInURL
 
@@ -78,6 +84,8 @@ If `true`, the system enables OAuth for authentication. Don’t specify a passwo
 - **Required:** No
 
 The URL to load into a web view for authentication through OAuth when autodiscovery isn’t used. This setting requires a `Host` value.
+
+Available: macOS 10.14+
 
 ### Password
 
@@ -99,6 +107,8 @@ The server path.
 - **Required:** No
 
 The UUID of the certificate payload within the same profile to use for the identity credential. Supported on macOS 10.12 or later.
+
+Available: macOS 10.12+
 
 ### Port
 
@@ -134,51 +144,51 @@ Specify `com.apple.ews.account` as the payload type.
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-    <key>PayloadContent</key>
-    <array>
-        <dict>
-            <key>EmailAddress</key>
-            <string>juanchavez4@companyemail.com</string>
-            <key>ExternalHost</key>
-            <string>host.example.com</string>
-            <key>ExternalPath</key>
-            <string></string>
-            <key>ExternalSSL</key>
-            <true/>
-            <key>Host</key>
-            <string>host.example.com</string>
-            <key>MailNumberOfPastDaysToSync</key>
-            <integer>0</integer>
-            <key>Password</key>
-            <string>Password123</string>
-            <key>PayloadDisplayName</key>
-            <string>Exchange Web Service</string>
-            <key>PayloadIdentifier</key>
-            <string>com.example.myewspayload</string>
-            <key>PayloadType</key>
-            <string>com.apple.ews.account</string>
-            <key>PayloadUUID</key>
-            <string>bb4adbbc-5516-45bb-bdee-cc7e47a5c5b5</string>
-            <key>PayloadVersion</key>
-            <integer>1</integer>
-            <key>SSL</key>
-            <true/>
-            <key>UserName</key>
-            <string>juanchavez4@companyemail.com</string>
-        </dict>
-    </array>
-    <key>PayloadDisplayName</key>
-    <string>Exchange Web Service</string>
-    <key>PayloadIdentifier</key>
-    <string>com.example.myprofile</string>
-    <key>PayloadType</key>
-    <string>Configuration</string>
-    <key>PayloadUUID</key>
-    <string>ccb3eded-4486-4af8-81a3-add2d39cdfe7</string>
-    <key>PayloadVersion</key>
-    <integer>1</integer>
-</dict>
+    <dict>
+        <key>PayloadContent</key>
+        <array>
+            <dict>
+                <key>EmailAddress</key>
+                <string>juanchavez4@example.com</string>
+                <key>ExternalHost</key>
+                <string>host.example.com</string>
+                <key>ExternalPath</key>
+                <string></string>
+                <key>ExternalSSL</key>
+                <true/>
+                <key>Host</key>
+                <string>host.example.com</string>
+                <key>MailNumberOfPastDaysToSync</key>
+                <integer>0</integer>
+                <key>Password</key>
+                <string>Password123</string>
+                <key>PayloadDisplayName</key>
+                <string>Exchange Web Service</string>
+                <key>PayloadIdentifier</key>
+                <string>com.example.myewspayload</string>
+                <key>PayloadType</key>
+                <string>com.apple.ews.account</string>
+                <key>PayloadUUID</key>
+                <string>bb4adbbc-5516-45bb-bdee-cc7e47a5c5b5</string>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+                <key>SSL</key>
+                <true/>
+                <key>UserName</key>
+                <string>juanchavez4@example.com</string>
+            </dict>
+        </array>
+        <key>PayloadDisplayName</key>
+        <string>Exchange Web Service</string>
+        <key>PayloadIdentifier</key>
+        <string>com.example.myprofile</string>
+        <key>PayloadType</key>
+        <string>Configuration</string>
+        <key>PayloadUUID</key>
+        <string>ccb3eded-4486-4af8-81a3-add2d39cdfe7</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+    </dict>
 </plist>
 ```
 

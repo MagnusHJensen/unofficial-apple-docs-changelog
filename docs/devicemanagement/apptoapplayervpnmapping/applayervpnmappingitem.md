@@ -2,7 +2,7 @@
 
 A dictionary defining a per-app VPN relationship.
 
-**Platforms:** macOS 10.9, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.9
 
 ## Properties
 
@@ -12,6 +12,8 @@ A dictionary defining a per-app VPN relationship.
 - **Required:** Yes
 
 The code signature designated requirement of the app using the per-app VPN.
+
+Available: macOS 10.10+
 
 ### Identifier
 
@@ -31,6 +33,8 @@ For example, to match network traffic that the `curl` command generates when run
 
 If you don’t specify the `MatchTools` key, this per-app VPN rule matches all network traffic that the matching app and its spawned helper tools generate.
 
+Available: macOS 10.15.4+
+
 ### Path
 
 - **Type:** `string`
@@ -38,12 +42,16 @@ If you don’t specify the `MatchTools` key, this per-app VPN rule matches all n
 
 The file-system path of the executable using the per-app VPN.
 
+Available: macOS 10.15+
+
 ### SigningIdentifier
 
 - **Type:** `string`
 - **Required:** Yes
 
 The code signature signing identifier of the app using the per-app VPN.
+
+Available: macOS 10.10+
 
 ### VPNUUID
 

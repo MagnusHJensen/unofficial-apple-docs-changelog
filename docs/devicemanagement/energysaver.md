@@ -2,7 +2,7 @@
 
 The payload that configures Energy Saver settings.
 
-**Platforms:** macOS 10.7, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.7
 
 ## Properties
 
@@ -58,7 +58,7 @@ Specify `com.apple.MCX` as the payload type.
     <key>PayloadContent</key>
     <array>
         <dict>
-            <key>com.example.EnergySaver.desktop.ACPower</key>
+            <key>com.apple.EnergySaver.desktop.ACPower</key>
             <dict>
                 <key>Automatic Restart On Power Loss</key>
                 <integer>1</integer>

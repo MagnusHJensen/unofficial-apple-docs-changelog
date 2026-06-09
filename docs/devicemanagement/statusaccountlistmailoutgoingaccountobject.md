@@ -1,8 +1,8 @@
 # StatusAccountListMailOutgoingAccountObject
 
-A status report of the client’s outgoing Mail account details.
+An outgoing Mail account.
 
-**Platforms:** iOS 16.0, iPadOS 16.0, Mac Catalyst 16.0, macOS 13.0, visionOS 1.1, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 16.0, iPadOS 16.0, Mac Catalyst 16.0, macOS 13.0, visionOS 1.1
 
 ## Properties
 

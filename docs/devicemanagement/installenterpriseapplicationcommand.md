@@ -2,7 +2,7 @@
 
 The command to install an enterprise app on a device.
 
-**Platforms:** macOS 10.13.6, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.13.6
 
 ## Properties
 

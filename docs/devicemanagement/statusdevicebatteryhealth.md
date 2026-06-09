@@ -1,8 +1,8 @@
 # StatusDeviceBatteryHealth
 
-The device’s battery health.
+The status item that reports the device’s battery health.
 
-**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.4, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.4
 
 ## Properties
 
@@ -20,7 +20,7 @@ The battery health status, which has the following values:
 - `unknown`: The system couldn’t determine battery health information.
 - `unsupported`: The device doesn’t support battery health reporting.
 
-Available in iOS 17 and later on iPhone, iPadOS 18.4 and later on supported iPad models, and macOS 14.4 and later on a Mac with Apple silicon.
+Supported on iPhones, specific iPad models, and Mac computers with Apple silicon.
 
 ## Discussion
 
@@ -31,4 +31,16 @@ For more information about battery health, see the following support articles:
 - [macOS devices](https://support.apple.com/108376)
 
 ### Status item availability
+
+### Status item example
+
+```json
+{
+    "device": {
+        "power": {
+            "battery-health": "normal"
+        }
+    }
+}
+```
 

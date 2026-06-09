@@ -2,7 +2,7 @@
 
 A response from the device after it processes the command to request the location of a device when in Lost Mode.
 
-**Platforms:** iOS 9.3, iPadOS 9.3, Mac Catalyst 9.3, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 9.3, iPadOS 9.3, Mac Catalyst 9.3
 
 ## Properties
 
@@ -12,6 +12,8 @@ A response from the device after it processes the command to request the locatio
 - **Required:** Yes
 
 The altitude of the device’s location, which is a negative value if the altitude is unknown.
+
+Available: iOS 10.3+ | iPadOS 10.3+
 
 ### CommandUUID
 
@@ -27,6 +29,8 @@ The unique identifier of the command for this response.
 
 The direction the device is traveling, which is a negative value if the course is unknown.
 
+Available: iOS 10.3+ | iPadOS 10.3+
+
 ### EnrollmentID
 
 - **Type:** `string`
@@ -34,7 +38,7 @@ The direction the device is traveling, which is a negative value if the course i
 
 The per-enrollment identifier for the device. The system requires this value if the enrollment type is a user enrollment.
 
-Available in iOS 13 and later, macOS 10.15 and later, and visionOS 2 and later.
+Available: iOS 13+ | iPadOS 13+ | macOS 10.15+
 
 ### EnrollmentUserID
 
@@ -43,7 +47,7 @@ Available in iOS 13 and later, macOS 10.15 and later, and visionOS 2 and later.
 
 The per-enrollment identifier for the user. The system requires this value if the enrollment type is a user enrollment on the user channel.
 
-Available in macOS 10.15 and later.
+Available: macOS 10.15+
 
 ### ErrorChain
 
@@ -58,6 +62,8 @@ An array of dictionaries that describes any errors that occur.
 - **Required:** Yes
 
 The radius of uncertainty for the location in meters, which is a negative value if the horizontal accuracy is unknown.
+
+Available: iOS 10.3+ | iPadOS 10.3+
 
 ### Latitude
 
@@ -87,6 +93,8 @@ If `true`, the device isn’t on-console.
 
 The speed of the device in meters per second, which is a negative value if the speed is unknown.
 
+Available: iOS 10.3+ | iPadOS 10.3+
+
 ### Status
 
 - **Type:** `string`
@@ -107,6 +115,8 @@ The status of the response, which is one of the following values:
 - **Required:** Yes
 
 The RFC 3339 timestamp of when the server determines the location of the device.
+
+Available: iOS 10.3+ | iPadOS 10.3+
 
 ### UDID
 
@@ -146,6 +156,8 @@ For Shared iPad, this value is the Managed Apple Account identifier of the user 
 - **Required:** Yes
 
 The accuracy of the altitude value in meters, which is a negative value if the vertical accuracy is unknown.
+
+Available: iOS 10.3+ | iPadOS 10.3+
 
 ## Topics
 

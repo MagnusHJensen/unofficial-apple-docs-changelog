@@ -1,6 +1,6 @@
 # ServiceConfigResponse.Limits
 
-**Platforms:** Device Assignment Services , VPP License Management 
+Request limits for the managed location. Each entry maps a limit name to its current integer value.
 
 ## Properties
 

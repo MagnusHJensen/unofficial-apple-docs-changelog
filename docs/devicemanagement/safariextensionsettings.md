@@ -2,7 +2,7 @@
 
 The declaration to configure Safari Extensions.
 
-**Platforms:** iOS 18.0, iPadOS 18.0, Mac Catalyst 18.0, macOS 15.0, visionOS 26.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 18.0, iPadOS 18.0, Mac Catalyst 18.0, macOS 15.0, visionOS 26.0
 
 ## Properties
 
@@ -71,5 +71,5 @@ Give an extension access to “public.example.com”, but deny access to “exam
 
 ### Objects
 
-- [SafariExtensionSettingsManagedExtensionsObject](/documentation/devicemanagement/safariextensionsettingsmanagedextensionsobject) - The dictionary that defines the managed extension.
+- [SafariExtensionSettingsManagedExtensionsObject](/documentation/devicemanagement/safariextensionsettingsmanagedextensionsobject) - The dictionary of managed extensions settings. Each key in the dictionary represents a composed identifier for a specific managed extension, or you can specify a single “*” character to match any extension. The dictionary values represent the settings that Safari applies to each extension that matches the key. In order for the extension to be managed, its host app needs to be present on the device.
 

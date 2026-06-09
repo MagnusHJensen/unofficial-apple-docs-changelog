@@ -2,7 +2,7 @@
 
 The payload that configures a passcode policy.
 
-**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, visionOS 2.0, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, visionOS 2.0, watchOS 10.0
 
 ## Properties
 
@@ -20,7 +20,9 @@ If `false`, the system prevents use of a simple passcode. A simple passcode cont
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the system causes a password reset to occur the next time the user tries to authenticate. If this key is set in a device profile, the setting takes effect for all users, and admin authentications may fail until the admin user password is also reset. Available in macOS 10.13 and later.
+If `true`, the system causes a password reset to occur the next time the user tries to authenticate. If this key is set in a device profile, the setting takes effect for all users, and admin authentications may fail until the admin user password is also reset.
+
+Available: macOS 10.13+
 
 ### customRegex
 
@@ -29,7 +31,7 @@ If `true`, the system causes a password reset to occur the next time the user tr
 
 Specifies a regular expression, and its description, used to enforce password compliance. Use the simpler passcode restrictions whenever possible, and rely on regular expression matching only when necessary. Mistakes in regular expressions can lead to frustrating user experiences, such as unsatisfiable passcode policies, or policy descriptions that don’t match the enforced policy.
 
-Available in macOS 14 and later.
+Available: macOS 14+
 
 ### forcePIN
 
@@ -85,6 +87,8 @@ The minimum number of complex characters that a passcode needs to contain. A ** 
 
 The system ignores this property for user enrollments.
 
+Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | visionOS 2+
+
 ### minLength
 
 - **Type:** `integer`
@@ -98,7 +102,9 @@ The minimum overall length of the passcode. This value is independent of the val
 - **Type:** `integer`
 - **Required:** No
 
-The number of minutes before the system resets the login after the maximum number of unsuccessful login attempts is reached. This key requires setting `maxFailedAttempts`. Available in macOS 10.10 and later.
+The number of minutes before the system resets the login after the maximum number of unsuccessful login attempts is reached. This key requires setting `maxFailedAttempts`.
+
+Available: macOS 10.10+
 
 ### pinHistory
 
@@ -114,6 +120,8 @@ This value defines **, where the new passcode must be unique within the last ** 
 - **Default:** `false`
 
 If `true`, the system requires alphabetic characters instead of only numeric characters.
+
+Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | visionOS 2+
 
 ## Discussion
 

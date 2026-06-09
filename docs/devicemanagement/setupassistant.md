@@ -2,7 +2,7 @@
 
 The payload that configures Setup Assistant settings.
 
-**Platforms:** iOS 14.0, iPadOS 14.0, Mac Catalyst 14.0, macOS 10.12, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 14.0, iPadOS 14.0, Mac Catalyst 14.0, macOS 10.12
 
 ## Properties
 
@@ -14,6 +14,9 @@ The payload that configures Setup Assistant settings.
 
 If `true`, the system skips the Accessibility pane.
 
+Available: macOS 11+
+Deprecated: macOS 15+
+
 ### SkipAppearance
 
 - **Type:** `boolean`
@@ -21,6 +24,9 @@ If `true`, the system skips the Accessibility pane.
 - **Default:** `false`
 
 If `true`, the system skips the Choose Your Look pane.
+
+Available: macOS 10.14+
+Deprecated: macOS 15+
 
 ### SkipCloudSetup
 
@@ -30,6 +36,9 @@ If `true`, the system skips the Choose Your Look pane.
 
 If `true`, the system skips the Apple Account setup pane.
 
+Available: macOS 10.12+
+Deprecated: macOS 15+
+
 ### SkipiCloudStorageSetup
 
 - **Type:** `boolean`
@@ -37,6 +46,9 @@ If `true`, the system skips the Apple Account setup pane.
 - **Default:** `false`
 
 If `true`, the system skips the iCloud Storage pane.
+
+Available: macOS 10.13.4+
+Deprecated: macOS 15+
 
 ### SkipPrivacySetup
 
@@ -46,6 +58,9 @@ If `true`, the system skips the iCloud Storage pane.
 
 If `true`, the system skips the Privacy consent pane.
 
+Available: macOS 10.13.4+
+Deprecated: macOS 15+
+
 ### SkipScreenTime
 
 - **Type:** `boolean`
@@ -54,12 +69,17 @@ If `true`, the system skips the Privacy consent pane.
 
 If `true`, the system skips the Screen Time pane.
 
+Available: macOS 10.15+
+Deprecated: macOS 15+
+
 ### SkipSetupItems
 
 - **Type:** `[string]`
 - **Required:** No
 
-An array of strings that describe the setup items to skip. [SkipKeys](/documentation/devicemanagement/skipkeys) provides a list of valid strings and their meanings. Available in iOS 14 and later, and macOS 15 and later.
+An array of strings that describe the setup items to skip. [SkipKeys](/documentation/devicemanagement/skipkeys) provides a list of valid strings and their meanings.
+
+Available: iOS 14+ | iPadOS 14+ | macOS 15+
 
 ### SkipSiriSetup
 
@@ -69,6 +89,9 @@ An array of strings that describe the setup items to skip. [SkipKeys](/documenta
 
 If `true`, the system skips the Siri setup pane.
 
+Available: macOS 10.12+
+Deprecated: macOS 15+
+
 ### SkipTouchIDSetup
 
 - **Type:** `boolean`
@@ -76,6 +99,9 @@ If `true`, the system skips the Siri setup pane.
 - **Default:** `false`
 
 If `true`, the system skips the Touch ID setup pane.
+
+Available: macOS 10.15+
+Deprecated: macOS 15+
 
 ### SkipTrueTone
 
@@ -85,6 +111,9 @@ If `true`, the system skips the Touch ID setup pane.
 
 If `true`, the system skips the True Tone Display pane.
 
+Available: macOS 10.13.6+
+Deprecated: macOS 15+
+
 ### SkipUnlockWithWatch
 
 - **Type:** `boolean`
@@ -93,6 +122,9 @@ If `true`, the system skips the True Tone Display pane.
 
 If `true`, the system skips the Unlock With Apple Watch pane.
 
+Available: macOS 12+
+Deprecated: macOS 15+
+
 ### SkipWallpaper
 
 - **Type:** `boolean`
@@ -100,6 +132,9 @@ If `true`, the system skips the Unlock With Apple Watch pane.
 - **Default:** `false`
 
 If ‘true’, the system skips the Wallpaper selection window.
+
+Available: macOS 14.1+
+Deprecated: macOS 15+
 
 ## Discussion
 

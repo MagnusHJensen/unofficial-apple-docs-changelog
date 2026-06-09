@@ -2,7 +2,7 @@
 
 A dictionary that maps team identifiers to bundle identifiers that are allowed.
 
-**Platforms:** macOS 10.15, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.15
 
 ## Properties
 

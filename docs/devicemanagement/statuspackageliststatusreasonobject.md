@@ -2,7 +2,7 @@
 
 Information about a status error.
 
-**Platforms:** macOS 26.0, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 26.0
 
 ## Properties
 
@@ -31,5 +31,5 @@ A dictionary that contains additional details about the state.
 
 ### Objects
 
-- [StatusPackageListStatusReason_DetailsObject](/documentation/devicemanagement/statuspackageliststatusreason_detailsobject) - A dictionary that contains further details about this error.
+- [StatusPackageListStatusReason_DetailsObject](/documentation/devicemanagement/statuspackageliststatusreason_detailsobject) - A dictionary that contains additional details about the state.
 

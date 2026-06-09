@@ -2,18 +2,29 @@
 
 The declaration to configure an interactive legacy profile.
 
-**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, tvOS 16.0, visionOS 1.1, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, tvOS 16.0, visionOS 1.1
 
 ## Properties
+
+### ProfileAssetReference
+
+- **Type:** `string`
+- **Required:** No
+
+The identifier of an asset declaration containing a reference to the profile data. The corresponding asset needs to be of type `com.apple.asset.data`. The referenced data needs to be a property list file, and the asset’s “ContentType” value set to match the data type.
+
+One of `ProfileURL` or `ProfileAssetReference` needs to be present.
+
+Available: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+ | visionOS 27+
 
 ### ProfileURL
 
 - **Type:** `string`
-- **Required:** Yes
+- **Required:** No
 
-The URL of the profile to download and install, which needs to start with `https://`, and must be hosted by the MDM server.
+The URL of the profile to download and install, which needs to start with `https://`. The request uses MDM semantics, which includes the device-identity certificate, and any user authentication. This is equivalent to an MDM request made to the `CheckInURL` or `ServerURL`.
 
-If a user enrollment triggers this configuration, the system silently ignores any MDMv1 payloads in macOS that are forbidden with user enrollment. In iOS, the system rejects the entire profile.
+One of `ProfileURL` or `ProfileAssetReference` needs to be present.
 
 ### VisibleName
 
@@ -33,19 +44,9 @@ The profile may contain any payload type other than the following:
 - `com.apple.mdm`
 - `com.apple.declarations`
 
+If a user enrollment triggers this configuration: in macOS the system silently ignores any MDMv1 payloads in macOS where the User Enrollment Mode setting is `forbidden`; in iOS, tvOS, watchOS and visionOS, the system rejects the entire profile if any MDMv1 payload has its User Enrollment Mode setting set to `forbidden`.
+
 ### Configuration availability
 
-### Configuration example
-
-```json
-{
-    "Type": "com.apple.configuration.legacy.interactive",
-    "Identifier": "EB13EE2B-5D63-4EBA-810F-5B81D07F5017",
-    "ServerToken": "E180CA9A-F089-4FA3-BBDF-94CC159C4AE8",
-    "Payload": {
-        "ProfileURL": "https://www.example.com/profiles/passcode.mobileconfig",
-        "VisibleName": "Passcode Policy"
-    }
-}
-```
+### Configuration examples
 

@@ -2,7 +2,7 @@
 
 A dictionary that defines the quality-of-service settings.
 
-**Platforms:** iOS 10.0, iPadOS 10.0, Mac Catalyst 10.0, macOS 10.13, tvOS 9.0, visionOS 1.0, watchOS 3.2, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 10.0, iPadOS 10.0, Mac Catalyst 10.0, macOS 10.13, tvOS 9.0, visionOS 1.0, watchOS 3.2
 
 ## Properties
 
@@ -13,7 +13,7 @@ A dictionary that defines the quality-of-service settings.
 
 An array of app bundle identifiers that defines the allow list for L2 and L3 marking for traffic that goes to the Wi-Fi network. If the array isn’t present, but the `QoSMarkingPolicy` key is present — even empty — no apps can use L2 and L3 marking.
 
-Available in iOS 14.5 and later, macOS 14 and later, tvOS 9 and later, visionOS 1 and later, and watchOS 3.2 and later.
+Available: iOS 14.5+ | iPadOS 14.5+ | macOS 14+ | tvOS 9+ | visionOS 1+ | watchOS 3.2+
 
 ### QoSMarkingAppleAudioVideoCalls
 
@@ -22,8 +22,6 @@ Available in iOS 14.5 and later, macOS 14 and later, tvOS 9 and later, visionOS 
 - **Default:** `true`
 
 If `true`, adds audio and video traffic of built-in audio or video services, such as FaceTime and Wi-Fi Calling, to the allow list for L2 and L3 marking for traffic that goes to the Wi-Fi network.
-
-Available in iOS 10 and later, macOS 10.13 and later, tvOS 9 and later, visionOS 1 and later, and watchOS 3.2 and later.
 
 ### QoSMarkingEnabled
 
@@ -35,8 +33,6 @@ If `true`, disables L3 marking and only uses L2 marking for traffic that goes to
 
 If `false`, the system behaves as if Wi-Fi doesn’t have an association with a Cisco QoS fast lane network.
 
-Available in iOS 10 and later, macOS 10.13 and later, tvOS 9 and later, visionOS 1 and later, and watchOS 3.2 and later.
-
 ### QoSMarkingWhitelistedAppIdentifiers
 
 - **Type:** `[string]`
@@ -44,5 +40,6 @@ Available in iOS 10 and later, macOS 10.13 and later, tvOS 9 and later, visionOS
 
 Use `QoSMarkingAllowListAppIdentifiers` instead.
 
-Available in iOS 10 and later, macOS 10.13 and later, tvOS 9 and later, and watchOS 3.2 and later. Deprecated in iOS 14.5 and later, and macOS 14 and later.
+Available: iOS 10+ | iPadOS 10+ | macOS 10.13+ | tvOS 9+ | watchOS 3.2+
+Deprecated: iOS 14.5+ | iPadOS 14.5+ | macOS 14+
 

@@ -1,14 +1,14 @@
 # Check-in
 
-Authenticate devices and maintain push tokens with these commands.
+Authenticate devices and maintain push tokens.
 
 ## Overview
 
-The MDM check-in protocol validates a deviceʼs eligibility for MDM enrollment and informs the server that a deviceʼs push token has been updated.
+The Mobile Device Management (MDM) check-in protocol validates a deviceʼs eligibility for enrollment and informs the device management service that a deviceʼs push token has been updated.
 
-When the MDM payload is installed, the device initiates communication with the check-in server. The device validates the TLS certificate of the server, then uses the identity specified in its MDM payload as the client authentication certificate for the connection.
+After installing the MDM payload, the device initiates communication with the check-in service. The device validates the TLS certificate of the service, then uses the identity specified in its MDM payload as the client authentication certificate for the connection.
 
-If a check-in server URL is provided in the MDM payload, the check-in protocol communicates with that check-in server. If no check-in server URL is provided, the main MDM server URL is used instead.
+If the MDM payload includes a check-in URL, the check-in protocol communicates with that check-in service. If it doesn’t provide a check-in URL, the device uses the main device management service URL instead.
 
 ## Topics
 
@@ -23,7 +23,7 @@ If a check-in server URL is provided in the MDM payload, the check-in protocol c
 - [Set Bootstrap Token](/documentation/devicemanagement/set-bootstrap-token) - Sends the bootstrap token to the server.
 - [Return To Service](/documentation/devicemanagement/return-to-service) - Gets the return-to-service configuration from the server.
 
-### Declarative Management
+### Declarative management
 
 - [Declarative Management](/documentation/devicemanagement/declarative-management) - Sends declarative management requests to the server.
 - [Get Server Supported Declarations](/documentation/devicemanagement/declaration-items) - Get a list of the declarations available on the server.

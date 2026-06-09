@@ -2,7 +2,7 @@
 
 The payload that configures fonts.
 
-**Platforms:** iOS 7.0, iPadOS 7.0, Mac Catalyst 7.0, macOS 10.9, visionOS 2.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 7.0, iPadOS 7.0, Mac Catalyst 7.0, macOS 10.9, visionOS 2.0
 
 ## Properties
 
@@ -27,7 +27,7 @@ Fonts are identified by their embedded PostScript names. Two fonts with the same
 
 Specify `com.apple.font` as the payload type.
 
-In iPadOS 18 and later, the font profile is available on the user channel for Shared iPads.
+In iPadOS 18 and later, the font profile is available on the user channel for Shared iPad.
 
 ### Profile availability
 

@@ -2,7 +2,7 @@
 
 Enrollment SSO streamlines the MDM enrollment process, reduces sign-ins, and improves security.
 
-**Platforms:** iOS 16.0, iPadOS 16.0, Mac Catalyst 16.0, visionOS 2.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 16.0, iPadOS 16.0, Mac Catalyst 16.0, visionOS 2.0
 
 ## Properties
 
@@ -44,11 +44,13 @@ One of `ConfigurationProfile` and `Declarations` must be present.
 
 An array of base64-encoded JSON formatted Declarative Device Management declarations that specify the managed app and its configuration, including any certificates or identities.
 
-The set of declarations must include one `com.apple.configuration.app.managed` configuration, and one activation declaration that references the configuration. Asset declarations may be present if required by the app config.
+The set of declarations must include one `com.apple.configuration.app.managed` configuration, and one activation declaration that references the configuration. Include asset declarations if the app config requires them.
 
 The app configuration must include `AppStoreID` when developer mode is not being used, or it must include `BundleID` when developer mode is used.
 
 One of `ConfigurationProfile` and `Declarations` must be present.
+
+Available: iOS 18.4+ | iPadOS 18.4+ | visionOS 2.4+
 
 ### iTunesStoreID
 

@@ -2,7 +2,7 @@
 
 The payload that configures lights-out management (LOM) settings.
 
-**Platforms:** macOS 11.0, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 11.0
 
 ## Properties
 

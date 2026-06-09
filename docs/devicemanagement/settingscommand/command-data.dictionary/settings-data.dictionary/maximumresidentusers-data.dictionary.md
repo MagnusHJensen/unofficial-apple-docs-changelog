@@ -2,7 +2,7 @@
 
 A dictionary that contains settings for maximum resident users.
 
-**Platforms:** iOS 9.3, iPadOS 9.3, Mac Catalyst 9.3, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 9.3, iPadOS 9.3, Mac Catalyst 9.3
 
 ## Properties
 
@@ -14,6 +14,8 @@ A dictionary that contains settings for maximum resident users.
 
 A string that identifies this setting.
 
+Deprecated: iOS 13.4+ | iPadOS 13.4+
+
 ### MaximumResidentUsers
 
 - **Type:** `integer`
@@ -24,4 +26,6 @@ The maximum number of users that can use the device. If this value is greater th
 This setting requires that the device is in the `AwaitingConfiguration` phase before it receives the [DeviceConfiguredCommand](/documentation/devicemanagement/deviceconfiguredcommand) message.
 
 When a device reaches the maximum number of resident users and a new user tries to sign in, the MDM server removes a synchronized user to make space for the new user. If there are no synchronized users, the new user sign-in fails. A synchronized user is a user that has completed syncing their data.
+
+Deprecated: iOS 13.4+ | iPadOS 13.4+
 

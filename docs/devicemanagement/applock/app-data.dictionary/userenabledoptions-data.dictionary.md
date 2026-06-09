@@ -2,7 +2,7 @@
 
 The dictionary of user-editable options to set for the app.
 
-**Platforms:** iOS 7.0, iPadOS 7.0, Mac Catalyst 7.0, tvOS 10.2, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 7.0, iPadOS 7.0, Mac Catalyst 7.0, tvOS 10.2
 
 ## Properties
 
@@ -13,6 +13,8 @@ The dictionary of user-editable options to set for the app.
 - **Default:** `false`
 
 If `true`, the system allows the user to toggle AssistiveTouch.
+
+Available: iOS 7+ | iPadOS 7+
 
 ### InvertColors
 
@@ -29,6 +31,8 @@ If `true`, the system allows the user to toggle Invert Colors.
 - **Default:** `false`
 
 If `true`, the system allows the user to toggle Voice Control.
+
+Available: iOS 13+ | iPadOS 13+
 
 ### VoiceOver
 

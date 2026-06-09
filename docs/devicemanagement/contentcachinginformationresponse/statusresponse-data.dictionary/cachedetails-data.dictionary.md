@@ -2,7 +2,7 @@
 
 A dictionary that describes disk space the content cache uses.
 
-**Platforms:** macOS 10.15.4, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.15.4
 
 ## Properties
 

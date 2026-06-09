@@ -2,7 +2,7 @@
 
 A response from the device after it processes the command to install a book on a device.
 
-**Platforms:** iOS 8.0, iPadOS 8.0, Mac Catalyst 8.0, macOS 10.9, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 8.0, iPadOS 8.0, Mac Catalyst 8.0, macOS 10.9
 
 ## Properties
 
@@ -20,7 +20,9 @@ The unique identifier of the command for this response.
 
 The per-enrollment identifier for the device. The system requires this value if the enrollment type is a user enrollment.
 
-Available in iOS 13 and later, macOS 10.15 and later, and visionOS 2 and later.
+Available: iOS 13+ | iPadOS 13+ | macOS 10.15+
+Deprecated: macOS 11+
+Removed: macOS 11+
 
 ### ErrorChain
 
@@ -36,6 +38,9 @@ An array of dictionaries that describes any errors that occur.
 
 The book’s iTunes Store identifier, if present in the command.
 
+Deprecated: macOS 11+
+Removed: macOS 11+
+
 ### MediaType
 
 - **Type:** `string`
@@ -43,19 +48,30 @@ The book’s iTunes Store identifier, if present in the command.
 
 The media type, which can only be `Book`.
 
+Deprecated: macOS 11+
+Removed: macOS 11+
+
 ### MediaURL
 
 - **Type:** `string`
 - **Required:** No
 
-The URL to retrieve the book, if present in the command. This value is available in iOS 8 and later.
+The URL to retrieve the book, if present in the command.
+
+Available: iOS 8+ | iPadOS 8+
+Deprecated: macOS 11+
+Removed: macOS 11+
 
 ### PersistentID
 
 - **Type:** `string`
 - **Required:** No
 
-The book’s persistent identifier, if present in the command. This value is available in iOS 8 and later.
+The book’s persistent identifier, if present in the command.
+
+Available: iOS 8+ | iPadOS 8+
+Deprecated: macOS 11+
+Removed: macOS 11+
 
 ### RejectionReason
 
@@ -72,6 +88,9 @@ The reason, if installation fails, which is one of the following values:
 - `DownloadInvalid`: The URL doesn’t lead to a valid book.
 - `EnterpriseBooksNotSupportedInMultiUser`: Multiuser mode doesn’t support enterprise books.
 
+Deprecated: macOS 11+
+Removed: macOS 11+
+
 ### State
 
 - **Type:** `string`
@@ -79,6 +98,9 @@ The reason, if installation fails, which is one of the following values:
 - **Allowed Values:** `Queued`, `PromptingForLogin`, `Updating`, `Installing`, `Managed`, `ManagedButUninstalled`, `Installed`, `Uninstalled`, `Failed`, `Unknown`
 
 The installation state of this book. The `Failed` and `Unknown` states are transient and the device only reports them once. Books from the Book Store report their state as `Installed` instead of `Managed`.
+
+Deprecated: macOS 11+
+Removed: macOS 11+
 
 ### Status
 
@@ -101,6 +123,9 @@ The status of the response, which is one of the following values:
 
 The device’s UDID (unique device identifier). The system requires this value if the enrollment type is a device enrollment.
 
+Deprecated: macOS 11+
+Removed: macOS 11+
+
 ### UserID
 
 - **Type:** `string`
@@ -110,6 +135,10 @@ For macOS, this value is the ID of the user.
 
 For Shared iPad, this value is `FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF` to indicate that authentication doesn’t occur.
 
+Available: iOS 9.3+ | iPadOS 9.3+ | macOS 10.9+
+Deprecated: macOS 11+
+Removed: macOS 11+
+
 ### UserShortName
 
 - **Type:** `string`
@@ -118,6 +147,10 @@ For Shared iPad, this value is `FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF` to indicat
 For macOS, this value is the short name of the user.
 
 For Shared iPad, this value is the Managed Apple Account identifier of the user on Shared iPad. It indicates that the token is for the user channel.
+
+Available: iOS 9.3+ | iPadOS 9.3+ | macOS 10.9+
+Deprecated: macOS 11+
+Removed: macOS 11+
 
 ### EnrollmentUserID
 

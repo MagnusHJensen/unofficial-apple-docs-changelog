@@ -1,8 +1,8 @@
 # StatusDeviceUDID
 
-A status report of the device’s UDID.
+The status item that reports the device’s UDID.
 
-**Platforms:** iOS 16.0, iPadOS 16.0, Mac Catalyst 16.0, macOS 13.0, tvOS 16.0, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 16.0, iPadOS 16.0, Mac Catalyst 16.0, macOS 13.0, tvOS 16.0, visionOS 1.1, watchOS 10.0
 
 ## Properties
 
@@ -16,4 +16,16 @@ The device’s UDID. This value is always available on the device channel. This 
 ## Discussion
 
 ### Status item availability
+
+### Status item example
+
+```json
+{
+    "device": {
+        "identifier": {
+            "udid": "123456-89012345"
+        }
+    }
+}
+```
 

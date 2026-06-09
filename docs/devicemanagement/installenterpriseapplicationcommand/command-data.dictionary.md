@@ -2,7 +2,7 @@
 
 The command to install an enterprise app on a device.
 
-**Platforms:** macOS 10.13.6, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.13.6
 
 ## Properties
 
@@ -14,14 +14,18 @@ The command to install an enterprise app on a device.
 
 The change management state. This value doesn’t work with the user enrollments. The only possible value is:
 
-Available in macOS 11 and later.
+- `Managed`: Take management of the app if the user installed it already and `InstallAsManaged` is `true`.
+
+Available: macOS 11+
 
 ### Configuration
 
 - **Type:** `InstallEnterpriseApplicationCommand.Command.Configuration`
 - **Required:** No
 
-A dictionary that contains the initial configuration of the app, if you choose to provide it. Available in macOS 11 and later.
+A dictionary that contains the initial configuration of the app, if you choose to provide it.
+
+Available: macOS 11+
 
 ### InstallAsManaged
 
@@ -33,7 +37,7 @@ If `true`, install the app as a managed app. Otherwise, the system installs the 
 
 For manifest-based installs, if `true`, the system only considers apps installed in `/Applications` as managed. In macOS 11 through 13, the system requires that the `pkg` only contains a single signed app.
 
-Available in macOS 11 and later.
+Available: macOS 11+
 
 ### iOSApp
 
@@ -43,6 +47,8 @@ Available in macOS 11 and later.
 
 If `true`, the app is an iOS app that can run on a Mac with Apple silicon in macOS 11 and later.
 
+Available: macOS 11+
+
 ### ManagementFlags
 
 - **Type:** `integer`
@@ -51,7 +57,9 @@ If `true`, the app is an iOS app that can run on a Mac with Apple silicon in mac
 
 The management flags. The possible values are:
 
-Available in macOS 11 and later.
+- `1`: If `InstallAsManaged` is `true`, remove the app upon removal of the MDM profile.
+
+Available: macOS 11+
 
 ### Manifest
 

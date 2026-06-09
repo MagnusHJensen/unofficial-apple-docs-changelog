@@ -1,4 +1,4 @@
-# Examining Server Tokens
+# Examining server tokens
 
 View sample encrypted and unencrypted tokens to verify your server tokens are in the right format.
 

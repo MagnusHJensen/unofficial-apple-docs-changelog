@@ -2,7 +2,7 @@
 
 A dictionary that contains alerts for peer filter ranges.
 
-**Platforms:** macOS 10.15.4, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.15.4
 
 ## Properties
 

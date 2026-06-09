@@ -1,8 +1,8 @@
 # StatusAccountListCardDAV
 
-A status report of the client’s Contacts accounts.
+The status item that lists the devices’s Contacts accounts.
 
-**Platforms:** iOS 16.0, iPadOS 16.0, Mac Catalyst 16.0, macOS 13.0, visionOS 1.1, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 16.0, iPadOS 16.0, Mac Catalyst 16.0, macOS 13.0, visionOS 1.1
 
 ## Properties
 
@@ -17,9 +17,11 @@ A list of status values for the Contacts accounts.
 
 ### Status item availability
 
+### Status item example
+
 ## Topics
 
 ### Objects
 
-- [StatusAccountListCardDAVAccountObject](/documentation/devicemanagement/statusaccountlistcarddavaccountobject) - A status report of the client’s Contacts account details.
+- [StatusAccountListCardDAVAccountObject](/documentation/devicemanagement/statusaccountlistcarddavaccountobject) - A Contacts account.
 

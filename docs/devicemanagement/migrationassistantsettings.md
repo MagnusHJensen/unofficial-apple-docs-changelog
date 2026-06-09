@@ -2,7 +2,7 @@
 
 The declaration to configure Migration Assistant settings.
 
-**Platforms:** macOS 26.4, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 26.4
 
 ## Properties
 

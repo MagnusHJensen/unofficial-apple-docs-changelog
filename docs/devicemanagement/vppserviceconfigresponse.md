@@ -2,7 +2,7 @@
 
 The response with the service configuration.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 1.0
 
 ## Properties
 
@@ -27,7 +27,7 @@ The URL for the [Client Configuration](/documentation/devicemanagement/client-co
 
 The URL that returns metadata about a product in the iTunes Store.
 
-See [Getting App and Book Information (Legacy)](/documentation/devicemanagement/getting-app-and-book-information-legacy), for more information.
+See [Getting app and book information (Legacy)](/documentation/devicemanagement/getting-app-and-book-information-legacy), for more information.
 
 ### disassociateLicenseSrvUrl
 

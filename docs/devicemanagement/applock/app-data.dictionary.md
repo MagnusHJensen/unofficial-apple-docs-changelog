@@ -2,7 +2,7 @@
 
 The only app available for use on the iOS device.
 
-**Platforms:** iOS 6.0, iPadOS 6.0, Mac Catalyst 6.0, tvOS 10.2, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 6.0, iPadOS 6.0, Mac Catalyst 6.0, tvOS 10.2
 
 ## Properties
 
@@ -20,12 +20,16 @@ The app’s bundle identifier.
 
 A dictionary of options that the user can’t change.
 
+Available: iOS 7+ | iPadOS 7+ | tvOS 10.2+
+
 ### UserEnabledOptions
 
 - **Type:** `AppLock.App.UserEnabledOptions`
 - **Required:** No
 
 A dictionary of user-editable options.
+
+Available: iOS 7+ | iPadOS 7+ | tvOS 10.2+
 
 ## Topics
 

@@ -2,7 +2,7 @@
 
 The payload that configures an app extension that performs single sign-on (SSO).
 
-**Platforms:** iOS 13.0, iPadOS 13.0, Mac Catalyst 13.0, macOS 10.15, visionOS 1.1, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 13.0, iPadOS 13.0, Mac Catalyst 13.0, macOS 10.15, visionOS 1.1
 
 ## Properties
 
@@ -12,14 +12,19 @@ The payload that configures an app extension that performs single sign-on (SSO).
 - **Required:** No
 - **Allowed Values:** `Password`, `UserSecureEnclaveKey`
 
-The Platform SSO authentication method the extension uses. Requires that the SSO Extension also supports the method. Available in macOS 13 and later, and deprecated in macOS 14.
+The Platform SSO authentication method the extension uses. Requires that the SSO Extension also supports the method.
+
+Available: macOS 13+
+Deprecated: macOS 14+
 
 ### DeniedBundleIdentifiers
 
 - **Type:** `[string]`
 - **Required:** No
 
-An array of bundle identifiers of apps that don’t use SSO provided by this extension. Available in iOS 15 and later, and macOS 12 and later.
+An array of bundle identifiers of apps that don’t use SSO provided by this extension.
+
+Available: iOS 15+ | iPadOS 15+ | macOS 12+ | visionOS 1.1+
 
 ### ExtensionData
 
@@ -58,6 +63,8 @@ The system:
 
 The dictionary to configure Platform SSO. Requires `Type` to be set to `Redirect`.
 
+Available: macOS 14+
+
 ### Realm
 
 - **Type:** `string`
@@ -70,7 +77,9 @@ The realm name for `Credential` payloads. Use proper capitalization for this val
 - **Type:** `string`
 - **Required:** No
 
-The token this device uses for registration with Platform SSO. Use it for silent registration with the Identity Provider. Requires that `AuthenticationMethod` in `PlatformSSO` isn’t empty. Available in macOS 13 and later.
+The token this device uses for registration with Platform SSO. Use it for silent registration with the Identity Provider. Requires that `AuthenticationMethod` in `PlatformSSO` isn’t empty.
+
+Available: macOS 13+
 
 ### ScreenLockedBehavior
 
@@ -79,7 +88,9 @@ The token this device uses for registration with Platform SSO. Use it for silent
 - **Default:** `Cancel`
 - **Allowed Values:** `Cancel`, `DoNotHandle`
 
-If set to `Cancel`, the system cancels authentication requests when the screen is locked. If set to `DoNotHandle`, the request continues without SSO instead. This doesn’t apply to requests where `userInterfaceEnabled` is `false`, or for background [URLSession](/documentation/Foundation/URLSession) requests. Available in iOS 15 and later, and macOS 12 and later.
+If set to `Cancel`, the system cancels authentication requests when the screen is locked. If set to `DoNotHandle`, the request continues without SSO instead. This doesn’t apply to requests where `userInterfaceEnabled` is `false`, or for background [URLSession](/documentation/Foundation/URLSession) requests.
+
+Available: iOS 15+ | iPadOS 15+ | macOS 12+ | visionOS 1.1+
 
 ### TeamIdentifier
 
@@ -87,6 +98,8 @@ If set to `Cancel`, the system cancels authentication requests when the screen i
 - **Required:** No
 
 The team identifier of the app extension. This key is required on macOS and ignored elsewhere.
+
+Available: macOS 10.15+
 
 ### Type
 

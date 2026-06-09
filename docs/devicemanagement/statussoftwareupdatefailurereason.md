@@ -1,8 +1,8 @@
 # StatusSoftwareUpdateFailureReason
 
-A status report of a software update failure reason.
+The status item that reports the device’s software update failure reason.
 
-**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, tvOS 18.4, visionOS 26.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, tvOS 18.4, visionOS 26.0
 
 ## Properties
 
@@ -17,9 +17,21 @@ Details about a software update failure.
 
 ### Status item availability
 
+### Status item example
+
+```json
+{
+    "softwareupdate": {
+        "failure-reason": {
+            "count": 0
+        }
+    }
+}
+```
+
 ## Topics
 
 ### Objects
 
-- [StatusSoftwareUpdateFailureReasonDictionaryObject](/documentation/devicemanagement/statussoftwareupdatefailurereasondictionaryobject) - A dictionary that contains details about a software update failure.
+- [StatusSoftwareUpdateFailureReasonDictionaryObject](/documentation/devicemanagement/statussoftwareupdatefailurereasondictionaryobject) - Details about a software update failure.
 

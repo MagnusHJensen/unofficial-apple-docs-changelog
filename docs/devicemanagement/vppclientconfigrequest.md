@@ -2,7 +2,7 @@
 
 The request for the client configuration.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 1.0
 
 ## Properties
 
@@ -11,9 +11,7 @@ The request for the client configuration.
 - **Type:** `string`
 - **Required:** No
 
-Any JSON string under 256 bytes. The server stores the value of this field, and this value is returned in all responses. To clear the field’s value, provide an empty string as the input value (””).
-
-See [Protecting Your VPP Account](/documentation/devicemanagement/protecting-your-vpp-account) for more information.
+Any JSON string under 256 bytes. The server stores the value of this field, and this value returns in all responses. To clear the field’s value, provide an empty string as the input value (””).
 
 ### notificationToken
 
@@ -27,5 +25,5 @@ The token to use when sending notifications through `notificationURL`.
 - **Type:** `string`
 - **Required:** Yes
 
-The authentication token. For more information, see [Authentication](/documentation/devicemanagement/managing-apps-and-books-through-web-services-legacy#Authentication).
+The authentication token. For more information, see [Authenticate with the web service](/documentation/devicemanagement/managing-apps-and-books-through-web-services-legacy#Authenticate-with-the-web-service).
 

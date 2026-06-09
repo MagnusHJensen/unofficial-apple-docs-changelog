@@ -1,8 +1,8 @@
 # StatusManagementClientCapabilitiesCapabilities_SupportedPayloadsObject
 
-The set of declaration and status items that the client supports.
+A set of declaration and status items that the client supports.
 
-**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, tvOS 16.0, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, tvOS 16.0, visionOS 1.1, watchOS 10.0
 
 ## Properties
 
@@ -24,5 +24,5 @@ A list of status items that the client supports.
 
 ### Objects
 
-- [StatusManagementClientCapabilitiesCapabilities_SupportedPayloads_DeclarationsObject](/documentation/devicemanagement/statusmanagementclientcapabilitiescapabilities_supportedpayloads_declarationsobject) - A declaration that the client supports.
+- [StatusManagementClientCapabilitiesCapabilities_SupportedPayloads_DeclarationsObject](/documentation/devicemanagement/statusmanagementclientcapabilitiescapabilities_supportedpayloads_declarationsobject) - A set of declarations that the client supports.
 

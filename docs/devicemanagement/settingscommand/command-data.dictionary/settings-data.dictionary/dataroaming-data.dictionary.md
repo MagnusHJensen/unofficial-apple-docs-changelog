@@ -2,7 +2,7 @@
 
 A dictionary that contains data roaming settings.
 
-**Platforms:** iOS 5.0, iPadOS 5.0, Mac Catalyst 5.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 5.0, iPadOS 5.0, Mac Catalyst 5.0
 
 ## Properties
 
@@ -11,7 +11,7 @@ A dictionary that contains data roaming settings.
 - **Type:** `boolean`
 - **Required:** Yes
 
-If `true`, enable data roaming, which also enables voice roaming. If `false`, disable data roaming.
+If `true`, enable data roaming, which also enables voice roaming. If `false`, disable data roaming. The device only applies this setting to the primary SIM.
 
 ### Item
 

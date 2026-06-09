@@ -2,7 +2,7 @@
 
 An assignment’s properties and their values.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 1.1
 
 ## Properties
 

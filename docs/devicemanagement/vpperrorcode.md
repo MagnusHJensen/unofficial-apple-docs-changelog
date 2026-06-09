@@ -2,7 +2,7 @@
 
 An error code.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 1.0
 
 ## Properties
 

@@ -2,7 +2,7 @@
 
 If present, configures Notes Intelligence features.
 
-**Platforms:** iOS 26.4, iPadOS 26.4, Mac Catalyst 26.4, macOS 26.4, visionOS 26.4, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 26.4, iPadOS 26.4, Mac Catalyst 26.4, macOS 26.4, visionOS 26.4
 
 ## Properties
 
@@ -14,6 +14,8 @@ If present, configures Notes Intelligence features.
 
 If `false`, disables Notes Transcription.
 
+Available: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+
+
 ### AllowTranscriptionSummary
 
 - **Type:** `boolean`
@@ -21,4 +23,6 @@ If `false`, disables Notes Transcription.
 - **Default:** `true`
 
 If `false`, disables Notes Transcription Summary.
+
+Available: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+
 

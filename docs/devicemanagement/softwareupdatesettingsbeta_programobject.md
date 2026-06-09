@@ -1,8 +1,8 @@
 # SoftwareUpdateSettingsBeta_ProgramObject
 
-The object that configures a specific beta program.
+The name and token associated with a specific beta program to be allowed.
 
-**Platforms:** iOS 18.0, iPadOS 18.0, Mac Catalyst 18.0, macOS 15.4, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 18.0, iPadOS 18.0, Mac Catalyst 18.0, macOS 15.4
 
 ## Properties
 

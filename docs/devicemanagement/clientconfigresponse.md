@@ -2,7 +2,7 @@
 
 The response that contains the client configuration.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 2.0
 
 ## Properties
 
@@ -19,7 +19,7 @@ The ISO alpha-2 country code that designates the organization’s location.
 - **Required:** No
 - **Allowed Values:** `volumestore`, `enterprisestore`
 
-The value that the MDM client passes for the platform parameter in the `contentMetadataLookup` request. For more information about how the MDM client queries metadata by using `contentMetadataLookup`, see [Getting App and Book Information (Legacy)](/documentation/devicemanagement/getting-app-and-book-information-legacy).
+The value that the MDM client passes for the platform parameter in the `contentMetadataLookup` request. For more information about how the MDM client queries metadata by using `contentMetadataLookup`, see [Getting app and book information (Legacy)](/documentation/devicemanagement/getting-app-and-book-information-legacy).
 
 ### notificationUrl
 
@@ -32,7 +32,7 @@ The current URL to post notifications to.
 
 - **Type:** `[string]`
 - **Required:** No
-- **Allowed Values:** `ASSET_MANAGEMENT`, `USER_MANAGEMENT`, `USER_ASSOCIATED`, `ASSET_COUNT`
+- **Allowed Values:** `ASSET_MANAGEMENT`, `USER_MANAGEMENT`, `USER_ASSOCIATED`, `ASSET_COUNT`, `SUBSCRIPTION_MANAGEMENT`, `SUBSCRIPTION_COUNT`, `UNLIMITED_ASSET`
 
 The set of currently subscribed notification types.
 
@@ -91,5 +91,5 @@ Client config should be checked regularly in order to verify expected values for
 
 ### Content Metadata
 
-- [Apps and Books for Organizations](/documentation/devicemanagement/apps-and-books-for-organizations) - Get details about apps and books to show to your users.
+- [Apps and books metadata for organizations](/documentation/devicemanagement/apps-and-books-metadata-for-organizations) - Get metadata for apps and books your organization owns.
 

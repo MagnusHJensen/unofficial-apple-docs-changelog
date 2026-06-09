@@ -2,7 +2,7 @@
 
 A dictionary of launchd configurations.
 
-**Platforms:** macOS 15.0, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 15.0
 
 ## Properties
 
@@ -12,7 +12,7 @@ A dictionary of launchd configurations.
 - **Required:** Yes
 - **Allowed Values:** `daemon`, `agent`
 
-Indicates whether the launchd configuration file is applied to the system daemon, or system agent domain.
+Indicates whether the system applies the launchd configuration file to the system daemon or system agent domain.
 
 ### FileAssetReference
 

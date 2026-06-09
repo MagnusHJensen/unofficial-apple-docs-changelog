@@ -1,8 +1,8 @@
 # StatusDeviceModelIdentifier
 
-A status report of the device’s hardware identifier.
+The status item that reports the device’s hardware model identifier.
 
-**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, tvOS 16.0, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, tvOS 16.0, visionOS 1.1, watchOS 10.0
 
 ## Properties
 
@@ -16,4 +16,16 @@ A two-part string that specifies the device’s model. The first part specifies 
 ## Discussion
 
 ### Status item availability
+
+### Status item example
+
+```json
+{
+    "device": {
+        "model": {
+            "identifier": "iPhone14,5"
+        }
+    }
+}
+```
 

@@ -2,7 +2,7 @@
 
 Get the set of current assignments for users or devices.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 2.0
 
 ## Discussion
 

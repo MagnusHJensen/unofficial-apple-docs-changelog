@@ -2,7 +2,7 @@
 
 The request for an asset.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 1.0
 
 ## Properties
 
@@ -28,5 +28,5 @@ The quality of a product in the iTunes Store. If a pricing parameter is specifie
 - **Type:** `string`
 - **Required:** Yes
 
-The authentication token. For more information, see [Authentication](/documentation/devicemanagement/managing-apps-and-books-through-web-services-legacy#Authentication).
+The authentication token. For more information, see [Authenticate with the web service](/documentation/devicemanagement/managing-apps-and-books-through-web-services-legacy#Authenticate-with-the-web-service).
 

@@ -2,7 +2,7 @@
 
 Information about an error that occurred while processing a request.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 2.1
 
 ## Properties
 

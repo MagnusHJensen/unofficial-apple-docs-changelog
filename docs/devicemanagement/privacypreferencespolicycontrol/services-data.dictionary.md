@@ -2,7 +2,7 @@
 
 The privacy policy control services dictionary that controls access on a per app basis.
 
-**Platforms:** macOS 10.14, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.14
 
 ## Properties
 
@@ -11,7 +11,11 @@ The privacy policy control services dictionary that controls access on a per app
 - **Type:** `[PrivacyPreferencesPolicyControl.Services.Identity]`
 - **Required:** No
 
-Specifies the policies for the app via the Accessibility subsystem. The ability to grant access by this profile is deprecated as of macOS 26.2, and will be removed in macOS 27.0.
+Specifies the policies for the app via the Accessibility subsystem. The ability to grant access by this profile is deprecated as of macOS 26.2, and is removed in macOS 27.0.
+
+Deprecated: use the `Privacy` key in the declarative management `com.apple.configuration.app-settings` configuration.
+
+Deprecated: macOS 27+
 
 ### AddressBook
 
@@ -34,6 +38,11 @@ Specifies the policies for the app sending restricted AppleEvents to another pro
 
 Specifies the policies for the app to access Bluetooth devices.
 
+Deprecated: use the `Privacy` key in the declarative management `com.apple.configuration.app-settings` configuration.
+
+Available: macOS 11+
+Deprecated: macOS 27+
+
 ### Calendar
 
 - **Type:** `[PrivacyPreferencesPolicyControl.Services.Identity]`
@@ -48,12 +57,16 @@ Specifies the policies for calendar information managed by the Calendar.app.
 
 A system camera. Access to the camera can’t be given in a profile; it can only be denied.
 
+Deprecated: macOS 27+
+
 ### FileProviderPresence
 
 - **Type:** `[PrivacyPreferencesPolicyControl.Services.Identity]`
 - **Required:** No
 
 Allows a File Provider application to know when the user is using files managed by the File Provider.
+
+Available: macOS 10.15+
 
 ### ListenEvent
 
@@ -62,6 +75,8 @@ Allows a File Provider application to know when the user is using files managed 
 
 Allows the application to use CoreGraphics and HID APIs to listen to (receive) CGEvents and HID events from all processes. Access to these events can’t be given in a profile; it can only be denied.
 
+Available: macOS 10.15+
+
 ### MediaLibrary
 
 - **Type:** `[PrivacyPreferencesPolicyControl.Services.Identity]`
@@ -69,12 +84,16 @@ Allows the application to use CoreGraphics and HID APIs to listen to (receive) C
 
 Allows the application to access Apple Music, music and video activity, and the media library.
 
+Available: macOS 10.15+
+
 ### Microphone
 
 - **Type:** `[PrivacyPreferencesPolicyControl.Services.Identity]`
 - **Required:** No
 
 A system microphone. Access to the microphone can’t be given in a profile; it can only be denied.
+
+Deprecated: macOS 27+
 
 ### Photos
 
@@ -104,12 +123,19 @@ Specifies the policies for reminders information managed by the Reminders app.
 
 Allows the application to capture (read) the contents of the system display. Access to the contents can’t be given in a profile; it can only be denied.
 
+Available: macOS 10.15+
+
 ### SpeechRecognition
 
 - **Type:** `[PrivacyPreferencesPolicyControl.Services.Identity]`
 - **Required:** No
 
 Allows the application to use the system Speech Recognition facility and to send speech data to Apple.
+
+Deprecated: use the `Privacy` key in the declarative management `com.apple.configuration.app-settings` configuration.
+
+Available: macOS 10.15+
+Deprecated: macOS 27+
 
 ### SystemPolicyAllFiles
 
@@ -123,7 +149,9 @@ Allows the application access to all protected files, including system administr
 - **Type:** `[PrivacyPreferencesPolicyControl.Services.Identity]`
 - **Required:** No
 
-Allows the application to update or delete other apps. Available in macOS 13 and later.
+Allows the application to update or delete other apps.
+
+Available: macOS 13+
 
 ### SystemPolicyAppData
 
@@ -132,12 +160,16 @@ Allows the application to update or delete other apps. Available in macOS 13 and
 
 Specifies the policies for the app to access the data of other apps.
 
+Available: macOS 14+
+
 ### SystemPolicyDesktopFolder
 
 - **Type:** `[PrivacyPreferencesPolicyControl.Services.Identity]`
 - **Required:** No
 
 Allows the application to access files in the user’s Desktop folder.
+
+Available: macOS 10.15+
 
 ### SystemPolicyDocumentsFolder
 
@@ -146,12 +178,16 @@ Allows the application to access files in the user’s Desktop folder.
 
 Allows the application to access files in the user’s Documents folder.
 
+Available: macOS 10.15+
+
 ### SystemPolicyDownloadsFolder
 
 - **Type:** `[PrivacyPreferencesPolicyControl.Services.Identity]`
 - **Required:** No
 
 Allows the application to access files in the user’s Downloads folder.
+
+Available: macOS 10.15+
 
 ### SystemPolicyNetworkVolumes
 
@@ -160,12 +196,16 @@ Allows the application to access files in the user’s Downloads folder.
 
 Allows the application to access files on network volumes.
 
+Available: macOS 10.15+
+
 ### SystemPolicyRemovableVolumes
 
 - **Type:** `[PrivacyPreferencesPolicyControl.Services.Identity]`
 - **Required:** No
 
 Allows the application to access files on removable volumes.
+
+Available: macOS 10.15+
 
 ### SystemPolicySysAdminFiles
 

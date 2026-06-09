@@ -2,7 +2,7 @@
 
 The attributes for a genre resource.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 2.1
 
 ## Properties
 

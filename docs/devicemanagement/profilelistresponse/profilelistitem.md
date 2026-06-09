@@ -2,7 +2,7 @@
 
 A dictionary that describes a profile list item.
 
-**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, tvOS 9.0, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, tvOS 9.0, visionOS 1.1, watchOS 10.0
 
 ## Properties
 
@@ -28,7 +28,9 @@ If `true`, it’s an encrypted profile.
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the current MDM service installed the profile. MDM doesn’t return this value for supervised devices, and can remove or replace all profiles on supervised devices.
+If `true`, the current MDM service installed the profile. MDM can remove or replace all profiles on supervised devices.
+
+Available: iOS 4+ | iPadOS 4+ | tvOS 9+ | visionOS 1.1+ | watchOS 10+
 
 ### PayloadContent
 
@@ -100,6 +102,8 @@ An array that contains the certificate for signing the profile, followed by any 
 - **Required:** No
 
 A string set to `Declarative Device Management` when the profile is managed by Declarative Device Management.
+
+Available: iOS 18+ | iPadOS 18+ | macOS 15+ | tvOS 18+ | visionOS 2+ | watchOS 11+
 
 ## Topics
 

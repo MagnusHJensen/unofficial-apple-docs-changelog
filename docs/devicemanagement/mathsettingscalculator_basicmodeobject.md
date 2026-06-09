@@ -1,8 +1,8 @@
 # MathSettingsCalculator_BasicModeObject
 
-The declaration to configure basic mode in the calculator app.
+If present, configures the basic mode of the calculator. Basic mode is always enabled.
 
-**Platforms:** iOS 18.0, iPadOS 18.0, Mac Catalyst 18.0, macOS 15.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 18.0, iPadOS 18.0, Mac Catalyst 18.0, macOS 15.0
 
 ## Properties
 

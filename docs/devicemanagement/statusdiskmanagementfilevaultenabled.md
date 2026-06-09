@@ -1,8 +1,8 @@
 # StatusDiskManagementFileVaultEnabled
 
-The enabled status of the File Vault.
+The status item that reports whether FileVault is enabled.
 
-**Platforms:** macOS 14.0, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 14.0
 
 ## Properties
 
@@ -16,4 +16,16 @@ A Boolean value that specifies the File Vault enabled status on the device.
 ## Discussion
 
 ### Status item availability
+
+### Status item example
+
+```json
+{
+    "diskmanagement": {
+        "filevault": {
+            "enabled": true
+        }
+    }
+}
+```
 

@@ -2,7 +2,7 @@
 
 A dictionary that describes a managed book.
 
-**Platforms:** iOS 8.0, iPadOS 8.0, Mac Catalyst 8.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 8.0, iPadOS 8.0, Mac Catalyst 8.0
 
 ## Properties
 
@@ -31,8 +31,6 @@ The kind of the media, which is one of the following values:
 - `epub`: An EPUB file in `gzip` format
 - `ibooks`: An iBooks Author file in `gzip` format
 - The file extension in the URL
-
-This value is available in iOS 8 and later.
 
 ### PersistentID
 

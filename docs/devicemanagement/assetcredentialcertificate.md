@@ -2,7 +2,7 @@
 
 A reference to a PKCS #1 or PEM encoded certificate.
 
-**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, tvOS 17.0, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, tvOS 17.0, visionOS 1.1, watchOS 10.0
 
 ## Properties
 
@@ -11,7 +11,7 @@ A reference to a PKCS #1 or PEM encoded certificate.
 - **Type:** `AssetCredentialCertificateAuthenticationObject`
 - **Required:** No
 
-The server authentication details.
+The server authentication details. If this key is absent, the default authentication type is MDM.
 
 ### Reference
 
@@ -44,6 +44,6 @@ Specify `com.apple.asset.credential.certificate` as the declaration type.
 
 ### Objects
 
-- [AssetCredentialCertificateAuthenticationObject](/documentation/devicemanagement/assetcredentialcertificateauthenticationobject) - The server authentication details for an asset-credential certificate.
-- [AssetCredentialCertificateReferenceObject](/documentation/devicemanagement/assetcredentialcertificatereferenceobject) - The external reference for an asset-credential certificate.
+- [AssetCredentialCertificateAuthenticationObject](/documentation/devicemanagement/assetcredentialcertificateauthenticationobject) - The server authentication details. If this key is absent, the default authentication type is MDM.
+- [AssetCredentialCertificateReferenceObject](/documentation/devicemanagement/assetcredentialcertificatereferenceobject) - The external reference. Ensure that the asset data uses a media type of `application/pkcs1` or `application/pem` to correctly identify the type of encoded certificate. If the asset data includes a `ContentType` sub-key, set it to the corresponding media type.
 

@@ -2,7 +2,7 @@
 
 The response from managing licenses.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 1.0
 
 ## Properties
 
@@ -25,16 +25,14 @@ An array of dictionaries representing successful and failed associations. If an 
 - **Type:** `string`
 - **Required:** No
 
-The value currently associated with the provided sToken. This field is only included in the response when a value has been set via the [Client Configuration](/documentation/devicemanagement/client-configuration) endpoint.
-
-See [Protecting Your VPP Account](/documentation/devicemanagement/protecting-your-vpp-account) for more information.
+The value currently associated with the provided `sToken`. This field is only included in the response when a value is set with the [Client Configuration](/documentation/devicemanagement/client-configuration) endpoint.
 
 ### disassociations
 
 - **Type:** `[VppAssociation]`
 - **Required:** No
 
-An array of dictionaries representing successful and failed disassociations. If a disassociation succeeds, its dictionary contains a license and either a client-user ID or the serial number of the device disassociated. The license may not be the license ID that was just disassociated; rather the license ID is any currently available license at the time of disassociation. If the disassociation fails, its dictionary contains the error message and number, and either the client-user ID or the serial number of the device that couldn’t be disassociated from the license.
+An array of dictionaries representing successful and failed disassociations. If a disassociation succeeds, its dictionary contains a license and either a client-user ID or the serial number of the device disassociated. The license may not be the license ID that was just disassociated; the license ID is any currently available license at the time of disassociation. If the disassociation fails, its dictionary contains the error message and number, and either the client-user ID or the serial number of the device that couldn’t be disassociated from the license.
 
 ### errorMessage
 
@@ -111,9 +109,9 @@ The status code for the response. Possible values are:
 
 `0` = Success. All requested associations and disassociations have succeeded.
 
--1 = Failure. All requested associations and disassociations have failed. An errorNumber, errorCode, and errorMessage is returned for each failed association and disassociation. See [VppAssociation](/documentation/devicemanagement/vppassociation) and  [Interpreting Error Codes](/documentation/devicemanagement/interpreting-error-codes) for more information.
+-1 = Failure. All requested associations and disassociations failed. An `errorNumber`, ` errorCode`, and `errorMessage` return for each failed association and disassociation. See [VppAssociation](/documentation/devicemanagement/vppassociation) for more information.
 
-`-3` = The licenses can’t be changed as requested. Some of the requested associations and disassociations have succeeded and others have failed. An errorNumber, errorCode, and errorMessage is returned for each failed association and disassociation. See [VppAssociation](/documentation/devicemanagement/vppassociation) and [Interpreting Error Codes](/documentation/devicemanagement/interpreting-error-codes) for more information.
+`-3` = The licenses can’t be changed as requested. Some of the requested associations and disassociations succeeded and others failed. An `errorNumber`, `errorCode`, and `errorMessage` return for each failed association and disassociation. See [VppAssociation](/documentation/devicemanagement/vppassociation) for more information.
 
 ### uId
 

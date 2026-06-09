@@ -2,7 +2,7 @@
 
 The payload that configures a Lock Screen message.
 
-**Platforms:** iOS 9.3, iPadOS 9.3, Mac Catalyst 9.3, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 9.3, iPadOS 9.3, Mac Catalyst 9.3
 
 ## Properties
 
@@ -20,12 +20,16 @@ The asset tag information for the device, displayed in the Login Window and Lock
 
 Deprecated. Use `LockScreenFootnote` instead.
 
+Deprecated: iOS 9.3.1+ | iPadOS 9.3.1+
+
 ### LockScreenFootnote
 
 - **Type:** `string`
 - **Required:** No
 
 The footnote displayed in the Login Window and Lock Screen.
+
+Available: iOS 9.3.1+ | iPadOS 9.3.1+
 
 ## Discussion
 

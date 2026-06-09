@@ -2,7 +2,7 @@
 
 The profile that configures web clips on the device.
 
-**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7
 
 ## Properties
 
@@ -13,6 +13,8 @@ The profile that configures web clips on the device.
 - **Default:** `false`
 
 If `true`, the system launches the web clip as a full-screen web app.
+
+Available: iOS 4+ | iPadOS 4+
 
 ### Icon
 
@@ -27,7 +29,9 @@ The PNG icon to show on the Home Screen. If not set, the system displays a white
 - **Required:** No
 - **Default:** `false`
 
-If `true`, a full screen web clip can navigate to an external web site without showing Safari UI. Otherwise, Safari UI appears when navigating away from the web clip’s URL. This key has no effect when `FullScreen` is `false`. Available in iOS 14 and later.
+If `true`, a full screen web clip can navigate to an external web site without showing Safari UI. Otherwise, Safari UI appears when navigating away from the web clip’s URL. This key has no effect when `FullScreen` is `false`.
+
+Available: iOS 14+ | iPadOS 14+
 
 ### IsRemovable
 
@@ -36,6 +40,8 @@ If `true`, a full screen web clip can navigate to an external web site without s
 - **Default:** `true`
 
 If `true`, the system enables removing the web clip.
+
+Available: iOS 4+ | iPadOS 4+
 
 ### Label
 
@@ -52,12 +58,16 @@ The name of the web clip that the system displays on the Home Screen.
 
 If `true`, the system prevents SpringBoard from adding shine to the icon.
 
+Available: iOS 4+ | iPadOS 4+
+
 ### TargetApplicationBundleIdentifier
 
 - **Type:** `string`
 - **Required:** No
 
-The application bundle identifier of the application that opens the URL. To use this property, install the profile through MDM. Available in iOS 14 and later.
+The application bundle identifier of the application that opens the URL. To use this property, install the profile through MDM.
+
+Available: iOS 14+ | iPadOS 14+
 
 ### URL
 

@@ -2,7 +2,7 @@
 
 The payload that configures network-usage rules.
 
-**Platforms:** iOS 9.0, iPadOS 9.0, Mac Catalyst 9.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 9.0, iPadOS 9.0, Mac Catalyst 9.0
 
 ## Properties
 
@@ -19,6 +19,8 @@ An array of application rules, that apply to only managed apps.
 - **Required:** No
 
 An array of SIM rules, that apply to all apps.
+
+Available: iOS 13+ | iPadOS 13+
 
 ## Discussion
 

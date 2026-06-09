@@ -2,7 +2,7 @@
 
 The declaration to configure a connection to a screen-sharing host.
 
-**Platforms:** macOS 14.0, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 14.0
 
 ## Properties
 
@@ -56,6 +56,8 @@ Specify `com.apple.configuration.screensharing.connection` as the declaration ty
 
 ### Configuration example
 
+This configuration sets up a screen-sharing connection to a remote Mac.
+
 ```json
 {
     "Type": "com.apple.configuration.screensharing.connection",
@@ -66,8 +68,7 @@ Specify `com.apple.configuration.screensharing.connection` as the declaration ty
         "HostName": "example.com",
         "DisplayName": "Host1",
         "DisplayConfiguration": {
-            "DisplayType": "Virtual1",
-            "UseHDR": true
+            "DisplayType": "Virtual1"
         }
     }
 }

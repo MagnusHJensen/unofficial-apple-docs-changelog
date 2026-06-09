@@ -2,7 +2,7 @@
 
 The payload that configures AirPlay settings.
 
-**Platforms:** iOS 7.0, iPadOS 7.0, Mac Catalyst 7.0, macOS 10.10, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 7.0, iPadOS 7.0, Mac Catalyst 7.0, macOS 10.10
 
 ## Properties
 
@@ -12,6 +12,8 @@ The payload that configures AirPlay settings.
 - **Required:** No
 
 If present, only AirPlay destinations in this list are available to the device. This allow list applies to supervised devices.
+
+Available: iOS 14.5+ | iPadOS 14.5+ | macOS 11.3+
 
 ### Passwords
 
@@ -26,6 +28,8 @@ If present, sets passwords for known AirPlay destinations. Using multiple entrie
 - **Required:** No
 
 Use `AllowList` instead. This key is deprecated in iOS 14.5 and macOS 11.3.
+
+Deprecated: iOS 14.5+ | iPadOS 14.5+ | macOS 11.3+
 
 ## Discussion
 

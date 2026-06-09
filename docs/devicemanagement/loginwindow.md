@@ -2,7 +2,7 @@
 
 The payload that configures Login Window behavior.
 
-**Platforms:** macOS 10.7, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.7
 
 ## Properties
 
@@ -28,12 +28,16 @@ The list of user GUIDs or group GUIDs of users that the system allows to log in.
 
 An optional user password to set up auto login. This must match the `AutologinUsername` user’s current password.
 
+Available: macOS 14+
+
 ### AutologinUsername
 
 - **Type:** `string`
 - **Required:** No
 
 The user short name for an existing user to set up auto login.
+
+Available: macOS 14+
 
 ### DenyList
 
@@ -58,13 +62,17 @@ If `true`, the system disregards the `>console` special user name, which provide
 
 If `true`, the system disables the automatic login option when using FileVault.
 
+Available: macOS 10.9+
+
 ### DisableScreenLockImmediate
 
 - **Type:** `boolean`
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the system disables the immediate Screen Lock functions. Available in macOS 10.13 and later.
+If `true`, the system disables the immediate Screen Lock functions.
+
+Available: macOS 10.13+
 
 ### HideAdminUsers
 
@@ -111,7 +119,9 @@ The text to display in the Login Window.
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the system disables the Log Out menu item when the user is logged in. Available in macOS 10.13 and later.
+If `true`, the system disables the Log Out menu item when the user is logged in.
+
+Available: macOS 10.13+
 
 ### PowerOffDisabledWhileLoggedIn
 
@@ -152,6 +162,8 @@ If `true`, the system shows the name and password dialog. If `false`, the system
 - **Default:** `false`
 
 If `true`, the system shows the Input Menu in the Login Window.
+
+Available: macOS 10.8+
 
 ### SHOWOTHERUSERS_MANAGED
 

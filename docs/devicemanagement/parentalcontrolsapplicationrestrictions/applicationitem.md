@@ -2,7 +2,7 @@
 
 A dictionary defining an app for parental control.
 
-**Platforms:** macOS 10.7, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.15
 
 ## Properties
 
@@ -13,6 +13,8 @@ A dictionary defining an app for parental control.
 
 The identifier of the app. Obtain this value from the Security framework using [SecCodeCopyDesignatedRequirement(_:_:_:)](/documentation/Security/SecCodeCopyDesignatedRequirement(_:_:_:)).
 
+Deprecated: macOS 27+
+
 ### bundleID
 
 - **Type:** `string`
@@ -20,12 +22,16 @@ The identifier of the app. Obtain this value from the Security framework using [
 
 The bundle ID of the app.
 
+Deprecated: macOS 27+
+
 ### detachedSignature
 
 - **Type:** `data`
 - **Required:** No
 
 The signature for an unsigned binary.
+
+Deprecated: macOS 27+
 
 ### disabled
 
@@ -35,6 +41,8 @@ The signature for an unsigned binary.
 
 If `true`, this app isn’t added to the allow list.
 
+Deprecated: macOS 27+
+
 ### displayName
 
 - **Type:** `string`
@@ -42,10 +50,14 @@ If `true`, this app isn’t added to the allow list.
 
 The name used for display purposes.
 
+Deprecated: macOS 27+
+
 ### subApps
 
 - **Type:** `[ParentalControlsApplicationRestrictions.ApplicationItem]`
 - **Required:** No
 
 An array of nested helper applications.
+
+Deprecated: macOS 27+
 

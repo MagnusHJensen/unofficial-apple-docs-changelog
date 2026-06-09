@@ -2,7 +2,7 @@
 
 The command to update the local administrator account password.
 
-**Platforms:** macOS 10.11, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.11
 
 ## Properties
 
@@ -11,7 +11,7 @@ The command to update the local administrator account password.
 - **Type:** `string`
 - **Required:** Yes
 
-The unique identifier of the local administrator account. If this value doesn’t match the GUID of an administrator account that MDM created during Device Enrollment Program (DEP) enrollment, the command returns an error.
+The unique identifier of the local administrator account. If this value doesn’t match the GUID of an administrator account that MDM created during Automated Device Enrollment (ADE) enrollment, the command returns an error.
 
 ### passwordHash
 

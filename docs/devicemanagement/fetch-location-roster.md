@@ -2,7 +2,7 @@
 
 Obtain a list of the locations the server manages.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** Device Assignment Services 5.0
 
 ## Topics
 

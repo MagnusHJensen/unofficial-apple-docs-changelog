@@ -1,8 +1,8 @@
 # StatusPasscodeCompliance
 
-A status report of passcode compliance.
+The status item that reports the device’s passcode compliance.
 
-**Platforms:** iOS 16.0, iPadOS 16.0, Mac Catalyst 16.0, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 16.0, iPadOS 16.0, Mac Catalyst 16.0, visionOS 1.1, watchOS 10.0
 
 ## Properties
 
@@ -16,4 +16,14 @@ If `true`, the passcode is in compliance with all passcode policies set on the d
 ## Discussion
 
 ### Status item availability
+
+### Status item example
+
+```json
+{
+    "passcode": {
+        "is-compliant": true
+    }
+}
+```
 

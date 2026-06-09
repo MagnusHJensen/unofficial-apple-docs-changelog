@@ -2,7 +2,7 @@
 
 A dictionary that contains the firewall settings.
 
-**Platforms:** macOS 10.12, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.12
 
 ## Properties
 
@@ -34,6 +34,8 @@ If `true`, the firewall is on.
 
 If `true`, logging is enabled.
 
+Available: macOS 12+
+
 ### LoggingOption
 
 - **Type:** `string`
@@ -41,6 +43,8 @@ If `true`, logging is enabled.
 - **Allowed Values:** `throttled`, `brief`, `detail`
 
 The type of logging emitted by the firewall.
+
+Available: macOS 12+
 
 ### StealthMode
 

@@ -2,7 +2,7 @@
 
 The declaration to configure screen-sharing host settings and restrictions.
 
-**Platforms:** macOS 14.0, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 14.0
 
 ## Properties
 
@@ -51,6 +51,8 @@ Specify `com.apple.configuration.screensharing.host.settings` as the declaration
 ### Configuration availability
 
 ### Configuration example
+
+This configuration manages screen-sharing host settings and restrictions.
 
 ```json
 {

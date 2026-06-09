@@ -2,7 +2,7 @@
 
 The payload that configures security preferences.
 
-**Platforms:** macOS 10.10, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.10
 
 ## Properties
 

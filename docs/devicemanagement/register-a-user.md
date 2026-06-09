@@ -2,7 +2,7 @@
 
 Register a user with the volume-purchase program.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 1.0
 
 ## Discussion
 

@@ -2,7 +2,7 @@
 
 The payload that configures system extensions.
 
-**Platforms:** macOS 10.15, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.15
 
 ## Properties
 
@@ -50,7 +50,9 @@ If `false`, restricts users from approving additional system extensions that con
 - **Type:** `SystemExtensions.NonRemovableFromUISystemExtensions`
 - **Required:** No
 
-A dictionary of system extensions on the computer. The dictionary maps the team identifiers (keys) to arrays of bundle identifiers, where the bundle identifier defines the system extension which can’t be disabled or uninstalled from System Settings or Finder. The set of system extensions between `RemovableSystemExtensions` and `NonRemovableFromUISystemExtensions` can to overlap.
+A dictionary of system extensions on the computer. The dictionary maps the team identifiers (keys) to arrays of bundle identifiers, where the bundle identifier defines the system extension which can’t be disabled or uninstalled from System Settings or Finder. The set of system extensions between `RemovableSystemExtensions` and `NonRemovableFromUISystemExtensions` can’t overlap.
+
+Available: macOS 15+
 
 ### NonRemovableSystemExtensions
 
@@ -59,6 +61,8 @@ A dictionary of system extensions on the computer. The dictionary maps the team 
 
 A dictionary of system extensions on the computer. The dictionary maps the team identifiers (keys) to arrays of bundle identifiers, where the bundle identifier defines the system extension which can’t be disabled or uninstalled when SIP is enabled. It’s an error for the same mapping to appear in the dictionary values corresponding to `RemovableSystemExtensions` and `NonRemovableSystemExtensions` keys.
 
+Available: macOS 15+
+
 ### RemovableSystemExtensions
 
 - **Type:** `SystemExtensions.RemovableSystemExtensions`
@@ -66,7 +70,7 @@ A dictionary of system extensions on the computer. The dictionary maps the team 
 
 A dictionary of system extensions that are allowed to remove themselves from the machine. The dictionary maps team identifiers (keys) to arrays of bundle identifiers, where the bundle identifier defines the system extension. An application using the `OSSystemExtensionDeactivationRequest` API can deactivate the specified system extensions without requiring an administrator to authorize the operation.
 
-Available in macOS 12 and later.
+Available: macOS 12+
 
 ## Discussion
 

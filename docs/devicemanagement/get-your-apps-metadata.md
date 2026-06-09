@@ -2,7 +2,7 @@
 
 Fetch metadata for your apps by using their identifiers.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 2.1
 
 ## Discussion
 

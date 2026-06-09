@@ -2,5 +2,5 @@
 
 Remove the Account-Driven Enrollment profile that the MDM server sets, which includes information about service discovery for account-driven enrollment.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** Device Assignment Services 5.1
 

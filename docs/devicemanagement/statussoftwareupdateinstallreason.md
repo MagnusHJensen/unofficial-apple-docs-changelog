@@ -1,8 +1,8 @@
 # StatusSoftwareUpdateInstallReason
 
-A status report of the reason for a pending software update on the device.
+The status item that reports the device’s pending software update reason.
 
-**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, tvOS 18.4, visionOS 26.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, tvOS 18.4, visionOS 26.0
 
 ## Properties
 
@@ -17,9 +17,24 @@ Details about the reason for a pending software update.
 
 ### Status item availability
 
+### Status item example
+
+```json
+{
+    "softwareupdate": {
+        "install-reason": {
+            "reason": [
+                "declaration"
+            ],
+            "declaration-id": "com.example.softwareupdate-config"
+        }
+    }
+}
+```
+
 ## Topics
 
 ### Objects
 
-- [StatusSoftwareUpdateInstallReasonDictionaryObject](/documentation/devicemanagement/statussoftwareupdateinstallreasondictionaryobject) - A status report that contains details about the reason for a pending software update.
+- [StatusSoftwareUpdateInstallReasonDictionaryObject](/documentation/devicemanagement/statussoftwareupdateinstallreasondictionaryobject) - Details about the reason for a pending software update.
 

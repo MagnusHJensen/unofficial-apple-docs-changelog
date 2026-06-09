@@ -2,7 +2,7 @@
 
 The payload that configures single sign-on (SSO).
 
-**Platforms:** iOS 7.0, iPadOS 7.0, Mac Catalyst 7.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 7.0, iPadOS 7.0, Mac Catalyst 7.0
 
 ## Properties
 
@@ -13,12 +13,16 @@ The payload that configures single sign-on (SSO).
 
 The Kerberos dictionary.
 
+Deprecated: iOS 26+ | iPadOS 26+
+
 ### Name
 
 - **Type:** `string`
 - **Required:** Yes
 
 The human-readable name for the account.
+
+Deprecated: iOS 26+ | iPadOS 26+
 
 ## Discussion
 

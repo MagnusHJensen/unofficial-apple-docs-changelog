@@ -1,8 +1,8 @@
 # StatusMigrationAssistantState
 
-The current migration state of the system.
+A status item that shows the device’s current migration state.
 
-**Platforms:** macOS 26.4, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 26.4
 
 ## Properties
 
@@ -24,4 +24,14 @@ The current migration state of the system, which has the following possible valu
 ## Discussion
 
 ### Status item availability
+
+### Status item example
+
+```json
+{
+    "migration-assistant": {
+        "state": "completed"
+    }
+}
+```
 

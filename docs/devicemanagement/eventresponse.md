@@ -2,7 +2,7 @@
 
 The response that contains the event identifier.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 2.0
 
 ## Properties
 

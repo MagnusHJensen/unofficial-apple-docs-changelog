@@ -1,8 +1,8 @@
 # AccountExchangeOAuthObject
 
-The declaration for configuring OAuth authentication of an Exchange account.
+The configuration settings for OAuth for this account.
 
-**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, visionOS 1.1, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, visionOS 1.1
 
 ## Properties
 
@@ -26,4 +26,6 @@ The URL that this account uses for signing in with OAuth. The system ignores thi
 - **Required:** No
 
 The URL that this account uses for token requests with OAuth. The system ignores this value unless `Enabled` is `true`.
+
+Available: iOS 15+ | iPadOS 15+ | visionOS 1.1+
 

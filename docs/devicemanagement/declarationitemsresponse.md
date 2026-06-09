@@ -2,8 +2,6 @@
 
 The set of available declarations on the server.
 
-**Platforms:** Device Assignment Services , VPP License Management 
-
 ## Properties
 
 ### Declarations

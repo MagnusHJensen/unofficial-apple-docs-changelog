@@ -2,7 +2,7 @@
 
 A dictionary that describes an APN configuration.
 
-**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0
 
 ## Properties
 
@@ -13,12 +13,16 @@ A dictionary that describes an APN configuration.
 
 The access point name.
 
+Deprecated: iOS 7+ | iPadOS 7+
+
 ### password
 
 - **Type:** `data`
 - **Required:** No
 
 The password for the user. For obfuscation purposes, the system encodes the password. If missing, the device prompts for the password during profile installation.
+
+Deprecated: iOS 7+ | iPadOS 7+
 
 ### proxy
 
@@ -27,6 +31,8 @@ The password for the user. For obfuscation purposes, the system encodes the pass
 
 The IP address or URL of the APN proxy.
 
+Deprecated: iOS 7+ | iPadOS 7+
+
 ### proxyPort
 
 - **Type:** `integer`
@@ -34,10 +40,14 @@ The IP address or URL of the APN proxy.
 
 The port number of the APN proxy.
 
+Deprecated: iOS 7+ | iPadOS 7+
+
 ### username
 
 - **Type:** `string`
 - **Required:** No
 
 The user name. If missing, the device prompts for it during profile installation.
+
+Deprecated: iOS 7+ | iPadOS 7+
 

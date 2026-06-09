@@ -2,11 +2,11 @@
 
 Get the set of licenses managed by your organization.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 1.0
 
 ## Discussion
 
-This call returns an exhaustive list of individual licenses managed by your organization. For performance reasons, it’s recommended that you use a combination of [Get Assets](/documentation/devicemanagement/get-assets-44p83)  and [Get Assignments](/documentation/devicemanagement/get-assignments-158kc) as described in the initial import process in [Managing Apps and Books Through Web Services](/documentation/devicemanagement/managing-apps-and-books-through-web-services-legacy) instead of this API.
+This call returns an exhaustive list of individual licenses managed by your organization. For performance reasons, it’s recommended that you use a combination of [Get Assets](/documentation/devicemanagement/get-assets-44p83)  and [Get Assignments](/documentation/devicemanagement/get-assignments-158kc) as described in the initial import process in [Managing apps and books through web services (Legacy)](/documentation/devicemanagement/managing-apps-and-books-through-web-services-legacy) instead of this API.
 
 Additionally, it’s not recommended to use the Apple license IDs returned in the [GetVppLicensesResponse](/documentation/devicemanagement/getvpplicensesresponse) in MDM implementations because it creates an unnecessary dependence on internal data models, which can change.
 

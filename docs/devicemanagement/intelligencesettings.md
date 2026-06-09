@@ -2,7 +2,7 @@
 
 The declaration to configure Apple Intelligence settings.
 
-**Platforms:** iOS 26.4, iPadOS 26.4, Mac Catalyst 26.4, macOS 26.4, visionOS 26.4, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 26.4, iPadOS 26.4, Mac Catalyst 26.4, macOS 26.4, visionOS 26.4
 
 ## Properties
 
@@ -38,6 +38,8 @@ If `false`, disables Image Playground.
 
 If `false`, disables Image Wand.
 
+Available: iOS 26.4+ | iPadOS 26.4+ | visionOS 26.4+
+
 ### AllowPersonalizedHandwritingResults
 
 - **Type:** `boolean`
@@ -46,6 +48,8 @@ If `false`, disables Image Wand.
 
 If `false`, disables Personalized Handwriting Results.
 
+Available: iOS 26.4+ | iPadOS 26.4+
+
 ### AllowVisualIntelligenceSummary
 
 - **Type:** `boolean`
@@ -53,6 +57,8 @@ If `false`, disables Personalized Handwriting Results.
 - **Default:** `true`
 
 If `false`, disables Visual Intelligence Summary.
+
+Available: iOS 26.4+ | iPadOS 26.4+
 
 ### AllowWritingTools
 
@@ -84,6 +90,8 @@ If `true`, forces On-Device Only Dictation.
 - **Default:** `false`
 
 If `true`, forces On-Device Only Translation.
+
+Available: iOS 26.4+ | iPadOS 26.4+
 
 ## Discussion
 

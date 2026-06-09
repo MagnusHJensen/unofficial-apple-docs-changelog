@@ -2,7 +2,7 @@
 
 A dictionary that contains details about an access point name (APN) configuration.
 
-**Platforms:** iOS 7.0, iPadOS 7.0, Mac Catalyst 7.0, watchOS 3.2, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 7.0, iPadOS 7.0, Mac Catalyst 7.0, watchOS 3.2
 
 ## Properties
 
@@ -12,11 +12,13 @@ A dictionary that contains details about an access point name (APN) configuratio
 - **Required:** No
 - **Allowed Values:** `1`, `2`, `3`
 
-The Internet Protocol versions that the system supports. Available in iOS 10.3 and later. Allowed values:
+The Internet Protocol versions that the system supports. Allowed values:
 
 - `1`: IPv4
 - `2`: IPv6
 - `3`: Both
+
+Available: iOS 10.3+ | iPadOS 10.3+ | watchOS 3.2+
 
 ### AllowedProtocolMaskInDomesticRoaming
 
@@ -24,11 +26,13 @@ The Internet Protocol versions that the system supports. Available in iOS 10.3 a
 - **Required:** No
 - **Allowed Values:** `1`, `2`, `3`
 
-The Internet Protocol versions that the system supports while roaming. Available in iOS 10.3 and later. Allowed values:
+The Internet Protocol versions that the system supports while roaming. Allowed values:
 
 - `1`: IPv4
 - `2`: IPv6
 - `3`: Both
+
+Available: iOS 10.3+ | iPadOS 10.3+ | watchOS 3.2+
 
 ### AllowedProtocolMaskInRoaming
 
@@ -36,11 +40,13 @@ The Internet Protocol versions that the system supports while roaming. Available
 - **Required:** No
 - **Allowed Values:** `1`, `2`, `3`
 
-The Internet Protocol versions that the system supports while roaming. Available in iOS 10.3 and later. Allowed values:
+The Internet Protocol versions that the system supports while roaming. Allowed values:
 
 - `1`: IPv4
 - `2`: IPv6
 - `3`: Both
+
+Available: iOS 10.3+ | iPadOS 10.3+ | watchOS 3.2+
 
 ### AuthenticationType
 
@@ -57,11 +63,14 @@ The authentication type for logging in.
 - **Required:** No
 - **Allowed Values:** `1`, `2`, `3`
 
-The default Internet Protocol versions. Available in iOS 10.3 but no longer used in iOS 11 and later. Allowed values:
+The default Internet Protocol versions. Allowed values:
 
 - `1`: IPv4
 - `2`: IPv6
 - `3`: Both
+
+Available: iOS 10.3+ | iPadOS 10.3+ | watchOS 3.2+
+Deprecated: iOS 11+ | iPadOS 11+
 
 ### EnableXLAT464
 
@@ -69,7 +78,9 @@ The default Internet Protocol versions. Available in iOS 10.3 but no longer used
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the system enables XLAT464. Available in iOS 16 and later and watchOS 9 and later.
+If `true`, the system enables XLAT464.
+
+Available: iOS 16+ | iPadOS 16+ | watchOS 9+
 
 ### Name
 

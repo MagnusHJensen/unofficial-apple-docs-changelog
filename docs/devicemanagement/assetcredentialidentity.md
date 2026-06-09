@@ -2,7 +2,7 @@
 
 A reference to a PKCS #12 password-protected identity.
 
-**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, tvOS 17.0, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, tvOS 17.0, visionOS 1.1, watchOS 10.0
 
 ## Properties
 
@@ -23,7 +23,7 @@ The keychain accessibility that determines when the keychain item is available f
 - **Type:** `AssetCredentialIdentityAuthenticationObject`
 - **Required:** No
 
-The server authentication details.
+The server authentication details. If this key is absent, the default authentication type is MDM.
 
 ### Reference
 
@@ -59,6 +59,6 @@ Specify `com.apple.asset.credential.identity` as the declaration type.
 
 ### Objects
 
-- [AssetCredentialIdentityAuthenticationObject](/documentation/devicemanagement/assetcredentialidentityauthenticationobject) - The server authentication details for an asset-credential identity.
-- [AssetCredentialIdentityReferenceObject](/documentation/devicemanagement/assetcredentialidentityreferenceobject) - A dictionary that describes the external reference.
+- [AssetCredentialIdentityAuthenticationObject](/documentation/devicemanagement/assetcredentialidentityauthenticationobject) - The server authentication details. If this key is absent, the default authentication type is MDM.
+- [AssetCredentialIdentityReferenceObject](/documentation/devicemanagement/assetcredentialidentityreferenceobject) - The external reference. Ensure that the asset data:
 

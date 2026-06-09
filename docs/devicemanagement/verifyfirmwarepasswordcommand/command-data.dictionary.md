@@ -2,7 +2,7 @@
 
 The command to verify the firmware password on a device.
 
-**Platforms:** macOS 10.13, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.13
 
 ## Properties
 

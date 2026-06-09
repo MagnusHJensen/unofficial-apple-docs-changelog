@@ -2,7 +2,7 @@
 
 A location used for managing purchases.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 1.0
 
 ## Properties
 

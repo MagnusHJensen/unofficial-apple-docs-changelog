@@ -2,7 +2,7 @@
 
 The declaration to configure keyboard settings.
 
-**Platforms:** iOS 26.4, iPadOS 26.4, Mac Catalyst 26.4, macOS 26.4, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 26.4, iPadOS 26.4, Mac Catalyst 26.4, macOS 26.4
 
 ## Properties
 
@@ -13,6 +13,8 @@ The declaration to configure keyboard settings.
 - **Default:** `true`
 
 If `false`, disables auto-correction.
+
+Available: iOS 26.4+ | iPadOS 26.4+
 
 ### AllowDefinitionLookup
 
@@ -46,6 +48,8 @@ If `false`, disables keyboard suggestions that include math solutions. This key 
 
 If `false`, disables predictive text.
 
+Available: iOS 26.4+ | iPadOS 26.4+
+
 ### AllowSlideToType
 
 - **Type:** `boolean`
@@ -53,6 +57,8 @@ If `false`, disables predictive text.
 - **Default:** `true`
 
 If `false`, disables slide to type.
+
+Available: iOS 26.4+ | iPadOS 26.4+
 
 ### AllowSpellCheck
 
@@ -62,6 +68,8 @@ If `false`, disables slide to type.
 
 If `false`, disables spell check.
 
+Available: iOS 26.4+ | iPadOS 26.4+
+
 ### AllowTextReplacement
 
 - **Type:** `boolean`
@@ -69,6 +77,8 @@ If `false`, disables spell check.
 - **Default:** `true`
 
 If `false`, disables text replacement.
+
+Available: iOS 26.4+ | iPadOS 26.4+
 
 ## Discussion
 

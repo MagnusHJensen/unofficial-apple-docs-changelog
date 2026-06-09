@@ -2,7 +2,7 @@
 
 The triggers for turning the device off.
 
-**Platforms:** macOS 10.7, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.7
 
 ## Properties
 

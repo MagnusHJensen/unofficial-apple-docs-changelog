@@ -2,7 +2,7 @@
 
 Store client-specific information on the server.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 1.0
 
 ## Discussion
 

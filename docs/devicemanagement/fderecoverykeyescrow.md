@@ -2,7 +2,7 @@
 
 The payload that configures FileVault recovery key escrow.
 
-**Platforms:** macOS 10.13, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.13
 
 ## Properties
 

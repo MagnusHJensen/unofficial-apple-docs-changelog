@@ -2,7 +2,7 @@
 
 The declaration to configure a Contacts account.
 
-**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, visionOS 1.1, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, visionOS 1.1
 
 ## Properties
 
@@ -48,6 +48,8 @@ Specify `com.apple.configuration.account.carddav` as the declaration type.
 ### Configuration availability
 
 ### Configuration example
+
+This configuration sets up a CardDAV account for contacts.
 
 ```json
 {

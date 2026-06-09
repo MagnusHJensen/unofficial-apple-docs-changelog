@@ -2,7 +2,7 @@
 
 The dictionary that contains details about a Dock item.
 
-**Platforms:** macOS 10.7, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.7
 
 ## Properties
 

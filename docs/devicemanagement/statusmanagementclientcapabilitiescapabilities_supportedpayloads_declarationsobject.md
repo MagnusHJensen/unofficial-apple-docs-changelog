@@ -1,8 +1,8 @@
 # StatusManagementClientCapabilitiesCapabilities_SupportedPayloads_DeclarationsObject
 
-A declaration that the client supports.
+A set of declarations that the client supports.
 
-**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, tvOS 16.0, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, tvOS 16.0, visionOS 1.1, watchOS 10.0
 
 ## Properties
 

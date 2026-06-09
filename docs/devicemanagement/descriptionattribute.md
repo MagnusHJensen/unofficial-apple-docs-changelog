@@ -2,7 +2,7 @@
 
 An object that represents a description attribute.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 2.1
 
 ## Properties
 

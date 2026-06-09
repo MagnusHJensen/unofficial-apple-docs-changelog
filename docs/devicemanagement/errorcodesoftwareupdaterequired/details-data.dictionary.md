@@ -2,7 +2,7 @@
 
 A dictionary that contains additional data about the software update required error code.
 
-**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, visionOS 26.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, visionOS 26.0
 
 ## Properties
 
@@ -26,6 +26,8 @@ The OS version that the device needs to update to, for example, “16.1”. This
 - **Required:** No
 
 The device enrolls in the beta program, allowing enforced software updates to beta program OS versions. The device remains in the beta program after the system completes the enforced software update.
+
+Available: iOS 17.5+ | iPadOS 17.5+ | macOS 14.5+ | visionOS 26+
 
 ## Topics
 

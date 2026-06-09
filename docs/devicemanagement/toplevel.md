@@ -2,7 +2,7 @@
 
 The top-level payload properties for all profiles.
 
-**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, tvOS 9.0, visionOS 1.0, watchOS 1.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, tvOS 9.0, visionOS 1.0, watchOS 1.0
 
 ## Properties
 
@@ -36,14 +36,14 @@ The number of seconds until the profile is automatically removed. If the `Remova
 - **Type:** `data`
 - **Required:** No
 
-Enabled if `IsEncrypted` is `true`.
+The encrypted payload content. Only present for encrypted payloads.
 
 ### PayloadContent
 
 - **Type:** `[TopLevel.PayloadContentItem]`
 - **Required:** Yes
 
-The array of payload dictionaries. If `IsEncrypted` is `true`, this array isn’t needed.
+The array of payload dictionaries. Not present for encrypted payloads.
 
 ### PayloadDescription
 
@@ -65,6 +65,8 @@ The human-readable name for the profile, which doesn’t need to be unique. The 
 - **Required:** No
 
 The date when a profile is no longer valid and the system presents an update button to the user.
+
+Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | tvOS 9+ | visionOS 1+
 
 ### PayloadIdentifier
 
@@ -96,6 +98,8 @@ On iOS users can’t remove a MDM profile.
 
 Requires a supervised device.
 
+Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | tvOS 9+
+
 ### PayloadScope
 
 - **Type:** `string`
@@ -103,6 +107,8 @@ Requires a supervised device.
 - **Allowed Values:** `System`, `User`
 
 A string that defines whether to install the profile for the system or the user. In many cases, it determines the location of certificate items, such as keychains. Though it’s not possible to declare different payload scopes, payloads like VPN can automatically install their items in both scopes, if needed.
+
+Available: iOS 4+ | iPadOS 4+ | macOS 10.8+ | tvOS 9+ | visionOS 1+ | watchOS 1+
 
 ### PayloadType
 
@@ -154,6 +160,8 @@ Allowed values:
 - `4`: Apple TV
 - `5`: Mac
 - `6`: Vision Pro
+
+Available: iOS 12.2+ | iPadOS 12.2+ | macOS 10.15+ | tvOS 12.2+ | visionOS 1.1+ | watchOS 5.2+
 
 ## Discussion
 

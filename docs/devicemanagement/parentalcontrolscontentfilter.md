@@ -2,7 +2,7 @@
 
 The payload that configures the parental control web content filters.
 
-**Platforms:** macOS 10.7, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.7
 
 ## Properties
 
@@ -14,12 +14,16 @@ The payload that configures the parental control web content filters.
 
 If `true`, enables web content filters.
 
+Available: macOS 15.2+
+
 ### filterAllowList
 
 - **Type:** `[string]`
 - **Required:** No
 
 The array of URLs that defines an allow list. When `restrictWeb` and `useContentFilter` are enabled, only URLs in the allow list are available to the user.
+
+Available: macOS 15.2+
 
 ### filterBlacklist
 
@@ -28,6 +32,8 @@ The array of URLs that defines an allow list. When `restrictWeb` and `useContent
 
 Use `filterDenyList` instead.
 
+Deprecated: macOS 15.2+
+
 ### filterDenyList
 
 - **Type:** `[string]`
@@ -35,12 +41,16 @@ Use `filterDenyList` instead.
 
 The array of URLs that defines a deny list. When `restrictWeb` and `useContentFilter` are enabled, no URLs in the deny list are available to the user.
 
+Available: macOS 15.2+
+
 ### filterWhitelist
 
 - **Type:** `[string]`
 - **Required:** No
 
 Use `filterAllowList` instead.
+
+Deprecated: macOS 15.2+
 
 ### restrictWeb
 
@@ -58,12 +68,16 @@ An array of sites that defines an allow list. If specified, this defines additio
 
 This key is required if `allowListEnabled` is `true`.
 
+Available: macOS 15.2+
+
 ### siteWhitelist
 
 - **Type:** `[ParentalControlsContentFilter.SiteWhitelistItem]`
 - **Required:** No
 
 Use `siteAllowList` instead.
+
+Deprecated: macOS 15.2+
 
 ### useContentFilter
 
@@ -80,6 +94,8 @@ If `true`, filters content automatically.
 - **Default:** `false`
 
 Use `allowListEnabled` instead.
+
+Deprecated: macOS 15.2+
 
 ## Discussion
 

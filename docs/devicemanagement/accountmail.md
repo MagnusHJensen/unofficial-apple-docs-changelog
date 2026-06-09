@@ -2,7 +2,7 @@
 
 The declaration to configure a Mail account.
 
-**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, visionOS 1.1, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, visionOS 1.1
 
 ## Properties
 
@@ -27,6 +27,8 @@ The settings for the outgoing mail server for this account.
 
 Settings for S/MIME.
 
+Available: iOS 17+ | iPadOS 17+ | visionOS 1.1+
+
 ### UserIdentityAssetReference
 
 - **Type:** `string`
@@ -48,6 +50,8 @@ Specify `com.apple.configuration.account.mail` as the declaration type.
 ### Configuration availability
 
 ### Configuration example
+
+This configuration sets up an IMAP email account with SMTP outgoing mail.
 
 ```json
 {
@@ -76,7 +80,7 @@ Specify `com.apple.configuration.account.mail` as the declaration type.
 
 ### Objects
 
-- [AccountMailIncomingServerObject](/documentation/devicemanagement/accountmailincomingserverobject) - The settings for configuring an incoming mail server.
-- [AccountMailOutgoingServerObject](/documentation/devicemanagement/accountmailoutgoingserverobject) - The settings for configuring an outgoing mail server.
+- [AccountMailIncomingServerObject](/documentation/devicemanagement/accountmailincomingserverobject) - The settings for the incoming mail server for this account.
+- [AccountMailOutgoingServerObject](/documentation/devicemanagement/accountmailoutgoingserverobject) - The settings for the outgoing mail server for this account.
 - [AccountMailSMIMEObject](/documentation/devicemanagement/accountmailsmimeobject) - Settings for S/MIME.
 

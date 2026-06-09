@@ -2,7 +2,7 @@
 
 The payload that configures web content filters.
 
-**Platforms:** iOS 7.0, iPadOS 7.0, Mac Catalyst 7.0, macOS 10.15, visionOS 1.1, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 7.0, iPadOS 7.0, Mac Catalyst 7.0, macOS 10.15, visionOS 1.1
 
 ## Properties
 
@@ -13,6 +13,8 @@ The payload that configures web content filters.
 
 An array of dictionaries that define the pages that the user can bookmark or visit. Use when `FilterType` is `BuiltIn`.
 
+Available: iOS 14.5+ | iPadOS 14.5+ | visionOS 1.1+
+
 ### AutoFilterEnabled
 
 - **Type:** `boolean`
@@ -21,12 +23,17 @@ An array of dictionaries that define the pages that the user can bookmark or vis
 
 If `true`, the system enables automatic filtering. Use when `FilterType` is `BuiltIn`.
 
+Available: iOS 7+ | iPadOS 7+ | visionOS 1.1+
+
 ### BlacklistedURLs
 
 - **Type:** `[string]`
 - **Required:** No
 
 Use `DenyListURLs` instead.
+
+Available: iOS 7+ | iPadOS 7+
+Deprecated: iOS 14.5+ | iPadOS 14.5+
 
 ### ContentFilterUUID
 
@@ -35,12 +42,16 @@ Use `DenyListURLs` instead.
 
 A globally unique identifier for this content filter configuration. The content filter processes network traffic for managed apps with the same `ContentFilterUUID` in their app attributes. Use when `FilterType` is `Plugin`.This key must be present for unsupervised devices and user enrollment.
 
+Available: iOS 16+ | iPadOS 16+ | visionOS 1.1+
+
 ### DenyListURLs
 
 - **Type:** `[string]`
 - **Required:** No
 
 An array of URLs that are inaccessible. Use when `FilterType` is `BuiltIn`. Limit the number of these URLs to no more than 500.
+
+Available: iOS 14.5+ | iPadOS 14.5+ | visionOS 1.1+
 
 ### FilterBrowsers
 
@@ -51,6 +62,8 @@ An array of URLs that are inaccessible. Use when `FilterType` is `BuiltIn`. Limi
 If `true`, the system enables filtering WebKit traffic. Use when `FilterType` is `Plugin`.
 
 > 
+
+Available: iOS 7+ | iPadOS 7+ | visionOS 1.1+
 
 ### FilterDataProviderBundleIdentifier
 
@@ -66,6 +79,8 @@ The bundle identifier string of the filter data provider system extension. This 
 
 The designated requirement string that the system embeds in the code signature of the filter data provider system extension. This string identifies the filter data provider when the filter starts running. Required if `FilterSockets` is `true`.
 
+Available: macOS 10.15+
+
 ### FilterGrade
 
 - **Type:** `string`
@@ -75,6 +90,8 @@ The designated requirement string that the system embeds in the code signature o
 
 The system uses this value to derive the relative order of content filters. Filters with a grade of `firewall` see network traffic before filters with a grade of `inspector`. However, the system doesn’t define the order of filters within a grade.
 
+Available: macOS 10.15+
+
 ### FilterPacketProviderBundleIdentifier
 
 - **Type:** `string`
@@ -82,12 +99,16 @@ The system uses this value to derive the relative order of content filters. Filt
 
 The bundle identifier string of the filter packet provider system extension. This string identifies the filter packet provider when the filter starts running. Required if `FilterPackets` is `true`.
 
+Available: macOS 10.15+
+
 ### FilterPacketProviderDesignatedRequirement
 
 - **Type:** `string`
 - **Required:** No
 
 The designated requirement string that the system embeds in the code signature of the filter packet provider system extension. This string identifies the filter packet provider when the filter starts running. Required if `FilterPackets` is `true`.
+
+Available: macOS 10.15+
 
 ### FilterPackets
 
@@ -98,6 +119,8 @@ The designated requirement string that the system embeds in the code signature o
 If `true` and `FilterType` is `Plugin`, the system enables filtering network packets. Use when `FilterType` is `Plugin`.
 
 > 
+
+Available: macOS 10.15+
 
 ### FilterSockets
 
@@ -118,13 +141,17 @@ If `true`, enables the filtering of socket traffic. Use when `FilterType` is `Pl
 
 The type of filter, built-in or plug-in. In macOS, the system only supports the plug-in value.
 
+Available: iOS 8+ | iPadOS 8+ | macOS 10.15+ | visionOS 1.1+
+
 ### FilterURLs
 
 - **Type:** `boolean`
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the system filters URL requests. Use when `FilterType` is `Plugin`. Available in iOS 26 and macOS 26, and later.
+If `true`, the system filters URL requests. Use when `FilterType` is `Plugin`.
+
+Available: iOS 26+ | iPadOS 26+ | macOS 26+
 
 ### HideDenyListURLs
 
@@ -133,6 +160,8 @@ If `true`, the system filters URL requests. Use when `FilterType` is `Plugin`. A
 - **Default:** `false`
 
 If `true`, the device hides the `DenyListURLs` item in the profiles that display in Settings > General > VPN & Device Management.
+
+Available: iOS 18+ | iPadOS 18+ | visionOS 2+
 
 ### Organization
 
@@ -162,6 +191,8 @@ The UUID of the certificate payload within the same profile that the system uses
 
 An array or URLs that are accessible whether or not the automatic filter allows access. Use when `FilterType` is `BuiltIn`. Requires that `AutoFilterEnabled` is `true`.
 
+Available: iOS 7+ | iPadOS 7+ | visionOS 1.1+
+
 ### PluginBundleID
 
 - **Type:** `string`
@@ -177,6 +208,8 @@ The bundle ID of the plug-in that provides filtering service. Required when `Fil
 
 If `true`, this payload enforces a policy which requires retention of browsing history. This causes Safari to disable clearing of browsing history, and prevents the use of private browsing mode because that mode doesn’t keep browsing history.
 
+Available: iOS 26+ | iPadOS 26+ | macOS 26+ | visionOS 26+
+
 ### ServerAddress
 
 - **Type:** `string`
@@ -189,7 +222,9 @@ The server address, which may be the IP address, hostname, or URL. Use when `Fil
 - **Type:** `WebContentFilter.URLFilterParameters`
 - **Required:** No
 
-A dictionary containing URL filter parameters. Required when `FilterURLs` is `true`. Available in iOS 26 and macOS 26 and later.
+A dictionary containing URL filter parameters. Required when `FilterURLs` is `true`.
+
+Available: iOS 26+ | iPadOS 26+ | macOS 26+
 
 ### UserDefinedName
 
@@ -218,6 +253,9 @@ The custom dictionary that the filtering service plug-in needs. Use when `Filter
 - **Required:** No
 
 Use `AllowListBookmarks` instead.
+
+Available: iOS 7+ | iPadOS 7+
+Deprecated: iOS 14.5+ | iPadOS 14.5+
 
 ## Discussion
 

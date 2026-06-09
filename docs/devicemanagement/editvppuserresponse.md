@@ -2,7 +2,7 @@
 
 The response from editing a user.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 1.0
 
 ## Properties
 
@@ -11,9 +11,7 @@ The response from editing a user.
 - **Type:** `string`
 - **Required:** No
 
-The value currently associated with the provided sToken. This field is only included in the response when a value has been set via the [Client Configuration](/documentation/devicemanagement/client-configuration) endpoint.
-
-See [Protecting Your VPP Account](/documentation/devicemanagement/protecting-your-vpp-account) for more information.
+The value currently associated with the provided `sToken`. This field is only included in the response when a value is set with the [Client Configuration](/documentation/devicemanagement/client-configuration) endpoint.
 
 ### errorMessage
 
@@ -34,7 +32,7 @@ The numeric code of the error.
 - **Type:** `int64`
 - **Required:** No
 
-The UNIX epoch timestamp, in milliseconds, when the account’s sToken or password expires (whichever is earlier).
+The UNIX epoch timestamp, in milliseconds, when the account’s `sToken` or password expires (whichever is earlier).
 
 ### location
 

@@ -2,7 +2,7 @@
 
 A dictionary that contains FileVault unlock options.
 
-**Platforms:** macOS 10.9, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.9
 
 ## Properties
 
@@ -20,10 +20,14 @@ A FileVault user’s password, or if using a CoreStorage volume, the personal re
 
 The data for a .p12 export of the private key for the current institutional recovery key, which requires that `KeyType` is `institutional`. The system ignores this key on APFS volumes.
 
+Deprecated: macOS 10.15+
+
 ### PrivateKeyExportPassword
 
 - **Type:** `string`
 - **Required:** No
 
 The password for `PrivateKeyExport`. Either `Password` or both `PrivateKeyExport` and `PrivateKeyExportPassword` must be present. The system ignores this key on APFS volumes.
+
+Deprecated: macOS 10.15+
 

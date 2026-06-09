@@ -2,7 +2,7 @@
 
 A dictionary that contains settings for accessibility.
 
-**Platforms:** iOS 16.0, iPadOS 16.0, Mac Catalyst 16.0, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 16.0, iPadOS 16.0, Mac Catalyst 16.0, watchOS 10.0
 
 ## Properties
 
@@ -29,6 +29,8 @@ If `true`, the system enables grayscale display.
 - **Default:** `false`
 
 If `true`, the system enables increase contrast.
+
+Available: iOS 16+ | iPadOS 16+
 
 ### Item
 

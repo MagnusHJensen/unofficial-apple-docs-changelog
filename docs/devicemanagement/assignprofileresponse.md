@@ -1,7 +1,5 @@
 # AssignProfileResponse
 
-**Platforms:** Device Assignment Services , VPP License Management 
-
 ## Properties
 
 ### devices
@@ -12,6 +10,11 @@
 ### profile_uuid
 
 - **Type:** `string`
+- **Required:** No
+
+### retry_after_seconds
+
+- **Type:** `integer`
 - **Required:** No
 
 ## Topics

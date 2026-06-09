@@ -2,7 +2,7 @@
 
 A dictionary that configures a service management rule.
 
-**Platforms:** macOS 13.0, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 13.0
 
 ## Properties
 

@@ -2,7 +2,7 @@
 
 The response dictionary that contains the administrator setup information.
 
-**Platforms:** macOS 10.11, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.11
 
 ## Properties
 
@@ -11,12 +11,12 @@ The response dictionary that contains the administrator setup information.
 - **Type:** `string`
 - **Required:** No
 
-The `GeneratedUID` of the administrator account. This value is available in macOS 10.11 and later.
+The `GeneratedUID` of the administrator account.
 
 ### shortName
 
 - **Type:** `string`
 - **Required:** No
 
-The short name of the administrator account. This value is available in macOS 10.11 and later.
+The short name of the administrator account.
 

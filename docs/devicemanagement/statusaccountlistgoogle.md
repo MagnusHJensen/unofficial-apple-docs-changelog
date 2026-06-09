@@ -1,8 +1,8 @@
 # StatusAccountListGoogle
 
-A status report of the client’s Google accounts.
+The status item that lists the client’s Google accounts.
 
-**Platforms:** iOS 16.0, iPadOS 16.0, Mac Catalyst 16.0, macOS 13.0, visionOS 1.1, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 16.0, iPadOS 16.0, Mac Catalyst 16.0, macOS 13.0, visionOS 1.1
 
 ## Properties
 
@@ -17,9 +17,11 @@ A list of status values for the Google accounts.
 
 ### Status item availability
 
+### Status item example
+
 ## Topics
 
 ### Objects
 
-- [StatusAccountListGoogleAccountObject](/documentation/devicemanagement/statusaccountlistgoogleaccountobject) - A status report of the client’s Google account details.
+- [StatusAccountListGoogleAccountObject](/documentation/devicemanagement/statusaccountlistgoogleaccountobject) - A Google account.
 

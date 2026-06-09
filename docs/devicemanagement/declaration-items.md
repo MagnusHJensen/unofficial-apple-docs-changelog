@@ -2,8 +2,6 @@
 
 Get a list of the declarations available on the server.
 
-**Platforms:** Device Assignment Services , VPP License Management 
-
 ## Topics
 
 ### Response

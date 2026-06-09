@@ -2,7 +2,7 @@
 
 The payload that configures login behavior.
 
-**Platforms:** macOS 10.7, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.7
 
 ## Properties
 
@@ -13,6 +13,8 @@ The payload that configures login behavior.
 - **Default:** `false`
 
 If `true`, the system prevents the user from disabling login item launches by using the Shift key.
+
+Available: macOS all+
 
 ## Discussion
 

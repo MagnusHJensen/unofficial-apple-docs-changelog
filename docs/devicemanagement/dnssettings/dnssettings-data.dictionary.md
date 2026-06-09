@@ -2,7 +2,7 @@
 
 A dictionary that defines a configuration for an encrypted DNS server.
 
-**Platforms:** iOS 14.0, iPadOS 14.0, Mac Catalyst 14.0, macOS 11.0, visionOS 1.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 14.0, iPadOS 14.0, Mac Catalyst 14.0, macOS 11.0, visionOS 1.0
 
 ## Properties
 
@@ -13,6 +13,8 @@ A dictionary that defines a configuration for an encrypted DNS server.
 - **Default:** `false`
 
 If `true`, the device allows failover to the default system DNS resolver.
+
+Available: iOS 26+ | iPadOS 26+ | macOS 26+ | visionOS 26+
 
 ### DNSProtocol
 
@@ -28,6 +30,8 @@ The encrypted transport protocol used to communicate with the DNS server.
 - **Required:** No
 
 The UUID that points to an identity certificate payload. The system uses this identity to authenticate the user to the DNS resolver.
+
+Available: iOS 16+ | iPadOS 16+ | macOS 13+ | visionOS 1+
 
 ### ServerAddresses
 

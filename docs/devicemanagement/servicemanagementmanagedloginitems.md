@@ -2,7 +2,7 @@
 
 This payload that configures managed login items, which auto-enables and auto-allows matched items.
 
-**Platforms:** macOS 13.0, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 13.0
 
 ## Properties
 

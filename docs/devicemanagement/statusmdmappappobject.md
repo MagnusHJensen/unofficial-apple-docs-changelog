@@ -2,7 +2,7 @@
 
 A status report that contains details about an MDM-installed app.
 
-**Platforms:** iOS 16.0, iPadOS 16.0, Mac Catalyst 16.0, tvOS 16.0, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 16.0, iPadOS 16.0, Mac Catalyst 16.0, tvOS 16.0, visionOS 1.1, watchOS 10.0
 
 ## Properties
 
@@ -19,7 +19,7 @@ If `true`, the system removed the app and only this key and the `identifier` key
 - **Type:** `string`
 - **Required:** No
 
-The app’s external version identifier. You can also retrieve this value from the App Store. For more information, see [Apps and Books for Organizations](/documentation/devicemanagement/apps-and-books-for-organizations).
+The app’s external version identifier. You can also retrieve this value from the App Store. For more information, see [Apps and books metadata for organizations](/documentation/devicemanagement/apps-and-books-metadata-for-organizations).
 
 If the current external version identifier of an app on the App Store doesn’t match the external version identifier reported by the device, there may be an app update available for the device.
 

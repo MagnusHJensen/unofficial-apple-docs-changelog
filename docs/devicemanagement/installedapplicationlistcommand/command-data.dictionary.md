@@ -2,7 +2,7 @@
 
 The command to get a list of the installed apps on a device.
 
-**Platforms:** iOS 5.0, iPadOS 5.0, Mac Catalyst 5.0, macOS 10.7, tvOS 10.2, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 5.0, iPadOS 5.0, Mac Catalyst 5.0, macOS 10.7, tvOS 10.2, visionOS 1.1, watchOS 10.0
 
 ## Properties
 
@@ -11,9 +11,11 @@ The command to get a list of the installed apps on a device.
 - **Type:** `[string]`
 - **Required:** No
 
-An array of app identifiers. Provide this value to limit the response to only include these apps. This value is available in iOS 7 and later, macOS 10.15 and later, tvOS 10.2 and later, visionOS 1.1 and later, and watchOS 10 and later.
+An array of app identifiers. Provide this value to limit the response to only include these apps.
 
 > 
+
+Available: iOS 7+ | iPadOS 7+ | macOS 10.15+ | tvOS 10.2+ | visionOS 1.1+ | watchOS 10+
 
 ### Items
 
@@ -25,15 +27,19 @@ An array of strings that represent keys in [InstalledApplicationListResponse.Ins
 
 > 
 
+Available: iOS 14+ | iPadOS 14+ | tvOS 14+ | visionOS 1.1+ | watchOS 10+
+
 ### ManagedAppsOnly
 
 - **Type:** `boolean`
 - **Required:** No
 - **Default:** `false`
 
-If `true`, only get a list of managed apps, excluding ones that Declarative Device Management is managing. This value is available in iOS 7 and later, macOS 10.15 and later, and tvOS 10.2 and later.
+If `true`, only get a list of managed apps, excluding ones that Declarative Device Management is managing.
 
 > 
+
+Available: iOS 7+ | iPadOS 7+ | macOS 10.15+ | tvOS 10.2+ | visionOS 1.1+ | watchOS 10+
 
 ### RequestRequiresNetworkTether
 

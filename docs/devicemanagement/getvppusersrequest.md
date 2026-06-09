@@ -2,8 +2,6 @@
 
 The request for the users’ details service.
 
-**Platforms:** Device Assignment Services , VPP License Management 
-
 ## Properties
 
 ### batchToken
@@ -15,7 +13,7 @@ A token that signifies which batch is being returned. A `batchToken` value is ge
 
 For an initial request that doesn’t include `batchToken` or `sinceModifiedToken`, a `batchToken` value is returned if the number of results exceeds a server-controlled limit. Subsequent requests must include batchToken. As long as additional batches remain, the server returns a new `batchToken` value in its response.
 
-See [Batched Responses](/documentation/devicemanagement/retrieving-a-large-record-set#Batched-Responses) for more information.
+See [Handle batched responses](/documentation/devicemanagement/retrieving-a-large-record-set#Handle-batched-responses) for more information.
 
 ### includeRetired
 
@@ -45,14 +43,14 @@ A value from 1 to the `totalBatchCount` value that specifies the batch of result
 
 A token that marks a place in time. After all records have been returned for a request, the server includes a `sinceModifiedToken` value in the response. Use it in subsequent requests to get licenses that have been modified since the token was generated.
 
-See [About SinceModifiedToken](/documentation/devicemanagement/retrieving-a-large-record-set#About-SinceModifiedToken) for more information.
+See [Track changes](/documentation/devicemanagement/retrieving-a-large-record-set#Track-changes) for more information.
 
 ### sToken
 
 - **Type:** `string`
 - **Required:** Yes
 
-The authentication token. For more information, see [Authentication](/documentation/devicemanagement/managing-apps-and-books-through-web-services-legacy#Authentication).
+The authentication token. For more information, see [Authenticate with the web service](/documentation/devicemanagement/managing-apps-and-books-through-web-services-legacy#Authenticate-with-the-web-service).
 
 ## Discussion
 

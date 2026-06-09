@@ -2,7 +2,7 @@
 
 Fetch metadata for genres from the catalog by using their identifiers.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 2.2
 
 ## Discussion
 

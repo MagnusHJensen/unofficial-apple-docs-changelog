@@ -2,7 +2,7 @@
 
 An ACME identity that the device generates.
 
-**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, tvOS 17.0, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, tvOS 17.0, visionOS 1.1, watchOS 10.0
 
 ## Properties
 
@@ -140,5 +140,5 @@ The following table indicates which System on Chips (SoCs) support ACME attestat
 
 ### Objects
 
-- [ACMECredentialSubjectAltNameObject](/documentation/devicemanagement/acmecredentialsubjectaltnameobject) - Specifies the subject’s alternative name that the device requests for the certificate that the ACME server issues.
+- [ACMECredentialSubjectAltNameObject](/documentation/devicemanagement/acmecredentialsubjectaltnameobject) - Specifies the subject’s alternative name that the device requests for the certificate that the ACME server issues. The ACME server may override or ignore this field in the certificate it issues.
 

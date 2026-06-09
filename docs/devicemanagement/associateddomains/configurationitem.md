@@ -2,7 +2,7 @@
 
 A dictionary that maps apps to their associated domains.
 
-**Platforms:** macOS 10.15, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.15
 
 ## Properties
 
@@ -26,5 +26,7 @@ The domains to associate with the app. Each string is in the form of `service:do
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the system enables direct download of data for this domain instead of through a CDN. Set the entitlement value for this domain to `service:domain?mode=managed`; otherwise, the system ignores this value. Available in macOS 11 and later.
+If `true`, the system enables direct download of data for this domain instead of through a CDN. Set the entitlement value for this domain to `service:domain?mode=managed`; otherwise, the system ignores this value.
+
+Available: macOS 11+
 

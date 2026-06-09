@@ -6,50 +6,50 @@ Manage your organization’s devices remotely.
 
 ## Overview
 
-Deploying a mobile device management (MDM) solution allows administrators to securely and remotely configure enrolled devices. Administrators use Apple School Manager or Apple Business to enroll organization-owned devices, and users can enroll their own devices. After a device is enrolled, administrators can update software and device settings, monitor compliance with organizational policies, remotely erase or lock devices, and install apps and books developed in-house or purchased through Apple School Manager or Apple Business.
+Deploying a device management service allows administrators to securely and remotely configure enrolled devices. Administrators use Apple School Manager or Apple Business Manager to enroll organization-owned devices, and users can enroll their own devices. After enrolling a device, administrators can update software and device settings; monitor compliance with organizational policies; remotely erase or lock devices; and install apps, books, and subscriptions developed in-house or purchased through Apple School Manager or Apple Business Manager.
 
-MDM works with Managed App Distribution to provide a seamless download and launch experience. For more information, see [ManagedAppDistribution](/documentation/ManagedAppDistribution).
+A device management service uses the Mobile Device Management (MDM) protocol to establish a communication channel with devices and declarative configurations, as well as configuration profiles to deploy settings.
+
+Device management works with Managed App Distribution and Managed App Configuration to provide a seamless app download and launch experience. For more information, see [ManagedAppDistribution](/documentation/ManagedAppDistribution) and [ManagedApp](/documentation/ManagedApp).
 
 ## Topics
 
-### Configuration Profiles
+### Implementing device management
 
-- [Configuring Multiple Devices Using Profiles](/documentation/devicemanagement/configuring-multiple-devices-using-profiles) - Create and deploy configuration profiles to users within your organization.
-- [Profile-Specific Payload Keys](/documentation/devicemanagement/profile-specific-payload-keys) - Use the appropriate payload for your configuration needs.
+- [Device management essentials](/documentation/devicemanagement/device-management-essentials) - Set up and maintain connectivity with devices and leverage declarative device management.
+- [Device enrollment](/documentation/devicemanagement/device-enrollment) - Implement Automated Device Enrollment and account-driven enrollments.
+- [Identity management](/documentation/devicemanagement/identity-management) - Use Platform Single Sign-on and Managed Device Attestation on managed devices.
+- [Content management](/documentation/devicemanagement/content-management) - Deploy apps and books to managed devices.
+- [Device life cycle](/documentation/devicemanagement/device-life-cycle) - Manage software updates, migrate managed devices, and return them into service.
 
-### MDM Protocol
+### MDM protocol
 
-- [Implementing Device Management](/documentation/devicemanagement/implementing-device-management) - Set up an MDM server and send commands to managed devices.
-- [Commands and Queries](/documentation/devicemanagement/commands-and-queries) - Manage the configuration and behavior of your devices.
-- [Check-in](/documentation/devicemanagement/check-in) - Authenticate devices and maintain push tokens with these commands.
-- [Account-driven enrollment](/documentation/devicemanagement/account-driven-enrollment) - Authenticate devices using a user identity-focused workflow.
-- [Migrating managed devices](/documentation/devicemanagement/migrating-managed-devices) - Migrate managed devices from one device management service to another.
+- [Commands and queries](/documentation/devicemanagement/commands-and-queries) - Remotely execute management commands and queries on managed devices.
+- [Check-in](/documentation/devicemanagement/check-in) - Authenticate devices and maintain push tokens.
 
-### Declarative Management
+### Declarative management
 
-- [Leveraging the declarative management data model to scale devices](/documentation/devicemanagement/leveraging-the-declarative-management-data-model-to-scale-devices) - Use declarative management to make devices more autonomous and proactive.
-- [Integrating Declarative Management](/documentation/devicemanagement/integrating-declarative-management) - Use the declarative management protocol to manage MDM features such as device enrollment and un-enrollment and device and user authentication.
-- [Deploying apps with declarative management](/documentation/devicemanagement/deploying-apps-with-declarative-management) - Use declarative app configurations to deploy managed apps to devices.
-- [Declarations](/documentation/devicemanagement/devicemanagement-declarations) - The available declarations for device management.
-- [Status Reports](/documentation/devicemanagement/status-reports) - Reports from the device about its current state.
+- [Declarations](/documentation/devicemanagement/devicemanagement-declarations) - Configure devices using declarative device management.
+- [Status items](/documentation/devicemanagement/status-items) - Monitor device state using status reports.
 
-### Deployment Services
+### Configuration profiles
 
-- [Device Assignment](/documentation/devicemanagement/device-assignment) - Manage devices for your students and employees.
-- [Roster Management](/documentation/devicemanagement/roster-management) - Manage classes for your students and teachers.
-- [App and Book Management](/documentation/devicemanagement/app-and-book-management) - Manage apps and books for your students and employees.
+- [Profile-specific payload keys](/documentation/devicemanagement/profile-specific-payload-keys) - Apply settings to devices using configuration profiles.
 
-### Endpoints
-
-- [Fetch a apps resource's relationship](/documentation/devicemanagement/fetch-a-apps-resource's-relationship)
-- [Fetch a books resource's relationship](/documentation/devicemanagement/fetch-a-books-resource's-relationship)
-- [Get Multiple Genres](/documentation/devicemanagement/get-multiple-genres) - Fetch metadata for genres from the catalog by using their identifiers.
-- [Get a Genre](/documentation/devicemanagement/get-a-genre) - Fetch metadata for a genre from the catalog by using its identifier.
-
-### Dictionaries
+### Miscellaneous data formats
 
 - [ManifestURL](/documentation/devicemanagement/manifesturl) - The URL to the app manifest.
 - [PasswordHash](/documentation/devicemanagement/passwordhash) - A dictionary that contains the password hash for the account.
-- [RelationshipResponse](/documentation/devicemanagement/relationshipresponse)
+
+### Deployment services
+
+- [Device assignment](/documentation/devicemanagement/device-assignment) - Manage devices for your students and employees.
+- [Roster management](/documentation/devicemanagement/roster-management) - Manage classes for your students and teachers.
+- [App, Book, and Subscription Management](/documentation/devicemanagement/app-book-and-subscription-management) - Manage apps, books, and subscriptions for your students and employees.
+- [Apple School Manager and Apple Business APIs](/documentation/apple-school-and-business-manager-api) - Automate device management actions and access data about devices that enroll using Automated Device Enrollment with the Apple School Manager and Apple Business APIs.
+
+### Dictionaries
+
 - [ResponseErrorCode](/documentation/devicemanagement/responseerrorcode) - An error code.
+- [StorefrontsResponse](/documentation/devicemanagement/storefrontsresponse) - The response to a storefront request.
 

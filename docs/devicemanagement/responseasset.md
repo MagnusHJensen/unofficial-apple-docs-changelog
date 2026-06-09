@@ -2,7 +2,7 @@
 
 The asset that the organization owns.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 2.0
 
 ## Properties
 
@@ -75,7 +75,7 @@ The total amount of the asset.
 
 - **Type:** `[string]`
 - **Required:** No
-- **Allowed Values:** `iOS`, `macOS`, `tvOS`, `watchOS`
+- **Allowed Values:** `iOS`, `macOS`, `tvOS`, `watchOS`, `visionOS`
 
 The platforms that the asset supports.
 

@@ -2,7 +2,7 @@
 
 The response object for the secure boot settings.
 
-**Platforms:** macOS 10.15, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.15
 
 ## Properties
 
@@ -21,7 +21,7 @@ The device’s external boot level, which indicates whether it allows booting fr
 
 Reports which security features the user disables in `recoveryOS`. This property is only present for a Mac with Apple silicon when `SecureBootLevel` is `medium`.
 
-Available in iOS 11 and later.
+Available: macOS 11+
 
 ### SecureBootLevel
 

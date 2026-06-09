@@ -1,8 +1,8 @@
 # StatusManagementClientCapabilitiesCapabilitiesObject
 
-A collection of the device’s supported features, payloads, and versions.
+An object that contains the client’s protocol capabilities. These typically only change when the device upgrades its software. An implicit status subscription for this status item is always present, so the client always reports changes to the server.
 
-**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, tvOS 16.0, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, tvOS 16.0, visionOS 1.1, watchOS 10.0
 
 ## Properties
 
@@ -31,6 +31,6 @@ A list of protocol versions that the client supports.
 
 ### Objects
 
-- [StatusManagementClientCapabilitiesCapabilities_SupportedFeaturesObject](/documentation/devicemanagement/statusmanagementclientcapabilitiescapabilities_supportedfeaturesobject) - A set of optional protocol features that the client supports.
-- [StatusManagementClientCapabilitiesCapabilities_SupportedPayloadsObject](/documentation/devicemanagement/statusmanagementclientcapabilitiescapabilities_supportedpayloadsobject) - The set of declaration and status items that the client supports.
+- [StatusManagementClientCapabilitiesCapabilities_SupportedFeaturesObject](/documentation/devicemanagement/statusmanagementclientcapabilitiescapabilities_supportedfeaturesobject) - A set of optional protocol features that the client supports. Each object’s key represents a feature, and the property value represents the feature’s associated parameters.
+- [StatusManagementClientCapabilitiesCapabilities_SupportedPayloadsObject](/documentation/devicemanagement/statusmanagementclientcapabilitiescapabilities_supportedpayloadsobject) - A set of declaration and status items that the client supports.
 

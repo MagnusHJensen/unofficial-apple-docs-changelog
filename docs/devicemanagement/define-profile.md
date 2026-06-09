@@ -2,7 +2,7 @@
 
 Define a profile that can be distributed to the devices in your organization.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** Device Assignment Services 5.0
 
 ## Discussion
 

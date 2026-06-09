@@ -1,8 +1,8 @@
 # StatusAppManagedListStatusReasonObject
 
-A dictionary that contains details about a declarative managed app’s state.
+Information about a status error.
 
-**Platforms:** iOS 17.2, iPadOS 17.2, Mac Catalyst 17.2, macOS 26.0, visionOS 2.4, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 17.2, iPadOS 17.2, Mac Catalyst 17.2, macOS 26.0, visionOS 2.4
 
 ## Properties
 
@@ -31,5 +31,5 @@ A dictionary that contains additional details about the state.
 
 ### Objects
 
-- [StatusAppManagedListStatusReason_DetailsObject](/documentation/devicemanagement/statusappmanagedliststatusreason_detailsobject) - A dictionary that contains additional details about a declarative managed app’s error state.
+- [StatusAppManagedListStatusReason_DetailsObject](/documentation/devicemanagement/statusappmanagedliststatusreason_detailsobject) - A dictionary that contains additional details about the state.
 

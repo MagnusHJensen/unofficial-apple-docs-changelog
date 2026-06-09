@@ -2,7 +2,7 @@
 
 The payload that configures parental control for dictation and profanity.
 
-**Platforms:** macOS 10.9, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.9
 
 ## Properties
 
@@ -14,6 +14,8 @@ The payload that configures parental control for dictation and profanity.
 
 If `false`, disables dictation. Use `allowDictation` in Restrictions instead.
 
+Deprecated: macOS 10.13+
+
 ### Profanity Allowed
 
 - **Type:** `boolean`
@@ -21,6 +23,8 @@ If `false`, disables dictation. Use `allowDictation` in Restrictions instead.
 - **Default:** `true`
 
 If `false`, suppresses profanity. Use `forceAssistantProfanityFilter` in Restrictions instead.
+
+Deprecated: macOS 10.13+
 
 ## Discussion
 

@@ -1,8 +1,8 @@
 # StatusDeviceModelMarketingName
 
-A status report of the device’s marketing name.
+The status item that reports the device’s model marketing name.
 
-**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, tvOS 16.0, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, tvOS 16.0, visionOS 1.1, watchOS 10.0
 
 ## Properties
 
@@ -16,4 +16,16 @@ The device’s marketing name, such as `iPhone 12`. This value may not always be
 ## Discussion
 
 ### Status item availability
+
+### Status item example
+
+```json
+{
+    "device": {
+        "model": {
+            "marketing-name": "iPhone 13"
+        }
+    }
+}
+```
 

@@ -2,7 +2,7 @@
 
 A dictionary that describes a profile payload content item.
 
-**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, tvOS 9.0, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, tvOS 9.0, visionOS 1.1, watchOS 10.0
 
 ## Properties
 
@@ -47,6 +47,8 @@ The type of payload, such as `com.apple.wifi.managed`.
 - **Required:** Yes
 
 The unique identifier of the payload.
+
+Available: iOS 17+ | iPadOS 17+ | macOS 14+ | tvOS 17+ | visionOS 1.1+ | watchOS 10+
 
 ### PayloadVersion
 

@@ -2,7 +2,7 @@
 
 The payload that configures the users, groups, and departments within an educational organization.
 
-**Platforms:** iOS 9.3, iPadOS 9.3, Mac Catalyst 9.3, macOS 10.14, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 9.3, iPadOS 9.3, Mac Catalyst 9.3, macOS 10.14
 
 ## Properties
 
@@ -93,6 +93,8 @@ If set, the system uses this key to configure both Classroom and the Shared iPad
 
 If `true`, the system allows students enrolled in managed classes to modify their teacher’s permissions for screen observation on their device.
 
+Available: iOS 10.3+ | iPadOS 10.3+ | macOS 10.14+
+
 ### UserIdentifier
 
 - **Type:** `string`
@@ -117,18 +119,18 @@ For Shared iPad profiles: The array of dictionaries that define the users that t
 
 Specify `com.apple.education` as the payload type.
 
-In iOS, send this payload over the device channel. Additionally, the system requires supervision unless the payload only specifies as teacher configuration.
+In iOS, send this payload over the device channel. Additionally, the system requires supervision unless the payload only specifies a teacher configuration.
 
 In macOS, send this payload over the user channel. The system supports student payloads in macOS 10.14.4 and later.
 
-Additionally, configure:
+Additionally, ensure:
 
-- All identities as both SSL clients and servers
-- All certificates with a key size of at least 2048 bits
-- All certificates to use a hashing algorithm of SHA256 or stronger
-- Leader certificates to have the common name prefix leader, which is case-insensitive
-- Member certificates to have the common name prefix member, which is case-insensitive
-- TLS server certificates issued on or after September 1, 2020 00:00 GMT/UTC to have a validity period greater than 398 days; see [About Upcoming Limits on Trusted Certificates](https://support.apple.com/en-us/HT211025) for more information.
+- You configure all identities as both TLS clients and servers
+- You configure all certificates with a key size of at least 2048 bits
+- You configure all certificates to use a hashing algorithm of SHA256 or stronger
+- You configure leader certificates to have the common name prefix “leader”, which is case-insensitive
+- You configure  member certificates to have the common name prefix “member”, which is case-insensitive
+- You configure TLS server certificates issued on or after September 1, 2020 00:00 GMT/UTC to have a validity period greater than 398 days; see [About Upcoming Limits on Trusted Certificates](https://support.apple.com/en-us/HT211025) for more information.
 
 ### Profile availability
 
@@ -313,9 +315,9 @@ Additionally, configure:
                 </dict>
             </array>
             <key>PayloadDescription</key>
-            <string>Configures the EDU mode loginwindow.</string>
+            <string>Configures the Shared iPad loginwindow.</string>
             <key>PayloadDisplayName</key>
-            <string>EDU mode</string>
+            <string>Shared iPad</string>
             <key>PayloadIdentifier</key>
             <string>com.example.myedconfigpayload</string>
             <key>PayloadType</key>

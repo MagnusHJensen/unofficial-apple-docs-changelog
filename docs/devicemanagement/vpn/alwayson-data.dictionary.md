@@ -2,7 +2,7 @@
 
 The dictionary that contains IPSec settings.
 
-**Platforms:** iOS 8.0, iPadOS 8.0, Mac Catalyst 8.0, visionOS 1.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 8.0, iPadOS 8.0, Mac Catalyst 8.0, visionOS 1.0
 
 ## Properties
 
@@ -37,6 +37,8 @@ The array of captive networking apps whose traffic is allowed outside the VPN tu
 - **Required:** No
 
 An array that contains an arbitrary number of apps whose connections occur outside the VPN.
+
+Available: iOS 13.6+ | iPadOS 13.6+ | visionOS 1+
 
 ### ServiceExceptions
 

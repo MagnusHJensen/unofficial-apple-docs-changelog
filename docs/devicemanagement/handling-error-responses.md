@@ -1,12 +1,12 @@
-# Handling Error Responses
+# Handling error responses
 
-Investigate service request errors and troubleshoot solutions.
+Investigate and resolve service request errors.
 
 ## Overview
 
 When tasks for a service request result in a failure, you receive information about the failure either synchronously in the service response, or asynchronously in status endpoint responses or background notifications. The error information resides in the `ErrorResponse` objects. An [ErrorResponse](/documentation/devicemanagement/errorresponse) object contains two fields: an `errorNumber` field and an `errorMessage` field. In some cases, the `ErrorResponse` object also contains an `errorInfo` field with metadata about the failure for diagnostic purposes. Any `errorMessage` value uniquely maps to an `errorNumber` value, but not the other way around.
 
-### Handle Synchronous Error Responses
+### Handle synchronous error responses
 
 When a service request results in a synchronous failure, the response is itself an [ErrorResponse](/documentation/devicemanagement/errorresponse) object containing an `errorMessage` and `errorNumber`.
 
@@ -21,7 +21,7 @@ In addition to the response body, the HTTP status code provides information abou
 }
 ```
 
-### Handle Retry-After Headers
+### Handle retry-after headers
 
 For HTTP 5xx server error responses, a `Retry-After` header indicates how long the client must wait before making additional requests.
 
@@ -33,9 +33,9 @@ Retry-After: 120
 
 If notifications for an event are missing, use [Event Status](/documentation/devicemanagement/events-status) to verify that the event’s state is not pending. Then trigger a sync with either [Get Assets](/documentation/devicemanagement/get-assets-44p83) or [Get Users](/documentation/devicemanagement/get-users-5boi1) to sync the changes since the request.
 
-### Handle Error Responses in Status
+### Handle error responses in status
 
-If a task for a submitted service request fails while processing in the background, the status endpoint for that task provides information about the failure. The status endpoint includes a `failures` field with a value that is an array of `ErrorResponse` objects.
+If a task for a submitted service request fails while processing in the background, the `Status` endpoint for that task provides information about the failure. The `Status` endpoint includes a `failures` field with a value that’s an array of `ErrorResponse` objects.
 
 ```javascript
 {
@@ -60,7 +60,7 @@ If a task for a submitted service request fails while processing in the backgrou
 }
 ```
 
-### Handle Error Responses in Notifications
+### Handle error responses in notifications
 
 If a task for a submitted service request fails while processing in the background, and if the MDM client that submits the request can receive notifications, the notification contains an [ErrorResponse](/documentation/devicemanagement/errorresponse) object with information about the failure and affected entities. A notification can have at most one `ErrorResponse` object in it (potentially affecting multiple entities).
 
@@ -93,9 +93,9 @@ If a task for a submitted service request fails while processing in the backgrou
 }
 ```
 
-Error Codes for Synchronous Failures
+### Review synchronous error codes
 
-Error Codes for Asynchronous Failures
+### Review asynchronous error codes
 
 The server may return these error codes in either [StatusResponse](/documentation/devicemanagement/statusresponse) or in background notifications.
 

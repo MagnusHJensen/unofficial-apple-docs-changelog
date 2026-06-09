@@ -2,7 +2,7 @@
 
 The payload that configures ShareKit.
 
-**Platforms:** macOS 10.9, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.9
 
 ## Properties
 
@@ -13,12 +13,16 @@ The payload that configures ShareKit.
 
 The list of plugin IDs that show up in the user’s Share menu. If this array exists, only these items are permitted.
 
+Deprecated: macOS 10.12+
+
 ### SHKDeniedShareServices
 
 - **Type:** `[string]`
 - **Required:** No
 
 The list of plugin IDs that won’t show up in the user’s Share menu. This key is used only if there is no `SHKAllowedShareServices` key.
+
+Deprecated: macOS 10.12+
 
 ## Discussion
 

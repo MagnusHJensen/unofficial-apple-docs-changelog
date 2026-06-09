@@ -2,7 +2,7 @@
 
 The payload that configures an Xsan client system.
 
-**Platforms:** macOS 10.10, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.10
 
 ## Properties
 
@@ -23,7 +23,7 @@ This key is required for StorNext SANs.
 
 The authentication method for the SAN. This key is required for all Xsan SANs. It’s optional for StorNext SANs but should be set if the StorNext SAN uses an `auth_secret` file.
 
-Only one value is accepted: `auth_secret`
+The SAN accepts only one value: `auth_secret`
 
 ### sanConfigURLs
 

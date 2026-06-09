@@ -2,7 +2,7 @@
 
 The payload that configures a PKCS #12-formatted certificate.
 
-**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, tvOS 9.0, visionOS 1.0, watchOS 3.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, tvOS 9.0, visionOS 1.0, watchOS 3.0
 
 ## Properties
 
@@ -12,7 +12,9 @@ The payload that configures a PKCS #12-formatted certificate.
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the system allows apps access to the private key. Available in macOS 10.10 and later.
+If `true`, the system allows apps access to the private key.
+
+Available: macOS 10.10+
 
 ### KeyIsExtractable
 
@@ -21,6 +23,8 @@ If `true`, the system allows apps access to the private key. Available in macOS 
 - **Default:** `true`
 
 If `false`, the system doesn’t tag the private key data as extractable in the keychain.
+
+Available: macOS 10.15+
 
 ### Password
 

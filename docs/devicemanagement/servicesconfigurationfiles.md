@@ -1,8 +1,8 @@
 # ServicesConfigurationFiles
 
-The managed configuration files for services.
+The declaration to configure managed configuration files for services.
 
-**Platforms:** macOS 14.0, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 14.0
 
 ## Properties
 
@@ -60,6 +60,8 @@ You can create an executable that uses service configuration files by calling th
 ### Configuration availability
 
 ### Configuration example
+
+This configuration deploys configuration files for a system service.
 
 ```json
 {

@@ -2,7 +2,7 @@
 
 The payload that configures the names of the account user.
 
-**Platforms:** macOS 10.7, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.7
 
 ## Properties
 
@@ -12,6 +12,8 @@ The payload that configures the names of the account user.
 - **Required:** Yes
 
 The dictionary that contains details about the user.
+
+Deprecated: macOS 15.4+
 
 ## Discussion
 
@@ -32,7 +34,7 @@ Specify `com.apple.configurationprofile.identification` as the payload type.
             <key>CalDAVAccountDescription</key>
             <string>My CalDAV Account</string>
             <key>CalDAVHostName</key>
-            <string>server.companyemail.com</string>
+            <string>server.example.com</string>
             <key>CalDAVPassword</key>
             <string>Password123</string>
             <key>CalDAVPort</key>
@@ -40,7 +42,7 @@ Specify `com.apple.configurationprofile.identification` as the payload type.
             <key>CalDAVUseSSL</key>
             <true/>
             <key>CalDAVUsername</key>
-            <string>juanchaves4@companyemail.com</string>
+            <string>juanchaves4@example.com</string>
             <key>PayloadIdentifier</key>
             <string>com.example.mycaldavpayload</string>
             <key>PayloadType</key>
@@ -54,11 +56,11 @@ Specify `com.apple.configurationprofile.identification` as the payload type.
             <key>PayloadIdentification</key>
             <dict>
                 <key>UserName</key>
-                <string>juanchaves4@companyemail.com</string>
+                <string>juanchaves4@example.com</string>
                 <key>FullName</key>
                 <string>Juan Chavez</string>
                 <key>EmailAddress</key>
-                <string>juanchaves4@companyemail.com</string>
+                <string>juanchaves4@example.com</string>
                 <key>AuthMethod</key>
                 <string>UserEnteredPassword</string>
                 <key>Password</key>

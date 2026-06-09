@@ -2,7 +2,7 @@
 
 Verify the device’s Recovery Lock password.
 
-**Platforms:** macOS 11.5, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 11.5
 
 ## Discussion
 

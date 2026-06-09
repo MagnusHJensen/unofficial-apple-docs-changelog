@@ -2,7 +2,7 @@
 
 The request to manage licenses.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 1.0
 
 ## Properties
 
@@ -82,7 +82,7 @@ When assigning licenses for books, it is especially important to pass the correc
 - **Type:** `string`
 - **Required:** Yes
 
-The authentication token. For more information, see [Authentication](/documentation/devicemanagement/managing-apps-and-books-through-web-services-legacy#Authentication).
+The authentication token. For more information, see [Authenticate with the web service](/documentation/devicemanagement/managing-apps-and-books-through-web-services-legacy#Authenticate-with-the-web-service).
 
 ## Discussion
 

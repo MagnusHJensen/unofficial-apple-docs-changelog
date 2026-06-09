@@ -2,7 +2,7 @@
 
 An array of dictionaries that conform to the icon dictionary format.
 
-**Platforms:** iOS 9.3, iPadOS 9.3, Mac Catalyst 9.3, tvOS 11.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 9.3, iPadOS 9.3, Mac Catalyst 9.3, tvOS 11.0
 
 ## Properties
 
@@ -43,4 +43,6 @@ The type of the Dock item.
 The URL of the existing web clip for this item. This setting is required if `type` is `WebClip`. If more than one web clip exists with the same URL, the behavior is undefined.
 
 Specifying a web clip in this payload doesn’t create the web clip. Use the [WebClip](/documentation/devicemanagement/webclip) payload to create a web clip.
+
+Available: iOS 11.3+ | iPadOS 11.3+ | tvOS 11+
 

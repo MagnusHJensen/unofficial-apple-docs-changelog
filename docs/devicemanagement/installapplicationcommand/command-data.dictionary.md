@@ -2,7 +2,7 @@
 
 The command to install a third-party app on a device.
 
-**Platforms:** iOS 5.0, iPadOS 5.0, Mac Catalyst 5.0, macOS 10.9, tvOS 10.2, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 5.0, iPadOS 5.0, Mac Catalyst 5.0, macOS 10.9, tvOS 10.2, visionOS 1.1, watchOS 10.0
 
 ## Properties
 
@@ -11,7 +11,9 @@ The command to install a third-party app on a device.
 - **Type:** `InstallApplicationCommand.Command.Attributes`
 - **Required:** No
 
-A dictionary that contains the initial attributes of the app, if you choose to provide it. Available in iOS 7 and later, and tvOS 10.2 and later.
+A dictionary that contains the initial attributes of the app, if you choose to provide it.
+
+Available: iOS 7+ | iPadOS 7+ | tvOS 10.2+ | visionOS 1.1+ | watchOS 10+
 
 ### ChangeManagementState
 
@@ -19,14 +21,20 @@ A dictionary that contains the initial attributes of the app, if you choose to p
 - **Required:** No
 - **Allowed Values:** `Managed`
 
-The change management state. This value doesn’t work with the user enrollment feature introduced in iOS 13, or any type of account driven enrollment. Available in iOS 9 and later, macOS 11 and later, and tvOS 10.2 and later. The only possible value is:
+The change management state. This value doesn’t work with the user enrollment feature introduced in iOS 13, or any type of account driven enrollment. The only possible value is:
+
+- `Managed`: Take management of the app if the user installed it already and `InstallAsManaged` is `true`.
+
+Available: iOS 9+ | iPadOS 9+ | macOS 11+ | tvOS 10.2+ | visionOS 1.1+ | watchOS 10+
 
 ### Configuration
 
 - **Type:** `InstallApplicationCommand.Command.Configuration`
 - **Required:** No
 
-A dictionary that contains the initial configuration of the app, if you choose to provide it. Available in iOS 7 and later, macOS 11 and later, and tvOS 10.2 and later.
+A dictionary that contains the initial configuration of the app, if you choose to provide it.
+
+Available: iOS 7+ | iPadOS 7+ | macOS 11+ | tvOS 10.2+ | visionOS 1.1+ | watchOS 10+
 
 ### Identifier
 
@@ -36,6 +44,8 @@ A dictionary that contains the initial configuration of the app, if you choose t
 The app’s bundle identifier.
 
 > 
+
+Available: iOS 7+ | iPadOS 7+ | macOS 10.9+ | tvOS 10.2+ | visionOS 1.1+ | watchOS 10+
 
 ### InstallAsManaged
 
@@ -47,7 +57,7 @@ If `true`, install the app as a managed app. Otherwise, the system installs the 
 
 For manifest-based installs, if `true`, the system only considers apps installed in `/Applications` as managed. In macOS 11 through 13, the system requires that the `pkg` only contains a single signed app.
 
-Available in macOS 11 and later.
+Available: macOS 11+
 
 ### iOSApp
 
@@ -56,6 +66,8 @@ Available in macOS 11 and later.
 - **Default:** `false`
 
 If `true`, the app is an iOS app that can run on a Mac with Apple silicon in macOS 11 and later.
+
+Available: macOS 11+
 
 ### iTunesStoreID
 
@@ -76,7 +88,7 @@ A bitwise OR of the management flags. The possible values are:
 - `4`: Prevent backup of app data.
 - `5`: Both `1` and `4`.
 
-Available in iOS 5 and later, macOS 11 and later, and tvOS 10.2 and later.
+Available: iOS 5+ | iPadOS 5+ | macOS 11+ | tvOS 10.2+ | visionOS 1.1+ | watchOS 10+
 
 ### ManifestURL
 
@@ -85,12 +97,16 @@ Available in iOS 5 and later, macOS 11 and later, and tvOS 10.2 and later.
 
 The URL of the app manifest, which needs to begin with `https:`. The manifest is returned as a property list that uses the [ManifestURL](/documentation/devicemanagement/manifesturl) format.
 
+Available: iOS 7+ | iPadOS 7+ | macOS 10.9+ | tvOS 10.2+ | visionOS 1.1+ | watchOS 10+
+
 ### Options
 
 - **Type:** `InstallApplicationCommand.Command.Options`
 - **Required:** No
 
 A dictionary that contains the app installation options.
+
+Available: iOS 7+ | iPadOS 7+ | macOS 10.9+ | tvOS 10.2+ | visionOS 1.1+ | watchOS 10+
 
 ### RequestRequiresNetworkTether
 

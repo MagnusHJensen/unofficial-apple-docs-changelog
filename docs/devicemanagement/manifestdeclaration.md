@@ -2,8 +2,6 @@
 
 A dictionary that describes a declaration.
 
-**Platforms:** Device Assignment Services , VPP License Management 
-
 ## Properties
 
 ### Identifier

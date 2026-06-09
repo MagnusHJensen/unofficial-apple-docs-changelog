@@ -2,7 +2,7 @@
 
 The response dictionary that contains information about the device.
 
-**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, tvOS 9.0, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, tvOS 9.0, visionOS 1.1, watchOS 10.0
 
 ## Properties
 
@@ -11,35 +11,45 @@ The response dictionary that contains information about the device.
 - **Type:** `DeviceInformationResponse.QueryResponses.AccessibilitySettings`
 - **Required:** No
 
-The current state of settable accessibility settings. Available in iOS 16 and later.
+The current state of settable accessibility settings.
+
+Available: iOS 16+ | iPadOS 16+ | watchOS 10+
 
 ### ActiveManagedUsers
 
 - **Type:** `[string]`
 - **Required:** No
 
-An array of the directory GUIDs of the logged-in managed users. If one of these users is currently logged in to the console, the `CurrentConsoleManagedUser` key returns the GUID of that user. Requires the Device Information access right. Available in macOS 10.11 and later.
+An array of the directory GUIDs of the logged-in managed users. If one of these users is currently logged in to the console, the `CurrentConsoleManagedUser` key returns the GUID of that user. Requires the Device Information access right.
+
+Available: macOS 10.11+
 
 ### AppAnalyticsEnabled
 
 - **Type:** `boolean`
 - **Required:** No
 
-If `true`, the device is sharing app analytics. Requires the Device Information access right. Available in iOS 9.3 and later.
+If `true`, the device is sharing app analytics. Requires the Device Information access right.
+
+Available: iOS 9.3+ | iPadOS 9.3+ | visionOS 1.1+ | watchOS 10+
 
 ### AutoSetupAdminAccounts
 
 - **Type:** `[DeviceInformationResponse.QueryResponses.AutoSetupAdminAccountsItem]`
 - **Required:** No
 
-The contents of [DeviceInformationResponse.QueryResponses.AutoSetupAdminAccountsItem](/documentation/devicemanagement/deviceinformationresponse/queryresponses-data.dictionary/autosetupadminaccountsitem), which Setup Assistant automatically creates during DEP enrollment. Requires the Device Information access right. Available in macOS 10.11 and later.
+The contents of [DeviceInformationResponse.QueryResponses.AutoSetupAdminAccountsItem](/documentation/devicemanagement/deviceinformationresponse/queryresponses-data.dictionary/autosetupadminaccountsitem), which Setup Assistant automatically creates during ADE enrollment. Requires the Device Information access right.
+
+Available: macOS 10.11+
 
 ### AvailableDeviceCapacity
 
 - **Type:** `number`
 - **Required:** No
 
-The available capacity in floating-point base-10 gigabytes (GB) in iOS and macOS 12 or later. The capacity is in base-2 gibibytes (GiB) in macOS 11 and earlier. Requires the Device Information access right. Available in iOS 4 and later, and macOS 10.7 and later.
+The available capacity in floating-point base-10 gigabytes (GB) in iOS and macOS 12 or later. The capacity is in base-2 gibibytes (GiB) in macOS 11 and earlier. Requires the Device Information access right.
+
+Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | visionOS 1.1+ | watchOS 10+
 
 ### AwaitingConfiguration
 
@@ -50,12 +60,16 @@ If `true` on the device channel, the device is still waiting for a [Device Confi
 
 If `true` on the user channel (Shared iPad only), the device is still waiting for a [User Configured](/documentation/devicemanagement/user-configured-command) command to continue through Setup Assistant and finish login.
 
+Available: iOS 9+ | iPadOS 9+ | macOS 10.11+ | tvOS 10.2+ | visionOS 2+ | watchOS 10+
+
 ### BatteryLevel
 
 - **Type:** `number`
 - **Required:** No
 
-The battery level, between `0.0` and `1.0`, or `-1.0` if MDM can’t determine the battery level. Requires the Device Information access right. Available in iOS 5 and later, and macOS 13.3 and later.
+The battery level, between `0.0` and `1.0`, or `-1.0` if MDM can’t determine the battery level. Requires the Device Information access right.
+
+Available: iOS 5+ | iPadOS 5+ | macOS 13.3+ | visionOS 1.1+ | watchOS 10+
 
 ### BluetoothMAC
 
@@ -63,6 +77,8 @@ The battery level, between `0.0` and `1.0`, or `-1.0` if MDM can’t determine t
 - **Required:** No
 
 The Bluetooth media access control (MAC) address. Requires the Network Information access right.
+
+Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | tvOS 9+ | visionOS 1.1+
 
 ### BuildVersion
 
@@ -84,28 +100,36 @@ The cellular technology type, which is one of the following values:
 - `2`: CDMA
 - `3`: GSM and CDMA
 
-Requires the Device Information access right. Available in iOS 4.2.6 and later.
+Requires the Device Information access right.
+
+Available: iOS 4.2.6+ | iPadOS 4.2.6+
 
 ### DataRoamingEnabled
 
 - **Type:** `boolean`
 - **Required:** No
 
-If `true`, the device has enabled data roaming. Requires the Network Information access right. Available in iOS 5 and later.
+If `true`, the device has enabled data roaming. Requires the Network Information access right.
+
+Available: iOS 5+ | iPadOS 5+
 
 ### DeviceCapacity
 
 - **Type:** `number`
 - **Required:** No
 
-The total capacity in floating-point base-10 gigabytes (GB) on iOS and macOS 12 or later. The capacity is in base-2 gibibytes (GiB) on macOS 11 and earlier. Requires the Device Information access right. Available in iOS 4 and later, and macOS 10.7 and later.
+The total capacity in floating-point base-10 gigabytes (GB) on iOS and macOS 12 or later. The capacity is in base-2 gibibytes (GiB) on macOS 11 and earlier. Requires the Device Information access right.
+
+Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | visionOS 1.1+ | watchOS 10+
 
 ### DeviceID
 
 - **Type:** `string`
 - **Required:** No
 
-The device identifier. Requires the Device Information access right. Available in tvOS 6 and later.
+The device identifier. Requires the Device Information access right.
+
+Available: tvOS 9+
 
 ### DeviceName
 
@@ -119,7 +143,7 @@ The device name. Requires the Device Information access right.
 - **Type:** `[data]`
 - **Required:** No
 
-The key to get an attestation of the device’s properties. Available in iOS 16 and later, macOS 14 and later, tvOS 16 and later, and watchOS 10 and later. The hardware requirements for attestation are described below.
+The key to get an attestation of the device’s properties. The hardware requirements for attestation are described below.
 
 The value is an array of certificates in DER form that forms a certificate chain. The chain is rooted with the Apple CA `Apple Enterprise Attestation Root CA`. The first array item is the leaf certificate. The leaf certificate contains custom OIDs describing a device. The OS version of the device, and the type of enrollment, determine which OIDs are present in the certificate. If Apple’s attestation servers are unable to verify a device property they generate a blank value, omit the OID entirely, or refuse to issue an attestation certificate.
 
@@ -142,12 +166,16 @@ The following OIDs were introduced in macOS 14.2:
 - `1.2.840.113635.100.8.13.2` Secure boot status: This describes part of the configuration of the LocalPolicy when the attestation is generated. The values are `Full Security`, `Reduced Security`, or `Permissive Security`. For a description of these values see the Apple Platform Security guide.
 - `1.2.840.113635.100.8.13.3` Third party kernel extensions allowed: This indicates whether third party kernel extensions are allowed. A value of `0` indicates third party kernel extensions are not allowed. Any other value means that some kinds of third party kernel extensions are allowed.
 
+Available: iOS 16+ | iPadOS 16+ | macOS 14+ | tvOS 16+ | visionOS 1.1+ | watchOS 10+
+
 ### DiagnosticSubmissionEnabled
 
 - **Type:** `boolean`
 - **Required:** No
 
-If `true`, the device has enabled diagnostic submission. Requires the Device Information access right. Available in iOS 9.3 and later.
+If `true`, the device has enabled diagnostic submission. Requires the Device Information access right.
+
+Available: iOS 9.3+ | iPadOS 9.3+ | visionOS 1.1+ | watchOS 10+
 
 ### EACSPreflight
 
@@ -156,26 +184,39 @@ If `true`, the device has enabled diagnostic submission. Requires the Device Inf
 
 Specifies whether the device can perform an [EraseDeviceCommand](/documentation/devicemanagement/erasedevicecommand) using Erase All Content and Settings (EACS), which is one of the following values:
 
+- `success`: The device supports EACS.
+- `not supported`: The device is too old to support EACS.
+- `unknown failure`: A problem occurred for which there isn’t a more specific error message.
+- `(other string)`: A reason why the device can’t perform EACS, such as “System is not sealed”
+
+Available: macOS 13.3+
+
 ### EASDeviceIdentifier
 
 - **Type:** `string`
 - **Required:** No
 
-The device identifier for Exchange Active Sync (EAS). Requires the Device Information access right. Available in iOS 7 and later.
+The device identifier for Exchange Active Sync (EAS). Requires the Device Information access right.
+
+Available: iOS 7+ | iPadOS 7+ | visionOS 1.1+
 
 ### EstimatedResidentUsers
 
 - **Type:** `integer`
 - **Required:** No
 
-The estimated number of users that can use this Shared iPad device, according to the space available on the device and each user’s quota. Requires the Device Information access right. Available in iOS 14 and later.
+The estimated number of users that can use this Shared iPad device, according to the space available on the device and each user’s quota. Requires the Device Information access right.
+
+Available: iOS 14+ | iPadOS 14+
 
 ### EthernetMAC
 
 - **Type:** `string`
 - **Required:** No
 
-The primary Ethernet MAC address. Requires the Network Information access right. Available in macOS 10.7 and later.
+The primary Ethernet MAC address. Requires the Network Information access right.
+
+Available: macOS 10.7+
 
 ### HasBattery
 
@@ -184,12 +225,16 @@ The primary Ethernet MAC address. Requires the Network Information access right.
 
 If `true`, the device has an internal battery.
 
+Available: macOS 13.3+
+
 ### HostName
 
 - **Type:** `string`
 - **Required:** No
 
-The host name. Available in macOS 10.11 and later.
+The host name.
+
+Available: macOS 10.11+
 
 ### IsActivationLockEnabled
 
@@ -198,12 +243,17 @@ The host name. Available in macOS 10.11 and later.
 
 If `true`, the device has enabled Activation Lock. Requires the Device Information access right. Available as of iOS 7 and macOS 10.9, and deprecated in iOS 16 and macOS 13.
 
+Available: iOS 7+ | iPadOS 7+ | macOS 10.9+ | watchOS 10+
+Deprecated: iOS 16+ | iPadOS 16+ | macOS 13+ | watchOS 10+
+
 ### IsActivationLockSupported
 
 - **Type:** `boolean`
 - **Required:** No
 
-If `true`, the device supports Activation Lock. Also see `IsActivationLockManageable` in [SecurityInfoResponse.SecurityInfo.ManagementStatus](/documentation/devicemanagement/securityinforesponse/securityinfo-data.dictionary/managementstatus-data.dictionary). Available in macOS 10.9 and later.
+If `true`, the device supports Activation Lock. Also see `IsActivationLockManageable` in [SecurityInfoResponse.SecurityInfo.ManagementStatus](/documentation/devicemanagement/securityinforesponse/securityinfo-data.dictionary/managementstatus-data.dictionary).
+
+Available: macOS 10.9+
 
 ### IsAppleSilicon
 
@@ -212,54 +262,70 @@ If `true`, the device supports Activation Lock. Also see `IsActivationLockManage
 
 If `true`, the macOS device uses an Apple silicon chip.
 
+Available: macOS 12+
+
 ### IsCloudBackupEnabled
 
 - **Type:** `boolean`
 - **Required:** No
 
-If `true`, the device has enabled iCloud backup. Requires the Device Information access right. Available in iOS 7.1 and later.
+If `true`, the device has enabled iCloud backup. Requires the Device Information access right.
+
+Available: iOS 7.1+ | iPadOS 7.1+ | visionOS 1.1+
 
 ### IsDeviceLocatorServiceEnabled
 
 - **Type:** `boolean`
 - **Required:** No
 
-If `true`, the device has enabled a device locator service, such as Find My. Requires the Device Information access right. Available in iOS 7 and later.
+If `true`, the device has enabled a device locator service, such as Find My. Requires the Device Information access right.
+
+Available: iOS 7+ | iPadOS 7+ | visionOS 1.1+ | watchOS 10+
 
 ### IsDoNotDisturbInEffect
 
 - **Type:** `boolean`
 - **Required:** No
 
-If `true`, the device is in Do Not Disturb (DND) mode. This value is `true` even if DND is only in effect for a locked device. Requires the Device Information access right. Available in iOS 7 and later.
+If `true`, the device is in Do Not Disturb (DND) mode. This value is `true` even if DND is only in effect for a locked device. Requires the Device Information access right.
+
+Available: iOS 7+ | iPadOS 7+ | visionOS 1.1+ | watchOS 10+
 
 ### IsMDMLostModeEnabled
 
 - **Type:** `boolean`
 - **Required:** No
 
-If `true`, the device has enabled Managed Lost Mode. Requires the Device Information access right. Available in iOS 9.3 and later.
+If `true`, the device has enabled Managed Lost Mode. Requires the Device Information access right.
+
+Available: iOS 9.3+ | iPadOS 9.3+ | watchOS 10+
 
 ### IsMultiUser
 
 - **Type:** `boolean`
 - **Required:** No
 
-If `true`, the device is a Shared iPad. Requires the Device Information access right. Available in iOS 9.3 and later.
+If `true`, the device is a Shared iPad. Requires the Device Information access right.
+
+Available: iOS 9.3+ | iPadOS 9.3+
 
 ### IsNetworkTethered
 
 - **Type:** `boolean`
 - **Required:** No
 
-If `true`, the device is network-tethered. Requires the Network Information access right. Available in iOS 10.3 and later.
+If `true`, the device is network-tethered. Requires the Network Information access right.
+
+Available: iOS 10.3+ | iPadOS 10.3+
 
 ### IsSupervised
 
 - **Type:** `boolean`
 - **Required:** No
 
-If `true`, it’s a supervised device. Requires the Device Information access right. Available in iOS 6 and later, macOS 10.15 and later, and tvOS 9 and later.
+If `true`, it’s a supervised device. Requires the Device Information access right.
+
+Available: iOS 6+ | iPadOS 6+ | macOS 10.15+ | tvOS 9+ | visionOS 1.1+ | watchOS 10+
 
 ### iTunesStoreAccountHash
 
@@ -268,6 +334,8 @@ If `true`, it’s a supervised device. Requires the Device Information access ri
 
 A hash of the logged-in iTunes Store account. Also see [GetVppUserRequest](/documentation/devicemanagement/getvppuserrequest). Requires the App Installation access right.
 
+Available: iOS 8+ | iPadOS 8+ | macOS 10.10+ | tvOS 9+ | watchOS 10+
+
 ### iTunesStoreAccountIsActive
 
 - **Type:** `boolean`
@@ -275,33 +343,43 @@ A hash of the logged-in iTunes Store account. Also see [GetVppUserRequest](/docu
 
 If `true`, the device has an active iTunes Store account. Requires the App Installation access right.
 
+Available: iOS 7+ | iPadOS 7+ | macOS 10.9+ | tvOS 9+ | watchOS 10+
+
 ### LastCloudBackupDate
 
 - **Type:** `date`
 - **Required:** No
 
-The date of the last iCloud backup. Available in iOS 8 and later.
+The date of the last iCloud backup.
+
+Available: iOS 8+ | iPadOS 8+ | visionOS 1.1+
 
 ### LocalHostName
 
 - **Type:** `string`
 - **Required:** No
 
-The local host name from Bonjour. Available in macOS 10.11 and later.
+The local host name from Bonjour.
+
+Available: macOS 10.11+
 
 ### ManagedAppleIDDefaultDomains
 
 - **Type:** `[string]`
 - **Required:** No
 
-The list of domains that the device suggests on the Shared iPad login screen. Available in iOS 16 and later.
+The list of domains that the device suggests on the Shared iPad login screen.
+
+Available: iOS 16+ | iPadOS 16+
 
 ### MaximumResidentUsers
 
 - **Type:** `integer`
 - **Required:** No
 
-The maximum number of users that can use this Shared iPad device. Starting with iOS 13.4, the value that returns is always `32`. Requires the Device Information access right. Available in iOS 9.3 and later.
+The maximum number of users that can use this Shared iPad device. Starting with iOS 13.4, the value that returns is always `32`. Requires the Device Information access right.
+
+Available: iOS 9.3+ | iPadOS 9.3+
 
 ### MDMOptions
 
@@ -310,12 +388,16 @@ The maximum number of users that can use this Shared iPad device. Starting with 
 
 The contents of [SettingsCommand.Command.Settings.MDMOptions.MDMOptions](/documentation/devicemanagement/settingscommand/command-data.dictionary/settings-data.dictionary/mdmoptions-data.dictionary/mdmoptions-data.dictionary).
 
+Available: iOS 7+ | iPadOS 7+ | macOS 11+ | tvOS 9+ | visionOS 1.1+ | watchOS 10+
+
 ### Model
 
 - **Type:** `string`
 - **Required:** No
 
 The model. Requires the Device Information access right.
+
+Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | tvOS 9+ | watchOS 10+
 
 ### ModelName
 
@@ -336,14 +418,18 @@ The device’s hardware model number including region info, for example, `MK1A3L
 - **Type:** `string`
 - **Required:** No
 
-The modem firmware version. Requires the Device Information access right. Available in iOS 4 and later.
+The modem firmware version. Requires the Device Information access right.
+
+Available: iOS 4+ | iPadOS 4+
 
 ### OnlineAuthenticationGracePeriod
 
 - **Type:** `integer`
 - **Required:** No
 
-The grace period for Shared iPad online authentication (in days). A value of `0` indicates that the device requires online authentication for every login. Available in iOS 16 and later.
+The grace period for Shared iPad online authentication (in days). A value of `0` indicates that the device requires online authentication for every login.
+
+Available: iOS 16+ | iPadOS 16+
 
 ### OrganizationInfo
 
@@ -352,12 +438,7 @@ The grace period for Shared iPad online authentication (in days). A value of `0`
 
 The contents of [SettingsCommand.Command.Settings.OrganizationInfo.OrganizationInfo](/documentation/devicemanagement/settingscommand/command-data.dictionary/settings-data.dictionary/organizationinfo-data.dictionary/organizationinfo-data.dictionary).
 
-### OSUpdateSettings
-
-- **Type:** `DeviceInformationResponse.QueryResponses.OSUpdateSettings`
-- **Required:** No
-
-The contents of [DeviceInformationResponse.QueryResponses.OSUpdateSettings](/documentation/devicemanagement/deviceinformationresponse/queryresponses-data.dictionary/osupdatesettings-data.dictionary). Requires the Device Information access right. Available in macOS 10.11 and later.
+Available: iOS 7+ | iPadOS 7+ | macOS 10.11+ | tvOS 9+ | visionOS 1.1+ | watchOS 10+
 
 ### OSVersion
 
@@ -371,21 +452,27 @@ The operating system version. Requires the Device Information access right.
 - **Type:** `boolean`
 - **Required:** No
 
-If `true,` the device has enabled Personal Hotspot, which isn’t available for all carriers. Requires the Network Information access right. Available in iOS 7 and later.
+If `true,` the device has enabled Personal Hotspot, which isn’t available for all carriers. Requires the Network Information access right.
+
+Available: iOS 7+ | iPadOS 7+
 
 ### PINRequiredForDeviceLock
 
 - **Type:** `boolean`
 - **Required:** No
 
-If `true`, the [DeviceLockCommand](/documentation/devicemanagement/devicelockcommand) requires a PIN. Available in macOS 11 and later.
+If `true`, the [DeviceLockCommand](/documentation/devicemanagement/devicelockcommand) requires a PIN.
+
+Available: macOS 11+
 
 ### PINRequiredForEraseDevice
 
 - **Type:** `boolean`
 - **Required:** No
 
-If `true`, the [EraseDeviceCommand](/documentation/devicemanagement/erasedevicecommand) requires a PIN. Available in macOS 11 and later.
+If `true`, the [EraseDeviceCommand](/documentation/devicemanagement/erasedevicecommand) requires a PIN.
+
+Available: macOS 11+
 
 ### ProductName
 
@@ -399,28 +486,36 @@ The product name, such as **. Requires the Device Information access right.
 - **Type:** `string`
 - **Required:** No
 
-The device identifier to use in provisioning profiles. This value differs from the UDID on a Mac with Apple silicon. Available in macOS 11.3 and later.
+The device identifier to use in provisioning profiles. This value differs from the UDID on a Mac with Apple silicon.
+
+Available: macOS 11.3+
 
 ### PushToken
 
 - **Type:** `data`
 - **Required:** No
 
-The push token for the user-channel connection, in the same format as in [TokenUpdateRequest](/documentation/devicemanagement/tokenupdaterequest). MDM ignores this query for the device channel. Requires the Device Information access right. Available in iOS 9.3 and later, and macOS 10.12 and later.
+The push token for the user-channel connection, in the same format as in [TokenUpdateRequest](/documentation/devicemanagement/tokenupdaterequest). MDM ignores this query for the device channel. Requires the Device Information access right.
+
+Available: iOS 9.3+ | iPadOS 9.3+ | macOS 10.12+
 
 ### QuotaSize
 
 - **Type:** `integer`
 - **Required:** No
 
-The quota size in megabytes for each user on this Shared iPad device. Requires the Device Information access right. Available in iOS 13.4 and later.
+The quota size in megabytes for each user on this Shared iPad device. Requires the Device Information access right.
+
+Available: iOS 13.4+ | iPadOS 13.4+
 
 ### ResidentUsers
 
 - **Type:** `integer`
 - **Required:** No
 
-The number of users currently on this Shared iPad device. Requires the Device Information access right. Available in iOS 13.4 and later.
+The number of users currently on this Shared iPad device. Requires the Device Information access right.
+
+Available: iOS 13.4+ | iPadOS 13.4+
 
 ### SerialNumber
 
@@ -436,6 +531,8 @@ The serial number. Requires the Device Information access right.
 
 The contents of [DeviceInformationResponse.QueryResponses.ServiceSubscriptionProperty](/documentation/devicemanagement/deviceinformationresponse/queryresponses-data.dictionary/servicesubscriptionproperty). Requires the Network Information access right.
 
+Available: iOS 12+ | iPadOS 12+
+
 ### SkipLanguageAndLocaleSetupForNewUsers
 
 - **Type:** `boolean`
@@ -443,19 +540,7 @@ The contents of [DeviceInformationResponse.QueryResponses.ServiceSubscriptionPro
 
 If `true`, skip the language and country/region panes for new users on Shared iPad.
 
-### SoftwareUpdateDeviceID
-
-- **Type:** `string`
-- **Required:** No
-
-The device identifier to look up available OS updates through [https://gdmf.apple.com/v2/pmv](https://gdmf.apple.com/v2/pmv). Available in iOS 15 and later, and macOS 12 and later.
-
-### SoftwareUpdateSettings
-
-- **Type:** `DeviceInformationResponse.QueryResponses.SoftwareUpdateSettings`
-- **Required:** No
-
-The device settings that control which updates appear in the Software Update pane in Settings. Available in iOS 14.5 and later.
+Available: iOS 16.2+ | iPadOS 16.2+
 
 ### SupplementalBuildVersion
 
@@ -464,6 +549,8 @@ The device settings that control which updates appear in the Software Update pan
 
 The supplemental OS build version.
 
+Available: iOS 16.1+ | iPadOS 16.1+ | macOS 13+ | tvOS 16.1+ | visionOS 1.1+ | watchOS 10+
+
 ### SupplementalOSVersionExtra
 
 - **Type:** `string`
@@ -471,26 +558,34 @@ The supplemental OS build version.
 
 The OS update Background Security Improvement version letter.
 
+Available: iOS 16.1+ | iPadOS 16.1+ | macOS 13+ | tvOS 16.1+ | visionOS 1.1+ | watchOS 10+
+
 ### SupportsiOSAppInstalls
 
 - **Type:** `boolean`
 - **Required:** No
 
-If `true`, the device supports iOS or iPadOS app installs through MDM. Available in macOS 11 and later.
+If `true`, the device supports iOS or iPadOS app installs through MDM.
+
+Available: macOS 11+
 
 ### SupportsLOMDevice
 
 - **Type:** `boolean`
 - **Required:** No
 
-If `true`, the device can receive `PowerON`, `PowerOFF`, and `Reset` commands from a lights-out management (LOM) controller. Available in macOS 11 and later.
+If `true`, the device can receive `PowerON`, `PowerOFF`, and `Reset` commands from a lights-out management (LOM) controller.
+
+Available: macOS 11+
 
 ### SystemIntegrityProtectionEnabled
 
 - **Type:** `boolean`
 - **Required:** No
 
-If `true`, the device has enabled System Integrity Protection. Requires the Device Information access right. Available in macOS 10.12 and later.
+If `true`, the device has enabled System Integrity Protection. Requires the Device Information access right.
+
+Available: macOS 10.12+
 
 ### TemporarySessionOnly
 
@@ -499,6 +594,8 @@ If `true`, the device has enabled System Integrity Protection. Requires the Devi
 
 If `true`, the device allows only temporary sessions.
 
+Available: iOS 14.5+ | iPadOS 14.5+
+
 ### TemporarySessionTimeout
 
 - **Type:** `integer`
@@ -506,12 +603,16 @@ If `true`, the device allows only temporary sessions.
 
 The timeout interval for the temporary session. A value of `0` indicates that there’s no timeout.
 
+Available: iOS 14.5+ | iPadOS 14.5+
+
 ### TimeZone
 
 - **Type:** `string`
 - **Required:** No
 
-The current Internet Assigned Numbers Authority (IANA) time zone database name. Requires the Device Information access right. Available in iOS 14 and later, and tvOS 14 and later.
+The current Internet Assigned Numbers Authority (IANA) time zone database name. Requires the Device Information access right.
+
+Available: iOS 14+ | iPadOS 14+ | tvOS 14+ | visionOS 1.1+ | watchOS 10+
 
 ### UDID
 
@@ -527,6 +628,8 @@ The unique identifier of the device.
 
 The timeout interval for the user session. A value of `0` indicates that there’s no timeout.
 
+Available: iOS 14.5+ | iPadOS 14.5+
+
 ### WiFiMAC
 
 - **Type:** `string`
@@ -541,8 +644,6 @@ The Wi-Fi MAC address. Requires the Network Information access right.
 - [DeviceInformationResponse.QueryResponses.AccessibilitySettings](/documentation/devicemanagement/deviceinformationresponse/queryresponses-data.dictionary/accessibilitysettings-data.dictionary) - The response dictionary that contains the devices accessibility settings.
 - [DeviceInformationResponse.QueryResponses.AutoSetupAdminAccountsItem](/documentation/devicemanagement/deviceinformationresponse/queryresponses-data.dictionary/autosetupadminaccountsitem) - The response dictionary that contains the administrator setup information.
 - [DeviceInformationResponse.QueryResponses.MDMOptions](/documentation/devicemanagement/deviceinformationresponse/queryresponses-data.dictionary/mdmoptions-data.dictionary) - The response dictionary that contains MDM options.
-- [DeviceInformationResponse.QueryResponses.OSUpdateSettings](/documentation/devicemanagement/deviceinformationresponse/queryresponses-data.dictionary/osupdatesettings-data.dictionary) - The response dictionary that contains operating system update settings.
 - [DeviceInformationResponse.QueryResponses.OrganizationInfo](/documentation/devicemanagement/deviceinformationresponse/queryresponses-data.dictionary/organizationinfo-data.dictionary) - The response dictionary that contains organization information.
 - [DeviceInformationResponse.QueryResponses.ServiceSubscriptionProperty](/documentation/devicemanagement/deviceinformationresponse/queryresponses-data.dictionary/servicesubscriptionproperty) - The response dictionary that contains information about the active service subscription.
-- [DeviceInformationResponse.QueryResponses.SoftwareUpdateSettings](/documentation/devicemanagement/deviceinformationresponse/queryresponses-data.dictionary/softwareupdatesettings-data.dictionary) - The response dictionary that contains information about the Software Update pane in Settings.
 

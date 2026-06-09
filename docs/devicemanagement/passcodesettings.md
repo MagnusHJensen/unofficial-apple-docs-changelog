@@ -2,7 +2,7 @@
 
 The declaration to configure passcode policy settings.
 
-**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, visionOS 2.0, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, visionOS 2.0, watchOS 10.0
 
 ## Properties
 
@@ -14,6 +14,8 @@ The declaration to configure passcode policy settings.
 
 If `true`, the system forces a password reset the next time the user tries to authenticate. If you set this key in a configuration in the system scope (device channel), the setting takes effect for all users, and admin authentication may fail until the admin user password is also reset.
 
+Available: macOS 13.1+
+
 ### CustomRegex
 
 - **Type:** `PasscodeSettingsCustomRegexObject`
@@ -21,12 +23,16 @@ If `true`, the system forces a password reset the next time the user tries to au
 
 Specifies a regular expression, and its description, to enforce password compliance. Use the simpler passcode settings whenever possible, and rely on regular expression matching only when necessary. Mistakes in regular expressions can lead to frustrating user experiences, such as unsatisfiable passcode policies, or policy descriptions that don’t match the enforced policy.
 
+Available: macOS 14+
+
 ### FailedAttemptsResetInMinutes
 
 - **Type:** `integer`
 - **Required:** No
 
 The number of minutes before the login is reset after the maximum number of failed attempts. Also set the `MaximumFailedAttempts` key for this to take effect.
+
+Available: macOS 13.1+
 
 ### MaximumFailedAttempts
 
@@ -59,6 +65,8 @@ The maximum period that a user can select, during which the device can be idle b
 
 Specifies the maximum number of days that the passcode can remain unchanged. After this number of days, the system forces the user to change the passcode before it unlocks the device.
 
+Available: iOS 16.2+ | iPadOS 16.2+ | macOS 13.1+ | visionOS 2+ | watchOS 10+
+
 ### MinimumComplexCharacters
 
 - **Type:** `integer`
@@ -66,6 +74,8 @@ Specifies the maximum number of days that the passcode can remain unchanged. Aft
 - **Default:** `0`
 
 Specifies the minimum number of complex characters in the password. A complex character is a character other than a number or a letter, such as `&`, `%`, `$`, and `#`.
+
+Available: iOS 16.2+ | iPadOS 16.2+ | macOS 13.1+ | visionOS 2+
 
 ### MinimumLength
 
@@ -89,6 +99,8 @@ The number of historical passcode entries the system checks when validating a ne
 - **Default:** `false`
 
 If `true`, the passcode needs to consist of at least one alphabetic character and at least one number.
+
+Available: iOS 16.2+ | iPadOS 16.2+ | macOS 13.1+ | visionOS 2+
 
 ### RequireComplexPasscode
 
@@ -127,5 +139,5 @@ For user enrollments, the system allows this configuration type, but ignores mos
 
 ### Objects
 
-- [PasscodeSettingsCustomRegexObject](/documentation/devicemanagement/passcodesettingscustomregexobject) - A regular expression and its description to enforce password compliance.
+- [PasscodeSettingsCustomRegexObject](/documentation/devicemanagement/passcodesettingscustomregexobject) - Specifies a regular expression, and its description, to enforce password compliance. Use the simpler passcode settings whenever possible, and rely on regular expression matching only when necessary. Mistakes in regular expressions can lead to frustrating user experiences, such as unsatisfiable passcode policies, or policy descriptions that don’t match the enforced policy.
 

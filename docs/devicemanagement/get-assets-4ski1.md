@@ -2,7 +2,7 @@
 
 Get the set of assets that your organization manages.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 2.0
 
 ## Discussion
 
@@ -17,5 +17,5 @@ Get the set of assets that your organization manages.
 
 ### Content Metadata
 
-- [Apps and Books for Organizations](/documentation/devicemanagement/apps-and-books-for-organizations) - Get details about apps and books to show to your users.
+- [Apps and books metadata for organizations](/documentation/devicemanagement/apps-and-books-metadata-for-organizations) - Get metadata for apps and books your organization owns.
 

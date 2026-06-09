@@ -2,7 +2,7 @@
 
 The declarative management request details.
 
-**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, tvOS 16.0, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, tvOS 16.0, visionOS 1.1, watchOS 10.0
 
 ## Properties
 
@@ -32,12 +32,16 @@ The type of operation the declaration is requesting. This key needs to be one of
 
 The per-enrollment identifier for the device. The system requires this value if the enrollment type is a user enrollment.
 
+Available: iOS 15+ | iPadOS 15+ | macOS 13+ | visionOS 1.1+
+
 ### EnrollmentUserID
 
 - **Type:** `string`
 - **Required:** Yes
 
 The per-enrollment identifier for the user. The system requires this value if the enrollment type is a user enrollment on the user channel.
+
+Available: macOS 13+
 
 ### MessageType
 
@@ -63,12 +67,16 @@ For macOS, this value is the ID of the user.
 
 For Shared iPad, this value is `FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF` to indicate that authentication doesn’t occur.
 
+Available: iOS 15+ | iPadOS 15+ | macOS 13+
+
 ### UserLongName
 
 - **Type:** `string`
 - **Required:** Yes
 
 The full name of the user.
+
+Available: macOS 13+
 
 ### UserShortName
 
@@ -78,6 +86,8 @@ The full name of the user.
 For macOS, this value is the short name of the user.
 
 For Shared iPad, this value is the Managed Apple Account identifier of the user on Shared iPad. It indicates that the token is for the user channel.
+
+Available: iOS 15+ | iPadOS 15+ | macOS 13+
 
 ## Topics
 

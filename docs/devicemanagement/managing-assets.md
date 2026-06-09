@@ -1,12 +1,12 @@
-# Managing Assets
+# Managing assets
 
-Retrieve key information to effectively manage assets across an organization’s users and devices.
+Assign and revoke app and book licenses across your organization.
 
 ## Overview
 
-Assets are the apps and books that an organization owns. The Manage Assets endpoints allow for asynchronous management of these assets to users and devices with mobile device management (MDM) software.
+Assets are the apps, books, and subscriptions that an organization owns. The asset management endpoints allow for asynchronous management of these assets to users and devices with mobile device management (MDM) software.
 
-### Retrieve Asset Information
+### Retrieve asset information
 
 Before managing the assets in an organization, you need to retrieve all of the assets that the organization owns by making a request to [Get Assets](/documentation/devicemanagement/get-assets-4ski1).
 
@@ -14,7 +14,7 @@ The following code shows an example of requesting an organization’s assets:
 
 ```javascript
 curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/assets' \ 
---header 'Authorization: Bearer {cToken}'
+--header 'Authorization: Bearer {sToken}'
 ```
 
 The code above results in a response like the following:
@@ -92,17 +92,30 @@ The code above results in a response like the following:
 }
 ```
 
-You can identify assets by the unique pair of store identifier and quality properties in `RequestAsset`. Assets in the [GetAssetsResponse](/documentation/devicemanagement/getassetsresponse) have additional fields regarding quantity and assignability in [ResponseAsset](/documentation/devicemanagement/responseasset). For pagination response fields, see [Using Paginated Endpoints](/documentation/devicemanagement/using-paginated-endpoints).
+You can identify assets by the unique pair of store identifier and quality properties in `RequestAsset`. Assets in the [GetAssetsResponse](/documentation/devicemanagement/getassetsresponse) have additional fields regarding quantity and assignability in [ResponseAsset](/documentation/devicemanagement/responseasset). For pagination response fields, see [Using paginated endpoints](/documentation/devicemanagement/using-paginated-endpoints).
 
-### Retrieve Assignments
+Organizations can opt in to allow unlimited assignments of free apps and books without making explicit purchases. Use the `unlimited` query parameter to filter for unlimited assets. When set to `true`, the response includes a separate `unlimitedAssets` array containing [UnlimitedResponseAsset](/documentation/devicemanagement/unlimitedresponseasset) objects with unlimited licenses. When set to `false`, the response excludes unlimited assets. If the `unlimited` parameter is omitted, any unlimited free assets in the location return with a `totalCount` value of `2147483647`, the maximum integer value.
+
+The Get Assets endpoint supports several additional query parameters for filtering results:
+
+The Get Assets endpoint returns only apps and books. To filter and retrieve subscription inventory, use the dedicated subscription endpoints described in [Managing subscriptions](/documentation/devicemanagement/managing-subscriptions).
+
+The following code shows an example of requesting only device-assignable apps:
+
+```javascript
+curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/assets?productType=App&deviceAssignable=true' \
+--header 'Authorization: Bearer {sToken}'
+```
+
+### Retrieve assignments
 
 Making a request to [Get Assignments](/documentation/devicemanagement/get-assignments-9wv1e) allows you to retrieve all active asset assignments for the organization.
 
 The following code shows an example of retrieving an organization’s assignments:
 
 ```javascript
-curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/assignments' 
-\ --header 'Authorization: Bearer {cToken}'
+curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/assignments' \
+--header 'Authorization: Bearer {sToken}'
 ```
 
 The code above results in a response like the following:
@@ -146,11 +159,20 @@ The code above results in a response like the following:
 }
 ```
 
-You can assign an asset to either a user or a device. For all other response fields, see [GetAssignmentsResponse](/documentation/devicemanagement/getassignmentsresponse) and [Using Paginated Endpoints](/documentation/devicemanagement/using-paginated-endpoints).
+You can assign an asset to either a user or a device. For all other response fields, see [GetAssignmentsResponse](/documentation/devicemanagement/getassignmentsresponse) and [Using paginated endpoints](/documentation/devicemanagement/using-paginated-endpoints).
 
-### Request Sizes
+Use query parameters to filter assignment results:
 
-The size limits for a [ManageAssetsRequest](/documentation/devicemanagement/manageassetsrequest) and [RevokeAssetsRequest](/documentation/devicemanagement/revokeassetsrequest) are dynamic and can change without notice, so the MDM server should sync these every 5 minutes. These limits are in [ServiceConfigResponse.Limits](/documentation/devicemanagement/serviceconfigresponse/limits-data.dictionary).
+The following code shows an example of retrieving assignments for a specific product with user state information:
+
+```javascript
+curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/assignments?adamId=408709785&includeUserState=true' \
+--header 'Authorization: Bearer {sToken}'
+```
+
+### Check request size limits
+
+The size limits for a [ManageAssetsRequest](/documentation/devicemanagement/manageassetsrequest) and [RevokeAssetsRequest](/documentation/devicemanagement/revokeassetsrequest) are dynamic and can change without notice, so you should sync these every 5 minutes. These limits are in [ServiceConfigResponse.Limits](/documentation/devicemanagement/serviceconfigresponse/limits-data.dictionary).
 
 The following keys are specific to [ManageAssetsRequest](/documentation/devicemanagement/manageassetsrequest):
 
@@ -182,6 +204,8 @@ The code above results in a response like the following:
         "maxClientUserIds": 1000,
         "maxSerialNumbers": 1000,
         "maxRevokeSerialNumbers": 100,
+        "maxSubscriptions": 25,
+        "maxSubscriptionClientUserIds": 1000,
         "maxMdmNameLength": 100,
         "maxMdmMetadataLength": 255,
         "maxMdmIdLength": 100
@@ -190,7 +214,7 @@ The code above results in a response like the following:
 }
 ```
 
-### Assign Assets
+### Assign assets
 
 Use [ManageAssetsRequest](/documentation/devicemanagement/manageassetsrequest) to asynchronously associate or disassociate assets with users and devices.
 
@@ -199,7 +223,7 @@ The following code shows an example of disassociating assets from currently assi
 ```javascript
 curl --location --request POST 'https://vpp.itunes.apple.com/mdm/v2/assets/disassociate' \
 --header 'Content-Type: application/json' \
---header 'Authorization: Bearer {cToken}' \
+--header 'Authorization: Bearer {sToken}' \
 --data-raw '{
     "assets": [
       {
@@ -239,7 +263,7 @@ You can then associate those assets to new users and devices.
 ```javascript
 curl --location --request POST 'https://vpp.itunes.apple.com/mdm/v2/assets/associate' \
 --header 'Content-Type: application/json' \
---header 'Authorization: Bearer {cToken}' \
+--header 'Authorization: Bearer {sToken}' \
 --data-raw '{
     "assets": [
       {
@@ -279,7 +303,7 @@ Use [RevokeAssetsRequest](/documentation/devicemanagement/revokeassetsrequest) t
 ```javascript
 curl --location --request POST 'https://vpp.itunes.apple.com/mdm/v2/assets/revoke' \
 --header 'Content-Type: application/json' \
---header 'Authorization: Bearer {cToken}' \
+--header 'Authorization: Bearer {sToken}' \
 --data-raw '{
      "clientUserIds": [
       "client-1",
@@ -310,7 +334,7 @@ To view event progress, make a request to [Event Status](/documentation/devicema
 
 ```javascript
 curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/status?eventId=29ddf6fe-8b2e-4c3f-91d9-aea3c63e4235' \
---header 'Authorization: Bearer {cToken}'
+--header 'Authorization: Bearer {sToken}'
 ```
 
 The code above results in a response like the following:
@@ -330,7 +354,7 @@ The following code shows the status of a failed assignment event:
 
 ```javascript
 curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/status?eventId=a8e0edbf-bfc2-405f-92bd-08d6d72e7a1d' \
---header 'Authorization: Bearer {cToken}'
+--header 'Authorization: Bearer {sToken}'
 ```
 
 The code above results in a response like the following:
@@ -361,7 +385,7 @@ The following code shows getting the status of a complete assignment event:
 
 ```javascript
 curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/status?eventId=a2c5dfce-7e60-47f6-b19a-6c3abf7d9c7d' \
---header 'Authorization: Bearer {cToken}'
+--header 'Authorization: Bearer {sToken}'
 ```
 
 The code above results in a response like the following:
@@ -379,7 +403,7 @@ The code above results in a response like the following:
 
 The [StatusResponse](/documentation/devicemanagement/statusresponse) returns as `PENDING`, `COMPLETE`, or `FAILED,` which represents the overall status of the asynchronous request.
 
-### Handle Notifications
+### Handle notifications
 
-For MDM clients that subscribe to `ASSET_MANAGEMENT` notifications in [Client Config](/documentation/devicemanagement/client-config-4szk1), the server sends incremental notifications as it makes assignments. For more information, see [Subscribing to Notifications](/documentation/devicemanagement/subscribing-to-notifications).
+For device management services that subscribe to `ASSET_MANAGEMENT` notifications in [Client Config](/documentation/devicemanagement/client-config-4szk1), the server sends incremental notifications as it makes assignments. For more information, see [Subscribing to notifications](/documentation/devicemanagement/subscribing-to-notifications).
 

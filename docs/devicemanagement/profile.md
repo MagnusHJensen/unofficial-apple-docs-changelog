@@ -2,7 +2,7 @@
 
 A profile’s properties and their values.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** Device Assignment Services 5.0
 
 ## Properties
 
@@ -84,7 +84,7 @@ If `true`, the device is configured for Rapid Return to Service. Default is `fal
 
 If `true`, the user may not skip applying the profile returned by the MDM server. Default is `false`.
 
-In iOS 13 and later, all DEP enrollments are mandatory.
+In iOS 13 and later, all ADE enrollments are mandatory.
 
 ### is_mdm_removable
 
@@ -109,9 +109,9 @@ Devices that do not meet the Shared iPad minimum requirements do not honor this 
 
 If `true`, the device must be supervised. Defaults to `false`.
 
-In iOS 11, DEP devices that are not supervised have been deprecated.
+In iOS 11, ADE devices that are not supervised have been deprecated.
 
-In iOS 13, all DEP devices will be supervised and the OS will ignore the `is_supervised` flag completely.
+In iOS 13, all ADE devices will be supervised and the OS will ignore the `is_supervised` flag completely.
 
 ### language
 

@@ -2,7 +2,7 @@
 
 The Account-Driven Enrollment profile defines key attributes related to service discovery for account-driven enrollment by MDM.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** Device Assignment Services 5.1
 
 ## Overview
 

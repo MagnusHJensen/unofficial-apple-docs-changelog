@@ -2,7 +2,7 @@
 
 A list of printer dictionaries.
 
-**Platforms:** macOS 10.7, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.7
 
 ## Properties
 

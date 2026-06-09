@@ -2,7 +2,7 @@
 
 The details for an account-driven enrollment profile.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** Device Assignment Services 5.1
 
 ## Properties
 

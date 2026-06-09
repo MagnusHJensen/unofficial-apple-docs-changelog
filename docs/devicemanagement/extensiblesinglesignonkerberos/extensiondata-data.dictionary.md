@@ -2,7 +2,7 @@
 
 The additional data to pass to the app extension.
 
-**Platforms:** iOS 13.0, iPadOS 13.0, Mac Catalyst 13.0, macOS 10.15, visionOS 1.1, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 13.0, iPadOS 13.0, Mac Catalyst 13.0, macOS 10.15, visionOS 1.1
 
 ## Properties
 
@@ -20,7 +20,9 @@ If `false`, the system doesn’t allow saving passwords in the keychain.
 - **Required:** No
 - **Default:** `true`
 
-If `true`, allow the user to switch the user interface to Password mode. Available in macOS 15 and later.
+If `true`, allow the user to switch the user interface to Password mode.
+
+Available: macOS 15+
 
 ### allowPasswordChange
 
@@ -28,7 +30,9 @@ If `true`, allow the user to switch the user interface to Password mode. Availab
 - **Required:** No
 - **Default:** `true`
 
-If `false`, the system disables password changes. Available in macOS 10.15 and later.
+If `false`, the system disables password changes.
+
+Available: macOS 10.15+
 
 ### allowPlatformSSOAuthFallback
 
@@ -36,7 +40,9 @@ If `false`, the system disables password changes. Available in macOS 10.15 and l
 - **Required:** No
 - **Default:** `true`
 
-If `true` and `usePlatformSSOTGT` is `true`, the system allows the user to manually sign in. Available in macOS 13 and later.
+If `true` and `usePlatformSSOTGT` is `true`, the system allows the user to manually sign in.
+
+Available: macOS 13+
 
 ### allowSmartCard
 
@@ -44,7 +50,9 @@ If `true` and `usePlatformSSOTGT` is `true`, the system allows the user to manua
 - **Required:** No
 - **Default:** `true`
 
-If `true`, allow the user to switch the user interface to SmartCard mode. Available in macOS 15 and later.
+If `true`, allow the user to switch the user interface to SmartCard mode.
+
+Available: macOS 15+
 
 ### cacheName
 
@@ -52,6 +60,8 @@ If `true`, allow the user to switch the user interface to SmartCard mode. Availa
 - **Required:** No
 
 The GSS name of the Kerberos cache to use. Rarely set by an administrator.
+
+Deprecated: iOS 15+ | iPadOS 15+ | macOS 12+
 
 ### certificateUUID
 
@@ -80,14 +90,16 @@ This setting affects how other processes use the Kerberos Extension credential. 
 - `whenNotSpecified`: The system only uses the extension credential if the SPN matches the Kerberos Extension `Hosts` array. However, the system won’t use the credential if the calling app isn’t in the `credentialBundleIDACL`.
 - `kerberosDefault`: The system uses the default Kerberos processes to select credentials, and normally uses the default Kerberos credential. This is the same as turning off this capability.
 
-Available in macOS 11 and later.
+Available: iOS 14+ | iPadOS 14+ | macOS 11+ | visionOS 1.1+
 
 ### customUsernameLabel
 
 - **Type:** `string`
 - **Required:** No
 
-The custom user name label used in the Kerberos extension instead of “Username,” such as “Company ID”. Available in macOS 11 and later.
+The custom user name label used in the Kerberos extension instead of “Username,” such as “Company ID”.
+
+Available: iOS 14+ | iPadOS 14+ | macOS 11+ | visionOS 1.1+
 
 ### delayUserSetup
 
@@ -95,7 +107,9 @@ The custom user name label used in the Kerberos extension instead of “Username
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the system doesn’t prompt the user to setup the Kerberos extension until either the administrator enables it with the `app-sso` tool or the system receives a Kerberos challenge. Available in macOS 11 and later.
+If `true`, the system doesn’t prompt the user to setup the Kerberos extension until either the administrator enables it with the `app-sso` tool or the system receives a Kerberos challenge.
+
+Available: macOS 11+
 
 ### domainRealmMapping
 
@@ -109,14 +123,18 @@ A custom domain-realm mapping for Kerberos. The system uses this when the DNS na
 - **Type:** `string`
 - **Required:** No
 
-The text to display to the user at the bottom of the Kerberos Login Window. You can also use this to display help information or disclaimer text. Available in iOS 14 and later, and macOS 11 and later.
+The text to display to the user at the bottom of the Kerberos Login Window. You can also use this to display help information or disclaimer text.
+
+Available: iOS 14+ | iPadOS 14+ | macOS 11+ | visionOS 1.1+
 
 ### identityIssuerAutoSelectFilter
 
 - **Type:** `string`
 - **Required:** No
 
-A string with wildcards that can use used to filter the list of available SmartCards by issuer. e.g “*My CA2*”. If there is one remaining, it will be auto-selected. If there more than one remaining, then the list is shorter. Available in macOS 15 and later.
+A string with wildcards that can use used to filter the list of available SmartCards by issuer. e.g “*My CA2*”. If there is one remaining, it will be auto-selected. If there more than one remaining, then the list is shorter.
+
+Available: macOS 15+
 
 ### includeKerberosAppsInBundleIdACL
 
@@ -124,7 +142,9 @@ A string with wildcards that can use used to filter the list of available SmartC
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the Kerberos extension allows the standard Kerberos utilities including `TicketViewer` and `klist` to access and use the credential. This is in addition to `includeManagedAppsInBundleIdACL` or the `credentialBundleIdACL`, if you specify those values. Available in macOS 12 and later.
+If `true`, the Kerberos extension allows the standard Kerberos utilities including `TicketViewer` and `klist` to access and use the credential. This is in addition to `includeManagedAppsInBundleIdACL` or the `credentialBundleIdACL`, if you specify those values.
+
+Available: macOS 12+
 
 ### includeManagedAppsInBundleIdACL
 
@@ -132,7 +152,9 @@ If `true`, the Kerberos extension allows the standard Kerberos utilities includi
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the Kerberos extension allows only managed apps to access and use the credential. This is in addition to the `credentialBundleIDACL`, if you specify that value. Available in iOS 14 and later, and macOS 12 and later.
+If `true`, the Kerberos extension allows only managed apps to access and use the credential. This is in addition to the `credentialBundleIDACL`, if you specify that value.
+
+Available: iOS 14+ | iPadOS 14+ | macOS 12+ | visionOS 1.1+
 
 ### isDefaultRealm
 
@@ -148,7 +170,9 @@ Specifies whether this is the default realm if there’s more than one Kerberos 
 - **Required:** No
 - **Default:** `true`
 
-If `false`, the system requests the credential on the next matching Kerberos challenge or network state change. If the credential is expired or missing, the system creates a new one. Available in macOS 11 and later.
+If `false`, the system requests the credential on the next matching Kerberos challenge or network state change. If the credential is expired or missing, the system creates a new one.
+
+Available: macOS 11+
 
 ### performKerberosOnly
 
@@ -156,18 +180,22 @@ If `false`, the system requests the credential on the next matching Kerberos cha
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the Kerberos Extension handles Kerberos requests only. It doesn’t check for password expiration, show the password expiration in the menu, check for external password changes, perform password sync, or retrieve the home directory. Available in macOS 13 and later.
+If `true`, the Kerberos Extension handles Kerberos requests only. It doesn’t check for password expiration, show the password expiration in the menu, check for external password changes, perform password sync, or retrieve the home directory.
+
+Available: iOS 16+ | iPadOS 16+ | macOS 13+ | visionOS 1.1+
 
 ### preferredKDCs
 
 - **Type:** `[string]`
 - **Required:** No
 
-The ordered list of preferred Key Distribution Centers (KDCs) to use for Kerberos traffic. Use this if the servers aren’t discoverable through DNS. If the servers are specified, then the system uses them for both connectivity checks and attempts to use them first for Kerberos traffic. If the servers don’t respond, the device falls back to DNS discovery. Format each entry the same as it would be in a `krb5.conf` file, for example:
+The ordered list of preferred Key Distribution Centers (KDCs) to use for Kerberos traffic. Use this if the servers aren’t discoverable through DNS. If you specify the servers, the system uses them for both connectivity checks and attempts to use them first for Kerberos traffic. If the servers don’t respond, the device falls back to DNS discovery. Format each entry the same as it would be in a `krb5.conf` file, for example:
 
 - `adserver1.example.com`
 - `tcp/adserver1.example.com:88`
 - `kkdcp://kerberosproxy.example.com:443/kkdcp`
+
+Available: iOS 15+ | iPadOS 15+ | macOS 12+ | visionOS 1.1+
 
 ### principalName
 
@@ -181,14 +209,19 @@ The principal (username) to use. You don’t need to include the realm.
 - **Type:** `string`
 - **Required:** No
 
-This URL will launch in the user’s default web browser when they initiate a password change. Available in macOS 10.15 and later.
+This URL will launch in the user’s default web browser when they initiate a password change.
+
+Available: macOS 10.15+
 
 ### pwExpireOverride
 
 - **Type:** `integer`
 - **Required:** No
 
-The number of days that the system allows using passwords on this domain. For most domains, this calculation is automatic. Available in macOS 10.15 and later.
+The number of days that the system allows using passwords on this domain. For most domains, this calculation is automatic.
+
+Available: macOS 10.15+
+Deprecated: macOS 12+
 
 ### pwNotificationDays
 
@@ -196,7 +229,9 @@ The number of days that the system allows using passwords on this domain. For mo
 - **Required:** No
 - **Default:** `15`
 
-The number of days prior to password expiration when the system sends a notification of password expiration to the user. Available in macOS 10.15 and later.
+The number of days prior to password expiration when the system sends a notification of password expiration to the user.
+
+Available: macOS 10.15+
 
 ### pwReqComplexity
 
@@ -204,42 +239,54 @@ The number of days prior to password expiration when the system sends a notifica
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the system requires passwords to meet Active Directory’s definition of “complex”. Available in macOS 10.15 and later.
+If `true`, the system requires passwords to meet Active Directory’s definition of “complex”.
+
+Available: macOS 10.15+
 
 ### pwReqHistory
 
 - **Type:** `integer`
 - **Required:** No
 
-The number of prior passwords that the system disallows reuse on this domain. Available in macOS 10.15 and later.
+The number of prior passwords that the system disallows reuse on this domain.
+
+Available: macOS 10.15+
 
 ### pwReqLength
 
 - **Type:** `integer`
 - **Required:** No
 
-The minimum length of passwords on the domain.Available in macOS 10.15 and later.
+The minimum length of passwords on the domain.
+
+Available: macOS 10.15+
 
 ### pwReqMinAge
 
 - **Type:** `integer`
 - **Required:** No
 
-The minimum age of passwords before the system allows changing them on this domain. Available in macOS 10.15 and later.
+The minimum age of passwords before the system allows changing them on this domain.
+
+Available: macOS 10.15+
 
 ### pwReqRTFData
 
 - **Type:** `data`
 - **Required:** No
 
-The RTF file formatted version of the domain’s password requirements. Only for use if `pwReqComplexity` or `pwReqLength` aren’t specified. Available in macOS 15 and later.
+The RTF file formatted version of the domain’s password requirements. Only for use if `pwReqComplexity` or `pwReqLength` aren’t specified.
+
+Available: macOS 15+
 
 ### pwReqText
 
 - **Type:** `string`
 - **Required:** No
 
-The text version of the domain’s password requirements. Only for use if `pwReqComplexity` or `pwReqLength` aren’t specified. Available in macOS 10.15 and later.
+The text version of the domain’s password requirements. Only for use if `pwReqComplexity` or `pwReqLength` aren’t specified.
+
+Available: macOS 10.15+
 
 ### replicationTime
 
@@ -247,7 +294,10 @@ The text version of the domain’s password requirements. Only for use if `pwReq
 - **Required:** No
 - **Default:** `900`
 
-The time, in seconds, required to replicate changes in the Active Directory domain. The Kerberos extension uses this when checking password age after a change. Available in macOS 11 and later.
+The time, in seconds, required to replicate changes in the Active Directory domain. The Kerberos extension uses this when checking password age after a change.
+
+Available: macOS 11+
+Deprecated: macOS 12+
 
 ### requireTLSForLDAP
 
@@ -255,7 +305,9 @@ The time, in seconds, required to replicate changes in the Active Directory doma
 - **Required:** No
 - **Default:** `false`
 
-Require that LDAP connections use TLS. Available in macOS 11 and later.
+Require that LDAP connections use TLS.
+
+Available: iOS 14+ | iPadOS 14+ | macOS 11+ | visionOS 1.1+
 
 ### requireUserPresence
 
@@ -278,7 +330,9 @@ The name of the Active Directory site the Kerberos extension should use. Most ad
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the user interface will start in SmartCard mode. Available in macOS 15 and later.
+If `true`, the user interface will start in SmartCard mode.
+
+Available: macOS 15+
 
 ### syncLocalPassword
 
@@ -286,7 +340,9 @@ If `true`, the user interface will start in SmartCard mode. Available in macOS 1
 - **Required:** No
 - **Default:** `false`
 
-If `false`, the system disables password sync. Note that this will not work if the user is logged in with a mobile account. Available in macOS 10.15 and later.
+If `false`, the system disables password sync. Note that this will not work if the user is logged in with a mobile account.
+
+Available: macOS 10.15+
 
 ### usePlatformSSOTGT
 
@@ -294,7 +350,9 @@ If `false`, the system disables password sync. Note that this will not work if t
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the system requires this configuration uses a TGT from Platform SSO instead of requesting a new one. Available in macOS 13 and later.
+If `true`, the system requires this configuration uses a TGT from Platform SSO instead of requesting a new one.
+
+Available: macOS 13+
 
 ### useSiteAutoDiscovery
 

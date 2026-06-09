@@ -1,8 +1,8 @@
 # MathSettingsSystemBehaviorObject
 
-The declaration to configure math behavior at the system level.
+If present, configures math behavior in the system.
 
-**Platforms:** iOS 18.0, iPadOS 18.0, Mac Catalyst 18.0, macOS 15.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 18.0, iPadOS 18.0, Mac Catalyst 18.0, macOS 15.0
 
 ## Properties
 

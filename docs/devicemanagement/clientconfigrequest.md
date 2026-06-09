@@ -2,7 +2,7 @@
 
 The request for the client configuration.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 2.0
 
 ## Properties
 
@@ -10,7 +10,7 @@ The request for the client configuration.
 
 - **Type:** `[string]`
 - **Required:** No
-- **Allowed Values:** `ASSET_MANAGEMENT`, `USER_MANAGEMENT`, `USER_ASSOCIATED`, `ASSET_COUNT`
+- **Allowed Values:** `TEST_NOTIFICATION`, `ASSET_MANAGEMENT`, `USER_MANAGEMENT`, `USER_ASSOCIATED`, `ASSET_COUNT`, `SUBSCRIPTION_MANAGEMENT`, `SUBSCRIPTION_COUNT`, `UNLIMITED_ASSET`
 
 The complete set of notification types to which MDM subscribes.
 

@@ -2,7 +2,7 @@
 
 Gets a token from the server.
 
-**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, visionOS 1.1, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, visionOS 1.1
 
 ## Discussion
 
@@ -21,7 +21,7 @@ For the service type `com.apple.maid`, the Apple Identity Service requests this 
 - `jti`: A `String`, per RFC 7519 section 4.1.7, that the server sets to a unique identifier (a random UUID) for the JWT. The Apple Identity Service uses this value to ensure that it only uses the token once.
 - `service_type`: A `String` that the server sets to the value of the `TokenServiceType` key in the `CheckIn` request, which needs to be `com.apple.maid`.
 
-Sign the JWT using the server’s private key that corresponds to the RFC 3280 public key certificate that’s registered with Apple School Manager or Apple Business.
+Sign the JWT using the server’s private key that corresponds to the RFC 3280 public key certificate that’s registered with Apple School Manager or Apple Business. The Apple Identity Service requires that the signing algorithm is “RS256” as defined in RFC 7518 section 3.1.
 
 ### Support Apple Watch pairing
 

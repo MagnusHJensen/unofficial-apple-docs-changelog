@@ -2,7 +2,7 @@
 
 The payload that configures the domains under an organization’s management.
 
-**Platforms:** iOS 8.0, iPadOS 8.0, Mac Catalyst 8.0, macOS 10.10, visionOS 2.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 8.0, iPadOS 8.0, Mac Catalyst 8.0, macOS 10.10, visionOS 2.0
 
 ## Properties
 
@@ -13,7 +13,7 @@ The payload that configures the domains under an organization’s management.
 
 An array of up to 10 strings representing app bundle-ids. Apps matching the bundle-ids listed here have relaxed enforcement of cross-site tracking prevention for the domains listed in `CrossSiteTrackingPreventionRelaxedDomains`.
 
-Available in iOS 18 and later and macOS 15 and later.
+Available: iOS 18+ | iPadOS 18+ | macOS 15+ | visionOS 2+
 
 ### CrossSiteTrackingPreventionRelaxedDomains
 
@@ -22,7 +22,7 @@ Available in iOS 18 and later and macOS 15 and later.
 
 An array of up to 10 strings. URLs matching the patterns listed here have relaxed enforcement of cross-site tracking prevention.
 
-Available in iOS 16.2 and later and macOS 13.1 and later.
+Available: iOS 16.2+ | iPadOS 16.2+ | macOS 13.1+ | visionOS 2+
 
 ### EmailDomains
 
@@ -31,7 +31,7 @@ Available in iOS 16.2 and later and macOS 13.1 and later.
 
 An array of domains. Mail marks in red all email addresses that lack a suffix matching any of these strings.
 
-Available in iOS 8 and later and macOS 10.10 and later.
+Available: iOS 8+ | iPadOS 8+ | macOS 10.10+
 
 ### SafariPasswordAutoFillDomains
 
@@ -40,9 +40,9 @@ Available in iOS 8 and later and macOS 10.10 and later.
 
 An array of domains. Users can only save passwords in Safari from URLs matching the patterns listed here. This property doesn’t disable the autofill feature itself.
 
-Supervised devices or Shared iPads need this property to enable saving passwords in Safari.
+Supervised devices or Shared iPad need this property to enable saving passwords in Safari.
 
-Available in iOS 9.3 and later.
+Available: iOS 9.3+ | iPadOS 9.3+ | visionOS 2+
 
 ### WebDomains
 
@@ -51,7 +51,7 @@ Available in iOS 9.3 and later.
 
 An array of domains. The system considers URLs matching the patterns listed in this property managed.
 
-Available in iOS 9.3 and later.
+Available: iOS 8+ | iPadOS 8+ | visionOS 2+
 
 ## Discussion
 

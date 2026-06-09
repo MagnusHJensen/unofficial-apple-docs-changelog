@@ -2,7 +2,7 @@
 
 The payload that configures the system policy for assessments.
 
-**Platforms:** macOS 10.8, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.8
 
 ## Properties
 
@@ -30,6 +30,8 @@ If `true`, enables Gatekeeper. If `false`, disables Gatekeeper.
 - **Required:** No
 
 If `false`, prevents Gatekeeper from prompting the user to upload blocked malware to Apple for purposes of improving malware detection.
+
+Available: macOS 15+
 
 ## Discussion
 

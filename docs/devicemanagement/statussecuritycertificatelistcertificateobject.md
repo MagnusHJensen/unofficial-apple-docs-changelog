@@ -1,8 +1,8 @@
 # StatusSecurityCertificateListCertificateObject
 
-A status report of a security certificate.
+A security certificate.
 
-**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, tvOS 17.0, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, tvOS 17.0, visionOS 1.1, watchOS 10.0
 
 ## Properties
 
@@ -12,7 +12,7 @@ A status report of a security certificate.
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the system removed the app and only this key and the `identifier` key are present in the status item object.
+If `true`, the system removed the certificate and only this key and the `identifier` key are present in the status item object.
 
 ### data
 

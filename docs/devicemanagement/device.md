@@ -2,7 +2,7 @@
 
 A device’s properties and their values.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** Device Assignment Services 5.0
 
 ## Properties
 
@@ -74,7 +74,7 @@ A time stamp in ISO 8601 format that indicates when the device was added, update
 - **Type:** `string`
 - **Required:** No
 
-Indicates whether the device was added (assigned to the MDM server), modified, or deleted. Contains one of the following strings: `added`, `modified`, or `deleted.This` field is only applicable with the `sync the list of devices` command.
+Indicates whether the device was added (assigned to the MDM server), modified, or deleted. Contains one of the following strings: `added`, `modified`, or `deleted`. This field is only applicable with the `sync the list of devices` command.
 
 ### os
 

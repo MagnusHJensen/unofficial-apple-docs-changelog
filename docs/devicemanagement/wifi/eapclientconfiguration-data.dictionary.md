@@ -2,7 +2,7 @@
 
 A dictionary that configures an enterprise network.
 
-**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, tvOS 9.0, visionOS 1.0, watchOS 3.2, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, tvOS 9.0, visionOS 1.0, watchOS 3.2
 
 ## Properties
 
@@ -59,7 +59,7 @@ If ‘true’, the device uses an existing PAC if it’s present. Otherwise, the
 
 The minimum number of RAND values to accept from the server. For use with EAP-SIM only.
 
-Available in iOS 8 and later, macOS 10.7 and later, tvOS 9 and later, visionOS 1 and later, and watchOS 3.2 and later.
+Available: iOS 8+ | iPadOS 8+ | macOS 10.7+ | tvOS 9+ | visionOS 1+ | watchOS 3.2+
 
 ### OneTimeUserPassword
 
@@ -69,7 +69,7 @@ Available in iOS 8 and later, macOS 10.7 and later, tvOS 9 and later, visionOS 1
 
 If ‘true’, the user receives a prompt for a password each time they connect to the network.
 
-Available in iOS 8 and later, macOS 10.8 and later, tvOS 9 and later, visionOS 1 and later, and watchOS 3.2 and later.
+Available: iOS 8+ | iPadOS 8+ | macOS 10.8+ | tvOS 9+ | visionOS 1+ | watchOS 3.2+
 
 ### OuterIdentity
 
@@ -108,7 +108,7 @@ If ‘true’, the system mode connection tries to use the Open Directory creden
 
 If ‘true’, allows for two-factor authentication for EAP-TTLS, PEAP, or EAP-FAST. If ‘false’, allows for zero-factor authentication for EAP-TLS. If you don’t specify a value, the default is ‘true’ for EAP-TLS, and ‘false’ for other EAP types.
 
-Available in iOS 7 and later, macOS 10.7 and later, tvOS 9 and later, visionOS 1 and later, and watchOS 3.2 and later.
+Available: iOS 7+ | iPadOS 7+ | macOS 10.7+ | tvOS 9+ | visionOS 1+ | watchOS 3.2+
 
 ### TLSMaximumVersion
 
@@ -119,7 +119,7 @@ Available in iOS 7 and later, macOS 10.7 and later, tvOS 9 and later, visionOS 1
 
 The maximum TLS version for EAP authentication.
 
-Available in iOS 11 and later, macOS 10.13 and later, tvOS 11 and later, visionOS 1 and later, and watchOS 3.2 and later.
+Available: iOS 11+ | iPadOS 11+ | macOS 10.13+ | tvOS 11+ | visionOS 1+ | watchOS 3.2+
 
 ### TLSMinimumVersion
 
@@ -130,7 +130,7 @@ Available in iOS 11 and later, macOS 10.13 and later, tvOS 11 and later, visionO
 
 The minimum TLS version for EAP authentication.
 
-Available in iOS 11 and later, macOS 10.13 and later, tvOS 11 and later, visionOS 1 and later, and watchOS 3.2 and later.
+Available: iOS 11+ | iPadOS 11+ | macOS 10.13+ | tvOS 11+ | visionOS 1+ | watchOS 3.2+
 
 ### TLSTrustedCertificates
 
@@ -144,7 +144,7 @@ An array of trusted certificates. Each entry in the array must contain certifica
 - **Type:** `[string]`
 - **Required:** No
 
-The list of accepted server certificate common names. If a server presents a certificate that isn’t in this list, the system doesn’t trust it. If you specify this property, the system disables dynamic trust (the certificate dialog) unless you also specify ‘TLSAllowTrustExceptions’ with the value ‘true’. If necessary, use wildcards to specify the name, such as ‘wpa.*.example.com’.
+The list of accepted server certificate common names. If a server presents a certificate that isn’t in this list, the system doesn’t trust it. If you specify this property, the system disables dynamic trust (the certificate dialog) unless you also specify ‘TLSAllowTrustExceptions’ with the value ‘true’. If necessary, use a single “**.example.com’.
 
 ### TTLSInnerAuthentication
 

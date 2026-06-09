@@ -2,7 +2,7 @@
 
 The response dictionary that contains the devices accessibility settings.
 
-**Platforms:** iOS 16.0, iPadOS 16.0, Mac Catalyst 16.0, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 16.0, iPadOS 16.0, Mac Catalyst 16.0, watchOS 10.0
 
 ## Properties
 
@@ -20,12 +20,16 @@ If `true`, the device has enabled bold text.
 
 If `true`, the device has enabled grayscale display.
 
+Available: watchOS 10+
+
 ### IncreaseContrastEnabled
 
 - **Type:** `boolean`
 - **Required:** No
 
 If `true`, the device has enabled increase contrast.
+
+Available: iOS 16+ | iPadOS 16+
 
 ### ReduceMotionEnabled
 

@@ -2,7 +2,7 @@
 
 The declaration to configure a Lightweight Directory Access Protocol (LDAP) account.
 
-**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, visionOS 1.1, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, visionOS 1.1
 
 ## Properties
 
@@ -49,6 +49,8 @@ Specify `com.apple.configuration.account.ldap` as the declaration type.
 
 ### Configuration example
 
+This configuration sets up an LDAP directory account.
+
 ```json
 {
     "Type": "com.apple.configuration.account.ldap",
@@ -72,5 +74,5 @@ Specify `com.apple.configuration.account.ldap` as the declaration type.
 
 ### Objects
 
-- [AccountLDAPSearchSettingsItemObject](/documentation/devicemanagement/accountldapsearchsettingsitemobject) - The settings for configuring the search behavior with an LDAP server.
+- [AccountLDAPSearchSettingsItemObject](/documentation/devicemanagement/accountldapsearchsettingsitemobject) - The array of nodes to start LDAP searches from. There must be at least one node for this account to be useful. macOS only searches one node and ignores other items in the array.
 

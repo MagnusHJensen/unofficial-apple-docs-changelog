@@ -1,6 +1,6 @@
-# Using Paginated Endpoints
+# Using paginated endpoints
 
-Manage paginated endpoints to efficiently work with large record sets.
+Traverse large result sets with page-index and cursor-based pagination.
 
 ## Overview
 
@@ -19,14 +19,14 @@ The following endpoints support the `sinceVersionId` query parameter:
 - [Get Assignments](/documentation/devicemanagement/get-assignments-9wv1e)
 - [Get Users](/documentation/devicemanagement/get-users-4mwln)
 
-### Handle Pagination
+### Handle pagination
 
 Requests for large record sets return paginated responses. You can traverse the pages by supplying the `pageIndex` query parameter in your request.
 
 To use a `pageIndex` to traverse a paginated response:
 
 1. Make an initial request without `pageIndex`, which returns the first page of records.
-2. If the number of records exceeds a server-controlled limit (on the order of several hundred), the server includes a `nextPageIndex` field in the response, along with the first page of records. The MDM client passes this value as the `pageIndex` in a subsequent request to get the next page of records. As long as additional pages remain, the server returns a `nextPageIndex` field in the response.
+2. If the number of records exceeds a server-controlled limit (on the order of several hundred), the server includes a `nextPageIndex` field in the response, along with the first page of records. You pass this value as the `pageIndex` in a subsequent request to get the next page of records. As long as additional pages remain, the server returns a `nextPageIndex` field in the response.
 3. After the server returns all records for the request, it no longer includes a `nextPageIndex` field in the response.
 
 A paginated response includes the following fields:
@@ -37,7 +37,7 @@ The following is an example of a request for the first page of records:
 
 ```javascript
 curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/assignments' \
---header 'Authorization: Bearer {cToken}'
+--header 'Authorization: Bearer {sToken}'
 ```
 
 The response that contains the first page of records looks like the following:
@@ -73,7 +73,7 @@ The following is an example of a request for the second page of records:
 
 ```javascript
 curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/assignments?pageIndex=1' \
---header 'Authorization: Bearer {cToken}'
+--header 'Authorization: Bearer {sToken}'
 ```
 
 The response that contains the second page of records looks like the following:
@@ -109,7 +109,7 @@ The following is an example of a request for the last page of records:
 
 ```javascript
 curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/assignments?pageIndex=352' \
---header 'Authorization: Bearer {cToken}'
+--header 'Authorization: Bearer {sToken}'
 ```
 
 The response that contains the last page of records looks like the following:
@@ -140,7 +140,7 @@ The response that contains the last page of records looks like the following:
 }
 ```
 
-### Handle Parallel Paginated Requests
+### Handle parallel paginated requests
 
 Paginated endpoints can accept multiple requests in parallel instead of sequentially, which can significantly reduce the amount of time to request and receive records. For performance reasons, don’t submit more than five requests simultaneously.
 
@@ -151,21 +151,22 @@ To make requests for multiple pages in parallel:
 
 > 
 
-### Handle Versioned Responses
+### Handle versioned responses
 
-If you’re unable to subscribe to notifications, or are performing an initial sync, use the `sinceVersionId` query parameter to obtain incremental updates to keep the MDM client up to date with changes without having to retrieve all records.
+If you’re unable to subscribe to notifications, or are performing an initial sync, use the `sinceVersionId` query parameter to obtain incremental updates to keep your device management service up to date with changes without having to retrieve all records.
 
-A `versionId` returns in the response of all versioned endpoints. The `versionId` represents the state of a complete data set for an endpoint. The server generates a new `versionId` for an endpoint whenever the system modifies any underlying data for that endpoint. The MDM client can use a `versionId` in future requests to get records with modifications since the generation of that `versionId`. When any writes occur to the underlying data in a fetch, `versionId` updates.
+A `versionId` returns in the response of all versioned endpoints. The `versionId` represents the state of a complete data set for an endpoint. The server generates a new `versionId` for an endpoint whenever the system modifies any underlying data for that endpoint. You can use a `versionId` in future requests to get records that contain modifications since generating the `versionId`. When any writes occur to the underlying data in a fetch, `versionId` updates.
 
 > 
 
 To use a `versionId` to obtain modified records:
 
 1. Make an initial request. A `versionId` returns with the response that contains the first page of results.
-2. Store this `versionId` temporarily on your server.
+2. Store this `versionId` temporarily in your device management service.
 3. Iterate through any remaining pages of your initial request to retrieve all current data.
 4. To retrieve only those records with modifications since your previous query, make a new request and include the query parameter `sinceVersionId`. Use the `versionId` from your initial request as the value for this parameter. If any newly modified records exist, the response contains a new `versionId` along with those records.
-5. Repeat these steps at regular intervals to keep your system up to date with incremental changes.
+
+Repeat these steps at regular intervals to keep your system up to date with incremental changes.
 
 > 
 
@@ -173,7 +174,7 @@ The following is an example of a request for the initial data:
 
 ```javascript
 curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/assignments' \
---header 'Authorization: Bearer {cToken}'
+--header 'Authorization: Bearer {sToken}'
 ```
 
 The response that contains the initial data looks like the following:
@@ -209,7 +210,7 @@ The following is an example of a request for the updated data:
 
 ```javascript
 curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/assignments?sinceVersionId=658a45d0-5a7b-11eb-b9e4-d782eaed4cfb' \
---header 'Authorization: Bearer {cToken}'
+--header 'Authorization: Bearer {sToken}'
 ```
 
 The response that contains the updated data looks like the following:
@@ -242,4 +243,29 @@ The response that contains the updated data looks like the following:
 ```
 
 > 
+
+### Handle cursor-based pagination
+
+The subscription endpoints use cursor-based pagination instead of page-index pagination. These endpoints include:
+
+- `GET /v2/subscriptions`
+- `GET /v2/subscriptions/assignments`
+- `GET /v2/subscriptions/admins`
+
+To begin, send the initial request without a `cursor` parameter. The response includes a `nextCursor` field that contains an opaque string token.
+
+```json
+{
+  "nextCursor": "eyJwYWdlIjoyfQ",
+  "versionId": "1680000000001"
+}
+```
+
+Pass the value of `nextCursor` as the `cursor` query parameter in the next request. Continue this process until the response no longer contains a `nextCursor` field, which indicates the last page.
+
+Treat the cursor as an opaque value. Don’t attempt to parse, decode, or construct cursor strings. The server generates each cursor to point to a specific position in the result set, and the format may change without notice.
+
+Unlike page-index pagination, cursor-based pagination is sequential. Each cursor depends on the previous response, so you can’t skip ahead or request arbitrary positions within the result set. Cursor-based pagination doesn’t support parallel requests.
+
+The cursor-based endpoints also return a `versionId` in each response. Store the `versionId` from your most recent complete fetch to track the state of the data set.
 

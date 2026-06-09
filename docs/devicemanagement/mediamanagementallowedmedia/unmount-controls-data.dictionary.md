@@ -2,7 +2,7 @@
 
 A dictionary to control volume unmounting.
 
-**Platforms:** macOS 10.7, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.7
 
 ## Properties
 
@@ -13,6 +13,8 @@ A dictionary to control volume unmounting.
 
 Unused; set to an empty string.
 
+Deprecated: macOS 11+
+
 ### bd
 
 - **Type:** `[string]`
@@ -20,6 +22,8 @@ Unused; set to an empty string.
 - **Allowed Values:** `authenticate`, `read-only`, `deny`, `eject`
 
 A media action string or an array of media action strings.
+
+Deprecated: macOS 11+
 
 ### blankbd
 
@@ -29,6 +33,8 @@ A media action string or an array of media action strings.
 
 A media action string or an array of media action strings.
 
+Deprecated: macOS 11+
+
 ### blankcd
 
 - **Type:** `[string]`
@@ -36,6 +42,8 @@ A media action string or an array of media action strings.
 - **Allowed Values:** `authenticate`, `read-only`, `deny`, `eject`
 
 A media action string or an array of media action strings.
+
+Deprecated: macOS 11+
 
 ### blankdvd
 
@@ -45,6 +53,8 @@ A media action string or an array of media action strings.
 
 A media action string or an array of media action strings.
 
+Deprecated: macOS 11+
+
 ### cd
 
 - **Type:** `[string]`
@@ -52,6 +62,8 @@ A media action string or an array of media action strings.
 - **Allowed Values:** `authenticate`, `read-only`, `deny`, `eject`
 
 A media action string or an array of media action strings.
+
+Deprecated: macOS 11+
 
 ### disk-image
 
@@ -61,6 +73,8 @@ A media action string or an array of media action strings.
 
 A media action string or an array of media action strings.
 
+Deprecated: macOS 11+
+
 ### dvd
 
 - **Type:** `[string]`
@@ -68,6 +82,8 @@ A media action string or an array of media action strings.
 - **Allowed Values:** `authenticate`, `read-only`, `deny`, `eject`
 
 A media action string or an array of media action strings.
+
+Deprecated: macOS 11+
 
 ### dvdram
 
@@ -77,15 +93,19 @@ A media action string or an array of media action strings.
 
 A media action string or an array of media action strings.
 
+Deprecated: macOS 11+
+
 ### harddisk-external
 
 - **Type:** `[string]`
 - **Required:** No
 - **Allowed Values:** `authenticate`, `read-only`, `deny`, `eject`
 
-A string or an array of media action strings. Internally installed SD cards and USB flash drives are included in the hard disk-external category.
+A string or an array of media action strings. The hard disk-external category includes internally installed SD cards and USB flash drives.
 
 This key is the default for media types that don’t fall into other categories.
+
+Deprecated: macOS 11+
 
 ### harddisk-internal
 
@@ -95,6 +115,8 @@ This key is the default for media types that don’t fall into other categories.
 
 A media action string or an array of media action strings.
 
+Deprecated: macOS 11+
+
 ### networkdisk
 
 - **Type:** `[string]`
@@ -102,4 +124,6 @@ A media action string or an array of media action strings.
 - **Allowed Values:** `authenticate`, `read-only`, `deny`, `eject`
 
 A media action string or an array of media action strings.
+
+Deprecated: macOS 11+
 

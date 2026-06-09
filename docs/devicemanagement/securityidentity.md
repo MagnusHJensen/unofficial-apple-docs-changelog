@@ -1,8 +1,8 @@
 # SecurityIdentity
 
-The declaration to install an identity on the device.
+The declaration to configure an identity.
 
-**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, tvOS 17.0, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, tvOS 17.0, visionOS 1.1, watchOS 10.0
 
 ## Properties
 
@@ -13,6 +13,8 @@ The declaration to install an identity on the device.
 - **Default:** `false`
 
 If `true`, apps can access the private key.
+
+Available: macOS 14+
 
 ### CredentialAssetReference
 
@@ -29,6 +31,8 @@ The identifier of an asset declaration that contains the identity to install.
 
 If `true`, the private key is extractable in the keychain.
 
+Available: macOS 14+
+
 ## Discussion
 
 Specify `com.apple.configuration.security.identity` as the declaration type.
@@ -36,6 +40,8 @@ Specify `com.apple.configuration.security.identity` as the declaration type.
 ### Configuration availability
 
 ### Configuration example
+
+This configuration installs a certificate identity on the device.
 
 ```json
 {

@@ -2,7 +2,7 @@
 
 The declaration to configure the math and calculator apps.
 
-**Platforms:** iOS 18.0, iPadOS 18.0, Mac Catalyst 18.0, macOS 15.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 18.0, iPadOS 18.0, Mac Catalyst 18.0, macOS 15.0
 
 ## Properties
 
@@ -52,6 +52,6 @@ This configuration prevents the use of scientific and programmer modes in calcul
 
 ### Objects
 
-- [MathSettingsCalculatorObject](/documentation/devicemanagement/mathsettingscalculatorobject) - The declaration to configure the calculator app.
-- [MathSettingsSystemBehaviorObject](/documentation/devicemanagement/mathsettingssystembehaviorobject) - The declaration to configure math behavior at the system level.
+- [MathSettingsCalculatorObject](/documentation/devicemanagement/mathsettingscalculatorobject) - If present, configures the built-in Calculator app.
+- [MathSettingsSystemBehaviorObject](/documentation/devicemanagement/mathsettingssystembehaviorobject) - If present, configures math behavior in the system.
 

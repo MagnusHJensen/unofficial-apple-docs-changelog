@@ -2,7 +2,7 @@
 
 The payload that configures a Mail account.
 
-**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, visionOS 1.1, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, visionOS 1.1
 
 ## Properties
 
@@ -14,6 +14,8 @@ The payload that configures a Mail account.
 
 If `true`, the system enables this account to use Mail Drop.
 
+Available: iOS 9.2+ | iPadOS 9.2+ | macOS 10.12+ | visionOS 1.1+
+
 ### disableMailRecentsSyncing
 
 - **Type:** `boolean`
@@ -21,6 +23,8 @@ If `true`, the system enables this account to use Mail Drop.
 - **Default:** `false`
 
 If `true`, the system excludes this account from Recent Addresses syncing.
+
+Available: iOS 6+ | iPadOS 6+ | macOS 10.7+ | visionOS 1.1+
 
 ### EmailAccountDescription
 
@@ -164,6 +168,8 @@ This setting is only supported by interactive profile installations. Not support
 
 If `true`, the system prevents this account from sending mail in any app other than the Apple Mail app.
 
+Available: iOS 5+ | iPadOS 5+ | visionOS 1.1+
+
 ### PreventMove
 
 - **Type:** `boolean`
@@ -171,6 +177,8 @@ If `true`, the system prevents this account from sending mail in any app other t
 - **Default:** `false`
 
 If `true`, the system prevents moving messages out of this email account and into another account. It also prevents forwarding or replying from an account other than the recipient of the message.
+
+Available: iOS 5+ | iPadOS 5+ | visionOS 1.1+
 
 ### SMIMEEnabled
 
@@ -180,6 +188,8 @@ If `true`, the system prevents moving messages out of this email account and int
 
 If `true`, the system enables S/MIME encryption. The system ignores this key in iOS 10.0 and later.
 
+Available: iOS 5+ | iPadOS 5+ | visionOS 1.1+
+
 ### SMIMEEnableEncryptionPerMessageSwitch
 
 - **Type:** `boolean`
@@ -187,6 +197,8 @@ If `true`, the system enables S/MIME encryption. The system ignores this key in 
 - **Default:** `false`
 
 If `true`, the system displays the per-message encryption switch in the Mail Compose UI.
+
+Available: iOS 12+ | iPadOS 12+ | visionOS 1.1+
 
 ### SMIMEEnablePerMessageSwitch
 
@@ -196,6 +208,9 @@ If `true`, the system displays the per-message encryption switch in the Mail Com
 
 If `true`, the system displays the per-message encryption switch in the Mail Compose UI. Deprecated in iOS 12.0. Use `SMIMEEnableEncryptionPerMessageSwitch` instead.
 
+Available: iOS 8+ | iPadOS 8+
+Deprecated: iOS 10+ | iPadOS 10+
+
 ### SMIMEEncryptByDefault
 
 - **Type:** `boolean`
@@ -203,6 +218,8 @@ If `true`, the system displays the per-message encryption switch in the Mail Com
 - **Default:** `false`
 
 If `true`, the system enables S/MIME encryption by default.
+
+Available: iOS 12+ | iPadOS 12+ | visionOS 1.1+
 
 ### SMIMEEncryptByDefaultUserOverrideable
 
@@ -212,12 +229,16 @@ If `true`, the system enables S/MIME encryption by default.
 
 If `true`, the user can turn encryption by default on/off, and encryption is on.
 
+Available: iOS 12+ | iPadOS 12+ | visionOS 1.1+
+
 ### SMIMEEncryptionCertificateUUID
 
 - **Type:** `string`
 - **Required:** No
 
 The UUID of the identity certificate used to decrypt messages sent to this account. The system attaches the public certificate to outgoing mail to allow the user to receive encrypted mail. When the user sends encrypted mail, the system uses the public certificate to encrypt the copy of the mail in their Sent mailbox.
+
+Available: iOS 5+ | iPadOS 5+ | visionOS 1.1+
 
 ### SMIMEEncryptionCertificateUUIDUserOverrideable
 
@@ -227,6 +248,8 @@ The UUID of the identity certificate used to decrypt messages sent to this accou
 
 If `true`, the user can select the S/MIME encryption identity, and encryption is on.
 
+Available: iOS 12+ | iPadOS 12+ | visionOS 1.1+
+
 ### SMIMEEncryptionEnabled
 
 - **Type:** `boolean`
@@ -235,12 +258,16 @@ If `true`, the user can select the S/MIME encryption identity, and encryption is
 
 If `true`, the system enables S/MIME encryption for this account.
 
+Available: iOS 10+ | iPadOS 10+ | visionOS 1.1+
+
 ### SMIMESigningCertificateUUID
 
 - **Type:** `string`
 - **Required:** No
 
 The payload UUID of the identity certificate used to sign messages sent from this account.
+
+Available: iOS 5+ | iPadOS 5+ | visionOS 1.1+
 
 ### SMIMESigningCertificateUUIDUserOverrideable
 
@@ -250,6 +277,8 @@ The payload UUID of the identity certificate used to sign messages sent from thi
 
 If `true`, the user can select the signing identity.
 
+Available: iOS 12+ | iPadOS 12+ | visionOS 1.1+
+
 ### SMIMESigningEnabled
 
 - **Type:** `boolean`
@@ -257,6 +286,8 @@ If `true`, the user can select the signing identity.
 - **Default:** `false`
 
 If `true`, the system enables S/MIME signing for this account.
+
+Available: iOS 10+ | iPadOS 10+ | visionOS 1.1+
 
 ### SMIMESigningUserOverrideable
 
@@ -266,12 +297,16 @@ If `true`, the system enables S/MIME signing for this account.
 
 If `true`, the user can turn S/MIME signing on or off in Settings.
 
+Available: iOS 12+ | iPadOS 12+ | visionOS 1.1+
+
 ### VPNUUID
 
 - **Type:** `string`
 - **Required:** No
 
-The VPNUUID of the per-app VPN the account uses for network communication. Available in iOS 14 and later.
+The VPNUUID of the per-app VPN the account uses for network communication.
+
+Available: iOS 14+ | iPadOS 14+ | visionOS 1.1+
 
 ## Discussion
 

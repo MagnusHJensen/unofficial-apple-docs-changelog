@@ -2,7 +2,7 @@
 
 The payload that configures a Google account.
 
-**Platforms:** iOS 9.3, iPadOS 9.3, Mac Catalyst 9.3, visionOS 1.1, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 9.3, iPadOS 9.3, Mac Catalyst 9.3, visionOS 1.1
 
 ## Properties
 
@@ -27,6 +27,8 @@ The user’s full name for the Google account. This name appears in sent message
 
 The communication service handler rules for this account.
 
+Available: iOS 10+ | iPadOS 10+ | visionOS 1.1+
+
 ### EmailAddress
 
 - **Type:** `string`
@@ -39,7 +41,9 @@ The full Google email address for the account.
 - **Type:** `string`
 - **Required:** No
 
-The VPNUUID of the per-app VPN the account uses for network communication. Available in iOS 14 and later.
+The VPNUUID of the per-app VPN the account uses for network communication.
+
+Available: iOS 14+ | iPadOS 14+ | visionOS 1.1+
 
 ## Discussion
 

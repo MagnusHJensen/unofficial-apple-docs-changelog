@@ -2,7 +2,7 @@
 
 The payload that configures relay settings.
 
-**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, tvOS 17.0, visionOS 1.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, tvOS 17.0, visionOS 1.0
 
 ## Properties
 
@@ -13,6 +13,8 @@ The payload that configures relay settings.
 - **Default:** `false`
 
 If `true`, the device allows the relay to failover to the default system DNS resolver.
+
+Available: iOS 26+ | iPadOS 26+ | macOS 26+ | tvOS 26+ | visionOS 26+
 
 ### ExcludedDomains
 
@@ -27,6 +29,8 @@ A list of domain strings to exclude from routing through the servers in `Relays`
 - **Required:** No
 
 A list of Fully Qualified Domain Names (FQDNs) to exclude from routing through the servers contained in `Relays`. Any connection that matches an FQDN in the list exactly won’t use the relay server. When `MatchDomains` is also present, any FQDN listed in the list should be a subdomain of at least one `MatchDomain` value, otherwise it will not have any effect.
+
+Available: iOS 18.4+ | iPadOS 18.4+ | macOS 15.4+ | tvOS 18.4+ | visionOS 2.4+
 
 ### MatchDomains
 
@@ -46,6 +50,8 @@ If this list and `MatchFQDNs` are empty, the system routes traffic to all domain
 
 A list of Fully Qualified Domain Names (FQDNs) to be routed through the servers contained in `Relays`. Any connection that matches an FQDN in the list exactly uses the relay servers. If this list and `MatchDomains` are empty, the system routes traffic to all domains to the relay servers, except those that match an excluded domain or excluded FQDN.
 
+Available: iOS 18.4+ | iPadOS 18.4+ | macOS 15.4+ | tvOS 18.4+ | visionOS 2.4+
+
 ### Relays
 
 - **Type:** `[Relay.Relay]`
@@ -60,6 +66,8 @@ An array of dictionaries that describe one or more relay servers that the system
 
 A globally unique identifier for this relay configuration. The system uses this UUID to route managed apps through the servers in `Relays`. This key is required for user enrollment.
 
+Available: iOS 17+ | iPadOS 17+ | tvOS 17+ | visionOS 1+
+
 ### UIToggleEnabled
 
 - **Type:** `boolean`
@@ -67,6 +75,8 @@ A globally unique identifier for this relay configuration. The system uses this 
 - **Default:** `true`
 
 If `true`, the device allows the user to disable this network relay configuration.
+
+Available: iOS 26+ | iPadOS 26+ | macOS 26+ | tvOS 26+ | visionOS 26+
 
 ## Discussion
 

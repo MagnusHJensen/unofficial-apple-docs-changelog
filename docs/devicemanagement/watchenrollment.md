@@ -2,7 +2,7 @@
 
 The declaration to configure an MDMv1 profile for Apple Watch enrollment.
 
-**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0
 
 ## Properties
 
@@ -31,6 +31,8 @@ Specify `com.apple.configuration.watch.enrollment` as the declaration type.
 ### Configuration availability
 
 ### Configuration example
+
+This configuration enrolls an Apple Watch using a profile URL.
 
 ```json
 {

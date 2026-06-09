@@ -1,8 +1,8 @@
 # StatusAppManagedList
 
-The device’s declarative managed apps.
+The status item that lists the device’s declarative managed apps.
 
-**Platforms:** iOS 17.2, iPadOS 17.2, Mac Catalyst 17.2, macOS 26.0, visionOS 2.4, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 17.2, iPadOS 17.2, Mac Catalyst 17.2, macOS 26.0, visionOS 2.4
 
 ## Properties
 
@@ -34,9 +34,11 @@ An array of dictionaries that describe the device’s declarative managed apps.
 - `Info.UpdateAvailable`: An update is available for the app.
 - `Error.UpdateFailed`: The app update failed.
 
+### Status item example
+
 ## Topics
 
 ### Objects
 
-- [StatusAppManagedListAppObject](/documentation/devicemanagement/statusappmanagedlistappobject) - A dictionary that describes a declarative managed app.
+- [StatusAppManagedListAppObject](/documentation/devicemanagement/statusappmanagedlistappobject) - A managed app.
 

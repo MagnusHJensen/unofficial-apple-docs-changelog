@@ -2,7 +2,7 @@
 
 The payload that configures macOS App Store restrictions.
 
-**Platforms:** macOS 10.9, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.9
 
 ## Properties
 
@@ -12,7 +12,9 @@ The payload that configures macOS App Store restrictions.
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the system disables software update notifications. Available in macOS 10.10 and later.
+If `true`, the system disables software update notifications.
+
+Available: macOS 10.10+
 
 ### restrict-store-disable-app-adoption
 
@@ -20,7 +22,9 @@ If `true`, the system disables software update notifications. Available in macOS
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the system disables app adoption by users. Available in macOS 10.10 and later.
+If `true`, the system disables app adoption by users.
+
+Available: macOS 10.10+
 
 ### restrict-store-require-admin-to-install
 
@@ -30,13 +34,17 @@ If `true`, the system disables app adoption by users. Available in macOS 10.10 a
 
 If `true`, the system restricts app installations to admin users only. Deprecated in macOS 10.14. Use the `com.apple.SoftwareUpdate` payload key `restrict-software-update-require-admin-to-install` instead.
 
+Deprecated: macOS 10.14+
+
 ### restrict-store-softwareupdate-only
 
 - **Type:** `boolean`
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the system prevents App Store from launching. Available in macOS 10.14 and later. Restricts installations to software updates only in macOS 10.10 through 10.13.
+If `true`, the system prevents App Store from launching. Restricts installations to software updates only in macOS 10.10 through 10.13.
+
+Available: macOS 10.10+
 
 ## Discussion
 

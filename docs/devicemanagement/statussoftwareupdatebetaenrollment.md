@@ -1,8 +1,8 @@
 # StatusSoftwareUpdateBetaEnrollment
 
-A status report of the device’s enrolled beta program.
+The status item that reports the device’s enrolled beta program.
 
-**Platforms:** iOS 18.0, iPadOS 18.0, Mac Catalyst 18.0, macOS 15.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 18.0, iPadOS 18.0, Mac Catalyst 18.0, macOS 15.0
 
 ## Properties
 
@@ -16,4 +16,14 @@ The device’s enrolled beta program name, or an empty string if there’s no en
 ## Discussion
 
 ### Status item availability
+
+### Status item example
+
+```json
+{
+    "softwareupdate": {
+        "beta-enrollment": ""
+    }
+}
+```
 

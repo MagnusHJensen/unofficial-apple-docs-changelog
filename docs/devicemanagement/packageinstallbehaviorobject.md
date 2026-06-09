@@ -1,8 +1,8 @@
 # PackageInstallBehaviorObject
 
-Specifies the install behavior of the package.
+A dictionary that describes how and when to install the package.
 
-**Platforms:** macOS 26.0, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 26.0
 
 ## Properties
 

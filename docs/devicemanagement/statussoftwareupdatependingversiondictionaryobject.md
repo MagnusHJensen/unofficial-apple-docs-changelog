@@ -1,8 +1,8 @@
 # StatusSoftwareUpdatePendingVersionDictionaryObject
 
-A dictionary that contains details about a pending software update.
+A dictionary that contains the build and OS versions of the software update that’s pending on the device.
 
-**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, tvOS 18.4, visionOS 26.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, tvOS 18.4, visionOS 26.0
 
 ## Properties
 

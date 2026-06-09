@@ -2,7 +2,7 @@
 
 The asset assignment for a user or device.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 2.0
 
 ## Properties
 
@@ -20,6 +20,11 @@ The unique identifier for a product in the store.
 
 The unique identifier for an active user in your organization.
 
+### idHash
+
+- **Type:** `string`
+- **Required:** No
+
 ### pricingParam
 
 - **Type:** `string`
@@ -34,4 +39,10 @@ The quality of a product in the store.
 - **Required:** No
 
 The unique identifier for a device in your organization.
+
+### userStatus
+
+- **Type:** `string`
+- **Required:** No
+- **Allowed Values:** `Registered`, `Associated`, `Retired`, `Deleted`
 

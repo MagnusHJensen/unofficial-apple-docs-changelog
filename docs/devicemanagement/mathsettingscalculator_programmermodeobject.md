@@ -1,8 +1,8 @@
 # MathSettingsCalculator_ProgrammerModeObject
 
-The declaration to configure programmer mode in the calculator app.
+If present, configures the programmer mode of the calculator. If not present, programmer mode is enabled.
 
-**Platforms:** macOS 15.0, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 15.0
 
 ## Properties
 

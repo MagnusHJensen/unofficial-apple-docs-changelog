@@ -2,7 +2,7 @@
 
 The return-to-service response details.
 
-**Platforms:** iOS 26.0, iPadOS 26.0, Mac Catalyst 26.0, visionOS 26.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 26.0, iPadOS 26.0, Mac Catalyst 26.0, visionOS 26.0
 
 ## Properties
 
@@ -12,7 +12,9 @@ The return-to-service response details.
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the device preserves the data plan on an iPhone or iPad with eSIM functionality, if one exists. This value is available in iOS 26.4 and later.
+If `true`, the device preserves the data plan on an iPhone or iPad with eSIM functionality, if one exists.
+
+Available: iOS 26.4+ | iPadOS 26.4+
 
 ### ReturnToService
 

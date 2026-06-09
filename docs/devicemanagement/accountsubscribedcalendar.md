@@ -2,7 +2,7 @@
 
 The declaration to configure a subscribed calendar.
 
-**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 14.0, visionOS 1.1, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 14.0, visionOS 1.1
 
 ## Properties
 
@@ -34,6 +34,8 @@ Specify `com.apple.configuration.account.subscribed-calendar` as the declaration
 ### Configuration availability
 
 ### Configuration example
+
+This configuration subscribes to a calendar feed.
 
 ```json
 {

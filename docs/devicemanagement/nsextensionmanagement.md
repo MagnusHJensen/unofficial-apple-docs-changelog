@@ -2,7 +2,7 @@
 
 The payload that configures the extensions that the system allows or disallows to run on the device.
 
-**Platforms:** macOS 10.13, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.13
 
 ## Properties
 

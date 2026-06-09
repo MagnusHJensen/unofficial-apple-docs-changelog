@@ -2,7 +2,7 @@
 
 The payload that configures an Active Directory (AD) domain.
 
-**Platforms:** macOS 10.8, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.8
 
 ## Properties
 
@@ -22,6 +22,8 @@ If `true`, the system allows authentication from any domain in the namespace.
 
 If `true`, the system enables the `ADAllowMultiDomainAuth` key.
 
+Available: macOS 10.9+
+
 ### ADCreateMobileAccountAtLogin
 
 - **Type:** `boolean`
@@ -37,6 +39,8 @@ If `true`, the system creates a mobile account at login.
 - **Default:** `false`
 
 If `true`, the system enables the `ADCreateMobileAccountAtLogin` key.
+
+Available: macOS 10.9+
 
 ### ADDefaultUserShell
 
@@ -83,6 +87,8 @@ If `true`, the system forces a local home directory.
 - **Default:** `false`
 
 If `true`, the system enables the `ADForceHomeLocal` key.
+
+Available: macOS 10.9+
 
 ### ADMapGGIDAttribute
 
@@ -249,6 +255,8 @@ If `true`, the system uses the UNC path from Active Directory to derive the netw
 
 If `true`, the system enables the `ADUseWindowsUNCPath` key.
 
+Available: macOS 10.9+
+
 ### ADWarnUserBeforeCreatingMA
 
 - **Type:** `boolean`
@@ -264,6 +272,8 @@ If `true`, the system enables the warning before creating the mobile account.
 - **Default:** `false`
 
 If `true`, the system enables the `ADWarnUserBeforeCreatingMA` key.
+
+Available: macOS 10.9+
 
 ### ClientID
 

@@ -2,7 +2,7 @@
 
 The command to disable Remote Desktop on a device.
 
-**Platforms:** macOS 10.14.4, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.14.4
 
 ## Properties
 

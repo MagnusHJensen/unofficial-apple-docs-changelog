@@ -2,7 +2,7 @@
 
 A dictionary containing the configuration for return to service.
 
-**Platforms:** iOS 26.0, iPadOS 26.0, Mac Catalyst 26.0, visionOS 26.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 26.0, iPadOS 26.0, Mac Catalyst 26.0, visionOS 26.0
 
 ## Properties
 
@@ -30,6 +30,16 @@ If `true`, the device automatically erases itself and then performs reenrollment
 The MDM profile that installs after erasure when using return to service. If provided, the device uses this profile directly instead of fetching it from the server. This key is required if the device’s Automated Device Enrollment profile contains the `configuration-web-url` key.
 
 The device always downloads the Automated Device Enrollment profile even when this key is present, so the supervision identity, MDM removability, and other settings still apply. However, the device doesn’t use the specified URL in the Automated Device Enrollment profile to fetch the MDM profile.
+
+### ShouldRetryEnrollment
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the device retries service enrollment when the initial enrollment fails after erasure.
+
+Available: iOS 27+ | iPadOS 27+
 
 ### WiFiProfileData
 

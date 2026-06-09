@@ -2,7 +2,7 @@
 
 The pairing of Authorization Rights to group names.
 
-**Platforms:** macOS 14.0, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 14.0
 
 ## Properties
 

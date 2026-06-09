@@ -2,7 +2,7 @@
 
 The dictionary containing details about the user.
 
-**Platforms:** macOS 10.7, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.7
 
 ## Properties
 
@@ -14,12 +14,16 @@ The dictionary containing details about the user.
 
 The authorization method. Either the profile contains the password or the user provides it.
 
+Deprecated: macOS 15.4+
+
 ### EmailAddress
 
 - **Type:** `string`
 - **Required:** Yes
 
 The address for the account.
+
+Deprecated: macOS 15.4+
 
 ### FullName
 
@@ -28,12 +32,16 @@ The address for the account.
 
 The full name of the account.
 
+Deprecated: macOS 15.4+
+
 ### Password
 
 - **Type:** `string`
 - **Required:** Yes
 
 The password for the account. Required when the `AuthMethod` is `Password`.
+
+Deprecated: macOS 15.4+
 
 ### Prompt
 
@@ -42,6 +50,8 @@ The password for the account. Required when the `AuthMethod` is `Password`.
 
 The custom instructions for the user, if needed.
 
+Deprecated: macOS 15.4+
+
 ### PromptMessage
 
 - **Type:** `string`
@@ -49,10 +59,14 @@ The custom instructions for the user, if needed.
 
 The additional descriptive text for the user prompt.
 
+Deprecated: macOS 15.4+
+
 ### UserName
 
 - **Type:** `string`
 - **Required:** Yes
 
 The UNIX user name for the accounts.
+
+Deprecated: macOS 15.4+
 

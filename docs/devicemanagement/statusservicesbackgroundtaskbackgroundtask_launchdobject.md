@@ -1,8 +1,8 @@
 # StatusServicesBackgroundTaskBackgroundTask_LaunchdObject
 
-A status report of a background task that’s based on a launch daemon.
+Details about a `launchd`-based background task, which is only present when the type is `daemon` or `agent`.
 
-**Platforms:** macOS 14.0, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 14.0
 
 ## Properties
 
@@ -19,6 +19,8 @@ The hash value of the `launchd` `plist` file.
 - **Required:** No
 
 A dictionary that indicates a [ServicesBackgroundTasks](/documentation/devicemanagement/servicesbackgroundtasks) configuration created this background task. The dictionary contains properties that identify the configuration and the declaration asset that provided the launchd plist for the task.
+
+Available: macOS 15+
 
 ### label
 

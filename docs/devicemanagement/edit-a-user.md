@@ -2,7 +2,7 @@
 
 Modify details about a user.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 1.0
 
 ## Discussion
 

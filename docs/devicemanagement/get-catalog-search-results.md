@@ -1,8 +1,8 @@
 # Get Catalog Search Results
 
-Fetch metadata for apps and books from the catalog by using a search term.
+Fetch metadata for apps, books, and subscriptions from the catalog by using a search term.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 2.2
 
 ## Discussion
 

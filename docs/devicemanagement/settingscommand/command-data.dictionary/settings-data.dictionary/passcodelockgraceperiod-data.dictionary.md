@@ -2,7 +2,7 @@
 
 A dictionary that contains settings for the password lock grace period.
 
-**Platforms:** iOS 9.3.2, iPadOS 9.3.2, Mac Catalyst 9.3.2, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 9.3.2, iPadOS 9.3.2, Mac Catalyst 9.3.2
 
 ## Properties
 
@@ -13,6 +13,8 @@ A dictionary that contains settings for the password lock grace period.
 - **Allowed Values:** `PasscodeLockGracePeriod`
 
 A string that identifies this setting.
+
+Deprecated: iOS 17+ | iPadOS 17+
 
 ### PasscodeLockGracePeriod
 
@@ -27,4 +29,6 @@ If a device has a passcode, a change to a larger value doesn’t take effect unt
 If the value is less than one of the known values, the device uses the next lowest value. For example a value of 299 results in an effective setting of 60.
 
 This setting won’t take effect if `TemporarySessionOnly` is `true` because there’s no passcode for a temporary session.
+
+Deprecated: iOS 17+ | iPadOS 17+
 

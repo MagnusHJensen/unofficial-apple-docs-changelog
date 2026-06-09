@@ -2,7 +2,7 @@
 
 The payload that configures Game Center parental controls.
 
-**Platforms:** macOS 10.9, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.9
 
 ## Properties
 
@@ -22,6 +22,8 @@ If `true`, allows account modifications.
 
 If `true`, allows adding Game Center friends.
 
+Deprecated: macOS 10.13+
+
 ### GKFeatureGameCenterAllowed
 
 - **Type:** `boolean`
@@ -30,6 +32,8 @@ If `true`, allows adding Game Center friends.
 
 If `true`, enables Game Center.
 
+Deprecated: macOS 10.13+
+
 ### GKFeatureMultiplayerGamingAllowed
 
 - **Type:** `boolean`
@@ -37,6 +41,8 @@ If `true`, enables Game Center.
 - **Default:** `true`
 
 If `true`, allows multiplayer gaming.
+
+Deprecated: macOS 10.13+
 
 ## Discussion
 

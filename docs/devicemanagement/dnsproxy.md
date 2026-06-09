@@ -2,7 +2,7 @@
 
 The payload that configures DNS proxies.
 
-**Platforms:** iOS 11.0, iPadOS 11.0, Mac Catalyst 11.0, macOS 10.15, visionOS 1.1, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 11.0, iPadOS 11.0, Mac Catalyst 11.0, macOS 10.15, visionOS 1.1
 
 ## Properties
 
@@ -20,6 +20,8 @@ The bundle identifier of the app containing the DNS proxy network extension.
 
 A globally unique identifier for this DNS proxy configuration. The proxy processes DNS lookups traffic for managed apps with the same `DNSProxyUUID` in their app attributes. This key is required for user enrollment.
 
+Available: iOS 16+ | iPadOS 16+ | visionOS 1.1+
+
 ### ProviderBundleIdentifier
 
 - **Type:** `string`
@@ -33,6 +35,15 @@ The bundle identifier of the DNS proxy network extension to use. Declaring the b
 - **Required:** No
 
 The dictionary of vendor-specific configuration items.
+
+### ProviderDesignatedRequirement
+
+- **Type:** `string`
+- **Required:** No
+
+The designated requirement string that the system embeds in the code signature of the DNS proxy network extension. Use this to correctly identify the DNS proxy extension when `ProviderBundleIdentifier` is present.
+
+Available: macOS 10.15+
 
 ## Discussion
 

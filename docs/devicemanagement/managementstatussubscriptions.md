@@ -2,7 +2,7 @@
 
 The declaration to configure status subscriptions.
 
-**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, tvOS 16.0, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, tvOS 16.0, visionOS 1.1, watchOS 10.0
 
 ## Properties
 
@@ -20,6 +20,8 @@ Specify `com.apple.configuration.management.status-subscriptions` as the declara
 ### Configuration availability
 
 ### Configuration example
+
+This configuration subscribes to a set of device status items.
 
 ```json
 {

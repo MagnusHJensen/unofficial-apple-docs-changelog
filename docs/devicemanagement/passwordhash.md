@@ -2,7 +2,7 @@
 
 A dictionary that contains the password hash for the account.
 
-**Platforms:** macOS 10.11, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.11
 
 ## Properties
 

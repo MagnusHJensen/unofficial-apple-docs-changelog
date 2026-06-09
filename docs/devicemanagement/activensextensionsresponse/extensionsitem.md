@@ -2,7 +2,7 @@
 
 A dictionary that contains information about an extension.
 
-**Platforms:** macOS 10.13, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.13
 
 ## Properties
 

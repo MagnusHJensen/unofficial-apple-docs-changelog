@@ -2,7 +2,7 @@
 
 A reference to a SCEP identity.
 
-**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, tvOS 17.0, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, tvOS 17.0, visionOS 1.1, watchOS 10.0
 
 ## Properties
 
@@ -23,7 +23,7 @@ The keychain accessibility that determines when the keychain item is available f
 - **Type:** `AssetCredentialSCEPAuthenticationObject`
 - **Required:** No
 
-The server authentication details.
+The server authentication details. If this key is absent, the default authentication type is MDM.
 
 ### Reference
 
@@ -59,6 +59,6 @@ Specify `com.apple.asset.credential.scep` as the declaration type.
 
 ### Objects
 
-- [AssetCredentialSCEPAuthenticationObject](/documentation/devicemanagement/assetcredentialscepauthenticationobject) - The server authentication details for a SCEP asset credential.
-- [AssetCredentialSCEPReferenceObject](/documentation/devicemanagement/assetcredentialscepreferenceobject) - The external reference for a SCEP asset credential.
+- [AssetCredentialSCEPAuthenticationObject](/documentation/devicemanagement/assetcredentialscepauthenticationobject) - The server authentication details. If this key is absent, the default authentication type is MDM.
+- [AssetCredentialSCEPReferenceObject](/documentation/devicemanagement/assetcredentialscepreferenceobject) - The external reference. Ensure that the asset data:
 

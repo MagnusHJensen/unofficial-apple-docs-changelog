@@ -2,7 +2,7 @@
 
 The payload that configures Wi-Fi settings.
 
-**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, tvOS 9.0, visionOS 1.0, watchOS 3.2, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, tvOS 9.0, visionOS 1.0, watchOS 3.2
 
 ## Properties
 
@@ -25,7 +25,7 @@ There are several restrictions on the use of this flag:
 
 The device fails to install the profile payload if any of these conditions are not met.
 
-Available in visionOS 26 and later.
+Available: visionOS 26+
 
 ### AutoJoin
 
@@ -37,7 +37,7 @@ If `true`, the device joins the network automatically.
 
 If `false`, the user must tap the network name to join it.
 
-Available in iOS 5 and later, macOS 10.7 and later, tvOS 9 and later, visionOS 1 and later, and watchOS 3.2 and later.
+Available: iOS 5+ | iPadOS 5+ | macOS 10.7+ | tvOS 9+ | visionOS 1+ | watchOS 3.2+
 
 ### CaptiveBypass
 
@@ -47,7 +47,7 @@ Available in iOS 5 and later, macOS 10.7 and later, tvOS 9 and later, visionOS 1
 
 If `true`, the system bypasses Captive Network detection when the device connects to the network.
 
-Available in iOS 10 and later, tvOS 9 and later, visionOS 1 and later, and watchOS 3.2 and later.
+Available: iOS 10+ | iPadOS 10+ | tvOS 9+ | visionOS 1+ | watchOS 3.2+
 
 ### DisableAssociationMACRandomization
 
@@ -61,7 +61,7 @@ If `false`, then the system enables MAC address randomization on iOS, watchOS, a
 
 This value is only locked when MDM installs the profile. If the profile is manually installed, the system sets the value but the user can change it.
 
-Available in iOS 14 and later, macOS 15 and later, visionOS 1 and later, and watchOS 7 and later.
+Available: iOS 14+ | iPadOS 14+ | macOS 15+ | visionOS 1+ | watchOS 7+
 
 ### DisplayedOperatorName
 
@@ -70,7 +70,7 @@ Available in iOS 14 and later, macOS 15 and later, visionOS 1 and later, and wat
 
 The operator name to display when connected to this network. Used only with Wi-Fi Hotspot 2.0 access points.
 
-Available in iOS 7 and later, macOS 10.9 and later, tvOS 9 and later, visionOS 1 and later, and watchOS 3.2 and later.
+Available: iOS 7+ | iPadOS 7+ | macOS 10.9+ | tvOS 9+ | visionOS 1+ | watchOS 3.2+
 
 ### DomainName
 
@@ -79,7 +79,7 @@ Available in iOS 7 and later, macOS 10.9 and later, tvOS 9 and later, visionOS 1
 
 The primary domain of the tunnel.
 
-Available in iOS 7 and later, macOS 10.9 and later, tvOS 9 and later, visionOS 1 and later, and watchOS 3.2 and later.
+Available: iOS 7+ | iPadOS 7+ | macOS 10.9+ | tvOS 9+ | visionOS 1+ | watchOS 3.2+
 
 ### EAPClientConfiguration
 
@@ -125,7 +125,7 @@ Prior to macOS 13, the encryption type, if specified explicitly, needed to match
 
 The HESSID used for Wi-Fi Hotspot 2.0 negotiation.
 
-Available in iOS 7 and later, macOS 10.7 and later, tvOS 9 and later, visionOS 1 and later, and watchOS 3.2 and later.
+Available: iOS 7+ | iPadOS 7+ | macOS 10.7+ | tvOS 9+ | visionOS 1+ | watchOS 3.2+
 
 ### HIDDEN_NETWORK
 
@@ -143,7 +143,7 @@ If `true`, defines this network as hidden.
 
 If `true`, the device treats the network as a hotspot.
 
-Available in iOS 7 and later, macOS 10.9 and later, tvOS 9 and later, visionOS 1 and later, and watchOS 3.2 and later.
+Available: iOS 7+ | iPadOS 7+ | macOS 10.9+ | tvOS 9+ | visionOS 1+ | watchOS 3.2+
 
 ### MCCAndMNCs
 
@@ -152,7 +152,7 @@ Available in iOS 7 and later, macOS 10.9 and later, tvOS 9 and later, visionOS 1
 
 An array of Mobile Country Code/Mobile Network Code (MCC/MNC) pairs used for Wi-Fi Hotspot 2.0 negotiation. Each string must contain exactly six digits.
 
-Available in iOS 7 and later, tvOS 9 and later, visionOS 1 and later, and watchOS 3.2 and later.
+Available: iOS 7+ | iPadOS 7+ | tvOS 9+ | visionOS 1+ | watchOS 3.2+
 
 ### NAIRealmNames
 
@@ -161,7 +161,7 @@ Available in iOS 7 and later, tvOS 9 and later, visionOS 1 and later, and watchO
 
 An array of Network Access Identifier Realm names used for Wi-Fi Hotspot 2.0 negotiation.
 
-Available in iOS 7 and later, macOS 10.9 and later, tvOS 9 and later, visionOS 1 and later, and watchOS 3.2 and later.
+Available: iOS 7+ | iPadOS 7+ | macOS 10.9+ | tvOS 9+ | visionOS 1+ | watchOS 3.2+
 
 ### Password
 
@@ -236,7 +236,7 @@ The user name used to authenticate to the proxy server.
 
 A dictionary that contains the list of apps that the system allows to benefit from L2 and L3 marking. When this dictionary isn’t present, the system allows all apps to use L2 and L3 marking when the Wi-Fi network supports Cisco QoS fast lane.
 
-Available in iOS 10 and later, macOS 10.13 and later, tvOS 9 and later, visionOS 1 and later, and watchOS 3.2 and later.
+Available: iOS 10+ | iPadOS 10+ | macOS 10.13+ | tvOS 9+ | visionOS 1+ | watchOS 3.2+
 
 ### RoamingConsortiumOIs
 
@@ -245,7 +245,7 @@ Available in iOS 10 and later, macOS 10.13 and later, tvOS 9 and later, visionOS
 
 An array of Roaming Consortium Organization Identifiers used for Wi-Fi Hotspot 2.0 negotiation.
 
-Available in iOS 7 and later, macOS 10.9 and later, tvOS 9 and later, visionOS 1 and later, and watchOS 3.2 and later.
+Available: iOS 7+ | iPadOS 7+ | macOS 10.9+ | tvOS 9+ | visionOS 1+ | watchOS 3.2+
 
 ### ServiceProviderRoamingEnabled
 
@@ -255,7 +255,7 @@ Available in iOS 7 and later, macOS 10.9 and later, tvOS 9 and later, visionOS 1
 
 If `true`, allows connection to roaming service providers.
 
-Available in iOS 7 and later, macOS 10.9 and later, tvOS 9 and later, visionOS 1 and later, and watchOS 3.2 and later.
+Available: iOS 7+ | iPadOS 7+ | macOS 10.9+ | tvOS 9+ | visionOS 1+ | watchOS 3.2+
 
 ### SetupModes
 
@@ -265,7 +265,7 @@ Available in iOS 7 and later, macOS 10.9 and later, tvOS 9 and later, visionOS 1
 
 An array of strings that contain the type of connection mode to attach.
 
-Available in macOS 10.7 and later.
+Available: macOS 10.7+
 
 ### SSID_STR
 
@@ -274,7 +274,7 @@ Available in macOS 10.7 and later.
 
 The SSID of the Wi-Fi network to use. In iOS 7.0 and later, the SSID is optional if a value exists for `DomainName` value.
 
-Available in iOS 7 and later, macOS 10.7 and later, tvOS 9 and later, visionOS 1 and later, and watchOS 3.2 and later.
+Available: iOS 7+ | iPadOS 7+ | macOS 10.7+ | tvOS 9+ | visionOS 1+ | watchOS 3.2+
 
 ### TLSCertificateRequired
 

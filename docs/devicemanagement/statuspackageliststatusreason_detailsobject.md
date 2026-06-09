@@ -1,8 +1,8 @@
 # StatusPackageListStatusReason_DetailsObject
 
-A dictionary that contains further details about this error.
+A dictionary that contains additional details about the state.
 
-**Platforms:** macOS 26.0, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 26.0
 
 ## Properties
 

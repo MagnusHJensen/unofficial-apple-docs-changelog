@@ -2,7 +2,7 @@
 
 The declaration to configure Siri settings.
 
-**Platforms:** iOS 26.4, iPadOS 26.4, Mac Catalyst 26.4, macOS 26.4, visionOS 26.4, watchOS 26.4, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 26.4, iPadOS 26.4, Mac Catalyst 26.4, macOS 26.4, tvOS 27.0 (Beta), visionOS 26.4, watchOS 26.4
 
 ## Properties
 
@@ -14,6 +14,8 @@ The declaration to configure Siri settings.
 
 If `false`, disables Siri user-generated content.
 
+Available: iOS 26.4+ | iPadOS 26.4+ | watchOS 26.4+
+
 ### AllowWhileLocked
 
 - **Type:** `boolean`
@@ -21,6 +23,8 @@ If `false`, disables Siri user-generated content.
 - **Default:** `true`
 
 If `false`, disables Siri while locked.
+
+Available: iOS 26.4+ | iPadOS 26.4+ | watchOS 26.4+
 
 ### Enabled
 
@@ -30,6 +34,8 @@ If `false`, disables Siri while locked.
 
 If `false`, disables Siri.
 
+Available: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+ | tvOS 27+ | visionOS 26.4+
+
 ### ForceProfanityFilter
 
 - **Type:** `boolean`
@@ -37,6 +43,8 @@ If `false`, disables Siri.
 - **Default:** `false`
 
 If `true`, forces Siri profanity filter.
+
+Available: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+
 
 ## Discussion
 

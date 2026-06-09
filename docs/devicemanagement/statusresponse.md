@@ -1,6 +1,6 @@
 # StatusResponse
 
-**Platforms:** Device Assignment Services , VPP License Management 
+Status of an asynchronous event, including event type, current status, completion counts, and any failure details.
 
 ## Properties
 

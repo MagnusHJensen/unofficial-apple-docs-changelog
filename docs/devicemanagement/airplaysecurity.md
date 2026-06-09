@@ -2,7 +2,7 @@
 
 The payload that configures Apple TV for a particular style of AirPlay security.
 
-**Platforms:** tvOS 11.0, Device Assignment Services , VPP License Management 
+**Platforms:** tvOS 11.0
 
 ## Properties
 
@@ -32,6 +32,10 @@ The AirPlay password; required if `SecurityType` is `PASSWORD`.
 - **Allowed Values:** `PASSCODE_ONCE`, `PASSCODE_ALWAYS`, `PASSWORD`
 
 The security policy for AirPlay. Allowed values:
+
+- `PASSCODE_ONCE`: Requires an onscreen passcode on first connection from a device. Subsequent connections from the same device aren’t prompted.
+- `PASSCODE_ALWAYS`: Requires an onscreen passcode for every AirPlay connection. After an AirPlay connection ends, the system allows reconnecting within 30 seconds without a password.
+- `PASSWORD`: Requires the passphrase set for `Password`.
 
 > 
 

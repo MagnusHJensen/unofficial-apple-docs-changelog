@@ -2,7 +2,7 @@
 
 The payload that configures a global HTTP proxy.
 
-**Platforms:** iOS 6.0, iPadOS 6.0, Mac Catalyst 6.0, macOS 10.9, tvOS 9.0, visionOS 2.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 6.0, iPadOS 6.0, Mac Catalyst 6.0, macOS 10.9, tvOS 9.0, visionOS 2.0
 
 ## Properties
 
@@ -14,6 +14,8 @@ The payload that configures a global HTTP proxy.
 
 If `true`, allows the device to bypass the proxy server to display the login page for captive networks.
 
+Available: iOS 7+ | iPadOS 7+ | macOS 10.9+ | tvOS 9+ | visionOS 2+
+
 ### ProxyPACFallbackAllowed
 
 - **Type:** `boolean`
@@ -21,6 +23,8 @@ If `true`, allows the device to bypass the proxy server to display the login pag
 - **Default:** `false`
 
 If `true`, allows connecting directly to the destination if the proxy autoconfiguration (PAC) file is unreachable.
+
+Available: iOS 7+ | iPadOS 7+ | macOS 10.9+ | tvOS 9+ | visionOS 2+
 
 ### ProxyPACURL
 

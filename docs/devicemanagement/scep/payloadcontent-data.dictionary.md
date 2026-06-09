@@ -2,7 +2,7 @@
 
 The SCEP dictionary.
 
-**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, tvOS 9.0, visionOS 1.0, watchOS 3.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, tvOS 9.0, visionOS 1.0, watchOS 3.0
 
 ## Properties
 
@@ -13,6 +13,8 @@ The SCEP dictionary.
 - **Default:** `false`
 
 If `true`, all apps have access to the private key.
+
+Available: iOS 4+ | iPadOS 4+ | macOS 10.10+ | tvOS 9+ | visionOS 1+ | watchOS 3+
 
 ### CAFingerprint
 
@@ -49,6 +51,8 @@ A bitmask indicating the use of the key. Possible values:
 
 Some certificate authorities, such as Windows CA, support only encryption or signing, but not both at the same time.
 
+Available: iOS 4+ | iPadOS 4+ | macOS 10.11+ | tvOS 9+ | visionOS 1+ | watchOS 3+
+
 ### KeyIsExtractable
 
 - **Type:** `boolean`
@@ -56,6 +60,8 @@ Some certificate authorities, such as Windows CA, support only encryption or sig
 - **Default:** `true`
 
 If `false`, the system disables exporting the private key from the keychain.
+
+Available: iOS 4+ | iPadOS 4+ | macOS 10.13.4+ | tvOS 9+ | visionOS 1+ | watchOS 3+
 
 ### Keysize
 
@@ -81,6 +87,8 @@ A string that’s understood by the SCEP server; for example, a domain name like
 
 The number of times the device should retry if the server sends a PENDING response.
 
+Available: iOS 4+ | iPadOS 4+ | macOS 10.10+ | tvOS 9+ | visionOS 1+ | watchOS 3+
+
 ### RetryDelay
 
 - **Type:** `integer`
@@ -88,6 +96,8 @@ The number of times the device should retry if the server sends a PENDING respon
 - **Default:** `10`
 
 The number of seconds to wait between subsequent retries. The first retry is attempted without this delay.
+
+Available: iOS 4+ | iPadOS 4+ | macOS 10.10+ | tvOS 9+ | visionOS 1+ | watchOS 3+
 
 ### Subject
 

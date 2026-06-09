@@ -2,7 +2,7 @@
 
 The payload that configures the desktop wallpaper.
 
-**Platforms:** macOS 10.10, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.10
 
 ## Properties
 
@@ -13,6 +13,8 @@ The payload that configures the desktop wallpaper.
 - **Default:** `false`
 
 If `true`, locks the desktop picture. Replaced with allowWallpaperModification in macOS 10.13.
+
+Deprecated: macOS 10.13+
 
 ### override-picture-path
 

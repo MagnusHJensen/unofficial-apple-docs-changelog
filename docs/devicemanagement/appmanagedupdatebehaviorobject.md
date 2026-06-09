@@ -1,8 +1,8 @@
 # AppManagedUpdateBehaviorObject
 
-Specifies the update behavior of the apps installed from the App Store. Apps in packages are not automatically updated.
+A dictionary that specifies how the device updates apps.
 
-**Platforms:** iOS 26.0, iPadOS 26.0, Mac Catalyst 26.0, macOS 26.0, visionOS 26.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 26.0, iPadOS 26.0, Mac Catalyst 26.0, macOS 26.0, visionOS 26.0
 
 ## Properties
 
@@ -18,7 +18,7 @@ Specifies whether the device automatically updates the app:
 - `AlwaysOff`: The device never automatically updates the app.
 - `StoreSettings`: The device uses the settings for the corresponding store to determine when to automatically update the app. For Enterprise apps, this setting behaves the same as `AlwaysOff`.
 
-When the `InstallBehavior.Version` key is specified, the device ignores this key and Automatic App Updates are disabled.
+When you specify the `InstallBehavior.Version` key, the device ignores this key and Automatic App Updates are disabled.
 
 In macOS, the device ignores this setting if the `AppComposedIdentifier` key is set in the configuration.
 

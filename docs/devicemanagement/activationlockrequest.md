@@ -2,7 +2,7 @@
 
 Request enabling activation lock for a device.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** Device Assignment Services 5.0
 
 ## Properties
 
@@ -18,7 +18,7 @@ Serial number of the device (required).
 - **Type:** `string`
 - **Required:** No
 
-Escrow key (optional). If the escrow key is not provided, the device will be locked to the person who created the MDM server in the portal. For information about creating an escrow key see [Creating and Using Bypass Codes](/documentation/devicemanagement/creating-and-using-bypass-codes).
+Escrow key (optional). If the escrow key is not provided, the device will be locked to the person who created the MDM server in the portal. For information about creating an escrow key see [Creating and using bypass codes](/documentation/devicemanagement/creating-and-using-bypass-codes).
 
 ### lost_message
 

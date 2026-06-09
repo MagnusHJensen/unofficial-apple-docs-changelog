@@ -2,8 +2,6 @@
 
 The response object that contains the device token.
 
-**Platforms:** Device Assignment Services , VPP License Management 
-
 ## Properties
 
 ### SyncTokens

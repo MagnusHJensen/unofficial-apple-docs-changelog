@@ -2,7 +2,7 @@
 
 A dictionary that contains voice roaming settings.
 
-**Platforms:** iOS 5.0, iPadOS 5.0, Mac Catalyst 5.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 5.0, iPadOS 5.0, Mac Catalyst 5.0
 
 ## Properties
 
@@ -13,6 +13,8 @@ A dictionary that contains voice roaming settings.
 
 If `true`, enable voice roaming. If `false`, disable voice roaming, which also disables data roaming. The setting is only available for certain carriers.
 
+Deprecated: iOS 16+ | iPadOS 16+
+
 ### Item
 
 - **Type:** `string`
@@ -20,4 +22,6 @@ If `true`, enable voice roaming. If `false`, disable voice roaming, which also d
 - **Allowed Values:** `VoiceRoaming`
 
 A string that identifies this setting.
+
+Deprecated: iOS 16+ | iPadOS 16+
 

@@ -1,4 +1,4 @@
-# Common Objects
+# Common objects
 
 Understand the common JSON objects that framework responses contain.
 
@@ -20,5 +20,4 @@ Understand the common JSON objects that framework responses contain.
 ### Handling errors
 
 - [Error](/documentation/devicemanagement/error) - Information about an error that occurred while processing a request.
-- [Interpreting HTTP status codes](/documentation/devicemanagement/interpreting-http-status-codes) - Interpret error codes the API might return when executing a request.
 

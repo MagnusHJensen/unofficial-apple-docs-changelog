@@ -2,7 +2,7 @@
 
 The payload that configures the kernel extension policies.
 
-**Platforms:** macOS 10.13.2, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.13.2
 
 ## Properties
 
@@ -28,7 +28,7 @@ The array of team identifiers that define which validly signed kernel extensions
 
 If `true`, nonadministrative users can approve additional kernel extensions in the Security & Privacy preferences.
 
-Available in macOS 11 and later.
+Available: macOS 11+
 
 ### AllowUserOverrides
 

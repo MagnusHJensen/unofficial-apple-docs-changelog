@@ -2,7 +2,7 @@
 
 The paginated response that contains the requested assets.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 2.0
 
 ## Properties
 
@@ -12,6 +12,13 @@ The paginated response that contains the requested assets.
 - **Required:** No
 
 The set of requested assets.
+
+### unlimitedAssets
+
+- **Type:** `[UnlimitedResponseAsset]`
+- **Required:** No
+
+The set of requested unlimited assets.
 
 ### currentPageIndex
 
@@ -79,8 +86,9 @@ The unique library identifier. When querying records using multiple tokens that 
 
 ## Topics
 
-### Objects and Data Types
+### Objects and data types
 
 - [ResponseAsset](/documentation/devicemanagement/responseasset) - The asset that the organization owns.
+- [UnlimitedResponseAsset](/documentation/devicemanagement/unlimitedresponseasset) - An asset with an unlimited license that the organization owns.
 - [MdmInfo](/documentation/devicemanagement/mdminfo) - Information about the MDM client.
 

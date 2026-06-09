@@ -2,7 +2,7 @@
 
 A response that contains the resource objects for the request.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 2.2
 
 ## Properties
 

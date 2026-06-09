@@ -2,7 +2,7 @@
 
 The payload that configures access point names.
 
-**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0
 
 ## Properties
 
@@ -13,6 +13,8 @@ The payload that configures access point names.
 
 The list of access point names (APNs).
 
+Deprecated: iOS 7+ | iPadOS 7+
+
 ### DefaultsDomainName
 
 - **Type:** `string`
@@ -20,6 +22,8 @@ The list of access point names (APNs).
 - **Allowed Values:** `com.apple.managedCarrier`
 
 The domain name.
+
+Deprecated: iOS 7+ | iPadOS 7+
 
 ## Discussion
 

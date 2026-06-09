@@ -1,16 +1,16 @@
-# Profile-Specific Payload Keys
+# Profile-specific payload keys
 
-Use the appropriate payload for your configuration needs.
+Apply settings to devices using configuration profiles.
 
 ## Overview
 
-In addition to the standard payload keys (described in [Define a Profile](/documentation/devicemanagement/configuring-multiple-devices-using-profiles#Define-a-Profile)) each payload can contain keys specific to a payload type. These payload specific keys are described in detail, below.
+In addition to the standard payload keys (described in [Define a profile](/documentation/devicemanagement/configuring-multiple-devices-using-profiles#Define-a-profile)) each payload can contain keys specific to a payload type. These payload specific keys are described in detail, below.
 
 For profiles that use paths, consider them to be case sensitive.
 
 ## Topics
 
-### Top Level
+### General
 
 - [TopLevel](/documentation/devicemanagement/toplevel) - The top-level payload properties for all profiles.
 - [CommonPayloadKeys](/documentation/devicemanagement/commonpayloadkeys) - The properties common to all payloads.
@@ -30,7 +30,7 @@ For profiles that use paths, consider them to be case sensitive.
 - [AirPlay](/documentation/devicemanagement/airplay) - The payload that configures AirPlay settings.
 - [AirPlaySecurity](/documentation/devicemanagement/airplaysecurity) - The payload that configures Apple TV for a particular style of AirPlay security.
 
-### App Management
+### App management
 
 - [AppLock](/documentation/devicemanagement/applock) - The payload that configures a device to run a single app.
 - [AssociatedDomains](/documentation/devicemanagement/associateddomains) - The payload that configures associated domains.
@@ -78,7 +78,7 @@ For profiles that use paths, consider them to be case sensitive.
 - [8021XThirdActiveEthernet](/documentation/devicemanagement/8021xthirdactiveethernet) - The payload that configures the third wired, active Ethernet interface.
 - [8021XThirdEthernet](/documentation/devicemanagement/8021xthirdethernet) - The payload that configures the third wired Ethernet interface.
 
-### Full Disk Encryption
+### FileVault
 
 - [FDEFileVault](/documentation/devicemanagement/fdefilevault) - The payload that configures FileVault.
 - [FDEFileVaultOptions](/documentation/devicemanagement/fdefilevaultoptions) - The payload that configures FileVault options.
@@ -98,7 +98,7 @@ For profiles that use paths, consider them to be case sensitive.
 - [ExchangeWebServices](/documentation/devicemanagement/exchangewebservices) - The payload that configures an Exchange Web Services accounts.
 - [Mail](/documentation/devicemanagement/mail) - The payload that configures a Mail account.
 
-### Managed Devices
+### Managed devices
 
 - [EducationConfiguration](/documentation/devicemanagement/educationconfiguration) - The payload that configures the users, groups, and departments within an educational organization.
 - [LightsOutManagementLOM](/documentation/devicemanagement/lightsoutmanagementlom) - The payload that configures lights-out management (LOM) settings.
@@ -106,7 +106,7 @@ For profiles that use paths, consider them to be case sensitive.
 - [MDM](/documentation/devicemanagement/mdm) - The payload that configures mobile device management (MDM) settings.
 - [ProfileRemovalPassword](/documentation/devicemanagement/profileremovalpassword) - The payload that configures profile removal.
 
-### Media Management
+### Media management
 
 - [MediaManagementDiscBurning](/documentation/devicemanagement/mediamanagementdiscburning) - The payload that configures disc-burning settings.
 
@@ -114,7 +114,7 @@ For profiles that use paths, consider them to be case sensitive.
 
 - [Cellular](/documentation/devicemanagement/cellular) - The payload that configures cellular settings.
 - [CellularPrivateNetwork](/documentation/devicemanagement/cellularprivatenetwork) - The payload that provides device info on private network deployments, including geographical location, preference over Wi-Fi, and network deployment type.
-- [ContentCaching](/documentation/devicemanagement/contentcaching) - The payload that configures the Content Caching service.
+- [ContentCachingService](/documentation/devicemanagement/contentcachingservice) - The payload that configures the Content Caching service.
 - [DNSSettings](/documentation/devicemanagement/dnssettings) - The payload that configures encrypted DNS settings.
 - [Domains](/documentation/devicemanagement/domains) - The payload that configures the domains under an organization’s management.
 - [Firewall](/documentation/devicemanagement/firewall) - The payload that configures the firewall.
@@ -123,7 +123,7 @@ For profiles that use paths, consider them to be case sensitive.
 - [WiFi](/documentation/devicemanagement/wifi) - The payload that configures Wi-Fi settings.
 - [WiFiManagedSettings](/documentation/devicemanagement/wifimanagedsettings) - The payload that configures managed Wi-Fi settings.
 
-### Parental Controls
+### Parental controls
 
 - [ParentalControlsApplicationRestrictions](/documentation/devicemanagement/parentalcontrolsapplicationrestrictions) - The payload that configures parental controls for apps.
 - [ParentalControlsContentFilter](/documentation/devicemanagement/parentalcontrolscontentfilter) - The payload that configures the parental control web content filters.
@@ -161,7 +161,7 @@ For profiles that use paths, consider them to be case sensitive.
 - [SecurityPreferences](/documentation/devicemanagement/securitypreferences) - The payload that configures security preferences.
 - [SmartCard](/documentation/devicemanagement/smartcard) - The payload that configures a smart card.
 
-### System Configuration
+### System configuration
 
 - [Declarations](/documentation/devicemanagement/declarations) - The payload that applies a set of declarations to the device through the Settings app.
 - [EnergySaver](/documentation/devicemanagement/energysaver) - The payload that configures Energy Saver settings.
@@ -170,22 +170,20 @@ For profiles that use paths, consider them to be case sensitive.
 - [LockScreenMessage](/documentation/devicemanagement/lockscreenmessage) - The payload that configures a Lock Screen message.
 - [Screensaver](/documentation/devicemanagement/screensaver) - The payload that configures the screen saver.
 - [SystemExtensions](/documentation/devicemanagement/systemextensions) - The payload that configures system extensions.
-- [SystemLogging](/documentation/devicemanagement/systemlogging) - The payload that configures system logging.
 - [TimeServer](/documentation/devicemanagement/timeserver) - The payload that configures the time server.
 
-### System Policy
+### System policy
 
 - [SystemPolicyControl](/documentation/devicemanagement/systempolicycontrol) - The payload that configures the system policy for assessments.
 - [SystemPolicyKernelExtensions](/documentation/devicemanagement/systempolicykernelextensions) - The payload that configures the kernel extension policies.
 - [SystemPolicyManaged](/documentation/devicemanagement/systempolicymanaged) - The payload that configures the Finder’s contextual menu to bypass the system policy.
 - [SystemPolicyRule](/documentation/devicemanagement/systempolicyrule) - The payload that configures the system policy.
 
-### System Updates
+### System migration
 
-- [SoftwareUpdate](/documentation/devicemanagement/softwareupdate) - The payload that configures the software update policy.
 - [SystemMigration](/documentation/devicemanagement/systemmigration) - The payload that configures system migration.
 
-### User Experience
+### User experience
 
 - [Accessibility](/documentation/devicemanagement/accessibility) - The payload that configures the accessibility features of the device.
 - [Desktop](/documentation/devicemanagement/desktop) - The payload that configures the desktop wallpaper.
@@ -216,13 +214,9 @@ For profiles that use paths, consider them to be case sensitive.
 
 ### Deprecated
 
-- [AIMAccount](/documentation/devicemanagement/aimaccount) - The payload that configures an AIM account on the device.
 - [APN](/documentation/devicemanagement/apn) - The payload that configures access point names.
 - [FDERecoveryKeyRedirection](/documentation/devicemanagement/fderecoverykeyredirection) - The payload that configures FileVault recovery key redirection.
-- [JabberAccount](/documentation/devicemanagement/jabberaccount) - The payload that configures a Jabber account.
-- [MacOSServerAccount](/documentation/devicemanagement/macosserveraccount) - The payload that configures a macOS Server account.
 - [MediaManagementAllowedMedia](/documentation/devicemanagement/mediamanagementallowedmedia) - The payload that configures media management.
-- [ParentalControlsDashboardWidgetRestrictions](/documentation/devicemanagement/parentalcontrolsdashboardwidgetrestrictions) - The payload that configures allowed dashboard widgets.
 - [ParentalControlDictationAndProfanity](/documentation/devicemanagement/parentalcontroldictationandprofanity) - The payload that configures parental control for dictation and profanity.
 - [ShareKit](/documentation/devicemanagement/sharekit) - The payload that configures ShareKit.
 - [SystemPreferences](/documentation/devicemanagement/systempreferences) - The payload that configures the preference panes.

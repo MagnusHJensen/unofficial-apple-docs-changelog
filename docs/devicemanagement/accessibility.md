@@ -2,7 +2,7 @@
 
 The payload that configures the accessibility features of the device.
 
-**Platforms:** macOS 10.9, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.9
 
 ## Properties
 
@@ -44,6 +44,8 @@ If `true`, enables “Use scroll gesture” in the Zoom options.
 
 If `true`, enables “Show preview rectangle” in the Zoom options. Only available in macOS 10.15 and earlier.
 
+Deprecated: macOS 10.15+
+
 ### closeViewSmoothImages
 
 - **Type:** `boolean`
@@ -76,6 +78,8 @@ If `true`, enables “Flash the screen” in the Audio options.
 If `true`, enables “Use grayscale” in the Display options.
 
 This option is deprecated in macOS 11.
+
+Deprecated: macOS 11+
 
 ### mouseDriver
 

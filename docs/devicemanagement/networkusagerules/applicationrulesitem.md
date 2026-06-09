@@ -2,7 +2,7 @@
 
 The application rules dictionary.
 
-**Platforms:** iOS 9.0, iPadOS 9.0, Mac Catalyst 9.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 9.0, iPadOS 9.0, Mac Catalyst 9.0
 
 ## Properties
 

@@ -2,13 +2,13 @@
 
 Get the code to bypass Activation Lock on a device.
 
-**Platforms:** iOS 7.1, iPadOS 7.1, Mac Catalyst 7.1, macOS 10.15, visionOS 2.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 7.1, iPadOS 7.1, Mac Catalyst 7.1, macOS 10.15, visionOS 2.0
 
 ## Discussion
 
 This command allows organizations to retrieve the device’s bypass code. Organizations can use the bypass code to remove the Activation Lock from supervised devices prior to device activation without knowing the user’s personal Apple Account and password.
 
-Supervised devices generate a device-specific Activation Lock bypass code. The activation server verifies this code to bypass Activation Lock on the device. For more information, see [Creating and Using Bypass Codes](/documentation/devicemanagement/creating-and-using-bypass-codes).
+Supervised devices generate a device-specific Activation Lock bypass code. The activation server verifies this code to bypass Activation Lock on the device. For more information, see [Creating and using bypass codes](/documentation/devicemanagement/creating-and-using-bypass-codes).
 
 A device creates a new bypass code when:
 

@@ -2,7 +2,7 @@
 
 The array of valid Apple TV identifiers that the remote can connect to.
 
-**Platforms:** iOS 11.3, iPadOS 11.3, Mac Catalyst 11.3, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 11.3, iPadOS 11.3, Mac Catalyst 11.3
 
 ## Properties
 
@@ -19,4 +19,6 @@ The MAC address of an Apple TV device that the system permits this iOS device to
 - **Required:** No
 
 The name of an Apple TV device that the system permits this iOS device to control.
+
+Available: iOS 15+ | iPadOS 15+
 

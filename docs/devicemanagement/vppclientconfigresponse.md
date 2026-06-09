@@ -2,7 +2,7 @@
 
 The response that contains the client configuration.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 1.0
 
 ## Properties
 
@@ -18,16 +18,14 @@ The Apple Push Notification token to use for notifications.
 - **Type:** `string`
 - **Required:** No
 
-The AppleID associated with the provided sToken.
+The AppleID associated with the provided `sToken`.
 
 ### clientContext
 
 - **Type:** `string`
 - **Required:** No
 
-The value currently associated with the provided sToken. This field is only included in the response when a value has been set via the [Client Configuration](/documentation/devicemanagement/client-configuration) endpoint.
-
-See [Protecting Your VPP Account](/documentation/devicemanagement/protecting-your-vpp-account) for more information.
+The value currently associated with the provided `sToken`. This field is only included in the response when a value is set with the [Client Configuration](/documentation/devicemanagement/client-configuration) endpoint.
 
 ### countryCode
 
@@ -41,12 +39,12 @@ The two-letter ISO 3166-1 code that designates the country where the VPP account
 - **Type:** `string`
 - **Required:** No
 
-The value to be passed for the platform parameter in the `contentMetadataLookupUrl` request. Possible values are:
+The value to pass for the platform parameter in the `contentMetadataLookupUrl` request. Possible values are:
 
 - `volumestore`: For apps in the educational store.
 - `enterprisestore`: For apps in the enterprise store.
 
-See [Getting App and Book Information (Legacy)](/documentation/devicemanagement/getting-app-and-book-information-legacy) for more information.
+See [Getting app and book information (Legacy)](/documentation/devicemanagement/getting-app-and-book-information-legacy) for more information.
 
 ### email
 

@@ -2,7 +2,7 @@
 
 The dictionary that contains security association parameters.
 
-**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, tvOS 17.0, visionOS 1.0, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, tvOS 17.0, visionOS 1.0, watchOS 10.0
 
 ## Properties
 
@@ -55,5 +55,7 @@ The SA lifetime (rekey interval) in minutes.
 - **Required:** No
 - **Allowed Values:** `0`, `36`, `37`
 
-An array of strings representing postquantum key exchange methods the device uses during SA establishment and rekey. You can specify up to seven items, which correspond to ADDKE1 - ADDKE7 from RFC 9370.
+An array of integers representing postquantum key exchange methods the device uses during SA establishment and rekey. You can specify up to seven items, which correspond to ADDKE1 - ADDKE7 from RFC 9370.
+
+Available: iOS 26+ | iPadOS 26+ | macOS 26+ | tvOS 16+ | visionOS 26+ | watchOS 26+
 

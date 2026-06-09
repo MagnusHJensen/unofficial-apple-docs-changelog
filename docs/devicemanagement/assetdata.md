@@ -2,7 +2,7 @@
 
 A reference to arbitrary data with a specific media type.
 
-**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, tvOS 17.0, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, tvOS 17.0, visionOS 1.1, watchOS 10.0
 
 ## Properties
 
@@ -11,7 +11,7 @@ A reference to arbitrary data with a specific media type.
 - **Type:** `AssetDataAuthenticationObject`
 - **Required:** No
 
-The server authentication details.
+The server authentication details. If this key is absent, the default authentication type is MDM.
 
 ### Reference
 
@@ -47,6 +47,6 @@ Specify `com.apple.asset.data` as the declaration type.
 
 ### Objects
 
-- [AssetDataAuthenticationObject](/documentation/devicemanagement/assetdataauthenticationobject) - The server authentication details for an asset data.
-- [AssetDataReferenceObject](/documentation/devicemanagement/assetdatareferenceobject) - The external reference for an asset data.
+- [AssetDataAuthenticationObject](/documentation/devicemanagement/assetdataauthenticationobject) - The server authentication details. If this key is absent, the default authentication type is MDM.
+- [AssetDataReferenceObject](/documentation/devicemanagement/assetdatareferenceobject) - The external reference.
 

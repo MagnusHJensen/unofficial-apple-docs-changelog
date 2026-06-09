@@ -2,7 +2,7 @@
 
 An association between a license and a user or device.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 1.0
 
 ## Properties
 

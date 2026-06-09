@@ -1,8 +1,8 @@
 # StatusAppManagedListAppObject
 
-A dictionary that describes a declarative managed app.
+A managed app.
 
-**Platforms:** iOS 17.2, iPadOS 17.2, Mac Catalyst 17.2, macOS 26.0, visionOS 2.4, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 17.2, iPadOS 17.2, Mac Catalyst 17.2, macOS 26.0, visionOS 2.4
 
 ## Properties
 
@@ -21,6 +21,8 @@ If `true`, the system removed the app and only this key and the `identifier` key
 
 The status of app or extension managed configurations. This key is only present when managed configurations are available for the managed app or any of its extensions.
 
+Available: iOS 18.4+ | iPadOS 18.4+ | macOS 27+ | visionOS 2.4+
+
 ### declaration-identifier
 
 - **Type:** `string`
@@ -33,7 +35,7 @@ The identifier of the declaration that controls the app.
 - **Type:** `integer`
 - **Required:** No
 
-The app’s external version identifier. You can also retrieve this value from the App Store. For more information, see [Apps and Books for Organizations](/documentation/devicemanagement/apps-and-books-for-organizations).
+The app’s external version identifier. You can also retrieve this value from the App Store. For more information, see [Apps and books metadata for organizations](/documentation/devicemanagement/apps-and-books-metadata-for-organizations).
 
 If the current external version identifier of an app on the App Store doesn’t match the external version identifier reported by the device, there may be an app update available for the device.
 
@@ -112,6 +114,6 @@ The version of the app.
 
 ### Objects
 
-- [StatusAppManagedListManagedConfigurationObject](/documentation/devicemanagement/statusappmanagedlistmanagedconfigurationobject) - A dictionary that contains details about a declarative managed app’s managed configuration.
-- [StatusAppManagedListStatusReasonObject](/documentation/devicemanagement/statusappmanagedliststatusreasonobject) - A dictionary that contains details about a declarative managed app’s state.
+- [StatusAppManagedListManagedConfigurationObject](/documentation/devicemanagement/statusappmanagedlistmanagedconfigurationobject) - The status of app or extension managed configurations. This key is only present when managed configurations are available for the managed app or any of its extensions.
+- [StatusAppManagedListStatusReasonObject](/documentation/devicemanagement/statusappmanagedliststatusreasonobject) - Information about a status error.
 

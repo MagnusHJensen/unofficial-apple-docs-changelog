@@ -1,6 +1,6 @@
 # Enrolling with Platform Single Sign-on
 
-Authenticate users during device enrollment using Platform Single Sign-on.
+Authenticate users during Automated Device Enrollment using Platform Single Sign-on.
 
 ## Overview
 

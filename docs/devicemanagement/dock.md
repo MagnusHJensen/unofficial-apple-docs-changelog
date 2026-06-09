@@ -2,7 +2,7 @@
 
 The payload that configures the Dock.
 
-**Platforms:** macOS 10.7, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.7
 
 ## Properties
 
@@ -12,7 +12,9 @@ The payload that configures the Dock.
 - **Required:** No
 - **Default:** `false`
 
-If `true`, use the file in `/Library/Preferences/com.apple.dockfixup.plist` when a new user or migrated user logs in. This option has no effect for existing users. Available in macOS 10.12 and later. Only available on the device channel.
+If `true`, use the file in `/Library/Preferences/com.apple.dockfixup.plist` when a new user or migrated user logs in. This option has no effect for existing users. Only available on the device channel.
+
+Available: macOS 10.12+
 
 ### autohide
 
@@ -46,6 +48,8 @@ If `true`, disables changes to the Dock.
 
 The behavior when the window’s title bar is double-clicked.
 
+Available: macOS 10.15+
+
 ### dblclickbehavior-immutable
 
 - **Type:** `boolean`
@@ -53,6 +57,8 @@ The behavior when the window’s title bar is double-clicked.
 - **Default:** `false`
 
 If `true`, locks “Double-click a window’s title bar.”
+
+Available: macOS 10.14+
 
 ### largesize
 
@@ -143,6 +149,8 @@ If `true`, enables “Minimize windows into application icon.”
 
 If `true`, disables the “Minimize windows into application icon” checkbox.
 
+Available: macOS 10.14+
+
 ### orientation
 
 - **Type:** `string`
@@ -189,6 +197,8 @@ If true, shows the process indicator.
 
 If `true`, enables “Show recent items.”
 
+Available: macOS 10.14+
+
 ### showindicators-immutable
 
 - **Type:** `boolean`
@@ -204,6 +214,8 @@ If `true`, locks “Show indicators.”
 - **Default:** `false`
 
 If `true`, disables “Show recent applications” checkbox.
+
+Available: macOS 10.15+
 
 ### size-immutable
 
@@ -250,6 +262,8 @@ The tile size. Values must be in the range from 16 to 128.
 
 Set the “Prefer tabs when opening documents” to the provided value.
 
+Available: macOS 10.15+
+
 ### windowtabbing-immutable
 
 - **Type:** `boolean`
@@ -257,6 +271,8 @@ Set the “Prefer tabs when opening documents” to the provided value.
 - **Default:** `false`
 
 If `true`, disables “Prefer tabs when opening documents” checkbox.
+
+Available: macOS 10.12+
 
 ## Discussion
 

@@ -1,8 +1,8 @@
 # StatusAccountListSubscribedCalendar
 
-A status report of the client’s subscribed calendars.
+The status item that lists the devices’s subscribed calendars.
 
-**Platforms:** iOS 16.0, iPadOS 16.0, Mac Catalyst 16.0, macOS 14.0, visionOS 1.1, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 16.0, iPadOS 16.0, Mac Catalyst 16.0, macOS 14.0, visionOS 1.1
 
 ## Properties
 
@@ -17,9 +17,11 @@ A list of status values for the subscribed calendars.
 
 ### Status item availability
 
+### Status item example
+
 ## Topics
 
 ### Objects
 
-- [StatusAccountListSubscribedCalendarAccountObject](/documentation/devicemanagement/statusaccountlistsubscribedcalendaraccountobject) - A status report of the client’s subscribed calendar details.
+- [StatusAccountListSubscribedCalendarAccountObject](/documentation/devicemanagement/statusaccountlistsubscribedcalendaraccountobject) - A subscribed calendar.
 

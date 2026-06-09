@@ -2,7 +2,7 @@
 
 The dictionary that contains VPN, IPSec, and IKEv2 settings.
 
-**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, tvOS 17.0, visionOS 1.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, tvOS 17.0, visionOS 1.0
 
 ## Properties
 
@@ -56,7 +56,9 @@ If `1`, all the VPN’s non-default routes take precedence over any locally defi
 
 If `IncludeAllNetworks` is `1`, the system ignores the value of `EnforceRoutes`.
 
-Available in iOS 14.2 and later, and macOS 11 and later. Not available in watchOS.
+Not available in watchOS.
+
+Available: iOS 14.2+ | iPadOS 14.2+ | macOS 11+ | tvOS 17+ | visionOS 1+
 
 ### ExcludeAPNs
 
@@ -67,6 +69,8 @@ Available in iOS 14.2 and later, and macOS 11 and later. Not available in watchO
 
 If `1` and `IncludeAllNetworks` is `1`, then the system excludes the network traffic for the Apple Push Notification service (APNs) from the tunnel. Not available in watchOS.
 
+Available: iOS 16.4+ | iPadOS 16.4+ | macOS 13.3+ | visionOS 1+
+
 ### ExcludeCellularServices
 
 - **Type:** `integer`
@@ -75,6 +79,8 @@ If `1` and `IncludeAllNetworks` is `1`, then the system excludes the network tra
 - **Allowed Values:** `0`, `1`
 
 If `1` and `IncludeAllNetworks` is `1`, then the system excludes internet-routable network traffic for cellular services (VoLTE, Wi-Fi Calling, IMS, MMS, Visual Voicemail, etc.) from the tunnel. Note that some cellular carriers route cellular services traffic directly to the carrier network, bypassing the internet. Such cellular services traffic is always excluded from the tunnel. Not available in watchOS.
+
+Available: iOS 16.4+ | iPadOS 16.4+ | macOS 13.3+ | visionOS 1+
 
 ### ExcludeDeviceCommunication
 
@@ -85,6 +91,8 @@ If `1` and `IncludeAllNetworks` is `1`, then the system excludes internet-routab
 
 If set to `1` and `IncludeAllNetworks` is set to `1`, the device excludes network traffic used for communicating with devices connected via USB or Wi-Fi from the tunnel.
 
+Available: iOS 17.4+ | iPadOS 17.4+ | macOS 14.4+ | visionOS 1.1+
+
 ### ExcludeLocalNetworks
 
 - **Type:** `integer`
@@ -92,6 +100,8 @@ If set to `1` and `IncludeAllNetworks` is set to `1`, the device excludes networ
 - **Allowed Values:** `0`, `1`
 
 If `1` and `IncludeAllNetworks` is `1`, routes all local network traffic outside the VPN. Not available in watchOS.
+
+Available: iOS 14.2+ | iPadOS 14.2+ | macOS 10.15+ | visionOS 1+
 
 ### IncludeAllNetworks
 
@@ -108,6 +118,8 @@ If `1``, routes all traffic through the VPN, with some exclusions. Several of th
 - Network communication with a companion device such as a watchOS device.
 
 Not available in watchOS.
+
+Available: iOS 14+ | iPadOS 14+ | macOS 10.15+ | visionOS 1+
 
 ### OnDemandEnabled
 
@@ -129,6 +141,8 @@ In iOS 7 and later, this key is deprecated (but still supported) in favor of `Ev
 
 Not available in watchOS.
 
+Deprecated: iOS 7+ | iPadOS 7+
+
 ### OnDemandMatchDomainsNever
 
 - **Type:** `[string]`
@@ -140,6 +154,8 @@ In iOS 7 and later, this key is deprecated (but still supported) in favor of `Ev
 
 Not available in watchOS.
 
+Deprecated: iOS 7+ | iPadOS 7+
+
 ### OnDemandMatchDomainsOnRetry
 
 - **Type:** `[string]`
@@ -150,6 +166,8 @@ A list of domain names. If the host name ends with one of these domain names and
 In iOS 7 and later, this key is deprecated (but still supported) in favor of `EvaluateConnection` actions in the `OnDemandRules` dictionaries.
 
 Not available in watchOS.
+
+Deprecated: iOS 7+ | iPadOS 7+
 
 ### OnDemandRules
 
@@ -165,7 +183,9 @@ An array of dictionaries defining On Demand Rules.
 - **Default:** `0`
 - **Allowed Values:** `0`, `1`
 
-If `1`, the Connect On Demand toggle in Settings is disabled for this configuration. Available in iOS 14 and later. Not available in watchOS.
+If `1`, the Connect On Demand toggle in Settings is disabled for this configuration. Not available in watchOS.
+
+Available: iOS 14+ | iPadOS 14+ | tvOS 17+ | visionOS 1+
 
 ### PayloadCertificateUUID
 
@@ -187,6 +207,8 @@ The bundle identifier for the VPN provider. Not available in watchOS.
 - **Required:** No
 
 If the VPN provider is implemented as a system extension, this field is required. Not available in watchOS.
+
+Available: macOS 10.15+ | tvOS 17+
 
 ### ProviderType
 

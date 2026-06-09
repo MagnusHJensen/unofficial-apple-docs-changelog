@@ -2,7 +2,7 @@
 
 The declaration to configure software updates.
 
-**Platforms:** iOS 18.0, iPadOS 18.0, Mac Catalyst 18.0, macOS 15.0, tvOS 18.4, visionOS 26.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 18.0, iPadOS 18.0, Mac Catalyst 18.0, macOS 15.0, tvOS 18.4, visionOS 26.0
 
 ## Properties
 
@@ -16,12 +16,16 @@ If set to `true`, a standard user can perform Major and Minor Software Updates.
 
 If set to `false`, only administrators can perform Major and Minor Software Updates.
 
+Available: macOS 15+
+
 ### AutomaticActions
 
 - **Type:** `SoftwareUpdateSettingsAutomaticActionsObject`
 - **Required:** No
 
 This object configures various automatic Software Update functionality.
+
+Allowed enrollments: supervised
 
 ### Beta
 
@@ -30,12 +34,16 @@ This object configures various automatic Software Update functionality.
 
 This object configures the beta program settings for a device.
 
+Available: iOS 18+ | iPadOS 18+ | macOS 15.4+
+
 ### Deferrals
 
 - **Type:** `SoftwareUpdateSettingsDeferralsObject`
 - **Required:** No
 
 This object configures the deferral of software updates. Background Security Improvements aren’t considered in `Major`, `Minor`, or `System` deferral mechanism.
+
+Allowed enrollments: supervised
 
 ### Notifications
 
@@ -54,6 +62,9 @@ If set to `false`, the device only shows notifications triggered one hour before
 
 These configurations set user access to interacting with Background Security Improvement.
 
+Available: iOS 18+ | iPadOS 18+ | macOS 15+
+Allowed enrollments: supervised
+
 ### RecommendedCadence
 
 - **Type:** `string`
@@ -66,6 +77,8 @@ This string specifies how the device shows software updates to the user. When mo
 - `Oldest` - Shows only the oldest (lower numbered) software update version.
 - `Newest` - Shows only the newest (highest numbered) software update version.
 
+Available: iOS 18+ | iPadOS 18+ | visionOS 26+
+
 ## Discussion
 
 Specify `com.apple.configuration.softwareupdate.settings` as the declaration type.
@@ -73,6 +86,8 @@ Specify `com.apple.configuration.softwareupdate.settings` as the declaration typ
 ### Configuration availability
 
 ### Configuration example
+
+This configuration manages software update behavior and deferral settings.
 
 ```json
 {
@@ -105,8 +120,8 @@ Specify `com.apple.configuration.softwareupdate.settings` as the declaration typ
 
 ### Objects
 
-- [SoftwareUpdateSettingsAutomaticActionsObject](/documentation/devicemanagement/softwareupdatesettingsautomaticactionsobject) - The object that configures various automatic Software Update functionality.
-- [SoftwareUpdateSettingsBetaObject](/documentation/devicemanagement/softwareupdatesettingsbetaobject) - The object that configures overall beta program settings.
-- [SoftwareUpdateSettingsDeferralsObject](/documentation/devicemanagement/softwareupdatesettingsdeferralsobject) - The object that configures update deferrals.
-- [SoftwareUpdateSettingsRapidSecurityResponseObject](/documentation/devicemanagement/softwareupdatesettingsrapidsecurityresponseobject) - The object that configures Background Security Improvement settings.
+- [SoftwareUpdateSettingsAutomaticActionsObject](/documentation/devicemanagement/softwareupdatesettingsautomaticactionsobject) - This object configures various automatic Software Update functionality.
+- [SoftwareUpdateSettingsBetaObject](/documentation/devicemanagement/softwareupdatesettingsbetaobject) - This object configures the beta program settings for a device.
+- [SoftwareUpdateSettingsDeferralsObject](/documentation/devicemanagement/softwareupdatesettingsdeferralsobject) - This object configures the deferral of software updates. Background Security Improvements aren’t considered in `Major`, `Minor`, or `System` deferral mechanism.
+- [SoftwareUpdateSettingsRapidSecurityResponseObject](/documentation/devicemanagement/softwareupdatesettingsrapidsecurityresponseobject) - These configurations set user access to interacting with Background Security Improvement.
 

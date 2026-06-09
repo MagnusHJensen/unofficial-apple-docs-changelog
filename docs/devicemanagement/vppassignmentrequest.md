@@ -2,7 +2,7 @@
 
 The request for a list of assignments.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 1.1
 
 ## Properties
 

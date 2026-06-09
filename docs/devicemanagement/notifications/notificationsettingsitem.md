@@ -2,7 +2,7 @@
 
 The notification settings dictionary.
 
-**Platforms:** iOS 9.3, iPadOS 9.3, Mac Catalyst 9.3, macOS 10.15, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 9.3, iPadOS 9.3, Mac Catalyst 9.3, macOS 10.15
 
 ## Properties
 
@@ -19,8 +19,6 @@ The type of alert for notifications for this app:
 - `1`: Temporary Banner
 - `2`: Persistent Banner
 
-Available in iOS 9.3 and later and macOS 10.15 and later.
-
 ### BadgesEnabled
 
 - **Type:** `boolean`
@@ -29,16 +27,12 @@ Available in iOS 9.3 and later and macOS 10.15 and later.
 
 If `true`, enables badges for this app.
 
-Available in iOS 9.3 and later and macOS 10.15 and later.
-
 ### BundleIdentifier
 
 - **Type:** `string`
 - **Required:** Yes
 
 The bundle identifier of the app to which to apply these notification settings.
-
-Available in iOS 9.3 and later and macOS 10.15 and later.
 
 ### CriticalAlertEnabled
 
@@ -48,7 +42,7 @@ Available in iOS 9.3 and later and macOS 10.15 and later.
 
 If `true`, enables critical alerts that can ignore Do Not Disturb and ringer settings for this app.
 
-Available in iOS 12 and later and macOS 10.15 and later.
+Available: iOS 12+ | iPadOS 12+ | macOS 10.15+
 
 ### GroupingType
 
@@ -63,7 +57,7 @@ The type of grouping for notifications for this app:
 - `1`: By app: Group notifications into one group.
 - `2`: Off: Don’t group notifications.
 
-Available in iOS 12 and later.
+Available: iOS 12+ | iPadOS 12+
 
 ### NotificationsEnabled
 
@@ -72,8 +66,6 @@ Available in iOS 12 and later.
 - **Default:** `true`
 
 If `true`, enables notifications for this app.
-
-Available in iOS 9.3 and later and macOS 10.15 and later.
 
 ### PreviewType
 
@@ -87,7 +79,7 @@ The type previews for notifications. This key overrides the value at Settings>No
 - `1` - When Unlocked: Previews will only be shown when the device is unlocked
 - `2` - Never: Previews will never be shown
 
-Available in iOS 14 and later.
+Available: iOS 14+ | iPadOS 14+
 
 ### ShowInCarPlay
 
@@ -97,7 +89,7 @@ Available in iOS 14 and later.
 
 If `true`, enables notifications in CarPlay for this app.
 
-Available in iOS 12 and later.
+Available: iOS 12+ | iPadOS 12+
 
 ### ShowInLockScreen
 
@@ -107,8 +99,6 @@ Available in iOS 12 and later.
 
 If `true`, enables notifications on the Lock Screen for this app.
 
-Available in iOS 9.3 and later and macOS 10.15 and later.
-
 ### ShowInNotificationCenter
 
 - **Type:** `boolean`
@@ -116,8 +106,6 @@ Available in iOS 9.3 and later and macOS 10.15 and later.
 - **Default:** `true`
 
 If `true`, enables notifications in the notification center for this app.
-
-Available in iOS 9.3 and later and macOS 10.15 and later.
 
 ### SoundsEnabled
 

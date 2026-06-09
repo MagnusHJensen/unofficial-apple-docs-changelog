@@ -2,7 +2,7 @@
 
 Get information about a set of users.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 2.0
 
 ## Discussion
 

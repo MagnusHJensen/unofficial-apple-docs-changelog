@@ -2,7 +2,7 @@
 
 The dictionary to use for an IKEv2 VPN type.
 
-**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, tvOS 17.0, visionOS 1.0, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 4.0, iPadOS 4.0, Mac Catalyst 4.0, macOS 10.7, tvOS 17.0, visionOS 1.0, watchOS 10.0
 
 ## Properties
 
@@ -14,6 +14,8 @@ The dictionary to use for an IKEv2 VPN type.
 - **Allowed Values:** `0`, `1`
 
 If set to `0`, the VPN doesn’t establish a connection if the server does not support or doesn’t allow post-quantum key exchanges. Thd device ignores this key if `PostQuantumKeyExchangeMethods` is not present in `IKESecurityAssociationParameters` or `ChildSecurityAssociationParameters`.
+
+Available: iOS 26+ | iPadOS 26+ | macOS 26+ | tvOS 26+ | visionOS 26+ | watchOS 26+
 
 ### AuthenticationMethod
 
@@ -71,6 +73,8 @@ One of the following:
 
 Not available in watchOS.
 
+Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | tvOS 17+ | visionOS 1+
+
 ### DisableMOBIKE
 
 - **Type:** `integer`
@@ -80,6 +84,8 @@ Not available in watchOS.
 
 If `1`, the system disables MOBIKE.
 
+Available: iOS 9+ | iPadOS 9+ | macOS 10.7+ | tvOS 17+ | visionOS 1+ | watchOS 10+
+
 ### DisableRedirect
 
 - **Type:** `integer`
@@ -88,6 +94,8 @@ If `1`, the system disables MOBIKE.
 - **Allowed Values:** `0`, `1`
 
 If `1`, the system disables IKEv2 redirect. If not set, the system redirects an IKEv2 connection when it receives a redirect request from the server.
+
+Available: iOS 9+ | iPadOS 9+ | macOS 10.7+ | tvOS 17+ | visionOS 1+ | watchOS 10+
 
 ### DisconnectOnIdle
 
@@ -114,6 +122,8 @@ Only used if `DisconnectOnIdle` is `1`. The number of seconds before the VPN dis
 
 If `1`, the system performs a certificate revocation check for IKEv2 connections. This is a best-effort revocation check and server response timeouts won’t cause it to fail.
 
+Available: iOS 9+ | iPadOS 9+ | macOS 10.7+ | tvOS 17+ | visionOS 1+ | watchOS 10+
+
 ### EnableFallback
 
 - **Type:** `integer`
@@ -125,7 +135,9 @@ If `1`, the system enables a tunnel over cellular data to carry traffic that’s
 
 Enabling fallback requires that the server support multiple tunnels for a single user.
 
-This field is available in iOS 13 and later, and tvOS 17 and later. Not available in watchOS.
+Not available in watchOS.
+
+Available: iOS 13+ | iPadOS 13+ | tvOS 17+ | visionOS 1+
 
 ### EnablePFS
 
@@ -136,6 +148,8 @@ This field is available in iOS 13 and later, and tvOS 17 and later. Not availabl
 
 If `1`,  enables Perfect Forward Secrecy (PFS) for IKEv2 Connections.
 
+Available: iOS 9+ | iPadOS 9+ | macOS 10.7+ | tvOS 17+ | visionOS 1+ | watchOS 10+
+
 ### EnforceRoutes
 
 - **Type:** `integer`
@@ -144,6 +158,8 @@ If `1`,  enables Perfect Forward Secrecy (PFS) for IKEv2 Connections.
 - **Allowed Values:** `0`, `1`
 
 If `1`, all the VPN’s non-default routes take precedence over any locally-defined routes. If `IncludeAllNetworks` is `1`, the system ignores `EnforceRoutes`.
+
+Available: iOS 14.2+ | iPadOS 14.2+ | macOS 11+ | tvOS 17+ | visionOS 1+
 
 ### EnforceStrictAlgorithmSelection
 
@@ -154,6 +170,8 @@ If `1`, all the VPN’s non-default routes take precedence over any locally-defi
 
 If set to `1`, the device doesn’t allow DES, 3DES, and Diffie-Hellman groups less than 14. Also the device requires the encryption algorithm specified for the IKE SA to be at least as cryptographically strong as the algorithm specified for the child SA. The device rejects this profile payload if these requirements are not met.
 
+Available: iOS 18.5+ | iPadOS 18.5+ | macOS 15.5+ | tvOS 18.5+ | visionOS 2.5+ | watchOS 11.5+
+
 ### ExcludeAPNs
 
 - **Type:** `integer`
@@ -162,6 +180,8 @@ If set to `1`, the device doesn’t allow DES, 3DES, and Diffie-Hellman groups l
 - **Allowed Values:** `0`, `1`
 
 If `1` and `IncludeAllNetworks` is `1`, the system excludes network traffic for the Apple Push Notification service (APNs) from the tunnel.
+
+Available: iOS 16.4+ | iPadOS 16.4+ | macOS 13.3+ | visionOS 1+
 
 ### ExcludeCellularServices
 
@@ -172,6 +192,8 @@ If `1` and `IncludeAllNetworks` is `1`, the system excludes network traffic for 
 
 If `1` and `IncludeAllNetworks` is `1`, the system excludes internet-routable network traffic for cellular services (VoLTE, Wi-Fi Calling, IMS, MMS, Visual Voicemail, etc.) from the tunnel. Note that some cellular carriers route cellular services traffic directly to the carrier network, bypassing the internet. Such cellular services traffic is always excluded from the tunnel.
 
+Available: iOS 16.4+ | iPadOS 16.4+ | macOS 13.3+ | visionOS 1+
+
 ### ExcludeDeviceCommunication
 
 - **Type:** `integer`
@@ -181,6 +203,8 @@ If `1` and `IncludeAllNetworks` is `1`, the system excludes internet-routable ne
 
 If set to `1` and `IncludeAllNetworks` is set to `1`, the device excludes network traffic used for communicating with devices connected via USB or Wi-Fi from the tunnel.
 
+Available: iOS 17.4+ | iPadOS 17.4+ | macOS 14.4+ | visionOS 1.1+
+
 ### ExcludeLocalNetworks
 
 - **Type:** `integer`
@@ -188,6 +212,8 @@ If set to `1` and `IncludeAllNetworks` is set to `1`, the device excludes networ
 - **Allowed Values:** `0`, `1`
 
 If `1` and either `IncludeAllNetworks` or `EnforceRoutes` are `1`, then the system routes local network traffic outside of the VPN. The default for this value is `0` on macOS and `1` on iOS.
+
+Available: iOS 14.2+ | iPadOS 14.2+ | macOS 10.15+ | visionOS 1+
 
 ### ExtendedAuthEnabled
 
@@ -219,6 +245,8 @@ If `1`, then the system routes all network traffic through the VPN, with some co
 - Certain cellular services traffic that’s not routable over the internet and is instead directly routed to the cellular network. See the `ExcludeCellularServices` field for more information.
 - Network communication with a companion device such as a watchOS device.
 
+Available: iOS 14+ | iPadOS 14+ | macOS 10.15+ | visionOS 1+
+
 ### LocalIdentifier
 
 - **Type:** `string`
@@ -232,7 +260,9 @@ Identifier of the IKEv2 client.
 - **Required:** No
 - **Default:** `1280`
 
-The Maximum Transmission Unit (MTU) specifies the maximum size in bytes of each packet that the system sends over the IKEv2 VPN interface. Available in iOS 14 and later, and macOS 11 and later.
+The Maximum Transmission Unit (MTU) specifies the maximum size in bytes of each packet that the system sends over the IKEv2 VPN interface.
+
+Available: iOS 14+ | iPadOS 14+ | macOS 11+ | tvOS 17+ | visionOS 1+ | watchOS 10+
 
 ### NATKeepAliveInterval
 
@@ -241,6 +271,8 @@ The Maximum Transmission Unit (MTU) specifies the maximum size in bytes of each 
 - **Default:** `20`
 
 The NAT Keepalive interval for Always On VPN IKEv2 connections. This value controls the interval that the device sends keepalive offload packets. The minimum value is 20 seconds. If no key is specified, the default is 20 seconds over Wi-Fi and 110 seconds over a cellular interface.
+
+Available: iOS 9+ | iPadOS 9+ | macOS 10.7+ | tvOS 17+ | visionOS 1+ | watchOS 10+
 
 ### NATKeepAliveOffloadEnable
 
@@ -252,6 +284,8 @@ The NAT Keepalive interval for Always On VPN IKEv2 connections. This value contr
 If `1`, enables NAT keepalive offload for Always On VPN IKEv2 connections. The device sends keepalive packets to maintain NAT mappings for IKEv2 connections that have a NAT on the path. It sends keepalive packets at regular intervals when the device is awake. If `NATKeepAliveOffloadEnable` is `1`, the system offloads keepalive packets to hardware while the device is asleep.
 
 NAT keepalive offload has an impact on the battery life due to the extra workload during sleep. The default interval for the keepalive offload packets is 20 seconds over Wi-Fi and 110 seconds over Cellular interface. The default NAT keepalive works well on networks with small NAT mapping timeouts but imposes a potential battery impact. If a network has larger NAT mapping timeouts, larger keepalive intervals may be safely used to minimize battery impact. Modify the keepalive interval through the `NATKeepAliveInterval` key.
+
+Available: iOS 9+ | iPadOS 9+ | macOS 10.7+ | tvOS 17+ | visionOS 1+ | watchOS 10+
 
 ### OnDemandEnabled
 
@@ -278,6 +312,8 @@ A list of rules that determine when and how to use an OnDemand VPN.
 
 If `1`, the system disables the Connect On Demand toggle in Settings for this configuration.
 
+Available: iOS 14+ | iPadOS 14+ | tvOS 17+ | visionOS 1+ | watchOS 10+
+
 ### Password
 
 - **Type:** `string`
@@ -299,12 +335,16 @@ The UUID of the certificate payload within the same profile to use as the accoun
 
 The Post-quantum Pre-shared key (PPK) the device uses for this VPN. This key is is used with VPN servers that support RFC 8784. If this key is present `PPKIdentifier` must also be present.
 
+Available: iOS 18+ | iPadOS 18+ | macOS 15+ | tvOS 18+ | visionOS 2+ | watchOS 11+
+
 ### PPKIdentifier
 
 - **Type:** `string`
 - **Required:** No
 
 The identifier for the Post-quantum Pre-shared key (PPK) the device uses for this VPN. This key is is used with VPN servers that support RFC 8784. If this key is present `PPK` must also be present.
+
+Available: iOS 18+ | iPadOS 18+ | macOS 15+ | tvOS 18+ | visionOS 2+ | watchOS 11+
 
 ### PPKMandatory
 
@@ -314,6 +354,8 @@ The identifier for the Post-quantum Pre-shared key (PPK) the device uses for thi
 - **Allowed Values:** `0`, `1`
 
 If set to `1`, the VPN doesn’t establish a connection if the server doesn’t support RFC 8784 or doesn’t accept the PPK identifier specified in `PPKIdentifier`. The device ignores this key if `PPK` and `PPKIdentifier` are not present.
+
+Available: iOS 18+ | iPadOS 18+ | macOS 15+ | tvOS 18+ | visionOS 2+ | watchOS 11+
 
 ### ProviderBundleIdentifier
 
@@ -327,7 +369,9 @@ If the VPNSubType field contains the bundle identifier of an app that contains m
 - **Type:** `string`
 - **Required:** No
 
-If the VPN provider is implemented as a System Extension, then this field is required. Available in macOS 10.15 and later, tvOS 17 and later, and watchOS 10 and later.
+If the VPN provider is implemented as a System Extension, then this field is required.
+
+Available: macOS 10.15+ | tvOS 17+ | watchOS 10+
 
 ### ProviderType
 
@@ -371,25 +415,29 @@ Common Name of the server certificate issuer. If set, this field causes IKE to s
 - **Type:** `string`
 - **Required:** No
 
-If `AuthenticationMethod` is `SharedSecret`, this value is used for IKE authentication.
+If `AuthenticationMethod` is `SharedSecret`, the device uses this value for IKE authentication.
 
 ### TLSMaximumVersion
 
 - **Type:** `string`
 - **Required:** No
 - **Default:** `1.2`
-- **Allowed Values:** `1.0`, `1.1`, `1.2`
+- **Allowed Values:** `1.0`, `1.1`, `1.2`, `1.3`
 
 The maximum TLS version to use with EAP-TLS authentication.
+
+Available: iOS 11+ | iPadOS 11+ | macOS 10.13+ | tvOS 17+ | visionOS 1+ | watchOS 10+
 
 ### TLSMinimumVersion
 
 - **Type:** `string`
 - **Required:** No
 - **Default:** `1.0`
-- **Allowed Values:** `1.0`, `1.1`, `1.2`
+- **Allowed Values:** `1.0`, `1.1`, `1.2`, `1.3`
 
 The minimum TLS version to use with EAP-TLS authentication.
+
+Available: iOS 11+ | iPadOS 11+ | macOS 10.13+ | tvOS 17+ | visionOS 1+ | watchOS 10+
 
 ### UseConfigurationAttributeInternalIPSubnet
 
@@ -399,6 +447,8 @@ The minimum TLS version to use with EAP-TLS authentication.
 - **Allowed Values:** `0`, `1`
 
 If `1`, negotiations should use IKEv2 Configuration Attribute `INTERNAL_IP4_SUBNET` and `INTERNAL_IP6_SUBNET`.
+
+Available: iOS 9+ | iPadOS 9+ | macOS 10.7+ | tvOS 17+ | visionOS 1+ | watchOS 10+
 
 ## Topics
 

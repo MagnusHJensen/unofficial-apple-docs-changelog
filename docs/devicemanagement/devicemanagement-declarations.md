@@ -1,6 +1,6 @@
 # Declarations
 
-The available declarations for device management.
+Configure devices using declarative device management.
 
 ## Topics
 
@@ -14,18 +14,28 @@ The available declarations for device management.
 - [AccountMail](/documentation/devicemanagement/accountmail) - The declaration to configure a Mail account.
 - [AccountSubscribedCalendar](/documentation/devicemanagement/accountsubscribedcalendar) - The declaration to configure a subscribed calendar.
 - [AppManaged](/documentation/devicemanagement/appmanaged) - The declaration to configure a managed app.
+- [AppSettings](/documentation/devicemanagement/appsettings) - The declaration to configure app settings.
 - [AudioAccessorySettings](/documentation/devicemanagement/audioaccessorysettings) - The declaration to configure audio accessory settings.
+- [ContentCaching](/documentation/devicemanagement/contentcaching) - The declaration to configure the Content Caching service.
 - [DiskManagementSettings](/documentation/devicemanagement/diskmanagementsettings) - The declaration to configure disk management settings on the device.
+- [ExtensibleSSO](/documentation/devicemanagement/extensiblesso) - The declaration to configure Extensible Single Sign-On.
 - [ExternalIntelligenceSettings](/documentation/devicemanagement/externalintelligencesettings) - The declaration to configure External Intelligence Integrations settings.
 - [IntelligenceSettings](/documentation/devicemanagement/intelligencesettings) - The declaration to configure Apple Intelligence settings.
 - [KeyboardSettings](/documentation/devicemanagement/keyboardsettings) - The declaration to configure keyboard settings.
 - [LegacyInteractiveProfile](/documentation/devicemanagement/legacyinteractiveprofile) - The declaration to configure an interactive legacy profile.
 - [LegacyProfile](/documentation/devicemanagement/legacyprofile) - The declaration to configure a legacy profile.
 - [ManagementStatusSubscriptions](/documentation/devicemanagement/managementstatussubscriptions) - The declaration to configure status subscriptions.
-- [ManagementTest](/documentation/devicemanagement/managementtest) - The declaration to test declarative device management.
-- [MigrationAssistantSettings](/documentation/devicemanagement/migrationassistantsettings) - The declaration to configure Migration Assistant settings.
+- [ManagementTest](/documentation/devicemanagement/managementtest) - The declaration to configure a declarative device management test.
 - [MathSettings](/documentation/devicemanagement/mathsettings) - The declaration to configure the math and calculator apps.
-- [Package](/documentation/devicemanagement/package) - The declaration to install a package.
+- [MigrationAssistantSettings](/documentation/devicemanagement/migrationassistantsettings) - The declaration to configure Migration Assistant settings.
+- [NetworkDNSProxy](/documentation/devicemanagement/networkdnsproxy) - The declaration to configure DNS proxy settings.
+- [NetworkDNSSettings](/documentation/devicemanagement/networkdnssettings) - The declaration to configure encrypted DNS settings.
+- [NetworkRelay](/documentation/devicemanagement/networkrelay) - The declaration to configure Network Relay settings.
+- [NetworkVPNAlwaysOn](/documentation/devicemanagement/networkvpnalwayson) - The declaration to configure a VPN using the Always On sub-type.
+- [NetworkVPNIKEV2](/documentation/devicemanagement/networkvpnikev2) - The declaration to configure a VPN using the IKEv2 sub-type.
+- [NetworkVPNIPSec](/documentation/devicemanagement/networkvpnipsec) - The declaration to configure a VPN using the IPSec sub-type.
+- [NetworkVPNVPNPlugin](/documentation/devicemanagement/networkvpnvpnplugin) - The declaration to configure a VPN using the VPN plugin sub-type.
+- [Package](/documentation/devicemanagement/package) - The declaration to configure a package.
 - [PasscodeSettings](/documentation/devicemanagement/passcodesettings) - The declaration to configure passcode policy settings.
 - [SafariBookmarks](/documentation/devicemanagement/safaribookmarks) - The declaration to configure managed bookmarks in Safari.
 - [SafariExtensionSettings](/documentation/devicemanagement/safariextensionsettings) - The declaration to configure Safari Extensions.
@@ -33,15 +43,16 @@ The available declarations for device management.
 - [ScreenSharingConnection](/documentation/devicemanagement/screensharingconnection) - The declaration to configure a connection to a screen-sharing host.
 - [ScreenSharingConnectionGroup](/documentation/devicemanagement/screensharingconnectiongroup) - The declaration to configure a group of screen-sharing connections.
 - [ScreenSharingHostSettings](/documentation/devicemanagement/screensharinghostsettings) - The declaration to configure screen-sharing host settings and restrictions.
-- [SecurityCertificate](/documentation/devicemanagement/securitycertificate) - The declaration to add a certificate to the device.
-- [SecurityIdentity](/documentation/devicemanagement/securityidentity) - The declaration to install an identity on the device.
+- [SecurityCertificate](/documentation/devicemanagement/securitycertificate) - The declaration to configure a certificate.
+- [SecurityIdentity](/documentation/devicemanagement/securityidentity) - The declaration to configure an identity.
 - [SecurityPasskeyAttestation](/documentation/devicemanagement/securitypasskeyattestation) - The declaration to configure the device to allow WebAuthn enterprise attestation for certain passkeys.
 - [ServicesBackgroundTasks](/documentation/devicemanagement/servicesbackgroundtasks) - The declaration to configure background tasks.
-- [ServicesConfigurationFiles](/documentation/devicemanagement/servicesconfigurationfiles) - The managed configuration files for services.
+- [ServicesConfigurationFiles](/documentation/devicemanagement/servicesconfigurationfiles) - The declaration to configure managed configuration files for services.
 - [SiriSettings](/documentation/devicemanagement/sirisettings) - The declaration to configure Siri settings.
-- [SoftwareUpdateEnforcementSpecific](/documentation/devicemanagement/softwareupdateenforcementspecific) - A software update enforcement policy for a specific OS release.
+- [SoftwareUpdateEnforcementSpecific](/documentation/devicemanagement/softwareupdateenforcementspecific) - The declaration to configure a software update enforcement policy for a specific OS release.
 - [SoftwareUpdateSettings](/documentation/devicemanagement/softwareupdatesettings) - The declaration to configure software updates.
 - [WatchEnrollment](/documentation/devicemanagement/watchenrollment) - The declaration to configure an MDMv1 profile for Apple Watch enrollment.
+- [WebContentFilterPlugin](/documentation/devicemanagement/webcontentfilterplugin) - The declaration to configure a WebContent Filter that uses a plugin.
 
 ### Activations
 
@@ -70,7 +81,7 @@ The available declarations for device management.
 - [ManagementProperties](/documentation/devicemanagement/managementproperties) - The declaration to configure the properties on the device.
 - [ManagementServerCapabilities](/documentation/devicemanagement/managementservercapabilities) - The declaration to configure the server’s feature set.
 
-### Base Declaration
+### Base declaration
 
 - [DeclarationBase](/documentation/devicemanagement/declarationbase) - Keys common to all declarations used with the Remote Management protocol.
 

@@ -1,8 +1,8 @@
 # SoftwareUpdateSettingsAutomaticActionsObject
 
-The object that configures various automatic Software Update functionality.
+This object configures various automatic Software Update functionality.
 
-**Platforms:** iOS 18.0, iPadOS 18.0, Mac Catalyst 18.0, macOS 15.0, tvOS 18.4, visionOS 26.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 18.0, iPadOS 18.0, Mac Catalyst 18.0, macOS 15.0, tvOS 18.4, visionOS 26.0
 
 ## Properties
 
@@ -19,6 +19,8 @@ Specifies whether the user can control automatic downloads of available updates:
 - `AlwaysOn` - automatic downloads are always enabled.
 - `AlwaysOff` - automatic downloads are always disabled.
 
+Available: iOS 18+ | iPadOS 18+ | macOS 15+ | visionOS 26+
+
 ### InstallOSUpdates
 
 - **Type:** `string`
@@ -32,6 +34,8 @@ Specifies whether the user can control automatic installation of available updat
 - `AlwaysOn` - automatic installations are always enabled.
 - `AlwaysOff` - automatic installations are always disabled.
 
+> 
+
 ### InstallSecurityUpdate
 
 - **Type:** `string`
@@ -44,4 +48,8 @@ Specifies whether the user can control automatic installation of available secur
 - `Allowed` - the user can enable or disable automatic installation.
 - `AlwaysOn` - automatic installations are always enabled.
 - `AlwaysOff` - automatic installations are always disabled.
+
+> 
+
+Available: iOS 18+ | iPadOS 18+ | macOS 15+ | visionOS 26+
 

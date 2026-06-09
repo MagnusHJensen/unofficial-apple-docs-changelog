@@ -2,7 +2,7 @@
 
 The payload that configures a smart card.
 
-**Platforms:** macOS 10.12.4, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.12.4
 
 ## Properties
 
@@ -34,7 +34,9 @@ Configures the certificate trust check and has one of the following possible val
 - **Required:** No
 - **Default:** `false`
 
-If `true`, a user can only log in or authenticate with a smart card. Available in macOS 10.13.2 and later.
+If `true`, a user can only log in or authenticate with a smart card.
+
+Available: macOS 10.13.2+
 
 ### oneCardPerUser
 
@@ -51,7 +53,9 @@ If `true`, a user can pair with only one smart card, although existing pairings 
 - **Default:** `0`
 - **Allowed Values:** `0`, `1`
 
-If `1`, the system enables the screen saver when the smart card is removed. Available in macOS 10.13.4 and later.
+If `1`, the system enables the screen saver when the smart card is removed.
+
+Available: macOS 10.13.4+
 
 ### UserPairing
 

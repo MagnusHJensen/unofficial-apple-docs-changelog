@@ -2,7 +2,7 @@
 
 The payload that configures Automated Certificate Management Environment (ACME) settings.
 
-**Platforms:** iOS 16.0, iPadOS 16.0, Mac Catalyst 16.0, macOS 13.1, tvOS 16.0, visionOS 1.0, watchOS 9.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 16.0, iPadOS 16.0, Mac Catalyst 16.0, macOS 13.1, tvOS 16.0, visionOS 1.0, watchOS 9.0
 
 ## Properties
 
@@ -13,6 +13,8 @@ The payload that configures Automated Certificate Management Environment (ACME) 
 - **Default:** `false`
 
 If `true`, all apps have access to the private key.
+
+Available: macOS 13.1+
 
 ### Attest
 
@@ -25,6 +27,8 @@ If `true`, the device provides attestations that describe the device and the gen
 When `Attest` is `true`, `HardwareBound` also needs to be `true`.
 
 Setting this key to `true` is supported as of macOS 14. Older macOS versions require this key but it must have a value of `false`. See below for hardware requirements.
+
+Available: iOS 16+ | iPadOS 16+ | macOS 13.1+ | tvOS 16+ | visionOS 1+ | watchOS 10+
 
 ### ClientIdentifier
 
@@ -60,7 +64,7 @@ If `true`, the private key is bound to the device. The Secure Enclave generates 
 
 If `true`, `KeyType` must be `ECSECPrimeRandom` and `KeySize` must be 256 or 384.
 
-Setting this key to `true` is supported as of macOS 14 on Apple Silicon and Intel devices that have a T2 chip. Older macOS versions or other Mac devices require this key but it must have a value of `false`.
+Setting this key to `true` is supported as of macOS 14 on Apple silicon and Intel devices that have a T2 chip. Older macOS versions or other Mac devices require this key but it must have a value of `false`.
 
 ### KeyIsExtractable
 
@@ -68,7 +72,9 @@ Setting this key to `true` is supported as of macOS 14 on Apple Silicon and Inte
 - **Required:** No
 - **Default:** `true`
 
-If `true`, the private key of the identity obtained through Automated Certificate Management Environment (ACME) needs to be tagged as “non-extractable” in the keychain.
+If `false`, the private key of the identity obtained through Automated Certificate Management Environment (ACME) needs to be tagged as “non-extractable” in the keychain.
+
+Available: macOS 13.1+
 
 ### KeySize
 

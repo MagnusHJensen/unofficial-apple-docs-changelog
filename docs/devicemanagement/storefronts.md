@@ -2,7 +2,7 @@
 
 A resource object that represents a region that the content is available in, and supported languages for that region.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** VPP License Management 2.1
 
 ## Properties
 

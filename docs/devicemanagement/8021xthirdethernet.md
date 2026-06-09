@@ -2,7 +2,7 @@
 
 The payload that configures the third wired Ethernet interface.
 
-**Platforms:** macOS 10.7, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.7
 
 ## Properties
 
@@ -11,6 +11,10 @@ The payload that configures the third wired Ethernet interface.
 Specify `com.apple.thirdethernet.managed` as the payload type.
 
 This payload’s contents contain these profile-specific keys:
+
+- Interface (String): This payload uses the value `ThirdEthernet`.
+- EAPClientConfiguration ([WiFi.EAPClientConfiguration](/documentation/devicemanagement/wifi/eapclientconfiguration-data.dictionary)): The dictionary that defines the enterprise profile for the network.
+- SetupModes (String): The type of connection mode, which is either “System” or “Loginwindow.” “System” is the default.
 
 This payload applies to Ethernet interfaces according to service order, regardless of whether the interface is working.
 

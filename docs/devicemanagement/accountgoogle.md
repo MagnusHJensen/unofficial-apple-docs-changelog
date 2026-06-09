@@ -2,7 +2,7 @@
 
 The declaration to configure a Google account.
 
-**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, visionOS 1.1, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 15.0, iPadOS 15.0, Mac Catalyst 15.0, macOS 13.0, visionOS 1.1
 
 ## Properties
 
@@ -27,6 +27,8 @@ Specify `com.apple.configuration.account.google` as the declaration type.
 ### Configuration availability
 
 ### Configuration example
+
+This configuration sets up a Google account.
 
 ```json
 {

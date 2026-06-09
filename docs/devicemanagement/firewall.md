@@ -2,7 +2,7 @@
 
 The payload that configures the firewall.
 
-**Platforms:** macOS 10.12, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.12
 
 ## Properties
 
@@ -12,9 +12,11 @@ The payload that configures the firewall.
 - **Required:** No
 - **Default:** `true`
 
-If `true`, the system allows built-in software to receive incoming connections. Available in macOS 12.3 and later.
+If `true`, the system allows built-in software to receive incoming connections.
 
 > 
+
+Available: macOS 12.3+
 
 ### AllowSignedApp
 
@@ -22,9 +24,11 @@ If `true`, the system allows built-in software to receive incoming connections. 
 - **Required:** No
 - **Default:** `true`
 
-If `true`, the system allows downloaded signed software to receive incoming connections. Available in macOS 12.3 and later.
+If `true`, the system allows downloaded signed software to receive incoming connections.
 
 > 
+
+Available: macOS 12.3+
 
 ### Applications
 

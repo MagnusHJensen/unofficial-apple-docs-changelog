@@ -2,9 +2,19 @@
 
 The payload that configures parental controls for apps.
 
-**Platforms:** macOS 10.7, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.7
 
 ## Properties
+
+### allowList
+
+- **Type:** `[ParentalControlsApplicationRestrictions.ApplicationItem]`
+- **Required:** No
+
+The allow list of app item dictionaries.
+
+Available: macOS 10.15+
+Deprecated: macOS 27+
 
 ### familyControlsEnabled
 
@@ -13,26 +23,54 @@ The payload that configures parental controls for apps.
 
 If `true`, enables app access restrictions.
 
+Deprecated: macOS 27+
+
+### pathAllowList
+
+- **Type:** `[string]`
+- **Required:** No
+
+The paths to apps in the allow list.
+
+Available: macOS 10.15+
+Deprecated: macOS 27+
+
 ### pathBlackList
 
 - **Type:** `[string]`
 - **Required:** No
 
-The paths to apps in the deny list. This property is deprecated in macOS 10.15 and later.
+The paths to apps in the deny list. This property is deprecated in macOS 10.15 and later - use `pathDenyList` instead.
+
+Deprecated: macOS 10.15+
+
+### pathDenyList
+
+- **Type:** `[string]`
+- **Required:** No
+
+The paths to apps in the deny list.
+
+Available: macOS 10.15+
+Deprecated: macOS 27+
 
 ### pathWhiteList
 
 - **Type:** `[string]`
 - **Required:** No
 
-The paths to apps in the allow list. This property is deprecated in macOS 10.15 and later.
+The paths to apps in the allow list. This property is deprecated in macOS 10.15 and later - use `pathAllowList` instead.
+
+Deprecated: macOS 10.15+
 
 ### whiteList
 
 - **Type:** `[ParentalControlsApplicationRestrictions.ApplicationItem]`
 - **Required:** No
 
-The allow list of app item dictionaries.
+The allow list of app item dictionaries. This property is deprecated in macOS 10.15 and later - use `allowList` instead.
+
+Deprecated: macOS 10.15+
 
 ## Discussion
 

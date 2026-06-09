@@ -2,7 +2,7 @@
 
 Obtain a list of people the server manages, across the organization.
 
-**Platforms:** Device Assignment Services , VPP License Management 
+**Platforms:** Device Assignment Services 5.0
 
 ## Discussion
 

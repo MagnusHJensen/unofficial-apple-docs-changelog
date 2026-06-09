@@ -1,8 +1,8 @@
 # SecurityCertificate
 
-The declaration to add a certificate to the device.
+The declaration to configure a certificate.
 
-**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, tvOS 17.0, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, tvOS 17.0, visionOS 1.1, watchOS 10.0
 
 ## Properties
 
@@ -20,6 +20,8 @@ Specify `com.apple.configuration.security.certificate` as the declaration type.
 ### Configuration availability
 
 ### Configuration example
+
+This configuration installs a certificate on the device.
 
 ```json
 {

@@ -2,7 +2,7 @@
 
 A device’s information in response to a MDM enrollment profile request.
 
-**Platforms:** iOS 7.0, iPadOS 7.0, Mac Catalyst 7.0, macOS 10.9, tvOS 10.2, visionOS 1.1, watchOS 10.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 7.0, iPadOS 7.0, Mac Catalyst 7.0, macOS 10.9, tvOS 10.2, visionOS 1.1, watchOS 10.0
 
 ## Properties
 
@@ -12,6 +12,8 @@ A device’s information in response to a MDM enrollment profile request.
 - **Required:** No
 
 The device’s IMEI (if available).
+
+Available: iOS 7+ | iPadOS 7+ | watchOS 10+
 
 ### LANGUAGE
 
@@ -28,7 +30,7 @@ The user’s currently-selected language, for example, `en`.
 
 If `true`, indicates that the device requires a mandatory software update during Setup Assistant. The MDM server can return a 403 with a [ErrorCodeSoftwareUpdateRequired](/documentation/devicemanagement/errorcodesoftwareupdaterequired) error to force the device to update to a specific version instead of the device choosing a version.
 
-Available on macOS 26.1 and later.
+Available: macOS 26.1+
 
 ### MDM_CAN_REQUEST_PSSO_CONFIG
 
@@ -38,7 +40,7 @@ Available on macOS 26.1 and later.
 
 If `true`, indicates that the server can trigger the device to do a required Platform SSO authentication before enrolling.
 
-Available on macOS 26 and later.
+Available: macOS 26+
 
 ### MDM_CAN_REQUEST_SOFTWARE_UPDATE
 
@@ -48,7 +50,7 @@ Available on macOS 26 and later.
 
 If `true`, indicates that the server can trigger the device to do a required software update.
 
-Available on iOS 17 and later, and macOS 14 and later.
+Available: iOS 17+ | iPadOS 17+ | macOS 14+
 
 ### MEID
 
@@ -57,6 +59,8 @@ Available on iOS 17 and later, and macOS 14 and later.
 
 The device’s MEID (if available).
 
+Available: iOS 7+ | iPadOS 7+ | watchOS 10+
+
 ### OS_VERSION
 
 - **Type:** `string`
@@ -64,7 +68,7 @@ The device’s MEID (if available).
 
 The OS version installed on the device, for example, 17.0.
 
-Available on iOS 17 and later, macOS 14 and later, tvOS 17 and later, and watchOS 10 and later.
+Available: iOS 17+ | iPadOS 17+ | macOS 14+ | tvOS 17+ | visionOS 1.1+ | watchOS 10+
 
 ### PAIRING_TOKEN
 
@@ -73,7 +77,7 @@ Available on iOS 17 and later, macOS 14 and later, tvOS 17 and later, and watchO
 
 The pairing token to validate when a watch is enrolling.
 
-Available on watchOS 10 and later.
+Available: watchOS 10+
 
 ### PRODUCT
 
@@ -94,7 +98,9 @@ The device’s serial number.
 - **Type:** `string`
 - **Required:** No
 
-The device model identifier used to lookup available OS updates through https://gdmf.apple.com/v2/pmv. Available on iOS 17.4 and later, macOS 14.4 and later, and visionOS 1.1 and later.
+The device model identifier used to lookup available OS updates through https://gdmf.apple.com/v2/pmv.
+
+Available: iOS 17.4+ | iPadOS 17.4+ | macOS 14.4+ | visionOS 1.1+ | watchOS 10+
 
 ### SUPPLEMENTAL_BUILD_VERSION
 
@@ -103,7 +109,7 @@ The device model identifier used to lookup available OS updates through https://
 
 The device’s operating system supplemental build version (if available).
 
-Available on iOS 17 and later, macOS 14 and later, tvOS 17 and later, and watchOS 10 and later.
+Available: iOS 17+ | iPadOS 17+ | macOS 14+ | tvOS 17+ | visionOS 1.1+ | watchOS 10+
 
 ### SUPPLEMENTAL_OS_VERSION_EXTRA
 
@@ -112,7 +118,7 @@ Available on iOS 17 and later, macOS 14 and later, tvOS 17 and later, and watchO
 
 The device’s operating system supplemental OS version extra (if available).
 
-Available on iOS 17 and later, macOS 14 and later, tvOS 17 and later, and watchOS 10 and later.
+Available: iOS 17+ | iPadOS 17+ | macOS 14+ | tvOS 17+ | visionOS 1.1+ | watchOS 10+
 
 ### UDID
 

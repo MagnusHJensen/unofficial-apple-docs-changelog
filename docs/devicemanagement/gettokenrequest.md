@@ -2,7 +2,7 @@
 
 The get token request details.
 
-**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, visionOS 1.1, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 17.0, iPadOS 17.0, Mac Catalyst 17.0, macOS 14.0, visionOS 1.1
 
 ## Properties
 
@@ -19,6 +19,8 @@ The per-enrollment identifier for the device. The system requires this value if 
 - **Required:** Yes
 
 The per-enrollment identifier for the user. The system requires this value if the enrollment type is a user enrollment on the user channel.
+
+Available: macOS 14+
 
 ### MessageType
 
@@ -59,12 +61,16 @@ For macOS, this value is the ID of the user.
 
 For Shared iPad, this value is `FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF` to indicate that authentication doesn’t occur.
 
+Available: iOS 17+ | iPadOS 17+ | macOS 14+
+
 ### UserLongName
 
 - **Type:** `string`
 - **Required:** Yes
 
 The full name of the user.
+
+Available: macOS 14+
 
 ### UserShortName
 
@@ -74,6 +80,8 @@ The full name of the user.
 For macOS, this value is the short name of the user.
 
 For Shared iPad, this value is the Managed Apple Account identifier of the user. When present, it indicates that the token is for the user channel.
+
+Available: iOS 17+ | iPadOS 17+ | macOS 14+
 
 ## Topics
 

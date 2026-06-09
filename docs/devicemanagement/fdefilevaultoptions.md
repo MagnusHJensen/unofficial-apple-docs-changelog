@@ -2,7 +2,7 @@
 
 The payload that configures FileVault options.
 
-**Platforms:** macOS 10.7, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.7
 
 ## Properties
 
@@ -13,6 +13,8 @@ The payload that configures FileVault options.
 - **Default:** `false`
 
 If `true`, the system won’t store th FileVault key across restarts.
+
+Available: macOS 10.10+
 
 ### dontAllowFDEDisable
 
