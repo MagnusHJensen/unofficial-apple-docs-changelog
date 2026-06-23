@@ -1,7 +1,5 @@
 # ResponseSubscriptionAdmin
 
-An administrator for a subscription.
-
 ## Properties
 
 ### adamId

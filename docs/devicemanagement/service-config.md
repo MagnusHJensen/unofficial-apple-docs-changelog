@@ -12,7 +12,7 @@ Provides the full list of web service URLs, notification types, request limits, 
 
 ### Response
 
-- [ServiceConfigResponse](/documentation/devicemanagement/serviceconfigresponse) - Service configuration, including request limits, available URLs, supported notification types, and error code reference information.
+- [ServiceConfigResponse](/documentation/devicemanagement/serviceconfigresponse)
 - [ErrorResponse](/documentation/devicemanagement/errorresponse) - The response that contains the error that occurs.
 
 ### Content Metadata

@@ -44,6 +44,10 @@ Manage apps, books, and subscriptions for your students and employees.
 - [Get Subscription Administrators](/documentation/devicemanagement/get-subscription-administrators) - Get the administrators for subscriptions that your organization manages.
 - [Add Subscription Administrators](/documentation/devicemanagement/add-subscription-administrators) - Add administrators for subscriptions.
 - [Remove Subscription Administrators](/documentation/devicemanagement/remove-subscription-administrators) - Remove administrators from subscriptions.
+- [Get In-App Purchases](/documentation/devicemanagement/get-in-app-purchases)
+- [Get In-App Assignments](/documentation/devicemanagement/get-in-app-assignments)
+- [Associate In-App Purchases](/documentation/devicemanagement/associate-in-app-purchases)
+- [Disassociate In-App Purchases](/documentation/devicemanagement/disassociate-in-app-purchases)
 
 ### User management
 
@@ -69,13 +73,13 @@ Manage apps, books, and subscriptions for your students and employees.
 - [SubscriptionCounts](/documentation/devicemanagement/subscriptioncounts) - The subscription assignment counts broken down by assigned and available.
 - [SubscriptionCountsBreakdown](/documentation/devicemanagement/subscriptioncountsbreakdown) - The breakdown of subscription counts by renewing and expiring status.
 - [ManageSubscriptionsRequest](/documentation/devicemanagement/managesubscriptionsrequest) - The request for subscription management.
-- [ManageSubscriptionAdminsRequest](/documentation/devicemanagement/managesubscriptionadminsrequest) - Request body for adding or removing subscription administrators.
-- [ManageSubscriptionAdminsResponse](/documentation/devicemanagement/managesubscriptionadminsresponse) - Confirmation response returned after adding or removing subscription administrators.
-- [ResponseSubscriptionAdmin](/documentation/devicemanagement/responsesubscriptionadmin) - An administrator for a subscription.
+- [ManageSubscriptionAdminsRequest](/documentation/devicemanagement/managesubscriptionadminsrequest)
+- [ManageSubscriptionAdminsResponse](/documentation/devicemanagement/managesubscriptionadminsresponse)
+- [ResponseSubscriptionAdmin](/documentation/devicemanagement/responsesubscriptionadmin)
 - [MdmInfo](/documentation/devicemanagement/mdminfo) - Information about the MDM client.
 - [EventResponse](/documentation/devicemanagement/eventresponse) - The response that contains the event identifier.
 - [ErrorResponse](/documentation/devicemanagement/errorresponse) - The response that contains the error that occurs.
-- [StatusResponse](/documentation/devicemanagement/statusresponse) - Status of an asynchronous event, including event type, current status, completion counts, and any failure details.
+- [StatusResponse](/documentation/devicemanagement/statusresponse)
 
 ### Legacy API
 

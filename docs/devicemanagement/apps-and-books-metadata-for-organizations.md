@@ -35,6 +35,7 @@ This API requires authentication that you’re a member of the Apple Developer P
 
 ### Retrieving app and book metadata
 
+- [Get Metadata for Your Authenticated Purchases](/documentation/devicemanagement/get-v1-catalog-_storefront_-stoken-authenticated-purchases) - Fetch metadata for your authenticated purchases by using their identifiers with a specified resource type.
 - [Get Metadata for Your Apps](/documentation/devicemanagement/get-your-apps-metadata) - Fetch metadata for your apps by using their identifiers.
 - [Get Metadata for Your Books](/documentation/devicemanagement/get-your-books-metadata) - Fetch metadata for your books by using their identifiers.
 - [Get Metadata for a Catalog App](/documentation/devicemanagement/get-v1-catalog-_storefront_-apps-_id_) - Fetch metadata for an app from the catalog by using its identifier.

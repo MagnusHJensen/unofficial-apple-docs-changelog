@@ -12,6 +12,6 @@ Retrieve the status of an asynchronous event.
 
 ### Response
 
-- [StatusResponse](/documentation/devicemanagement/statusresponse) - Status of an asynchronous event, including event type, current status, completion counts, and any failure details.
+- [StatusResponse](/documentation/devicemanagement/statusresponse)
 - [ErrorResponse](/documentation/devicemanagement/errorresponse) - The response that contains the error that occurs.
 

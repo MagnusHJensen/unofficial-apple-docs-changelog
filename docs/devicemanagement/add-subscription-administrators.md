@@ -12,11 +12,11 @@ Send a POST request to designate users as administrators for specific subscripti
 
 ### Request
 
-- [ManageSubscriptionAdminsRequest](/documentation/devicemanagement/managesubscriptionadminsrequest) - Request body for adding or removing subscription administrators.
+- [ManageSubscriptionAdminsRequest](/documentation/devicemanagement/managesubscriptionadminsrequest)
 
 ### Response
 
-- [ManageSubscriptionAdminsResponse](/documentation/devicemanagement/managesubscriptionadminsresponse) - Confirmation response returned after adding or removing subscription administrators.
+- [ManageSubscriptionAdminsResponse](/documentation/devicemanagement/managesubscriptionadminsresponse)
 - [ErrorResponse](/documentation/devicemanagement/errorresponse) - The response that contains the error that occurs.
 
 ### Content Metadata

@@ -1,6 +1,16 @@
-# ManageSubscriptionAdminsResponse
+# x-hidden-GetInAppsResponse
 
 ## Properties
+
+### inapps
+
+- **Type:** `[x-hidden-ResponseInApp]`
+- **Required:** No
+
+### nextCursor
+
+- **Type:** `string`
+- **Required:** No
 
 ### tokenExpirationDate
 

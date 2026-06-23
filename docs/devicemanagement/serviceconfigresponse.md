@@ -1,7 +1,5 @@
 # ServiceConfigResponse
 
-Service configuration, including request limits, available URLs, supported notification types, and error code reference information.
-
 ## Properties
 
 ### errorCodes
@@ -29,6 +27,6 @@ Service configuration, including request limits, available URLs, supported notif
 
 ### Dictionaries
 
-- [ServiceConfigResponse.Limits](/documentation/devicemanagement/serviceconfigresponse/limits-data.dictionary) - Request limits for the managed location. Each entry maps a limit name to its current integer value.
-- [ServiceConfigResponse.Urls](/documentation/devicemanagement/serviceconfigresponse/urls-data.dictionary) - Service URLs for the managed location. Each entry maps a URL name to its corresponding endpoint.
+- [ServiceConfigResponse.Limits](/documentation/devicemanagement/serviceconfigresponse/limits-data.dictionary)
+- [ServiceConfigResponse.Urls](/documentation/devicemanagement/serviceconfigresponse/urls-data.dictionary)
 

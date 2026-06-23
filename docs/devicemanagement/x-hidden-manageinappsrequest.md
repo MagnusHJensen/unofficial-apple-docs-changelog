@@ -1,4 +1,4 @@
-# ManageSubscriptionAdminsRequest
+# x-hidden-ManageInAppsRequest
 
 ## Properties
 

@@ -1,6 +1,16 @@
-# ManageSubscriptionAdminsResponse
+# x-hidden-GetInAppAssignmentsResponse
 
 ## Properties
+
+### assignments
+
+- **Type:** `[x-hidden-ResponseInAppAssignment]`
+- **Required:** No
+
+### nextCursor
+
+- **Type:** `string`
+- **Required:** No
 
 ### tokenExpirationDate
 

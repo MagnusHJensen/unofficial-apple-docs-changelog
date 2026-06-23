@@ -16,6 +16,7 @@ Manage devices for your students and employees.
 - [Get a List of Devices](/documentation/devicemanagement/fetch-devices) - Get a list of devices that are managed by the server.
 - [Sync the List of Devices](/documentation/devicemanagement/sync-devices) - Get updates about the list of devices the server manages.
 - [Disown Devices](/documentation/devicemanagement/disown-devices) - Notify Apple’s servers that your organization no longer owns the specified devices.
+- [Get Replacement Details](/documentation/devicemanagement/get-replacement-details) - Get information about the device that a replacement device replaces.
 - [Get Beta Enrollment Tokens](/documentation/devicemanagement/get-beta-enrollment-tokens) - Retrieves the beta enrollment tokens available for the organization.
 
 ### Profile management
