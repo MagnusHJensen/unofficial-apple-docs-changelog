@@ -83,7 +83,7 @@ A name that hides the user’s true name. The user’s actual name appears only 
 - **Type:** `[string]`
 - **Required:** No
 
-An array of the UUID of each certificate payload in the same profile to trust for authentication. Use this key to prevent the device from asking the user whether to trust the listed certificates. Dynamic trust (the certificate dialogue) is in a disabled state if you specify this property without also enabling ‘TLSAllowTrustExceptions’.
+An array of the UUID of each certificate payload in the same profile to trust for authentication. Use this key to prevent the device from asking the user whether to trust the listed certificates. The device disables dynamic trust (the certificate dialogue) if you specify this property without also enabling ‘TLSAllowTrustExceptions’.
 
 ### SystemModeCredentialsSource
 
@@ -144,7 +144,7 @@ An array of trusted certificates. Each entry in the array must contain certifica
 - **Type:** `[string]`
 - **Required:** No
 
-The list of accepted server certificate common names. If a server presents a certificate that isn’t in this list, the system doesn’t trust it. If you specify this property, the system disables dynamic trust (the certificate dialog) unless you also specify ‘TLSAllowTrustExceptions’ with the value ‘true’. If necessary, use a single “**.example.com’.
+The list of accepted server certificate common names. If a server presents a certificate that isn’t in this list, the system doesn’t trust it. If you specify this property, the system disables dynamic trust (the certificate dialog) unless you also specify ‘TLSAllowTrustExceptions’ with the value ‘true’. If necessary, use a single “*” character to specify a wildcard for an individual component of the name, such as ‘wpa.*.example.com’.
 
 ### TTLSInnerAuthentication
 

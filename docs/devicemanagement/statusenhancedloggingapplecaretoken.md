@@ -11,7 +11,7 @@ The status item that reports the device’s enhanced log collection session Appl
 - **Type:** `string`
 - **Required:** No
 
-The current enhanced log collection session AppleCare token. The device returns an empty string if there is no session status to report.
+The current enhanced log collection session AppleCare token. The device returns an empty string if there’s no session status to report.
 
 ## Discussion
 

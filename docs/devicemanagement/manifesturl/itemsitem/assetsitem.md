@@ -26,14 +26,14 @@ The MD5 hash value the device uses when verifying the hash of the manifest item 
 - **Type:** `integer`
 - **Required:** No
 
-The data ** size the device uses when verifying the hash of the manifest item data. Required when the `md5s` key is present.
+The data chunk size the device uses when verifying the hash of the manifest item data. The device requires this key when the `md5s` key is present.
 
 ### md5s
 
 - **Type:** `[string]`
 - **Required:** No
 
-An array of strings representing a set of MD5 hash values. The device uses these values to verify the integrity of the downloaded manifest item data. Required when the `md5-size` key is present.
+An array of strings representing a set of MD5 hash values. The device uses these values to verify the integrity of the downloaded manifest item data. The device requires this key when the `md5-size` key is present.
 
 ### sha256
 
@@ -47,14 +47,14 @@ The SHA-256 hash value the device uses when verifying the hash of the manifest i
 - **Type:** `integer`
 - **Required:** No
 
-The data ** size the device uses when verifying the hash of the manifest item data. Required when the `sha256s` key is present.
+The data chunk size the device uses when verifying the hash of the manifest item data. The device requires this key when the `sha256s` key is present.
 
 ### sha256s
 
 - **Type:** `[string]`
 - **Required:** No
 
-An array of strings representing a set of SHA-256 hash values. The device uses these values to verify the integrity of the downloaded manifest item data. Required when the `sha256-size` key is present.
+An array of strings representing a set of SHA-256 hash values. The device uses these values to verify the integrity of the downloaded manifest item data. The device requires this key when the `sha256-size` key is present.
 
 ### url
 

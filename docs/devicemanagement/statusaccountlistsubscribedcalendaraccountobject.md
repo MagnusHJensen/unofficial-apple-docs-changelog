@@ -12,7 +12,7 @@ A subscribed calendar.
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the subscribed calendar is removed and the status item object only contains this key and the `identifier` key.
+If `true`, the device removed the subscribed calendar and the status item object only contains this key and the `identifier` key.
 
 ### calendar-url
 

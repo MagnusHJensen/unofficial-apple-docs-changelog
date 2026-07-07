@@ -41,5 +41,5 @@ The code signing state to match binaries.
 - **Type:** `string`
 - **Required:** No
 
-The code signature team identifier of the binary. Use the value “**” instead of an empty string for Apple binaries with an empty team identifier.
+The code signature team identifier of the binary. Use the value “*APPLE*” instead of an empty string for Apple binaries with an empty team identifier.
 

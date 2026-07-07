@@ -56,7 +56,7 @@ If `true`, and installation of this payload occurs after enrolling with MDM in S
 
 To use this, enable the Await Device Configured ADE configuration option and send this profile with this key set, before sending the [DeviceConfiguredCommand](/documentation/devicemanagement/deviceconfiguredcommand).
 
-An admin SecureToken user is required, otherwise the FileVault pane does not appear.
+An admin SecureToken user is required, otherwise the FileVault pane doesn’t appear.
 
 Available: macOS 14+
 

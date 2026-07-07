@@ -12,7 +12,7 @@ Specifies details about how the system controls on-demand VPN.
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the Connect On Demand toggle in Settings is disabled for this configuration.
+If `true`, the device disables the Connect On Demand toggle in Settings for this configuration.
 
 Available: iOS 27+ | iPadOS 27+ | tvOS 27+ | visionOS 27+
 

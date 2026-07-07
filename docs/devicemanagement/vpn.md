@@ -130,7 +130,7 @@ The type of the VPN, which defines which settings are appropriate for this VPN p
 
 If the type is `VPN` or `TransparentProxy`, then the system requires a value for `VPNSubType`.
 
-`TransparentProxy` is only available in macOS. `L2TP` and `IPSec` aren’t available in tvOS. `AlwaysOn` is only available on iOS and Apple Watch pairing isn’t supported with `AlwaysOn`. For a previously paired Apple Watch, all phone-watch communications cease when `AlwaysOn` is enabled. Not available in watchOS.
+`TransparentProxy` is only available in macOS. `L2TP` and `IPSec` aren’t available in tvOS. `AlwaysOn` is only available on iOS and `AlwaysOn` doesn’t support Apple Watch pairing. For a previously paired Apple Watch, all phone-watch communications cease when `AlwaysOn` is enabled. Not available in watchOS.
 
 ## Discussion
 

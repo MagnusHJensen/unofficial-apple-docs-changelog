@@ -95,7 +95,7 @@ Available: iOS 5+ | iPadOS 5+ | macOS 11+ | tvOS 10.2+ | visionOS 1.1+ | watchOS
 - **Type:** `string`
 - **Required:** No
 
-The URL of the app manifest, which needs to begin with `https:`. The manifest is returned as a property list that uses the [ManifestURL](/documentation/devicemanagement/manifesturl) format.
+The URL of the app manifest, which needs to begin with `https:`. The server returns the manifest as a property list that uses the [ManifestURL](/documentation/devicemanagement/manifesturl) format.
 
 Available: iOS 7+ | iPadOS 7+ | macOS 10.9+ | tvOS 10.2+ | visionOS 1.1+ | watchOS 10+
 

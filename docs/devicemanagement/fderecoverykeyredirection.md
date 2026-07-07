@@ -11,7 +11,7 @@ The payload that configures FileVault recovery key redirection.
 - **Type:** `string`
 - **Required:** Yes
 
-The UUID of a payload within the same profile that contains a certificate used to encrypt the recovery key when it’s sent to the redirected URL. The referenced payload must be of type `com.apple.security.pkcs1`.
+The UUID of a payload within the same profile that contains a certificate used to encrypt the recovery key when the device sends it to the redirected URL. The referenced payload must be of type `com.apple.security.pkcs1`.
 
 Deprecated: macOS 10.13+
 
@@ -20,7 +20,7 @@ Deprecated: macOS 10.13+
 - **Type:** `string`
 - **Required:** Yes
 
-The URL to which FDE recovery keys should be sent instead of to Apple. The URL must begin with https://.
+The URL to which the device sends FDE recovery keys instead of to Apple. The URL must begin with https://.
 
 Deprecated: macOS 10.13+
 

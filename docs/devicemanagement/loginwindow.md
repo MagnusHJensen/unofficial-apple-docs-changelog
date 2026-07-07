@@ -14,6 +14,14 @@ The payload that configures Login Window behavior.
 
 The admin host info. If present in the payload, the system displays its value in the Login Window as additional computer information. Before macOS 10.10, this string could only contain host name, system version, or IP address. After macOS 10.10, setting this key to any value allows the user to click the time area of the menu bar to toggle through various computer information values.
 
+### AdminMayDisableMCX
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, a local administrator user can bypass or disable managed preferences (MCX settings) for their login session. The device presents the user with this option at login only when the user is a local administrator, and other users are not logged in.
+
 ### AllowList
 
 - **Type:** `[string]`
@@ -146,6 +154,14 @@ If `true`, the system disables the Restart item.
 - **Default:** `false`
 
 If `true`, the system disables the Restart menu item when the user is logged in.
+
+### RetriesUntilHint
+
+- **Type:** `integer`
+- **Required:** No
+- **Default:** `0`
+
+If specified, allows a certain number of retries until the device shows a password hint. The device shows no hints if set to a value of 0.
 
 ### SHOWFULLNAME
 

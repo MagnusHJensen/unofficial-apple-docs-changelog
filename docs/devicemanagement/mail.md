@@ -158,7 +158,7 @@ The password for the outgoing mail server. Only use this in encrypted profiles.
 
 If `true`, the system prompts the user only once for the password, which it uses for both outgoing and incoming mail.
 
-This setting is only supported by interactive profile installations. Not supported by non-interactive installations, such as MDM on iOS.
+This setting supports only interactive profile installations. Non-interactive installations, such as MDM on iOS, don’t support this setting.
 
 ### PreventAppSheet
 

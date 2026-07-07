@@ -13,7 +13,7 @@ The dictionary to use for an IKEv2 VPN type.
 - **Default:** `0`
 - **Allowed Values:** `0`, `1`
 
-If set to `0`, the VPN doesn’t establish a connection if the server does not support or doesn’t allow post-quantum key exchanges. Thd device ignores this key if `PostQuantumKeyExchangeMethods` is not present in `IKESecurityAssociationParameters` or `ChildSecurityAssociationParameters`.
+If set to `0`, the VPN doesn’t establish a connection if the server does not support or doesn’t allow post-quantum key exchanges. Thd device ignores this key if `PostQuantumKeyExchangeMethods` isn’t present in `IKESecurityAssociationParameters` or `ChildSecurityAssociationParameters`.
 
 Available: iOS 26+ | iPadOS 26+ | macOS 26+ | tvOS 26+ | visionOS 26+ | watchOS 26+
 
@@ -168,7 +168,7 @@ Available: iOS 14.2+ | iPadOS 14.2+ | macOS 11+ | tvOS 17+ | visionOS 1+
 - **Default:** `0`
 - **Allowed Values:** `0`, `1`
 
-If set to `1`, the device doesn’t allow DES, 3DES, and Diffie-Hellman groups less than 14. Also the device requires the encryption algorithm specified for the IKE SA to be at least as cryptographically strong as the algorithm specified for the child SA. The device rejects this profile payload if these requirements are not met.
+If set to `1`, the device doesn’t allow DES, 3DES, and Diffie-Hellman groups less than 14. Also the device requires the encryption algorithm specified for the IKE SA to be at least as cryptographically strong as the algorithm specified for the child SA. The device rejects this profile payload if these requirements aren’t met.
 
 Available: iOS 18.5+ | iPadOS 18.5+ | macOS 15.5+ | tvOS 18.5+ | visionOS 2.5+ | watchOS 11.5+
 
@@ -353,7 +353,7 @@ Available: iOS 18+ | iPadOS 18+ | macOS 15+ | tvOS 18+ | visionOS 2+ | watchOS 1
 - **Default:** `1`
 - **Allowed Values:** `0`, `1`
 
-If set to `1`, the VPN doesn’t establish a connection if the server doesn’t support RFC 8784 or doesn’t accept the PPK identifier specified in `PPKIdentifier`. The device ignores this key if `PPK` and `PPKIdentifier` are not present.
+If set to `1`, the VPN doesn’t establish a connection if the server doesn’t support RFC 8784 or doesn’t accept the PPK identifier specified in `PPKIdentifier`. The device ignores this key if `PPK` and `PPKIdentifier` aren’t present.
 
 Available: iOS 18+ | iPadOS 18+ | macOS 15+ | tvOS 18+ | visionOS 2+ | watchOS 11+
 
@@ -362,14 +362,14 @@ Available: iOS 18+ | iPadOS 18+ | macOS 15+ | tvOS 18+ | visionOS 2+ | watchOS 1
 - **Type:** `string`
 - **Required:** No
 
-If the VPNSubType field contains the bundle identifier of an app that contains multiple VPN providers of the same type (app-proxy or packet-tunnel), then the system uses this field to choose which provider to use for this configuration. If the VPN provider is implemented as a System Extension, then this field is required.
+If the VPNSubType field contains the bundle identifier of an app that contains multiple VPN providers of the same type (app-proxy or packet-tunnel), then the system uses this field to choose which provider to use for this configuration. If the VPN provider uses a system extension, then this field is required.
 
 ### ProviderDesignatedRequirement
 
 - **Type:** `string`
 - **Required:** No
 
-If the VPN provider is implemented as a System Extension, then this field is required.
+If the VPN provider uses a system extension, then this field is required.
 
 Available: macOS 10.15+ | tvOS 17+ | watchOS 10+
 

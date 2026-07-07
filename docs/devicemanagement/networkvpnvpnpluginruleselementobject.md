@@ -32,14 +32,14 @@ An array of dictionaries that provides rules similar to the `OnDemandRules` dict
 - **Type:** `[string]`
 - **Required:** No
 
-An array of domain names. This rule matches if any of the domain names in the specified list matches any domain in the device’s search domains list. The system supports a wildcard (`*`) prefix. For example, `*.example.com` matches against either `mydomain.example.com` or `yourdomain.example.com`.
+An array of domain names. This rule matches if any of the domain names in the specified list matches any domain in the device’s search domains list. The system supports a wildcard (`\*`) prefix. For example, `\*.example.com` matches against either `mydomain.example.com` or `yourdomain.example.com`.
 
 ### DNSServerAddressMatch
 
 - **Type:** `[string]`
 - **Required:** No
 
-An array of IP addresses. This rule matches if any of the network’s specified DNS servers match any entry in the array. The system supports matching with a single wildcard. For example, `17.*` matches any DNS server in the `17.0.0.0/8` subnet.
+An array of IP addresses. This rule matches if any of the network’s specified DNS servers match any entry in the array. The system supports matching with a single wildcard. For example, `17.\*` matches any DNS server in the `17.0.0.0/8` subnet.
 
 ### InterfaceTypeMatch
 

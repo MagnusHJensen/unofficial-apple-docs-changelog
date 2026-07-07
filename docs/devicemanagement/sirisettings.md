@@ -6,6 +6,16 @@ The declaration to configure Siri settings.
 
 ## Properties
 
+### AllowSiriAI
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, disables the Siri AI specific features of Siri.
+
+Available: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+
 ### AllowUserGeneratedContent
 
 - **Type:** `boolean`
@@ -46,6 +56,16 @@ If `true`, forces Siri profanity filter.
 
 Available: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+
 
+### ForceReduceSensitiveContent
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, forces Siri to reduce sensitive content.
+
+Available: iOS 27+ | iPadOS 27+ | macOS 27+
+
 ## Discussion
 
 Specify `com.apple.configuration.siri.settings` as the declaration type.
@@ -63,9 +83,11 @@ This configuration restricts Siri features.
     "ServerToken": "F1E2D3C4-B5A6-4D5E-8F9A-0B1C2D3E4F5A",
     "Payload": {
         "Enabled": false,
+        "AllowSiriAI": false,
         "AllowUserGeneratedContent": false,
         "AllowWhileLocked": false,
-        "ForceProfanityFilter": true
+        "ForceProfanityFilter": true,
+        "ForceReduceSensitiveContent": true
     }
 }
 ```

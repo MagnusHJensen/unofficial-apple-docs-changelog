@@ -17,7 +17,7 @@ An array of dictionaries representing what the manifest installs.
 
 Use SHA-256 hashes instead of MD5 because SHA-256 has stronger security. If both SHA-256 and MD5 hash properties are present, the device uses only the SHA-256 hashes to verify the manifest data.
 
-### Example Manifest
+### Example manifest
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

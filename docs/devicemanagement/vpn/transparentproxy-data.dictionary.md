@@ -82,14 +82,14 @@ The UUID of the identity certificate as the account credential. If `Authenticati
 - **Type:** `string`
 - **Required:** No
 
-If the VPNSubType field contains the bundle identifier of an app that contains multiple VPN providers of the same type (app-proxy or packet-tunnel), then the system uses this field to choose which provider to use for this configuration. If the VPN provider is implemented as a System Extension, then this field is required.
+If the VPNSubType field contains the bundle identifier of an app that contains multiple VPN providers of the same type (app-proxy or packet-tunnel), then the system uses this field to choose which provider to use for this configuration. If the VPN provider uses a system extension, then this field is required.
 
 ### ProviderDesignatedRequirement
 
 - **Type:** `string`
 - **Required:** No
 
-If the VPN provider is implemented as a System Extension, then this field is required.
+If the VPN provider uses a system extension, then this field is required.
 
 ### ProviderType
 

@@ -31,7 +31,7 @@ Monitor device state using status reports.
 - [StatusContentCacheInfo](/documentation/devicemanagement/statuscontentcacheinfo) - The status item that reports information about the Content Cache service.
 - [StatusContentCacheParents](/documentation/devicemanagement/statuscontentcacheparents) - The status item that reports information about the Content Cache service parent caches.
 - [StatusContentCachePeers](/documentation/devicemanagement/statuscontentcachepeers) - The status item that reports information about the Content Cache service peer caches.
-- [StatusContentCacheService](/documentation/devicemanagement/statuscontentcacheservice) - The status item that reports the status of the Content Cache service.
+- [StatusContentCacheStatus](/documentation/devicemanagement/statuscontentcachestatus) - The status item that reports the status of the Content Cache service.
 
 ### Device property items
 
@@ -52,7 +52,7 @@ Monitor device state using status reports.
 
 ### Enhanced logging items
 
-- [StatusEnhancedLogging](/documentation/devicemanagement/statusenhancedlogging) - The status item that reports the device’s enhanced log collection session status.
+- [StatusEnhancedLoggingStatus](/documentation/devicemanagement/statusenhancedloggingstatus) - The status item that reports the device’s enhanced log collection session status.
 - [StatusEnhancedLoggingAppleCareToken](/documentation/devicemanagement/statusenhancedloggingapplecaretoken) - The status item that reports the device’s enhanced log collection session AppleCare token.
 - [StatusEnhancedLoggingTimestamp](/documentation/devicemanagement/statusenhancedloggingtimestamp) - The status item that reports the device’s enhanced log collection session timestamp.
 

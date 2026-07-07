@@ -61,5 +61,5 @@ The URI template of a DNS-over-HTTPS server, as defined in RFC 8484. This URL ne
 
 A list of domain strings used to determine which DNS queries use the DNS server. If not set, all domains use the DNS server.
 
-The system supports a single wildcard (`*`) prefix, but it’s not required. For example, both `*.example.com` and `example.com` match against `mydomain.example.com` and `your.domain.example.com`, but don’t match against `mydomain-example.com`.
+The system supports a single wildcard (`\*`) prefix, but it’s not required. For example, both `\*.example.com` and `example.com` match against `mydomain.example.com` and `your.domain.example.com`, but don’t match against `mydomain-example.com`.
 

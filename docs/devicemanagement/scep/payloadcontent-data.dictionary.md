@@ -77,7 +77,7 @@ The key size, in bits.
 - **Type:** `string`
 - **Required:** No
 
-A string that’s understood by the SCEP server; for example, a domain name like example.org. If a certificate authority has multiple CA certificates, this field can be used to distinguish which is required.
+A string that’s understood by the SCEP server; for example, a domain name like example.org. If a certificate authority has multiple CA certificates, use this field to distinguish which is required.
 
 ### Retries
 
@@ -95,7 +95,7 @@ Available: iOS 4+ | iPadOS 4+ | macOS 10.10+ | tvOS 9+ | visionOS 1+ | watchOS 3
 - **Required:** No
 - **Default:** `10`
 
-The number of seconds to wait between subsequent retries. The first retry is attempted without this delay.
+The number of seconds to wait between subsequent retries. The device attempts the first retry without this delay.
 
 Available: iOS 4+ | iPadOS 4+ | macOS 10.10+ | tvOS 9+ | visionOS 1+ | watchOS 3+
 
@@ -108,7 +108,7 @@ The representation of an X.500 name as an array of OID and value.
 
 For example, `/C=US/O=Apple Inc./CN=foo/1.2.5.3=bar` translates to `[ [ ["C", "US"] ], [ ["O", "Apple Inc."] ], …, [ [ "1.2.5.3", "bar" ] ] ]`.
 
-OIDs can be represented as dotted numbers, with shortcuts for country (C), locality (L), state (ST), organization (O), organizational unit (OU), and common name (CN).
+You can represent OIDs as dotted numbers, with shortcuts for country (C), locality (L), state (ST), organization (O), organizational unit (OU), and common name (CN).
 
 ### SubjectAltName
 

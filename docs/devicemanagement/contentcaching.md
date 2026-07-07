@@ -139,7 +139,7 @@ If `true`, the content cache provides content to the clients in the union of the
 - **Required:** No
 - **Default:** `true`
 
-If `true`, the content cache offers content to clients only on the same immediate local network only. No content is offered to clients on other networks reachable by the content cache. If `LocalSubnetsOnly` is `true`, the system ignores `ListenRanges`.
+If `true`, the content cache offers content to clients only on the same immediate local network only. The content cache offers no content to clients on other networks reachable by the content cache. If `LocalSubnetsOnly` is `true`, the system ignores `ListenRanges`.
 
 ### LogClientIdentity
 

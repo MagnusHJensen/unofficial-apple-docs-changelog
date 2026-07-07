@@ -12,7 +12,7 @@ A dictionary of launchd configurations.
 - **Required:** Yes
 - **Allowed Values:** `daemon`, `agent`
 
-Indicates whether the system applies the launchd configuration file to the system daemon or system agent domain.
+Indicates whether the device applies the launchd configuration file to the system daemon or system agent domain.
 
 ### FileAssetReference
 

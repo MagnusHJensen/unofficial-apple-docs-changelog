@@ -1,4 +1,4 @@
-# Interpreting Automated Device Enrollment program error codes
+# Interpreting Automated Device Enrollment error codes
 
 Interpret the error codes you might encounter or that can happen during authentication.
 

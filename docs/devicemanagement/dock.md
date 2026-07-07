@@ -113,7 +113,7 @@ If `true`, locks the magnification slider.
 - **Required:** No
 - **Allowed Values:** `AddDockMCXMyApplicationsFolder`, `AddDockMCXDocumentsFolder`, `AddDockMCXSharedFolder`, `AddDockMCXOriginalNetworkHomeFolder`
 
-One or more special folders that may be created at user login time and placed in the Dock.
+One or more special folders that the device may create at user login time and place in the Dock.
 
 The “My Applications” item is only used for Simple Finder environments. The “Original Network Home” item is only used for mobile account users.
 
@@ -164,14 +164,14 @@ The orientation of the Dock.
 - **Type:** `[Dock.StaticItem]`
 - **Required:** No
 
-An array of items located on the Applications side of the Dock that can be removed from the Dock.
+An array of items located on the Applications side of the Dock that users can remove from the Dock.
 
 ### persistent-others
 
 - **Type:** `[Dock.StaticItem]`
 - **Required:** No
 
-An array of items located on the Documents side of the Dock that can be removed from the Dock.
+An array of items located on the Documents side of the Dock that users can remove from the Dock.
 
 ### position-immutable
 
@@ -230,7 +230,7 @@ If `true`, locks the size slider.
 - **Type:** `[Dock.StaticItem]`
 - **Required:** No
 
-An array of items located on the Applications side of the Dock and cannot be removed from that location.
+An array of items located on the Applications side of the Dock that users can’t remove from that location.
 
 ### static-only
 
@@ -245,7 +245,7 @@ If `true`, uses the `static-apps` and `static-others` dictionaries for the Dock 
 - **Type:** `[Dock.StaticItem]`
 - **Required:** No
 
-An array of items located on the Documents side of the Dock and cannot be removed from that location.
+An array of items located on the Documents side of the Dock that users can’t remove from that location.
 
 ### tilesize
 

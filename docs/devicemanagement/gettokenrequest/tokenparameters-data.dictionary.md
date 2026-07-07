@@ -11,7 +11,7 @@ Parameters that the system uses to generate the token.
 - **Type:** `string`
 - **Required:** No
 
-The identifier of the phone paired to the watch. Required by the `com.apple.watch.pairing` service type.
+The identifier of the phone paired to the watch. The `com.apple.watch.pairing` service type requires this key.
 
 Available: iOS 17+ | iPadOS 17+
 
@@ -20,7 +20,7 @@ Available: iOS 17+ | iPadOS 17+
 - **Type:** `string`
 - **Required:** No
 
-A security token to generate the server token. Required by the `com.apple.watch.pairing` service type.
+A security token to generate the server token. The `com.apple.watch.pairing` service type requires this key.
 
 Available: iOS 17+ | iPadOS 17+
 
@@ -29,7 +29,7 @@ Available: iOS 17+ | iPadOS 17+
 - **Type:** `string`
 - **Required:** No
 
-The identifier of the watch paired to the phone. Required by the `com.apple.watch.pairing` service type.
+The identifier of the watch paired to the phone. The `com.apple.watch.pairing` service type requires this key.
 
 Available: iOS 17+ | iPadOS 17+
 

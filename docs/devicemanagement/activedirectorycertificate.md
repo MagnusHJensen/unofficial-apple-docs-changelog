@@ -30,7 +30,7 @@ Available: macOS 10.8+
 - **Type:** `string`
 - **Required:** No
 
-The name of the certificate authority (CA), which is determined from the common name (CN) of the Active Directory entry. Valid values:
+The name of the certificate authority (CA), which the device determines from the common name (CN) of the Active Directory entry. Valid values:
 
 - CN=
 - CN=`Certification Authorities`
@@ -117,7 +117,7 @@ To get a certificate from a Microsoft CA, follow the instructions at [Request a 
 
 ### Profile availability
 
-### Example Profile
+### Example profile
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

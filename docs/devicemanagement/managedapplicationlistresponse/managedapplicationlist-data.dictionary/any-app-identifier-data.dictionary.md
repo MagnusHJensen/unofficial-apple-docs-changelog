@@ -33,7 +33,7 @@ Available: iOS 7+ | iPadOS 7+ | macOS 11+ | tvOS 10.2+ | visionOS 1.1+ | watchOS
 - **Type:** `boolean`
 - **Required:** Yes
 
-If ‘true’, the app has feedback for the server. On macOS 11.3 and later, this value is available if the request was sent on the user channel.
+If ‘true’, the app has feedback for the server. On macOS 11.3 and later, this value is available if the device management server sent the request on the user channel.
 
 Available: iOS 7+ | iPadOS 7+ | macOS 11.3+ | tvOS 10.2+ | visionOS 1.1+ | watchOS 10+
 

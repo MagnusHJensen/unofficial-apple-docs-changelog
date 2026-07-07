@@ -26,7 +26,7 @@ If `true`, the device provides attestations that describe the device and the gen
 
 When `Attest` is `true`, `HardwareBound` also needs to be `true`.
 
-Setting this key to `true` is supported as of macOS 14. Older macOS versions require this key but it must have a value of `false`. See below for hardware requirements.
+macOS 14 supports setting this key to `true`. Older macOS versions require this key but it must have a value of `false`. See below for hardware requirements.
 
 Available: iOS 16+ | iPadOS 16+ | macOS 13.1+ | tvOS 16+ | visionOS 1+ | watchOS 10+
 
@@ -64,7 +64,7 @@ If `true`, the private key is bound to the device. The Secure Enclave generates 
 
 If `true`, `KeyType` must be `ECSECPrimeRandom` and `KeySize` must be 256 or 384.
 
-Setting this key to `true` is supported as of macOS 14 on Apple silicon and Intel devices that have a T2 chip. Older macOS versions or other Mac devices require this key but it must have a value of `false`.
+macOS 14 on Apple silicon and Intel devices that have a T2 chip support setting this key to `true`. Older macOS versions or other Mac devices require this key but it must have a value of `false`.
 
 ### KeyIsExtractable
 
@@ -72,7 +72,7 @@ Setting this key to `true` is supported as of macOS 14 on Apple silicon and Inte
 - **Required:** No
 - **Default:** `true`
 
-If `false`, the private key of the identity obtained through Automated Certificate Management Environment (ACME) needs to be tagged as “non-extractable” in the keychain.
+If `false`, the device tags the private key of the identity obtained through Automated Certificate Management Environment (ACME) as “non-extractable” in the keychain.
 
 Available: macOS 13.1+
 
@@ -144,7 +144,7 @@ The following table indicates which System on Chips (SoCs) support ACME attestat
 
 ### Profile availability
 
-### Example Profile
+### Example profile
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

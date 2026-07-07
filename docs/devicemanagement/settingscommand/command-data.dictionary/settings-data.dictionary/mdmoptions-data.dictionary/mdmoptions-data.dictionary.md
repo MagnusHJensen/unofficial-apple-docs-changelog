@@ -31,7 +31,7 @@ Deprecated: macOS 11+
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the device automatically reboots while locked after several days of inactivity. This is set to `false` by default when a supervised device enrolls. Starting in iOS 26.6 and iPadOS 26.6, changing the effective value from reboot allowed to reboot disallowed requires a reboot or a device unlock before the change takes effect.
+If `true`, the device automatically reboots while locked after several days of inactivity. The device sets this to `false` by default for a supervised enrollment. Starting in iOS 26.6 and iPadOS 26.6, changing the effective value from reboot allowed to reboot disallowed requires a reboot or a device unlock before the change takes effect.
 
 Available: iOS 18.4+ | iPadOS 18.4+
 

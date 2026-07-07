@@ -110,11 +110,11 @@ Available: iOS 14.2+ | iPadOS 14.2+ | macOS 10.15+ | visionOS 1+
 - **Default:** `0`
 - **Allowed Values:** `0`, `1`
 
-If `1``, routes all traffic through the VPN, with some exclusions. Several of the exclusions can be controlled with the `ExcludeLocalNetworks`, `ExcludeCellularServices`, `ExcludeAPNs`and`ExcludeDeviceCommunication` properties. The following traffic is always excluded from the tunnel:
+If `1``, routes all traffic through the VPN, with some exclusions. Several of the exclusions can be controlled with the `ExcludeLocalNetworks`, `ExcludeCellularServices`, `ExcludeAPNs`and`ExcludeDeviceCommunication` properties. The system always excludes the following traffic from the tunnel:
 
 - Traffic necessary for connecting and maintaining the device’s network connection, such as DHCP.
 - Traffic necessary for connecting to captive networks.
-- Certain cellular services traffic that is not routable over the internet and is instead directly routed to the cellular network. See the ExcludeCellularServices property for more details.
+- Certain cellular services traffic that’s not routable over the internet and is instead directly routed to the cellular network. See the ExcludeCellularServices property for more details.
 - Network communication with a companion device such as a watchOS device.
 
 Not available in watchOS.
@@ -183,7 +183,7 @@ An array of dictionaries defining On Demand Rules.
 - **Default:** `0`
 - **Allowed Values:** `0`, `1`
 
-If `1`, the Connect On Demand toggle in Settings is disabled for this configuration. Not available in watchOS.
+If `1`, the device disables the Connect On Demand toggle in Settings for this configuration. Not available in watchOS.
 
 Available: iOS 14+ | iPadOS 14+ | tvOS 17+ | visionOS 1+
 
@@ -206,7 +206,7 @@ The bundle identifier for the VPN provider. Not available in watchOS.
 - **Type:** `string`
 - **Required:** No
 
-If the VPN provider is implemented as a system extension, this field is required. Not available in watchOS.
+If the VPN provider uses a system extension, this field is required. Not available in watchOS.
 
 Available: macOS 10.15+ | tvOS 17+
 

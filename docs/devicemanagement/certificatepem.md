@@ -26,7 +26,7 @@ Specify `com.apple.security.pem` as the payload type.
 
 ### Profile availability
 
-### Example Profile
+### Example profile
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

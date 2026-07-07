@@ -12,7 +12,11 @@ An ACME identity that the device generates.
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the device provides attestations that describe the device and the generated key to the ACME server. The server can use the attestations as strong evidence that the key is bound to the device, and that the device has properties listed in the attestation. The server can use that as part of a trust score to decide whether to issue the requested certificate. When `Attest` is `true`, set `HardwareBound` to `true`. On macOS, set this key, if present, to `false`. The hardware requirements for attestation are described below.
+If `true`, the device provides attestations that describe the device and the generated key to the ACME server. The server can use the attestations as strong evidence that the key is bound to the device, and that the device has properties listed in the attestation. The server can use that as part of a trust score to decide whether to issue the requested certificate.
+
+When `Attest` is `true`, set `HardwareBound` to `true`.
+
+The hardware requirements for attestation are described below.
 
 ### ClientIdentifier
 
@@ -48,7 +52,7 @@ If `true`, the private key is bound to the device. The Secure Enclave generates 
 
 If `true`, `KeyType` needs to be `ECSECPrimeRandom` and `KeySize` needs to be `256` or `384`.
 
-On macOS, this is a required key. Set the value to `false`.
+Set this key to `false` on Mac devices that don’t have Apple silicon or a T2 chip.
 
 ### KeySize
 

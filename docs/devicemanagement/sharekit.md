@@ -20,7 +20,7 @@ Deprecated: macOS 10.12+
 - **Type:** `[string]`
 - **Required:** No
 
-The list of plugin IDs that won’t show up in the user’s Share menu. This key is used only if there is no `SHKAllowedShareServices` key.
+The list of plugin IDs that won’t show up in the user’s Share menu. This key is used only if there’s no `SHKAllowedShareServices` key.
 
 Deprecated: macOS 10.12+
 

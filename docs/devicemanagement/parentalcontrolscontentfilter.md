@@ -66,7 +66,7 @@ If `true`, enables web content filters.
 
 An array of sites that defines an allow list. If specified, this defines additional allowed sites besides those in the automated allow list and deny list, including disallowed adult sites.
 
-This key is required if `allowListEnabled` is `true`.
+The device requires this key if `allowListEnabled` is `true`.
 
 Available: macOS 15.2+
 
@@ -119,13 +119,13 @@ Specify `com.apple.familycontrols.contentfilter` as the payload type.
             </array>
             <key>filterDenyList</key>
             <array>
-                <string>http://www.example2.com</string>
+                <string>http://www2.example.com</string>
             </array>
             <key>siteAllowList</key>
             <array>
                 <dict>
                     <key>address</key>
-                    <string>http://www.example3.com</string>
+                    <string>http://www3.example.com</string>
                     <key>bookmarkPath</key>
                     <string>/</string>
                     <key>pageTitle</key>

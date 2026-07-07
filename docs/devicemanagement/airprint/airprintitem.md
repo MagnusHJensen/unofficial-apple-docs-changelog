@@ -12,7 +12,7 @@ A dictionary of AirPrint printer details.
 - **Required:** No
 - **Default:** `false`
 
-If `true`, AirPrint connections are secured by Transport Layer Security (TLS). Available only in iOS 11 and later.
+If `true`, Transport Layer Security (TLS) secures AirPrint connections. Available only in iOS 11 and later.
 
 Available: iOS 11+ | iPadOS 11+ | visionOS 2+
 

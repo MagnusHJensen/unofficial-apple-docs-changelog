@@ -38,7 +38,7 @@ Available: iOS 11.3+ | iPadOS 11.3+ | tvOS 11.3+ | visionOS 1.1+ | watchOS 10+
 - **Type:** `integer`
 - **Required:** No
 
-The app’s static bundle size, in bytes. This value is expensive to calculate. Starting in iOS 26, macOS 26, tvOS 26, watchOS 26, and visionOS 26 it isn’t present in the response unless it is included in the `Items` request key.
+The app’s static bundle size, in bytes. This value is expensive to calculate. Starting in iOS 26, macOS 26, tvOS 26, watchOS 26, and visionOS 26 it isn’t present in the response unless it’s included in the `Items` request key.
 
 ### DeviceBasedVPP
 
@@ -95,7 +95,7 @@ If `true`, the app is in the initial state, which is waiting to download.
 - **Type:** `integer`
 - **Required:** No
 
-The size of the app’s file system in bytes, including the Documents, Library, and other directories. This value is expensive to calculate. Starting in iOS 26, tvOS 26, watchOS 26, and visionOS 26 it isn’t present in the response unless it is included in the `Items` request key.
+The size of the app’s file system in bytes, including the Documents, Library, and other directories. This value is expensive to calculate. Starting in iOS 26, tvOS 26, watchOS 26, and visionOS 26 it isn’t present in the response unless it’s included in the `Items` request key.
 
 Available: iOS 5+ | iPadOS 5+ | tvOS 10.2+ | visionOS 1.1+ | watchOS 10+
 

@@ -50,7 +50,7 @@ For more information, see [https://support.apple.com/en-us/HT205333](https://sup
 
 ### Profile availability
 
-### Example Profile
+### Example profile
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

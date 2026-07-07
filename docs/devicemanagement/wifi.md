@@ -12,18 +12,18 @@ The payload that configures Wi-Fi settings.
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the device makes this network available for joining before the device is unlocked for the first time following a reboot, on a device configured for return to service. Any network credentials are placed into Class D storage within the keychain, and information about the network is stored on disk in Class D.
+If `true`, the device makes this network available for joining before the device is unlocked for the first time following a reboot, on a device configured for return to service. The device places any network credentials into Class D storage within the keychain and stores information about the network on disk in Class D.
 
 There are several restrictions on the use of this flag:
 
 - This property is only available in the return to service mode.
-- Only one network can be designated as available before first unlock.
+- You can designate only one network as available before first unlock.
 - `EAPClientConfiguration` must not be present.
 - If `IsHotspot` is present, it must be set to `false`.
 - `QoSMarkingPolicy` must not be present.
 - If `ProxyType` is present, it must be set to `None`.
 
-The device fails to install the profile payload if any of these conditions are not met.
+The device fails to install the profile payload if any of these conditions aren’t met.
 
 Available: visionOS 26+
 

@@ -11,7 +11,7 @@ The privacy policy control services dictionary that controls access on a per app
 - **Type:** `[PrivacyPreferencesPolicyControl.Services.Identity]`
 - **Required:** No
 
-Specifies the policies for the app via the Accessibility subsystem. The ability to grant access by this profile is deprecated as of macOS 26.2, and is removed in macOS 27.0.
+Specifies the policies for the app via the Accessibility subsystem. This profile deprecated its ability to grant access as of macOS 26.2, and removes that ability in macOS 27.0.
 
 Deprecated: use the `Privacy` key in the declarative management `com.apple.configuration.app-settings` configuration.
 
@@ -55,7 +55,7 @@ Specifies the policies for calendar information managed by the Calendar.app.
 - **Type:** `[PrivacyPreferencesPolicyControl.Services.Identity]`
 - **Required:** No
 
-A system camera. Access to the camera can’t be given in a profile; it can only be denied.
+A system camera. A profile can’t grant access to the camera; it can only deny it.
 
 Deprecated: macOS 27+
 
@@ -73,7 +73,7 @@ Available: macOS 10.15+
 - **Type:** `[PrivacyPreferencesPolicyControl.Services.Identity]`
 - **Required:** No
 
-Allows the application to use CoreGraphics and HID APIs to listen to (receive) CGEvents and HID events from all processes. Access to these events can’t be given in a profile; it can only be denied.
+Allows the application to use CoreGraphics and HID APIs to listen to (receive) CGEvents and HID events from all processes. A profile can’t grant access to these events; it can only deny it.
 
 Available: macOS 10.15+
 
@@ -91,7 +91,7 @@ Available: macOS 10.15+
 - **Type:** `[PrivacyPreferencesPolicyControl.Services.Identity]`
 - **Required:** No
 
-A system microphone. Access to the microphone can’t be given in a profile; it can only be denied.
+A system microphone. A profile can’t grant access to the microphone; it can only deny it.
 
 Deprecated: macOS 27+
 
@@ -121,7 +121,7 @@ Specifies the policies for reminders information managed by the Reminders app.
 - **Type:** `[PrivacyPreferencesPolicyControl.Services.Identity]`
 - **Required:** No
 
-Allows the application to capture (read) the contents of the system display. Access to the contents can’t be given in a profile; it can only be denied.
+Allows the application to capture (read) the contents of the system display. A profile can’t grant access to the contents; it can only deny it.
 
 Available: macOS 10.15+
 

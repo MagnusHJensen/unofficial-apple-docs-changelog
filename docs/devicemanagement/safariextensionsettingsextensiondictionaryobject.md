@@ -11,7 +11,7 @@ The dictionary that defines the settings for a managed extension. Each key repre
 - **Type:** `[string]`
 - **Required:** No
 
-Controls the domains and sub-domains the extension is granted access to. The device ignores this key when the extension identifier is a single “*” character.
+Controls the domains and sub-domains the extension can access. The device ignores this key when the extension identifier is a single “*” character.
 
 ### DeniedDomains
 

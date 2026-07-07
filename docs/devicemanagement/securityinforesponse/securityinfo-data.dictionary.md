@@ -30,7 +30,7 @@ Available: iOS 17+ | iPadOS 17+
 - **Required:** No
 - **Allowed Values:** `allowed`, `disallowed`, `not supported`
 
-This value specifies whether the Secure Enclave Processor (SEP) supports and allows secure operations to use the Bootstrap Token. The value is automatically set for devices enrolled through Automated Device Enrollment (ADE). The user can also manually set this value in the RecoveryOS.
+This value specifies whether the Secure Enclave Processor (SEP) supports and allows secure operations to use the Bootstrap Token. The device automatically sets this value if enrolled through Automated Device Enrollment (ADE). The user can also manually set this value in the RecoveryOS.
 
 This value is available for a Mac with Apple silicon in macOS 11 and later. Not available for user enrollment.
 

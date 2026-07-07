@@ -1499,7 +1499,7 @@ Allowed for user enrollments: iOS | macOS
 - **Required:** No
 - **Default:** `true`
 
-If `false`, disables Rosetta usage awareness. When Rosetta usage awareness is active, a pop-up dialog is displayed to the user when an app that is using Rosetta is launched. The pop-up dialog indicates that Rosetta will be removed in a future version of the operating system so that the user can contact the app vendor regarding a replacement for the current app.
+If `false`, disables Rosetta usage awareness. When Rosetta usage awareness is active, the device displays a pop-up dialog to the user when launching an app that uses Rosetta. The pop-up dialog indicates that Rosetta will be removed in a future version of the operating system so that the user can contact the app vendor regarding a replacement for the current app.
 
 Available: macOS 26.4+
 
@@ -1644,7 +1644,7 @@ Requires supervision: iOS | visionOS
 - **Required:** No
 - **Default:** `true`
 
-If `false`, the system prevents modification of Time Machine settings in System Settings. This restriction is not supported on the user channel.
+If `false`, the system prevents modification of Time Machine settings in System Settings. This restriction isn’t supported on the user channel.
 
 Available: macOS 14+
 
@@ -1722,7 +1722,7 @@ Available: iOS 5+ | iPadOS 5+ | visionOS 1.1+
 - **Required:** No
 - **Default:** `true`
 
-If `false`, the system allows iOS devices to always connect to USB accessories while locked. In macOS, allows new USB and Thunderbolt accessories, and SD cards to connect without authorization. If the system has Lockdown mode enabled, it ignores this value. This restriction is not supported on the user channel.
+If `false`, the system allows iOS devices to always connect to USB accessories while locked. In macOS, allows new USB and Thunderbolt accessories, and SD cards to connect without authorization. If the system has Lockdown mode enabled, it ignores this value. This restriction isn’t supported on the user channel.
 
 Available: iOS 11.4.1+ | iPadOS 11.4.1+ | macOS 13+
 Requires supervision: iOS
@@ -2267,7 +2267,7 @@ Available: iOS 4+ | iPadOS 4+ | macOS 15+ | tvOS 11.3+
 - **Required:** No
 - **Default:** `false`
 
-If `true`, copy-and-paste functionality is limited by the `allowOpenFromManagedToUnmanaged` and `allowOpenFromUnmanagedToManaged` restrictions.
+If `true`, the `allowOpenFromManagedToUnmanaged` and `allowOpenFromUnmanagedToManaged` restrictions also limit copy-and-paste functionality.
 
 Available: iOS 15+ | iPadOS 15+ | visionOS 2+
 Allowed for user enrollments: iOS | visionOS

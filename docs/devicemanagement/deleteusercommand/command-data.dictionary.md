@@ -47,5 +47,5 @@ The request type for this command.
 - **Type:** `string`
 - **Required:** No
 
-The user name of the account to delete. This key is required when the value for `DeleteAllUsers` is absent or `false`.
+The user name of the account to delete. The device requires this key when the value for `DeleteAllUsers` is absent or `false`.
 

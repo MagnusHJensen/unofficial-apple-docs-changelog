@@ -12,7 +12,7 @@ Post Quantum Key Exchange settings.
 - **Required:** No
 - **Default:** `false`
 
-If set to `false`, the VPN doesn’t establish a connection if the server does not support or doesn’t allow post-quantum key exchanges. Thd device ignores this key if `PostQuantumKeyExchangeMethods` is not present in `IKESecurityAssociationParameters` or `ChildSecurityAssociationParameters`.
+If set to `false`, the VPN doesn’t establish a connection if the server doesn’t support or doesn’t allow post-quantum key exchanges. Thd device ignores this key if `PostQuantumKeyExchangeMethods` isn’t present in `IKESecurityAssociationParameters` or `ChildSecurityAssociationParameters`.
 
 ### PPK
 
@@ -34,5 +34,5 @@ The identifier for the Post-quantum Pre-shared key (PPK) the device uses for thi
 - **Required:** No
 - **Default:** `true`
 
-If set to `true`, the VPN doesn’t establish a connection if the server doesn’t support RFC 8784 or doesn’t accept the PPK identifier specified in `PPKIdentifier`. The device ignores this key if `PPK` and `PPKIdentifier` are not present.
+If set to `true`, the VPN doesn’t establish a connection if the server doesn’t support RFC 8784 or doesn’t accept the PPK identifier specified in `PPKIdentifier`. The device ignores this key if `PPK` and `PPKIdentifier` aren’t present.
 

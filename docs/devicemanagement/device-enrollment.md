@@ -11,7 +11,7 @@ Implement Automated Device Enrollment and account-driven enrollments.
 ### Automated Device Enrollment
 
 - [Authenticating through web views](/documentation/devicemanagement/authenticating-through-web-views) - Use your own custom web interfaces to authenticate users.
-- [Enrolling with Platform Single Sign-on](/documentation/devicemanagement/enrolling-with-platform-single-sign-on) - Authenticate users during Automated Device Enrollment using Platform Single Sign-on.
+- [Enrollment with Platform Single Sign-on](/documentation/devicemanagement/enrolling-with-platform-single-sign-on) - Authenticate users during Automated Device Enrollment using Platform Single Sign-on.
 
 ### Account-driven enrollment
 

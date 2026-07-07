@@ -11,7 +11,7 @@ The status item that reports the device’s enhanced log collection session time
 - **Type:** `string`
 - **Required:** No
 
-The enhanced log collection session RFC 3339 timestamp that the device reports for the last session status change. The device returns an empty string if there is no session status to report.
+The enhanced log collection session RFC 3339 timestamp that the device reports for the last session status change. The device returns an empty string if there’s no session status to report.
 
 ## Discussion
 

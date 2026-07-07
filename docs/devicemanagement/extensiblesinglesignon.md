@@ -10,9 +10,9 @@ The payload that configures an app extension that performs single sign-on (SSO).
 
 - **Type:** `string`
 - **Required:** No
-- **Allowed Values:** `Password`, `UserSecureEnclaveKey`
+- **Allowed Values:** `Password`, `UserSecureEnclaveKey`, `SmartCard`, `OpenID`
 
-The Platform SSO authentication method the extension uses. Requires that the SSO Extension also supports the method.
+The Platform SSO authentication method the extension uses. Requires that the SSO Extension also supports the method. Don’t use this. Use the `AuthenticationMethod` key in the `PlatformSSO` dictionary instead.
 
 Available: macOS 13+
 Deprecated: macOS 14+
@@ -61,7 +61,7 @@ The system:
 - **Type:** `ExtensibleSingleSignOn.PlatformSSO`
 - **Required:** No
 
-The dictionary to configure Platform SSO. Requires `Type` to be set to `Redirect`.
+The dictionary to configure Platform SSO. Requires setting `Type` to `Redirect`.
 
 Available: macOS 14+
 
@@ -97,7 +97,7 @@ Available: iOS 15+ | iPadOS 15+ | macOS 12+ | visionOS 1.1+
 - **Type:** `string`
 - **Required:** No
 
-The team identifier of the app extension. This key is required on macOS and ignored elsewhere.
+The team identifier of the app extension. The device requires this key on macOS and ignores it elsewhere.
 
 Available: macOS 10.15+
 
@@ -189,5 +189,5 @@ The system supports user channel installation in macOS 11 and later.
 ### Objects
 
 - [ExtensibleSingleSignOn.ExtensionData](/documentation/devicemanagement/extensiblesinglesignon/extensiondata-data.dictionary) - The additional data to pass to the app extension.
-- [ExtensibleSingleSignOn.PlatformSSO](/documentation/devicemanagement/extensiblesinglesignon/platformsso-data.dictionary) - The dictionary to configure Platform SSO. Requires `Type` to be set to `Redirect`.
+- [ExtensibleSingleSignOn.PlatformSSO](/documentation/devicemanagement/extensiblesinglesignon/platformsso-data.dictionary) - The dictionary to configure Platform SSO. Requires setting `Type` to `Redirect`.
 

@@ -12,7 +12,7 @@ The payload that configures a smart card.
 - **Required:** No
 - **Default:** `true`
 
-If `false`, the system disables smart cards for logins, authorizations, and screen saver unlocking. It is still allowed for other functions, such as signing emails and accessing the web. A restart is required for a setting change to take effect.
+If `false`, the system disables smart cards for logins, authorizations, and screen saver unlocking. It’s still allowed for other functions, such as signing emails and accessing the web. The device requires a restart for a setting change to take effect.
 
 ### checkCertificateTrust
 
@@ -24,9 +24,9 @@ If `false`, the system disables smart cards for logins, authorizations, and scre
 Configures the certificate trust check and has one of the following possible values:
 
 - `0`: Turns off certificate trust check.
-- `1`: Turns on certificate trust check. A standard validity check is performed but doesn’t include additional revocation checks.
-- `2`: Turns on certificate trust check. A soft revocation check is also performed. Until the certificate is explicitly rejected by CRL/OCSP, it’s considered valid. This setting means that unavailable or unreachable CRL/OCSP allow this check to succeed.
-- `3`: Turns on certificate trust check. A hard revocation check is also performed. Unless CRL/OCSP explicitly says “This certificate is OK,” it’s considered invalid. This option is the most secure.
+- `1`: Turns on certificate trust check. The device performs a standard validity check but doesn’t include additional revocation checks.
+- `2`: Turns on certificate trust check. The device also performs a soft revocation check. Until CRL/OCSP explicitly rejects the certificate, the device considers it valid. This setting means that unavailable or unreachable CRL/OCSP allow this check to succeed.
+- `3`: Turns on certificate trust check. The device also performs a hard revocation check. Unless CRL/OCSP explicitly says “This certificate is OK,” the device considers it invalid. This option is the most secure.
 
 ### enforceSmartCard
 
@@ -53,7 +53,7 @@ If `true`, a user can pair with only one smart card, although existing pairings 
 - **Default:** `0`
 - **Allowed Values:** `0`, `1`
 
-If `1`, the system enables the screen saver when the smart card is removed.
+If `1`, the device enables the screen saver when the user removes the smart card.
 
 Available: macOS 10.13.4+
 

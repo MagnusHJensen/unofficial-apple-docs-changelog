@@ -107,7 +107,7 @@ Allowed enrollments: supervised
 
 Specify `com.apple.configuration.safari.settings` as the declaration type.
 
-### Privacy Permission Defaults
+### Privacy permission defaults
 
 Privacy permission defaults allow an organization to suggest a set of privacy permissions for use on a website. When set, Safari displays a consent prompt listing all the configured defaults. If the user accepts, the system applies those defaults for the website. If the user declines, no defaults are set and Safari prompts the user in the normal way when the website requires permission.
 
@@ -121,6 +121,10 @@ The user can change the website privacy permission settings in Safari settings i
 ### Configuration availability
 
 ### Configuration examples
+
+#### Settings and restrictions examples
+
+#### Website privacy examples
 
 ## Topics
 

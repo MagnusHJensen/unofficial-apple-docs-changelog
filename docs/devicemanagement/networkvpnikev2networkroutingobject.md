@@ -57,5 +57,5 @@ If `true`, routes all traffic through the VPN, with some exclusions. Several of 
 
 - Traffic necessary for connecting and maintaining the device’s network connection, such as DHCP.
 - Traffic necessary for connecting to captive networks.
-- Certain cellular services traffic that is not routable over the internet and is instead directly routed to the cellular network. See the ExcludeCellularServices property for more details.
+- Certain cellular services traffic that’s not routable over the internet and is instead directly routed to the cellular network. See the ExcludeCellularServices property for more details.
 

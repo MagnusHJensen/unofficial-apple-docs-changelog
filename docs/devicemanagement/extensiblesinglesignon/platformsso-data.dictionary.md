@@ -1,6 +1,6 @@
 # ExtensibleSingleSignOn.PlatformSSO
 
-The dictionary to configure Platform SSO. Requires `Type` to be set to `Redirect`.
+The dictionary to configure Platform SSO. Requires setting `Type` to `Redirect`.
 
 **Platforms:** macOS 14.0
 
@@ -156,13 +156,13 @@ Available: macOS 26+
 
 The policy to apply when using Platform SSO at FileVault unlock on a Mac with Apple silicon. Applies when `AuthenticationMethod` is `Password`.
 
-- `AttemptAuthentication`: The device attempts Platform SSO authentication before proceeding. If offline, unlock continues if the local account password matches. If online and the credential is incorrect, then the device requires a successful Platform SSO authentication is required, even if taken offline.
-- `RequireAuthentication`: The device requires Platform SSO authentication before proceeding.  If the device is offline and `AllowOfflineGracePeriod` is enabled, then the device uses the offline `OfflineGracePeriod` to determine if the user can proceed or not. If online and the credential is incorrect, then the device requires a valid Platform SSO authentication to proceed, regardless of the `OfflineGracePeriod`. If the account is not registered for Platform SSO and `AllowAuthenticationGracePeriod` is enabled, then the device uses `AuthenticationGracePeriod` to determine if the user can proceed or not.
-- `AllowOfflineGracePeriod`: The device allows the use of the `OfflineGracePeriod` when `RequireAuthentication` is enabled.  If `AllowOfflineGracePeriod` is not set, then the device denies offline access.
-- `AllowAuthenticationGracePeriod`: The device allows the use of the `AuthenticationGracePeriod` for other local accounts when `RequireAuthentication` is enabled. The `AuthenticationGracePeriod` starts when any of the policies are updated. If `AllowAuthenticationGracePeriod` is not set, then the device denies unregistered account access.
+- `AttemptAuthentication`: The device attempts Platform SSO authentication before proceeding. If offline, unlock continues if the local account password matches. If online and the credential is incorrect, then the device requires a successful Platform SSO authentication, even if taken offline.
+- `RequireAuthentication`: The device requires Platform SSO authentication before proceeding.  If the device is offline and `AllowOfflineGracePeriod` is enabled, then the device uses the offline `OfflineGracePeriod` to determine if the user can proceed or not. If online and the credential is incorrect, then the device requires a valid Platform SSO authentication to proceed, regardless of the `OfflineGracePeriod`. If the account isn’t registered for Platform SSO and `AllowAuthenticationGracePeriod` is enabled, then the device uses `AuthenticationGracePeriod` to determine if the user can proceed or not.
+- `AllowOfflineGracePeriod`: The device allows the use of the `OfflineGracePeriod` when `RequireAuthentication` is enabled.  If `AllowOfflineGracePeriod` isn’t set, then the device denies offline access.
+- `AllowAuthenticationGracePeriod`: The device allows the use of the `AuthenticationGracePeriod` for other local accounts when `RequireAuthentication` is enabled. The `AuthenticationGracePeriod` starts when any of the policies are updated. If `AllowAuthenticationGracePeriod` isn’t set, then the device denies unregistered account access.
 - `RequireTouchID`: The device requires the use of Touch ID (and not Apple Watch) for File Vault unlock. Available in macOS 27 and later.
 - `RequireTouchIDOrWatch`: The device requires the use of Touch ID or Apple Watch for File Vault unlock. Available in macOS 27 and later.
-- `AllowOpenIDForTouchIDFallback`: The device allows web login as a fallback if touchID fails or is not available. Available in macOS 27 and later.
+- `AllowOpenIDForTouchIDFallback`: The device allows web login as a fallback if touchID fails or isn’t available. Available in macOS 27 and later.
 
 Available: macOS 15+
 
@@ -183,12 +183,12 @@ The duration, in seconds, until the system requires a full login instead of a re
 The policy to apply when using Platform SSO at the Login Window. Applies when `AuthenticationMethod` is `Password`.
 
 - `AttemptAuthentication`: The device attempts Platform SSO authentication before proceeding. If offline, login continues if the local account password matches. If online and the credential is incorrect, then the device requires a successful Platform SSO authentication to proceed, even if taken offline.
-- `RequireAuthentication`: The device requires Platform SSO authentication before proceeding.  If the device is offline and `AllowOfflineGracePeriod` is enabled, then the device uses the offline `OfflineGracePeriod` to determine if the user can proceed or not. If online and the credential is incorrect, then the device requires a valid Platform SSO authentication to proceed, regardless of the `OfflineGracePeriod`. If the account is not registered for Platform SSO and `AllowAuthenticationGracePeriod` is enabled, then the device uses the `AuthenticationGracePeriod` to determine if the user can proceed or not.
-- `AllowOfflineGracePeriod`: The device allows the use of the `OfflineGracePeriod` when `RequireAuthentication` is enabled.  If `AllowOfflineGracePeriod` is not set, then the device denies offline access. Applies to web login and all offline passwords.
-- `AllowAuthenticationGracePeriod`: The device allows the use of the `AuthenticationGracePeriod` for other local accounts when `RequireAuthentication` is enabled. The `AuthenticationGracePeriod` starts when any of the policies have been updated. If `AllowAuthenticationGracePeriod` is not set, then the device denies unregistered account access.
+- `RequireAuthentication`: The device requires Platform SSO authentication before proceeding.  If the device is offline and `AllowOfflineGracePeriod` is enabled, then the device uses the offline `OfflineGracePeriod` to determine if the user can proceed or not. If online and the credential is incorrect, then the device requires a valid Platform SSO authentication to proceed, regardless of the `OfflineGracePeriod`. If the account isn’t registered for Platform SSO and `AllowAuthenticationGracePeriod` is enabled, then the device uses the `AuthenticationGracePeriod` to determine if the user can proceed or not.
+- `AllowOfflineGracePeriod`: The device allows the use of the `OfflineGracePeriod` when `RequireAuthentication` is enabled.  If `AllowOfflineGracePeriod` isn’t set, then the device denies offline access. Applies to web login and all offline passwords.
+- `AllowAuthenticationGracePeriod`: The device allows the use of the `AuthenticationGracePeriod` for other local accounts when `RequireAuthentication` is enabled. The `AuthenticationGracePeriod` starts when any of the policies have been updated. If `AllowAuthenticationGracePeriod` isn’t set, then the device denies unregistered account access.
 - `RequireTouchID`: The device requires the use of Touch ID (and not Apple Watch) for login. Available in macOS 27 and later.
 - `RequireTouchIDOrWatch`: The device requires the use of Touch ID or Apple Watch for login. Available in macOS 27 and later.
-- `AllowOpenIDForTouchIDFallback`: The device allows web login as fallback if touchID fails or is not available. Available in macOS 27 and later.
+- `AllowOpenIDForTouchIDFallback`: The device allows web login as fallback if touchID fails or isn’t available. Available in macOS 27 and later.
 
 Available: macOS 15+
 
@@ -269,13 +269,13 @@ The attribute mapping to use when creating users, or for authorization.
 The policy to apply when using Platform SSO at screensaver unlock. Applies when `AuthenticationMethod` is `Password`.
 
 - `AttemptAuthentication`: The device attempts Platform SSO authentication before proceeding. If offline, unlock will continue if the local account password matches. If online and the credential is incorrect, then the device requires a successful Platform SSO authentication to proceed, even if taken offline.
-- `RequireAuthentication`: The device requires Platform SSO authentication before proceeding.  If the device is offline and `AllowOfflineGracePeriod` is enabled, then the offline `OfflineGracePeriod` is used to determine if the user can proceed or not. If online and the credential is incorrect, then the device requires a valid Platform SSO authentication to proceed regardless of the `OfflineGracePeriod`. If the account is not registered for Platform SSO and `AllowAuthenticationGracePeriod` is enabled, then the device uses `AuthenticationGracePeriod` to determine if the user can proceed or not.
-- `AllowOfflineGracePeriod`: The device allows the use of the `OfflineGracePeriod` when `RequireAuthentication` is enabled.  If `AllowOfflineGracePeriod` is not set, then the device denies offline access.
-- `AllowAuthenticationGracePeriod`: The device allows the use of the `AuthenticationGracePeriod` for other local accounts when `RequireAuthentication` is enabled. The `AuthenticationGracePeriod` starts when any of the policies have been updated. If `AllowAuthenticationGracePeriod` is not set, then the device denies the unregistered account access.
+- `RequireAuthentication`: The device requires Platform SSO authentication before proceeding.  If the device is offline and `AllowOfflineGracePeriod` is enabled, then the device uses the offline `OfflineGracePeriod` to determine if the user can proceed or not. If online and the credential is incorrect, then the device requires a valid Platform SSO authentication to proceed regardless of the `OfflineGracePeriod`. If the account isn’t registered for Platform SSO and `AllowAuthenticationGracePeriod` is enabled, then the device uses `AuthenticationGracePeriod` to determine if the user can proceed or not.
+- `AllowOfflineGracePeriod`: The device allows the use of the `OfflineGracePeriod` when `RequireAuthentication` is enabled.  If `AllowOfflineGracePeriod` isn’t set, then the device denies offline access.
+- `AllowAuthenticationGracePeriod`: The device allows the use of the `AuthenticationGracePeriod` for other local accounts when `RequireAuthentication` is enabled. The `AuthenticationGracePeriod` starts when any of the policies have been updated. If `AllowAuthenticationGracePeriod` isn’t set, then the device denies the unregistered account access.
 - `AllowTouchIDOrWatchForUnlock`: The device allows TouchID or Watch to unlock the screensaver instead of Platform SSO authentication when `RequireAuthentication` is enabled.
 - `RequireTouchID`: The device requires the use of Touch ID (and not Apple Watch) for unlock. Available in macOS 27 and later.
 - `RequireTouchIDOrWatch`: RThe device requires the use of Touch ID or Apple Watch for unlock. Available in macOS 27 and later.
-- `AllowOpenIDForTouchIDFallback`: The device allows web login as fallback if touchID fails or is not available. Available in macOS 27 and later.
+- `AllowOpenIDForTouchIDFallback`: The device allows web login as fallback if touchID fails or isn’t available. Available in macOS 27 and later.
 
 Available: macOS 15+
 
@@ -304,7 +304,7 @@ If `true`, the system uses the same signing and encryption keys for all users. O
 - **Type:** `[string]`
 - **Required:** No
 
-The set of allowed hosts that the system can load in the PSSO web view. Required if `AuthenticationMethod` is set to `OpenID`, or `NewUserAuthenticationMethods` contains `OpenID`.
+The set of allowed hosts that the system can load in the PSSO web view. Required if `AuthenticationMethod` is `OpenID`, or `NewUserAuthenticationMethods` contains `OpenID`.
 
 Available: macOS 27+
 

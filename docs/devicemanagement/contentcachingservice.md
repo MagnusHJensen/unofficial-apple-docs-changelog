@@ -102,7 +102,7 @@ Deprecated: macOS 27+
 - **Required:** No
 - **Default:** `false`
 
-If `true`, Content Caching displays exceptional conditions (alerts) as system notifications in the upper corner of the screen. Alerts were automatically displayed starting in macOS 10.13. In macOS 10.15 the alerts are off by default, but still available through this setting.
+If `true`, Content Caching displays exceptional conditions (alerts) as system notifications in the upper corner of the screen. The device automatically displayed alerts starting in macOS 10.13. In macOS 10.15 the alerts are off by default, but still available through this setting.
 
 Available: macOS 10.15+
 Deprecated: macOS 27+

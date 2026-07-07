@@ -27,14 +27,14 @@ Allowed scopes: iOS: system | macOS: user
 
 Specify `com.apple.configuration.app.settings` as the declaration type.
 
-### Binary Identifier rules
+### Binary identifier rules
 
 The following combinations of binary identifiers are supported for each key:
 
 - `AllowedBinaries`:
-- `DeniedBinaries`
+- `DeniedBinaries`:
 
-### Privacy Permission Defaults
+### Privacy permission defaults
 
 Privacy permission defaults allow an organization to suggest a set of privacy permissions for use with an app. When set, the app displays a consent prompt listing all the configured defaults. If the user accepts, the device applies those defaults for the app. If the user declines, no defaults are set and the device prompts the user in the normal way when the app requires permission.
 
@@ -49,7 +49,7 @@ Only AppKit-based apps on macOS support this feature.
 
 ### Configuration availability
 
-### Configuration examples
+### App privacy examples
 
 ## Topics
 

@@ -75,9 +75,9 @@ If `true`, enables notifications for this app.
 
 The type previews for notifications. This key overrides the value at Settings>Notifications>Show Previews.
 
-- `0` - Always: Previews will be shown when the device is locked and unlocked
-- `1` - When Unlocked: Previews will only be shown when the device is unlocked
-- `2` - Never: Previews will never be shown
+- `0` - Always: The device shows previews when locked and unlocked
+- `1` - When Unlocked: The device shows previews only when unlocked
+- `2` - Never: The device never shows previews
 
 Available: iOS 14+ | iPadOS 14+
 
@@ -105,7 +105,7 @@ If `true`, enables notifications on the Lock Screen for this app.
 - **Required:** No
 - **Default:** `true`
 
-If `true`, enables notifications in the notification center for this app.
+If `true`, enables notifications in the Notification Center for this app.
 
 ### SoundsEnabled
 

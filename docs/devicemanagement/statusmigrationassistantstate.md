@@ -14,7 +14,7 @@ A status item that shows the device’s current migration state.
 
 The current migration state of the system, which has the following possible values:
 
-- `none`: Migration has not started yet or no migration has taken place.
+- `none`: Migration hasn’t started yet or no migration has taken place.
 - `migrating`: Migration is in progress.
 - `completed`: Migration has completed successfully.
 - `failed`: Migration has failed.

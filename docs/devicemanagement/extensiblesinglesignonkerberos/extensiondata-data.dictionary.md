@@ -132,7 +132,7 @@ Available: iOS 14+ | iPadOS 14+ | macOS 11+ | visionOS 1.1+
 - **Type:** `string`
 - **Required:** No
 
-A string with wildcards that can use used to filter the list of available SmartCards by issuer. e.g “*My CA2*”. If there is one remaining, it will be auto-selected. If there more than one remaining, then the list is shorter.
+A string with wildcards that can use used to filter the list of available SmartCards by issuer. e.g “*My CA2*”. If there’s one remaining, it will be auto-selected. If there more than one remaining, then the list is shorter.
 
 Available: macOS 15+
 

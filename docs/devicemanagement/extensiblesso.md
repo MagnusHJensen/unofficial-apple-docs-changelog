@@ -103,7 +103,7 @@ Specify `com.apple.configuration.extensible-sso` as the declaration type.
 
 ### Configuration availability
 
-### Configuration Examples
+### Configuration examples
 
 ## Topics
 

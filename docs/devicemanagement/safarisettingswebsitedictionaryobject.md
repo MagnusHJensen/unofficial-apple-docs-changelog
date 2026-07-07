@@ -14,8 +14,8 @@ The dictionary that defines the website privacy permission defaults. Each key re
 
 Controls whether a website privacy permission default is set.
 
-- `None`: No website privacy permission default is set for use of the camera.
-- `Allow`: The website privacy permission default is set to allow use of the camera.
+- `None`: Safari sets no website privacy permission default for use of the camera.
+- `Allow`: Safari sets the website privacy permission default to allow use of the camera.
 
 ### Microphone
 
@@ -25,8 +25,8 @@ Controls whether a website privacy permission default is set.
 
 Controls whether a website privacy permission default is set.
 
-- `None`: No website privacy permission default is set for use of the microphone.
-- `Allow`: The website privacy permission default is set to allow use of the microphone.
+- `None`: Safari sets no website privacy permission default for use of the microphone.
+- `Allow`: Safari sets the website privacy permission default to allow use of the microphone.
 
 ### OrganizationJustification
 

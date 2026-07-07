@@ -13,6 +13,8 @@ If present, configures app-specific Intelligence features.
 
 If present, configures Calendar and Reminders Intelligence features.
 
+Available: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+
 ### Mail
 
 - **Type:** `IntelligenceSettingsApps_MailObject`

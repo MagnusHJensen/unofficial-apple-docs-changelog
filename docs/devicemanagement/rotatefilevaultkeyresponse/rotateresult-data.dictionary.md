@@ -11,5 +11,5 @@ The result of rotating the personal recovery key.
 - **Type:** `data`
 - **Required:** No
 
-A new personal recovery key that is encrypted using a `ReplyEncryptionCertificate` as a CMS-compliant envelope.
+A new personal recovery key that’s encrypted using a `ReplyEncryptionCertificate` as a CMS-compliant envelope.
 

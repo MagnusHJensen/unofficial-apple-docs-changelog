@@ -78,7 +78,7 @@ If `true`,  enables Perfect Forward Secrecy (PFS) for IKEv2 Connections.
 - **Required:** No
 - **Default:** `false`
 
-If set to `true`, the device doesn’t allow DES, 3DES, and Diffie-Hellman groups less than 14. Also the device requires the encryption algorithm specified in `IKESecurityAssociationParameters` to be at least as cryptographically strong as the algorithm specified in `ChildSecurityAssociationParameters`. The device rejects this configuration if these requirements are not met.
+If set to `true`, the device doesn’t allow DES, 3DES, and Diffie-Hellman groups less than 14. Also the device requires the encryption algorithm specified in `IKESecurityAssociationParameters` to be at least as cryptographically strong as the algorithm specified in `ChildSecurityAssociationParameters`. The device rejects this configuration if these requirements aren’t met.
 
 ### HostName
 
@@ -124,13 +124,6 @@ The Maximum Transmission Unit (MTU) specifies the maximum size in bytes of each 
 
 The NAT Keepalive interval for Always On VPN IKEv2 connections. This value controls the interval that the device sends keepalive offload packets. The minimum value is 20 seconds. If no key is specified, the default is 20 seconds over Wi-Fi and 110 seconds over a cellular interface.
 
-### NetworkRouting
-
-- **Type:** `NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_NetworkRoutingObject`
-- **Required:** No
-
-Specifies details about how the VPN routes different types of network traffic.
-
 ### OnDemand
 
 - **Type:** `NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_OnDemandObject`
@@ -174,7 +167,6 @@ If `true`, negotiations should use IKEv2 Configuration Attribute `INTERNAL_IP4_S
 - [NetworkVPNAlwaysOnSecurityAssociationParametersObject](/documentation/devicemanagement/networkvpnalwaysonsecurityassociationparametersobject) - These parameters apply to Child Security Association unless `ChildSecurityAssociationParameters` is specified.
 - [NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_AuthenticationObject](/documentation/devicemanagement/networkvpnalwaysontunnelconfigurationelement_ikev2_authenticationobject) - Settings that control authentication.
 - [NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_IdleObject](/documentation/devicemanagement/networkvpnalwaysontunnelconfigurationelement_ikev2_idleobject) - Specifies details about how the system handles idle VPN connections.
-- [NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_NetworkRoutingObject](/documentation/devicemanagement/networkvpnalwaysontunnelconfigurationelement_ikev2_networkroutingobject) - Specifies details about how the VPN routes different types of network traffic.
 - [NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_OnDemandObject](/documentation/devicemanagement/networkvpnalwaysontunnelconfigurationelement_ikev2_ondemandobject) - Specifies details about how the system controls on-demand VPN.
 - [NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_PostQuantumKeyExchangeObject](/documentation/devicemanagement/networkvpnalwaysontunnelconfigurationelement_ikev2_postquantumkeyexchangeobject) - Post Quantum Key Exchange settings.
 - [NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_ProviderObject](/documentation/devicemanagement/networkvpnalwaysontunnelconfigurationelement_ikev2_providerobject) - Specifies details about the provider.

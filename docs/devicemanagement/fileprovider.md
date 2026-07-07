@@ -30,7 +30,7 @@ Available: macOS 26.4+
 - **Required:** No
 - **Default:** `true`
 
-If `false`, the device prevents the File Provider extension from using desktop and documents synchronization in any app. This does not impact the ability for apps to utilize the File Provider extension for file and folder syncing with remote storage.
+If `false`, the device prevents the File Provider extension from using desktop and documents synchronization in any app. This doesn’t impact the ability for apps to utilize the File Provider extension for file and folder syncing with remote storage.
 
 Available: macOS 15.2+
 
@@ -67,7 +67,7 @@ Available: macOS 26.4+
 - **Type:** `[string]`
 - **Required:** No
 
-An array of strings representing the composed identifiers of apps. The device allows the corresponding apps to use File Provider extension desktop and documents synchronization. If present, and `ManagementAllowsKnownFolderSyncing` is set to `true`, the device allows only the apps in this list to use desktop and documents synchronization. This key is ignored if `ManagementAllowsKnownFolderSyncing` is set to `false`. This setting does not impact the ability for apps to use File Provider extension volume access. The format of the app identifiers is “Bundle-ID (Team-ID)”, for example `com.example.app (ABCD1234)`.
+An array of strings representing the composed identifiers of apps. The device allows the corresponding apps to use File Provider extension desktop and documents synchronization. If present, and `ManagementAllowsKnownFolderSyncing` is set to `true`, the device allows only the apps in this list to use desktop and documents synchronization. This key is ignored if `ManagementAllowsKnownFolderSyncing` is set to `false`. This setting doesn’t impact the ability for apps to use File Provider extension volume access. The format of the app identifiers is “Bundle-ID (Team-ID)”, for example `com.example.app (ABCD1234)`.
 
 Available: macOS 15.2+
 

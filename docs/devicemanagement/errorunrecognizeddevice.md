@@ -12,7 +12,7 @@ An error response that indicates a device needs to unenroll.
 - **Required:** Yes
 - **Allowed Values:** `com.apple.unrecognized.device`
 
-Indicates that the device is not recognized by the server. This causes the device to unenroll from MDM.
+Indicates that the device isn’t recognized by the server. This causes the device to unenroll from MDM.
 
 ### description
 

@@ -133,7 +133,7 @@ The key to get the device name. Requires the Device Information access right.
 - **Type:** `string`
 - **Required:** No
 
-The key to get an attestation of the device’s properties. The hardware requirements for attestation are described below.
+The key to get an attestation of the device’s properties. See the hardware requirements for attestation below.
 
 Available: iOS 16+ | iPadOS 16+ | macOS 14+ | tvOS 16+ | visionOS 1.1+ | watchOS 10+
 

@@ -14,7 +14,7 @@ The status item that reports the device’s management enrollment type.
 
 The device management enrollment type that indicates how the device is enrolled, which has the following possible values:
 
-- `none`: Device is not enrolled
+- `none`: Device isn’t enrolled
 - `supervised`: Device is supervised
 - `device`: Device enrollment
 - `user`: User enrollment

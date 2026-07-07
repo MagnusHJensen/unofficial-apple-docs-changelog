@@ -1,12 +1,12 @@
-# Authenticating with the Automated Device Enrollment program
+# Authenticating for Automated Device Enrollment
 
 Communicate securely with the web service using a server token.
 
 ## Overview
 
-The Automated Device Enrollment program uses a server token to allow a device management service to securely communicate with the program’s service.
+Automated Device Enrollment uses a server token to allow a device management service to securely communicate with the program’s service.
 
-## Get an Automated Device Enrollment program server token
+## Get an Automated Device Enrollment server token
 
 To get a server token, the user must complete the following steps. You can help by automating some of the steps.
 
@@ -69,5 +69,5 @@ After a period of time, the token expires and the service returns a `401` error 
 ### Examples and error codes
 
 - [Examining server tokens](/documentation/devicemanagement/examining-server-tokens) - View sample encrypted and unencrypted tokens to verify your server tokens are in the right format.
-- [Interpreting Automated Device Enrollment program error codes](/documentation/devicemanagement/interpreting-automated-device-enrollment-program-error-codes) - Interpret the error codes you might encounter or that can happen during authentication.
+- [Interpreting Automated Device Enrollment error codes](/documentation/devicemanagement/interpreting-automated-device-enrollment-program-error-codes) - Interpret the error codes you might encounter or that can happen during authentication.
 

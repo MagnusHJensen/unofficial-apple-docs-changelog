@@ -20,7 +20,7 @@ Available: iOS 27+ | iPadOS 27+ | tvOS 27+ | visionOS 27+
 - **Type:** `[AppSettingsAllowed_BinaryIdentifierObject]`
 - **Required:** No
 
-If present, the device only allows binaries that match the binary identifier properties to run. A binary is matched only when all the binary identifiers match. The device always runs system critical processes. Use “codesign -dvvv <path_to_binary>” to show the information you need to generate these values.
+If present, the device only allows binaries that match the binary identifier properties to run. A binary only matches when all the binary identifiers match. The device always runs system critical processes. Use “codesign -dvvv <path_to_binary>” to show the information you need to generate these values.
 
 Available: macOS 27+
 Allowed scopes: system
@@ -52,7 +52,7 @@ Available: iOS 27+ | iPadOS 27+ | tvOS 27+ | visionOS 27+
 - **Type:** `[AppSettingsAllowed_BinaryIdentifierObject]`
 - **Required:** No
 
-If present, the device doesn’t allow binaries that match the binary identifier properties to run. A binary is matched only when all the binary identifiers match.
+If present, the device doesn’t allow binaries that match the binary identifier properties to run. A binary only matches when all the binary identifiers match.
 
 Available: macOS 27+
 Allowed scopes: system

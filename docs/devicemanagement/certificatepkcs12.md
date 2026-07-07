@@ -61,7 +61,7 @@ It’s recommended to omit the password in the profile, or do one of the followi
 
 ### Profile availability
 
-### Example Profile
+### Example profile
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

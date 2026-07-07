@@ -38,7 +38,7 @@ Available: iOS 18.4+ | iPadOS 18.4+ | macOS 27+ | visionOS 2.4+
 - **Type:** `string`
 - **Required:** No
 
-The App Store ID of the managed app that is downloaded from the App Store.
+The App Store ID of the managed app that’s downloaded from the App Store.
 
 Only one of `AppStoreID`, `BundleID`, `ManifestURL`, or `AppComposedIdentifier` needs to be present.
 
@@ -56,7 +56,7 @@ Available: iOS 17.2+ | iPadOS 17.2+ | visionOS 2.4+
 - **Type:** `string`
 - **Required:** No
 
-The bundle ID of the managed app that is downloaded from the App Store.
+The bundle ID of the managed app that’s downloaded from the App Store.
 
 Only one of `AppStoreID`, `BundleID`, `ManifestURL`, or `AppComposedIdentifier` needs to be present.
 

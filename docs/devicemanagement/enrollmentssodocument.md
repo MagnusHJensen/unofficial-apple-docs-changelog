@@ -46,7 +46,7 @@ An array of base64-encoded JSON formatted Declarative Device Management declarat
 
 The set of declarations must include one `com.apple.configuration.app.managed` configuration, and one activation declaration that references the configuration. Include asset declarations if the app config requires them.
 
-The app configuration must include `AppStoreID` when developer mode is not being used, or it must include `BundleID` when developer mode is used.
+The app configuration must include `AppStoreID` when developer mode isn’t being used, or it must include `BundleID` when developer mode is used.
 
 One of `ConfigurationProfile` and `Declarations` must be present.
 

@@ -6,16 +6,6 @@ Specifies details about how the system controls on-demand VPN.
 
 ## Properties
 
-### DisableUserOverride
-
-- **Type:** `boolean`
-- **Required:** No
-- **Default:** `false`
-
-If `true`, the Connect On Demand toggle in Settings is disabled for this configuration.
-
-Available: iOS 27+ | iPadOS 27+ | visionOS 27+
-
 ### Enabled
 
 - **Type:** `boolean`

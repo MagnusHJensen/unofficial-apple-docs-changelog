@@ -36,5 +36,5 @@ An array of IP addresses of DNS servers to use for resolving the specified domai
 - **Type:** `string`
 - **Required:** No
 
-An HTTP or HTTPS (preferred) URL to probe, using a GET request. If the URL’s hostname can’t be resolved, if the server is unreachable, or if the server doesn’t respond with a 200 HTTP status code, a VPN connection is established in response. This key is valid only if the value of ‘DomainAction’ is ‘ConnectIfNeeded’.
+An HTTP or HTTPS (preferred) URL to probe, using a GET request. If the URL’s hostname can’t be resolved, if the server is unreachable, or if the server doesn’t respond with a 200 HTTP status code, the device establishes a VPN connection in response. This key is valid only if the value of ‘DomainAction’ is ‘ConnectIfNeeded’.
 

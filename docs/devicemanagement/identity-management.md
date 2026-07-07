@@ -10,7 +10,8 @@ Use Platform Single Sign-on and Managed Device Attestation on managed devices.
 
 ### Platform Single Sign-on
 
-- [Configuring Device Management](/documentation/AuthenticationServices/configuring-device-management) - Configure Device Management to support device and user registration for Platform SSO.
+- [Enrollment with Platform Single Sign-on](/documentation/devicemanagement/enrolling-with-platform-single-sign-on) - Authenticate users during Automated Device Enrollment using Platform Single Sign-on.
+- [Configuring Platform Single Sign-on](/documentation/devicemanagement/configuring-platform-single-sign-on) - Provide a seamless login and authentication experience when integrating with your identity provider.
 
 ### Managed Device Attestation
 

@@ -67,7 +67,7 @@ Deprecated: macOS 27+
 - **Type:** `string`
 - **Required:** Yes
 
-Obtained via the command `codesign -display -r -`.
+Obtain this value by running `codesign -display -r -`.
 
 Deprecated: macOS 27+
 

@@ -11,7 +11,7 @@ An array of dictionaries that conform to the icon dictionary format.
 - **Type:** `string`
 - **Required:** No
 
-The bundle identifier of the app. This setting is required if the type is `Application`.
+The bundle identifier of the app. The device requires this setting if the type is `Application`.
 
 ### DisplayName
 
@@ -40,7 +40,7 @@ The type of the Dock item.
 - **Type:** `string`
 - **Required:** No
 
-The URL of the existing web clip for this item. This setting is required if `type` is `WebClip`. If more than one web clip exists with the same URL, the behavior is undefined.
+The URL of the existing web clip for this item. The device requires this setting if `type` is `WebClip`. If more than one web clip exists with the same URL, the behavior is undefined.
 
 Specifying a web clip in this payload doesn’t create the web clip. Use the [WebClip](/documentation/devicemanagement/webclip) payload to create a web clip.
 

@@ -12,7 +12,7 @@ An outgoing Mail account.
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the account is removed and the status item object only contains this key and the `identifier` key.
+If `true`, the device removed the account and the status item object only contains this key and the `identifier` key.
 
 ### declaration-identifier
 

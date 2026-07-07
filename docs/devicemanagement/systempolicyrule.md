@@ -11,7 +11,7 @@ The payload that configures the system policy.
 - **Type:** `string`
 - **Required:** No
 
-This string appears in the System Policy UI. If it’s missing, `PayloadDisplayName` or `PayloadDescription` is entered into this field before the rule is added to the System Policy database.
+This string appears in the System Policy UI. If it’s missing, the device enters `PayloadDisplayName` or `PayloadDescription` into this field before adding the rule to the System Policy database.
 
 ### Expiration
 
@@ -25,7 +25,7 @@ The expiration date for rules being processed.
 - **Type:** `data`
 - **Required:** No
 
-The single leaf certificate for the app that is in the allow list.
+The single leaf certificate for the app that’s in the allow list.
 
 ### OperationType
 
