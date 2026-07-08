@@ -8,6 +8,22 @@ Provides the full list of web service URLs, notification types, request limits, 
 
 ### Example Response
 
+### Request limits
+
+Some request-parameter limits are dynamic and can change without notice. Read their current values from the `limits` section of [ServiceConfigResponse](/documentation/devicemanagement/serviceconfigresponse).
+
+The following keys are specific to [ManageAssetsRequest](/documentation/devicemanagement/manageassetsrequest):
+
+The following keys are specific to [RevokeAssetsRequest](/documentation/devicemanagement/revokeassetsrequest):
+
+The following keys are specific to user management requests:
+
+The following keys are specific to subscription management requests:
+
+The following keys are specific to [Client Config](/documentation/devicemanagement/client-config-71glv):
+
+The following keys are general to all requests:
+
 ## Topics
 
 ### Response

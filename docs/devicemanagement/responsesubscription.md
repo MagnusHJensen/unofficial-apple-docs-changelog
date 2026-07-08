@@ -26,6 +26,13 @@ The Adam ID for the subscription.
 
 The current state of the subscription.
 
+### periodEndDate
+
+- **Type:** `string`
+- **Required:** No
+
+The end date of the current billing period in ISO-8601 calendar date format (`YYYY-MM-DD`).
+
 ### counts
 
 - **Type:** `SubscriptionCounts`

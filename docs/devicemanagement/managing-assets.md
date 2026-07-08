@@ -13,7 +13,7 @@ Before managing the assets in an organization, you need to retrieve all of the a
 The following code shows an example of requesting an organization’s assets:
 
 ```javascript
-curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/assets' \ 
+curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/assets' \
 --header 'Authorization: Bearer {sToken}'
 ```
 
@@ -172,51 +172,55 @@ curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/assignments?a
 
 ### Check request size limits
 
-The size limits for a [ManageAssetsRequest](/documentation/devicemanagement/manageassetsrequest) and [RevokeAssetsRequest](/documentation/devicemanagement/revokeassetsrequest) are dynamic and can change without notice, so you should sync these every 5 minutes. These limits are in [ServiceConfigResponse.Limits](/documentation/devicemanagement/serviceconfigresponse/limits-data.dictionary).
+The size limits for a [ManageAssetsRequest](/documentation/devicemanagement/manageassetsrequest) and [RevokeAssetsRequest](/documentation/devicemanagement/revokeassetsrequest) are dynamic and can change without notice, so you should sync these every 5 minutes. These limits are in [ServiceConfigResponse.Limits](/documentation/devicemanagement/serviceconfigresponse/limits-data.dictionary). For the specific request-limit keys and their meanings, see [Service Config](/documentation/devicemanagement/service-config).
 
-The following keys are specific to [ManageAssetsRequest](/documentation/devicemanagement/manageassetsrequest):
+### Assign assets
 
-- `maxAssets` - The maximum number of unique assets in a manage request
-- `maxClientUserIds` - The maximum number of unique user identifiers in a manage request
-- `maxSerialNumbers` - The maximum number of unique device identifiers in a manage request
+Use [ManageAssetsRequest](/documentation/devicemanagement/manageassetsrequest) to asynchronously associate assets with users and devices. Because these requests are asynchronous, install assets on a device only after the server sends a successful notification.
 
-The following keys are specific to [RevokeAssetsRequest](/documentation/devicemanagement/revokeassetsrequest):
-
-- `maxRevokeClientUserIds` - The maximum number of unique user identifiers in a revoke request
-- `maxRevokeSerialNumbers` - The maximum number of unique serial numbers in a revoke request
-
-The following code shows an example of getting request limits from [Service Config](/documentation/devicemanagement/service-config):
+The following code shows an example of associating assets to users and devices:
 
 ```javascript
-curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/service/config'
+curl --location --request POST 'https://vpp.itunes.apple.com/mdm/v2/assets/associate' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer {sToken}' \
+--data-raw '{
+    "assets": [
+      {
+        "adamId": "408709785"
+      },
+      {
+        "adamId": "377298193"
+      }
+    ],
+     "clientUserIds": [
+      "client-1",
+      "client-2",
+      "client-3",
+      "client-4"
+    ],
+    "serialNumbers": [
+      "serial-1",
+      "serial-2",
+      "serial-3",
+      "serial-4"
+    ]
+}'
 ```
 
 The code above results in a response like the following:
 
 ```javascript
 {
-    ...
-    "limits": {
-        "maxAssets": 25,
-        "maxUsers": 100,
-        "maxNotificationLength": 512,
-        "maxRevokeClientUserIds": 100,
-        "maxClientUserIds": 1000,
-        "maxSerialNumbers": 1000,
-        "maxRevokeSerialNumbers": 100,
-        "maxSubscriptions": 25,
-        "maxSubscriptionClientUserIds": 1000,
-        "maxMdmNameLength": 100,
-        "maxMdmMetadataLength": 255,
-        "maxMdmIdLength": 100
-    },
-    ...
+    "eventId": "954910a8-3d9c-4fde-948d-253e5aef431a",
+    "tokenExpirationDate": "2030-11-08T22:33:22+0000",
+    "uId": "2049025000431439"
 }
 ```
 
-### Assign assets
+### Unassign assets
 
-Use [ManageAssetsRequest](/documentation/devicemanagement/manageassetsrequest) to asynchronously associate or disassociate assets with users and devices.
+Use [ManageAssetsRequest](/documentation/devicemanagement/manageassetsrequest) to asynchronously disassociate assets from users and devices. Because these requests are asynchronous, remove assets from a device only after the server sends a successful notification. An unassigned asset that remains installed on a device becomes unusable after 30 days.
 
 The following code shows an example of disassociating assets from currently assigned users and devices:
 
@@ -253,46 +257,6 @@ The code above results in a response like the following:
 ```javascript
 {
     "eventId": "9f418433-09c5-41e8-abc6-9016ac104d5b",
-    "tokenExpirationDate": "2030-11-08T22:33:22+0000",
-    "uId": "2049025000431439"
-}
-```
-
-You can then associate those assets to new users and devices.
-
-```javascript
-curl --location --request POST 'https://vpp.itunes.apple.com/mdm/v2/assets/associate' \
---header 'Content-Type: application/json' \
---header 'Authorization: Bearer {sToken}' \
---data-raw '{
-    "assets": [
-      {
-        "adamId": "408709785"
-      },
-      {
-        "adamId": "377298193"
-      }
-    ],
-     "clientUserIds": [
-      "client-1",
-      "client-2",
-      "client-3",
-      "client-4"
-    ],
-    "serialNumbers": [
-      "serial-1",
-      "serial-2",
-      "serial-3",
-      "serial-4"
-    ]
-}'
-```
-
-The code above results in a response like the following:
-
-```javascript
-{
-    "eventId": "954910a8-3d9c-4fde-948d-253e5aef431a",
     "tokenExpirationDate": "2030-11-08T22:33:22+0000",
     "uId": "2049025000431439"
 }
@@ -372,7 +336,7 @@ The code above results in a response like the following:
             },
             "errorNumber": 9609,
             "errorMessage": "Registered user not found"
-        },
+        }
     ],
     "numCompleted": 14,
     "numRequested": 16,
@@ -401,7 +365,7 @@ The code above results in a response like the following:
 }
 ```
 
-The [StatusResponse](/documentation/devicemanagement/statusresponse) returns as `PENDING`, `COMPLETE`, or `FAILED,` which represents the overall status of the asynchronous request.
+The [StatusResponse](/documentation/devicemanagement/statusresponse) returns as `PENDING`, `COMPLETE`, or `FAILED`, which represents the overall status of the asynchronous request.
 
 ### Handle notifications
 
