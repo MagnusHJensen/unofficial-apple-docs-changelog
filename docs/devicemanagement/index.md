@@ -50,12 +50,6 @@ Device management works with Managed App Distribution and Managed App Configurat
 
 ### Dictionaries
 
-- [InApps](/documentation/devicemanagement/inapps)
 - [ResponseErrorCode](/documentation/devicemanagement/responseerrorcode) - An error code.
 - [StorefrontsResponse](/documentation/devicemanagement/storefrontsresponse) - The response to a storefront request.
-- [x-hidden-GetInAppAssignmentsResponse](/documentation/devicemanagement/x-hidden-getinappassignmentsresponse)
-- [x-hidden-GetInAppsResponse](/documentation/devicemanagement/x-hidden-getinappsresponse)
-- [x-hidden-ManageInAppsRequest](/documentation/devicemanagement/x-hidden-manageinappsrequest)
-- [x-hidden-ResponseInApp](/documentation/devicemanagement/x-hidden-responseinapp)
-- [x-hidden-ResponseInAppAssignment](/documentation/devicemanagement/x-hidden-responseinappassignment)
 

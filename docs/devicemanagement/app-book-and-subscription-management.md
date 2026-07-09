@@ -44,10 +44,6 @@ Manage apps, books, and subscriptions for your students and employees.
 - [Get Subscription Administrators](/documentation/devicemanagement/get-subscription-administrators) - Get the administrators for subscriptions that your organization manages.
 - [Add Subscription Administrators](/documentation/devicemanagement/add-subscription-administrators) - Add administrators for subscriptions.
 - [Remove Subscription Administrators](/documentation/devicemanagement/remove-subscription-administrators) - Remove administrators from subscriptions.
-- [Get In-App Purchases](/documentation/devicemanagement/get-in-app-purchases)
-- [Get In-App Assignments](/documentation/devicemanagement/get-in-app-assignments)
-- [Associate In-App Purchases](/documentation/devicemanagement/associate-in-app-purchases)
-- [Disassociate In-App Purchases](/documentation/devicemanagement/disassociate-in-app-purchases)
 
 ### User management
 
