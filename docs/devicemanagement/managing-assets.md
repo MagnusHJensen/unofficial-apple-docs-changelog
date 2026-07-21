@@ -4,9 +4,9 @@ Assign and revoke app and book licenses across your organization.
 
 ## Overview
 
-Assets are the apps and books that an organization owns. The asset management endpoints allow for asynchronous management of these assets to users and devices with mobile device management (MDM) software.
+Assets are the apps and books that an organization owns. The asset management endpoints allow for asynchronous management of these assets to users and devices with your device management service.
 
-### Retrieve asset information
+## Retrieve asset information
 
 Before managing the assets in an organization, you need to retrieve all of the assets that the organization owns by making a request to [Get Assets](/documentation/devicemanagement/get-assets-4ski1).
 
@@ -107,7 +107,7 @@ curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/assets?produc
 --header 'Authorization: Bearer {sToken}'
 ```
 
-### Retrieve assignments
+## Retrieve assignments
 
 Making a request to [Get Assignments](/documentation/devicemanagement/get-assignments-9wv1e) allows you to retrieve all active asset assignments for the organization.
 
@@ -120,7 +120,7 @@ curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/assignments' 
 
 The code above results in a response like the following:
 
-```javascript
+```json
 {
     "assignments": [
         {
@@ -170,11 +170,11 @@ curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/assignments?a
 --header 'Authorization: Bearer {sToken}'
 ```
 
-### Check request size limits
+## Check request size limits
 
 The size limits for a [ManageAssetsRequest](/documentation/devicemanagement/manageassetsrequest) and [RevokeAssetsRequest](/documentation/devicemanagement/revokeassetsrequest) are dynamic and can change without notice, so you should sync these every 5 minutes. These limits are in [ServiceConfigResponse.Limits](/documentation/devicemanagement/serviceconfigresponse/limits-data.dictionary). For the specific request-limit keys and their meanings, see [Service Config](/documentation/devicemanagement/service-config).
 
-### Assign assets
+## Assign assets
 
 Use [ManageAssetsRequest](/documentation/devicemanagement/manageassetsrequest) to asynchronously associate assets with users and devices. Because these requests are asynchronous, install assets on a device only after the server sends a successful notification.
 
@@ -210,7 +210,7 @@ curl --location --request POST 'https://vpp.itunes.apple.com/mdm/v2/assets/assoc
 
 The code above results in a response like the following:
 
-```javascript
+```json
 {
     "eventId": "954910a8-3d9c-4fde-948d-253e5aef431a",
     "tokenExpirationDate": "2030-11-08T22:33:22+0000",
@@ -218,7 +218,7 @@ The code above results in a response like the following:
 }
 ```
 
-### Unassign assets
+## Unassign assets
 
 Use [ManageAssetsRequest](/documentation/devicemanagement/manageassetsrequest) to asynchronously disassociate assets from users and devices. Because these requests are asynchronous, remove assets from a device only after the server sends a successful notification. An unassigned asset that remains installed on a device becomes unusable after 30 days.
 
@@ -254,7 +254,7 @@ curl --location --request POST 'https://vpp.itunes.apple.com/mdm/v2/assets/disas
 
 The code above results in a response like the following:
 
-```javascript
+```json
 {
     "eventId": "9f418433-09c5-41e8-abc6-9016ac104d5b",
     "tokenExpirationDate": "2030-11-08T22:33:22+0000",
@@ -286,7 +286,7 @@ curl --location --request POST 'https://vpp.itunes.apple.com/mdm/v2/assets/revok
 
 The code above results in a response like the following:
 
-```javascript
+```json
 {
     "eventId": "5c2113e7-bf12-458a-9a6d-55bd75904392",
     "tokenExpirationDate": "2030-11-08T22:33:22+0000",
@@ -303,7 +303,7 @@ curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/status?eventI
 
 The code above results in a response like the following:
 
-```javascript
+```json
 {
     "eventStatus": "PENDING",
     "eventType": "ASSOCIATE",
@@ -323,7 +323,7 @@ curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/status?eventI
 
 The code above results in a response like the following:
 
-```javascript
+```json
 {
     "eventStatus": "FAILED",
     "eventType": "ASSOCIATE",
@@ -354,7 +354,7 @@ curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/status?eventI
 
 The code above results in a response like the following:
 
-```javascript
+```json
 {
     "eventStatus": "COMPLETE",
     "eventType": "ASSOCIATE",
@@ -367,7 +367,7 @@ The code above results in a response like the following:
 
 The [StatusResponse](/documentation/devicemanagement/statusresponse) returns as `PENDING`, `COMPLETE`, or `FAILED`, which represents the overall status of the asynchronous request.
 
-### Handle notifications
+## Handle notifications
 
 For device management services that subscribe to `ASSET_MANAGEMENT` notifications in [Client Config](/documentation/devicemanagement/client-config-4szk1), the server sends incremental notifications as it makes assignments. For more information, see [Subscribing to notifications](/documentation/devicemanagement/subscribing-to-notifications).
 

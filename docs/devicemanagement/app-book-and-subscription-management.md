@@ -6,7 +6,7 @@ Manage apps, books, and subscriptions for your students and employees.
 
 ### Getting started
 
-- [Getting started with the management API](/documentation/devicemanagement/getting-started-with-the-management-api) - Configure your MDM client to handle content and user assignments.
+- [Getting started with the management API](/documentation/devicemanagement/getting-started-with-the-management-api) - Configure your device management service to handle content and user assignments.
 - [Apps and books metadata for organizations](/documentation/devicemanagement/apps-and-books-metadata-for-organizations) - Get metadata for apps and books your organization owns.
 
 ### Managing content
@@ -14,7 +14,7 @@ Manage apps, books, and subscriptions for your students and employees.
 - [Managing assets](/documentation/devicemanagement/managing-assets) - Assign and revoke app and book licenses across your organization.
 - [Managing subscriptions](/documentation/devicemanagement/managing-subscriptions) - Administer auto-renewable subscription seats for your organization.
 - [Managing users](/documentation/devicemanagement/managing-users) - Register and manage users for your organization’s managed location.
-- [Setting up and assigning content with your MDM](/documentation/devicemanagement/setting-up-and-assigning-content-with-your-mdm) - Distribute purchased licenses to managed users through your MDM server.
+- [Setting up and assigning content](/documentation/devicemanagement/setting-up-and-assigning-content) - Distribute purchased licenses to managed users through your device management service.
 
 ### Common tasks
 

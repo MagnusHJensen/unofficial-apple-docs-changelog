@@ -10,7 +10,7 @@ This distinction matters when planning seat allocation. Renewing seats represent
 
 Subscriptions are identified by two values: a `parentAdamId` that refers to the parent app in the store, and an `adamId` that identifies the specific subscription product.
 
-### Retrieve subscription seat counts
+## Retrieve subscription seat counts
 
 Send a GET request to `/v2/subscriptions` to retrieve the subscriptions your organization manages. Filter results by `parentAdamId` or `adamId`, or omit both to retrieve all subscriptions. The response breaks down seat counts by renewal state for both assigned and available seats.
 
@@ -64,9 +64,9 @@ The `assigned` field appears only in the synchronous `GET /v2/subscriptions` res
 
 This endpoint uses cursor-based pagination. Pass the `nextCursor` value as the `cursor` query parameter in subsequent requests until `nextCursor` is absent.
 
-The response can include subscriptions that previously had seats but no longer do. These entries appear with all counts set to zero. Your MDM client should handle zero-count subscriptions gracefully rather than treating them as errors.
+The response can include subscriptions that previously had seats but no longer do. These entries appear with all counts set to zero. Your device management service should handle zero-count subscriptions gracefully rather than treating them as errors.
 
-### Query individual subscription assignments
+## Query individual subscription assignments
 
 Send a GET request to `/v2/subscriptions/assignments` to retrieve per-user assignment details. Filter results by `parentAdamId`, `adamId`, or `clientUserId`. Each assignment record includes a `renewing` Boolean value that reflects the renewal state of the assignment.
 
@@ -102,11 +102,11 @@ This endpoint uses cursor-based pagination. Pass the `nextCursor` value as the `
 
 A `renewing` value of `true` means the user’s assignment auto-renews at the end of the current billing period. A value of `false` means the assignment expires at the end of its current billing period. Use this information to identify which assignments need attention before they lapse.
 
-### Plan seat allocation based on renewal state
+## Plan seat allocation based on renewal state
 
-The renewal state of a seat determines what happens to it when a subscription period ends or when your MDM client removes an assignment.
+The renewal state of a seat determines what happens to it when a subscription period ends or when your device management service removes an assignment.
 
-When your MDM client disassociates a user from a ** seat, that seat returns to the available pool as a renewing seat. The organization retains the seat, and your MDM client can create an assignment for another user. The total number of seats the organization owns remains unchanged.
+When your device management service client disassociates a user from a ** seat, that seat returns to the available pool as a renewing seat. The organization retains the seat, and your device management service can create an assignment for another user. The total number of seats the organization owns remains unchanged.
 
 When a user holds an assignment on an ** seat and the billing period ends, that seat disappears from the pool entirely. The seat doesn’t renew, so it doesn’t return to the available pool. The organization’s total seat count decreases by one.
 
@@ -122,15 +122,15 @@ Consider an organization with 100 subscription seats — 80 assigned as renewing
 }
 ```
 
-The `total` confirms that all 100 seats are renewing licenses, even though 15 are assigned in expiring mode. If your MDM client disassociates 10 users from renewing seats, those 10 seats move back to the available renewing pool. The organization still has 100 total seats, now with 70 assigned renewing, 15 assigned expiring, and 15 available renewing.
+The `total` confirms that all 100 seats are renewing licenses, even though 15 are assigned in expiring mode. If your device management service disassociates 10 users from renewing seats, those 10 seats move back to the available renewing pool. The organization still has 100 total seats, now with 70 assigned renewing, 15 assigned expiring, and 15 available renewing.
 
 When the billing period ends for the 15 expiring assignments, those assignments end and the underlying seats return to the available pool as renewing seats — because `total.renewing` remains 100. The organization retains all 100 seats.
 
-Compare this to a scenario where the organization has marked seats for expiration (`total.expiring > 0`). When those billing periods end, the seats disappear from the pool entirely and `total.expiring` decreases. Surface `total.expiring` in your MDM client so administrators can see how many seats the organization will lose at the end of the billing period.
+Compare this to a scenario where the organization has marked seats for expiration (`total.expiring > 0`). When those billing periods end, the seats disappear from the pool entirely and `total.expiring` decreases. Surface `total.expiring` in your device management service so administrators can see how many seats the organization will lose at the end of the billing period.
 
-Expose the ** `expiring` counts in your MDM client so administrators can monitor capacity that they’ll lose at the end of the billing period. Administrators can then choose to create expiring assignments from those seats before the period ends, or purchase additional seats to compensate.
+Expose the ** `expiring` counts in your device management service so administrators can monitor capacity that they’ll lose at the end of the billing period. Administrators can then choose to create expiring assignments from those seats before the period ends, or purchase additional seats to compensate.
 
-### Check request size limits
+## Check request size limits
 
 The size limits for a [ManageSubscriptionsRequest](/documentation/devicemanagement/managesubscriptionsrequest) are dynamic and can change without notice, so you should sync these every 5 minutes. These limits are in [ServiceConfigResponse.Limits](/documentation/devicemanagement/serviceconfigresponse/limits-data.dictionary).
 
@@ -141,7 +141,7 @@ The following keys are specific to [ManageSubscriptionsRequest](/documentation/d
 
 A request that exceeds either limit fails with error 9805 (`This request exceeds the maximum subscriptions limit. Change the request to stay within the specified limit.`). For more information, see [Handling error responses](/documentation/devicemanagement/handling-error-responses).
 
-### Associate subscriptions with users
+## Associate subscriptions with users
 
 To create assignments for subscription seats, send a POST request to `/v2/subscriptions/associate` with the subscription Adam IDs, client user IDs, and the desired renewal state. Set the `renewing` field to `true` to assign renewing seats to the specified users.
 
@@ -158,7 +158,7 @@ curl --location --request POST 'https://vpp.itunes.apple.com/mdm/v2/subscription
 
 The server processes this request asynchronously and returns an `eventId`. Use the Events Status endpoint at `GET /v2/status` with that `eventId` to track the operation’s progress.
 
-#### Assign seats in an expiring state
+### Assign seats in an expiring state
 
 Set the `renewing` field to `false` to create assignments using expiring seats. The user receives access to the subscription for the current billing period, but the seat expires at the end of that period without renewal. This is useful when you want to provide temporary access or when you plan to reassign a seat after the current period ends.
 
@@ -172,7 +172,7 @@ Set the `renewing` field to `false` to create assignments using expiring seats. 
 
 An expiring seat with an assignment still counts toward your organization’s assigned seat total until the period ends. You can check the balance between renewing and expiring seats at any time through the Get Subscriptions endpoint, where the `counts` object breaks down both `assigned` and `available` totals by renewal state.
 
-### Disassociate subscriptions from users
+## Disassociate subscriptions from users
 
 To remove assignments, send a POST request to `/v2/subscriptions/disassociate`. The request supports a `deferred` field that controls when the disassociation takes effect. When `deferred` is `true`, the assignment remains active for the user until the end of the current billing period rather than being removed immediately.
 
@@ -189,9 +189,9 @@ curl --location --request POST 'https://vpp.itunes.apple.com/mdm/v2/subscription
 
 When `deferred` is `false` or omitted, the disassociation takes effect as soon as the server processes the request. Use deferred disassociation to avoid disrupting users in the middle of a billing period. The server processes this request asynchronously and returns an `eventId`. Check the operation’s status at `GET /v2/status` using that `eventId`.
 
-### Retrieve subscription administrators
+## Retrieve subscription administrators
 
-The subscription administrator endpoints let your MDM server control which users have administrative access to specific subscriptions. This may be required for some developers’ intended app experiences.
+The subscription administrator endpoints let your device management service control which users have administrative access to specific subscriptions. This may be required for some developers’ intended app experiences.
 
 Each administrator record includes the `adamId` of the subscription they administer, a `clientUserId` identifying the administrator, and an `idHash` for the user. When you include user state information, the response also contains a `userStatus` field that reflects the administrator’s current association state.
 
@@ -223,7 +223,7 @@ The code above results in a response like the following:
 
 This endpoint uses cursor-based pagination. Pass the `nextCursor` value as the `cursor` query parameter in subsequent requests until `nextCursor` is absent.
 
-### Add subscription administrators
+## Add subscription administrators
 
 Send a POST request to `/v2/subscriptions/admins/add` to designate users as administrators for specific subscriptions. The request body requires an `adamIds` array of subscription identifiers and a `clientUserIds` array of user identifiers.
 
@@ -247,7 +247,7 @@ The server processes this request synchronously and returns a confirmation respo
 }
 ```
 
-### Remove subscription administrators
+## Remove subscription administrators
 
 Send a POST request to `/v2/subscriptions/admins/remove` to revoke administrator access from users for specific subscriptions. The request body requires an `adamIds` array of subscription identifiers and a `clientUserIds` array of user identifiers.
 

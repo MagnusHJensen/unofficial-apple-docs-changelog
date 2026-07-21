@@ -10,7 +10,7 @@ Volume Purchase Program (VPP) allows an organization to manage and assign apps t
 
 All endpoints (except for [Service Configuration](/documentation/devicemanagement/service-configuration)) require an `sToken` parameter to authenticate.
 
-Content managers can download a location-based `sToken` from the Settings page in [Upgrading to Apple School Manager and Apple Business Manager](/documentation/devicemanagement/upgrading-to-apple-school-manager-and-apple-business-manager), and upload it into their device management service. This grants the device management service access to the licenses available at that location.
+Content managers can download a location-based `sToken` from the Settings page in [Upgrading to Apple School Manager and Apple Business](/documentation/devicemanagement/upgrading-to-apple-school-manager-and-apple-business), and upload it into their device management service. This grants the device management service access to the licenses available at that location.
 
 
 
@@ -18,13 +18,13 @@ The device management service should store the location-based token along with i
 
 The `sToken` itself is a JSON object in Base64 encoding. When decoded, the resulting JSON object contains three fields: `token`, `expDate`, and `orgName`. For example, the following is an `sToken` value:
 
-```swift
+```other
 eyJ0b2tlbiI6InQxWG9VenBMRXRwZGxhK25zeENkd3JjdDBSandkaWNOaGRreW5STW05VVAyc2hSYTBMUnVGcVpQM0pLQmJUTWxDSE42ajNta1R6WVlQbVVkVXJXV2x3PT0iLCJleHBEYXRlIjoiMjAxNC0wOC0xNVQxODoxMzo1Mi0wNzAwIiwib3JnTmFtZSI6Ik9SRy4yMDA5MDcxNjAwIn0=
 ```
 
 After Base64 decoding, this is the JSON:
 
-```swift
+```json
 {
   "token": "t1XoUzpLEtpdla+nsxCdwrct0RjwdicNhdkynRMm9UP2shRa0LRuFqZP3JKBbTMlCHN6j3mkTzYYPmUdUrWWlw==",
   "expDate": "2014-08-15T18:13:52-0700",
@@ -36,7 +36,7 @@ The `expDate` field contains the expiration date of the token in ISO 8601 format
 
 If the provided token is within the expiration warning period (currently 15 days before the expiration date), the response contains an additional field, `tokenExpDate`. The value of this field is the expiration date in ISO 8601 format. For example:
 
-```swift
+```json
 "tokenExpDate":"2013-07-26T18􏰁12􏰁09-0700"
 ```
 
@@ -52,7 +52,7 @@ You can tailor different sets of privileges for individual content managers usin
 
 As a convention, fields with null values aren’t included in responses. For example, the user object has an optional `email` field. The following example doesn’t have the `email` field in the user object, so the `email` field value is null.
 
-```swift
+```json
 "user":{
   "userId": 1,
   "clientUserIdStr": "810C9B91-DF83-41DA-80A1-408AD7F081A8",

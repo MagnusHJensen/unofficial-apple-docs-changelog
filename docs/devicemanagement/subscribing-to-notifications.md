@@ -17,7 +17,7 @@ Each notification has these common fields:
 
 Notifications resemble the following:
 
-```javascript
+```json
 {
     "notification": {...},
     "notificationId": "01654971-0d81-467a-9e62-bf8e15e8dabd",
@@ -26,11 +26,11 @@ Notifications resemble the following:
 }
 ```
 
-The server delivers notifications on a best-effort basis. The server attempts delivery up to three times over 1–5 minutes. An HTTP 2xx response status from an MDM server indicates a successful notification delivery.
+The server delivers notifications on a best-effort basis. The server attempts delivery up to three times over 1–5 minutes. An HTTP `2xx` response status from your device management service indicates a successful notification delivery.
 
 There is a limit of 100 elements in the notification. Any request for more than 100 discrete tasks results in multiple notifications. For example, an assignment request for one `adamId` to 150 users results in at least two notifications.
 
-If your MDM server doesn’t receive a notification for an event within 5 minutes, check the event status using the [Event Status](/documentation/devicemanagement/events-status) endpoint with the `eventId` from the original request. While the returned `eventStatus` is `PENDING`, wait at least 30 seconds between subsequent status queries to avoid unnecessary load on the server. If the status remains `PENDING` after 10 minutes, retry the request.
+If your device management service doesn’t receive a notification for an event within 5 minutes, check the event status using the [Event Status](/documentation/devicemanagement/events-status) endpoint with the `eventId` from the original request. While the returned `eventStatus` is `PENDING`, wait at least 30 seconds between subsequent status queries to avoid unnecessary load on the server. If the status remains `PENDING` after 10 minutes, retry the request.
 
 Notifications require an HTTPS URL and an authentication token. The authentication token is in a [bearer token format](https://tools.ietf.org/html/rfc6750). See the [ClientConfigRequest](/documentation/devicemanagement/clientconfigrequest) for more details about these parameters.
 
@@ -38,7 +38,7 @@ Notifications require an HTTPS URL and an authentication token. The authenticati
 
 The test notification has the following format:
 
-```javascript
+```json
 {
     "notification": {},
     "notificationId": "792e327f-63ea-4658-9aec-f16f4327e3a8",
@@ -47,7 +47,7 @@ The test notification has the following format:
 }
 ```
 
-### Update asset counts
+## Update asset counts
 
 Update total asset counts upon receiving an `ASSET_COUNT` notification type that the server sends when:
 
@@ -57,7 +57,7 @@ Update total asset counts upon receiving an `ASSET_COUNT` notification type that
 
 The notifications have the following format:
 
-```javascript
+```json
 {
     "notification": {
         "adamId": "408709785",
@@ -72,7 +72,7 @@ The notifications have the following format:
 
 The `adamId` and `pricingParam` pair represents the [Asset](/documentation/devicemanagement/asset) with the count that’s changing, and the `countDelta` represents the change amount. A positive `countDelta` indicates an increase; a negative value indicates a decrease.
 
-### Update subscription counts
+## Update subscription counts
 
 Update subscription seat counts upon receiving a `SUBSCRIPTION_COUNT` notification type that the server sends when subscription inventory changes — for example, when a content manager purchases additional seats, when seats expire at the end of a billing period, or when renewing seats auto-renew.
 
@@ -80,7 +80,7 @@ Update subscription seat counts upon receiving a `SUBSCRIPTION_COUNT` notificati
 
 The notifications have the following format:
 
-```javascript
+```json
 {
     "notification": {
         "parentAdamId": 54321,
@@ -104,13 +104,13 @@ The notifications have the following format:
 
 The notification uses a subset of the [SubscriptionCounts](/documentation/devicemanagement/subscriptioncounts) schema: the `counts` object contains only `available` and `total`. It omits `assigned`, which is only present in the synchronous `GET /v2/subscriptions` response. Use `total` to track actual seat ownership and `available` to track unassigned capacity.
 
-### Track assignments
+## Track assignments
 
 Track assignments upon receiving an `ASSET_MANAGEMENT` notification type that the server sends when it associates or disassociates an asset. The body of the notification contains a list of [Assignment](/documentation/devicemanagement/assignment) objects.
 
 The assignment notifications for associations have the following format:
 
-```javascript
+```json
 {
     "notification": {
         "assignments": [
@@ -143,7 +143,7 @@ The assignment notifications for associations have the following format:
 
 The assignment notifications for disassociations have the following format:
 
-```javascript
+```json
 {
     "notification": {
         "assignments": [
@@ -165,7 +165,7 @@ The assignment notifications for disassociations have the following format:
 
 The assignment notifications for revoke calls have the following format:
 
-```javascript
+```json
 {
     "notification": {
         "assignments": [
@@ -192,13 +192,13 @@ The assignment notifications for revoke calls have the following format:
 
 ```
 
-### Track subscription assignments
+## Track subscription assignments
 
 Track subscription assignments upon receiving a `SUBSCRIPTION_MANAGEMENT` notification type that the server sends when it associates or disassociates a subscription. The body of the notification contains a list of [ResponseSubscriptionAssignment](/documentation/devicemanagement/responsesubscriptionassignment) objects, each with a `renewing` Boolean value that reflects the renewal state of the seat assigned to that user.
 
 The subscription assignment notifications for associations have the following format:
 
-```javascript
+```json
 {
     "notification": {
         "assignments": [
@@ -220,7 +220,7 @@ The subscription assignment notifications for associations have the following fo
 
 The subscription assignment notifications for disassociations have the following format:
 
-```javascript
+```json
 {
     "notification": {
         "assignments": [
@@ -242,7 +242,7 @@ The subscription assignment notifications for disassociations have the following
 
 When you set the `deferred` flag to `true` in a disassociation request, the notification arrives at the end of the current billing period rather than immediately. For more information about renewal state and deferred disassociation, see [Managing subscriptions](/documentation/devicemanagement/managing-subscriptions).
 
-### Track user events
+## Track user events
 
 Track users upon receiving a `USER_MANAGEMENT` notification type that the server sends when:
 
@@ -252,7 +252,7 @@ Track users upon receiving a `USER_MANAGEMENT` notification type that the server
 
 The notifications for creating a user have the following format:
 
-```javascript
+```json
 {
     "notification": {
         "eventId": "e0def1f8-9158-4343-9c52-8dd32da50b9b",
@@ -275,7 +275,7 @@ The notifications for creating a user have the following format:
 
 The notifications for updating a user have the following format:
 
-```javascript
+```json
 {
     "notification": {
         "eventId": "e0def1f8-9158-4343-9c52-8dd32da50b9b",
@@ -299,7 +299,7 @@ The notifications for updating a user have the following format:
 
 The notifications for retiring a user have the following format:
 
-```javascript
+```json
 {
     "notification": {
         "eventId": "e0def1f8-9158-4343-9c52-8dd32da50b9b",
@@ -321,13 +321,13 @@ The notifications for retiring a user have the following format:
 
 ```
 
-### Track user associations
+## Track user associations
 
 Track users upon receiving a `USER_ASSOCIATED` notification type that the server sends when a user accepts an invitation.
 
 The notifications have the following format:
 
-```javascript
+```json
 {
     "notification": {
         "associatedUsers": [

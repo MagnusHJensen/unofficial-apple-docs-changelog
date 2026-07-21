@@ -25,7 +25,7 @@ The following is an example of the URL to look up an app:
 
 A typical response looks like the following:
 
-```javascript
+```json
 {
   "results": {
     "361309726": {
@@ -173,7 +173,7 @@ A typical response looks like the following:
 }
 ```
 
-## Authenticate for custom apps
+## Authenticate for Custom Apps
 
 If you include the organization’s `sToken` in the request as a cookie, a device management service can get authenticated app metadata for B2B apps that the organization owns, as well as apps that users can still redownload but no longer purchase.
 
@@ -188,7 +188,7 @@ curl --location --request GET 'https://uclient-api.itunes.apple.com/WebObjects/M
 
 A typical response looks like the following:
 
-```javascript
+```json
 {
     "isAuthenticated": false,
     "meta": {
@@ -320,7 +320,7 @@ The `watchBundleID` key indicates that the app runs on Apple Watch. The value is
 
 When the `results` set is empty, a typical response looks like the following:
 
-```javascript
+```json
 {
     "isAuthenticated": false,
     "meta": {
@@ -356,7 +356,7 @@ By default, using `platform=enterprisestore` or `platform=volumestore` returns i
 
 The following is an example of a typical response from an app designed for iPad on a Mac with M1 or M2:
 
-```javascript
+```json
 {
     "results": {
         "640199958": {

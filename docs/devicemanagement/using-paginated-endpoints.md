@@ -12,14 +12,14 @@ The following endpoints support pagination:
 - [Get Assignments](/documentation/devicemanagement/get-assignments-9wv1e)
 - [Get Users](/documentation/devicemanagement/get-users-4mwln)
 
-You can use versioned endpoints to retrieve only those records with changes since your previous query. Endpoints that support versioning can accept a `sinceVersionId` query parameter. This allows you to keep your data up to date with incremental changes if you’re unable to receive update notifications.
+You can use versioned endpoints to retrieve only those records with changes since your previous query. Endpoints that support versioning can accept a `sinceVersionId` query parameter. This lets you keep your data up to date with incremental changes if you’re unable to receive update notifications.
 
 The following endpoints support the `sinceVersionId` query parameter:
 
 - [Get Assignments](/documentation/devicemanagement/get-assignments-9wv1e)
 - [Get Users](/documentation/devicemanagement/get-users-4mwln)
 
-### Handle pagination
+## Handle pagination
 
 Requests for large record sets return paginated responses. You can traverse the pages by supplying the `pageIndex` query parameter in your request.
 
@@ -140,7 +140,7 @@ The response that contains the last page of records looks like the following:
 }
 ```
 
-### Handle parallel paginated requests
+## Handle parallel paginated requests
 
 Paginated endpoints can accept multiple requests in parallel instead of sequentially, which can significantly reduce the amount of time to request and receive records. For performance reasons, don’t submit more than five requests simultaneously.
 
@@ -151,7 +151,7 @@ To make requests for multiple pages in parallel:
 
 > 
 
-### Handle versioned responses
+## Handle versioned responses
 
 If you’re unable to subscribe to notifications, or are performing an initial sync, use the `sinceVersionId` query parameter to obtain incremental updates to keep your device management service up to date with changes without having to retrieve all records.
 
@@ -244,7 +244,7 @@ The response that contains the updated data looks like the following:
 
 > 
 
-### Handle cursor-based pagination
+## Handle cursor-based pagination
 
 The subscription endpoints use cursor-based pagination instead of page-index pagination. These endpoints include:
 
