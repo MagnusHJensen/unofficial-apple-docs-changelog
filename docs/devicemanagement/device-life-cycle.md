@@ -10,8 +10,9 @@ Manage software updates, migrate managed devices, and return them into service.
 
 ### Software updates
 
-- [Deploy software updates using declarative management](/documentation/devicemanagement/deploy-software-updates-using-declarative-management) - Use declarative configurations to deploy and manage software updates on managed devices.
+- [Deploying software updates using declarative management](/documentation/devicemanagement/deploying-software-updates-using-declarative-management) - Use declarative configurations to deploy and manage software updates on managed devices.
 - [Phases of software update enforcement](/documentation/devicemanagement/phases-of-software-update-enforcement) - Enforcing software updates on Apple devices goes through specific phases.
+- [Enrolling a device in a beta program](/documentation/devicemanagement/enrolling-a-device-in-a-beta-program) - Use program tokens to manage beta program enrollment.
 
 ### Return to Service
 
