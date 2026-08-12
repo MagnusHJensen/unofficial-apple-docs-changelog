@@ -11,7 +11,7 @@ The payload that configures a per-app VPN.
 - **Type:** `[string]`
 - **Required:** No
 
-An array with entries that must each specify a domain that triggers this VPN. The domains must also be part of the `apple-app-site-association` file, as described in [Supporting associated domains](/documentation/Xcode/supporting-associated-domains).
+An array with entries that must each specify a domain that triggers this VPN. The domains must also be part of the `apple-app-site-association` file, as described in [Supporting associated domains](/documentation/xcode/supporting-associated-domains).
 
 Available: iOS 14+ | iPadOS 14+ | macOS 11+ | visionOS 1.1+ | watchOS 10+
 

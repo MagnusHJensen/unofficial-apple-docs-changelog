@@ -11,7 +11,7 @@ A dictionary defining an app for parental control.
 - **Type:** `data`
 - **Required:** Yes
 
-The identifier of the app. Obtain this value from the Security framework using [SecCodeCopyDesignatedRequirement(_:_:_:)](/documentation/Security/SecCodeCopyDesignatedRequirement(_:_:_:)).
+The identifier of the app. Obtain this value from the Security framework using [SecCodeCopyDesignatedRequirement(_:_:_:)](/documentation/security/seccodecopydesignatedrequirement(_:_:_:)).
 
 Deprecated: macOS 27+
 

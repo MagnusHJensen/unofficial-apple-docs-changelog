@@ -70,7 +70,7 @@ The realm name for `Credential` payloads. Use proper capitalization for this val
 - **Default:** `Cancel`
 - **Allowed Values:** `Cancel`, `DoNotHandle`
 
-If set to `Cancel`, the system cancels authentication requests when the screen is locked. If set to `DoNotHandle`, the request continues without SSO instead. This doesn’t apply to requests where `userInterfaceEnabled` is `false`, or for background [URLSession](/documentation/Foundation/URLSession) requests.
+If set to `Cancel`, the system cancels authentication requests when the screen is locked. If set to `DoNotHandle`, the request continues without SSO instead. This doesn’t apply to requests where `userInterfaceEnabled` is `false`, or for background [URLSession](/documentation/foundation/urlsession) requests.
 
 ### Type
 

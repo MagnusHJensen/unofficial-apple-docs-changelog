@@ -4,7 +4,7 @@ Examine the steps between the user, client, and device management service in the
 
 ## Overview
 
-To support Enrollment SSO, your device management service delivers details about an Enrollment SSO app the system needs to implement the single sign-on behavior for enrollment. Enterprise apps can then use single sign-on to access enterprise websites and other resources. This app needs to contain an extensible SSO extension that the device management service configures to support the single sign-on behavior. For more information about how to create an app with an enterprise SSO extension, see [Enterprise single sign-on (SSO)](/documentation/AuthenticationServices/enterprise-single-sign-on-sso).
+To support Enrollment SSO, your device management service delivers details about an Enrollment SSO app the system needs to implement the single sign-on behavior for enrollment. Enterprise apps can then use single sign-on to access enterprise websites and other resources. This app needs to contain an extensible SSO extension that the device management service configures to support the single sign-on behavior. For more information about how to create an app with an enterprise SSO extension, see [Enterprise single sign-on (SSO)](/documentation/authenticationservices/enterprise-single-sign-on-sso).
 
 > 
 

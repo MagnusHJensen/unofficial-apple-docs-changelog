@@ -35,13 +35,13 @@ The requirements for Apple School Manager and Apple Business migration are:
 
 ## Handle migration in the original device management service
 
-The original device management service doesn’t need to take any special actions when migration occurs. Apple School Manager or Apple Business removes the device from the original service’s [Device assignment](/documentation/DeviceManagement/device-assignment), which the original service detects when it next synchronizes that list. When migration starts, the original service receives a [Check Out](/documentation/devicemanagement/check-out) request from the device, indicating unenrollment of the device.
+The original device management service doesn’t need to take any special actions when migration occurs. Apple School Manager or Apple Business removes the device from the original service’s [Device assignment](/documentation/devicemanagement/device-assignment), which the original service detects when it next synchronizes that list. When migration starts, the original service receives a [Check Out](/documentation/devicemanagement/check-out) request from the device, indicating unenrollment of the device.
 
 > 
 
 ## Handle migration in the destination device management service
 
-Apple School Manager or Apple Business adds the migrating device to the [Device assignment](/documentation/DeviceManagement/device-assignment) for the destination device management service. It includes a `mdm_migration_deadline` field in the device record, indicating the timestamp of the migration deadline, and this tells the destination service that the next enrollment from the device is due to a migration.
+Apple School Manager or Apple Business adds the migrating device to the [Device assignment](/documentation/devicemanagement/device-assignment) for the destination device management service. It includes a `mdm_migration_deadline` field in the device record, indicating the timestamp of the migration deadline, and this tells the destination service that the next enrollment from the device is due to a migration.
 
 > 
 

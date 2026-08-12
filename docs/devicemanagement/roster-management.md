@@ -4,7 +4,7 @@ Manage classes for your students and teachers.
 
 ## Overview
 
-Administrators of Apple School Manager can use this API to access information about classes and people in their organization. If you’re a developer who needs access to information about somebody else’s organization, see the [Roster API](/documentation/RosterAPI).
+Administrators of Apple School Manager can use this API to access information about classes and people in their organization. If you’re a developer who needs access to information about somebody else’s organization, see the [Roster API](/documentation/rosterapi).
 
 > 
 

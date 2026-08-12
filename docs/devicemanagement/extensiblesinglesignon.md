@@ -88,7 +88,7 @@ Available: macOS 13+
 - **Default:** `Cancel`
 - **Allowed Values:** `Cancel`, `DoNotHandle`
 
-If set to `Cancel`, the system cancels authentication requests when the screen is locked. If set to `DoNotHandle`, the request continues without SSO instead. This doesn’t apply to requests where `userInterfaceEnabled` is `false`, or for background [URLSession](/documentation/Foundation/URLSession) requests.
+If set to `Cancel`, the system cancels authentication requests when the screen is locked. If set to `DoNotHandle`, the request continues without SSO instead. This doesn’t apply to requests where `userInterfaceEnabled` is `false`, or for background [URLSession](/documentation/foundation/urlsession) requests.
 
 Available: iOS 15+ | iPadOS 15+ | macOS 12+ | visionOS 1.1+
 

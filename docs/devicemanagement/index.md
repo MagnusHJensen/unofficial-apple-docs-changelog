@@ -10,7 +10,7 @@ Deploying a device management service allows administrators to securely and remo
 
 A device management service uses the Mobile Device Management (MDM) protocol to establish a communication channel with devices and declarative configurations, as well as configuration profiles to deploy settings.
 
-Device management works with Managed App Distribution and Managed App Configuration to provide a seamless app download and launch experience. For more information, see [ManagedAppDistribution](/documentation/ManagedAppDistribution) and [ManagedApp](/documentation/ManagedApp).
+Device management works with Managed App Distribution and Managed App Configuration to provide a seamless app download and launch experience. For more information, see [ManagedAppDistribution](/documentation/managedappdistribution) and [ManagedApp](/documentation/managedapp).
 
 ## Topics
 

@@ -18,7 +18,7 @@ The display name of the extension.
 - **Type:** `string`
 - **Required:** Yes
 
-The [NSExtensionPointIdentifier](/documentation/BundleResources/Information-Property-List/NSExtension/NSExtensionPointIdentifier) for the extension.
+The [NSExtensionPointIdentifier](/documentation/bundleresources/information-property-list/nsextension/nsextensionpointidentifier) for the extension.
 
 ### Identifier
 

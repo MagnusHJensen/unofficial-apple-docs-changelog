@@ -28,7 +28,7 @@ There are three kinds of responses: resource collection, results, and errors.
 
 Results responses always have a top-level `results` member object that contains the information for the response. Results responses are always unique to the endpoint.
 
-Error responses contain an array of one or more error objects that indicate any issues while handling the request. The status code of the response reflects the primary error. See [Error](/documentation/AppleMusicAPI/Error) and [HTTP Status Codes](/documentation/AppleMusicAPI/http-status-codes).
+Error responses contain an array of one or more error objects that indicate any issues while handling the request. The status code of the response reflects the primary error. See [Error](/documentation/applemusicapi/error) and [HTTP Status Codes](/documentation/applemusicapi/http-status-codes).
 
 Default responses for common requests include:
 

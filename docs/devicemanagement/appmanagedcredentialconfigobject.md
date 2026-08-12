@@ -11,12 +11,12 @@ A dictionary of values associated with a credential config.
 - **Type:** `string`
 - **Required:** Yes
 
-Specifies the identifier of an asset declaration containing a username and password. The [ManagedApp](/documentation/ManagedApp) framework makes the password available to the app or extension. The [ManagedApp](/documentation/ManagedApp) framework ignores the username.
+Specifies the identifier of an asset declaration containing a username and password. The [ManagedApp](/documentation/managedapp) framework makes the password available to the app or extension. The [ManagedApp](/documentation/managedapp) framework ignores the username.
 
 ### Identifier
 
 - **Type:** `string`
 - **Required:** Yes
 
-The app or extension uses this identifier to fetch the corresponding password using the [ManagedApp](/documentation/ManagedApp) framework. App developers define the values for these identifiers.
+The app or extension uses this identifier to fetch the corresponding password using the [ManagedApp](/documentation/managedapp) framework. App developers define the values for these identifiers.
 

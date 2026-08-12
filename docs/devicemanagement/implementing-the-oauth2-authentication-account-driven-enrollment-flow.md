@@ -22,13 +22,13 @@ The client starts the OAuth 2 authorization grant flow with a public client type
 
 
 
-The client creates an [ASWebAuthenticationSession](/documentation/AuthenticationServices/ASWebAuthenticationSession) using the authorization request URL and a callback scheme that it sets to `apple-remotemanagement-user-login`, and then starts the session.
+The client creates an [ASWebAuthenticationSession](/documentation/authenticationservices/aswebauthenticationsession) using the authorization request URL and a callback scheme that it sets to `apple-remotemanagement-user-login`, and then starts the session.
 
 The authentication session performs an HTTPS GET` request for the OAuth 2 authorization request URL, and includes the appropriate query parameters needed for the authorization code grant request. The device presents any resulting HTML data to the user in a web view.
 
 The OAuth 2 authorization service responding to the request can prepopulate any user ID form field by extracting the relevant items from the request’s `login_hint` query item. The service can also use that query item to customize the form based on the user name or domain portions of the user account identifier.
 
-[ASWebAuthenticationSession](/documentation/AuthenticationServices/ASWebAuthenticationSession) supports most types of browser-based single sign-on, multifactor, or federated authentication. There can be several round trips between the client and the authorization service to complete authentication.
+[ASWebAuthenticationSession](/documentation/authenticationservices/aswebauthenticationsession) supports most types of browser-based single sign-on, multifactor, or federated authentication. There can be several round trips between the client and the authorization service to complete authentication.
 
 The user has the option of canceling out of the web view at any time, which terminates the authentication flow and the enrollment.
 

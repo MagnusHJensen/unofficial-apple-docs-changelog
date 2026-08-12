@@ -48,7 +48,7 @@ For an `agent` or `daemon`, the path to the `launchd` `plist` file. For other ty
 - **Required:** Yes
 - **Allowed Values:** `not-registered`, `enabled`, `requires-approval`, `not-found`
 
-The [SMAppService.Status](/documentation/ServiceManagement/SMAppService/Status-swift.enum) enumeration.
+The [SMAppService.Status](/documentation/servicemanagement/smappservice/status-swift.enum) enumeration.
 
 ### type
 

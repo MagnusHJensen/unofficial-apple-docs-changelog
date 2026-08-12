@@ -18,7 +18,7 @@ The app identifier to associate the domains with.
 - **Type:** `[string]`
 - **Required:** Yes
 
-The domains to associate with the app. Each string is in the form of `service:domain`. Use fully qualified hostnames, such as `www.example.com`. See [Supporting associated domains](/documentation/Xcode/supporting-associated-domains) for more information.
+The domains to associate with the app. Each string is in the form of `service:domain`. Use fully qualified hostnames, such as `www.example.com`. See [Supporting associated domains](/documentation/xcode/supporting-associated-domains) for more information.
 
 ### EnableDirectDownloads
 

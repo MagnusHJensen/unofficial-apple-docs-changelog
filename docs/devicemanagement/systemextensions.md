@@ -13,7 +13,7 @@ The payload that configures system extensions.
 
 A dictionary of approved system extensions on the computer. The dictionary maps the team identifiers (keys) to arrays of bundle identifiers, where the bundle identifier defines the system extension to install.
 
-To avoid requiring an administrator to authorize the operation, you can activate system extensions that this key specifies using [activationRequest(forExtensionWithIdentifier:queue:)](/documentation/SystemExtensions/OSSystemExtensionRequest/activationRequest(forExtensionWithIdentifier:queue:)).
+To avoid requiring an administrator to authorize the operation, you can activate system extensions that this key specifies using [activationRequest(forExtensionWithIdentifier:queue:)](/documentation/systemextensions/ossystemextensionrequest/activationrequest(forextensionwithidentifier:queue:)).
 
 It’s an error for the same team identifier to appear in both the `AllowedTeamIdentifiers` array and as a key in this dictionary.
 
@@ -33,7 +33,7 @@ If there’s no entry for a specified team identifier in the dictionary, the sys
 
 An array of team identifiers that defines valid, signed system extensions that are allowable to load. Approved system extensions are those signed with any of the specified team identifiers.
 
-To avoid requiring an administrator to authorize the operation, you can activate system extensions that this key specifies using [activationRequest(forExtensionWithIdentifier:queue:)](/documentation/SystemExtensions/OSSystemExtensionRequest/activationRequest(forExtensionWithIdentifier:queue:)).
+To avoid requiring an administrator to authorize the operation, you can activate system extensions that this key specifies using [activationRequest(forExtensionWithIdentifier:queue:)](/documentation/systemextensions/ossystemextensionrequest/activationrequest(forextensionwithidentifier:queue:)).
 
 It’s an error for the same team identifier to appear in both this array and as a key in the `AllowedSystemExtensions` dictionary.
 

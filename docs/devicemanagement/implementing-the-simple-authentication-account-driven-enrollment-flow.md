@@ -92,9 +92,9 @@ WWW-Authenticate: Bearer method="apple-as-web", url="https://mdmserver.example.c
 
 You return an HTTP 401 response status to the client and include a `WWW-Authenticate` response header. This response header needs to use the `Bearer` scheme and include the following parameters:
 
-The `method` parameter indicates the type of authentication protocol (`apple-as-web`), which selects an [ASWebAuthenticationSession](/documentation/AuthenticationServices/ASWebAuthenticationSession) simple authentication protocol flow.
+The `method` parameter indicates the type of authentication protocol (`apple-as-web`), which selects an [ASWebAuthenticationSession](/documentation/authenticationservices/aswebauthenticationsession) simple authentication protocol flow.
 
-When the `method` is `apple-as-web`, the `url` parameter needs to be present, which indicates the URL of the initial [ASWebAuthenticationSession](/documentation/AuthenticationServices/ASWebAuthenticationSession) HTTP request. The URL scheme needs to be either `http` or `https`, and `https` is recommended for improved security.
+When the `method` is `apple-as-web`, the `url` parameter needs to be present, which indicates the URL of the initial [ASWebAuthenticationSession](/documentation/authenticationservices/aswebauthenticationsession) HTTP request. The URL scheme needs to be either `http` or `https`, and `https` is recommended for improved security.
 
 ```other
 WWW-Authenticate: Bearer method="apple-as-web",
@@ -105,15 +105,15 @@ If the client’s enrollment request is invalid, you return a standard HTTP erro
 
 ## Implement the authentication flow (Steps 6-10)
 
-The client adds a query item to the web-auth URL with the name `user-identifier`, and sets the value to the user account identifier that the person enters. The client creates an [ASWebAuthenticationSession](/documentation/AuthenticationServices/ASWebAuthenticationSession) using the web-auth URL and a callback scheme that it sets to `apple-remotemanagement-user-login`, and then starts the session.
+The client adds a query item to the web-auth URL with the name `user-identifier`, and sets the value to the user account identifier that the person enters. The client creates an [ASWebAuthenticationSession](/documentation/authenticationservices/aswebauthenticationsession) using the web-auth URL and a callback scheme that it sets to `apple-remotemanagement-user-login`, and then starts the session.
 
 
 
-The [ASWebAuthenticationSession](/documentation/AuthenticationServices/ASWebAuthenticationSession) performs an HTTPS `GET` request for the web-auth URL, and presents the resulting HTML data to the user in a web view. A simple HTML sign-in page might contain a form with a user ID and password entry, OK and Cancel buttons, optional terms and conditions, optional branding, and so on.
+The [ASWebAuthenticationSession](/documentation/authenticationservices/aswebauthenticationsession) performs an HTTPS `GET` request for the web-auth URL, and presents the resulting HTML data to the user in a web view. A simple HTML sign-in page might contain a form with a user ID and password entry, OK and Cancel buttons, optional terms and conditions, optional branding, and so on.
 
 The service responding to the request can prepopulate any user ID form field by extracting the relevant items from the web-auth URL’s `user-identifier` query item. The service can also use that query item to customize the form based on the user name or domain portions of the user account identifier.
 
-Your device management service might use an internal identity provider (IdP), or a third-party IdP to authenticate users. If your device management service uses a third-party IdP, the web-auth URL request can redirect the client’s web view to the third-party IdP sign-in site to perform user authentication. [ASWebAuthenticationSession](/documentation/AuthenticationServices/ASWebAuthenticationSession) supports most types of browser-based single sign-on, multifactor, or federated authentication. There can be several round trips between the client and the IdP before authentication is completed.
+Your device management service might use an internal identity provider (IdP), or a third-party IdP to authenticate users. If your device management service uses a third-party IdP, the web-auth URL request can redirect the client’s web view to the third-party IdP sign-in site to perform user authentication. [ASWebAuthenticationSession](/documentation/authenticationservices/aswebauthenticationsession) supports most types of browser-based single sign-on, multifactor, or federated authentication. There can be several round trips between the client and the IdP before authentication is completed.
 
 The user has the option of canceling out of the web view at any time, which terminates the authentication flow and the enrollment.
 
@@ -135,7 +135,7 @@ Content-Length: 17643
 
 ## Return the authentication result (Step 11)
 
-The [ASWebAuthenticationSession](/documentation/AuthenticationServices/ASWebAuthenticationSession) web flow completes when the service returns an HTTP 308 permanent redirect response to the client, with a `Location` header that it sets to a URL with a scheme of `apple-remotemanagement-user-login` (the authentication session callback URL scheme). The URL needs to have a network location component of `authentication-results`. The URL needs to include an `access-token` query item with a value that is the access token. The client securely stores the access token for use when authorizing subsequent requests to the service. The service can define the format of the access token — the client treats it as an opaque token. This may be a token that the service itself generates, or one that the IdP generates.
+The [ASWebAuthenticationSession](/documentation/authenticationservices/aswebauthenticationsession) web flow completes when the service returns an HTTP 308 permanent redirect response to the client, with a `Location` header that it sets to a URL with a scheme of `apple-remotemanagement-user-login` (the authentication session callback URL scheme). The URL needs to have a network location component of `authentication-results`. The URL needs to include an `access-token` query item with a value that is the access token. The client securely stores the access token for use when authorizing subsequent requests to the service. The service can define the format of the access token — the client treats it as an opaque token. This may be a token that the service itself generates, or one that the IdP generates.
 
 ```other
 <<<<< Request
