@@ -50,6 +50,5 @@ Device management works with Managed App Distribution and Managed App Configurat
 
 ### Dictionaries
 
-- [ResponseErrorCode](/documentation/devicemanagement/responseerrorcode) - An error code.
 - [StorefrontsResponse](/documentation/devicemanagement/storefrontsresponse) - The response to a storefront request.
 

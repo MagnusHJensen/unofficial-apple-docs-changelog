@@ -13,7 +13,7 @@ Manage apps, books, and subscriptions for your students and employees.
 
 - [Managing assets](/documentation/devicemanagement/managing-assets) - Assign and revoke app and book licenses across your organization.
 - [Managing subscriptions](/documentation/devicemanagement/managing-subscriptions) - Administer auto-renewable subscription seats for your organization.
-- [Managing users](/documentation/devicemanagement/managing-users) - Register and manage users for your organization’s managed location.
+- [Managing users](/documentation/devicemanagement/managing-users) - Register and manage users for your organization’s managed organizational unit.
 - [Setting up and assigning content](/documentation/devicemanagement/setting-up-and-assigning-content) - Distribute purchased licenses to managed users through your device management service.
 
 ### Common tasks
@@ -37,6 +37,8 @@ Manage apps, books, and subscriptions for your students and employees.
 
 ### Subscription management
 
+- [Enable Subscriptions](/documentation/devicemanagement/enable-subscriptions) - Declare that your device management service supports subscription management.
+- [Disable Subscriptions](/documentation/devicemanagement/disable-subscriptions) - Declare that your device management service doesn’t support subscription management.
 - [Get Subscriptions](/documentation/devicemanagement/get-subscriptions) - Get the subscriptions that your organization manages.
 - [Get Subscription Assignments](/documentation/devicemanagement/get-subscription-assignments) - Get the subscription assignments for users in your organization.
 - [Associate Subscriptions](/documentation/devicemanagement/associate-subscriptions) - Associate subscriptions with client user IDs.
@@ -69,13 +71,14 @@ Manage apps, books, and subscriptions for your students and employees.
 - [SubscriptionCounts](/documentation/devicemanagement/subscriptioncounts) - The subscription assignment counts broken down by assigned and available.
 - [SubscriptionCountsBreakdown](/documentation/devicemanagement/subscriptioncountsbreakdown) - The breakdown of subscription counts by renewing and expiring status.
 - [ManageSubscriptionsRequest](/documentation/devicemanagement/managesubscriptionsrequest) - The request for subscription management.
-- [ManageSubscriptionAdminsRequest](/documentation/devicemanagement/managesubscriptionadminsrequest)
-- [ManageSubscriptionAdminsResponse](/documentation/devicemanagement/managesubscriptionadminsresponse)
-- [ResponseSubscriptionAdmin](/documentation/devicemanagement/responsesubscriptionadmin)
+- [ManageSubscriptionAdminsRequest](/documentation/devicemanagement/managesubscriptionadminsrequest) - The request body for adding or removing subscription administrators.
+- [ManageSubscriptionAdminsResponse](/documentation/devicemanagement/managesubscriptionadminsresponse) - The confirmation response that the server returns after adding or removing subscription administrators.
+- [ResponseSubscriptionAdmin](/documentation/devicemanagement/responsesubscriptionadmin) - An administrator for a subscription.
+- [SubscriptionManagementResponse](/documentation/devicemanagement/subscriptionmanagementresponse) - A confirmation response that reports your device management service’s subscription management support.
 - [MdmInfo](/documentation/devicemanagement/mdminfo) - Information about the MDM client.
 - [EventResponse](/documentation/devicemanagement/eventresponse) - The response that contains the event identifier.
 - [ErrorResponse](/documentation/devicemanagement/errorresponse) - The response that contains the error that occurs.
-- [StatusResponse](/documentation/devicemanagement/statusresponse)
+- [StatusResponse](/documentation/devicemanagement/statusresponse) - The status of an asynchronous event.
 
 ### Legacy API
 

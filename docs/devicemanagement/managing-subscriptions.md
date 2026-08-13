@@ -10,6 +10,54 @@ This distinction matters when planning seat allocation. Renewing seats represent
 
 Subscriptions are identified by two values: a `parentAdamId` that refers to the parent app in the store, and an `adamId` that identifies the specific subscription product.
 
+> 
+
+## Declare subscription management support
+
+Subscription management support is a declaration you make per token, and it applies to the organizational unit that the token represents. Use these two endpoints to state explicitly whether your device management service supports subscriptions for an organizational unit. Neither request takes a body, and both report the resulting state in `subscriptionManagement`.
+
+Send a POST request to `/v2/subscriptions/enable` to declare that your device management service supports subscription management. Content managers can then purchase subscriptions into that organizational unit.
+
+```javascript
+curl --location --request POST 'https://vpp.itunes.apple.com/mdm/v2/subscriptions/enable' \
+--header 'Authorization: Bearer {sToken}'
+```
+
+The code above results in a response like the following:
+
+```json
+{
+  "mdmInfo": null,
+  "subscriptionManagement": true,
+  "tokenExpirationDate": "2030-11-08T22:33:22+0000",
+  "uId": "2049025000431439"
+}
+```
+
+> 
+
+Send a POST request to `/v2/subscriptions/disable` to declare that your device management service doesn’t support subscriptions for an organizational unit. Apple School Manager and Apple Business Manager use this declaration to indicate to content managers that the organizational unit doesn’t support subscriptions, rather than leaving its support status unstated.
+
+```javascript
+curl --location --request POST 'https://vpp.itunes.apple.com/mdm/v2/subscriptions/disable' \
+--header 'Authorization: Bearer {sToken}'
+```
+
+The code above results in a response like the following:
+
+```json
+{
+  "mdmInfo": null,
+  "subscriptionManagement": false,
+  "tokenExpirationDate": "2030-11-08T22:33:22+0000",
+  "uId": "2049025000431439"
+}
+```
+
+Disabling is a positive declaration that the organizational unit doesn’t support subscriptions. It isn’t a way to reverse an earlier enable request.
+
+The `subscriptionManagement` field reports the state that the server recorded for the token. Confirm that it matches the state you intended before you rely on the other subscription endpoints.
+
 ## Retrieve subscription seat counts
 
 Send a GET request to `/v2/subscriptions` to retrieve the subscriptions your organization manages. Filter results by `parentAdamId` or `adamId`, or omit both to retrieve all subscriptions. The response breaks down seat counts by renewal state for both assigned and available seats.
@@ -139,7 +187,7 @@ The following keys are specific to [ManageSubscriptionsRequest](/documentation/d
 - `maxSubscriptions` - The maximum number of unique subscriptions in a manage request
 - `maxSubscriptionClientUserIds` - The maximum number of unique user identifiers in a manage request
 
-A request that exceeds either limit fails with error 9805 (`This request exceeds the maximum subscriptions limit. Change the request to stay within the specified limit.`). For more information, see [Handling error responses](/documentation/devicemanagement/handling-error-responses).
+A request that exceeds either limit fails with error `9816` (`This request exceeds the maximum subscriptions limit. Change the request to stay within the specified limit.`). For more information, see [Handling error responses](/documentation/devicemanagement/handling-error-responses).
 
 ## Associate subscriptions with users
 

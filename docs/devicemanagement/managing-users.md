@@ -1,10 +1,10 @@
 # Managing users
 
-Register and manage users for your organization’s managed location.
+Register and manage users for your organization’s managed organizational unit.
 
 ## Overview
 
-Deployment of an organization’s owned assets to user-owned devices requires registering those users for the location you’re managing. The provided API allows for asynchronous management of these users in the organization.
+Deployment of an organization’s owned assets to user-owned devices requires registering those users for the organizational unit you’re managing. The provided API allows for asynchronous management of these users in the organization.
 
 ## Retrieve users
 
@@ -64,7 +64,7 @@ For pagination response fields and versioned queries using `sinceVersionId`, see
 
 ## Invite users
 
-You invite users by sending them an email with an invitation link. Accepting the invitation associates the user’s `appleId` with the managed location.
+You invite users by sending them an email with an invitation link. Accepting the invitation associates the user’s `appleId` with the managed organizational unit.
 
 Use [ServiceConfigResponse.Urls](/documentation/devicemanagement/serviceconfigresponse/urls-data.dictionary) to retrieve the `invitationEmail` template URL, and then replace `%25inviteCode%25` with the user’s `inviteCode` from [ResponseUser](/documentation/devicemanagement/responseuser).
 

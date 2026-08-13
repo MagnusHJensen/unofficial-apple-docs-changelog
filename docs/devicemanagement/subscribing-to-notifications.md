@@ -52,7 +52,7 @@ The test notification has the following format:
 Update total asset counts upon receiving an `ASSET_COUNT` notification type that the server sends when:
 
 - A user buys an asset
-- A user transfers an asset between locations
+- A user transfers an asset between organizational units
 - A user refunds an asset
 
 The notifications have the following format:

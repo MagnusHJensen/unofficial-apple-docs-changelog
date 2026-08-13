@@ -44,7 +44,7 @@ For information about subscribing to different notification types, see [ClientCo
 
 ## Set information about the device management service
 
-In version 2, when creating a [ClientConfigRequest](/documentation/devicemanagement/clientconfigrequest), you can include [MdmInfo](/documentation/devicemanagement/mdminfo) in the request. The server returns this information on all subsequent responses to identify which device management service is managing the location. It’s important to interrogate the `MdmInfo` content API responses to ensure no other device management service is attempting to manage the data in this location.
+In version 2, when creating a [ClientConfigRequest](/documentation/devicemanagement/clientconfigrequest), you can include [MdmInfo](/documentation/devicemanagement/mdminfo) in the request. The server returns this information on all subsequent responses to identify which device management service is managing the organizational unit. It’s important to interrogate the `MdmInfo` content API responses to ensure no other device management service is attempting to manage the data in this organizational unit.
 
 Within `MdmInfo`, you have the opportunity to include `metadata`, a free-form field to store additional information for the organization.
 
@@ -56,5 +56,5 @@ Notifications remove the necessity to continually sync with Apple for asset and 
 
 ## Sanitize device management information
 
-To maintain device management hygiene, update the `mdmInfo` field using the [Client Config](/documentation/devicemanagement/client-config-4szk1) endpoint to reflect any changes. Prior to releasing a location, remove any assets assigned to a location through transferring. If a device management service fails to receive notifications, it’s preferable to sanitize the `notificationUrl` field and reset it to a reachable URL.
+To maintain device management hygiene, update the `mdmInfo` field using the [Client Config](/documentation/devicemanagement/client-config-4szk1) endpoint to reflect any changes. Prior to releasing an organizational unit, remove any assets assigned to an organizational unit through transferring. If a device management service fails to receive notifications, it’s preferable to sanitize the `notificationUrl` field and reset it to a reachable URL.
 

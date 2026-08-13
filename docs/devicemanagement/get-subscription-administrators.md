@@ -10,7 +10,7 @@ Get the administrators for subscriptions that your organization manages.
 
 ### Response
 
-- [GetSubscriptionAdminsResponse](/documentation/devicemanagement/getsubscriptionadminsresponse)
+- [GetSubscriptionAdminsResponse](/documentation/devicemanagement/getsubscriptionadminsresponse) - The response that contains the requested subscription administrators.
 - [ErrorResponse](/documentation/devicemanagement/errorresponse) - The response that contains the error that occurs.
 
 ### Content Metadata
