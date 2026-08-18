@@ -9,7 +9,7 @@ A subscription with its assignment counts.
 - **Type:** `int64`
 - **Required:** No
 
-The parent Adam ID for the subscription.
+The parent Adam ID for the subscription. This value can be `null`, so don’t require it when you parse a subscription record.
 
 ### adamId
 

@@ -54,7 +54,7 @@ The code above results in a response like the following:
 }
 ```
 
-Disabling is a positive declaration that the organizational unit doesn’t support subscriptions. It isn’t a way to reverse an earlier enable request.
+Disabling is a positive declaration that the organizational unit doesn’t support subscriptions. It also reverses an earlier enable request, but only while the organizational unit has no subscriptions. If any subscriptions exist there, the request fails with error `9818` (`Subscriptions exist for the organizational unit, so subscription management can't be disabled.`). For more information, see [Handling error responses](/documentation/devicemanagement/handling-error-responses).
 
 The `subscriptionManagement` field reports the state that the server recorded for the token. Confirm that it matches the state you intended before you rely on the other subscription endpoints.
 
