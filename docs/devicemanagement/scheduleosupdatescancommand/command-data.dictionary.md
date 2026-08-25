@@ -1,8 +1,8 @@
 # ScheduleOSUpdateScanCommand.Command
 
-The command to schedule a background scan for operating-system updates on a device.
+The command to schedule a background scan for operating-system updates on a device. Removed: use the declarative management `com.apple.configuration.softwareupdate.enforcement.specific` configuration.
 
-**Platforms:** macOS 10.11, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.11
 
 ## Properties
 
@@ -12,7 +12,10 @@ The command to schedule a background scan for operating-system updates on a devi
 - **Required:** No
 - **Default:** `false`
 
-If `true`, force a scan to start immediately. Otherwise, the scan starts at a system-determined time.
+
+
+
+Removed: macOS 27+
 
 ### RequestRequiresNetworkTether
 
@@ -20,7 +23,10 @@ If `true`, force a scan to start immediately. Otherwise, the scan starts at a sy
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the device needs to be network-tethered to run the command.
+
+
+
+Removed: macOS 27+
 
 ### RequestType
 
@@ -28,5 +34,8 @@ If `true`, the device needs to be network-tethered to run the command.
 - **Required:** Yes
 - **Allowed Values:** `ScheduleOSUpdateScan`
 
-The request type for this command.
+
+
+
+Removed: macOS 27+
 

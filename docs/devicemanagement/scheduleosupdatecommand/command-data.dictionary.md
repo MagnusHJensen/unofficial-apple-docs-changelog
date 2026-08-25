@@ -1,8 +1,8 @@
 # ScheduleOSUpdateCommand.Command
 
-The command to schedule an update of the operating system on a device.
+The command to schedule an update of the operating system on a device. Removed: use the declarative management `com.apple.configuration.softwareupdate.enforcement.specific` configuration.
 
-**Platforms:** iOS 9.0, iPadOS 9.0, Mac Catalyst 9.0, macOS 10.11, tvOS 12.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 9.0, iPadOS 9.0, Mac Catalyst 9.0, macOS 10.11, tvOS 12.0
 
 ## Properties
 
@@ -12,7 +12,10 @@ The command to schedule an update of the operating system on a device.
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the device needs to be network-tethered to run the command.
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### RequestType
 
@@ -20,14 +23,20 @@ If `true`, the device needs to be network-tethered to run the command.
 - **Required:** Yes
 - **Allowed Values:** `ScheduleOSUpdate`
 
-The request type for this command.
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### Updates
 
 - **Type:** `[ScheduleOSUpdateCommand.Command.UpdatesItem]`
 - **Required:** Yes
 
-An array of dictionaries specifying the updates to download or install. If this value is missing, the device applies the default behavior for handling updates. The device ignores this command and an informational error is returned, if a software update is managed by a Declarative Device Management [SoftwareUpdateEnforcementSpecific](/documentation/devicemanagement/softwareupdateenforcementspecific) configuration, as the configuration takes precedence.
+ 
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ## Topics
 

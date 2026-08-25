@@ -148,6 +148,19 @@ A dictionary that contains shared device configuration settings. This setting is
 
 Available: iOS 13.4+ | iPadOS 13.4+
 
+### SoftwareUpdateSettings
+
+- **Type:** `SettingsCommand.Command.Settings.SoftwareUpdateSettings`
+- **Required:** No
+
+A dictionary that contains software update settings. This setting doesn’t support user enrollment.
+
+Removed: use the declarative management `com.apple.configuration.softwareupdate.settings` configuration.
+
+Available: iOS 14.5+ | iPadOS 14.5+
+Deprecated: iOS 26+ | iPadOS 26+
+Removed: iOS 27+ | iPadOS 27+
+
 ### TimeZone
 
 - **Type:** `SettingsCommand.Command.Settings.TimeZone`
@@ -196,6 +209,7 @@ Available: iOS 8+ | iPadOS 8+
 - [SettingsCommand.Command.Settings.PasscodeLockGracePeriod](/documentation/devicemanagement/settingscommand/command-data.dictionary/settings-data.dictionary/passcodelockgraceperiod-data.dictionary) - A dictionary that contains settings for the password lock grace period.
 - [SettingsCommand.Command.Settings.PersonalHotspot](/documentation/devicemanagement/settingscommand/command-data.dictionary/settings-data.dictionary/personalhotspot-data.dictionary) - A dictionary that contains Personal Hotspot settings.
 - [SettingsCommand.Command.Settings.SharedDeviceConfiguration](/documentation/devicemanagement/settingscommand/command-data.dictionary/settings-data.dictionary/shareddeviceconfiguration-data.dictionary) - A dictionary that contains shared device configuration settings.
+- [SettingsCommand.Command.Settings.SoftwareUpdateSettings](/documentation/devicemanagement/settingscommand/command-data.dictionary/settings-data.dictionary/softwareupdatesettings-data.dictionary) - A dictionary that contains software update settings.
 - [SettingsCommand.Command.Settings.TimeZone](/documentation/devicemanagement/settingscommand/command-data.dictionary/settings-data.dictionary/timezone-data.dictionary) - A dictionary that contains time zone settings.
 - [SettingsCommand.Command.Settings.VoiceRoaming](/documentation/devicemanagement/settingscommand/command-data.dictionary/settings-data.dictionary/voiceroaming-data.dictionary) - A dictionary that contains voice roaming settings.
 - [SettingsCommand.Command.Settings.Wallpaper](/documentation/devicemanagement/settingscommand/command-data.dictionary/settings-data.dictionary/wallpaper-data.dictionary) - A dictionary that contains wallpaper settings.

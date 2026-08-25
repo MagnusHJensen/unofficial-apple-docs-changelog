@@ -1,8 +1,8 @@
 # ScheduleOSUpdateScanResponse
 
-A response from the device after it processes the command to schedule a background scan for operating-system updates on a device.
+A response from the device after it processes the command to schedule a background scan for operating-system updates on a device. Removed: use the declarative management `com.apple.configuration.softwareupdate.enforcement.specific` configuration.
 
-**Platforms:** macOS 10.11, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.11
 
 ## Properties
 
@@ -18,18 +18,22 @@ The unique identifier of the command for this response.
 - **Type:** `string`
 - **Required:** Yes
 
-The per-enrollment identifier for the device. The system requires this value if the enrollment type is a user enrollment.
 
-Available in iOS 13 and later, macOS 10.15 and later, and visionOS 2 and later.
+
+
+
+Removed: macOS 27+
 
 ### EnrollmentUserID
 
 - **Type:** `string`
 - **Required:** Yes
 
-The per-enrollment identifier for the user. The system requires this value if the enrollment type is a user enrollment on the user channel.
 
-Available in macOS 10.15 and later.
+
+
+
+Removed: macOS 27+
 
 ### ErrorChain
 
@@ -50,7 +54,10 @@ If `true`, the device isn’t on-console.
 - **Type:** `boolean`
 - **Required:** Yes
 
-If `true`, the scan started successfully.
+
+
+
+Removed: macOS 27+
 
 ### Status
 
@@ -71,32 +78,46 @@ The status of the response, which is one of the following values:
 - **Type:** `string`
 - **Required:** Yes
 
-The device’s UDID (unique device identifier). The system requires this value if the enrollment type is a device enrollment.
+
+
+
+Removed: macOS 27+
 
 ### UserID
 
 - **Type:** `string`
 - **Required:** No
 
-For macOS, this value is the ID of the user.
 
-For Shared iPad, this value is `FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF` to indicate that authentication doesn’t occur.
+
+
+
+
+
+Removed: macOS 27+
 
 ### UserLongName
 
 - **Type:** `string`
 - **Required:** Yes
 
-The full name of the user.
+
+
+
+Removed: macOS 27+
 
 ### UserShortName
 
 - **Type:** `string`
 - **Required:** No
 
-For macOS, this value is the short name of the user.
 
-For Shared iPad, this value is the Managed Apple Account identifier of the user on Shared iPad. It indicates that the token is for the user channel.
+
+
+
+
+
+Removed: macOS 27+
 
 ## Topics
 

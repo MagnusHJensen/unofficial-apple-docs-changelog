@@ -48,7 +48,12 @@ Device management works with Managed App Distribution and Managed App Configurat
 - [App, Book, and Subscription Management](/documentation/devicemanagement/app-book-and-subscription-management) - Manage apps, books, and subscriptions for your students and employees.
 - [Apple School Manager and Apple Business APIs](/documentation/apple-school-and-business-manager-api) - Automate device management actions and access data about devices that enroll using Automated Device Enrollment with the Apple School Manager and Apple Business APIs.
 
+### Removed items
+
+- [Removed commands and profiles](/documentation/devicemanagement/removed-commands-and-profiles) - Commands and configuration profiles that have been removed and are no longer supported.
+
 ### Dictionaries
 
+- [InApps](/documentation/devicemanagement/inapps)
 - [StorefrontsResponse](/documentation/devicemanagement/storefrontsresponse) - The response to a storefront request.
 

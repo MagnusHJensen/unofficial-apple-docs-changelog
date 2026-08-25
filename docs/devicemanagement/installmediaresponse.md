@@ -24,6 +24,17 @@ Available: iOS 13+ | iPadOS 13+ | macOS 10.15+
 Deprecated: macOS 11+
 Removed: macOS 11+
 
+### EnrollmentUserID
+
+- **Type:** `string`
+- **Required:** Yes
+
+
+
+
+
+Removed: macOS 11+
+
 ### ErrorChain
 
 - **Type:** `[InstallMediaResponse.ErrorChainItem]`
@@ -61,6 +72,13 @@ The URL to retrieve the book, if present in the command.
 Available: iOS 8+ | iPadOS 8+
 Deprecated: macOS 11+
 Removed: macOS 11+
+
+### NotOnConsole
+
+- **Type:** `boolean`
+- **Required:** Yes
+
+If `true`, the device isn’t on-console.
 
 ### PersistentID
 
@@ -139,6 +157,17 @@ Available: iOS 9.3+ | iPadOS 9.3+ | macOS 10.9+
 Deprecated: macOS 11+
 Removed: macOS 11+
 
+### UserLongName
+
+- **Type:** `string`
+- **Required:** Yes
+
+
+
+
+
+Removed: macOS 11+
+
 ### UserShortName
 
 - **Type:** `string`
@@ -151,21 +180,6 @@ For Shared iPad, this value is the Managed Apple Account identifier of the user 
 Available: iOS 9.3+ | iPadOS 9.3+ | macOS 10.9+
 Deprecated: macOS 11+
 Removed: macOS 11+
-
-### EnrollmentUserID
-
-- **Type:** `string`
-- **Required:** Yes
-
-### NotOnConsole
-
-- **Type:** `boolean`
-- **Required:** Yes
-
-### UserLongName
-
-- **Type:** `string`
-- **Required:** Yes
 
 ## Topics
 

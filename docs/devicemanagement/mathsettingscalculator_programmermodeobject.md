@@ -10,6 +10,7 @@ If present, configures the programmer mode of the calculator. If not present, pr
 
 - **Type:** `boolean`
 - **Required:** Yes
+- **Default:** `true`
 
 Controls whether the mode is enabled.
 

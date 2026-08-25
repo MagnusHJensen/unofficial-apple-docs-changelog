@@ -10,6 +10,7 @@ If present, configures the Math Notes mode of the calculator. If not present, Ma
 
 - **Type:** `boolean`
 - **Required:** Yes
+- **Default:** `true`
 
 Controls whether the mode is enabled.
 

@@ -1,8 +1,8 @@
 # SoftwareUpdate
 
-The payload that configures the software update policy.
+The payload that configures the software update policy. Removed: use the declarative management `com.apple.configuration.softwareupdate.settings` configuration.
 
-**Platforms:** macOS 10.7, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.7
 
 ## Properties
 
@@ -12,7 +12,11 @@ The payload that configures the software update policy.
 - **Required:** No
 - **Default:** `true`
 
-If `true`, prerelease software can be installed on this computer.
+
+
+
+
+Removed: macOS 27+
 
 ### AutomaticallyInstallAppUpdates
 
@@ -20,7 +24,11 @@ If `true`, prerelease software can be installed on this computer.
 - **Required:** No
 - **Default:** `true`
 
-If `false`, deselects the “Install app updates from the App Store” option and prevents the user from changing the option.
+
+
+
+
+Removed: macOS 27+
 
 ### AutomaticallyInstallMacOSUpdates
 
@@ -28,7 +36,11 @@ If `false`, deselects the “Install app updates from the App Store” option an
 - **Required:** No
 - **Default:** `true`
 
-If `false`, restricts the “Install macOS Updates” option and prevents the user from changing the option.
+
+
+
+
+Removed: macOS 27+
 
 ### AutomaticCheckEnabled
 
@@ -36,7 +48,11 @@ If `false`, restricts the “Install macOS Updates” option and prevents the us
 - **Required:** No
 - **Default:** `true`
 
-If `false`, deselects the “Check for updates” option and prevents the user from changing the option.
+
+
+
+
+Removed: macOS 27+
 
 ### AutomaticDownload
 
@@ -44,14 +60,21 @@ If `false`, deselects the “Check for updates” option and prevents the user f
 - **Required:** No
 - **Default:** `true`
 
-If `false`, deselects the “Download new updates when available from the App Store” option and prevents the user from changing the option.
+
+
+
+
+Removed: macOS 27+
 
 ### CatalogURL
 
 - **Type:** `string`
 - **Required:** No
 
-The URL of the software update catalog. This property is not supported in macOS 11 and later.
+
+
+
+Removed: macOS 27+
 
 ### ConfigDataInstall
 
@@ -59,7 +82,11 @@ The URL of the software update catalog. This property is not supported in macOS 
 - **Required:** No
 - **Default:** `true`
 
-If `false`, restricts the automatic installation of configuration data.
+
+
+
+
+Removed: macOS 27+
 
 ### CriticalUpdateInstall
 
@@ -67,7 +94,11 @@ If `false`, restricts the automatic installation of configuration data.
 - **Required:** No
 - **Default:** `true`
 
-If `false`, disables the automatic installation of critical updates and prevents the user from changing the “Install system data files and security updates” option.
+
+
+
+
+Removed: macOS 27+
 
 ### restrict-software-update-require-admin-to-install
 
@@ -75,7 +106,11 @@ If `false`, disables the automatic installation of critical updates and prevents
 - **Required:** No
 - **Default:** `false`
 
-If `true`, restrict app installations to admin users. This key has the same function as the  `restrict-store-require-admin-to-install` key in the `com.apple.appstore` payload.
+
+
+
+
+Removed: macOS 27+
 
 ## Discussion
 

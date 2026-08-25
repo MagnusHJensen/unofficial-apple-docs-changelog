@@ -64,7 +64,7 @@ Available: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+
 
 If `true`, forces Siri to reduce sensitive content.
 
-Available: iOS 27+ | iPadOS 27+ | macOS 27+
+Available: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
 
 ## Discussion
 

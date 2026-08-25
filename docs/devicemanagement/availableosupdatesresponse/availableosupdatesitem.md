@@ -2,7 +2,7 @@
 
 The response dictionary that describes the available operating-system updates item.
 
-**Platforms:** iOS 9.0, iPadOS 9.0, Mac Catalyst 9.0, macOS 10.11, tvOS 12.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 9.0, iPadOS 9.0, Mac Catalyst 9.0, macOS 10.11, tvOS 12.0
 
 ## Properties
 
@@ -12,56 +12,85 @@ The response dictionary that describes the available operating-system updates it
 - **Required:** No
 - **Default:** `false`
 
-If `true`, download the software update and install it later.
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### AppIdentifiersToClose
 
 - **Type:** `[string]`
 - **Required:** Yes
 
-An array that contains app identifiers of apps to close so you can install the update. This value is available in macOS 10.11 and later.
+
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### Build
 
 - **Type:** `string`
 - **Required:** Yes
 
-The build number of the update.
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### DeferredUntil
 
 - **Type:** `date`
 - **Required:** No
 
-If present, the date when you want the update to install. This value is available in macOS 10.12.4 and later.
+
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### DownloadSize
 
 - **Type:** `integer`
 - **Required:** Yes
 
-The storage size necessary to download the software update. Prior to macOS 10.14, this only includes major operating-system updates. In macOS 10.14 and later, this also includes minor updates.
+
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### HumanReadableName
 
 - **Type:** `string`
 - **Required:** Yes
 
-The human-readable name of the update in the current user’s current locale.
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### HumanReadableNameLocale
 
 - **Type:** `string`
 - **Required:** Yes
 
-The locale, in IOS639-1 Alpha-2 code format, of the `HumanReadableName` value. This value is available in macOS 10.11 and later.
+
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### InstallSize
 
 - **Type:** `integer`
 - **Required:** Yes
 
-The storage size necessary to install the update. This value is available in iOS 9.0 and later, and tvOS 12.0 and later.
+
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### IsConfigDataUpdate
 
@@ -69,7 +98,11 @@ The storage size necessary to install the update. This value is available in iOS
 - **Required:** No
 - **Default:** `false`
 
-If `true`, this is an update to a configuration file. This value is available in macOS 10.11 and later.
+
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### IsCritical
 
@@ -77,7 +110,10 @@ If `true`, this is an update to a configuration file. This value is available in
 - **Required:** No
 - **Default:** `false`
 
-If `true`, this is a critical update.
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### IsFirmwareUpdate
 
@@ -85,7 +121,11 @@ If `true`, this is a critical update.
 - **Required:** No
 - **Default:** `false`
 
-If `true`, this is an update to firmware. This value is available in macOS 10.11 and later.
+
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### IsMajorOSUpdate
 
@@ -93,35 +133,54 @@ If `true`, this is an update to firmware. This value is available in macOS 10.11
 - **Required:** No
 - **Default:** `false`
 
-If `true`, this is a major update; for example, 10.15.x to 11. This value is available in macOS 10.11 and later.
+
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### IsSecurityResponse
 
 - **Type:** `boolean`
 - **Required:** Yes
 
-If `true`, this update is a Background Security Improvement.
+
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### MetadataURL
 
 - **Type:** `string`
 - **Required:** Yes
 
-A URL where the MDM server can request additional localized names for this update. This key isn’t present for certain updates, such as mobile software updates (MSUs) or major OS updates. This value is available in macOS 10.11 and later.
+
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### ProductKey
 
 - **Type:** `string`
 - **Required:** Yes
 
-The product key that represents the update.
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### ProductName
 
 - **Type:** `string`
 - **Required:** Yes
 
-The product name; for example, **. This value is available in iOS 9.0 and later, and tvOS 12.0 and later.
+
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### RequiresBootstrapToken
 
@@ -129,7 +188,11 @@ The product name; for example, **. This value is available in iOS 9.0 and later,
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the device can accept a Bootstrap Token from the MDM server instead of prompting for user authentication prior to installation. This only applies when `BootstrapTokenAllowedForAuthentication` is `true` in the [SecurityInfoResponse.SecurityInfo](/documentation/devicemanagement/securityinforesponse/securityinfo-data.dictionary) response. This value is available for a Mac with Apple silicon in macOS 11 and later.
+
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### RestartRequired
 
@@ -137,26 +200,40 @@ If `true`, the device can accept a Bootstrap Token from the MDM server instead o
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the device restarts after installing the update.
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### SupplementalBuildVersion
 
 - **Type:** `string`
 - **Required:** No
 
-The build version for the Background Security Improvement update, for example, `13A999`, which is the same as `Build`.
+
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### SupplementalOSVersionExtra
 
 - **Type:** `string`
 - **Required:** No
 
-The Background Security Improvement OS version suffix, for example, `(a)`. Only present if this is a Background Security Improvement update.
+
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### Version
 
 - **Type:** `string`
 - **Required:** Yes
 
-The version of the update.
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 

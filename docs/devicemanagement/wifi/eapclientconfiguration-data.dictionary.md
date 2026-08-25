@@ -100,6 +100,17 @@ Set this string to ‘ActiveDirectory’ to use the AD computer name and passwor
 
 If ‘true’, the system mode connection tries to use the Open Directory credentials. If using this property, you can’t use ‘SystemModeCredentialsSource’.
 
+### TLSAllowTrustExceptions
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If ‘true’, allows a dynamic trust decision by the user. The dynamic trust is the certificate dialogue that appears when the system doesn’t trust a certificate. If ‘false’, the authentication fails if the system doesn’t already trust the certificate. As of iOS 8, Apple no longer supports this key.
+
+Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | tvOS 9+ | watchOS 3.2+
+Removed: iOS 8+ | iPadOS 8+
+
 ### TLSCertificateIsRequired
 
 - **Type:** `boolean`

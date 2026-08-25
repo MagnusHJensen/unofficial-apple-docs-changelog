@@ -170,6 +170,7 @@ For profiles that use paths, consider them to be case sensitive.
 - [LockScreenMessage](/documentation/devicemanagement/lockscreenmessage) - The payload that configures a Lock Screen message.
 - [Screensaver](/documentation/devicemanagement/screensaver) - The payload that configures the screen saver.
 - [SystemExtensions](/documentation/devicemanagement/systemextensions) - The payload that configures system extensions.
+- [SystemLogging](/documentation/devicemanagement/systemlogging) - The payload that configures system logging.
 - [TimeServer](/documentation/devicemanagement/timeserver) - The payload that configures the time server.
 
 ### System policy

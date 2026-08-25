@@ -1450,6 +1450,36 @@ If `false`, the system disables Apple Music Radio.
 Available: iOS 9.3+ | iPadOS 9.3+
 Requires supervision: iOS
 
+### allowRapidSecurityResponseInstallation
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+
+
+Removed: use the declarative management `com.apple.configuration.softwareupdate.settings` configuration.
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+
+
+
+### allowRapidSecurityResponseRemoval
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+
+
+Removed: use the declarative management `com.apple.configuration.softwareupdate.settings` configuration.
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+
+
+
 ### allowRCSMessaging
 
 - **Type:** `boolean`
@@ -1592,6 +1622,20 @@ Requires supervision: iOS
 If `false`, the system disables Shared Photo Stream. Support for this restriction on unsupervised devices is deprecated.
 
 Available: iOS 6+ | iPadOS 6+
+
+### allowSiriAI
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, the system disables Apple Intelligence integration in Siri.
+
+Deprecated: use the declarative management `com.apple.configuration.siri.settings` configuration.
+
+Available: iOS 27+ | iPadOS 27+
+Deprecated: iOS 27+ | iPadOS 27+
+Allowed for user enrollments: iOS
 
 ### allowSpellCheck
 
@@ -1887,6 +1931,63 @@ The value, in seconds, after which the fingerprint unlock requires a password to
 
 Available: macOS 12+
 
+### enforcedSoftwareUpdateDelay
+
+- **Type:** `integer`
+- **Required:** No
+- **Default:** `30`
+
+
+
+Removed: use the declarative management `com.apple.configuration.softwareupdate.settings` configuration.
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
+
+
+### enforcedSoftwareUpdateMajorOSDeferredInstallDelay
+
+- **Type:** `integer`
+- **Required:** No
+- **Default:** `30`
+
+
+
+Removed: use the declarative management `com.apple.configuration.softwareupdate.settings` configuration.
+
+
+
+Removed: macOS 27+
+
+### enforcedSoftwareUpdateMinorOSDeferredInstallDelay
+
+- **Type:** `integer`
+- **Required:** No
+- **Default:** `30`
+
+
+
+Removed: use the declarative management `com.apple.configuration.softwareupdate.settings` configuration.
+
+
+
+Removed: macOS 27+
+
+### enforcedSoftwareUpdateNonOSDeferredInstallDelay
+
+- **Type:** `integer`
+- **Required:** No
+- **Default:** `30`
+
+
+
+Removed: use the declarative management `com.apple.configuration.softwareupdate.settings` configuration.
+
+
+
+Removed: macOS 27+
+
 ### forceAirDropUnmanaged
 
 - **Type:** `boolean`
@@ -1976,17 +2077,6 @@ If `true`, then the system bypasses the presentation of a screen capture alert.
 
 Available: macOS 15.1+
 
-### ForceCaptivePortalConnectionFromLockScreen
-
-- **Type:** `boolean`
-- **Required:** No
-- **Default:** `false`
-
-If `true`, the system allows use of the captive WiFi portal at login or unlock.
-
-Available: macOS 27+
-Requires supervision: macOS
-
 ### forceClassroomAutomaticallyJoinClasses
 
 - **Type:** `boolean`
@@ -2030,6 +2120,47 @@ If `true` and `ScreenObservationPermissionModificationAllowed` is also `true` in
 
 Available: iOS 11+ | iPadOS 11+ | macOS 10.14.4+
 Requires supervision: iOS | macOS
+
+### forceDelayedAppSoftwareUpdates
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+
+
+
+
+Removed: macOS 27+
+
+### forceDelayedMajorSoftwareUpdates
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+
+
+Removed: use the declarative management `com.apple.configuration.softwareupdate.settings` configuration.
+
+
+
+Removed: macOS 27+
+
+### forceDelayedSoftwareUpdates
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+
+
+Removed: use the declarative management `com.apple.configuration.softwareupdate.settings` configuration.
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
+
 
 ### forceEncryptedBackup
 
@@ -2114,17 +2245,6 @@ If `true`, the system forces a paired Apple Watch to use Wrist Detection.
 
 Available: iOS 8.2+ | iPadOS 8.2+ | watchOS 10+
 Allowed for user enrollments: iOS
-
-### ForceWifiConfigurationOnLockScreen
-
-- **Type:** `boolean`
-- **Required:** No
-- **Default:** `false`
-
-If `true`, the system allows the user to select WiFi networks at login or unlock.
-
-Available: macOS 27+
-Requires supervision: macOS
 
 ### forceWiFiPowerOn
 

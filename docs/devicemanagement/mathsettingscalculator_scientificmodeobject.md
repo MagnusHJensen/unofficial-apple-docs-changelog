@@ -10,6 +10,7 @@ If present, configures the scientific mode of the calculator. If not present, sc
 
 - **Type:** `boolean`
 - **Required:** Yes
+- **Default:** `true`
 
 Controls whether the mode is enabled.
 

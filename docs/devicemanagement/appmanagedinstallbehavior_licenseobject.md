@@ -19,9 +19,3 @@ The type of license that the app uses for installation through the App Store, wh
 
 This key needs to be present for App Store apps, when either `AppStoreID` or `BundleID` are present in the configuration.
 
-### VPPType
-
-- **Type:** `string`
-- **Required:** No
-- **Allowed Values:** `Device`, `User`
-

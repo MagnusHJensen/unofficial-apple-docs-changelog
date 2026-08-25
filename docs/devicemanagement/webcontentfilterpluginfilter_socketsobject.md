@@ -22,5 +22,5 @@ The data provider identifier. This string identifies the filter data provider wh
 
 In iOS and visionOS, the identifier is a bundle ID, for example, “com.example.app”.
 
-In macOS, the identifier is a composed identifier. The format of the composed identifier is “Bundle-ID {Designated-Requirement}”. “Bundle-ID” is the bundle identifier string of the provider. “Designated-Requirement” is the designated requirement string from the code signature of the provider. For example, “com.example.app {anchor apple generic}”.
+In macOS, the identifier is a composed identifier. The format of the composed identifier is “Bundle-ID {Designated-Requirement}”. “Bundle-ID” is the bundle identifier string of the provider. “Designated-Requirement” is the designated requirement string the device uses to match the code signature of the provider. For example, “com.example.app {anchor apple generic}”.
 

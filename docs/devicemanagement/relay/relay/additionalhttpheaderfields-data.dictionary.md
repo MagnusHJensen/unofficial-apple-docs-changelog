@@ -13,3 +13,5 @@ A custom HTTP header key field name.
 
 The HTTP header field value for the corresponding header field name.
 
+Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+

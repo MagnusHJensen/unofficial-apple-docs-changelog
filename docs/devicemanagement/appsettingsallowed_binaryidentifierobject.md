@@ -11,7 +11,7 @@ Dictionary containing one or more identifier fields to match a binary.
 - **Type:** `string`
 - **Required:** No
 
-The code signature code directory hash of the binary.
+The 40 character code signature code directory hash of the binary.
 
 ### PathPrefix
 

@@ -50,6 +50,16 @@ If `false`, disables Personalized Handwriting Results.
 
 Available: iOS 26.4+ | iPadOS 26.4+
 
+### AllowVisualIntelligence
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `true`
+
+If `false`, disables Visual Intelligence.
+
+Available: iOS 27+ | iPadOS 27+ | macOS 27+
+
 ### AllowVisualIntelligenceSummary
 
 - **Type:** `boolean`
@@ -58,7 +68,10 @@ Available: iOS 26.4+ | iPadOS 26.4+
 
 If `false`, disables Visual Intelligence Summary.
 
+Deprecated: use the `AllowVisualIntelligence` key.
+
 Available: iOS 26.4+ | iPadOS 26.4+
+Deprecated: iOS 27+ | iPadOS 27+
 
 ### AllowWritingTools
 

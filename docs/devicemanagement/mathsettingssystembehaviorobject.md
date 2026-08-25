@@ -10,6 +10,7 @@ If present, configures math behavior in the system.
 
 - **Type:** `boolean`
 - **Required:** Yes
+- **Default:** `true`
 
 Controls whether keyboard suggestions include math solutions. This key is also supported by the keyboard.settings configuration.
 
@@ -17,6 +18,7 @@ Controls whether keyboard suggestions include math solutions. This key is also s
 
 - **Type:** `boolean`
 - **Required:** Yes
+- **Default:** `true`
 
 Controls whether Math Notes is allowed in other apps such as Notes.
 

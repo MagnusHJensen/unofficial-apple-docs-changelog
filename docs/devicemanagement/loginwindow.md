@@ -82,6 +82,26 @@ If `true`, the system disables the immediate Screen Lock functions.
 
 Available: macOS 10.13+
 
+### ForceCaptivePortalConnectionFromLockScreen
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system allows use of the captive WiFi portal at login or unlock.
+
+Available: macOS 27+
+
+### ForceWifiConfigurationOnLockScreen
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system allows the user to select WiFi networks at login or unlock.
+
+Available: macOS 27+
+
 ### HideAdminUsers
 
 - **Type:** `boolean`

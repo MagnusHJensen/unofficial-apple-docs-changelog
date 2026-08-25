@@ -87,6 +87,17 @@ Available: iOS 15+ | iPadOS 15+ | macOS 14+ | visionOS 1.1+
 
 The UUID of the certificate payload for the device’s identity. It may also point to a SCEP payload.
 
+### ManagedAppleID
+
+- **Type:** `string`
+- **Required:** No
+
+ 
+
+
+
+Removed: iOS 18+ | iPadOS 18+ | macOS 15+
+
 ### PinningRevocationCheckRequired
 
 - **Type:** `boolean`

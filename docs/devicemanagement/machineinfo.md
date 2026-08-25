@@ -50,7 +50,7 @@ Available: macOS 26+
 
 If `true`, indicates that the server can trigger the device to do a required software update.
 
-Available: iOS 17+ | iPadOS 17+ | macOS 14+
+Available: iOS 17+ | iPadOS 17+ | macOS 14+ | visionOS 26+
 
 ### MEID
 

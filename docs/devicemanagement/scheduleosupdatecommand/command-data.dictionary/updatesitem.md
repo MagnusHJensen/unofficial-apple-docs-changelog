@@ -2,7 +2,7 @@
 
 A dictionary that describes the available operating-system updates item.
 
-**Platforms:** iOS 9.0, iPadOS 9.0, Mac Catalyst 9.0, macOS 10.11, tvOS 12.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 9.0, iPadOS 9.0, Mac Catalyst 9.0, macOS 10.11, tvOS 12.0
 
 ## Properties
 
@@ -12,18 +12,27 @@ A dictionary that describes the available operating-system updates item.
 - **Required:** Yes
 - **Allowed Values:** `Default`, `DownloadOnly`, `InstallASAP`, `NotifyOnly`, `InstallLater`, `InstallForceRestart`
 
-The install action, which is one of the following values:
 
-> 
+
+     
+
+ 
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### MaxUserDeferrals
 
 - **Type:** `integer`
 - **Required:** No
 
-The maximum number of times the system allows the user to postpone an update before it’s installed. The system prompts the user once a day.
 
-This key is only supported when `InstallAction` is `InstallLater` and only supported for minor OS updates (for example, macOS 12.x to 12.y).
+
+
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### Priority
 
@@ -32,23 +41,34 @@ This key is only supported when `InstallAction` is `InstallLater` and only suppo
 - **Default:** `Low`
 - **Allowed Values:** `Low`, `High`
 
-The scheduling priority for downloading and preparing the requested update. This is only supported for minor OS updates (macOS 12.x to 12.y).
 
-Available in macOS 12.3 and later. Prior versions of macOS used a priority of `Low`.
+
+~~ Prior versions of macOS used a priority of `Low`.~~
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### ProductKey
 
 - **Type:** `string`
 - **Required:** No
 
-The product key that represents the update.
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### ProductVersion
 
 - **Type:** `string`
 - **Required:** No
 
-The version of the update, which the system requires if `ProductKey` isn’t present. This value is available in iOS 11.3 and later, macOS 12 and later, and tvOS 12.2 and later.
 
-> 
+
+ 
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 

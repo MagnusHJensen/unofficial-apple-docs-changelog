@@ -1,8 +1,8 @@
 # OSUpdateStatusResponse
 
-A response from the device after it processes the command to get the status of operating-system updates on a device.
+A response from the device after it processes the command to get the status of operating-system updates on a device. Removed: subscribe to the declarative management `softwareupdate.install-state` status item.
 
-**Platforms:** iOS 9.0, iPadOS 9.0, Mac Catalyst 9.0, macOS 10.11.5, tvOS 12.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 9.0, iPadOS 9.0, Mac Catalyst 9.0, macOS 10.11.5, tvOS 12.0
 
 ## Properties
 
@@ -18,18 +18,22 @@ The unique identifier of the command for this response.
 - **Type:** `string`
 - **Required:** Yes
 
-The per-enrollment identifier for the device. The system requires this value if the enrollment type is a user enrollment.
 
-Available in iOS 13 and later, macOS 10.15 and later, and visionOS 2 and later.
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### EnrollmentUserID
 
 - **Type:** `string`
 - **Required:** Yes
 
-The per-enrollment identifier for the user. The system requires this value if the enrollment type is a user enrollment on the user channel.
 
-Available in macOS 10.15 and later.
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### ErrorChain
 
@@ -50,7 +54,10 @@ If `true`, the device isn’t on-console.
 - **Type:** `[OSUpdateStatusResponse.OSUpdateStatusItem]`
 - **Required:** Yes
 
-An array of dictionaries that describes the statuses of software updates. The array is empty if there are no software updates currently in progress. This command only returns the status for System Applications and Configuration Data updates when a software update is managed by a Declarative Device Management [SoftwareUpdateEnforcementSpecific](/documentation/devicemanagement/softwareupdateenforcementspecific) configuration.
+ 
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### Status
 
@@ -71,32 +78,47 @@ The status of the response, which is one of the following values:
 - **Type:** `string`
 - **Required:** Yes
 
-The device’s UDID (unique device identifier). The system requires this value if the enrollment type is a device enrollment.
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### UserID
 
 - **Type:** `string`
 - **Required:** No
 
-For macOS, this value is the ID of the user.
 
-For Shared iPad, this value is `FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF` to indicate that authentication doesn’t occur.
+
+
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### UserLongName
 
 - **Type:** `string`
 - **Required:** Yes
 
-The full name of the user.
+
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### UserShortName
 
 - **Type:** `string`
 - **Required:** No
 
-For macOS, this value is the short name of the user.
 
-For Shared iPad, this value is the Managed Apple Account identifier of the user on Shared iPad. It indicates that the token is for the user channel.
+
+
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ## Topics
 

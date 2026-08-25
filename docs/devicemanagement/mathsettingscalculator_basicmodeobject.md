@@ -10,6 +10,7 @@ If present, configures the basic mode of the calculator. Basic mode is always en
 
 - **Type:** `boolean`
 - **Required:** Yes
+- **Default:** `false`
 
 Add the square root button to the basic calculator by replacing the +/- button. Normally, the square root button is available in scientific mode, so this key can be used to make it available when the scientific mode is restricted.
 

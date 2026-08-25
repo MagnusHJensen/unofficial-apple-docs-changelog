@@ -10,6 +10,7 @@ If present, controls global input options of the calculator. If not present, all
 
 - **Type:** `boolean`
 - **Required:** Yes
+- **Default:** `true`
 
 Configures whether RPN input is enabled.
 
@@ -19,6 +20,7 @@ Available: macOS 15+
 
 - **Type:** `boolean`
 - **Required:** Yes
+- **Default:** `true`
 
 Configures whether unit conversions are enabled.
 

@@ -87,6 +87,17 @@ Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | tvOS 9+ | visionOS 1.1+
 
 The operating system version. Requires the Device Information access right.
 
+### CarrierSettingsVersion
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+
+
+Removed: iOS 26+ | iPadOS 26+
+
 ### CellularTechnology
 
 - **Type:** `integer`
@@ -103,6 +114,39 @@ The cellular technology type, which is one of the following values:
 Requires the Device Information access right.
 
 Available: iOS 4.2.6+ | iPadOS 4.2.6+
+
+### CurrentCarrierNetwork
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+
+
+Removed: iOS 26+ | iPadOS 26+
+
+### CurrentMCC
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+
+
+Removed: iOS 26+ | iPadOS 26+
+
+### CurrentMNC
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+
+
+Removed: iOS 26+ | iPadOS 26+
 
 ### DataRoamingEnabled
 
@@ -236,6 +280,28 @@ The host name.
 
 Available: macOS 10.11+
 
+### ICCID
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+
+
+Removed: iOS 26+ | iPadOS 26+
+
+### IMEI
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+
+
+Removed: iOS 26+ | iPadOS 26+
+
 ### IsActivationLockEnabled
 
 - **Type:** `boolean`
@@ -318,6 +384,17 @@ If `true`, the device is network-tethered. Requires the Network Information acce
 
 Available: iOS 10.3+ | iPadOS 10.3+
 
+### IsRoaming
+
+- **Type:** `boolean`
+- **Required:** No
+
+
+
+
+
+Removed: iOS 26+ | iPadOS 26+
+
 ### IsSupervised
 
 - **Type:** `boolean`
@@ -390,6 +467,17 @@ The contents of [SettingsCommand.Command.Settings.MDMOptions.MDMOptions](/docume
 
 Available: iOS 7+ | iPadOS 7+ | macOS 11+ | tvOS 9+ | visionOS 1.1+ | watchOS 10+
 
+### MEID
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+
+
+Removed: iOS 26+ | iPadOS 26+
+
 ### Model
 
 - **Type:** `string`
@@ -440,6 +528,19 @@ The contents of [SettingsCommand.Command.Settings.OrganizationInfo.OrganizationI
 
 Available: iOS 7+ | iPadOS 7+ | macOS 10.11+ | tvOS 9+ | visionOS 1.1+ | watchOS 10+
 
+### OSUpdateSettings
+
+- **Type:** `DeviceInformationResponse.QueryResponses.OSUpdateSettings`
+- **Required:** No
+
+
+
+Removed: use the declarative management `com.apple.configuration.softwareupdate.settings` configuration to set values.
+
+
+
+Removed: macOS 27+
+
 ### OSVersion
 
 - **Type:** `string`
@@ -455,6 +556,17 @@ The operating system version. Requires the Device Information access right.
 If `true,` the device has enabled Personal Hotspot, which isnâ€™t available for all carriers. Requires the Network Information access right.
 
 Available: iOS 7+ | iPadOS 7+
+
+### PhoneNumber
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+
+
+Removed: iOS 26+ | iPadOS 26+
 
 ### PINRequiredForDeviceLock
 
@@ -533,6 +645,36 @@ The contents of [DeviceInformationResponse.QueryResponses.ServiceSubscriptionPro
 
 Available: iOS 12+ | iPadOS 12+
 
+### SIMCarrierNetwork
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+
+Removed: iOS 5+ | iPadOS 5+
+
+### SIMMCC
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+
+Removed: iOS 4.2.6+ | iPadOS 4.2.6+
+
+### SIMMNC
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+
+Removed: iOS 4.2.6+ | iPadOS 4.2.6+
+
 ### SkipLanguageAndLocaleSetupForNewUsers
 
 - **Type:** `boolean`
@@ -541,6 +683,65 @@ Available: iOS 12+ | iPadOS 12+
 If `true`, skip the language and country/region panes for new users on Shared iPad.
 
 Available: iOS 16.2+ | iPadOS 16.2+
+
+### SoftwareUpdateDeviceID
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+Removed: subscribe to the declarative management `softwareupdate.device-id` status item.
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+
+### SoftwareUpdateSettings
+
+- **Type:** `DeviceInformationResponse.QueryResponses.SoftwareUpdateSettings`
+- **Required:** No
+
+
+
+Removed: use the declarative management `com.apple.configuration.softwareupdate.settings` configuration to set values.
+
+
+
+Removed: iOS 27+ | iPadOS 27+
+
+### SubscriberCarrierNetwork
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+
+
+Removed: iOS 26+ | iPadOS 26+
+
+### SubscriberMCC
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+
+
+Removed: iOS 26+ | iPadOS 26+
+
+### SubscriberMNC
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+
+
+Removed: iOS 26+ | iPadOS 26+
 
 ### SupplementalBuildVersion
 
@@ -630,6 +831,17 @@ The timeout interval for the user session. A value of `0` indicates that thereâ€
 
 Available: iOS 14.5+ | iPadOS 14.5+
 
+### VoiceRoamingEnabled
+
+- **Type:** `boolean`
+- **Required:** No
+
+
+
+
+
+Removed: iOS 26+ | iPadOS 26+
+
 ### WiFiMAC
 
 - **Type:** `string`
@@ -644,6 +856,8 @@ The Wi-Fi MAC address. Requires the Network Information access right.
 - [DeviceInformationResponse.QueryResponses.AccessibilitySettings](/documentation/devicemanagement/deviceinformationresponse/queryresponses-data.dictionary/accessibilitysettings-data.dictionary) - The response dictionary that contains the devices accessibility settings.
 - [DeviceInformationResponse.QueryResponses.AutoSetupAdminAccountsItem](/documentation/devicemanagement/deviceinformationresponse/queryresponses-data.dictionary/autosetupadminaccountsitem) - The response dictionary that contains the administrator setup information.
 - [DeviceInformationResponse.QueryResponses.MDMOptions](/documentation/devicemanagement/deviceinformationresponse/queryresponses-data.dictionary/mdmoptions-data.dictionary) - The response dictionary that contains MDM options.
+- [DeviceInformationResponse.QueryResponses.OSUpdateSettings](/documentation/devicemanagement/deviceinformationresponse/queryresponses-data.dictionary/osupdatesettings-data.dictionary) - The response dictionary that contains operating system update settings.
 - [DeviceInformationResponse.QueryResponses.OrganizationInfo](/documentation/devicemanagement/deviceinformationresponse/queryresponses-data.dictionary/organizationinfo-data.dictionary) - The response dictionary that contains organization information.
 - [DeviceInformationResponse.QueryResponses.ServiceSubscriptionProperty](/documentation/devicemanagement/deviceinformationresponse/queryresponses-data.dictionary/servicesubscriptionproperty) - The response dictionary that contains information about the active service subscription.
+- [DeviceInformationResponse.QueryResponses.SoftwareUpdateSettings](/documentation/devicemanagement/deviceinformationresponse/queryresponses-data.dictionary/softwareupdatesettings-data.dictionary) - The response dictionary that contains information about the Software Update pane in Settings.
 

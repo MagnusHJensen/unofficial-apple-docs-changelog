@@ -1,8 +1,8 @@
 # AvailableOSUpdatesCommand
 
-The command to get a list of available operating-system updates for a device.
+The command to get a list of available operating-system updates for a device. Removed: use the declarative management `com.apple.configuration.softwareupdate.enforcement.specific` configuration.
 
-**Platforms:** iOS 9.0, iPadOS 9.0, Mac Catalyst 9.0, macOS 10.11, tvOS 12.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 9.0, iPadOS 9.0, Mac Catalyst 9.0, macOS 10.11, tvOS 12.0
 
 ## Properties
 
@@ -24,5 +24,5 @@ The unique identifier of the command.
 
 ### Objects
 
-- [AvailableOSUpdatesCommand.Command](/documentation/devicemanagement/availableosupdatescommand/command-data.dictionary) - The command to get a list of available operating-system updates for a device.
+- [AvailableOSUpdatesCommand.Command](/documentation/devicemanagement/availableosupdatescommand/command-data.dictionary) - The command to get a list of available operating-system updates for a device. Removed: use the declarative management `com.apple.configuration.softwareupdate.enforcement.specific` configuration.
 

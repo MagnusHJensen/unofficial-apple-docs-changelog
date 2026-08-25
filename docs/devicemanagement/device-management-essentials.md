@@ -13,7 +13,7 @@ Set up and maintain connectivity with devices and leverage declarative device ma
 
 ### Push notifications
 
-- [Setting up push notifications for your device management customers](/documentation/devicemanagement/setting-up-push-notifications-for-your-device-magagement-customers) - Create and sign a certificate signing request (CSR) to enable push notifications.
+- [Setting up push notifications for your device management customers](/documentation/devicemanagement/setting-up-push-notifications-for-your-device-management-customers) - Create and sign a certificate signing request (CSR) to enable push notifications.
 
 ### Commands
 

@@ -1,8 +1,8 @@
 # OS Update Status
 
-Get the status of operating-system updates on a device.
+Get the status of operating-system updates on a device. Removed: subscribe to the declarative management `softwareupdate.install-state` status item.
 
-**Platforms:** iOS 9.0, iPadOS 9.0, Mac Catalyst 9.0, macOS 10.11.5, tvOS 12.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 9.0, iPadOS 9.0, Mac Catalyst 9.0, macOS 10.11.5, tvOS 12.0
 
 ## Discussion
 
@@ -16,6 +16,6 @@ Refer to the following sections to determine supported channels and requirements
 
 ### Commands and responses
 
-- [OSUpdateStatusCommand](/documentation/devicemanagement/osupdatestatuscommand) - The command to get the status of operating-system updates on a device.
-- [OSUpdateStatusResponse](/documentation/devicemanagement/osupdatestatusresponse) - A response from the device after it processes the command to get the status of operating-system updates on a device.
+- [OSUpdateStatusCommand](/documentation/devicemanagement/osupdatestatuscommand) - The command to get the status of operating-system updates on a device. Removed: subscribe to the declarative management `softwareupdate.install-state` status item.
+- [OSUpdateStatusResponse](/documentation/devicemanagement/osupdatestatusresponse) - A response from the device after it processes the command to get the status of operating-system updates on a device. Removed: subscribe to the declarative management `softwareupdate.install-state` status item.
 

@@ -1,8 +1,8 @@
 # ScheduleOSUpdateScanCommand
 
-The command to schedule a background scan for operating-system updates on a device.
+The command to schedule a background scan for operating-system updates on a device. Removed: use the declarative management `com.apple.configuration.softwareupdate.enforcement.specific` configuration.
 
-**Platforms:** macOS 10.11, Device Assignment Services , VPP License Management 
+**Platforms:** macOS 10.11
 
 ## Properties
 
@@ -24,5 +24,5 @@ The unique identifier of the command.
 
 ### Objects
 
-- [ScheduleOSUpdateScanCommand.Command](/documentation/devicemanagement/scheduleosupdatescancommand/command-data.dictionary) - The command to schedule a background scan for operating-system updates on a device.
+- [ScheduleOSUpdateScanCommand.Command](/documentation/devicemanagement/scheduleosupdatescancommand/command-data.dictionary) - The command to schedule a background scan for operating-system updates on a device. Removed: use the declarative management `com.apple.configuration.softwareupdate.enforcement.specific` configuration.
 

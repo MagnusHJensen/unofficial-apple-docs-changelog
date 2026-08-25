@@ -1,8 +1,8 @@
 # ScheduleOSUpdateCommand
 
-The command to schedule an update of the operating system on a device.
+The command to schedule an update of the operating system on a device. Removed: use the declarative management `com.apple.configuration.softwareupdate.enforcement.specific` configuration.
 
-**Platforms:** iOS 9.0, iPadOS 9.0, Mac Catalyst 9.0, macOS 10.11, tvOS 12.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 9.0, iPadOS 9.0, Mac Catalyst 9.0, macOS 10.11, tvOS 12.0
 
 ## Properties
 
@@ -24,5 +24,5 @@ The unique identifier of the command.
 
 ### Objects
 
-- [ScheduleOSUpdateCommand.Command](/documentation/devicemanagement/scheduleosupdatecommand/command-data.dictionary) - The command to schedule an update of the operating system on a device.
+- [ScheduleOSUpdateCommand.Command](/documentation/devicemanagement/scheduleosupdatecommand/command-data.dictionary) - The command to schedule an update of the operating system on a device. Removed: use the declarative management `com.apple.configuration.softwareupdate.enforcement.specific` configuration.
 

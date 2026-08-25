@@ -13,12 +13,16 @@ The payload that configures encrypted DNS settings.
 
 A dictionary that defines a configuration for an encrypted DNS server.
 
+Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+
 ### OnDemandRules
 
 - **Type:** `[DNSSettings.OnDemandRulesElement]`
 - **Required:** No
 
 An array of rules that define the DNS settings. If not set, the system always applies the DNS settings. These rules are identical to the `OnDemandRules` array in VPN payloads.
+
+Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
 
 ### ProhibitDisablement
 
@@ -27,6 +31,8 @@ An array of rules that define the DNS settings. If not set, the system always ap
 - **Default:** `false`
 
 If `true`, the system prohibits users from disabling DNS settings. This key is only available on supervised devices.
+
+Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
 
 ## Discussion
 

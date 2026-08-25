@@ -49,7 +49,75 @@ Only AppKit-based apps on macOS support this feature.
 
 ### Configuration availability
 
-### App privacy examples
+### Configuration examples
+
+#### App privacy examples
+
+#### App settings allowlist examples
+
+#### App settings denylist examples
+
+#### App settings allowlist and denylist examples
+
+This configuration allows one set of apps to run, and prevents ome other apps that would otherwise be allowed from running.
+
+```json
+{
+    "Type": "com.apple.configuration.app.settings",
+    "Identifier": "AF389B6F-5784-4DB6-BEFF-EA6D689BD4B3",
+    "ServerToken": "A5CA3371-559E-44B4-B9ED-A0A7DFEC193D",
+    "Payload": {
+        "Allowed": {
+            "AllowedBinaries": [
+                {
+                    "TeamID": "XXXXXXXXXX",
+                    "CDHash": "90bc96cd95be55c12e7d9b1611cbc677610bb70c",
+                    "SigningID": "com.example.app",
+                    "PathPrefix": "/Applications/Example.app",
+                    "SigningState": "All"
+                },
+                {
+                    "TeamID": "*APPLE*",
+                    "SigningID": "com.apple.iCal"
+                }
+            ],
+            "DeniedBinaries": [
+                {
+                    "SigningID": "com.apple.iCal"
+                },
+                {
+                    "CDHash": "03552d8140254d0c190af06f1e470dbc5ded53ba"
+                }
+            ]
+        }
+    }
+}
+```
+
+#### App settings managed apps examples
+
+This configuration always allows all managed apps and one other app to run on macOS.
+
+```json
+{
+    "Type": "com.apple.configuration.app.settings",
+    "Identifier": "AF389B6F-5784-4DB6-BEFF-EA6D689BD4B4",
+    "ServerToken": "A5CA3371-559E-44B4-B9ED-A0A7DFEC193E",
+    "Payload": {
+        "Allowed": {
+            "AlwaysAllowManagedApps": true,
+            "AllowedBinaries": [
+                {
+                    "TeamID": "XXXXXXXXXX",
+                    "SigningID": "com.example.app"
+                }
+            ]
+        }
+    }
+}
+```
+
+#### App settings WebClips examples
 
 ## Topics
 

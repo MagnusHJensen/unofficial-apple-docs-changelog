@@ -56,7 +56,7 @@ If the device doesn’t support any of the listed protocol types, it doesn’t s
 - **Type:** `string`
 - **Required:** No
 
-The external path of the EWS server. The system uses this only when this declaration has a `ExternalHostName` value.
+The external path of the EWS server. The system uses this only when this declaration has an `ExternalHostName` value. Applicable for “EWS” only.
 
 Available: macOS 13+
 
@@ -65,7 +65,7 @@ Available: macOS 13+
 - **Type:** `string`
 - **Required:** No
 
-The external hostname of the EWS server (or IP address).
+The external hostname of the EWS server (or IP address). Applicable for “EWS” only.
 
 Available: macOS 13+
 
@@ -74,7 +74,7 @@ Available: macOS 13+
 - **Type:** `integer`
 - **Required:** No
 
-The external port number of the EWS server. The system uses this only when this declaration has a `ExternalHostName` value.
+The external port number of the EWS server. The system uses this only when this declaration has an `ExternalHostName` value. Applicable for “EWS” only.
 
 Available: macOS 13+
 
@@ -91,7 +91,7 @@ The IP address or fully qualified domain name (FQDN) of the Exchange host.
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the system prevents the user from changing the status of the calendar service for this account.
+If `true`, the system prevents the user from changing the status of the calendar service for this account. Applicable for “EAS” only.
 
 Available: iOS 15+ | iPadOS 15+ | visionOS 1.1+
 
@@ -101,7 +101,7 @@ Available: iOS 15+ | iPadOS 15+ | visionOS 1.1+
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the system prevents the user from changing the status of the address book service for this account.
+If `true`, the system prevents the user from changing the status of the address book service for this account. Applicable for “EAS” only.
 
 Available: iOS 15+ | iPadOS 15+ | visionOS 1.1+
 
@@ -111,7 +111,7 @@ Available: iOS 15+ | iPadOS 15+ | visionOS 1.1+
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the system prevents the user from changing the status of the mail service for this account.
+If `true`, the system prevents the user from changing the status of the mail service for this account. Applicable for “EAS” only.
 
 Available: iOS 15+ | iPadOS 15+ | visionOS 1.1+
 
@@ -121,7 +121,7 @@ Available: iOS 15+ | iPadOS 15+ | visionOS 1.1+
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the system prevents the user from changing the status of the notes service for this account.
+If `true`, the system prevents the user from changing the status of the notes service for this account. Applicable for “EAS” only.
 
 Available: iOS 15+ | iPadOS 15+ | visionOS 1.1+
 
@@ -131,7 +131,7 @@ Available: iOS 15+ | iPadOS 15+ | visionOS 1.1+
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the system prevents the user from changing the status of the reminders service for this account.
+If `true`, the system prevents the user from changing the status of the reminders service for this account. Applicable for “EAS” only.
 
 Available: iOS 15+ | iPadOS 15+ | visionOS 1.1+
 
@@ -163,7 +163,7 @@ The configuration settings for OAuth for this account.
 - **Type:** `string`
 - **Required:** No
 
-The path of the EWS server. The system uses this only when this declaration has a `HostName` value.
+The path of the EWS server. The system uses this only when this declaration has a `HostName` value. Applicable for “EWS” only.
 
 Available: macOS 13+
 
@@ -172,7 +172,7 @@ Available: macOS 13+
 - **Type:** `integer`
 - **Required:** No
 
-The port number of the EWS server. The system uses this only when this declaration has a `HostName` value.
+The port number of the EWS server. The system uses this only when this declaration has a `HostName` value. Applicable for “EWS” only.
 
 Available: macOS 13+
 
@@ -189,7 +189,7 @@ If `true`, the system activates the reminders service for this account.
 - **Type:** `AccountExchangeSMIMEObject`
 - **Required:** No
 
-Settings for S/MIME.
+Settings for S/MIME. Applicable for “EAS” only.
 
 Available: iOS 17+ | iPadOS 17+ | visionOS 1.1+
 
@@ -243,5 +243,5 @@ This configuration sets up a Microsoft Exchange account.
 ### Objects
 
 - [AccountExchangeOAuthObject](/documentation/devicemanagement/accountexchangeoauthobject) - The configuration settings for OAuth for this account.
-- [AccountExchangeSMIMEObject](/documentation/devicemanagement/accountexchangesmimeobject) - Settings for S/MIME.
+- [AccountExchangeSMIMEObject](/documentation/devicemanagement/accountexchangesmimeobject) - Settings for S/MIME. Applicable for “EAS” only.
 

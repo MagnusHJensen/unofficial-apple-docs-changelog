@@ -1,8 +1,8 @@
 # AvailableOSUpdatesCommand.Command
 
-The command to get a list of available operating-system updates for a device.
+The command to get a list of available operating-system updates for a device. Removed: use the declarative management `com.apple.configuration.softwareupdate.enforcement.specific` configuration.
 
-**Platforms:** iOS 9.0, iPadOS 9.0, Mac Catalyst 9.0, macOS 10.11, tvOS 12.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 9.0, iPadOS 9.0, Mac Catalyst 9.0, macOS 10.11, tvOS 12.0
 
 ## Properties
 
@@ -12,7 +12,10 @@ The command to get a list of available operating-system updates for a device.
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the device needs to be network-tethered to run the command.
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### RequestType
 
@@ -20,5 +23,8 @@ If `true`, the device needs to be network-tethered to run the command.
 - **Required:** Yes
 - **Allowed Values:** `AvailableOSUpdates`
 
-The request type for this command.
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 

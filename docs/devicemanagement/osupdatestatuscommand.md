@@ -1,8 +1,8 @@
 # OSUpdateStatusCommand
 
-The command to get the status of operating-system updates on a device.
+The command to get the status of operating-system updates on a device. Removed: subscribe to the declarative management `softwareupdate.install-state` status item.
 
-**Platforms:** iOS 9.0, iPadOS 9.0, Mac Catalyst 9.0, macOS 10.11.5, tvOS 12.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 9.0, iPadOS 9.0, Mac Catalyst 9.0, macOS 10.11.5, tvOS 12.0
 
 ## Properties
 
@@ -24,5 +24,5 @@ The unique identifier of the command.
 
 ### Objects
 
-- [OSUpdateStatusCommand.Command](/documentation/devicemanagement/osupdatestatuscommand/command-data.dictionary) - The command to get the status of operating-system updates on a device.
+- [OSUpdateStatusCommand.Command](/documentation/devicemanagement/osupdatestatuscommand/command-data.dictionary) - The command to get the status of operating-system updates on a device. Removed: subscribe to the declarative management `softwareupdate.install-state` status item.
 

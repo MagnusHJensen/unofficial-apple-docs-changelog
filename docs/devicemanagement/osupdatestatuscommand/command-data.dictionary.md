@@ -1,8 +1,8 @@
 # OSUpdateStatusCommand.Command
 
-The command to get the status of operating-system updates on a device.
+The command to get the status of operating-system updates on a device. Removed: subscribe to the declarative management `softwareupdate.install-state` status item.
 
-**Platforms:** iOS 9.0, iPadOS 9.0, Mac Catalyst 9.0, macOS 10.11.5, tvOS 12.0, Device Assignment Services , VPP License Management 
+**Platforms:** iOS 9.0, iPadOS 9.0, Mac Catalyst 9.0, macOS 10.11.5, tvOS 12.0
 
 ## Properties
 
@@ -12,7 +12,10 @@ The command to get the status of operating-system updates on a device.
 - **Required:** No
 - **Default:** `false`
 
-If `true`, the device needs to be network-tethered to run the command.
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 
 ### RequestType
 
@@ -20,5 +23,8 @@ If `true`, the device needs to be network-tethered to run the command.
 - **Required:** Yes
 - **Allowed Values:** `OSUpdateStatus`
 
-The request type for this command.
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+
 

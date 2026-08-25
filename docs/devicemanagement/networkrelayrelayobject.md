@@ -13,13 +13,6 @@ An array of dictionaries that describe one or more relay servers that the system
 
 A dictionary that contains custom HTTP header keys and values to add to each request. The dictionary key name represents the HTTP header field name to use, and the dictionary value is the string to use as the HTTP header field value.
 
-### CredentialAssetReference
-
-- **Type:** `string`
-- **Required:** No
-
-The identifier of an asset declaration that contains the identity to install.
-
 ### HTTP2RelayURL
 
 - **Type:** `string`
@@ -37,6 +30,13 @@ Each relay needs to include either `HTTP2RelayURL` or `HTTP3RelayURL`, or it can
 The URL or URI template, as defined in RFC 9298, of a relay server that’s reachable using HTTP/3 and supports proxying TCP and UDP using the CONNECT method.
 
 Each relay needs to include either `HTTP2RelayURL` or `HTTP3RelayURL`, or it can include both.
+
+### IdentityAssetReference
+
+- **Type:** `string`
+- **Required:** No
+
+The identifier of an asset declaration that contains the identity to install.
 
 ### PublicKeyData
 

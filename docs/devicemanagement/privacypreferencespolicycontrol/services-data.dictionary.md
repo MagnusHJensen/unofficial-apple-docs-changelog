@@ -11,9 +11,9 @@ The privacy policy control services dictionary that controls access on a per app
 - **Type:** `[PrivacyPreferencesPolicyControl.Services.Identity]`
 - **Required:** No
 
-Specifies the policies for the app via the Accessibility subsystem. This profile deprecated its ability to grant access as of macOS 26.2, and removes that ability in macOS 27.0.
+Specifies the policies for the app via the Accessibility subsystem. In macOS 27.0, the device shows a non-blocking notification for each application when this setting is applied, and it allows the user to make changes to the setting in the System Settings app.
 
-Deprecated: use the `Privacy` key in the declarative management `com.apple.configuration.app-settings` configuration.
+Deprecated: use the `Privacy` key in the declarative management `com.apple.configuration.app.settings` configuration.
 
 Deprecated: macOS 27+
 
@@ -38,7 +38,7 @@ Specifies the policies for the app sending restricted AppleEvents to another pro
 
 Specifies the policies for the app to access Bluetooth devices.
 
-Deprecated: use the `Privacy` key in the declarative management `com.apple.configuration.app-settings` configuration.
+Deprecated: use the `Privacy` key in the declarative management `com.apple.configuration.app.settings` configuration.
 
 Available: macOS 11+
 Deprecated: macOS 27+
@@ -132,7 +132,7 @@ Available: macOS 10.15+
 
 Allows the application to use the system Speech Recognition facility and to send speech data to Apple.
 
-Deprecated: use the `Privacy` key in the declarative management `com.apple.configuration.app-settings` configuration.
+Deprecated: use the `Privacy` key in the declarative management `com.apple.configuration.app.settings` configuration.
 
 Available: macOS 10.15+
 Deprecated: macOS 27+

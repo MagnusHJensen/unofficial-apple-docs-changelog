@@ -13,3 +13,5 @@ The dictionary of vendor-specific configuration items.
 
 Key/value pairs.
 
+Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+

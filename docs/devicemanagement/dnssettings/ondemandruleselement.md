@@ -18,12 +18,16 @@ The action to take if this dictionary matches the current network. Allowed value
 - `Disconnect`: Don’t apply DNS Settings when the dictionary matches.
 - `EvaluateConnection`: Apply DNS Settings with per-domain exceptions when the dictionary matches.
 
+Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+
 ### ActionParameters
 
 - **Type:** `[DNSSettings.OnDemandRulesElement.ActionParameter]`
 - **Required:** No
 
 An array of dictionaries that provide per-connection rules. The system uses this array only for settings where the `Action` value is `EvaluateConnection`.
+
+Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
 
 ### DNSDomainMatch
 
@@ -34,6 +38,8 @@ An array of domain names. This rule matches if any of the domain names in the sp
 
 The system supports a single wildcard (`\*`) prefix, but it’s not required. For example, both `\*.example.com` and `example.com` match against `mydomain.example.com` and `your.domain.example.com`, but don’t match against `mydomain-example.com`.
 
+Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+
 ### DNSServerAddressMatch
 
 - **Type:** `[string]`
@@ -43,6 +49,8 @@ An array of IP addresses. This rule matches if any of the network’s specified 
 
 The system supports matching with a single wildcard. For example, `17.\*` matches any DNS server in the 17.0.0.0/8 subnet.
 
+Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+
 ### InterfaceTypeMatch
 
 - **Type:** `string`
@@ -51,6 +59,8 @@ The system supports matching with a single wildcard. For example, `17.\*` matche
 
 An interface type. If specified, this rule matches only if the primary network interface hardware matches the specified type.
 
+Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+
 ### SSIDMatch
 
 - **Type:** `[string]`
@@ -58,12 +68,16 @@ An interface type. If specified, this rule matches only if the primary network i
 
 An array of SSIDs to match against the current network. If the network isn’t a Wi-Fi network or if the SSID doesn’t appear in this array, the match fails. Omit this key and the corresponding array to match against any SSID.
 
+Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+
 ### URLStringProbe
 
 - **Type:** `string`
 - **Required:** No
 
 A URL to probe. This rule matches if this URL is successfully fetched and returns a 200 HTTP status code without redirection.
+
+Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
 
 ## Topics
 

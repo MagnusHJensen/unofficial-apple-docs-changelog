@@ -22,7 +22,7 @@ Available: macOS 11+
 - **Type:** `string`
 - **Required:** No
 
-The key to skip the Accessibility Appearance configuration pane.
+The key to skip the Accessibility Appearance configuration pane. This pane isn’t always skippable because it appears before the device retrieves the Cloud Configuration from the server.
 
 Available: iOS 17+ | iPadOS 17+
 
@@ -88,6 +88,15 @@ Available: iOS 8.1+ | iPadOS 8.1+ | macOS 10.12.4+ | visionOS 26+
 The key to skip the Camera Button pane.
 
 Available: iOS 18+ | iPadOS 18+
+
+### DeviceFeaturesTour
+
+- **Type:** `string`
+- **Required:** No
+
+The key to skip the Device Features Tour pane.
+
+Available: iOS 27+ | iPadOS 27+
 
 ### DeviceToDeviceMigration
 
@@ -241,9 +250,10 @@ Deprecated: iOS 14+ | iPadOS 14+
 - **Type:** `string`
 - **Required:** No
 
-The key to skip the OS Showcase pane.
 
-Available: iOS 26+ | iPadOS 26+ | macOS 26.1+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+
 
 ### Passcode
 
@@ -369,7 +379,7 @@ Available: iOS 13+ | iPadOS 13+
 
 The key to skip the Tap To Set Up option in Apple TV related to using an iOS device to set up your Apple TV.
 
-Available: iOS 18+ | iPadOS 18+ | tvOS 10.2+
+Available: tvOS 10.2+
 
 ### TermsOfAddress
 
@@ -443,6 +453,16 @@ The key to skip the Software Update Complete pane.
 
 Available: iOS 14+ | iPadOS 14+ | macOS 26.1+
 
+### Wallpaper
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+
+Removed: macOS 26+
+
 ### WatchMigration
 
 - **Type:** `string`
@@ -451,6 +471,16 @@ Available: iOS 14+ | iPadOS 14+ | macOS 26.1+
 The key to skip the screen for watch migration.
 
 Available: iOS 11+ | iPadOS 11+
+
+### WebContentFiltering
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+
+Removed: iOS 26.1+ | iPadOS 26.1+
 
 ### Welcome
 

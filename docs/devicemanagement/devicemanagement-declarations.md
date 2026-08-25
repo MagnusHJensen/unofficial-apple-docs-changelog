@@ -6,6 +6,7 @@ Configure devices using declarative device management.
 
 ### Configurations
 
+- [AccessibilitySettings](/documentation/devicemanagement/accessibilitysettings) - The declaration to configure accessibility settings.
 - [AccountCalDAV](/documentation/devicemanagement/accountcaldav) - The declaration to configure a Calendar account.
 - [AccountCardDAV](/documentation/devicemanagement/accountcarddav) - The declaration to configure a Contacts account.
 - [AccountExchange](/documentation/devicemanagement/accountexchange) - The declaration to configure an Exchange account.
@@ -61,7 +62,7 @@ Configure devices using declarative device management.
 ### Assets
 
 - [AssetCredentialACME](/documentation/devicemanagement/assetcredentialacme) - A reference to an ACME identity.
-- [AssetCredentialCertificate](/documentation/devicemanagement/assetcredentialcertificate) - A reference to a PKCS #1 or PEM encoded certificate.
+- [AssetCredentialCertificate](/documentation/devicemanagement/assetcredentialcertificate) - A reference to one PKCS #1 or PEM encoded certificate.
 - [AssetCredentialIdentity](/documentation/devicemanagement/assetcredentialidentity) - A reference to a PKCS #12 password-protected identity.
 - [AssetCredentialSCEP](/documentation/devicemanagement/assetcredentialscep) - A reference to a SCEP identity.
 - [AssetCredentialUserNameAndPassword](/documentation/devicemanagement/assetcredentialusernameandpassword) - A reference to data that describes a credential that represents a user name and password.

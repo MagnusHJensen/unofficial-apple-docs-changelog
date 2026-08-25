@@ -28,7 +28,7 @@ The current state of the subscription.
 
 ### periodEndDate
 
-- **Type:** `string`
+- **Type:** `date`
 - **Required:** No
 
 The end date of the current billing period in ISO-8601 calendar date format (`YYYY-MM-DD`).

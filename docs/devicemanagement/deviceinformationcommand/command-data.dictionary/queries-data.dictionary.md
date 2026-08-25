@@ -85,6 +85,17 @@ Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | tvOS 9+ | visionOS 1.1+
 
 The key to get the operating system version. Requires the Device Information access right.
 
+### CarrierSettingsVersion
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+
+
+Removed: iOS 26+ | iPadOS 26+
+
 ### CellularTechnology
 
 - **Type:** `string`
@@ -93,6 +104,39 @@ The key to get the operating system version. Requires the Device Information acc
 The key to get the cellular technology type. Requires the Device Information access right.
 
 Available: iOS 4.2.6+ | iPadOS 4.2.6+
+
+### CurrentCarrierNetwork
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+
+
+Removed: iOS 26+ | iPadOS 26+
+
+### CurrentMCC
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+
+
+Removed: iOS 26+ | iPadOS 26+
+
+### CurrentMNC
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+
+
+Removed: iOS 26+ | iPadOS 26+
 
 ### DataRoamingEnabled
 
@@ -200,6 +244,28 @@ The key to get the hostname.
 
 Available: macOS 10.11+
 
+### ICCID
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+
+
+Removed: iOS 26+ | iPadOS 26+
+
+### IMEI
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+
+
+Removed: iOS 26+ | iPadOS 26+
+
 ### IsActivationLockEnabled
 
 - **Type:** `string`
@@ -282,6 +348,17 @@ The key to determine whether the device is network-tethered. Requires the Networ
 
 Available: iOS 10.3+ | iPadOS 10.3+
 
+### IsRoaming
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+
+
+Removed: iOS 26+ | iPadOS 26+
+
 ### IsSupervised
 
 - **Type:** `string`
@@ -354,6 +431,17 @@ The key to get the contents of [SettingsCommand.Command.Settings.MDMOptions.MDMO
 
 Available: iOS 7+ | iPadOS 7+ | macOS 11+ | tvOS 9+ | visionOS 1.1+ | watchOS 10+
 
+### MEID
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+
+
+Removed: iOS 26+ | iPadOS 26+
+
 ### Model
 
 - **Type:** `string`
@@ -406,6 +494,17 @@ The key to get the contents of [SettingsCommand.Command.Settings.OrganizationInf
 
 Available: iOS 7+ | iPadOS 7+ | macOS 10.11+ | tvOS 9+ | visionOS 1.1+ | watchOS 10+
 
+### OSUpdateSettings
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+
+
+Removed: macOS 27+
+
 ### OSVersion
 
 - **Type:** `string`
@@ -421,6 +520,17 @@ The key to get the operating system version. Requires the Device Information acc
 The key to determine whether the system enabled Personal Hotspot on the device, which isn’t available for all carriers. Requires the Network Information access right.
 
 Available: iOS 7+ | iPadOS 7+
+
+### PhoneNumber
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+
+
+Removed: iOS 26+ | iPadOS 26+
 
 ### PINRequiredForDeviceLock
 
@@ -499,6 +609,16 @@ The key to get the contents of [DeviceInformationResponse.QueryResponses.Service
 
 Available: iOS 12+ | iPadOS 12+
 
+### SIMCarrierNetwork
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+
+Removed: iOS 5+ | iPadOS 5+
+
 ### SkipLanguageAndLocaleSetupForNewUsers
 
 - **Type:** `string`
@@ -507,6 +627,65 @@ Available: iOS 12+ | iPadOS 12+
 The key to determine whether the system skips the language and country/region panes for new users on Shared iPad.
 
 Available: iOS 16.2+ | iPadOS 16.2+
+
+### SoftwareUpdateDeviceID
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+Removed: subscribe to the declarative management `softwareupdate.device-id` status item.
+
+
+
+Removed: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+
+### SoftwareUpdateSettings
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+Removed: use the declarative management `com.apple.configuration.softwareupdate.settings` configuration to set values.
+
+
+
+Removed: iOS 27+ | iPadOS 27+
+
+### SubscriberCarrierNetwork
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+
+
+Removed: iOS 26+ | iPadOS 26+
+
+### SubscriberMCC
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+
+
+Removed: iOS 26+ | iPadOS 26+
+
+### SubscriberMNC
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+
+
+Removed: iOS 26+ | iPadOS 26+
 
 ### SupplementalBuildVersion
 
@@ -595,6 +774,17 @@ The key to get the unique identifier of the device.
 The key to get the timeout interval for the user session.
 
 Available: iOS 14.5+ | iPadOS 14.5+
+
+### VoiceRoamingEnabled
+
+- **Type:** `string`
+- **Required:** No
+
+
+
+
+
+Removed: iOS 26+ | iPadOS 26+
 
 ### WiFiMAC
 
