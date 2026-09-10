@@ -4,7 +4,7 @@ Manage software updates, migrate managed devices, and return them into service.
 
 ## Topics
 
-### Configuration profiles
+### Configuration
 
 - [Configuring multiple devices using profiles](/documentation/devicemanagement/configuring-multiple-devices-using-profiles) - Create and deploy configuration profiles to managed devices.
 
@@ -16,7 +16,7 @@ Manage software updates, migrate managed devices, and return them into service.
 
 ### Return to Service
 
-- [Returning a managed device to service](/documentation/devicemanagement/returning-a-managed-device-to-service) - Use a device management service to return managed devices to service quickly after use.
+- [Returning a managed device to service](/documentation/devicemanagement/returning-a-managed-device-to-service) - Use a device management service to reset and reenroll devices quickly after use.
 
 ### Device management migration
 

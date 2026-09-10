@@ -2,7 +2,7 @@
 
 The declaration to configure Siri settings.
 
-**Platforms:** iOS 26.4, iPadOS 26.4, Mac Catalyst 26.4, macOS 26.4, tvOS 27.0 (Beta), visionOS 26.4, watchOS 26.4
+**Platforms:** iOS 26.4, iPadOS 26.4, Mac Catalyst 26.4, macOS 26.4, tvOS 27.0, visionOS 26.4, watchOS 26.4
 
 ## Properties
 

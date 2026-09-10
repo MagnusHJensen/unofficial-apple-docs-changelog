@@ -2,7 +2,7 @@
 
 A dictionary that describes how to uninstall the package.
 
-**Platforms:** macOS 27.0 (Beta)
+**Platforms:** macOS 27.0
 
 ## Properties
 

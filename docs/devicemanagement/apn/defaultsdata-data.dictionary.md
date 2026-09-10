@@ -11,7 +11,7 @@ An array of access point name dictionaries.
 - **Type:** `[APN.DefaultsData.ApnsItem]`
 - **Required:** Yes
 
-An array of APN dictionaries (`APN.DefaultsData.Apns`).
+An array of APN dictionaries.
 
 Deprecated: iOS 7+ | iPadOS 7+
 

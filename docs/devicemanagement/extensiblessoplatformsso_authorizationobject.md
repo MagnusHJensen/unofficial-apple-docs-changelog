@@ -2,7 +2,7 @@
 
 Settings for authorization prompts and group management.
 
-**Platforms:** macOS 27.0 (Beta)
+**Platforms:** macOS 27.0
 
 ## Properties
 

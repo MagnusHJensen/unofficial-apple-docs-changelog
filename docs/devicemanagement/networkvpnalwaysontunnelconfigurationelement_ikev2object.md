@@ -2,7 +2,7 @@
 
 The IKEv2 configuration for this tunnel.
 
-**Platforms:** iOS 27.0 (Beta), iPadOS 27.0 (Beta), Mac Catalyst 27.0 (Beta), visionOS 27.0 (Beta)
+**Platforms:** iOS 27.0, iPadOS 27.0, Mac Catalyst 27.0, visionOS 27.0
 
 ## Properties
 
@@ -43,16 +43,6 @@ If `true`, the system disables IKEv2 redirect. If not set, the system redirects 
 - **Default:** `false`
 
 If `true`, the system performs a certificate revocation check for IKEv2 connections. This is a best-effort revocation check and server response timeouts won’t cause it to fail.
-
-### EnableFallback
-
-- **Type:** `boolean`
-- **Required:** No
-- **Default:** `false`
-
-If `true`, the system enables a tunnel over cellular data to carry traffic that’s eligible for Wi-Fi Assist and also requires VPN.
-
-Enabling fallback requires that the server support multiple tunnels for a single user.
 
 ### EnableNATKeepAliveOffload
 
@@ -124,26 +114,12 @@ The Maximum Transmission Unit (MTU) specifies the maximum size in bytes of each 
 
 The NAT Keepalive interval for Always On VPN IKEv2 connections. This value controls the interval that the device sends keepalive offload packets. The minimum value is 20 seconds. If no key is specified, the default is 20 seconds over Wi-Fi and 110 seconds over a cellular interface.
 
-### OnDemand
-
-- **Type:** `NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_OnDemandObject`
-- **Required:** No
-
-Specifies details about how the system controls on-demand VPN.
-
 ### PostQuantumKeyExchange
 
 - **Type:** `NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_PostQuantumKeyExchangeObject`
 - **Required:** No
 
 Post Quantum Key Exchange settings.
-
-### Provider
-
-- **Type:** `NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_ProviderObject`
-- **Required:** No
-
-Specifies details about the provider.
 
 ### RemoteIdentifier
 
@@ -167,7 +143,5 @@ If `true`, negotiations should use IKEv2 Configuration Attribute `INTERNAL_IP4_S
 - [NetworkVPNAlwaysOnSecurityAssociationParametersObject](/documentation/devicemanagement/networkvpnalwaysonsecurityassociationparametersobject) - These parameters apply to Child Security Association unless `ChildSecurityAssociationParameters` is specified.
 - [NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_AuthenticationObject](/documentation/devicemanagement/networkvpnalwaysontunnelconfigurationelement_ikev2_authenticationobject) - Settings that control authentication.
 - [NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_IdleObject](/documentation/devicemanagement/networkvpnalwaysontunnelconfigurationelement_ikev2_idleobject) - Specifies details about how the system handles idle VPN connections.
-- [NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_OnDemandObject](/documentation/devicemanagement/networkvpnalwaysontunnelconfigurationelement_ikev2_ondemandobject) - Specifies details about how the system controls on-demand VPN.
 - [NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_PostQuantumKeyExchangeObject](/documentation/devicemanagement/networkvpnalwaysontunnelconfigurationelement_ikev2_postquantumkeyexchangeobject) - Post Quantum Key Exchange settings.
-- [NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_ProviderObject](/documentation/devicemanagement/networkvpnalwaysontunnelconfigurationelement_ikev2_providerobject) - Specifies details about the provider.
 

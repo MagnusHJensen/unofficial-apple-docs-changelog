@@ -2,7 +2,7 @@
 
 The pairing of Authorization Rights to group names. When using this, the system updates the Authorization Right to use the group.
 
-**Platforms:** macOS 27.0 (Beta)
+**Platforms:** macOS 27.0
 
 ## Properties
 

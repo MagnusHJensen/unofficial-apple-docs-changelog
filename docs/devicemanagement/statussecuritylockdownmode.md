@@ -2,7 +2,7 @@
 
 The status item that reports the device’s Lockdown Mode state.
 
-**Platforms:** iOS 27.0 (Beta), iPadOS 27.0 (Beta), Mac Catalyst 27.0 (Beta), macOS 27.0 (Beta), watchOS 27.0 (Beta)
+**Platforms:** iOS 27.0, iPadOS 27.0, Mac Catalyst 27.0, macOS 27.0, watchOS 27.0
 
 ## Properties
 

@@ -2,7 +2,7 @@
 
 Settings for Access Key authentication.
 
-**Platforms:** macOS 27.0 (Beta)
+**Platforms:** macOS 27.0
 
 ## Properties
 

@@ -2,7 +2,7 @@
 
 If present, configures vision accessibility settings.
 
-**Platforms:** iOS 27.0 (Beta), iPadOS 27.0 (Beta), Mac Catalyst 27.0 (Beta), macOS 27.0 (Beta), visionOS 27.0 (Beta)
+**Platforms:** iOS 27.0, iPadOS 27.0, Mac Catalyst 27.0, macOS 27.0, visionOS 27.0
 
 ## Properties
 
@@ -12,5 +12,5 @@ If present, configures vision accessibility settings.
 - **Required:** No
 - **Default:** `true`
 
-If `false`, disables the Live Recognition accessibility feature.
+If `false`, disables the Accessibility Live Recognition Ask about Images and Surroundings features.
 

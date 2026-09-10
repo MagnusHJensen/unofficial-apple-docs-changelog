@@ -22,5 +22,6 @@ GET https://api.ent.apple.com/v1/catalog/us/stoken-authenticated-apps?ids=200135
 
 ### Handling the response
 
+- [StorefrontsResponse](/documentation/devicemanagement/storefrontsresponse) - The response to a storefront request.
 - [Storefronts](/documentation/devicemanagement/storefronts) - A resource object that represents a region that the content is available in, and supported languages for that region.
 

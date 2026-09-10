@@ -2,7 +2,7 @@
 
 A dictionary that contains info about the usage of the Content Cache on the device
 
-**Platforms:** macOS 27.0 (Beta)
+**Platforms:** macOS 27.0
 
 ## Properties
 

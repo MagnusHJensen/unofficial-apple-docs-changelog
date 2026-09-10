@@ -2,7 +2,7 @@
 
 Dictionary containing one or more identifier fields to match a binary.
 
-**Platforms:** macOS 27.0 (Beta)
+**Platforms:** macOS 27.0
 
 ## Properties
 

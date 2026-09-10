@@ -2,7 +2,7 @@
 
 A dictionary of extension config data and credentials.
 
-**Platforms:** iOS 18.4, iPadOS 18.4, Mac Catalyst 18.4, macOS 27.0 (Beta), visionOS 2.4
+**Platforms:** iOS 18.4, iPadOS 18.4, Mac Catalyst 18.4, macOS 27.0, visionOS 2.4
 
 ## Properties
 

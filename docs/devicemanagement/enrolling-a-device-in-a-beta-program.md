@@ -12,7 +12,7 @@ Follow these steps to retrieve beta tokens from the AppleSeed for IT program usi
 
 1. An administrator in Apple School Manager or Apple Business enrolls in the [AppleSeed for IT](https://beta.apple.com/for-it) program.
 2. The AppleSeed for IT service creates organization-specific beta program enrollment tokens.
-3. A device management service requests available beta program tokens using the `https://mdmenrollment.apple.com/os-beta-enrollment/tokens` endpoint. 
+3. A device management service requests available beta program tokens using the [Get Beta Enrollment Tokens](/documentation/devicemanagement/get-beta-enrollment-tokens) endpoint. 
 
 Similar to other service endpoints available at `mdmenrollment.apple.com`, device management services authenticate using OAuth.
 

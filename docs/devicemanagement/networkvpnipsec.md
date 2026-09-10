@@ -2,7 +2,7 @@
 
 The declaration to configure a VPN using the IPSec sub-type.
 
-**Platforms:** iOS 27.0 (Beta), iPadOS 27.0 (Beta), Mac Catalyst 27.0 (Beta), macOS 27.0 (Beta), visionOS 27.0 (Beta)
+**Platforms:** iOS 27.0, iPadOS 27.0, Mac Catalyst 27.0, macOS 27.0, visionOS 27.0
 
 ## Properties
 
@@ -40,14 +40,6 @@ Specifies details about how the system handles idle VPN connections.
 - **Required:** No
 
 Specifies details about how the system controls on-demand VPN.
-
-### OverridePrimary
-
-- **Type:** `boolean`
-- **Required:** No
-- **Default:** `false`
-
-If `true`, the system sends all network traffic over VPN.
 
 ### Proxies
 

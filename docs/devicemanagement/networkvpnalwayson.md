@@ -2,7 +2,7 @@
 
 The declaration to configure a VPN using the Always On sub-type.
 
-**Platforms:** iOS 27.0 (Beta), iPadOS 27.0 (Beta), Mac Catalyst 27.0 (Beta), visionOS 27.0 (Beta)
+**Platforms:** iOS 27.0, iPadOS 27.0, Mac Catalyst 27.0, visionOS 27.0
 
 ## Properties
 
@@ -35,20 +35,6 @@ The array of captive networking apps whose traffic is allowed outside the VPN tu
 - **Required:** No
 
 An array that contains an arbitrary number of apps whose connections occur outside the VPN.
-
-### DNS
-
-- **Type:** `NetworkVPNAlwaysOnDNSObject`
-- **Required:** No
-
-A dictionary to use for all VPN types.
-
-### Proxies
-
-- **Type:** `NetworkVPNAlwaysOnProxiesObject`
-- **Required:** No
-
-The dictionary to use to configure `Proxies` for use with `VPN`.
 
 ### ServiceExceptions
 
@@ -125,8 +111,6 @@ This configuration sets up an always-on IKEv2 VPN for both Cellular and Wi-Fi in
 
 - [NetworkVPNAlwaysOnAllowedCaptiveNetworkPluginElementObject](/documentation/devicemanagement/networkvpnalwaysonallowedcaptivenetworkpluginelementobject) - The array of captive networking apps whose traffic is allowed outside the VPN tunnel, to perform captive network handling. Used only when `AllowAllCaptiveNetworkPlugins` is `false`.
 - [NetworkVPNAlwaysOnApplicationExceptionElementObject](/documentation/devicemanagement/networkvpnalwaysonapplicationexceptionelementobject) - An array that contains an arbitrary number of apps whose connections occur outside the VPN.
-- [NetworkVPNAlwaysOnDNSObject](/documentation/devicemanagement/networkvpnalwaysondnsobject) - A dictionary to use for all VPN types.
-- [NetworkVPNAlwaysOnProxiesObject](/documentation/devicemanagement/networkvpnalwaysonproxiesobject) - The dictionary to use to configure `Proxies` for use with `VPN`.
 - [NetworkVPNAlwaysOnServiceExceptionElementObject](/documentation/devicemanagement/networkvpnalwaysonserviceexceptionelementobject) - An array that contains an arbitrary number of service exceptions.
 - [NetworkVPNAlwaysOnTunnelConfigurationElementObject](/documentation/devicemanagement/networkvpnalwaysontunnelconfigurationelementobject) - An array that contains an arbitrary number of tunnel configurations.
 

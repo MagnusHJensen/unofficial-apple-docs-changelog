@@ -2,7 +2,7 @@
 
 Settings for web authentication behavior.
 
-**Platforms:** macOS 27.0 (Beta)
+**Platforms:** macOS 27.0
 
 ## Properties
 

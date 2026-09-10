@@ -2,7 +2,7 @@
 
 The declaration to configure a VPN using the IKEv2 sub-type.
 
-**Platforms:** iOS 27.0 (Beta), iPadOS 27.0 (Beta), Mac Catalyst 27.0 (Beta), macOS 27.0 (Beta), tvOS 27.0 (Beta), visionOS 27.0 (Beta)
+**Platforms:** iOS 27.0, iPadOS 27.0, Mac Catalyst 27.0, macOS 27.0, tvOS 27.0, visionOS 27.0
 
 ## Properties
 
@@ -63,16 +63,6 @@ Enabling fallback requires that the server support multiple tunnels for a single
 
 Available: iOS 27+ | iPadOS 27+ | tvOS 27+ | visionOS 27+
 
-### EnableNATKeepAliveOffload
-
-- **Type:** `boolean`
-- **Required:** No
-- **Default:** `true`
-
-If `true`, enables NAT keepalive offload for Always On VPN IKEv2 connections. The device sends keepalive packets to maintain NAT mappings for IKEv2 connections that have a NAT on the path. It sends keepalive packets at regular intervals when the device is awake. If `NATKeepAliveOffloadEnable` is `true`, the system offloads keepalive packets to hardware while the device is asleep.
-
-NAT keepalive offload has an impact on the battery life due to the extra workload during sleep. The default interval for the keepalive offload packets is 20 seconds over Wi-Fi and 110 seconds over Cellular interface. The default NAT keepalive works well on networks with small NAT mapping timeouts but imposes a potential battery impact. If a network has larger NAT mapping timeouts, larger keepalive intervals may be safely used to minimize battery impact. Modify the keepalive interval through the `NATKeepAliveInterval` key.
-
 ### EnablePFS
 
 - **Type:** `boolean`
@@ -125,14 +115,6 @@ Identifier of the IKEv2 client.
 
 The Maximum Transmission Unit (MTU) specifies the maximum size in bytes of each packet that the system sends over the IKEv2 VPN interface.
 
-### NATKeepAliveInterval
-
-- **Type:** `integer`
-- **Required:** No
-- **Default:** `20`
-
-The NAT Keepalive interval for Always On VPN IKEv2 connections. This value controls the interval that the device sends keepalive offload packets. The minimum value is 20 seconds. If no key is specified, the default is 20 seconds over Wi-Fi and 110 seconds over a cellular interface.
-
 ### NetworkRouting
 
 - **Type:** `NetworkVPNIKEV2NetworkRoutingObject`
@@ -155,13 +137,6 @@ Specifies details about how the system controls on-demand VPN.
 - **Required:** No
 
 Post Quantum Key Exchange settings.
-
-### Provider
-
-- **Type:** `NetworkVPNIKEV2ProviderObject`
-- **Required:** No
-
-Specifies details about the provider.
 
 ### Proxies
 
@@ -210,7 +185,6 @@ Specify `com.apple.configuration.network.vpn.ikev2` as the declaration type.
 - [NetworkVPNIKEV2NetworkRoutingObject](/documentation/devicemanagement/networkvpnikev2networkroutingobject) - Specifies details about how the VPN routes different types of network traffic.
 - [NetworkVPNIKEV2OnDemandObject](/documentation/devicemanagement/networkvpnikev2ondemandobject) - Specifies details about how the system controls on-demand VPN.
 - [NetworkVPNIKEV2PostQuantumKeyExchangeObject](/documentation/devicemanagement/networkvpnikev2postquantumkeyexchangeobject) - Post Quantum Key Exchange settings.
-- [NetworkVPNIKEV2ProviderObject](/documentation/devicemanagement/networkvpnikev2providerobject) - Specifies details about the provider.
 - [NetworkVPNIKEV2ProxiesObject](/documentation/devicemanagement/networkvpnikev2proxiesobject) - The dictionary to use to configure `Proxies` for use with `VPN`.
 - [NetworkVPNIKEV2SecurityAssociationParametersObject](/documentation/devicemanagement/networkvpnikev2securityassociationparametersobject) - These parameters apply to Child Security Association unless `ChildSecurityAssociationParameters` is specified.
 

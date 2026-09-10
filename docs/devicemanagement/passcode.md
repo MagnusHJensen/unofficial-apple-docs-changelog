@@ -14,6 +14,8 @@ The payload that configures a passcode policy.
 
 If `false`, the system prevents use of a simple passcode. A simple passcode contains repeated characters, or increasing or decreasing characters, such as `123` or `CBA`.
 
+Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+ | watchOS 27+
+
 ### changeAtNextAuth
 
 - **Type:** `boolean`
@@ -23,6 +25,7 @@ If `false`, the system prevents use of a simple passcode. A simple passcode cont
 If `true`, the system causes a password reset to occur the next time the user tries to authenticate. If this key is set in a device profile, the setting takes effect for all users, and admin authentications may fail until the admin user password is also reset.
 
 Available: macOS 10.13+
+Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+ | watchOS 27+
 
 ### customRegex
 
@@ -32,6 +35,7 @@ Available: macOS 10.13+
 Specifies a regular expression, and its description, used to enforce password compliance. Use the simpler passcode restrictions whenever possible, and rely on regular expression matching only when necessary. Mistakes in regular expressions can lead to frustrating user experiences, such as unsatisfiable passcode policies, or policy descriptions that don’t match the enforced policy.
 
 Available: macOS 14+
+Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+ | watchOS 27+
 
 ### forcePIN
 
@@ -40,6 +44,8 @@ Available: macOS 14+
 - **Default:** `false`
 
 If `true`, the system forces the user to enter a PIN.
+
+Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+ | watchOS 27+
 
 ### maxFailedAttempts
 
@@ -51,6 +57,8 @@ The number of failed passcode attempts that the system allows the user before it
 
 After the final failed attempt, the system locks a macOS device, or securely erases all data and settings from an iOS, visionOS, or watchOS device.
 
+Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+ | watchOS 27+
+
 ### maxGracePeriod
 
 - **Type:** `integer`
@@ -58,6 +66,8 @@ After the final failed attempt, the system locks a macOS device, or securely era
 - **Default:** `0`
 
 The maximum grace period, in minutes, to unlock the phone without entering a passcode. The default is `0`, which is no grace period and requires a passcode immediately. On macOS, the system translates this grace period value to screen-saver settings.
+
+Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+ | watchOS 27+
 
 ### maxInactivity
 
@@ -70,12 +80,16 @@ On macOS, the system translates this inactivity value to screen-saver settings. 
 
 Setting this key removes the `never` option in the Settings UI on user enrolled devices.
 
+Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+ | watchOS 27+
+
 ### maxPINAgeInDays
 
 - **Type:** `integer`
 - **Required:** No
 
 The number of days for which the passcode can remain unchanged. After this number of days, the system forces the user to change the passcode before it unlocks the device.
+
+Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+ | watchOS 27+
 
 ### minComplexChars
 
@@ -88,6 +102,7 @@ The minimum number of complex characters that a passcode needs to contain. A ** 
 The system ignores this property for user enrollments.
 
 Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | visionOS 2+
+Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+ | watchOS 27+
 
 ### minLength
 
@@ -97,6 +112,8 @@ Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | visionOS 2+
 
 The minimum overall length of the passcode. This value is independent of the value for `minComplexChars`.
 
+Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+ | watchOS 27+
+
 ### minutesUntilFailedLoginReset
 
 - **Type:** `integer`
@@ -105,6 +122,7 @@ The minimum overall length of the passcode. This value is independent of the val
 The number of minutes before the system resets the login after the maximum number of unsuccessful login attempts is reached. This key requires setting `maxFailedAttempts`.
 
 Available: macOS 10.10+
+Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+ | watchOS 27+
 
 ### pinHistory
 
@@ -112,6 +130,8 @@ Available: macOS 10.10+
 - **Required:** No
 
 This value defines **, where the new passcode must be unique within the last ** entries in the passcode history.
+
+Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+ | watchOS 27+
 
 ### requireAlphanumeric
 
@@ -122,6 +142,7 @@ This value defines **, where the new passcode must be unique within the last ** 
 If `true`, the system requires alphabetic characters instead of only numeric characters.
 
 Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | visionOS 2+
+Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+ | watchOS 27+
 
 ## Discussion
 

@@ -13,3 +13,5 @@ Descriptions of the policy, localized to supported locales.
 
 A localized description.
 
+Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+ | watchOS 27+
+

@@ -55,5 +55,4 @@ Device management works with Managed App Distribution and Managed App Configurat
 ### Dictionaries
 
 - [InApps](/documentation/devicemanagement/inapps)
-- [StorefrontsResponse](/documentation/devicemanagement/storefrontsresponse) - The response to a storefront request.
 

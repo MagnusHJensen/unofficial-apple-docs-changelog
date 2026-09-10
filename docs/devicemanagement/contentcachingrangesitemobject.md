@@ -2,7 +2,7 @@
 
 A range of IP addresses to cache.
 
-**Platforms:** macOS 27.0 (Beta)
+**Platforms:** macOS 27.0
 
 ## Properties
 

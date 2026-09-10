@@ -2,7 +2,7 @@
 
 The dictionary to configure Platform SSO.
 
-**Platforms:** macOS 27.0 (Beta)
+**Platforms:** macOS 27.0
 
 ## Properties
 

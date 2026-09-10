@@ -2,7 +2,7 @@
 
 The declaration to configure the Content Caching service.
 
-**Platforms:** macOS 27.0 (Beta)
+**Platforms:** macOS 27.0
 
 ## Properties
 

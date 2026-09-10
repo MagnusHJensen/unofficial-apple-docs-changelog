@@ -2,7 +2,7 @@
 
 The basic set of AssetCache status items
 
-**Platforms:** macOS 27.0 (Beta)
+**Platforms:** macOS 27.0
 
 ## Properties
 

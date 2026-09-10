@@ -2,7 +2,7 @@
 
 Settings that control the packet filter. If not present, the system doesn’t use packet filtering.
 
-**Platforms:** macOS 27.0 (Beta)
+**Platforms:** macOS 27.0
 
 ## Properties
 

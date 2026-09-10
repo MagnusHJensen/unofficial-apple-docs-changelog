@@ -2,7 +2,7 @@
 
 Policies for login, unlock, and FileVault behavior.
 
-**Platforms:** macOS 27.0 (Beta)
+**Platforms:** macOS 27.0
 
 ## Properties
 

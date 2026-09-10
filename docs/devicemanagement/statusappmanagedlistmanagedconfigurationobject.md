@@ -2,7 +2,7 @@
 
 The status of app or extension managed configurations. This key is only present when managed configurations are available for the managed app or any of its extensions.
 
-**Platforms:** iOS 18.4, iPadOS 18.4, Mac Catalyst 18.4, macOS 27.0 (Beta), visionOS 2.4
+**Platforms:** iOS 18.4, iPadOS 18.4, Mac Catalyst 18.4, macOS 27.0, visionOS 2.4
 
 ## Properties
 

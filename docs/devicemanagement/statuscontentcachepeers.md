@@ -2,7 +2,7 @@
 
 The status item that reports information about the Content Cache service peer caches.
 
-**Platforms:** macOS 27.0 (Beta)
+**Platforms:** macOS 27.0
 
 ## Properties
 

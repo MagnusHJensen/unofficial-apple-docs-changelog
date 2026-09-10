@@ -12,12 +12,22 @@ In macOS, device management services can install, update, and remove packages us
 
 ## Topics
 
-### Supporting managed apps
+### Install managed apps
 
 - [Installing, managing, updating, and removing apps](/documentation/devicemanagement/installing-managing-updating-and-removing-apps) - Use declarative management to handle all aspects of managing apps on devices.
 - [Displaying managed apps and packages](/documentation/devicemanagement/displaying-managed-apps-and-packages) - Use a management app to display managed apps and packages to the user.
-- [Configuring managed apps and extensions](/documentation/devicemanagement/configuring-managed-apps-and-extensions) - Provide managed apps and extensions with app configuration and secrets.
-- [Transferring management of apps to declarative management](/documentation/devicemanagement/transferring-management-of-apps-to-declarative-management) - Transition apps to declarative management.
-- [Processing status for managed apps](/documentation/devicemanagement/processing-status-for-managed-apps) - Process the status that declarative management reports for managed apps.
 - [Installing packages](/documentation/devicemanagement/installing-packages) - Use declarative package management to install and remove packages in macOS.
+
+### Configure managed apps
+
+- [Configuring managed apps and extensions](/documentation/devicemanagement/configuring-managed-apps-and-extensions) - Provide managed apps and extensions with app configuration and secrets.
+- [Allowing and denying apps and binaries](/documentation/devicemanagement/allowing-and-denying-apps-and-binaries) - Control what apps and binaries can run on supervised Apple devices.
+
+### Monitor managed apps
+
+- [Processing status for managed apps](/documentation/devicemanagement/processing-status-for-managed-apps) - Process the status that declarative management reports for managed apps.
+
+### Migrate to declarative app management
+
+- [Transferring management of apps to declarative management](/documentation/devicemanagement/transferring-management-of-apps-to-declarative-management) - Transition apps to declarative management.
 

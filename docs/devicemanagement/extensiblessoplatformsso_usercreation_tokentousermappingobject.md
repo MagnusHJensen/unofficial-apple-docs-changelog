@@ -2,7 +2,7 @@
 
 The attribute mapping to use when creating users, or for authorization.
 
-**Platforms:** macOS 27.0 (Beta)
+**Platforms:** macOS 27.0
 
 ## Properties
 
