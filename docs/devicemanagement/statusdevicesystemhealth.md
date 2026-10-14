@@ -16,6 +16,7 @@ A dictionary where each key represents a hardware component name and each value 
 - `ok`: The component is operating normally.
 - `error`: The component has a detected error or failure.
 - `non-genuine`: The component isn’t a genuine Apple component.
+- `pending-repair`: The component is a genuine Apple component that requires a restart to finish its repair.
 
 Not all keys are supported on each device. The dictionary includes only components that are present and reportable on the device.
 

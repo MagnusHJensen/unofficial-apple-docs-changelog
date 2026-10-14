@@ -18,7 +18,7 @@ The identifier of an asset declaration that contains the credentials (password) 
 - **Type:** `NetworkVPNIKEV2Authentication_ExtendedAuthObject`
 - **Required:** No
 
-Specifies details about how the VPN routes different types of network traffic.
+Specifies details about extended authentication (EAP).
 
 ### IdentityAssetReference
 
@@ -50,5 +50,5 @@ To enable EAP-only authentication, set this to `None` and `ExtendedAuthEnabled` 
 
 ### Objects
 
-- [NetworkVPNIKEV2Authentication_ExtendedAuthObject](/documentation/devicemanagement/networkvpnikev2authentication_extendedauthobject) - Specifies details about how the VPN routes different types of network traffic.
+- [NetworkVPNIKEV2Authentication_ExtendedAuthObject](/documentation/devicemanagement/networkvpnikev2authentication_extendedauthobject) - Specifies details about extended authentication (EAP).
 

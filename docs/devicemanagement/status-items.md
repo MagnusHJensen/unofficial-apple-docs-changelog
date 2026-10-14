@@ -54,6 +54,7 @@ Monitor device state using status reports.
 
 - [StatusEnhancedLoggingStatus](/documentation/devicemanagement/statusenhancedloggingstatus) - The status item that reports the device’s enhanced log collection session status.
 - [StatusEnhancedLoggingAppleCareToken](/documentation/devicemanagement/statusenhancedloggingapplecaretoken) - The status item that reports the device’s enhanced log collection session AppleCare token.
+- [StatusEnhancedLoggingNonInteractiveEligibility](/documentation/devicemanagement/statusenhancedloggingnoninteractiveeligibility) - The status item that reports whether the device is eligible to run a non-interactive enhanced log collection session.
 - [StatusEnhancedLoggingTimestamp](/documentation/devicemanagement/statusenhancedloggingtimestamp) - The status item that reports the device’s enhanced log collection session timestamp.
 
 ### Management items

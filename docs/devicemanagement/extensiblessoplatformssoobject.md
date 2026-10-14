@@ -20,6 +20,15 @@ Settings for Access Key authentication.
 
 Account display and profile settings.
 
+### AdditionalHTTPHeaders
+
+- **Type:** `ExtensibleSSOPlatformSSO_AdditionalHTTPHeadersObject`
+- **Required:** No
+
+A dictionary with keys and values that are strings. The keys are HTTP header names, and the values are HTTP header values. The device adds these headers to nonce, pre-authentication, login, key and key exchange requests for Platform SSO. The device limits the number of headers to 20, the length of the header name to 128 characters, and the length of the header value to 2048 characters.
+
+Available: macOS 27.2+
+
 ### AllowDeviceIdentifiersInAttestation
 
 - **Type:** `boolean`
@@ -95,6 +104,7 @@ Settings for web authentication behavior.
 
 - [ExtensibleSSOPlatformSSO_AccessKeyObject](/documentation/devicemanagement/extensiblessoplatformsso_accesskeyobject) - Settings for Access Key authentication.
 - [ExtensibleSSOPlatformSSO_AccountObject](/documentation/devicemanagement/extensiblessoplatformsso_accountobject) - Account display and profile settings.
+- [ExtensibleSSOPlatformSSO_AdditionalHTTPHeadersObject](/documentation/devicemanagement/extensiblessoplatformsso_additionalhttpheadersobject) - A dictionary with keys and values that are strings. The keys are HTTP header names, and the values are HTTP header values. The device adds these headers to nonce, pre-authentication, login, key and key exchange requests for Platform SSO. The device limits the number of headers to 20, the length of the header name to 128 characters, and the length of the header value to 2048 characters.
 - [ExtensibleSSOPlatformSSO_AuthorizationObject](/documentation/devicemanagement/extensiblessoplatformsso_authorizationobject) - Settings for authorization prompts and group management.
 - [ExtensibleSSOPlatformSSO_PoliciesObject](/documentation/devicemanagement/extensiblessoplatformsso_policiesobject) - Policies for login, unlock, and FileVault behavior.
 - [ExtensibleSSOPlatformSSO_UserCreationObject](/documentation/devicemanagement/extensiblessoplatformsso_usercreationobject) - Settings for creating new users via Platform SSO.

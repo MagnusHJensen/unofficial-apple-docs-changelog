@@ -21,36 +21,39 @@ The baseband health status, which has the following values:
 
 - **Type:** `string`
 - **Required:** No
-- **Allowed Values:** `ok`, `error`, `non-genuine`
+- **Allowed Values:** `ok`, `error`, `non-genuine`, `pending-repair`
 
 The camera health status, which has the following values:
 
 - `ok`: The component is operating normally.
 - `error`: The component has a detected error or failure.
 - `non-genuine`: The component isn’t a genuine Apple component.
+- `pending-repair`: The component is a genuine Apple component that requires a restart to finish its repair.
 
 ### Display
 
 - **Type:** `string`
 - **Required:** No
-- **Allowed Values:** `ok`, `error`, `non-genuine`
+- **Allowed Values:** `ok`, `error`, `non-genuine`, `pending-repair`
 
 The display health status, which has the following values:
 
 - `ok`: The component is operating normally.
 - `error`: The component has a detected error or failure.
 - `non-genuine`: The component isn’t a genuine Apple component.
+- `pending-repair`: The component is a genuine Apple component that requires a restart to finish its repair.
 
 ### FaceID
 
 - **Type:** `string`
 - **Required:** No
-- **Allowed Values:** `ok`, `error`
+- **Allowed Values:** `ok`, `error`, `pending-repair`
 
 The Face ID health status, which has the following values:
 
 - `ok`: The component is operating normally.
 - `error`: The component has a detected error or failure.
+- `pending-repair`: The component is a genuine Apple component that requires a restart to finish its repair.
 
 ### NFC
 
@@ -67,12 +70,13 @@ The NFC (Near Field Communication) health status, which has the following values
 
 - **Type:** `string`
 - **Required:** No
-- **Allowed Values:** `ok`, `error`
+- **Allowed Values:** `ok`, `error`, `pending-repair`
 
 The Touch ID health status, which has the following values:
 
 - `ok`: The component is operating normally.
 - `error`: The component has a detected error or failure.
+- `pending-repair`: The component is a genuine Apple component that requires a restart to finish its repair.
 
 ### UWB
 
@@ -90,6 +94,7 @@ The UWB (Ultra-Wideband) radio health status, which has the following values:
 - `ok`: The component is operating normally.
 - `error`: The component has a detected error or failure.
 - `non-genuine`: The component isn’t a genuine Apple component.
+- `pending-repair`: The component is a genuine Apple component that requires a restart to finish its repair.
 
 Not all keys are supported on each device. The dictionary includes only components that are present and reportable on the device.
 

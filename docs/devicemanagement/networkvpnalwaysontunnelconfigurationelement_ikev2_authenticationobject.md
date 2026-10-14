@@ -18,7 +18,7 @@ The identifier of an asset declaration that contains the credentials (password) 
 - **Type:** `NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_Authentication_ExtendedAuthObject`
 - **Required:** No
 
-Specifies details about how the VPN routes different types of network traffic.
+Specifies details about extended authentication (EAP).
 
 ### IdentityAssetReference
 
@@ -50,5 +50,5 @@ To enable EAP-only authentication, set this to `None` and `ExtendedAuthEnabled` 
 
 ### Objects
 
-- [NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_Authentication_ExtendedAuthObject](/documentation/devicemanagement/networkvpnalwaysontunnelconfigurationelement_ikev2_authentication_extendedauthobject) - Specifies details about how the VPN routes different types of network traffic.
+- [NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_Authentication_ExtendedAuthObject](/documentation/devicemanagement/networkvpnalwaysontunnelconfigurationelement_ikev2_authentication_extendedauthobject) - Specifies details about extended authentication (EAP).
 

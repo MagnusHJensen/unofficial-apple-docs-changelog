@@ -51,6 +51,15 @@ The display name for the account in notifications and authentication requests.
 
 The list of created groups that don’t have administrator access.
 
+### AdditionalHTTPHeaders
+
+- **Type:** `ExtensibleSingleSignOn.PlatformSSO.AdditionalHTTPHeaders`
+- **Required:** No
+
+A dictionary with keys and values that are strings. The keys are HTTP header names, and the values are HTTP header values. The device adds these headers to nonce, pre-authentication, login, key and key exchange requests for Platform SSO. The device limits the number of headers to 20, the length of the header name to 128 characters, and the length of the header value to 2048 characters.
+
+Available: macOS 27.2+
+
 ### AdministratorGroups
 
 - **Type:** `[string]`
@@ -87,6 +96,16 @@ Available: macOS 15.4+
 If `true`, the system detects the password during web login and synchronizes it to the local account password for the user.
 
 Available: macOS 27+
+
+### AlwaysUseLoginUI
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system uses the Platform SSO login UI at the Login Window, screensaver unlock, and FileVault unlock for every configuration that supports it. If `false`, the system uses the Platform SSO login UI only when `AuthenticationMethod` is set to `OpenID`, or when `LoginPolicy`, `UnlockPolicy` or `FileVaultPolicy` are set to `RequireTouchID` or `RequireTouchIDOrWatch`.
+
+Available: macOS 27.2+
 
 ### AuthenticationGracePeriod
 
@@ -312,6 +331,7 @@ Available: macOS 27+
 
 ### Objects
 
+- [ExtensibleSingleSignOn.PlatformSSO.AdditionalHTTPHeaders](/documentation/devicemanagement/extensiblesinglesignon/platformsso-data.dictionary/additionalhttpheaders-data.dictionary) - A dictionary with keys and values that are strings. The keys are HTTP header names, and the values are HTTP header values. The device adds these headers to nonce, pre-authentication, login, key and key exchange requests for Platform SSO. The device limits the number of headers to 20, the length of the header name to 128 characters, and the length of the header value to 2048 characters.
 - [ExtensibleSingleSignOn.PlatformSSO.AuthorizationGroups](/documentation/devicemanagement/extensiblesinglesignon/platformsso-data.dictionary/authorizationgroups-data.dictionary) - The pairing of Authorization Rights to group names.
 - [ExtensibleSingleSignOn.PlatformSSO.TokenToUserMapping](/documentation/devicemanagement/extensiblesinglesignon/platformsso-data.dictionary/tokentousermapping-data.dictionary) - The attribute mapping to use when creating users, or for authorization.
 

@@ -13,6 +13,7 @@ Configure devices using declarative device management.
 - [AccountGoogle](/documentation/devicemanagement/accountgoogle) - The declaration to configure a Google account.
 - [AccountLDAP](/documentation/devicemanagement/accountldap) - The declaration to configure a Lightweight Directory Access Protocol (LDAP) account.
 - [AccountMail](/documentation/devicemanagement/accountmail) - The declaration to configure a Mail account.
+- [AccountSettings](/documentation/devicemanagement/accountsettings) - The declaration to configure account settings.
 - [AccountSubscribedCalendar](/documentation/devicemanagement/accountsubscribedcalendar) - The declaration to configure a subscribed calendar.
 - [AppManaged](/documentation/devicemanagement/appmanaged) - The declaration to configure a managed app.
 - [AppSettings](/documentation/devicemanagement/appsettings) - The declaration to configure app settings.

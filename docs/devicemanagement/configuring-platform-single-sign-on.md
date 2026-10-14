@@ -63,6 +63,12 @@ Both keys let the user authenticate initially with one method and automatically 
 
 To configure the authentication method, use the following keys:
 
+## Define the login experience
+
+Platform SSO automatically uses its own login experience at FileVault unlock, at the Lock Screen, and at the login window when `AuthenticationMethod` is set to `OpenID`. It also uses its own login experience when `LoginPolicy`, `UnlockPolicy`, or `FileVaultPolicy` are set to `RequireTouchID` or `RequireTouchIDOrWatch`.
+
+You can set `AlwaysUseLoginUI` to `true` to enable the same experience for other authentication methods.
+
 ## Use web-based authentication
 
 Users can use web-based authentication if you set `AuthenticationMethod`, `UserCreation.NewUserAuthenticationMethods` (configuration), or `NewUserAuthenticationMethods` (profile) to `OpenID`.
@@ -109,7 +115,7 @@ If you don’t set this key, the device uses the existing permissions.
 
 If set to `Groups`, Platform SSO requests group membership from the identity provider and assigns the corresponding permissions:
 
-During authentication, the system requests the superset of the groups from the identity provider and the login response contains the group membership for the user. Platform SSO adds the user to the groups the identity provider returns and removes the user from the rest of the groups. You can trust these group memberships for security decisions because the identity provider signs them during the login. The system doesn’t make a separate request for them and only updates group membership after user authentication.
+During authentication, the system requests the superset of the groups from the identity provider and the login response contains the group membership for the user. Platform SSO adds the user to the groups the identity provider returns and removes the user from the rest of the groups. You can trust these group memberships for security decisions because the identity provider signs them during login. The system doesn’t make a separate request for them and only updates group membership after user authentication.
 
 The groups are normal local groups on a Mac, and other processes can modify their membership. Put sufficient controls and auditing processes in place to handle unauthorized changes.
 

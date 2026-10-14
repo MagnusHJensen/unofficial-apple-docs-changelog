@@ -1,6 +1,6 @@
 # NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_Authentication_ExtendedAuthObject
 
-Specifies details about how the VPN routes different types of network traffic.
+Specifies details about extended authentication (EAP).
 
 **Platforms:** iOS 27.0, iPadOS 27.0, Mac Catalyst 27.0, visionOS 27.0
 

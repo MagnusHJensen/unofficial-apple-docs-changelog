@@ -23,7 +23,7 @@ A dictionary that contains the build and OS versions of the software update that
 {
     "softwareupdate": {
         "pending-version": {
-            "os-version": "27.1",
+            "os-version": "27.2",
             "build-version": "24B32"
         }
     }

@@ -6,6 +6,16 @@ Policies for login, unlock, and FileVault behavior.
 
 ## Properties
 
+### AlwaysUseLoginUI
+
+- **Type:** `boolean`
+- **Required:** No
+- **Default:** `false`
+
+If `true`, the system uses the Platform SSO login UI at the Login Window, screensaver unlock, and FileVault unlock for every configuration that supports it. If `false`, the system uses the Platform SSO login UI only when `AuthenticationMethod` is set to `OpenID`, or when `LoginPolicy`, `UnlockPolicy` or `FileVaultPolicy` are set to `RequireTouchID` or `RequireTouchIDOrWatch`.
+
+Available: macOS 27.2+
+
 ### AuthenticationGracePeriod
 
 - **Type:** `integer`
