@@ -2,7 +2,7 @@
 
 The declaration to configure account settings.
 
-**Platforms:** macOS 27.2 (Beta)
+**Platforms:** macOS 27.2
 
 ## Properties
 

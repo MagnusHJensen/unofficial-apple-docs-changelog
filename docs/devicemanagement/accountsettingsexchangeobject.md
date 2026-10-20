@@ -2,7 +2,7 @@
 
 If present, configures settings for Exchange accounts.
 
-**Platforms:** macOS 27.2 (Beta)
+**Platforms:** macOS 27.2
 
 ## Properties
 
