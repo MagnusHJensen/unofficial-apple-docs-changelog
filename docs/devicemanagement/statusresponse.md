@@ -68,6 +68,10 @@ The unique library identifier. When querying records using multiple tokens that 
 
 Compare `numCompleted` against `numRequested` to track the progress of an event. When an event finishes with failures, `failures` describes each one.
 
+The `eventType` reflects the request that created the event:
+
+A revoke event reports an `eventType` of `REVOKE` here, even though the `ASSET_MANAGEMENT` notifications it generates report a `type` of `DISASSOCIATE`. For more information, see [Track revoked assignments](/documentation/devicemanagement/subscribing-to-notifications#Track-revoked-assignments).
+
 ## Topics
 
 ### Objects and Data Types

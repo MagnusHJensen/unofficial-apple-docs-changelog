@@ -8,6 +8,7 @@ Notifications make it easy to learn about changes to an organization’s assets,
 
 - Asset count events
 - Asset management events
+- Unlimited asset events
 - User management events
 - User-associated events
 
@@ -104,9 +105,40 @@ The notifications have the following format:
 
 The notification uses a subset of the [SubscriptionCounts](/documentation/devicemanagement/subscriptioncounts) schema: the `counts` object contains only `available` and `total`. It omits `assigned`, which is only present in the synchronous `GET /v2/subscriptions` response. Use `total` to track actual seat ownership and `available` to track unassigned capacity.
 
+## Track unlimited assets
+
+Track unlimited licenses upon receiving an `UNLIMITED_ASSET` notification type that the server sends when the set of assets with unlimited licenses changes for an organizational unit:
+
+- Adding assets to the set sends a notification with `unlimited` set to `true`
+- Removing assets from the set sends a notification with `unlimited` set to `false`
+
+The notifications have the following format:
+
+```json
+{
+    "notification": {
+        "adamIds": [
+            "408709785"
+        ],
+        "unlimited": true
+    },
+    "notificationId": "b9f1c4e7-2a83-4d56-9e01-7c3f8b2d4a65",
+    "notificationType": "UNLIMITED_ASSET",
+    "uId": "2049025000431439"
+}
+```
+
+The `adamIds` array lists every asset whose unlimited state changed, represented as strings, and `unlimited` reports the new state that applies to all of them. The server batches the assets from a single change into one notification, so adding three assets at once sends one notification that lists three `adamIds` rather than three separate notifications. Additions and removals always arrive as separate notifications, because each notification carries a single `unlimited` value.
+
+Unlike an `ASSET_MANAGEMENT` notification, an `UNLIMITED_ASSET` notification contains no `eventId`, because the change originates outside your device management service. There’s no corresponding [Event Status](/documentation/devicemanagement/events-status) event to query.
+
+The notification reports which assets changed state, but not their license details. To retrieve those, send a request to [Get Assets](/documentation/devicemanagement/get-assets-4ski1) with the `unlimited` query parameter set to `true`. The server returns the matching [UnlimitedResponseAsset](/documentation/devicemanagement/unlimitedresponseasset) objects in the `unlimitedAssets` array.
+
 ## Track assignments
 
 Track assignments upon receiving an `ASSET_MANAGEMENT` notification type that the server sends when it associates or disassociates an asset. The body of the notification contains a list of [Assignment](/documentation/devicemanagement/assignment) objects.
+
+The `type` field inside the notification is either `ASSOCIATE` or `DISASSOCIATE`. These are the only two values the server sends for `ASSET_MANAGEMENT`. Revoke requests report as `DISASSOCIATE`, as described in [Track revoked assignments](/documentation/devicemanagement/subscribing-to-notifications#Track-revoked-assignments).
 
 The assignment notifications for associations have the following format:
 
@@ -163,7 +195,13 @@ The assignment notifications for disassociations have the following format:
 }
 ```
 
-The assignment notifications for revoke calls have the following format:
+## Track revoked assignments
+
+A [Revoke Assets](/documentation/devicemanagement/revoke-assets) request reports as `DISASSOCIATE`, because the server revokes an assignment by disassociating it. There’s no `REVOKE` notification type.
+
+A single revoke request generates one notification per asset, and separate notifications for the revoked user assignments and the revoked device assignments of that asset. A notification never mixes assets, and never mixes `clientUserId` and `serialNumber` assignments. Each notification splits further if it would exceed the 100-element limit described above. Every resulting notification carries the `eventId` from the original [EventResponse](/documentation/devicemanagement/eventresponse), which is how you correlate them back to the request.
+
+For example, a revoke that matches two assets, each assigned to the same two devices, generates two notifications — one per asset. The notification for the first asset resembles the following:
 
 ```json
 {
@@ -171,26 +209,26 @@ The assignment notifications for revoke calls have the following format:
         "assignments": [
             {
                 "adamId": "408709785",
-                "clientUserId": "client-100",
-                "pricingParam": "STDQ"
+                "pricingParam": "STDQ",
+                "serialNumber": "97c42a74-c30e-4172-a65f-6e5a5ba3d477"
             },
             {
-                "adamId": "329103948",
-                "clientUserId": "client-100",
-                "pricingParam": "STDQ"
+                "adamId": "408709785",
+                "pricingParam": "STDQ",
+                "serialNumber": "495622d3-76f1-4fd3-8647-3f0365159170"
             }
-
         ],
         "eventId": "7f2a9c14-3b8d-4e6a-b1c5-9d0e2f4a6b8c",
         "result": "SUCCESS",
-        "type": "REVOKE"
+        "type": "DISASSOCIATE"
     },
     "notificationId": "6a2f1e8b-7d4c-4a9e-b3f0-1c5d8e2a4b60",
     "notificationType": "ASSET_MANAGEMENT",
     "uId": "2049025000431439"
 }
-
 ```
+
+Because the notification `type` doesn’t distinguish a revoke from a direct disassociation, use the `eventId` to tell them apart. To confirm that an `eventId` belongs to a revoke, query [Event Status](/documentation/devicemanagement/events-status), which reports an `eventType` of `REVOKE` for that event.
 
 ## Track subscription assignments
 
